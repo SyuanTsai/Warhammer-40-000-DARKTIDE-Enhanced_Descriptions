@@ -75,6 +75,10 @@ local LOCALIZATION_GROUPS = {
 	"heresy",
 	"damnation",
 	"auric",
+
+	"dump_stat",
+	"dump_stat2",
+	"dump_stat3",
 }
 
 -- UTILITY FUNCTIONS
@@ -400,6 +404,21 @@ local localizations = {
 		es = "{#color(255, 35, 5)}¡SOLO PARA DESARROLLADORES!{#reset()}\nEste módulo habilita comandos de depuración y utilidades para pruebas y solución de problemas. Usar con precaución.",
 	},
 
+--[+DUMP STATS+]--
+	dump_stat_colour = {
+		en = "Dump Stats\n{#size(17)}{#color(95, 95, 95)}// Mobility, Melee Damage, Warp Resistance{#reset()}",
+		ru = "Мусорные статы\n{#size(17)}{#color(95, 95, 95)}// Мобильность, Урон рукопашный, Сопротивление варпу{#reset()}",
+	},
+--[+DUMP STATS 2+]--
+	dump_stat2_colour = {
+		en = "Dump Stats 2\n{#size(17)}{#color(95, 95, 95)}// Ammo, Defences, Heat Management{#reset()}",
+		ru = "Мусорные статы 2\n{#size(17)}{#color(95, 95, 95)}// Боеприпасы, Защита, Отведение тепла{#reset()}",
+	},
+--[+DUMP STATS 3+]--
+	dump_stat3_colour = {
+		en = "Dump Stats 3\n{#size(17)}{#color(95, 95, 95)}// Damage{#reset()}",
+		ru = "Мусорные статы 3\n{#size(17)}{#color(95, 95, 95)}// Урон {#reset()}", -- {#size(14)}(Игольный пистолет, Огнемёт и др., наносят урон со временем, на который не влияет эта стата).
+	},
 
 --[+MAIN+]--
 	bleed_colour = {
@@ -949,7 +968,7 @@ local localizations = {
 	class_scum_colour = {
 		en = " Hive Scum",
 		-- fr = "",
-		ru = " Отброс Улья",
+		ru = " Отребье Улья",
 		-- ["zh-tw"] = "",
 		-- ["zh-cn"] = "",
 		-- de = "",

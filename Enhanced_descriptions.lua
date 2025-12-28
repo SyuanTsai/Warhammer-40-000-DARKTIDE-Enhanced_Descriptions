@@ -5,8 +5,57 @@
 local mod = get_mod("Enhanced_descriptions")
 
 -- <<<CODE_REVEALER>>>
--- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_ogryn_taunt_damage_taken_increase_description"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
+-- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_talent_broker_passive_damage_on_reload_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
 -- <<</CODE_REVEALER>>>
+
+-- Кэш утилит
+mod._utils_cache = nil
+
+-- Функция для получения утилит с кэшированием
+function mod.get_utils()
+	if mod._utils_cache then
+		return mod._utils_cache
+	end
+
+	local success, result = pcall(function()
+		return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
+	end)
+
+	if success and result then
+		mod._utils_cache = result
+		mod:info("// ✅ Utils loaded and cached successfully")
+		return result
+	else
+		mod:error("{#color(255, 35, 5)}{#reset()} Failed to load utils: %s", tostring(result))
+		-- Возвращаем минимальные утилиты
+		local fallback_utils = {
+			CKWord = function(fallback, key) return fallback end,
+			CNumb = function(fallback, key) return fallback end,
+			CPhrs = function(key) return "" end,
+			CNote = function(key) return "" end,
+			create_template = function(id, loc_keys, locales, handle_func)
+				return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
+			end,
+			loc_text = function(text)
+				if type(text) == "table" then
+					return function(locale) return text[locale] or text["en"] or "" end
+				end
+				return function() return text end 
+			end,
+			DOT_NC = "•",
+			DOT_RED = "•",
+			DOT_GREEN = "•",
+		}
+		mod._utils_cache = fallback_utils
+		return fallback_utils
+	end
+end
+
+-- Функция для очистки кэша утилит
+function mod.clear_utils_cache()
+	mod._utils_cache = nil
+	mod:info("// ⚙ Utils cache cleared")
+end
 
 -- Main Modules Location
 local location = "Enhanced_descriptions/Main_Modules/"
@@ -14,24 +63,25 @@ local location = "Enhanced_descriptions/Main_Modules/"
 -- CONSTANTS
 local VERSION = "4.95b"
 local LOCALIZATION_FILES = {
-	WEAPONS_Blessings_Perks =	"enable_weapons_file",
-	TALENTS =					"enable_talents_file",
-	CURIOS_Blessings_Perks =	"enable_curious_file",
-	MENUS =						"enable_menus_file",
-	PENANCES =					"enable_penances_file",
+	WEAPONS_Blessings_Perks =		"enable_weapons_file",
+	-- TALENTS_Modular =			"enable_talents_file",
+	TALENTS =						"enable_talents_file",
+	CURIOS_Blessings_Perks =		"enable_curious_file",
+	MENUS =							"enable_menus_file",
+	PENANCES =						"enable_penances_file",
 	-- NAMES_Enemies_Weapons =		"enable_names_file",
 	-- NAMES_Talents_Blessings =	"enable_names_tal_bless_file"
 }
 
 local BUTTON_OFFSETS = {
-	InventoryWeaponsView =		"equip_button",
-	MarksVendorView =			"purchase_button", 
-	InventoryWeaponMarksView =	"equip_button"
+	InventoryWeaponsView =			"equip_button",
+	MarksVendorView =				"purchase_button",
+	InventoryWeaponMarksView =		"equip_button"
 }
 
 -- UI OFFSET CONSTANTS
-local WIDGET_OFFSET =			{-622, 20, 0}
-local WINDOW_OFFSET =			200
+local WIDGET_OFFSET =				{-622, 20, 0}
+local WINDOW_OFFSET =				200
 
 -- Кэш цветов
 mod._color_cache = {
@@ -42,35 +92,55 @@ mod._color_cache = {
 
 -- Список поддерживаемых языков
 mod.SUPPORTED_LANGUAGES = {
-	"en",		-- English
-	"ru",		-- Russian
-	"fr",		-- French
-	"zh-cn",	-- Chinese Simplified
-	"zh-tw",	-- Chinese Traditional
+	"en",			-- English
+	"ru",			-- Russian
+	"fr",			-- French
+	"zh-cn",		-- Chinese Simplified
+	"zh-tw",		-- Chinese Traditional
 	-- "de",		-- German
 	-- "it",		-- Italian
 	-- "ja",		-- Japanese
 	-- "ko",		-- Korean
 	-- "pl",		-- Polish
-	-- "pt-br",	-- Portuguese (Brazil)
+	-- "pt-br",		-- Portuguese (Brazil)
 	-- "es",		-- Spanish
 }
 
 -- Карта языков для файлов
 local LANGUAGE_FILE_MAP = {
-	["en"] =	"en",
-	["ru"] =	"ru",
-	["fr"] =	"fr",
-	["zh-cn"] =	"zh_cn",
-	["zh-tw"] =	"tw",
-	-- ["de"] =	"de",
-	-- ["it"] =	"it",
-	-- ["ja"] =	"ja",
-	-- ["ko"] =	"ko",
-	-- ["pl"] =	"pl",
-	-- ["pt-br"] =	"pt_br",
-	-- ["es"] =	"es",
+	["en"] =		"en",
+	["ru"] =		"ru",
+	["fr"] =		"fr",
+	["zh-cn"] =		"zh_cn",
+	["zh-tw"] =		"tw",
+	["de"] =		"de",
+	["it"] =		"it",
+	["ja"] =		"ja",
+	["ko"] =		"ko",
+	["pl"] =		"pl",
+	["pt-br"] =		"pt_br",
+	["es"] =		"es",
 }
+
+-- Функция для преобразования кода языка в его название
+local function get_language_name(lang_code)
+	local language_names = {
+		["en"] =	"English",
+		["ru"] =	"Russian",
+		["fr"] =	"French",
+		["zh-cn"] =	"Chinese Simplified",
+		["zh-tw"] =	"Chinese Traditional",
+		["de"] =	"German",
+		["it"] =	"Italian",
+		["ja"] =	"Japanese",
+		["ko"] =	"Korean",
+		["pl"] =	"Polish",
+		["pt-br"] =	"Portuguese (Brazil)",
+		["es"] =	"Spanish",
+	}
+	return language_names[lang_code] or lang_code
+end
+
 
 -- МЕТА-ФАБРИКА ФИКСОВ
 local MFF = {}
@@ -78,6 +148,7 @@ local MFF = {}
 MFF.patterns = {
 	plus_prefix = "^%+",
 	all_plus = "%+",
+	all_minus = "%-",
 	percent_zeros = "%.00%%",
 	hyphen_spaces = "%s*%-%s*"
 }
@@ -100,84 +171,98 @@ local FIXES = {
 --[+ ++BLESSINGS - БЛАГОСЛОВЕНИЯ++ +]--
 	--[+ OVERLOAD +]--
 		loc_explosion_on_overheat_lockout_desc = {
-			overheat_reduction =	MFF.fixes.plus_prefix
+			overheat_reduction =				MFF.fixes.plus_prefix
 		},
 	--[+ WRATH +]--
 		loc_trait_bespoke_chained_hits_increases_cleave_desc = {
-			cleave =				MFF.fixes.plus_prefix
+			cleave =							MFF.fixes.plus_prefix
 		},
 	--[+ HEATSINK +]--
 		loc_reduce_fixed_overheat_amount_desc = {
-			amount =				MFF.fixes.plus_prefix
+			amount =							MFF.fixes.plus_prefix
 		},
 	--[+ SLOW AND STEADY +]--
 		loc_trait_bespoke_toughness_on_hit_based_on_charge_time_desc = {
-			toughness =				MFF.fixes.plus_prefix
+			toughness =							MFF.fixes.plus_prefix
 		},
 	--[+ FOCUSED COOLING +]--
 		loc_trait_bespoke_reduced_overheat_on_crits_desc = {
-			heat_percentage =		MFF.fixes.plus_prefix
+			heat_percentage =					MFF.fixes.plus_prefix
 		},
 
 --[+ ++TALENTS - ТАЛАНТЫ++ +]--
 	--[+ NODES - УЗЛЫ +]--
 		--[+ Peril Resistance Medium +]--
 		loc_talent_warp_charge_low_desc = {
-			warp_charge =			MFF.fixes.percent_zeros
+			warp_charge =						MFF.fixes.percent_zeros
 		},
 
 	--[+ PSYKER - ПСАЙКЕР +]--
 		--[+ ABILITY 1-3 - Creeping Flames +]--
 		loc_talent_psyker_warpfire_on_shout_desc = {
-			min_stacks =			MFF.fixes.hyphen_spaces
+			min_stacks =						MFF.fixes.hyphen_spaces
 		},
 
 	--[+ VETERAN - ВЕТЕРАН +]--
 		--[+ Passive 23 - Deadshot +]--
 		loc_talent_veteran_ads_drains_stamina_boost_desc = {
-			sway_reduction =		MFF.fixes.all_plus
+			sway_reduction =					MFF.fixes.all_plus
 		},
 
 	--[+ ZEALOT - ИЗУВЕР +]--
 		--[+ BLITZ 1 - Stunstorm Grenade +]--
 		loc_zealot_improved_stun_grenade_desc = {
-			radius =				MFF.fixes.all_plus
+			radius =							MFF.fixes.all_plus
 		},
 		--[+ ABILITY 1-1 - Unrelenting Fury +]--
 		loc_talent_zealot_fotf_refund_cooldown_desc = {
-			cooldown =				MFF.fixes.all_plus
+			cooldown =							MFF.fixes.all_plus
 		},
 		--[+ Passive 5 - Enemies Within, Enemies Without +]--
 		loc_talent_zealot_toughness_near_enemies_desc = {
-			toughness =				MFF.fixes.all_plus
+			toughness =							MFF.fixes.all_plus
 		},
 
 	--[+ ARBITES - АРБИТРЕС +]--
 		--[+ ABILITY 1 - Castigator's Stance +]--
 		loc_talent_adamant_stance_ability_alt_description = {
-			damage_taken =			MFF.fixes.all_plus
+			damage_taken =						MFF.fixes.all_plus
 		},
 		--[+ Passive 16 - Canine Morale +]--
 		loc_talent_adamant_pinning_dog_kills_buff_allies_description = {
-			toughness =				MFF.fixes.all_plus
+			toughness =							MFF.fixes.all_plus
 		},
 
 	--[+ OGRYN - ОГРИН +]--
 		--[+ ABILITY 3-1 - Bullet Bravado +]--
 		loc_talent_ogryn_special_ammo_toughness_on_shot_and_reload_desc = {
-			toughness =				MFF.fixes.all_plus,
-			toughness_reload =		MFF.fixes.all_plus
+			toughness =							MFF.fixes.all_plus,
+			toughness_reload =					MFF.fixes.all_plus
 		},
 		--[+ Passive 21 - Batter +]--
 		loc_talent_ogryn_heavy_bleeds_new_desc = {
-			stacks =				MFF.fixes.all_plus,
-			heavy_stacks =			MFF.fixes.all_plus
+			stacks =							MFF.fixes.all_plus,
+			heavy_stacks =						MFF.fixes.all_plus
 		},
 		--[+ Passive 24 - Concentrate +]--
 		loc_talent_ogryn_drain_stamina_for_handling_desc = {
-			sway_reduction =		MFF.fixes.all_plus,
-			spread_reduction =		MFF.fixes.all_plus,
-			recoil_reduction =		MFF.fixes.all_plus
+			sway_reduction =					MFF.fixes.all_plus,
+			spread_reduction =					MFF.fixes.all_plus,
+			recoil_reduction =					MFF.fixes.all_plus
+		},
+
+	--[+ HIVE SCUM - ОТРЕБЬЕ УЛЬЯ +]--
+		--[+ ABILITY 2 - Rampage! +]--
+		loc_talent_broker_ability_punk_rage_desc_2 = {
+			damage_taken =						MFF.fixes.all_plus
+		},
+		--[+ Passive 7 - Burst of Energy +]--
+		loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc = {
+			toughness =							MFF.fixes.all_plus
+		},
+		--[+ Passive 9 - Calling for a Time Out +]--
+		loc_talent_broker_passive_reduced_toughness_damage_during_reload_desc = {
+			toughness_damage_taken_modifier =	MFF.fixes.all_minus
 		},
 }
 
@@ -248,13 +333,13 @@ function mod.load_colors_keywords(language)
 			colors = colors_func or {}
 		end
 
-		mod:info("Loaded colors for language: %s", language)
+		mod:info("// 📑 Loaded colors for language: %s", language)
 	else
-		mod:warning("Failed to load colors for language: %s, file: %s, error: %s", 
+		mod:warning("{#color(255, 35, 5)}{#reset()} Failed to load colors for language: %s, file: %s, error: %s", 
 					language, file_name, tostring(err))
 
 		if language ~= "en" then
-			mod:info("Falling back to English colors for language: %s", language)
+			mod:info("// 🔄 Falling back to English colors for language: %s", language)
 			colors = mod.load_colors_keywords("en")
 		else
 			colors = {
@@ -296,7 +381,23 @@ function mod.get_current_language_colors()
 	end
 
 	if not is_supported then
-		mod:info("Language %s is not supported, falling back to English", current_lang)
+		-- Преобразуем список поддерживаемых языков в их названия
+		local supported_names = {}
+		for _, lang in ipairs(mod.SUPPORTED_LANGUAGES) do
+			table.insert(supported_names, get_language_name(lang))
+		end
+		local supported_list = table.concat(supported_names, ", ")
+		
+		-- Также получаем читаемое название текущего языка
+		local current_lang_name = get_language_name(current_lang)
+		
+		mod:warning(
+[[Sorry!
+{#color(255, 35, 5)} Localization for '%s' is not available!{#reset()}
+Currently supported languages: {#color(124, 252, 0)}%s{#reset()}.]],
+			current_lang_name, -- Используем название вместо кода
+			supported_list
+		)
 		current_lang = "en"
 	end
 
@@ -310,17 +411,9 @@ function mod.clear_color_cache()
 	mod._color_cache.numbers = nil
 	mod._color_cache.keywords = nil
 	mod._color_cache.current_lang = nil
+	mod.clear_utils_cache()	 -- Очищаем кэш утилит
 
-	-- Очищаем глобальный кэш утилит
-	local success, utils = pcall(function()
-		return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
-	end)
-
-	if success and utils and utils.clear_global_cache then
-		utils.clear_global_cache()
-	end
-
-	mod:info("Color cache cleared")
+	mod:info("Color cache and utils cache cleared")
 end
 
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
@@ -360,7 +453,7 @@ local function safe_load_localization_file(file_path, setting_name)
 		mod:info("Loaded localization file: %s", file_path)
 		return file_templates
 	else
-		mod:error("Failed to load localization file: %s", file_path)
+		mod:error("{#color(255, 35, 5)}{#reset()} Failed to load localization file: %s", file_path)
 		return {}
 	end
 end
@@ -438,7 +531,7 @@ local function setup_button_offsets()
 				end
 			end)
 		else
-			mod:warning("Class not found for button offset: " .. class_name)
+			mod:warning("{#color(255, 35, 5)}{#reset()} Class not found for button offset: " .. class_name)
 		end
 	end
 end
@@ -540,8 +633,4 @@ function mod.reload_localization()
 	return success
 end
 
-mod:command("reload_ed_localization", "Reload Enhanced Descriptions localization", function()
-	mod.reload_localization()
-end)
-
-mod:info("Enhanced Descriptions mod loaded version: %s", VERSION)
+mod:info("// ✅ Enhanced Descriptions mod loaded version: %s", VERSION)

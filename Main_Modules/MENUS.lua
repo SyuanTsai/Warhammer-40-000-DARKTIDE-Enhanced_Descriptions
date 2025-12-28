@@ -2,36 +2,8 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
--- Загружаем утилиты
-local Utils
-local success, result = pcall(function()
-	return mod:io_dofile("Enhanced_descriptions/Enhanced_descriptions_utils")
-end)
-
-if success and result then
-	Utils = result
-	mod:info("Utils loaded successfully")
-else
-	mod:error("Failed to load utils: %s", tostring(result))
-	Utils = {
-		CKWord = function(fallback, key) return fallback end,
-		CNumb = function(fallback, key) return fallback end,
-		CPhrs = function(key) return "" end,
-		CNote = function(key) return "" end,
-		create_template = function(id, loc_keys, locales, handle_func)
-			return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func }
-		end,
-		loc_text = function(text)
-			if type(text) == "table" then
-				return function(locale) return text[locale] or text["en"] or "" end
-			end
-			return function() return text end 
-		end,
-		DOT_RED = "•",
-		DOT_NC = "•",
-		DOT_GREEN = "•",
-	}
-end
+-- ИСПОЛЬЗУЕМ КЭШИРОВАННЫЕ УТИЛИТЫ
+local Utils = mod.get_utils()
 
 -- ИМПОРТ ВСЕХ НУЖНЫХ ФУНКЦИЙ И КОНСТАНТ
 local create_template = Utils.create_template
@@ -490,12 +462,41 @@ local menus_templates = {
 		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
 	},
 
-	["loc_stats_display_mobility_stat"] = { -- Mobility is marked red because it's usually the worst stat. It's also convenient for me to buy weapons that way.
-		en = "{#color(255, 35, 5)}Mobility{#reset()}",
-		ru = "{#color(255, 35, 5)}Мобильность{#reset()}", -- руоф 
-		-- ["zh-tw"] = "", -- 
-		-- ["zh-cn"] = "", -- 
+
+--[+ +DUMP STATS+ +]--
+	["loc_stats_display_mobility_stat"] = { -- Mobility
+		en = CKWord("Mobility", "Mobility_rgb"),
+		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
 	},
+	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn's Grenadier Gauntlet
+		en = CKWord("Melee Damage", "Melee_dmg_rgb"),
+		ru = CKWord("Урон рукопашный", "Melee_dmg_rgb_ru"),
+	},
+	["loc_stats_display_warp_resist_stat"] = { -- Warp Resistance -- Psyker
+		en = CKWord("Warp Resistance", "Warp_resist_rgb"),
+		ru = CKWord("Сопротивление варпу", "Warp_resist_rgb_ru"),
+	},
+
+--[+ +DUMP STATS 2+ +]--
+	["loc_stats_display_ammo_stat"] = { -- Ammo -- Ogryn's Ripper Gun
+		en = CKWord("Ammo", "Ammo_rgb"),
+		ru = CKWord("Боеприпасы", "Ammo_rgb_ru"),
+	},
+	["loc_stats_display_defense_stat"] = { -- Defences
+		en = CKWord("Defences", "Defences_rgb"),
+		ru = CKWord("Защита", "Defences_rgb_ru"),
+	},
+	["loc_stats_display_heat_management_powersword_2h"] = { -- Heat Management -- Zealot Relic. //Thanks RedF4llc0n
+		en = CKWord("Heat Management", "Heat_mngt_rgb"),
+		ru = CKWord("Отведение тепла", "Heat_mngt_rgb_ru"),
+	},
+
+--[+ +DUMP STATS 3+ +]--
+	["loc_stats_display_damage_stat"] = { -- Damage -- DoT guns: Needle Gun, Flamethrower, etc. This stat only affect direct damage and not DoT. //Thanks Hater
+		en = CKWord("Damage", "DamageDS_rgb"),
+		ru = CKWord("Урон", "DamageDS_rgb_ru"),
+	},
+
 
 	["loc_stats_display_finesse_stat"] = {
 		-- en = "Finesse",

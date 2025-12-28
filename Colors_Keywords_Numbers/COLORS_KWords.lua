@@ -51,6 +51,7 @@ local CONFIG = {
 		Crt_hit_col =	"Critical Hit Damage",
 
 		Crit_strike =	"Critical Strike",
+		Crit_strikes =	"Critical Strikes",
 		Crt_chnc_r =	"Critical Strike Chance",
 		Crt_strk_dmg =	"Critical Strike Damage",
 
@@ -60,10 +61,13 @@ local CONFIG = {
 		Crit_dmg_r =	"Critical Damage",
 		Crt_dmg_r =		"Crit Damage",
 
+		Conc_Stimm =	"Concentration Stimm",
 	},
 	damage_text_colour = {
 		Damage =		"Damage",
 		Damagewrp =		"Warp-Damage",
+
+		Combat_Stimm =	"Combat Stimm",
 	},
 	electrocuted_text_colour = {
 		Electrocute =	"Electrocute",
@@ -98,6 +102,8 @@ local CONFIG = {
 	},
 	rending_text_colour = {
 		Rending =		"Rending",
+
+		Cartel_Stimm =	"Cartel Special Stimm",
 	},
 	soulblaze_text_colour = {
 		Soulblaze =		"Soulblaze",
@@ -141,6 +147,8 @@ local CONFIG = {
 	},
 		precision_text_colour = {
 			Precision =		"Precision",
+
+			Celerity_Stimm =		"Celerity Stimm",
 		},
 	-- Ogryn
 	class_ogryn_text_colour = {
@@ -178,7 +186,7 @@ local CONFIG = {
 			Taunted =		"Taunted",				-- Ogryn
 			Taunting =		"Taunting",				-- Ogryn
 
-			Adren =			"Adrenaline",			-- Hive Scum
+			Adren =			"Adrenaline",			-- Hive Scum ???
 			AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
 		stealth_text_colour = {
@@ -195,6 +203,8 @@ local CONFIG = {
 		focus_text_colour = {
 			Forceful =		"Forceful",
 			Focus =			"Focus",
+
+			Shout =			"Shout",				-- Hive Scum
 		},
 		focust_text_colour = {
 			Focus_Target =	"Focus Target",
@@ -207,6 +217,8 @@ local CONFIG = {
 			Meleespec =		"Melee Specialist",
 
 			Meleejust =		"Melee Justice",		-- Arbites
+
+			Exhausted =		"Exhausted",			-- Hive Scum
 		},
 		rangedspec_text_colour = {
 			Rangedspec =	"Ranged Specialist",
@@ -225,6 +237,8 @@ local CONFIG = {
 	},
 		chemtox_text_colour = {
 			Chem_Tox =		"Chem Toxin",
+
+			Med_Stimm =		"Med Stimm",
 		},
 
 -- TALENTS
@@ -341,6 +355,21 @@ local CONFIG = {
 	auric_text_colour = {
 		auric =			"Auric",
 	},
+
+-- DUMP STATS
+	dump_stat_text_colour = {
+		Mobility =		"Mobility",
+		Melee_dmg =		"Melee Damage",
+		Warp_resist =	"Warp Resistance",
+	},
+	dump_stat2_text_colour = {
+		Ammo =			"Ammo",
+		Defences =		"Defences",
+		Heat_mngt =		"Heat Management",
+	},
+	dump_stat3_text_colour = {
+		DamageDS =		"Damage",
+	},
 }
 
 -- Основная функция для создания цветных ключевых слов
@@ -386,7 +415,7 @@ local function create_phrs_en(colors_en)
 	Can_be_refr_drop_1 =		Dot_green.." Stacks can be refreshed during active duration, and are dropped one by one.",
 	Can_gen_mult =				Dot_green.." Can generate multiple Stacks per Swing.\n",
 	Can_proc_mult =				Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
-	Can_proc_mult_str =			Dot_green.." Can proc multiple times per swing when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
+	Can_proc_mult_str =			Dot_green.." Can proc multiple times when "..CKWord("Cleaving", "Cleaving_rgb")..".\n",
 	Refr_dur_stappl =			Dot_green.." Refreshes duration on Stack application. ",
 -- Psyker
 	Doesnt_Stack_Psy_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Psyker", "cls_psy_rgb")..".",
@@ -399,6 +428,9 @@ local function create_phrs_en(colors_en)
 -- Ogryn
 	Doesnt_Stack_Ogr_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 	Doesnt_Stack_Ogr_abil =		Dot_red.." Does not Stack with the same talent from another "..CKWord("Ogryn", "cls_ogr_rgb")..".",
+-- Hive Scum
+	Doesnt_Stack_Scm_Aura =		Dot_red.." Does not Stack with the same Aura from another "..CKWord("Hive Scum", "cls_scm_rgb")..".",
+	Doesnt_Stack_Scm_eff =		Dot_red.." Does not Stack with the same debuff from another "..CKWord("Hive Scum", "cls_scm_rgb")..".",
 
 	Cant_appl_thr_shlds =		Dot_red.." Can't apply through shields.",
 	Cant_be_refr =				Dot_red.." Cannot be refreshed during active duration. ",
