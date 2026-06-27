@@ -16,6 +16,7 @@ local CONFIG = {
 		chnc_var =				"{chance:%s}",
 		chrgtime_var =			"{charge_time:%s}",
 		cleave_var =			"{cleave:%s}",
+		cluster_var =			"{cluster:%s}",
 		cd_dur_var =			"{cooldown_duration:%s}",
 		cd_var =				"{cooldown:%s}",
 		countd_var =			"{count:%d}",
@@ -34,6 +35,7 @@ local CONFIG = {
 		dmgvsprsd_var =			"{damage_vs_suppressed}",
 		dmgvsstgr_var =			"{vs_stagger:%s}",
 		dur_var =				"{duration:%s}",
+		enemy_count =			"{enemy_count}",
 		explosion_rad_var =		"{explosion_radius:%s}",
 		extrahits_var =			"{extra_hits:%s}",
 		fin_var =				"{finesse:%s}",
@@ -81,6 +83,7 @@ local CONFIG = {
 		time_var =				"{time:%s}",
 		time_wind =				"{time_window}",
 		value_var =				"{value:%s}",
+		viscosity_target =		"{viscosity_target}",
 		warpchrg_var =			"{warp_charge:%s}",
 		wkspdmg_var =			"{weakspot_damage:%s}",
 		weapsprd_var =			"{weapon_spread:%s}",
@@ -109,6 +112,8 @@ local CONFIG = {
 	-- Symbols
 		n_plus =	"+",
 		n_minus =	"-",
+		n_equal =	"=",
+		n_greater =	">",
 		n_meter =	"m",
 		n_metr =	"м",
 		n_second =	"s",
@@ -131,16 +136,21 @@ local CONFIG = {
 		n_0_5 =		"0.5",
 		n_0_55 =	"0.55",
 		n_0_875 =	"0.875",
+		n_0_9 =		"0.9",
 		n_0_75 =	"0.75",
 
 		n_1 =		"1",
+		n_1_1 =		"1.1",
 		n_1_13 =	"1.13",
+		n_1_25 =	"1.25",
+		n_1_35 =	"1.35",
 		n_1_5 =		"1.5",
 		n_1_7 =		"1.7",
 
 		n_2 =		"2",
 		n_2e =		"2e",
 		n_2_1 =		"2.1",
+		n_2_4 =		"2.4",
 		n_2_5 =		"2.5",
 
 		n_3 =		"3",
@@ -266,6 +276,7 @@ local CONFIG = {
 		pc_5 =		"5%",
 		pc_6 =		"6%",
 
+		pc_7 =		"7%",
 		pc_7_5 =	"7.5%",
 
 		pc_8 =		"8%",
@@ -307,6 +318,13 @@ local CONFIG = {
 		pc_p10 =	"+10%",
 		pc_p12 =	"+12%",
 		pc_p19 =	"+19%",
+	},
+
+	DEGREES = {
+		dg_20 =		"20°",
+		dg_35 =		"35°",
+		dg_55 =		"55°",
+		dg_70 =		"70°",
 	}
 }
 

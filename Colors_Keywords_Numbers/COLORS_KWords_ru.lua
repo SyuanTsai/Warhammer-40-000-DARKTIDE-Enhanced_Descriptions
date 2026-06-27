@@ -8,7 +8,7 @@ local InputUtils = require("scripts/managers/input/input_utils")
 local CONFIG = {
 	bleed_text_colour = {
 		krovotechenie =		"кровотечение",					-- Таланты
-		krovotecheniem =		"кровотечением",					-- Таланты
+		krovotecheniem =	"кровотечением",				-- Таланты
 		krovotechenia =		"кровотечения",					-- Таланты, Благословения
 	},
 	brittleness_text_colour = {
@@ -43,6 +43,7 @@ local CONFIG = {
 		splochennosti =		"сплочённости",					-- Таланты, ЧПФ внизу
 	},
 	combat_ability_text_colour = {
+		sposobnosti =		"способности",					-- Таланты
 		boeva_sposobnost =	"боевая способность",			-- Таланты
 		boev_sposobnosti =	"боевой способности",			-- Таланты, Редкости
 		vosstanovlenii =	"восстановлении",				-- Таланты
@@ -55,8 +56,10 @@ local CONFIG = {
 		porchi =			"порчи",						-- Таланты
 		porchu =			"порчу",						-- Таланты
 		porchi_uron =		"урон от порчи",				-- Таланты
+		porchi_urona =		"урона от порчи",				-- Таланты
 	},
 	crit_text_colour = {
+		Kriticheskie =		"Критические",					-- Таланты
 		Krit_vystrely =		"Критические выстрелы",			-- Таланты
 		Krit_udary =		"Критические удары",			-- Благословения
 
@@ -64,9 +67,14 @@ local CONFIG = {
 		krit_udarom =		"критическим ударом",			-- Таланты, Благословения
 		krit_udary =		"критические удары",			-- Таланты
 		krit_udarami =		"критическими ударами",			-- Благословения
+		krit_udarah =		"критических ударах",			-- Таланты
+		krit_udara =		"критического удара",			-- Таланты
 		krit_udare =		"критическом ударе",			-- Таланты, Благословения
+		krit_udarov =		"критических ударов",			-- Таланты
+		krit_udar_uron =	"урон критического удара",		-- Таланты
 		krit_udara_uron =	"урону критического удара",		-- Таланты, Благословения
 
+		Krt_uron =			"Крит. урон",					-- Таланты
 		krit_uron =			"критический урон",				-- Таланты, Примечания внизу
 		krit_uronu =		"критическому урону",			-- Таланты, Благословения
 
@@ -77,11 +85,14 @@ local CONFIG = {
 		krit_vystr_uron =	"урону критического выстрела",	-- Благословения
 
 		kritom =			"критическим",					-- Таланты
+		kritickih =			"критических",					-- Таланты
 		kriticheskomu =		"критическому",					-- Благословения
 
 		sh_krit_vystrela =	"шансу критического выстрела",	-- Таланты, Благословения
 		sha_krit_udara =	"шанса критического удара",		-- Таланты
 		sh_krit_udara =		"шансу критического удара",		-- Таланты, Благословения
+
+		Conc_Stimm =		"Стима концентрации",
 	},
 	damage_text_colour = {
 		Uron =				"Урон",							-- Таланты
@@ -90,6 +101,8 @@ local CONFIG = {
 		uronu =				"урону",						-- Таланты, Благословения, Редкости
 	-- urona_warp =			"варп-урона",					-- ?
 		uronu_warp =		"варп-урону",					-- Таланты
+
+		Combat_Stimm =		"Боевого стима",
 	},
 	electrocuted_text_colour = {
 	-- elektroshok =		"электрошок",					-- ?
@@ -103,8 +116,10 @@ local CONFIG = {
 	},
 	health_text_colour = {
 		ran =				"ран",							-- Таланты
+		rana =				"рана",							-- Таланты
 		ranu =				"рану",							-- Таланты
 		rany =				"раны",							-- Таланты
+		Zdorovie =			"Здоровье",						-- Таланты
 		zdorovie =			"здоровье",						-- Таланты
 		zdoroviem =			"здоровьем",					-- Таланты
 		zdoroviu =			"здоровью",						-- Таланты, Редкости
@@ -134,6 +149,9 @@ local CONFIG = {
 	rending_text_colour = {
 		Probivanie =		"Пробивание",					-- Примечания внизу
 		probivaniu =		"пробиванию",					-- Таланты, Благословения
+
+		Cartel_Stim =		"Особый стим Картеля",
+		Cartel_Stimm =		"Особого стима Картеля",
 	},
 	soulblaze_text_colour = {
 		gorenia_dushi =		"горения души",					-- Таланты, Благословения
@@ -145,8 +163,11 @@ local CONFIG = {
 		Oshelomlautsa =		"Ошеломляются",					-- Таланты
 		Oshelomlauschie =	"Ошеломляющие",					-- Таланты
 
+		Oglushenie =		"Оглушение",					-- Таланты
+		Oglushite =			"Оглушите",						-- Таланты
 		oglushit =			"оглушить",						-- Таланты
 		oglushaetes =		"оглушаетесь",					-- Таланты
+		oglushennyh =		"оглушённых",					-- Таланты
 
 		oshelomit =			"ошеломить",					-- Таланты
 		oshelomlena =		"ошеломлена",					-- Благословения
@@ -179,12 +200,14 @@ local CONFIG = {
 		stoikost =			"стойкость",					-- Таланты, Примечания внизу
 
 		TDR =				"СУС",
-	-- sn_ur_stoikosti =	"снижение урона стойкости",		-- ?
+	-- ur_stoikosti =		"снижение урона стойкости",		-- ?
 		snu_ur_stoikosti =	"снижению урона стойкости",		-- Таланты
-	-- stoikosti_urona =	"урона стойкости",				-- ?
+		stoikosti_urona =	"урона стойкости",				-- Таланты
 	},
 	weakspot_text_colour = {
+		Ujazvimye_mesta =	"Уязвимые места",				-- Таланты, Благословения
 		ujazvimye_mesta =	"уязвимые места",				-- Таланты, Благословения
+		ujazvimym_mestam =	"уязвимым местам",				-- Таланты
 		u_mestam_uronu =	"урону по уязвимым местам",		-- Таланты, Благословения
 		ujazvimoe_mesto =	"уязвимое место",				-- Таланты, Благословения
 		u_mestam_uron =		"урон по уязвимым местам",		-- Примечания внизу
@@ -200,6 +223,8 @@ local CONFIG = {
 	},
 		precision_text_colour = {
 			Precision =			"меткости",
+
+			Celerity_Stimm =	"Стима скорости",
 	},
 -- Огрин
 	class_ogryn_text_colour = {
@@ -269,7 +294,7 @@ local CONFIG = {
 			Focus =				"Концентрации",
 			Forceful =			"Неудержимости",
 
-			Shout =				"Крик",						-- Hive Scum
+			Shout =				"Крик",						-- Отребье
 		},
 		focust_text_colour = {
 			Focus_Target =		"Важной цели",
@@ -283,7 +308,7 @@ local CONFIG = {
 
 			Meleejust =			"Судьи-рукопашника",		-- Арбитрес
 
-			Exhausted =			"Истощение",				-- Hive Scum
+			Exhausted =			"Истощение",				-- Отребье
 		},
 		rangedspec_text_colour = {
 			Rangedspec =		"Специалиста-стрелка",
@@ -297,69 +322,87 @@ local CONFIG = {
 	},
 -- Отребье Улья
 	class_scum_text_colour = {
-		cls_scm =			"Отребье Улья",
-		cls_scma =			"Отребья Улья",
-		cls_scm2 =			"Отребьем Улья",
+		cls_scm =			"Отребье улья",
+		cls_scma =			"Отребья улья",
+		cls_scm2 =			"Отребьем улья",
 	},
 		chemtox_text_colour = {
 			Chem_Tox =			"Хим-токсин",
 			Chem_Toxa =			"Хим-токсина",
 			Chem_Toxom =		"Хим-токсином",
+
+			Med_Stimm =			"Мед стима",
 		},
 
 -- ТАЛАНТЫ
 	talents_text_colour = { -- ЖЁЛТЫЙ цвет
-	-- Псайкер
+	-- ПСАЙКЕР
 		Assail =			"Нападение",
-		Brain_rupture =		"Разрыв мозга",
-		Enfeeble =			"Ослабление",
-		Scriers_gaze =		"Взор провидца",
-	-- Ветеран
-		Frag_gren =			"Фраг-гранату",
-		Fragm_gren =		"Осколочная граната",
-		Fragmu_grenu =		"Осколочную гранату",
-		Rangd_stnc =		"Стойку дальнего боя",
-	-- Изувер
-		Sv_relikviu =		"Священную реликвию",
-		Stun_gren =			"Оглушающая граната",
-		Oglush_granatu =	"Оглушающую гранату",
-	-- Огрин
-		Att_Seeker =		"Провокатор",
-	-- Арбитрес
-		Electro_mine =		"Вольтаическую шоковую мину",
-		Arbites_gren =		"Гранату арбитрес",
-		Nuncio_akvilu =		"Нунцио-аквилу",
-		BreakZLined =		"Прорыв вражеского строя",
-		BreakZLine =		"Прорыва вражеского строя",
-		Stojku_bicha =		"Стойку бичевателя",
-	-- Отребье
-		Blind_greny =		"Ослепляющие гранаты",
-		Desperady =			"Сорвиголовы",
-
--- ИСКУПЛЕНИЯ
-		Base_tut_p =		"Базовое обучение",
-		Curio_p =			"Реликвий",
-		Omnissia_p =		"Святилище Омниссии",
-		Prologue_p =		"Пролог",
-		Sir_melk_p =		"Реквизиториум сира Мелка",
-
-	-- Псайкер
 		assail =			"Нападение",
+		Brain_rupture =		"Разрыв мозга",
 		bburst =			"Взрыва мозга",
 		bburst0 =			"Взрыв мозга",
 		bburst1 =			"Разрыв мозга",
 		bburst2 =			"Разрыва мозга",
 		disrdest =			"Прерывание судьбы",
+		Enfeeble =			"Ослабление",
 		empsionics =		"Усиленные псионики",
 		kinetpres =			"Кинетическое присутствие",
 		prescience =		"Предвидение",
 		psy_wrath =			"Гнев психокинетика",
 		psy_wrath2 =		"Сбрасывающий вопль",
+		Scriers_gaze =		"Взор провидца",
 		scriersgaze =		"Взор провидца",
 		seerspres =			"Присутствие провидца",
 		smite =				"Сокрушение",
 		telekshii =			"Телекинетический щит",
-	-- Огрин
+	-- ВЕТЕРАН
+		closenkill =		"Приблизиться и убить",
+		exec_stan =			"Стойка палача",
+		Frag_gren =			"Фраг-гранату",
+		Fragm_gren =		"Осколочная граната",
+		Fragmu_grenu =		"Осколочную гранату",
+		fcs_trg =			"Важная цель!",
+		firetim =			"Боевая группа",
+		frag_gr =			"Фраг-гранаты",
+		infiltr =			"Проникновение",
+		krak_gr =			"Крак-гранату",
+		volley_fire =		"Залповый огонь",
+		Rangd_stnc =		"Стойку дальнего боя",
+		scavenger =			"Сборщик",
+		shfrag_gr =			"Крошащей фраг-гранаты",
+		smok_gr =			"Дымовой гранаты",
+		snipcon =			"Концентрация снайпера",
+		survivalist =		"Выживальщик",
+		voiceoc =			"Командный голос",
+		weapspec =			"Специалист по оружию",
+	-- ИЗУВЕР
+		Sv_relikviu =		"Священную реликвию",
+		Stun_gren =			"Оглушающая граната",
+		Oglush_granatu =	"Оглушающую гранату",
+		beaconop =			"Маяк очищения",
+		benedict =			"Благословение",
+		blazingp =			"Пылающая благочестивость",
+		chast_wckd =		"Кара нечестивых",
+		chast_wckd2 =		"Кары нечестивых",
+		chorusosf =			"Хор духовной стойкости",
+		inexor =			"Неумолимый приговор",
+		fanrage =			"Ярость",
+		fire_gren =			"Сжигающей гранаты",
+		fury_faithful =		"Ярость верующего",
+		holy_revenant =		"Святой призрак",
+		klinvery =			"Клинки веры",
+		loner =				"Единоличник",
+		martydom =			"Мученичества",
+		momentum =			"Моментума",
+		shock_gren =		"Оглушающе-штурмовой гранаты",
+		shock_gren0 =		"Оглушающе-штурмовую гранату",
+		shock_gren1 =		"Оглушающую гранату",
+		shock_gren2 =		"Оглушающие гранаты",
+		shroudf =			"Покров",
+		zealous =			"Ревностный",
+	-- ОГРИН
+		Att_Seeker =		"Провокатор",
 		big_box =			"Большая коробка боли",
 		big_box2 =			"Бросай бомбы!",
 		bigfriendro =		"Большой дружелюбный валун",
@@ -376,42 +419,48 @@ local CONFIG = {
 		loyalprot =			"Верный защитник",
 		pbbarrage =			"Беспощадный обстрел в упор",
 		stayclose =			"Держись рядом!",
-	-- Veteran
-		closenkill =		"Приблизиться и убить",
-		exec_stan =			"Стойка палача",
-		fcs_trg =			"Важная цель!",
-		firetim =			"Боевая группа",
-		frag_gr =			"Фраг-гранаты",
-		infiltr =			"Проникновение",
-		krak_gr =			"Крак-гранату",
-		volley_fire =		"Залповый огонь",
-		scavenger =			"Сборщик",
-		smok_gr =			"Дымовой гранаты",
-		snipcon =			"Концентрация снайпера",
-		survivalist =		"Выживальщик",
-		voiceoc =			"Командный голос",
-		weapspec =			"Специалист по оружию",
-	-- Zealot
-		beaconop =			"Маяк очищения",
-		benedict =			"Благословение",
-		blazingp =			"Пылающая благочестивость",
-		chast_wckd =		"Кара нечестивых",
-		chast_wckd2 =		"Кары нечестивых",
-		chorusosf =			"Хор духовной стойкости",
-		inexor =			"Неумолимый приговор",
-		fanrage =			"Ярость",
-		fire_gren =			"Огненной гранаты",
-		fury_faithful =		"Ярость верующего",
-		holy_revenant =		"Святой призрак",
-		klinvery =			"Клинки веры",
-		loner =				"Единоличник",
-		martydom =			"Мученичества",
-		momentum =			"Моментума",
-		shock_gren =		"Оглушающе-штурмовой гранаты",
-		shock_gren0 =		"Оглушающе-штурмовую гранату",
-		shock_gren1 =		"Оглушающую гранату",
-		shock_gren2 =		"Оглушающие гранаты",
-		shroudf =			"Покров",
+	-- АРБИТРЕС
+		Arbites_gren =		"Гранату арбитрес",
+		Arbites_grenoi =	"Гранатой арбитрес",
+		BreaknDissent =		"Уничтожение инакомыслия",
+		BreakZLined =		"Прорыв вражеского строя",
+		BreakZLine =		"Прорыва вражеского строя",
+		CastigatorSt =		"Стойка карателя",
+		Electro_mine0 =		"Вольтаическая шоковая мина",
+		Electro_mine =		"Вольтаическую шоковую мину",
+		ExecutOrder =		"Приказ на казнь",
+		Forceful =			"Неудержимый",
+		Nuncio_aquila =		"Нунцио-аквила",
+		Nuncio_akvilu =		"Нунцио-аквилу",
+		PartozSquad =		"Часть отряда",
+		RemoteDeton =		"Дистанционный подрыв",
+		RuthlEffcy =		"Безжалостная эффективность",
+		Stojku_bicha =		"Стойку бичевателя",
+		TerminusWarr =		"Ордер Терминус",
+	-- ОТРЕБЬЕ
+		AdrenFrenz =		"Адреналиновое безумие",
+		Anarchist =			"Анархист",
+		Blinder =			"Ослепитель",
+		Blind_greny =		"Ослепляющие гранаты",
+		BoomBringer =		"Бабахер",
+		ChemDepend =		"Хим-зависимость",
+		ChemGrenade =		"Хим-граната",
+		Desperad =			"Безбашенный",
+		Desperady =			"Безбашенного",
+		Gunslinger =		"Стрелок",
+		Rampag =			"Ярость!",
+		Ruffian =			"Хулиган",
+		StimmSupply =		"Стим-поддержка",
+		VulturesMark =		"Метка стервятника",
+		Viscosity =			"Вязкость",
+
+-- ИСКУПЛЕНИЯ
+		Base_tut_p =		"Базовое обучение",
+		Curio_p =			"Реликвий",
+		Omnissia_p =		"Святилище Омниссии",
+		PthOTrst_p =		"Пути доверия",
+		Prologue_p =		"Пролог",
+		Sir_melk_p =		"Реквизиториум сира Мелка",
 	},
 
 -- СЛОЖНОСТЬ
@@ -488,6 +537,7 @@ local function create_phrs_ru(colors_ru)
 
 	return {
 		Can_appl_thr_shlds =		Dot_green.." Накладывается через щиты.",
+		Can_appl_thr_shldsb =		Dot_green.." Накладывается через щит бастиона.",
 		Can_be_refr =				Dot_green.." Обновляется во время действия. ",
 		Can_be_refr_drop_1 =		Dot_green.." Заряды обновляются во время действия и сбрасываются по одному. ",
 		Can_proc_mult = 			Dot_green.." Может срабатывать несколько раз за удар при "..CKWord("рассечении", "rassechenii_rgb_ru").." нескольких врагов.\n",
@@ -514,7 +564,7 @@ local function create_phrs_ru(colors_ru)
 -- Огрин
 		Doesnt_Stack_Ogr_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
 		Doesnt_Stack_Ogr_abil =		Dot_red.." Не суммируется с эффектом такого же таланта другого "..CKWord("Огрина", "cls_ogra_rgb_ru")..".",
--- Hive Scum
+-- Отребье
 		Doesnt_Stack_Scm_Aura =		Dot_red.." Не суммируется с эффектом такой же ауры другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 		Doesnt_Stack_Scm_eff =		Dot_red.." Не суммируется с таким же ослаблением от другого "..CKWord("Отребья Улья", "cls_scma_rgb_ru")..".",
 	}
@@ -534,6 +584,7 @@ local function create_nts_ru(colors_ru)
 		Impact_note =		Dot_green.." "..CKWord("Выведение из равновесия", "Vyved_ravnovesia_rgb_ru").." увеличивает эффективность "..CKWord("ошеломления", "oshelomlenia_rgb_ru").." врагов.",
 		Pwr_note =			Dot_green.." "..CKWord("Сила", "Sila_rgb_ru").." повышает "..CKWord("урон", "uron_rgb_ru")..", "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." и "..CKWord("рассечение", "rassechenie_rgb_ru")..".",
 		Rend_note =			Dot_green.." "..CKWord("Пробивание", "Probivanie_rgb_ru").." брони повышает ваш "..CKWord("урон", "uron_rgb_ru")..".",
+		Weaksp_note =			Dot_green.." "..CKWord("Уязвимые места", "Ujazvimye_mesta_rgb_ru").." - это головы. У Чудовища Нургла это пузырь на спине.",
 	}
 end
 

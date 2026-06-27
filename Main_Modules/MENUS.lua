@@ -1,4 +1,5 @@
 ---@diagnostic disable: undefined-global
+-- FOR TRANSLATORS: If the translation of a line of dialogue, a name, etc. in the game is correct in your localization, DO NOT DUPLICATE the line here. I only changed something in the Russian localization if I wasn't satisfied with the official translation, so I marked "ruof" (the official Russian translation) and then wrote my correct version in the lines below. Don't burden the game with unnecessary duplicate data in the mod and burden yourself with unnecessary work.
 
 local mod = get_mod("Enhanced_descriptions")
 
@@ -35,80 +36,84 @@ local menus_templates = {
 		-- },
 
 	--[+ Plasteel +]--
-	-- ["loc_currency_name_plasteel"] = {
-		-- en = "Plasteel",
-		-- ru = "Пласталь",
-	-- },
+	["loc_currency_name_plasteel"] = {
+		ru = "Пласталь",
+	},
 	--[+  +]--
-	-- ["loc_pickup_large_metal"] = {
-		-- en = "",
-		-- ru = "Балшой пиластал",
-	-- },
+	["loc_pickup_large_metal"] = {
+		ru = "Большой кусок пластали",
+	},
 	--[+  +]--
-	-- ["loc_pickup_small_metal"] = {
-		-- en = "",
-		-- ru = "Малой пиластал",
-	-- },
+	["loc_pickup_small_metal"] = {
+		ru = "Малый кусок пластали",
+	},
 	--[+ Diamantine +]--
-	-- ["loc_currency_name_diamantine"] = {
-		-- en = "Diamantine",
-		-- ru = "Диамантин",
-	-- },
+	["loc_currency_name_diamantine"] = {
+		ru = "Диамантин",
+	},
 	--[+  +]--
-	-- ["loc_pickup_large_platinum"] = {
-		-- en = "",
-		-- ru = "Балшой дьямантин",
-	-- },
+	["loc_pickup_large_platinum"] = {
+		ru = "Большой кусок диамантина",
+	},
 	--[+  +]--
-	-- ["loc_pickup_small_platinum"] = {
-		-- en = "",
-		-- ru = "Малой дьямантин",
-	-- },
+	["loc_pickup_small_platinum"] = {
+		ru = "Малый кусок диамантина",
+	},
+
+-- WEAPON INSPECT
+	--[+ Examine +]--
+	["loc_inspect_input_description_alternate_inspect_start"] = {
+		ru = "Проверить магазин",
+	},
+	--[+ Inspect +]--
+	["loc_inspect_input_description_alternate_inspect_stop"] = {
+		ru = "Осмотреть оружие",
+	},
 
 --[+ ++MELK - 梅爾克 - 梅尔克大人的采购店++ +]--
---[+ +Contracts - 合約 - 合同+ +]-- Highlighted numbers
-	--[+ Pick up Х kind +]--
-	["loc_contracts_task_label_collect_pickups"] = {
-		en = "Pick up "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
-		ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." штук",
-		["zh-tw"] = "撿起 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 撿起[x]本[聖典/法術書]
-		["zh-cn"] = "拾取 "..CNumb("{count:%s}", "counts_var_rgb").." 本{kind:%s}", -- 拾取 X 本 kind
-	},
-	--[+ Kill Х Monstrosities +]--
-	["loc_contracts_task_label_kill_bosses"] = {
-		en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
-		ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-		["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸
-		["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
-	},
-	--[+ Collect Х kind +]--
-	["loc_contracts_task_label_collect_resources"] = {
-		en = "Collect "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
-		ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." единиц", -- Пласталь/Диамантин: собрать 200/750 единиц
-		["zh-tw"] = "收集 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 蒐集[x]數量
-		["zh-cn"] = "收集 "..CNumb("{count:%d}", "countd_var_rgb").." {kind:%s}", -- 收集 X 资源
-	},
-	--[+ Kill Х enemy_type with weapon_type +]--
-	["loc_contracts_task_label_kill_minions"] = {
-		en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
-		ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
-		["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
-		["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
-	},
-	--[+ Complete Х missions +]--
-	["loc_contracts_task_label_complete_missions"] = {
-		en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
-		ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
-		["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
-		["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
-	},
-	--[+ Complete Х missions with no player deaths +]--
-	["loc_contracts_task_label_complete_mission_no_death"] = {
-		en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
-		ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
-		["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
-		["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
-	},
+	--[+ +Contracts - 合約 - 合同+ +]-- Highlighted numbers
+		--[+ Pick up Х kind +]--
+		["loc_contracts_task_label_collect_pickups"] = {
+			en = "Pick up "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
+			ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." штук",
+			["zh-tw"] = "撿起 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 撿起[x]本[聖典/法術書]
+			["zh-cn"] = "拾取 "..CNumb("{count:%s}", "counts_var_rgb").." 本{kind:%s}", -- 拾取 X 本 kind
+		},
+		--[+ Kill Х Monstrosities +]--
+		["loc_contracts_task_label_kill_bosses"] = {
+			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
+			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸
+			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
+		},
+		--[+ Collect Х kind +]--
+		["loc_contracts_task_label_collect_resources"] = {
+			en = "Collect "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}",
+			ru = "{kind:%s}: собрать "..CNumb("{count:%s}", "counts_var_rgb").." единиц", -- Пласталь/Диамантин: собрать 200/750 единиц
+			["zh-tw"] = "收集 "..CNumb("{count:%s}", "counts_var_rgb").." {kind:%s}", -- 蒐集[x]數量
+			["zh-cn"] = "收集 "..CNumb("{count:%d}", "countd_var_rgb").." {kind:%s}", -- 收集 X 资源
+		},
+		--[+ Kill Х enemy_type with weapon_type +]--
+		["loc_contracts_task_label_kill_minions"] = {
+			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
+			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
+			["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
+			["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
+		},
+		--[+ Complete Х missions +]--
+		["loc_contracts_task_label_complete_missions"] = {
+			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
+			ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
+			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
+		},
+		--[+ Complete Х missions with no player deaths +]--
+		["loc_contracts_task_label_complete_mission_no_death"] = {
+			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
+			ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
+			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
+		},
 	--[+ Melk's Intro +]--
 	["loc_contract_view_intro_description"] = {
 		-- en = "Well? What is it you want?",
@@ -184,15 +189,15 @@ local menus_templates = {
 --[+ +HADRON - 欧姆尼塞亚神龛+ +]--
 	--[+ Max Rarity reached! +]
 	["loc_crafting_error_no_consecrate"] = {
-		en = "Max Rarity reached!",
-		-- ru = "Достигнут максимум редкости!",
+		-- en = "Max Rarity reached!",
+		ru = "Достигнут максимум редкости!",
 		["zh-tw"] = "以聖化至最高稀有度!", -- 已達最高稀有度。
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
-		en = "Max Power reached!",
-		-- ru = "Достигнут максимум силы!",
+		-- en = "Max Power reached!",
+		ru = "Достигнут максимум силы!",
 		["zh-tw"] = "以強化至最高等級!",  -- 已達最高升級級別。
 		["zh-cn"] = "已达到最高等级。",
 	},
@@ -233,6 +238,7 @@ local menus_templates = {
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
+
 --[+ ++MAIN MENU++ +]--
 	--[+ Account Wallet +]--
 	["loc_main_menu_account_wallet_title"] = {
@@ -257,6 +263,13 @@ local menus_templates = {
 		-- ru = , -- руоф Предыдущие задания
 		["zh-tw"] = "歷史任務", -- 歷史任務
 	},
+	--[+ STIMM LAB +]--
+	["loc_broker_stimm_builder_view_display_name"] = {
+		-- en = "Stimm Lab",
+		ru = "Стим лаба", -- руоф Стимуляторы
+	},
+
+
 --[+ +MISSIONS MENU++]
 	--[+  +]--
 	-- [""] = {
@@ -291,7 +304,7 @@ local menus_templates = {
 		["zh-tw"] = "{killer:%s} 擊殺 {victim:%s}",
 	},
 
---[+ +TREAT - СЛОЖНОСТЬ - 威胁度等级+ +]--
+--[+ +TREAT - СЛОЖНОСТЬ - 威胁度等级+ +]-- 
 	--[+ SEDITION +]--
 	-- ["loc_mission_board_danger_lowest"] = {
 		-- en = COLORS_KWords.sedition_rgb, -- Green -- ui_green_light
@@ -300,40 +313,40 @@ local menus_templates = {
 		-- ["zh-cn"] = COLORS_KWords_zh_cn.sedition_rgb_zh_cn, -- 煽动
 	-- },
 	-- [+ UPRISING +]--
-	["loc_mission_board_danger_low"] = {
-		en = CKWord("Uprising", "uprising_rgb"), -- Light blue -- ui_difficulty_1
-		ru = CKWord("Восстание", "uprising_rgb_ru"), -- Восстание
+	-- ["loc_mission_board_danger_low"] = {
+		-- en = CKWord("Uprising", "uprising_rgb"), -- Light blue -- ui_difficulty_1
+		-- ru = CKWord("Восстание", "uprising_rgb_ru"), -- Восстание
 		-- ["zh-tw"] = CKWord("起義", "uprising_rgb_tw"), -- 起義
 		-- ["zh-cn"] = CKWord("起义", "uprising_rgb_zh_cn"), -- 起义
-	},
+	-- },
 	-- [+ MALICE +]--
-	["loc_mission_board_danger_medium"] = {
-		en = CKWord("Malice", "malice_rgb"), -- Light green -- ui_difficulty_2
-		ru = CKWord("Злоба", "malice_rgb_ru"), -- Злоба
+	-- ["loc_mission_board_danger_medium"] = {
+		-- en = CKWord("Malice", "malice_rgb"), -- Light green -- ui_difficulty_2
+		-- ru = CKWord("Злоба", "malice_rgb_ru"), -- Злоба
 		-- ["zh-tw"] = CKWord("惡毒", "malice_rgb_tw"), -- 惡毒
 		-- ["zh-cn"] = CKWord("憎恶", "malice_rgb_zh_cn"), -- 憎恶
-	},
+	-- },
 	-- [+ HERESY +]--
-	["loc_mission_board_danger_high"] = {
-		en = CKWord("Heresy", "heresy_rgb"), -- Yellow -- ui_difficulty_3
-		ru = CKWord("Ересь", "heresy_rgb_ru"), -- Ересь
+	-- ["loc_mission_board_danger_high"] = {
+		-- en = CKWord("Heresy", "heresy_rgb"), -- Yellow -- ui_difficulty_3
+		-- ru = CKWord("Ересь", "heresy_rgb_ru"), -- Ересь
 		-- ["zh-tw"] = CKWord("異端", "heresy_rgb_tw"), -- 異端
 		-- ["zh-cn"] = CKWord("异端", "heresy_rgb_zh_cn"), -- 异端
-	},
+	-- },
 	-- [+ DAMNATION +]--
-	["loc_mission_board_danger_highest"] = {
-		en = CKWord("Damnation", "damnation_rgb"), -- Orange -- ui_difficulty_4
-		ru = CKWord("Проклятие", "damnation_rgb_ru"), -- Проклятие
+	-- ["loc_mission_board_danger_highest"] = {
+		-- en = CKWord("Damnation", "damnation_rgb"), -- Orange -- ui_difficulty_4
+		-- ru = CKWord("Проклятие", "damnation_rgb_ru"), -- Проклятие
 		-- ["zh-tw"] = CKWord("詛咒", "damnation_rgb_tw"), -- 詛咒
 		-- ["zh-cn"] = CKWord("诅咒", "damnation_rgb_zh_cn"), -- 诅咒
-	},
+	-- },
 	-- [+ AURIC +]--
-	["loc_group_finder_difficulty_auric"] = {
-		en = CKWord("Auric", "auric_rgb"), -- Red -- ui_difficulty_5
-		ru = CKWord("Золото", "auric_rgb_ru"), -- Золото
+	-- ["loc_group_finder_difficulty_auric"] = {
+		-- en = CKWord("Auric", "auric_rgb"), -- Red -- ui_difficulty_5
+		-- ru = CKWord("Золото", "auric_rgb_ru"), -- Золото
 		-- ["zh-tw"] = CKWord("詛咒", "auric_rgb_tw"), -- 詛咒
 		-- ["zh-cn"] = CKWord("诅咒", "auric_rgb_zh_cn"), -- 诅咒
-	},
+	-- },
 
 --[+ ++INVENTORY++ +]--
 	-- [+ Curios - 珍品 +]--
@@ -417,6 +430,28 @@ local menus_templates = {
 		["zh-tw"] = "神化", -- 紅色
 		["zh-cn"] = "神圣", -- 红
 	},
+	
+--[+ ++STIMS++ +]--
+	--[+ Celerity Stimm - Стим скорости +]--
+	-- ["loc_pickup_syringe_pocketable_4"] = {
+		-- en = "Celerity Stimm",
+		-- ru = "Стим скорости", -- Синий
+	-- },
+	--[+ Combat Stimm - Боевой стим +]--
+	-- ["loc_pickup_syringe_pocketable_3"] = {
+		-- en = "Combat Stimm",
+		-- ru = "Боевой стим", -- Красный
+	-- },
+	--[+ Concentration Stimm - Стим концентрации +]--
+	-- ["loc_pickup_syringe_pocketable_2"] = {
+		-- en = "Concentration Stimm",
+		-- ru = "Стим концентрации", -- Жёлтый
+	-- },
+	--[+ Med Stimm - Мед стим +]--
+	-- ["loc_pickup_pocketable_1"] = {
+		-- en = "Med Stimm",
+		-- ru = "Мед стим", -- Зелёный
+	-- },
 
 --[+ ++WEAPON CARD - КАРТОЧКА ОРУЖИЯ++ +]--
 --[+ +Weapon - Оружие+ +]--
