@@ -3,7 +3,7 @@
 ## Progress
 
 - [x] Main_Modules/TALENTS/TALENTS_Arbites.lua  (83/83 entries, git diff --check PASS)
-- [ ] Main_Modules/TALENTS/TALENTS_Ogryn.lua    (entries TBD)
+- [x] Main_Modules/TALENTS/TALENTS_Ogryn.lua    (88/88 entries, git diff --check PASS)
 - [ ] Main_Modules/TALENTS/TALENTS_Psyker.lua   (entries TBD)
 - [ ] Main_Modules/TALENTS/TALENTS_Scum.lua     (entries TBD)
 - [ ] Main_Modules/TALENTS/TALENTS_Veteran.lua  (entries TBD)
@@ -14,16 +14,15 @@ Total entries across all files: ~503
 ## Current Position
 
 - File: Main_Modules/TALENTS/TALENTS_Ogryn.lua
-- Last completed entry: loc_talent_bonebreaker_grenade_super_armor_explosion_desc (Ogryn BLITZ 3, entry 5/88)
-- Next entry: loc_talent_ogryn_big_box_of_hurt_more_bombs_desc (Ogryn BLITZ 3-1, entry 6)
-- Ogryn Batch 1 (entries 1-5): DONE, git diff --check PASS
-- Note: PowerShell char-level fix needed for certain characters (avoid \uXXXX in JSON for 霰/流氓/劊/瘟/箱)
+- Last completed entry: loc_talent_ogryn_carapace_armor_any_damage_desc (KEYSTONE 2, entry 30/88)
+- Ogryn Batches 1-6: DONE (30 entries), all git diff --check PASS
 
 ## Manual Review Required
 
 | File | Key | Issue | Suggested zh-tw | Reason |
 |---|---|---|---|---|
 | TALENTS_Arbites.lua | loc_talent_ability_adamant_grenade_description | Cyber-Mastiff 無固定譯名 | 電子獒犬 | 遊戲官方未確認 |
+| TALENTS_Ogryn.lua | loc_ability_ogryn_grenade_box_description | 一些敵人名稱無官方繁中 | 流氓狂戰士/疤甲劊子手 等 | 根據遊戲術語推測 |
 
 ## Terminology Decisions
 
