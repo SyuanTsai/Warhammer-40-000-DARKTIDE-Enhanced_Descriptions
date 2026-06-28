@@ -963,14 +963,14 @@ local names_talents_blessings_templates = {
 		--[+ Reload Boost Low +]-- ruof Усиление перезарядки	20.04.2026
 		-- Ogryn 1
 		["loc_talent_reload_speed_low"] = {
-			ru = "Reload Boost Low",
+			en = "Reload Boost Low",
 			ru = "Усиление скорости перезарядки малое",
 			-- ["zh-tw"] = "換彈速度增幅(小)",
 		},
 		--[+ Reload Boost Medium +]-- ruof Усиление перезарядки	20.04.2026
 		-- Veteran 1
 		["loc_talent_reload_speed_medium"] = {
-			ru = "Reload Boost Medium",
+			en = "Reload Boost Medium",
 			ru = "Усиление скорости перезарядки среднее",
 			-- ["zh-tw"] = "換彈速度增幅(中)",
 		},
