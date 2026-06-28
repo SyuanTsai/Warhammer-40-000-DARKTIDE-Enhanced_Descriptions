@@ -36,7 +36,7 @@ local arbites_localizations = {
 			..Dot_nc.." Максимальный радиус взрыва: "..CNumb("10", "n_10_rgb").." метров.\n"
 			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
-		["zh-tw"] = "投擲一枚"..CKWord("仲裁手榴彈", "Arbites_gren_rgb_tw").."，短暫延遲後爆炸。\n"
+		["zh-tw"] = "投擲一枚"..CKWord("法務官手榴彈", "Arbites_gren_rgb_tw").."，短暫延遲後爆炸。\n"
 			..Dot_nc.." {charges:%s} 最大手榴彈數量。\n"
 			.."\n"
 			..Dot_green.." 爆炸中心基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1500", "n_1500_rgb").."。\n"
