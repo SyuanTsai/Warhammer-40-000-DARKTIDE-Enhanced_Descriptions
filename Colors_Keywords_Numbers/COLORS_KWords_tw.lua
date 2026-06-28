@@ -248,7 +248,7 @@ local CONFIG = {
 		shroudf = "隱秘領域",
 		momentum = "勢能",
 		-- Arbites
-		Arbites_gren = "仲裁手榴彈",
+		Arbites_gren = "法務官手榴彈",
 		BreakZLine = "突破防線",
 		-- Psyker
 		Assail = "攻擊",
