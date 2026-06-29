@@ -4,7 +4,7 @@
 
 - [x] Main_Modules/TALENTS/TALENTS_Arbites.lua  (83/83 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Ogryn.lua    (88/88 entries, git diff --check PASS)
-- [ ] Main_Modules/TALENTS/TALENTS_Psyker.lua   (entries TBD)
+- [x] Main_Modules/TALENTS/TALENTS_Psyker.lua   (79/79 entries, git diff --check PASS)
 - [ ] Main_Modules/TALENTS/TALENTS_Scum.lua     (entries TBD)
 - [ ] Main_Modules/TALENTS/TALENTS_Veteran.lua  (entries TBD)
 - [ ] Main_Modules/TALENTS/TALENTS_Zealot.lua   (entries TBD)
