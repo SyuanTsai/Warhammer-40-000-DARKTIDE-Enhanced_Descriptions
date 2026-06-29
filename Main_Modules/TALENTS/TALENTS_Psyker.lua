@@ -407,6 +407,7 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 每個被 {talent_name:%s} 命中的救人減少 "..CNumb("-", "n_minus_rgb").." {warp_generation:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成。\n"
 			..Dot_nc.." 最多減少 "..CNumb("-", "n_minus_rgb").." {max_stacks:%s}"..CNumb("%", "pc_rgb").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
+	},
 -- !!! Removed " -". Fix in the Enhanced_Descriptions.lua file !!! --
 	--[+ ABILITY 1-3 - Creeping Flames +]--	26.03.2026
 	["loc_talent_psyker_warpfire_on_shout_desc"] = { -- talent_name: Venting Shriek, min_stacks: 1 -, warpfire_stacks: 6, Stack(s)->Stacks, +colors
@@ -1444,13 +1445,13 @@ local psyker_localizations = {
 			..Dot_green.." Взрыв от перегрузки "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." больше не выводит вас из строя, но забирает "..CNumb("1", "n_1_rgb").." сегмент "..CKWord("здоровья", "zdorovia_rgb_ru")..", нанося вам "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".\n"
 			..Dot_green.." Если взрыв убьёт элитного врага, вы не получите "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".",
 		["zh-tw"] = "超載爆炸（達 "..CNumb("100%", "pc_100_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 後）獲得：\n"
-			..Dot_green.." {overload_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."\uff0c\n"
+			..Dot_green.." {overload_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {overload_radius:%s} 爆炸半徑。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."\uff1a["..CNumb("600", "n_600_rgb").." - "..CNumb("100", "n_100_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").." - "..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
-			..Dot_green.." "..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").." 造成的超載不再打扱，但會消耗 "..CNumb("1", "n_1_rgb").." 個 "..CKWord("生命", "Health_rgb_tw").." 段超載炸啊倒，並受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."\u3002\n"
-			..Dot_green.." 若爆炸擊殺精英救人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."\u3002",
+			..Dot_green.." "..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").." 造成的超載不再打扱，但會消耗 "..CNumb("1", "n_1_rgb").." 個 "..CKWord("生命", "Health_rgb_tw").." 段超載炸啊倒，並受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。\n"
+			..Dot_green.." 若爆炸擊殺精英救人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
 	},
 	--[+ Passive 32 - Warp Ghost +]--	26.03.2026
 	["loc_talent_psyker_stat_mix_desc"] = { -- peril_reduction: -80%, stamina: +2, toughness_replenish: +25%, +colors
@@ -1483,7 +1484,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Срабатывает при попадании в щиты.\n"
 			..Dot_red.." Срабатывает только раз за выстрел, независимо от количества поражённых целей.",
-		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."\u3002\n"
+		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 命中盾牧時觸發。\n"
 			..Dot_red.." 每次射擊只觸發一次，無論命中多少救人。",
