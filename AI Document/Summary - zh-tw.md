@@ -6,7 +6,7 @@
 - [x] Main_Modules/TALENTS/TALENTS_Ogryn.lua    (88/88 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Psyker.lua   (79/79 entries, git diff --check PASS)
 - [ ] Main_Modules/TALENTS/TALENTS_Scum.lua     (entries TBD)
-- [ ] Main_Modules/TALENTS/TALENTS_Veteran.lua  (entries TBD)
+- [x] Main_Modules/TALENTS/TALENTS_Veteran.lua  (75/75 entries, git diff --check PASS)
 - [ ] Main_Modules/TALENTS/TALENTS_Zealot.lua   (entries TBD)
 
 Total entries across all files: ~503
