@@ -44,12 +44,12 @@ local ogryn_localizations = {
 			.."對單一敵人造成大量"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 衝擊基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1850", "n_1850_rgb").."。\n"
-			..Dot_green.." 即殺：槍手、霰彈槍手、流氓狂戰士、疤甲劊子手、\n"
-			.."變種人、瘟疫獵犬、炸彈瘟疫人、腐化者。\n"
+			..Dot_green.." 擊殺：槍手、霰彈槍手、渣滓狂怒者、血痂重錘兵、\n"
+			.."變種人、瘟疫獵犬、瘟疫爆者、腐蝕者。\n"
 			..Dot_green.." 對不屈敵人的"..CKWord("傷害", "Damage_rgb_tw").."略高。\n"
 			..Dot_red.." 對甲殼護甲"..CKWord("傷害", "Damage_rgb_tw").."極低。\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（怪物及首領/雙子除外）。\n"
+			.."（巨獸及隊長/雙子除外）。\n"
 			..Dot_nc.." 拾取手榴彈時補滿所有彈箱。",
 	},
 	--[+ BLITZ 1 - Big Friendly Rock +]--	26.03.2026
@@ -92,12 +92,12 @@ local ogryn_localizations = {
 			..Dot_nc.." 最多同時持有 {max_charges:%s} 塊。\n"
 			.."\n"
 			..Dot_green.." 衝擊基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1200", "n_1200_rgb").."。\n"
-			..Dot_green.." 即殺：槍手、霰彈槍手、流氓狂戰士、變種人、瘟疫獵犬、炸彈瘟疫人、腐化者。\n"
+			..Dot_green.." 擊殺：槍手、霰彈槍手、渣滓狂怒者、變種人、瘟疫獵犬、瘟疫爆者、腐蝕者。\n"
 			.."\n"
 			.."造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，效果因目標而異：\n"
 			..Dot_green.." 一般敵人：必定"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			..Dot_green.." 怪物：僅命中"..CKWord("弱點命中", "Weakspothits_rgb_tw").."有效。\n"
-			..Dot_green.." 首領/雙子：僅在無虛空護盾時有效。\n"
+			..Dot_green.." 巨獸：僅命中"..CKWord("弱點命中", "Weakspothits_rgb_tw").."有效。\n"
+			..Dot_green.." 隊長/雙子：僅在無虛空護盾時有效。\n"
 			.."\n"
 			..Dot_red.." 歐格林無法拾取手榴彈彈藥。",
 	},
@@ -146,10 +146,10 @@ local ogryn_localizations = {
 			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."-"..CNumb("1250", "n_1250_rgb").."]"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（含怪物、首領/雙子，後者僅在無虛空護盾時有效）。\n"
+			.."（含巨獸、隊長/雙子，後者僅在無虛空護盾時有效）。\n"
 			.."\n"
-			..Dot_green.." 爆炸即殺大多數敵人，下列除外：\n"
-			.."局子手、碾壓者、壁壘兵、駆役者、首領/雙子、怪物。",
+			..Dot_green.." 爆炸擊殺大多數敵人，下列除外：\n"
+			.."重錘兵、碾壓者、 堡壘、瘟疫行者、隊長/雙子、巨獸。",
 	},
 	--[+ BLITZ 3 - Bombs Away! +]--	26.03.2026
 	["loc_talent_bonebreaker_grenade_super_armor_explosion_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
@@ -187,11 +187,11 @@ local ogryn_localizations = {
 			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..Dot_green.." 衝擊基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1850", "n_1850_rgb").."。\n"
-			..Dot_green.." 即殺：槍手、霰彈槍手、流氓狂戰士、疤甲劊子手、\n"
-			.."變種人、瘟疫獵犬、炸彈瘟疫人、腐化者。\n"
+			..Dot_green.." 擊殺：槍手、霰彈槍手、渣滓狂怒者、血痂重錘兵、\n"
+			.."變種人、瘟疫獵犬、瘟疫爆者、腐蝕者。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（含怪物、首領/雙子，後者僅在無虛空護盾時有效）。\n"
+			.."（含巨獸、隊長/雙子，後者僅在無虛空護盾時有效）。\n"
 			.."\n"
 			..Dot_nc.." 拾取手榴彈時補滿所有彈箱。",
 	},
@@ -299,7 +299,7 @@ local ogryn_localizations = {
 			..Dot_green.." {suppression:%s} 壓制效果。\n"
 			..Dot_nc.." 可被壓制的敵人類型：裝甲咊瘘者、咊瘘者、\n"
 			.."沙砾槍手、沙砾潛行者、無線電操作員、收割者、\n"
-			.."疤甲槍手、疤甲射手、疤甲潛行者。\n"
+			.."血痂槍手、血痂射手、血痂潛行者。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"),
 		-- fr = "{suppression:%s} de Suppression infligé.\n{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les ennemis sous suppression pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_3_rgb_fr,
@@ -342,8 +342,8 @@ local ogryn_localizations = {
 			.."\n"
 			.."衝刺：\n"
 			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 米。\n"
-			..Dot_red.." 遇到甲殼/不屈護甲的敵人、怪物，\n"
-			.."或首領/雙子的虛空護盾時停止。",
+			..Dot_red.." 遇到甲殼/不屈護甲的敵人、巨獸，\n"
+			.."或隊長/雙子的虛空護盾時停止。",
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
 	},
 	--[+ ABILITY 1 - Indomitable +]--	26.03.2026
@@ -388,10 +388,10 @@ local ogryn_localizations = {
 			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 米。\n"
 			..Dot_nc.." 可向後輸入取消。\n"
 			..Dot_nc.." 衝刺期間可稍微改變方向。\n"
-			..Dot_nc.." 可穿透首領/雙子的虛空護盾，\n"
+			..Dot_nc.." 可穿透隊長/雙子的虛空護盾，\n"
 			.."但"..CKWord("踉蹌", "Stagger_rgb_tw").."僅在無虛空護盾時有效。\n"
 			..Dot_red.." 跳躍或下落時無法啟動。\n"
-			..Dot_red.." 僅在遇到怪物時停止。",
+			..Dot_red.." 僅在遇到巨獸時停止。",
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée uniquement en cas de collision avec des monstruosités.\nTemps de recharge de base : {cooldown:%s} secondes.\nCeci est une version augmentée de {talent_name:%s} avec une distance de charge accrue de {distance:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_1_rgb_fr,
 	},
 	--[+ ABILITY 1-1 - Trample +]--	26.03.2026
@@ -439,7 +439,7 @@ local ogryn_localizations = {
 			..Dot_red.." Низкий "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.", -- Разбрызгивание -- Крошилово
 		["zh-tw"] = Dot_green.." {ability:%s} 命中的敵人受到 {stacks:%s} 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 可穿透壁壘兵護盾及首領/雙子虛空護盾施加"..CKWord("流血", "Bleed_rgb_tw").."。\n"
+			..Dot_green.." 可穿透 堡壘盾牌及隊長/雙子虛空護盾施加"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			..CPhrs("Refr_dur_stappl").."\n"
 			.."\n"
 			..Dot_green.." 對護甲"..CKWord("傷害", "Damage_rgb_tw").."略高於平均值。\n"
@@ -576,7 +576,7 @@ local ogryn_localizations = {
 			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 米時失效：\n"
 			.."_______________________________\n"
 			.."距離("..CNumb("m", "n_meter_rgb").."): "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."(%): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n",
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 	},
@@ -606,7 +606,7 @@ local ogryn_localizations = {
 			..CNote("Rend_note"), -- Град огня -- руоф Слава пламени
 		["zh-tw"] = "{ability:%s} 啟動期間，遠程攻擊獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." {rending_multiplier:%s} "..CKWord("撒裂", "Rending_rgb_tw").."。\n"
+			..Dot_green.." {rending_multiplier:%s} "..CKWord("撕裂", "Rending_rgb_tw").."。\n"
 			.."\n"
 			..CNote("Rend_note"),
 		-- fr = "{rending_multiplier:%s} de "..COLORS_KWords_fr.Rending_rgb_fr.." et {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à vos attaques à distance pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_2_rgb_fr,
@@ -707,6 +707,8 @@ local ogryn_localizations = {
 		["zh-tw"] = "{talent_name:%s} 每層還額外提供：\n"
 			..Dot_green.." {melee_toughness:%s} 近戰擊殺"..CKWord("韌性", "Toughness_rgb_tw").."恢復。\n"
 			.."\n"
+			.."將歐格林近戰擊殺時獲得的基礎最大"..CKWord("韌性", "Toughness_rgb_tw").." "
+			..CNumb("5%", "pc_5_rgb").."，每層提高 {melee_toughness:%s}：\n"
 			.."層數: "..CNumb("0", "n_0_rgb").."| "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."| "..CNumb("7", "n_7_rgb").."| "..CNumb("8", "n_8_rgb").."\n"
 			..CKWord("韌性", "Toughness_rgb_tw")..": "..CNumb("5", "n_5_rgb").."| "..CNumb("5.8", "n_5_8_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.3", "n_7_3_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("8.8", "n_8_8_rgb").."| "..CNumb("9.5", "n_9_5_rgb").."| "..CNumb("10.3", "n_10_3_rgb").."| "..CNumb("11", "n_11_rgb").."\n"
 			.."_______________________________\n"
@@ -812,7 +814,7 @@ local ogryn_localizations = {
 			.."爆炸：\n"
 			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 米。\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，\n"
-			.."（變種人、怪物及首領/雙子除外）。",
+			.."（變種人、巨獸及隊長/雙子除外）。",
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
 	},
 	--[+ KEYSTONE 2-2 - Strongest! +]--	26.03.2026
@@ -965,7 +967,7 @@ local ogryn_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против бастионов, загонщиков, крушителей, чумных огринов и жнецов.\n"
 			.."\n"
 			..Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от этих же врагов.", -- Тяжеловес
-		["zh-tw"] = Dot_green.." {damage:%s} 對壁壘兵、碾壓者、駆役者、\n"
+		["zh-tw"] = Dot_green.." {damage:%s} 對 堡壘、碾壓者、瘟疫行者、\n"
 			.."瘟疫歐格林和收割者的"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." {damage_reduction:%s} 受到上述敵人的"..CKWord("傷害", "Damage_rgb_tw").."減少。",
@@ -1153,7 +1155,7 @@ local ogryn_localizations = {
 			..Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.",
 		ru = "Убийство элитного врага или специалиста даёт на {duration:%s} секунд:\n"
 			..Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".", -- Силач
-		["zh-tw"] = "擊殺精英或特殊敵人後，在 {duration:%s} 秒內獲得：\n"
+		["zh-tw"] = "擊殺精英或專家後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。",
 		-- fr = "{damage_reduction:%s} Réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." de "..COLORS_KWords_fr.Health_rgb_fr.." et de "..COLORS_KWords_fr.Toughness_rgb_fr.."  lors d'une élimination d'élite ou de spécialiste. Pendant {duration:%s} secondes.",
 	},
@@ -1423,7 +1425,7 @@ local ogryn_localizations = {
 		["zh-tw"] = Dot_green.." {resistance:%s} "..CKWord("腐敗", "Corruption_rgb_tw").."抗性。\n"
 			.."\n"
 			.."減少來自任何敵方來源的"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，包括：\n"
-			..Dot_nc.." 炸彈瘟疫人爆炸，\n"
+			..Dot_nc.." 瘟疫爆者爆炸，\n"
 			..Dot_nc.." 毒氣，\n"
 			..Dot_nc.." 瘟疫游屍近戰攻擊，\n"
 			..Dot_nc.." 瘟疫獵犬跳撲，\n"
@@ -1511,8 +1513,8 @@ local ogryn_localizations = {
 			.."嘲譃敵人，迫使其攻擊你。\n"
 			.."\n"
 			.."嘲譃遠程敵人，迬使其進入近戰。\n"
-			..Dot_nc.." 對槍手、收割者、怪物無效。\n"
-			..Dot_nc.." 對首領和雙子有效。\n"
+			..Dot_nc.." 對槍手、收割者、巨獸無效。\n"
+			..Dot_nc.." 對隊長和雙子有效。\n"
 			.."\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
@@ -1619,7 +1621,7 @@ local ogryn_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			..CNote("Rend_note"), -- Доминируй -- руоф Господство
-		["zh-tw"] = Dot_green.." {rending_multiplier:%s} "..CKWord("撒裂", "Rending_rgb_tw").."，擊殺精英後持續 {duration:%s} 秒。\n"
+		["zh-tw"] = Dot_green.." {rending_multiplier:%s} "..CKWord("撕裂", "Rending_rgb_tw").."，擊殺精英後持續 {duration:%s} 秒。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"

@@ -130,7 +130,7 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Speed Stimm - 敏捷興奮劑
   - 來源檔案：Warhammer 40,000 DARKTIDE/mods/markers_aio/scripts/mods/markers_aio/markers_aio_localization.lua
 
-### 怪物相關
+### 巨獸相關
 
 - Gunners - 砲手
 - Reaper - 收割者
@@ -158,8 +158,8 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Pox Burster - 瘟疫爆者
 - Chaos Poxwalker Bomber - 瘟疫爆者
 - Renegade Netgunner - 陷阱兵
-- Renegade Berzerker - 血痂狂戰士
-- Cultist Berzerker - 渣滓狂戰士
+- Renegade Berzerker - 血痂狂暴者
+- Cultist Berzerker - 渣滓狂怒者
 - Mutated Poxwalker - 變異瘟疫行者
 - Lesser Mutated Poxwalker - 低階變異瘟疫行者
 - Ritualist - 渣滓祭司

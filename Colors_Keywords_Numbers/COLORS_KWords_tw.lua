@@ -335,7 +335,7 @@ local CONFIG = {
 	},
 }
 
--- Основная функция для создания цветных ключевых слов
+-- 建立彩色關鍵字的主要函式
 local function create_colored_keywords()
 	local result = {}
 

@@ -81,8 +81,8 @@ local psyker_localizations = {
 			..Dot_green.." 對防彈護甲和甲殼護甲敵人有效。\n"
 			..Dot_green.." 必定命中"..CKWord("弱點", "Weakspots_rgb_tw").."。\n"
 			..Dot_green.." 蓄力至 "..CNumb("50%", "pc_50_rgb").." 時軽度"..CKWord("踉蹌", "Staggers_rgb_tw").." 目標。\n"
-			..Dot_green.." 命中时使幾乎所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."。\n"
-			..Dot_red.." 無法"..CKWord("踉蹌", "Stagger_rgb_tw").." 變種人、歐格林、怪物或有虛空護盾的敵人。\n"
+			..Dot_green.." 命中時使幾乎所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."。\n"
+			..Dot_red.." 無法"..CKWord("踉蹌", "Stagger_rgb_tw").." 變種人、歐格林、巨獸或有虛空護盾的敵人。\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}警告！{#reset()}\n"
@@ -113,7 +113,7 @@ local psyker_localizations = {
 			..Dot_nc.." Cooldown {time:%s} seconds.",
 		ru = "При атаке специалистов, элитных врагов или чудовищ, есть {smite_chance:%s} шанс на срабатывание блица {talent_name:%s}.\n" -- Кинетический живодёр -- руоф Кинетический истребитель
 			..Dot_nc.." Восстановление {time:%s} секунд.",
-		["zh-tw"] = "攻擊特殊敵人、精英或怪物時，\n"
+		["zh-tw"] = "攻擊專家、精英或巨獸時，\n"
 			.."有 {smite_chance:%s} 機率命中觸發 {talent_name:%s}。\n"
 			..Dot_nc.." 冷卻時間 {time:%s} 秒。",
 	},
@@ -156,7 +156,7 @@ local psyker_localizations = {
 			..CPhrs("Cant_Crit")
 			..Dot_nc.." 對護甲"..CKWord("傷害", "Damage_rgb_tw").."屬平均。\n"
 			..Dot_red.." 對甲殼護甲"..CKWord("傷害", "Damage_rgb_tw").."偶低。\n"
-			..Dot_red.." 無法"..CKWord("踉蹌", "Stagger_rgb_tw").." 怪物或有虛空護盾的敵人。\n"
+			..Dot_red.." 無法"..CKWord("踉蹌", "Stagger_rgb_tw").." 巨獸或有虛空護盾的敵人。\n"
 			.."\n"
 			..Dot_nc.." 反噬達 "..CNumb("100%", "pc_100_rgb").." 時強制進行平靜引導，\n"
 			.."消除約 "..CNumb("8.5%", "pc_8_5_rgb").." 反噬。\n"
@@ -181,7 +181,7 @@ local psyker_localizations = {
 			..Dot_nc.." Эффект "..CKWord("электрошока", "elektroshoka_rgb_ru").." длится "..CNumb("2", "n_2_rgb").." секунды после последнего нанесения "..CKWord("урона", "urona_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." При выбранном модификаторе "..CKWord("Ослабление", "Enfeeble_rgb_ru")..", эффект "..CKWord("электрошока", "elektroshoka_rgb_ru").." наносит "..CKWord("урон", "uron_rgb_ru").." вдвое дольше и достигает максимального заряда быстрее.",
-		["zh-tw"] = "你的重型近戰攻擊給救人施加"..CKWord("電擊", "Electrocute_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = "你的重型近戰攻擊給敵人施加"..CKWord("電擊", "Electrocute_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 最高充能時每次跳動最多造成 "..CNumb("64", "n_64_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." "..CKWord("傷害", "Damage_rgb_tw").." 窗口最多持續 "..CNumb("2", "n_2_rgb").." 秒。\n"
@@ -197,7 +197,7 @@ local psyker_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." от всех источников, получаемому врагами, которые находятся по действием "..CKWord("электрошока", "elektroshoka_rgb_ru").." таланта {talent_name:%s}.\n" -- Ослабление
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 作用於所有來源，對受你 {talent_name:%s} "..CKWord("電擊", "Electrocute_rgb_tw").." 影響的救人。\n"
+		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 作用於所有來源，對受你 {talent_name:%s} "..CKWord("電擊", "Electrocute_rgb_tw").." 影響的敵人。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 	},
@@ -404,7 +404,7 @@ local psyker_localizations = {
 		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждого врага поражённого вашим талантом {talent_name:%s}.\n" -- Успокаивающее извержение -- руоф Затихающее извержение
 				..Dot_nc.." До "..CNumb("-", "n_minus_rgb").."{max_stacks:%s}"..CNumb("%", "pc_rgb").." к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".\n"
 				..Dot_nc.." Длится {duration:%s} секунд.",
-		["zh-tw"] = Dot_green.." 每個被 {talent_name:%s} 命中的救人減少 "..CNumb("-", "n_minus_rgb").." {warp_generation:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成。\n"
+		["zh-tw"] = Dot_green.." 每個被 {talent_name:%s} 命中的敵人減少 "..CNumb("-", "n_minus_rgb").." {warp_generation:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成。\n"
 			..Dot_nc.." 最多減少 "..CNumb("-", "n_minus_rgb").." {max_stacks:%s}"..CNumb("%", "pc_rgb").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
@@ -442,8 +442,8 @@ local psyker_localizations = {
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
 			.."\n"
 			..CPhrs("Refr_dur_stappl").."\n"
-			..Dot_green.." 對裂片張抱"..CKWord("傷害", "Damage_rgb_tw").." 極高。\n"
-			..Dot_red.." 對甲殿抱"..CKWord("傷害", "Damage_rgb_tw").." 極低。",
+			..Dot_green.." 對一般護甲"..CKWord("傷害", "Damage_rgb_tw").." 極高。\n"
+			..Dot_red.." 對甲殼護甲"..CKWord("傷害", "Damage_rgb_tw").." 極低。",
 	},
 	--[+ ABILITY 2 - Telekine Shield +]--	26.03.2026
 	["loc_talent_psyker_combat_ability_shield_description"] = { -- duration: 17.5, cooldown: 45, s->seconds
@@ -479,23 +479,23 @@ local psyker_localizations = {
 			.."   "..Dot_red.." Подрыв взрывника.\n"
 			.."\n"
 			..Dot_nc.." Удерживание кнопки активации способности показывает место размещения. Отменяется блоком.",
-		["zh-tw"] = "生成 {talent_name:%s}，擋檔敵人遠程攻擊，\n"
+		["zh-tw"] = "生成 {talent_name:%s}，防禦敵人遠程攻擊，\n"
 			.."同時允許你和盟友射擊穿過。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_nc.." 護盾生命値： "..CNumb("20", "n_20_rgb").."。\n"
-			..Dot_green.." 擋檔：\n"
+			..Dot_green.." 防禦：\n"
 			.."   "..Dot_green.." 遠程直線攻擊，\n"
-			.."   "..Dot_green.." 射擊物（爆彈手榴弹），\n"
+			.."   "..Dot_green.." 射擊物（爆彈手榴彈），\n"
 			.."   "..Dot_green.." 捷器的投網，\n"
 			.."   "..Dot_green.." 火焰放射器直擊。\n"
-			..Dot_red.." 不擋檔：\n"
+			..Dot_red.." 不防禦：\n"
 			.."   "..Dot_red.." 地面火焰，\n"
 			.."   "..Dot_red.." 毒氣雲，\n"
 			.."   "..Dot_red.." 爆彈者爆炸。\n"
 			.."\n"
-			..Dot_nc.." 持按技能鍵預覽放置位置。持守可取消。",
+			..Dot_nc.." 持按技能鍵預覽放置位置。格檔可取消。",
 	},
 	--[+ ABILITY 2-1 - Bolstered Shield +]--	26.03.2026
 	["loc_talent_psyker_force_field_charges_cooldown_description"] = { -- talent_name: Telekine Shield, max_charges: 2, cooldown: 35, +colors
@@ -532,13 +532,17 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}СЛОМАНО{#reset()}\n"
 			.."Специалисты и чудовища наносят щиту при контакте только "..CNumb("1", "n_1_rgb").." "..CKWord("урона", "urona_rgb_ru").." вместо задуманных "..CNumb("8", "n_8_rgb")..".",
-		["zh-tw"] = "{ability:%s} 中穿過的敵人有 {proc_chance:%s} 機率受到"..CKWord("電擊", "Electrocute_rgb_tw").."。\n"
+		["zh-tw"] = "穿過 {ability:%s} 的敵人有 {proc_chance:%s} 機率受到"..CKWord("電擊", "Electrocute_rgb_tw").."。\n"
+			.."專家與巨獸有 {special_proc_chance:%s} 機率被"..CKWord("電擊", "Electrocute_rgb_tw").."，\n"
+			.."但也會對 {ability:%s} 造成傷害。\n"
 			..Dot_green.." 造成 "..CNumb("250", "n_250_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
-			..Dot_green.." 可"..CKWord("踉蹌", "Stagger_rgb_tw").." 大多數敵人，怪物和有虛空護盾的敵人除外。\n"
+			..Dot_green.." 可"..CKWord("踉蹌", "Stagger_rgb_tw").." 大多數敵人，巨獸和有虛空護盾的敵人除外。\n"
+			..Dot_nc.." "..CKWord("電擊", "Electrocute_rgb_tw").."在接觸時一定會套用於專家與巨獸。\n"
 			..Dot_red.." 對護甲"..CKWord("傷害", "Damage_rgb_tw").."極低。\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}BUG{#reset()}\n"
-			.."特殊敵人和怪物接觸時只對護盾造成 "..CNumb("1", "n_1_rgb").." 點"..CKWord("傷害", "Damage_rgb_tw").."。",
+			.."專家和巨獸接觸時只對護盾造成 "..CNumb("1", "n_1_rgb").." 點"..CKWord("傷害", "Damage_rgb_tw").."，\n"
+			.."而不是預期的 "..CNumb("8", "n_8_rgb").." 點。",
 	},
 	--[+ ABILITY 2-3 - Telekine Dome +]--	26.03.2026
 	["loc_talent_psyker_force_field_dome_increased_cd_desc"] = { -- talent_name: Telekine Shield, duration: 25, cooldown: 60, s->seconds
@@ -650,7 +654,7 @@ local psyker_localizations = {
 			.."\n"
 			.."在 {talent_name:%s} 中每秒還額外獲得：\n"
 			..Dot_green.." {finesse_damage_per_stack:%s} "..CKWord("靈巧傷害", "Finesse_dmg_rgb_tw").."，最多 {max_finesse_damage:%s}。\n"
-			.."離開後持續 {duration:%s} 秒。\n"
+			.."離開 {talent_name:%s} 後持續 {duration:%s} 秒。\n"
 			.."\n"
 			..CNote("Fns_note"),
 	},
@@ -721,7 +725,7 @@ local psyker_localizations = {
 			.."Следующая применённая "..CKWord("боевая способность", "boeva_sposobnost_rgb_ru").." потратит все доступные варп-заряды и уменьшит время "..CKWord("восстановления", "vosstanovlenia_rgb_ru").." на {cooldown_reduction:%s} за каждый варп-заряд.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "擊殺精英或特殊敵人可獲得一個亞空間充能，持續 {duration:%s} 秒。\n"
+		["zh-tw"] = "擊殺精英或專家可獲得一個亞空間充能，持續 {duration:%s} 秒。\n"
 			..Dot_green.." 每層 {damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {stack:%s} 層。\n"
 			.."\n"
@@ -831,7 +835,7 @@ local psyker_localizations = {
 			.."增強{blitz_three:%s}：\n"
 			..Dot_green.." {throwing_knives_cost:%s} "..CKWord("反噬", "Peril_rgb_tw").." 消耗減少，\n"
 			..CKWord("傷害", "Damage_rgb_tw").." 從 {throwing_knives_old_damage:%s} 提高至 {throwing_knives_new_damage:%s}，\n"
-			..Dot_green.." 不消耗弹屢。\n"
+			..Dot_green.." 不消耗彈藥。\n"
 			..Dot_green.." 可在 "..CNumb("100%", "pc_100_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 時使用。",
 	},
 	--[+ KEYSTONE 2-1 - Bio-Lodestone +]--	26.03.2026
@@ -850,7 +854,7 @@ local psyker_localizations = {
 	["loc_talent_psyker_empowered_ability_on_elite_kills_description"] = { -- talent_name: Empowered Psionics
 		en = Dot_green.." Guaranteed chance to gain {talent_name:%s} on Elite Kills.",
 		ru = Dot_green.." Вы гарантированно получаете заряд таланта {talent_name:%s} при убийстве элитного врага.", -- Могучие души
-		["zh-tw"] = Dot_green.." 擊殺精英救人保證獲得 {talent_name:%s}。",
+		["zh-tw"] = Dot_green.." 擊殺精英敵人保證獲得 {talent_name:%s}。",
 	},
 	--[+ KEYSTONE 2-4 - Charged Up +]--	26.03.2026
 	["loc_talent_psyker_increased_empowered_chain_lightning_stacks_description"] = { -- max_stacks: 3, talent_name: Empowered Psionics
@@ -892,9 +896,9 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Нанесение "..CKWord("урона", "urona_rgb_ru").." "..CKWord("отмеченным", "Psy_Mark_ym_rgb_ru").." врагам обновляет длительность зарядов.\n"
 			..Dot_nc.." Допустимые цели: громила, ритуалист, охотник, скаб-стрелок, берсерк, пулемётчик, скаб с дробовиком, плазмомётчик и палач.",
-		["zh-tw"] = "每秒對 {radius:%s} 米內的救人有機率施加"..CKWord("標記", "Psy_Mark_rgb_tw").."。\n"
+		["zh-tw"] = "每秒對 {radius:%s} 米內的敵人有機率施加"..CKWord("標記", "Psy_Mark_rgb_tw").."。\n"
 			.."\n"
-			.."擊殺"..CKWord("標記", "Psy_Mark_rgb_tw").." 救人會獲得：\n"
+			.."擊殺"..CKWord("標記", "Psy_Mark_rgb_tw").." 敵人會獲得：\n"
 			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."/秒，最多 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 持續 {move_speed_duration:%s} 秒，\n"
 			..Dot_green.." {move_speed:%s} 移動速度持續 {move_speed_duration:%s} 秒，\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." 層"..CKWord("精準", "Precision_rgb_tw").." 持續 {bonus_duration} 秒。\n"
@@ -906,8 +910,8 @@ local psyker_localizations = {
 			.."\n"
 			..CKWord("精準", "Precision_rgb_tw").." 最多堆疊 {bonus_stacks:%s} 層。持續時間結束時移除一層並刷新剩餘層的持續時間。\n"
 			.."\n"
-			..Dot_green.." 對"..CKWord("標記", "Psy_Mark_rgb_tw").." 救人造成傷害刷新天賦持續時間。\n"
-			..Dot_nc.." 有效目標：刓犹、儀式者、潛行者、斯卡布射手、狂戰士、機標手、斯卡布瀑彈手、電展標手和督管。",
+			..Dot_green.." 對"..CKWord("標記", "Psy_Mark_rgb_tw").." 敵人造成傷害刷新天賦持續時間。\n"
+			..Dot_nc.." 有效目標：打手、渣滓祭司、潛行者、血痂射手、狂戰士、槍手、霰彈槍手、電漿槍手和重錘兵。",
 	},
 	--[+ KEYSTONE 3-1 - Perfectionism +]--	26.03.2026
 	["loc_talent_psyker_mark_increased_max_stacks_description"] = { -- stacks_previous: 15, stacks_after: 25, +colors
@@ -919,7 +923,7 @@ local psyker_localizations = {
 	["loc_talent_psyker_mark_kills_can_vent_description"] = { -- talent_name: Disrupt Destiny, chance: 20%, warp_charge_percentage: 15%, +colors
 		en = Dot_green.." {chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..CKWord("Peril", "Peril_rgb").." on killing enemies "..CKWord("Marked", "Psy_Mark_rgb").." {talent_name:%s}.",
 		ru = Dot_green.." {chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..CKWord("опасности", "opasnosti_rgb_ru").." при убийстве врага, "..CKWord("отмеченного", "Psy_Mark_ogo_rgb_ru").." талантом {talent_name:%s}.", -- Похищение провидения -- руоф Похищенное провидение
-		["zh-tw"] = Dot_green.." {chance:%s} 機率，擊殺 "..CKWord("標記", "Psy_Mark_rgb_tw").." {talent_name:%s} 的救人時立即平息 {warp_charge_percentage:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." {chance:%s} 機率，擊殺 "..CKWord("標記", "Psy_Mark_rgb_tw").." {talent_name:%s} 的敵人時立即平息 {warp_charge_percentage:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Lingering Influence +]--	26.03.2026
 	["loc_talent_psyker_mark_increased_duration_description"] = { -- talent_name: Disrupt Destiny, duration_previous: 15, duration_after: 10, s->seconds
@@ -1012,14 +1016,14 @@ local psyker_localizations = {
 			..Dot_green.." Может сработать при убийстве элитного врага или специалиста с помощью "..CKWord("горения души", "gorenia_dushi_rgb_ru")..", "..CKWord("горения", "gorenia_rgb_ru").." или "..CKWord("кровотечения", "krovotechenia_rgb_ru")..".\n"
 			..Dot_green.." Большой "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
-		["zh-tw"] = "擊殺精英或特殊救人，對其周圍 "..CNumb("4", "n_4_rgb").." 米内所有救人施加 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
+		["zh-tw"] = "擊殺精英或專家，對其周圍 "..CNumb("4", "n_4_rgb").." 米内所有敵人施加 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
 			.."\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
 			..CPhrs("Refr_dur_stappl").."\n"
-			..Dot_green.." "..CKWord("靈火", "Soulblaze_rgb_tw").." 、燃燒或流血跳動擊殺精英或特殊救人也可觸發。\n"
-			..Dot_green.." 對裂片張抱"..CKWord("傷害", "Damage_rgb_tw").." 極高。\n"
-			..Dot_red.." 對甲殿抱"..CKWord("傷害", "Damage_rgb_tw").." 極低。",
+			..Dot_green.." "..CKWord("靈火", "Soulblaze_rgb_tw").." 、燃燒或流血跳動擊殺精英或專家也可觸發。\n"
+			..Dot_green.." 對一般護甲"..CKWord("傷害", "Damage_rgb_tw").." 極高。\n"
+			..Dot_red.." 對甲殼抱"..CKWord("傷害", "Damage_rgb_tw").." 極低。",
 	},
 	--[+ Passive 6 - Battle Meditation +]--	26.03.2026
 	["loc_talent_psyker_quell_on_kill_and_reduction_desc"] = { -- warp_charge_reduction: 10%, chance: 10%, warp_charge_percent: 10%, +colors
@@ -1108,7 +1112,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_green.." Эффект этого таланта не имеет ограничений по дальности и может применяться на любом расстоянии от умирающего врага.",
-		["zh-tw"] = "以"..CKWord("靈火", "Soulblaze_rgb_tw").." 擊殺救人，獲得 {duration:%s} 秒效果：\n"
+		["zh-tw"] = "以"..CKWord("靈火", "Soulblaze_rgb_tw").." 擊殺敵人，獲得 {duration:%s} 秒效果：\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("3%", "pc_3_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").." /秒，最多 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
@@ -1159,7 +1163,7 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			..CPhrs("Can_appl_thr_shlds"),
-		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("亞空間傷害", "Damagewrp_rgb_tw").." 作用於被你法力杖主攻命中的救人。\n"
+		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("亞空間傷害", "Damagewrp_rgb_tw").." 作用於被你法力杖主攻命中的敵人。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
@@ -1186,11 +1190,11 @@ local psyker_localizations = {
 			.."_______________________________\n"
 			..Dot_red.." Цели не получают заряды "..CKWord("горения души", "gorenia_dushi_rgb_ru")..", если на них уже наложено {stacks:%s} заряда или более.\n"
 			..Dot_green.." Не накладывается на демонхостов.",
-		["zh-tw"] = "當受你"..CKWord("靈火", "Soulblaze_rgb_tw").." 影響的救人死亡時，\n"
-			.."周圍每個救人最多獲得 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."，\n"
-			.."且不超過死亡救人的層數。\n"
+		["zh-tw"] = "當受你"..CKWord("靈火", "Soulblaze_rgb_tw").." 影響的敵人死亡時，\n"
+			.."周圍每個敵人最多獲得 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."，\n"
+			.."且不超過死亡敵人的層數。\n"
 			.."\n"
-			..Dot_nc.." 擴散層數取决於死亡救人的"..CKWord("靈火", "Soulblaze_rgb_tw").." 層數：\n"
+			..Dot_nc.." 擴散層數取决於死亡敵人的"..CKWord("靈火", "Soulblaze_rgb_tw").." 層數：\n"
 			.."_______________________________\n"
 			.."層數：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| >"..CNumb("4", "n_4_rgb").."\n"
 			.."擴散：       "..CNumb("0", "n_0_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("4", "n_4_rgb").."\n"
@@ -1252,7 +1256,7 @@ local psyker_localizations = {
 		ru = Dot_green.." На {cooldown:%s} сокращается время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." в течение {time:%s} секунд, если вы или ваш союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." убиваете элитного врага или специалиста.\n" -- Аура психокинетика
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." 你或"..CKWord("協同", "Coherency_rgb_tw").." 範圍內盟友擊殺精英或特殊救人時，\n"
+		["zh-tw"] = Dot_green.." 你或"..CKWord("協同", "Coherency_rgb_tw").." 範圍內盟友擊殺精英或專家時，\n"
 			..CKWord("冷卻", "Cd_rgb_tw").." 恢復速度 {cooldown:%s}，持續 {time:%s} 秒。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1336,7 +1340,7 @@ local psyker_localizations = {
 	["loc_talent_psyker_damage_vs_ogryns_and_monsters_desc"] = { -- damage: +20%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Ogryns and Monstrosities.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Уязвимые разумы -- руоф Уязвимые сознания
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 對奧格林和怪物。",
+		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 對歐格林和巨獸。",
 	},
 	--[+ Passive 26 - Warp Rider +]--	26.03.2026
 	["loc_talent_psyker_damage_based_on_warp_charge_desc"] = { -- max_damage: +20%, +colors
@@ -1382,9 +1386,9 @@ local psyker_localizations = {
 		ru = "Пока уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже "..CNumb("97%", "pc_97_rgb")..", блокирование атак приводит к повышению уровня "..CKWord("опасности", "opasnosti_rgb_ru").." вместо потери "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n" -- Кинетическое отклонение
 			.."\n"
 			..Dot_nc.." Получаемый уровень "..CKWord("опасности", "opasnosti_rgb_ru").." составляет {warp_charge_block_cost:%s} от стоимости "..CKWord("выносливости", "vynoslivosti_rgb_ru")..", затрачиваемой на обычное блокирование.",
-		["zh-tw"] = "在"..CKWord("反噬", "Peril_rgb_tw").." 低於 "..CNumb("97%", "pc_97_rgb").." 時，擋檔攻擊改為增加"..CKWord("反噬", "Peril_rgb_tw").." 而非消耗"..CKWord("耰力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = "在"..CKWord("反噬", "Peril_rgb_tw").." 低於 "..CNumb("97%", "pc_97_rgb").." 時，格擋攻擊改為增加"..CKWord("反噬", "Peril_rgb_tw").." 而非消耗"..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 獲得的"..CKWord("反噬", "Peril_rgb_tw").." 為擋檔正常"..CKWord("耰力", "Stamina_rgb_tw").." 消耗的 {warp_charge_block_cost:%s}。",
+			..Dot_nc.." 獲得的"..CKWord("反噬", "Peril_rgb_tw").." 為格擋正常"..CKWord("耐力", "Stamina_rgb_tw").." 消耗的 {warp_charge_block_cost:%s}。",
 	},
 	--[+ Passive 29 - Empyric Resolve +]--	26.03.2026
 	["loc_talent_psyker_warp_glass_cannon_desc"] = { -- peril_reduction: -40%, toughness_reduction: -30%, +colors
@@ -1417,10 +1421,10 @@ local psyker_localizations = {
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
-		["zh-tw"] = Dot_green.." 依"..CKWord("反噬", "Peril_rgb_tw").." 等級，亞空間攻擊最多 {rending:%s} "..CKWord("撇裂", "Rending_rgb_tw").."：\n"
+		["zh-tw"] = Dot_green.." 依"..CKWord("反噬", "Peril_rgb_tw").." 等級，亞空間攻擊最多 {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."：\n"
 			.."_______________________________\n"
 			..CKWord("反噬", "Peril_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("撇裂", "Rending_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("撕裂", "Rending_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -1451,7 +1455,7 @@ local psyker_localizations = {
 			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").." - "..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." "..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").." 造成的超載不再打扱，但會消耗 "..CNumb("1", "n_1_rgb").." 個 "..CKWord("生命", "Health_rgb_tw").." 段超載炸啊倒，並受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。\n"
-			..Dot_green.." 若爆炸擊殺精英救人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
+			..Dot_green.." 若爆炸擊殺精英敵人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
 	},
 	--[+ Passive 32 - Warp Ghost +]--	26.03.2026
 	["loc_talent_psyker_stat_mix_desc"] = { -- peril_reduction: -80%, stamina: +2, toughness_replenish: +25%, +colors
@@ -1487,7 +1491,7 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 命中盾牧時觸發。\n"
-			..Dot_red.." 每次射擊只觸發一次，無論命中多少救人。",
+			..Dot_red.." 每次射擊只觸發一次，無論命中多少敵人。",
 	},
 	--[+ Passive 34 - Surety of Arms +]--	26.03.2026
 	["loc_talent_psyker_reload_speed_warp_desc"] = { -- reload_speed: 25%, threshold: 75%, warp_charge: 25%, +colors

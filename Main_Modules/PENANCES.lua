@@ -723,7 +723,7 @@ local penances_localizations = {
 	["loc_achievement_zealot_elite_or_special_kills_with_blade_of_faith_description"] = {
 		en = "Kill "..CNumb("{target}", "target_rgb").." Specialist and Elites using "..CKWord("Blades of Faith", "klinvery_rgb").." Blitz.",
 		ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов используя блиц "..CKWord("Клинки веры", "klinvery_rgb_ru")..".",
-		-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "klinvery_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或特殊敵人。",
+		-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "klinvery_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家。",
 	},
 	--[+ Purging Flames +]-- руоф Очищающее пламя
 	["loc_achievement_zealot_kills_with_fire_grenade_name"] = {
@@ -1432,7 +1432,7 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_bull_rushed_4_ogryns_fix_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, knock down "..CNumb("{target}", "target_rgb").." enemy Ogryns with a single "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability charge. The Ogryns are: Bulwark, Crusher, Reaper, Pack Master, and Plague Ogryn.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, сбейте с ног "..CNumb("{target}", "target_rgb").." любых вражеских огрина одним зарядом способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..". Огринами являются: Бастион, Дробитель, Жнец, Загонщик и Чумной огрин.",
-			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n歐格林敵人包含：堡壘、粉碎者、收割者與瘟疫歐格林。",
+			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n歐格林敵人包含：堡壘、碾壓者、收割者與瘟疫歐格林。",
 		},
 
 
@@ -2761,10 +2761,10 @@ local penances_localizations = {
 		-- -- {"loc_achievement_crusher_overhead_smash_dodged_description"}, {"ru"},
 			-- -- loc_text("Убейте по "..CNumb("{target}", "target_rgb").." врагов каждого типа из специалистов скабов.")),
 	-- --[+ Traditional Chinese +]--
-	-- -- 躲避50次歐格林輾壓者的過頭斬擊。[每個歐格林輾壓者只能算一次]
+	-- -- 躲避50次歐格林碾壓者的過頭斬擊。[每個歐格林碾壓者只能算一次]
 	-- create_template("ach_her_1_ext_desc_tw",
 		-- {"loc_achievement_crusher_overhead_smash_dodged_description"}, {"zh-tw"},
-			-- loc_text("躲避 "..CNumb("{target}", "target_rgb").." 名輾壓者的重鎚攻擊，每名只計算1次。")),
+			-- loc_text("躲避 "..CNumb("{target}", "target_rgb").." 名碾壓者的重鎚攻擊，每名只計算1次。")),
 
 	-- --[+	 +]-- руоф Будь здоров
 	-- --[+ Russian +]--

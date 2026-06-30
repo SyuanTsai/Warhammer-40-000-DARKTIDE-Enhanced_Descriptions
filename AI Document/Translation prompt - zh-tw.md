@@ -198,9 +198,9 @@ Lua 字串串接檢查：
 * Critical Hit / Crit：暴擊
 * Carapace：甲殼護甲
 * Flak：防彈護甲
-* Monstrosity：怪物
+* Monstrosity：巨獸
 * Elite：精英
-* Specialist：特殊敵人
+* Specialist：專家
 
 如果 AI Document\Translation Table - zh-tw.md 與上方詞彙不同，請以 Translation Table 為準。
 
@@ -235,12 +235,12 @@ UI 可讀性與換行要求：
 
 例如短條件：
 
-..Dot_red.." 無法使怪物踉蹌。"
+..Dot_red.." 無法使巨獸踉蹌。"
 
 例如長條件：
 
 ..Dot_red.." 無法使下列目標踉蹌：\n"
-.."   "..Dot_red.." 突變者、歐格林、怪物，\n"
+.."   "..Dot_red.." 突變者、歐格林、巨獸，\n"
 .."   "..Dot_red.." 或啟用虛空盾的敵人。"
 
 不要為了縮短而刪除重要遊戲機制。

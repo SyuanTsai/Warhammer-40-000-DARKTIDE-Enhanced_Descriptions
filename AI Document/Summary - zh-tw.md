@@ -76,7 +76,7 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum 99
 
 | File | Key | Issue | Suggested zh-tw | Reason |
 |---|---|---|---|---|
-| TALENTS_Ogryn.lua | loc_ability_ogryn_grenade_box_description | 一些敵人名稱無官方繁中 | 流氓狂戰士/疤甲劊子手 等 | 根據遊戲術語推測 |
+| TALENTS_Ogryn.lua | loc_ability_ogryn_grenade_box_description | 一些敵人名稱無官方繁中 | 渣滓狂怒者/血痂重錘兵 等 | 根據遊戲術語推測 |
 | TALENTS_Scum.lua | loc_talent_broker_passive_stimm_increased_duration_desc | Cartel Special Stimm 在更新後 Translation prompt 無直接對應詞 | 卡特爾特製興奮劑 | 其他 Stimm 名稱已由更新後 Translation prompt 確認，Cartel Special 仍需人工確認 |
 
 ## Terminology Decisions
@@ -104,8 +104,8 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum 99
 | Carapace | 甲殼護甲 | Translation.md |
 | Flak | 防彈護甲 | Translation.md |
 | Elite | 精英 | General usage |
-| Specialist | 特殊敵人 | General usage |
-| Monstrosity / Monster | 怪物 | General usage |
+| Specialist | 專家 | General usage |
+| Monstrosity / Monster | 巨獸 | General usage |
 | Rending | 撕裂 | COLORS_KWords_tw.lua |
 | Brittleness | 脆弱 | Translation.md / COLORS_KWords_tw.lua |
 | Bleed | 流血 | COLORS_KWords_tw.lua |
@@ -149,3 +149,45 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum 99
 
 ---
 *Last updated: start of session*
+
+## Review Pass - 2026-07-01
+
+### Scope
+
+* Reviewed all `Main_Modules/TALENTS/TALENTS_*.lua` zh-tw entries with bounded entry scanning.
+* Reviewed `Colors_Keywords_Numbers/COLORS_KWords_tw.lua` for bad character/comment issues.
+
+### Fixes Applied
+
+### Validation
+
+* Entry structure scan: PASS.
+  * Arbites: 80/80 entries closed, 0 missing zh-tw.
+  * Ogryn: 88/88 entries closed, 0 missing zh-tw.
+  * Psyker: 79/79 entries closed, 0 missing zh-tw.
+  * Scum: 99/99 entries closed, 0 missing zh-tw.
+  * Veteran: 75/75 entries closed, 0 missing zh-tw.
+  * Zealot: 79/79 entries closed, 0 missing zh-tw.
+* Bad character scan: PASS for invalid `\uXXXX` escape text and known high-confidence typo terms.
+* `git diff --check`: PASS.
+* `luac -p`: not available (`where.exe luac` did not find luac).
+
+### Manual Review Required
+
+| File | Key | Issue | Suggested zh-tw | Reason |
+| ---- | --- | ----- | --------------- | ------ |
+| Main_Modules/TALENTS/TALENTS_Scum.lua | Multiple entries before Passive section | Copilot first pass omitted many `CNumb(...)`, `CPhrs(...)`, and some `CKWord(...)` wrappers; text is now readable but still needs deeper entry-by-entry parity pass against en. | Re-review Scum entries in batches of 5, especially Blitz, Focus, Punk Rage, Stimm Field, and Adrenaline/Chemical Dependency keystone sections. | Current review fixed structure and character corruption, but not all display-function parity issues. |
+| Main_Modules/TALENTS/TALENTS_Psyker.lua | Multiple entries | Remaining validation reports missing or extra `CNumb/CPhrs/CKWord` wrappers. | Reconcile display wrappers against en while preserving existing zh wording where correct. | Mostly UI coloring/number formatting parity, not missing zh-tw or broken Lua entry structure. |
+| Main_Modules/TALENTS/TALENTS_Zealot.lua | Multiple entries | Remaining validation reports missing `CNumb/CPhrs/CKWord` wrappers. | Reconcile display wrappers against en. | Mostly UI coloring/number formatting parity. |
+| Main_Modules/TALENTS/TALENTS_Veteran.lua | Multiple entries | Remaining validation reports `CNumb` wrapper differences in table-style entries. | Reconcile table labels and percent markers against en. | Mostly number/color formatting parity. |
+
+### Changed Files This Pass
+
+* `Colors_Keywords_Numbers/COLORS_KWords_tw.lua`
+* `Main_Modules/TALENTS/TALENTS_Arbites.lua`
+* `Main_Modules/TALENTS/TALENTS_Ogryn.lua`
+* `Main_Modules/TALENTS/TALENTS_Psyker.lua`
+* `Main_Modules/TALENTS/TALENTS_Scum.lua`
+* `Main_Modules/TALENTS/TALENTS_Veteran.lua`
+* `Main_Modules/TALENTS/TALENTS_Zealot.lua`
+* `AI Document/Summary - zh-tw.md`
