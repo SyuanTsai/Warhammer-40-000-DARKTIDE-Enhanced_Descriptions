@@ -2370,73 +2370,92 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 0 - Arbites Grenade +]-- ruof Граната Арбитрес
 		["loc_talent_ability_adamant_grenade"] = {
 			ru = "Граната арбитрес",
+			["zh-tw"] = "法務官手榴彈",
 		},
 		--[+ BLITZ 1 - Remote Detonation +]-- ruof Дистанционный подрыв
 		-- ["loc_talent_ability_detonate"] = {
+		--	["zh-tw"] = "遠程引爆",
 		-- },
 		--[+ BLITZ 2 - Voltaic Shock Mine +]-- ruof Электрошоковая мина
 		["loc_talent_ability_shock_mine"] = {
 			ru = "Вольтаическая шоковая мина",
+			["zh-tw"] = "電能地雷",
 		},
 		--[+ BLITZ 3 - Arbites Grenade Improved +]-- ruof Граната Арбитрес
 		["loc_talent_ability_adamant_grenade_improved"] = {
 			ru = "Граната арбитрес",
+			["zh-tw"] = "法務官手榴彈",
 		},
 	--[+ +AURA - АУРА+ +]--
 		--[+ AURA 0-1 - Part of the Squad +]-- ruof Часть отряда
 		-- ["loc_talent_adamant_companion_coherency"] = {
+		--	["zh-tw"] = "小隊之友",
 		-- },
 		--[+ AURA 2 - Ruthless Efficiency +]-- ruof Беспощадная эффективность
 		-- ["loc_talent_adamant_wield_speed_aura"] = {
+		--	["zh-tw"] = "雷厲風行",
 		-- },
 		--[+ AURA 3 - Breaking Dissent +]-- ruof Преодоление разногласий
 		["loc_talent_adamant_damage_vs_staggered_aura"] = {
 			ru = "Подавление инакомыслия",
+			["zh-tw"] = "鎮壓異己",
 		},
 	--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 		--[+ ABILITY 0, 2 - Nuncio-Aquila +]-- ruof Нунцио-аквила
 		-- ["loc_talent_ability_area_buff_drone"] = {
+		--	["zh-tw"] = "天鷹使節",
 		-- },
 		--[+ ABILITY 1 - Castigator's Stance +]-- ruof Стойка бичевателя
 		["loc_talent_adamant_stance_ability_name"] = {
 			ru = "Стойка карателя",
+			["zh-tw"] = "懲戒者姿態",
 		},
 		--[+ ABILITY 1-1 - Blessed Armament +]-- ruof Благословенное орудие
 		["loc_talent_adamant_stance_ranged_kills_transfer_ammo"] = {
 			ru = "Благословенное вооружение",
+			["zh-tw"] = "蒙福軍武",
 		},
 		--[+ ABILITY 1-2 - Writ of Execution +]-- ruof Ордер на казнь
 		-- ["loc_talent_adamant_stance_elite_kills_stack_damage"] = {
+		--	["zh-tw"] = "處決令",
 		-- },
 		--[+ ABILITY 1-3 - Bloodlust +]-- ruof Жажда крови
 		-- ["loc_talent_adamant_stance_bloodlust"] = {
+		--	["zh-tw"] = "嗜血殺戮",
 		-- },
 		--[+ ABILITY 2-1 - Inspiring Recitation +]-- ruof Вдохновляющая декламация
 		["loc_talent_adamant_drone_buff_talent"] = {
 			ru = "Воодушевляющая проповедь",
+			["zh-tw"] = "振奮朗誦",
 		},
 		--[+ ABILITY 2-2 - Fear of Justice +]-- ruof Страх правосудия
 		["loc_talent_adamant_drone_debuff_talent"] = {
 			ru = "Страх перед Правосудием",
+			["zh-tw"] = "畏怯正義",
 		},
 		--[+ ABILITY 3 - Break the Line +]-- ruof Прорыв фронта
 		["loc_talent_adamant_charge_ability_name"] = {
 			ru = "Прорыв строя",
+			["zh-tw"] = "突破重圍",
 		},
 		--[+ ABILITY 3-1 - Commendation from Condemnation +]-- ruof Не наказали - значит, похвалили
 		["loc_talent_adamant_charge_toughness_name"] = {
 			ru = "Похвала за осуждение",
+			["zh-tw"] = "懲惡揚善",
 		},
 		--[+ ABILITY 3-2 - Targeted Brutality +]-- ruof Направленная жестокость
 		-- ["loc_talent_adamant_charge_cooldown_name"] = {
+		--	["zh-tw"] = "針鋒相對",
 		-- },
 		--[+ ABILITY 3-3 - Kill Order +]-- ruof Приказ убивать
 		["loc_talent_adamant_dog_damage_after_ability"] = {
 			ru = "Фас!",
+			["zh-tw"] = "殺戮命令",
 		},
 		--[+ ABILITY 3-4 - Engage +]-- ruof К бою
 		["loc_talent_adamant_charge_longer_distance"] = {
 			ru = "Дальний прорыв",
+			["zh-tw"] = "交鋒",
 		},
 	--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 		--[+ KEYSTONE 1 - Unleashed Brutality +]-- ruof Высвобожденнная жестокость
