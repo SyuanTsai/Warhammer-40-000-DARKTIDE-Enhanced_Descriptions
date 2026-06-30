@@ -348,6 +348,7 @@ local names_talents_blessings_templates = {
 		-- Relic Blade
 		["loc_trait_bespoke_regain_toughness_on_multiple_hits_by_weapon_special"] = {
 			ru = "Выкачивание",
+			["zh-tw"] = "虹吸",
 		},
 		--[+ ENERGY TRANSFER +]-- ruof Передача энергии	20.04.2026
 		-- Power Falchions, Relic Blades
