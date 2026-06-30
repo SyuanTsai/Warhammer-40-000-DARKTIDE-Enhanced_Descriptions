@@ -25,7 +25,6 @@ Use this file as the terminology reference for Warhammer 40,000: Darktide transl
 When a term exists in this table, prefer the listed Traditional Chinese translation to keep wording consistent across files.
 
 ---
-
 # Warhammer 40,000 DARKTIDE - 戰錘40K黑潮
 
 ## 基礎名詞
@@ -64,6 +63,7 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Scripture - 聖書
 - Heretical Idol - 異端神像
 - Martyr's Skull - 殉道者之顱
+- Psykhanium - 靈能室
 
 ### 增益效果 (BUFFS)
 
@@ -130,7 +130,7 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Speed Stimm - 敏捷興奮劑
   - 來源檔案：Warhammer 40,000 DARKTIDE/mods/markers_aio/scripts/mods/markers_aio/markers_aio_localization.lua
 
-### 巨獸相關
+### 怪物相關
 
 - Gunners - 砲手
 - Reaper - 收割者
@@ -165,6 +165,8 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Ritualist - 渣滓祭司
 - Twins - 雙子
 - Flamer - 火焰兵
+- Corruptor - 腐蝕者
+- Pack Master - 獸群領主
 
 ### 遊戲詞條相關
 
