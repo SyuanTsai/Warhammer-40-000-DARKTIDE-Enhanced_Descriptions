@@ -5,19 +5,20 @@
 - [x] Main_Modules/TALENTS/TALENTS_Arbites.lua  (83/83 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Ogryn.lua    (88/88 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Psyker.lua   (79/79 entries, git diff --check PASS)
-- [ ] Main_Modules/TALENTS/TALENTS_Scum.lua     (0/? entries - 跳過，先做 Zealot)
+- [x] Main_Modules/TALENTS/TALENTS_Zealot.lua   (78/78 entries, git diff --check PASS)
+- [x] Main_Modules/TALENTS/TALENTS_Scum.lua     (99/99 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Veteran.lua  (75/75 entries, git diff --check PASS)
 - [x] Main_Modules/TALENTS/TALENTS_Zealot.lua   (78/78 entries, git diff --check PASS)
 
-Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum TBD
+Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum 99
 
 ## Current Position
 
-- File: Main_Modules/TALENTS/TALENTS_Zealot.lua
-- Status: 0/78 entries done
-- All 78 entries need zh-tw (none active; 28 have old commented-out -- ["zh-tw"] that must be rewritten)
-- Missing list (50 with no zh-tw at all): lines 66, 270, 281, 537, 560, 581, 633, 639, 645, 653, 659, 665, 681, 687, 693, 699, 705, 711, 719, 727, 735, 743, 757, 769, 780, 791, 796, 803, 809, 823, 829, 842, 849, 854, 862, 872, 878, 892, 898, 903, 909, 916, 923, 930, 939, 946, 955, 961, 968, 975
-- Entries with old commented zh-tw (28): lines 22, 42, 85, 123, 134, 148, 165, 184, 218, 286, 357, 377, 396, 427, 442, 460, 480, 498, 509, 516, 542, 551, 565, 573, 586, 612, 619, 626
+- File: Main_Modules/TALENTS/TALENTS_Scum.lua
+- Status: complete, 99/99 entries have zh-tw
+- Last completed entry: loc_talent_buff_cooldown_on_ranged_kills
+- Next entry: none
+- Missing zh-tw entries remaining: 0
 
 ## Zealot File Structure
 
@@ -75,8 +76,8 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum TBD
 
 | File | Key | Issue | Suggested zh-tw | Reason |
 |---|---|---|---|---|
-| TALENTS_Arbites.lua | loc_talent_ability_adamant_grenade_description | Cyber-Mastiff 無固定譯名 | 電子獒犬 | 遊戲官方未確認 |
 | TALENTS_Ogryn.lua | loc_ability_ogryn_grenade_box_description | 一些敵人名稱無官方繁中 | 流氓狂戰士/疤甲劊子手 等 | 根據遊戲術語推測 |
+| TALENTS_Scum.lua | loc_talent_broker_passive_stimm_increased_duration_desc | Cartel Special Stimm 在更新後 Translation prompt 無直接對應詞 | 卡特爾特製興奮劑 | 其他 Stimm 名稱已由更新後 Translation prompt 確認，Cartel Special 仍需人工確認 |
 
 ## Terminology Decisions
 
@@ -96,6 +97,7 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum TBD
 | Electrocute/Electrocution | 電擊 | COLORS_KWords_tw.lua |
 | Soulblaze | 靈火 | COLORS_KWords_tw.lua |
 | Combat Ability | 戰鬥技能 | COLORS_KWords_tw.lua (Cmbt_abil) |
+
 | Coherency | 協同 | COLORS_KWords_tw.lua |
 | Weakspot | 弱點 | Translation.md / COLORS_KWords_tw.lua |
 | Critical Hit / Crit | 暴擊 | Translation.md / COLORS_KWords_tw.lua |
@@ -116,6 +118,8 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum TBD
 | Cleave | 順劈攻擊 | COLORS_KWords_tw.lua |
 | Stamina | 耐力 | COLORS_KWords_tw.lua |
 | Power | 威力 | COLORS_KWords_tw.lua |
+| Overkill Damage | 過量傷害 | TALENTS_Scum.lua context |
+
 | Health | 生命 | COLORS_KWords_tw.lua |
 | Burn | 燃燒 | COLORS_KWords_tw.lua |
 | Suppression | 壓制 | (general) — needs confirmation if specific key exists |
@@ -125,13 +129,23 @@ Total entries: Arbites 83, Ogryn 88, Psyker 79, Veteran 75, Zealot 78, Scum TBD
 
 ## Changed Files
 
-- (none yet)
+- Main_Modules/TALENTS/TALENTS_Scum.lua
+- AI Document/Summary - zh-tw.md
 
 ## Validation
 
-- git diff --check: (pending)
-- luac -p: (not available — using structure check as fallback)
-- Notes: All existing zh-tw entries in Ogryn.lua and Zealot.lua are commented out.
+- git diff --check: PASS
+- luac -p: not available
+- Notes: TALENTS_Scum.lua metadata scan PASS (99/99 zh-tw, 0 missing). Placeholder check PASS (0 mismatches). Structure count PASS (99 entry starts, 99 entry closes, 99 zh-tw lines). Fixed 4 pre-existing missing entry terminators.
+
+## Final Result
+
+- Completed files: Main_Modules/TALENTS/TALENTS_Scum.lua
+- Entries updated: 37 missing zh-tw entries added; 4 pre-existing entry terminators repaired
+- Entries skipped: 62 existing zh-tw entries retained
+- Manual review count: 2 existing rows
+- Validation result: PASS; git diff --check PASS, placeholder check PASS, structure count PASS
+- Remaining risk: luac is not installed in this environment, so Lua parser validation could not be run
 
 ---
 *Last updated: start of session*
