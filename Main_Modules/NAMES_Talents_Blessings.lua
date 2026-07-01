@@ -2460,74 +2460,94 @@ local names_talents_blessings_templates = {
 	--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 		--[+ KEYSTONE 1 - Unleashed Brutality +]-- ruof Высвобожденнная жестокость
 		-- ["loc_talent_adamant_cyber_mastiff_elites"] = {
+		--	["zh-tw"] = "猛犬出擊",
 		-- },
 		--[+ KEYSTONE 2 - Lone Wolf +]-- ruof Одинокий волк
 		-- ["loc_talent_adamant_disable_companion"] = {
+		--	["zh-tw"] = "孤狼",
 		-- },
 		--[+ KEYSTONE 3 - Go Get 'Em! +]-- ruof Взять их!
 		-- ["loc_talent_adamant_cyber_mastiff_ranged"] = {
+		--	["zh-tw"] = "往前進攻！",
 		-- },
 		--[+ KEYSTONE 4 - Execution Order +]-- ruof Приказ казнить
 		["loc_talent_adamant_exterminator"] = {
 			ru = "Метка возмездия",
+			["zh-tw"] = "處刑命令",
 		},
 		--[+ KEYSTONE 4-1 - Efficient Killer +]-- ruof Эффективный убийца
 		-- ["loc_talent_adamant_exterminator_toughness"] = {
+		--	["zh-tw"] = "效率殺手",
 		-- },
 		--[+ KEYSTONE 4-2 - Malocator +]-- ruof Малокатор
 		-- ["loc_talent_adamant_exterminator_ability_cooldown"] = {
+		--	["zh-tw"] = "生化武器官",
 		-- },
 		--[+ KEYSTONE 4-3 - No Lenience +]-- ruof Нетерпимость
 		-- ["loc_talent_adamant_exterminator_stack_during_activation"] = {
+		--	["zh-tw"] = "罪不可赦",
 		-- },
 		-- [+ KEYSTONE 4-4 - Keeping Protocol +]-- ruof Поддержание протокола
 		["loc_talent_execution_order_perma_buff"] = {
 			ru = "Соблюдение протокола",
+			["zh-tw"] = "殺戮協議",
 		},
 		--[+ KEYSTONE 4-5 - Not Far Behind +]-- ruof Не так далеко позади
 		["loc_talent_adamant_pinning_dog_bonus_moving_towards"] = {
 			ru = "В зоне досягаемости",
+			["zh-tw"] = "不弱人後",
 		},
 		--[+ KEYSTONE 5 - Terminus Warrant +]-- ruof Распоряжение «Терминус»
 		["loc_talent_adamant_bullet_rain"] = {
 			ru = "Ордер Терминус",
+			["zh-tw"] = "終點站令狀",
 		},
 		--[+ KEYSTONE 5-1 - Dispense Justice +]-- ruof Охват правосудия
 		["loc_talent_adamant_bullet_rain_fire_rate"] = {
 			ru = "Исполнение приговора",
+			-- TODO Unknown
 		},
 		--[+ KEYSTONE 5-2 - Obstinate +]-- ruof Упрямый
 		["loc_talent_adamant_bullet_rain_tdr"] = {
 			ru = "Непреклонный",
+			["zh-tw"] = "能屈能伸",
 		},
 		--[+ KEYSTONE 5-3 - Terminal Decree +]-- ruof Окончательное постановление
 		["loc_talent_adamant_bullet_rain_toughness"] = {
 			ru = "Последний приговор",
+			["zh-tw"] = "終端律令",
 		},
 		--[+ KEYSTONE 5-4 - Writ of Judgement +]-- ruof Судебное предписание
 		["loc_talent_adamant_bullet_rain_ability"] = {
 			ru = "Судебный ордер",
+			["zh-tw"] = "審判之旨",
 		},
 		--[+ KEYSTONE 6 - Forceful +]-- ruof Напористый
 		["loc_talent_adamant_forceful"] = {
 			ru = "Неудержимый",
+			["zh-tw"] = "堅定不移",
 		},
 		--[+ KEYSTONE 6-1 - Adamant Will +]-- ruof Адамантовая воля
 		-- ["loc_talent_adamant_forceful_stamina_block_and_push_alt"] = {
+		--	["zh-tw"] = "堅定意志",
 		-- },
 		--[+ KEYSTONE 6-2 - Will of the Lex +]-- ruof Воля Закона
 		-- ["loc_talent_adamant_forceful_toughness_regen_per_stack_desc"] = {
+		--	["zh-tw"] = "律法之志",
 		-- },
 		--[+ KEYSTONE 6-3 - Targets Acquired +]-- ruof Цели обнаружены
 		-- ["loc_talent_adamant_forceful_ranged"] = {
+		--	["zh-tw"] = "鎖定目標",
 		-- },
 		--[+ KEYSTONE 6-4 - Arbites Vigilant +]-- ruof Бдительность Арбитрес
 		["loc_talent_adamant_forceful_refresh_on_ability"] = {
 			ru = "Бдительный арбитрес",
+			["zh-tw"] = "法務官警覺",
 		},
 		--[+ KEYSTONE 6-5 - Judicial Force +]-- ruof Судебная сила
 		["loc_talent_adamant_forceful_melee"] = {
 			ru = "Сила Правосудия",
+			["zh-tw"] = "審判之力",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - No Escape +]-- ruof Не сбежишь
