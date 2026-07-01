@@ -2553,159 +2553,203 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 1 - No Escape +]-- ruof Не сбежишь
 		["loc_talent_adamant_elite_special_kills_offensive_boost"] = {
 			ru = "Не уйдёшь",
+			["zh-tw"] = "無處可逃",
 		},
 		--[+ PASSIVE 2 - Withering Fire +]-- ruof Изнуряющий огонь
 		["loc_talent_adamant_damage_after_reloading"] = {
 			ru = "Истребляющий огонь",
+			["zh-tw"] = "凋零烈焰",
 		},
 		--[+ PASSIVE 3 - Hammer of Judgement +]-- ruof Молот правосудия
 		["loc_talent_adamant_multiple_hits_attack_speed"] = {
 			ru = "Молот Правосудия",
+			["zh-tw"] = "審判之錘",
 		},
 		--[+ PASSIVE 4 - Razor-Jaw Augment +]-- ruof Аугментация челюстей: бритва
 		["loc_talent_adamant_dog_pounces_bleed_nearby"] = {
 			ru = "Аугментация челюсти-бритвы",
+			["zh-tw"] = "重顎獠牙",
 		},
 		--[+ PASSIVE 5 - Target Neutralised +]-- ruof Цель нейтрализована
 		-- ["loc_talent_adamant_elite_special_kills_replenish_toughness"] = {
+		--	["zh-tw"] = "繩之以法",
 		-- },
 		--[+ PASSIVE 6 - Up Close +]-- ruof Лицом к лицу
 		["loc_talent_adamant_close_kills_restore_toughness"] = {
 			ru = "В упор",
+			["zh-tw"] = "近在眉睫",
 		},
 		--[+ PASSIVE 7 - Force of Will +]-- ruof Сила воли
 		-- ["loc_talent_adamant_staggers_replenish_toughness"] = {
+		--	["zh-tw"] = "鐵血之志",
 		-- },
 		--[+ PASSIVE 8 - Retaliatory Force +]-- ruof Сила возмездия
 		-- ["loc_talent_adamant_perfect_block_damage_boost"] = {
+		--	["zh-tw"] = "還治其人之身",
 		-- },
 		--[+ PASSIVE 9 - Man and Cyber-Mastiff +]-- ruof Человек и кибермастиф
 		-- ["loc_talent_adamant_toughness_regen_near_companion"] = {
+		--	["zh-tw"] = "電子獒犬與人",
 		-- },
 		--[+ PASSIVE 10 - Walk It Off +]-- ruof Остынь
 		["loc_talent_adamant_stamina_regens_toughness"] = {
 			ru = "Заживёт по ходу",
+			["zh-tw"] = "走一走治百病",
 		},
 		--[+ PASSIVE 11 - Shield Plates +]-- ruof Пластинчатые щиты
 		["loc_talent_adamant_shield_plates"] = {
 			ru = "Щитовые пластины",
+			["zh-tw"] = "盾型裝甲",
 		},
 		--[+ PASSIVE 12 - Arbitrator Armour +]-- ruof Броня Арбитратора
 		["loc_talent_adamant_armor"] = {
 			ru = "Броня арбитратора",
+			["zh-tw"] = "法務官之鎧",
 		},
 		--[+ PASSIVE 13 - Voltaic Mandibles Augment +]-- ruof Аугментация челюстей: электрошок
 		["loc_talent_adamant_dog_attacks_electrocute"] = {
 			ru = "Аугментация вольтаические жвала",
+			["zh-tw"] = "電能獠牙",
 		},
 		--[+ PASSIVE 14 - Ammo Belt +]-- ruof Поясная разгрузка
 		["loc_talent_adamant_ammo_belt"] = {
 			ru = "Патронтаж",
+			["zh-tw"] = "彈藥腰帶",
 		},
 		--[+ PASSIVE 15 - Concussive +]-- ruof Сотрясение
 		["loc_talent_adamant_melee_weakspot_hits_count_as_stagger"] = {
 			ru = "Ошеломление",
+			["zh-tw"] = "震盪攻擊",
 		},
 		--[+ PASSIVE 16 - Canine Morale +]-- ruof Собачий настрой
 		["loc_talent_adamant_pinning_dog_kills_buff_allies"] = {
 			ru = "Боевой настрой пса",
+			["zh-tw"] = "猛犬氣場",
 		},
 		--[+ PASSIVE 17 - Imposing Force +]-- ruof Впечатляющая сила
 		["loc_talent_adamant_damage_reduction_after_elite_kill"] = {
 			ru = "Давящая мощь",
+			["zh-tw"] = "勢如破竹",
 		},
 		--[+ PASSIVE 18 - Suppression Force +]-- ruof Сила подавления
 		-- ["loc_talent_adamant_staggered_enemies_deal_less_damage"] = {
+		--	["zh-tw"] = "壓制武力",
 		-- },
 		--[+ PASSIVE 19 - Suppression Protocols +]-- ruof Протоколы подавления
 		-- ["loc_talent_adamant_hitting_multiple_gives_tdr"] = {
+		--	["zh-tw"] = "苛政壓制",
 		-- },
 		--[+ PASSIVE 20 - Plasteel Plates +]-- ruof Пластины из пластали
 		["loc_talent_adamant_plasteel_plates"] = {
 			ru = "Пласталевые пластины",
+			["zh-tw"] = "塑鋼裝甲",
 		},
 		--[+ PASSIVE 21 - Arbites Revelatum +]-- ruof Арбитрес Ревелатум
 		-- ["loc_talent_adamant_dodge_grants_damage"] = {
+		--	["zh-tw"] = "追跡法務官",
 		-- },
 		--[+ PASSIVE 22 - Justified Measures +]-- ruof Оправданные меры
 		-- ["loc_talent_adamant_stacking_damage"] = {
+		--	["zh-tw"] = "正當手段",
 		-- },
 		--[+ PASSIVE 23 - Hold the Line +]-- ruof Держать строй
 		["loc_talent_adamant_staggers_reduce_damage_taken"] = {
 			ru = "Держи строй",
+			["zh-tw"] = "堅守陣線",
 		},
 		--[+ PASSIVE 24 - Judicious Efficiency +]-- ruof Разумная эффективность
 		["loc_talent_adamant_elite_special_kills_reload_speed"] = {
 			ru = "Судейская эффективность",
+			["zh-tw"] = "恰如其分",
 		},
 		--[+ PASSIVE 25 - Rapid Movement +]-- ruof Быстрое перемещение
 		["loc_talent_adamant_sprinting_sliding"] = {
 			ru = "Быстрые движения",
+			["zh-tw"] = "迅疾走位",
 		},
 		--[+ PASSIVE 26 - Rebreather +]-- ruof Противогаз
 		["loc_talent_adamant_rebreather"] = {
 			ru = "Ребризер",
+			["zh-tw"] = "呼吸器",
 		},
 		--[+ PASSIVE 27 - Cower, Miscreants! +]-- ruof Трепещите, негодяи!
 		-- ["loc_talent_adamant_damage_vs_suppressed"] = {
+		--	["zh-tw"] = "惡徒退散",
 		-- },
 		--[+ PASSIVE 28 - Target the Weak +]-- ruof Цель - слабаки
 		-- ["loc_talent_adamant_staggered_enemies_take_more_damage"] = {
+		--	["zh-tw"] = "針對弱者",
 		-- },
 		--[+ PASSIVE 29 - The Emperor's Fist +]-- ruof Кулак Императора
 		-- ["loc_talent_adamant_first_melee_hit_increased_damage"] = {
+		--	["zh-tw"] = "帝皇之拳",
 		-- },
 		--[+ PASSIVE 30 - Zealous Dedication +]-- ruof Фанатичная преданность
 		-- ["loc_talent_adamant_crit_chance_on_kill"] = {
+		--	["zh-tw"] = "狂熱信仰",
 		-- },
 		--[+ PASSIVE 31 - Street Smarts +]-- ruof Законы улицы
 		["loc_talent_adamant_dodge_improvement"] = {
 			ru = "Уличная хватка",
+			["zh-tw"] = "街頭妙招",
 		},
 		--[+ PASSIVE 32 - Drive them Back +]-- ruof Отбрось их
 		["loc_talent_adamant_cleave_after_push"] = {
 			ru = "Натиск",
+			["zh-tw"] = "兵敗如山倒",
 		},
 		--[+ PASSIVE 33 - Target Selection +]-- ruof Выбор цели
 		["loc_talent_adamant_pinning_dog_elite_damage"] = {
 			ru = "Выбор целей",
+			["zh-tw"] = "篩選目標",
 		},
 		--[+ PASSIVE 34 - Soulguilt Scan +]-- ruof Поиск виновных душ
 		-- ["loc_talent_adamant_stacking_weakspot_strength"] = {
+		--	["zh-tw"] = "罪孽判官",
 		-- },
 		--[+ PASSIVE 35 - Priority Endowment +]-- ruof Приоритетное снабжение
 		-- ["loc_talent_adamant_clip_size"] = {
+		--	["zh-tw"] = "秉賦為先",
 		-- },
 		--[+ PASSIVE 36 - Target Priority +]-- ruof Приоритет целей
 		-- ["loc_talent_adamant_increased_damage_to_high_health"] = {
+		--	["zh-tw"] = "擊殺順序",
 		-- },
 		--[+ PASSIVE 37 - Final Warning +]-- ruof Последнее предупреждение
 		-- ["loc_talent_adamant_ranged_damage_on_melee_stagger"] = {
+		--	["zh-tw"] = "最後通牒",
 		-- },
 		--[+ PASSIVE 38 - Weight of the Lex +]-- ruof Вес Закона
 		-- ["loc_talent_adamant_heavy_attacks_increase_damage"] = {
+		--	["zh-tw"] = "重如律法",
 		-- },
 		--[+ PASSIVE 39 - Serrated Maw +]-- ruof Зазубренная пасть
 		-- ["loc_talent_adamant_dog_applies_brittleness"] = {
+		--	["zh-tw"] = "鋒利獠牙",
 		-- },
 		--[+ PASSIVE 40 - Prosecution Blow +]-- ruof Обвиняющий удар
 		["loc_talent_adamant_crits_rend"] = {
 			ru = "Карающий удар",
+			["zh-tw"] = "制裁重擊",
 		},
 		--[+ PASSIVE 41 - March +]-- ruof Марш
 		-- ["loc_talent_adamant_movement_speed_on_block"] = {
+		--	["zh-tw"] = "行軍之志",
 		-- },
 		--[+ PASSIVE 42 - Monstrosity Hunter +]-- ruof Охота на чудовищ
 		["loc_talent_adamant_monster_hunter"] = {
 			ru = "Охотник на чудовищ",
+			["zh-tw"] = "巨獸獵人",
 		},
 		--[+ PASSIVE 43 - Strike Down +]-- ruof Сбивающий удар
 		["loc_talent_adamant_melee_attacks_on_staggered_rend"] = {
 			ru = "Сокрушительный удар",
+			["zh-tw"] = "毀滅打擊",
 		},
 		--[+ PASSIVE 44 - True Grit +]-- ruof Истинная выдержка
 		["loc_talent_adamant_limit_dmg_taken_from_hits"] = {
 			ru = "Настоящая закалка",
+			["zh-tw"] = "堅忍不拔",
 		},
 
 
