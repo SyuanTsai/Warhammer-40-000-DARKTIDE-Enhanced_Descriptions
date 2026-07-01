@@ -14,12 +14,12 @@
    * COLORS_KWords_Numbers\COLORS_KWords_ru.lua
    * COLORS_KWords_Numbers\COLORS_KWords_tw.lua
    * COLORS_KWords_Numbers\COLORS_Numbers.lua
-   * Main_Modules\TALENTS*.lua
+   * Main_Modules\PENANCES.lua
 
 2. 修改：
 
    * COLORS_KWords_Numbers\COLORS_KWords_tw.lua
-   * Main_Modules\TALENTS*.lua
+   * Main_Modules\PENANCES.lua
    * AI Document\Summary - zh-tw.md
 
 3. 執行必要檢查：
@@ -52,7 +52,6 @@ Translation Table 要求：
 
 * 翻譯參考檔已改為：
   AI Document\Translation Table - zh-tw.md
-* 不要再使用 References\Translation.md。
 * Translation Table 中已有的專有名詞必須優先使用。
 * 如果 Translation Table 沒有，但 COLORS_KWords_tw.lua 已有一致譯名，請沿用。
 * 如果發現同一個英文詞在不同地方有多種 zh-tw 譯法，不要自行強行統一，請記錄到 AI Document\Summary - zh-tw.md 的 Manual Review Required。
@@ -72,7 +71,7 @@ AI Document\Summary - zh-tw.md
 嚴格 Context 限制：
 
 禁止一次讀取完整檔案內容。
-禁止把整個 TALENTS_*.lua 載入 context。
+禁止把整個 Main_Modules\PENANCES.lua 載入 context。
 禁止把整個 COLORS_KWords_tw.lua 載入 context。
 禁止使用「讀取大段文件後批量替換整個檔案」的方式。
 禁止為了比對而一次讀取完整 en / ru / zh-tw 檔案。
@@ -97,11 +96,12 @@ AI Document\Summary - zh-tw.md
 6. 每批最多處理 5 個 localization entry。
 7. 每次只讀取這 5 個 entry 的完整內容。
 8. 逐一產生或更新 zh-tw。
-9. 每完成 1 個 entry，就立刻更新 AI Document\Summary - zh-tw.md。
-10. 每完成 5 個 entry，就執行 git diff --check。
-11. 再處理下一批。
+9. 更新完成後要把過時的zh-tw移除掉。
+10. 每完成 1 個 entry，就立刻更新 AI Document\Summary - zh-tw.md。
+11. 每完成 5 個 entry，就執行 git diff --check。
+12. 再處理下一批。
 
-如果你認為需要讀更大的範圍，必須先限制在同一個 section，例如 BLITZ、AURA、ABILITY、KEYSTONE。
+如果你認為需要讀更大的範圍，必須先限制在同一個 section。
 即使是 section，也不可讀取整個檔案。
 每次最多仍只能載入 5 個 entry 的完整內容。
 
@@ -185,15 +185,15 @@ Lua 字串串接檢查：
 
 * Damage：傷害
 * Toughness：韌性
-* Peril：危厄
+* Peril：反噬
 * Stagger：踉蹌 / 使敵人踉蹌，依上下文使用
-* Stun：擊暈
+* Stun：眩暈
 * Electrocute / Electrocuted / Electrocution：電擊 / 被電擊 / 電擊效果
-* Soulblaze：靈魂烈焰，除非 Translation Table 指定其他譯名
+* Soulblaze：靈魂之火，除非 Translation Table 指定其他譯名
 * Warp Charge：亞空間充能，除非 Translation Table 指定其他譯名
 * Combat Ability：戰鬥技能
-* Blitz：閃擊技能
-* Coherency：連結，除非 Translation Table 指定其他譯名
+* Blitz：閃擊
+* Coherency：協同，除非 Translation Table 指定其他譯名
 * Weakspot：弱點
 * Critical Hit / Crit：暴擊
 * Carapace：甲殼護甲
@@ -262,14 +262,8 @@ Summary 格式請維持或補齊為：
 ## Progress
 
 * [ ] COLORS_KWords_Numbers/COLORS_KWords_tw.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Arbites.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Ogryn.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Psyker.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Scum.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Veteran.lua
-* [ ] Main_Modules/TALENTS/TALENTS_Zealot.lua
+* [ ] Main_Modules\PENANCES.lua
 
-如果實際資料夾中檔案數量不同，請以實際 Main_Modules/TALENTS/*.lua 為準，並在 Summary 中列出實際處理到的檔案。
 
 ## Current Position
 
