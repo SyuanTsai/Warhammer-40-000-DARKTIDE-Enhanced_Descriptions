@@ -895,11 +895,11 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 
 ##### 一般天賦
 
-### Hive Scum - 巢都渣子
+### Hive Scum - 巢都敗類
 
-#### 巢都渣子專有名詞
+#### 巢都敗類專有名詞
 
-- Hive Scum - 巢都渣子
+- Hive Scum - 巢都敗類
 - Stimm Field - 化學性依賴
   - 來源檔案：Warhammer 40,000 DARKTIDE/mods/BrokerAutoStim/scripts/mods/BrokerAutoStim/
 - Stimm Supply - 化學性依賴
@@ -907,7 +907,7 @@ When a term exists in this table, prefer the listed Traditional Chinese translat
 - Broker - 代理
   - 來源檔案：Warhammer 40,000 DARKTIDE/mods/BrokerAutoStim/scripts/mods/BrokerAutoStim/
 
-#### 巢都渣子天賦
+#### 巢都敗類天賦
 
 ##### 閃擊
 

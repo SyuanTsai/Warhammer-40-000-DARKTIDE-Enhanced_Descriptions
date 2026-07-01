@@ -216,13 +216,13 @@ local CONFIG = {
 	},
 	-- Arbitres
 	class_arbites_text_colour = {
-		cls_arb = "仲裁官",
-		cls_arb2 = "仲裁官",
+		cls_arb = "法務官",
+		cls_arb2 = "法務官",
 	},
 	-- Hive Scum
 	class_scum_text_colour = {
-		cls_scm = "蜂巢渣滓",
-		cls_scm2 = "蜂巢渣滓",
+		cls_scm = "巢都敗類",
+		cls_scm2 = "巢都敗類",
 	},
 	chemtox_text_colour = {
 		Chem_Tox = "化學毒素",

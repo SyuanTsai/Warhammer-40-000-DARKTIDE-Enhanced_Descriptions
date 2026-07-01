@@ -197,7 +197,7 @@ local scum_localizations = {
 			.."敵人減益：\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("50%", "pc_50_rgb").." "..CKWord("順劈目標", "Hit_mass_rgb_tw").."，近戰攻擊時。持續 1 秒。\n"
 			..CPhrs("Can_be_refr").."\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同效果疊加。\n"
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同效果疊加。\n"
 			.."\n"
 			.."毒素爆炸：\n"
 			..Dot_nc.." 敵人在最後一層後 12 秒內死亡才會觸發。爆炸半徑 2.5 米。\n"
@@ -214,7 +214,7 @@ local scum_localizations = {
 			..CPhrs("Doesnt_Stack_Scm_Aura"), -- Стрелок
 		["zh-tw"] = Dot_green.." 你或"..CKWord("協同", "Coherency_rgb_tw").." 盟友拾取彈藥時，每人都分到 {ammo:%s}。\n"
 			.."\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同光環疊加。",
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同光環疊加。",
 	},
 	--[+ AURA 1 - Gunslinger Improved +]--	26.03.2026
 	["loc_talent_broker_aura_gunslinger_improved_desc"] = { -- ammo: 10%, talent: Gunslinger, +colors
@@ -229,7 +229,7 @@ local scum_localizations = {
 		["zh-tw"] = Dot_green.." 你或"..CKWord("協同", "Coherency_rgb_tw").." 盟友拾取彈藥時，每人都分到 {ammo:%s}。\n"
 			..Dot_green.." 為 {talent:%s} 的增強版本。\n"
 			.."\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同光環疊加。",
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同光環疊加。",
 	},
 	--[+ AURA 2 - Ruffian +]--	26.03.2026
 	["loc_talent_broker_aura_ruffian_desc"] = { -- melee_damage: +10%, talent_name: , +colors
@@ -241,7 +241,7 @@ local scum_localizations = {
 			..CPhrs("Doesnt_Stack_Scm_Aura"), -- Хулиган
 		["zh-tw"] = Dot_green.." {melee_damage:%s} 對你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友的近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同光環疊加。",
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同光環疊加。",
 	},
 	--[+ AURA 3 - Anarchist +]--	30.12.2025
 	["loc_talent_broker_aura_anarchist_desc"] = { -- critical_chance: +5%, +colors
@@ -253,7 +253,7 @@ local scum_localizations = {
 			..CPhrs("Doesnt_Stack_Scm_Aura"), -- Анархист
 		["zh-tw"] = Dot_green.." {critical_chance:%s} 對你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友的"..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同光環疊加。",
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同光環疊加。",
 	},
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
 	--[+ ABILITY 0 - Desperado +]--	26.03.2026
@@ -520,7 +520,7 @@ local scum_localizations = {
 			..Dot_green.." {attack_speed_reduction:%s} 攻擊間隔時間。\n"
 			..Dot_green.." "..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
 			.."{punk_rage:%s} 結束時再重複一次。\n"
-			..Dot_red.." 不與其他"..CKWord("巢都渣子", "cls_scm_rgb_tw").." 的相同效果疊加。",
+			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同效果疊加。",
 	},
 	--[+ ABILITY 2-4 - Pulverising Strikes +]--	26.03.2026
 	["loc_talent_broker_ability_punk_rage_sub_2_desc"] = { -- punk_rage: Rampage!, cleave: +50%, melee_power: +2.5%, max_stacks: 10, s->seconds, +colors
