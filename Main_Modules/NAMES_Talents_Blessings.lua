@@ -2758,303 +2758,386 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 0 - Arbites Grenade +]-- ruof Граната Арбитрес
 		-- ["loc_talent_ability_adamant_grenade"] = {
 			-- ru = "Граната арбитрес",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ BLITZ 1 - Remote Detonation +]-- ruof Дистанционный подрыв
 		-- ["loc_talent_ability_detonate"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ BLITZ 2 - Voltaic Shock Mine +]-- ruof Электрошоковая мина
 		-- ["loc_talent_ability_shock_mine"] = {
 			-- ru = "Вольтаическая шоковая мина",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ BLITZ 3 - Arbites Grenade Improved +]-- ruof Граната Арбитрес
 		-- ["loc_talent_ability_adamant_grenade_improved"] = {
 			-- ru = "Граната арбитрес",
+			-- ["zh-tw"] = "",
 		-- },
 	--[+ +AURA - АУРА+ +]--
 		--[+ AURA 0-1 - Part of the Squad +]-- ruof Часть отряда
 		-- ["loc_talent_adamant_companion_coherency"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ AURA 2 - Ruthless Efficiency +]-- ruof Беспощадная эффективность
 		-- ["loc_talent_adamant_wield_speed_aura"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ AURA 3 - Breaking Dissent +]-- ruof Преодоление разногласий
 		-- ["loc_talent_adamant_damage_vs_staggered_aura"] = {
 			-- ru = "Подавление инакомыслия",
+			-- ["zh-tw"] = "",
 		-- },
 	--[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 		--[+ ABILITY 0, 2 - Nuncio-Aquila +]-- ruof Нунцио-аквила
 		-- ["loc_talent_ability_area_buff_drone"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 1 - Castigator's Stance +]-- ruof Стойка бичевателя
 		-- ["loc_talent_adamant_stance_ability_name"] = {
 			-- ru = "Стойка карателя",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 1-1 - Blessed Armament +]-- ruof Благословенное орудие
 		-- ["loc_talent_adamant_stance_ranged_kills_transfer_ammo"] = {
 			-- ru = "Благословенное вооружение",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 1-2 - Writ of Execution +]-- ruof Ордер на казнь
 		-- ["loc_talent_adamant_stance_elite_kills_stack_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 1-3 - Bloodlust +]-- ruof Жажда крови
 		-- ["loc_talent_adamant_stance_bloodlust"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 2-1 - Inspiring Recitation +]-- ruof Вдохновляющая декламация
 		-- ["loc_talent_adamant_drone_buff_talent"] = {
 			-- ru = "Воодушевляющая проповедь",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 2-2 - Fear of Justice +]-- ruof Страх правосудия
 		-- ["loc_talent_adamant_drone_debuff_talent"] = {
 			-- ru = "Страх перед Правосудием",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 3 - Break the Line +]-- ruof Прорыв фронта
 		-- ["loc_talent_adamant_charge_ability_name"] = {
 			-- ru = "Прорыв строя",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 3-1 - Commendation from Condemnation +]-- ruof Не наказали - значит, похвалили
 		-- ["loc_talent_adamant_charge_toughness_name"] = {
 			-- ru = "Похвала за осуждение",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 3-2 - Targeted Brutality +]-- ruof Направленная жестокость
 		-- ["loc_talent_adamant_charge_cooldown_name"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 3-3 - Kill Order +]-- ruof Приказ убивать
 		-- ["loc_talent_adamant_dog_damage_after_ability"] = {
 			-- ru = "Фас!",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ ABILITY 3-4 - Engage +]-- ruof К бою
 		-- ["loc_talent_adamant_charge_longer_distance"] = {
 			-- ru = "Дальний прорыв",
+			-- ["zh-tw"] = "",
 		-- },
 	--[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 		--[+ KEYSTONE 1 - Unleashed Brutality +]-- ruof Высвобожденнная жестокость
 		-- ["loc_talent_adamant_cyber_mastiff_elites"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 2 - Lone Wolf +]-- ruof Одинокий волк
 		-- ["loc_talent_adamant_disable_companion"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 3 - Go Get 'Em! +]-- ruof Взять их!
 		-- ["loc_talent_adamant_cyber_mastiff_ranged"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 4 - Execution Order +]-- ruof Приказ казнить
 		-- ["loc_talent_adamant_exterminator"] = {
 			-- ru = "Метка возмездия",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 4-1 - Efficient Killer +]-- ruof Эффективный убийца
 		-- ["loc_talent_adamant_exterminator_toughness"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 4-2 - Malocator +]-- ruof Малокатор
 		-- ["loc_talent_adamant_exterminator_ability_cooldown"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 4-3 - No Lenience +]-- ruof Нетерпимость
 		-- ["loc_talent_adamant_exterminator_stack_during_activation"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		-- [+ KEYSTONE 4-4 - Keeping Protocol +]-- ruof Поддержание протокола
 		-- ["loc_talent_execution_order_perma_buff"] = {
 			-- ru = "Соблюдение протокола",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 4-5 - Not Far Behind +]-- ruof Не так далеко позади
 		-- ["loc_talent_adamant_pinning_dog_bonus_moving_towards"] = {
 			-- ru = "В зоне досягаемости",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 5 - Terminus Warrant +]-- ruof Распоряжение «Терминус»
 		-- ["loc_talent_adamant_bullet_rain"] = {
 			-- ru = "Ордер Терминус",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 5-1 - Dispense Justice +]-- ruof Охват правосудия
 		-- ["loc_talent_adamant_bullet_rain_fire_rate"] = {
 			-- ru = "Исполнение приговора",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 5-2 - Obstinate +]-- ruof Упрямый
 		-- ["loc_talent_adamant_bullet_rain_tdr"] = {
 			-- ru = "Непреклонный",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 5-3 - Terminal Decree +]-- ruof Окончательное постановление
 		-- ["loc_talent_adamant_bullet_rain_toughness"] = {
 			-- ru = "Последний приговор",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 5-4 - Writ of Judgement +]-- ruof Судебное предписание
 		-- ["loc_talent_adamant_bullet_rain_ability"] = {
 			-- ru = "Судебный ордер",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6 - Forceful +]-- ruof Напористый
 		-- ["loc_talent_adamant_forceful"] = {
 			-- ru = "Неудержимый",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6-1 - Adamant Will +]-- ruof Адамантовая воля
 		-- ["loc_talent_adamant_forceful_stamina_block_and_push_alt"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6-2 - Will of the Lex +]-- ruof Воля Закона
 		-- ["loc_talent_adamant_forceful_toughness_regen_per_stack_desc"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6-3 - Targets Acquired +]-- ruof Цели обнаружены
 		-- ["loc_talent_adamant_forceful_ranged"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6-4 - Arbites Vigilant +]-- ruof Бдительность Арбитрес
 		-- ["loc_talent_adamant_forceful_refresh_on_ability"] = {
 			-- ru = "Бдительный арбитрес",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ KEYSTONE 6-5 - Judicial Force +]-- ruof Судебная сила
 		-- ["loc_talent_adamant_forceful_melee"] = {
 			-- ru = "Сила Правосудия",
+			-- ["zh-tw"] = "",
 		-- },
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - No Escape +]-- ruof Не сбежишь
 		-- ["loc_talent_adamant_elite_special_kills_offensive_boost"] = {
 			-- ru = "Не уйдёшь",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 2 - Withering Fire +]-- ruof Изнуряющий огонь
 		-- ["loc_talent_adamant_damage_after_reloading"] = {
 			-- ru = "Истребляющий огонь",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 3 - Hammer of Judgement +]-- ruof Молот правосудия
 		-- ["loc_talent_adamant_multiple_hits_attack_speed"] = {
 			-- ru = "Молот Правосудия",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 4 - Razor-Jaw Augment +]-- ruof Аугментация челюстей: бритва
 		-- ["loc_talent_adamant_dog_pounces_bleed_nearby"] = {
 			-- ru = "Аугментация челюсти-бритвы",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 5 - Target Neutralised +]-- ruof Цель нейтрализована
 		-- ["loc_talent_adamant_elite_special_kills_replenish_toughness"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 6 - Up Close +]-- ruof Лицом к лицу
 		-- ["loc_talent_adamant_close_kills_restore_toughness"] = {
 			-- ru = "В упор",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 7 - Force of Will +]-- ruof Сила воли
 		-- ["loc_talent_adamant_staggers_replenish_toughness"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 8 - Retaliatory Force +]-- ruof Сила возмездия
 		-- ["loc_talent_adamant_perfect_block_damage_boost"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 9 - Man and Cyber-Mastiff +]-- ruof Человек и кибермастиф
 		-- ["loc_talent_adamant_toughness_regen_near_companion"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 10 - Walk It Off +]-- ruof Остынь
 		-- ["loc_talent_adamant_stamina_regens_toughness"] = {
 			-- ru = "Заживёт по ходу",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 11 - Shield Plates +]-- ruof Пластинчатые щиты
 		-- ["loc_talent_adamant_shield_plates"] = {
 			-- ru = "Щитовые пластины",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 12 - Arbitrator Armour +]-- ruof Броня Арбитратора
 		-- ["loc_talent_adamant_armor"] = {
 			-- ru = "Броня арбитратора",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 13 - Voltaic Mandibles Augment +]-- ruof Аугментация челюстей: электрошок
 		-- ["loc_talent_adamant_dog_attacks_electrocute"] = {
 			-- ru = "Аугментация вольтаические жвала",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 14 - Ammo Belt +]-- ruof Поясная разгрузка
 		-- ["loc_talent_adamant_ammo_belt"] = {
 			-- ru = "Патронтаж",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 15 - Concussive +]-- ruof Сотрясение
 		-- ["loc_talent_adamant_melee_weakspot_hits_count_as_stagger"] = {
 			-- ru = "Ошеломление",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 16 - Canine Morale +]-- ruof Собачий настрой
 		-- ["loc_talent_adamant_pinning_dog_kills_buff_allies"] = {
 			-- ru = "Боевой настрой пса",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 17 - Imposing Force +]-- ruof Впечатляющая сила
 		-- ["loc_talent_adamant_damage_reduction_after_elite_kill"] = {
 			-- ru = "Давящая мощь",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 18 - Suppression Force +]-- ruof Сила подавления
 		-- ["loc_talent_adamant_staggered_enemies_deal_less_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 19 - Suppression Protocols +]-- ruof Протоколы подавления
 		-- ["loc_talent_adamant_hitting_multiple_gives_tdr"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 20 - Plasteel Plates +]-- ruof Пластины из пластали
 		-- ["loc_talent_adamant_plasteel_plates"] = {
 			-- ru = "Пласталевые пластины",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 21 - Arbites Revelatum +]-- ruof Арбитрес Ревелатум
 		-- ["loc_talent_adamant_dodge_grants_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 22 - Justified Measures +]-- ruof Оправданные меры
 		-- ["loc_talent_adamant_stacking_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 23 - Hold the Line +]-- ruof Держать строй
 		-- ["loc_talent_adamant_staggers_reduce_damage_taken"] = {
 			-- ru = "Держи строй",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 24 - Judicious Efficiency +]-- ruof Разумная эффективность
 		-- ["loc_talent_adamant_elite_special_kills_reload_speed"] = {
 			-- ru = "Судейская эффективность",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 25 - Rapid Movement +]-- ruof Быстрое перемещение
 		-- ["loc_talent_adamant_sprinting_sliding"] = {
 			-- ru = "Быстрые движения",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 26 - Rebreather +]-- ruof Противогаз
 		-- ["loc_talent_adamant_rebreather"] = {
 			-- ru = "Ребризер",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 27 - Cower, Miscreants! +]-- ruof Трепещите, негодяи!
 		-- ["loc_talent_adamant_damage_vs_suppressed"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 28 - Target the Weak +]-- ruof Цель - слабаки
 		-- ["loc_talent_adamant_staggered_enemies_take_more_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 29 - The Emperor's Fist +]-- ruof Кулак Императора
 		-- ["loc_talent_adamant_first_melee_hit_increased_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 30 - Zealous Dedication +]-- ruof Фанатичная преданность
 		-- ["loc_talent_adamant_crit_chance_on_kill"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 31 - Street Smarts +]-- ruof Законы улицы
 		-- ["loc_talent_adamant_dodge_improvement"] = {
 			-- ru = "Уличная хватка",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 32 - Drive them Back +]-- ruof Отбрось их
 		-- ["loc_talent_adamant_cleave_after_push"] = {
 			-- ru = "Натиск",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 33 - Target Selection +]-- ruof Выбор цели
 		-- ["loc_talent_adamant_pinning_dog_elite_damage"] = {
 			-- ru = "Выбор целей",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 34 - Soulguilt Scan +]-- ruof Поиск виновных душ
 		-- ["loc_talent_adamant_stacking_weakspot_strength"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 35 - Priority Endowment +]-- ruof Приоритетное снабжение
 		-- ["loc_talent_adamant_clip_size"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 36 - Target Priority +]-- ruof Приоритет целей
 		-- ["loc_talent_adamant_increased_damage_to_high_health"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 37 - Final Warning +]-- ruof Последнее предупреждение
 		-- ["loc_talent_adamant_ranged_damage_on_melee_stagger"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 38 - Weight of the Lex +]-- ruof Вес Закона
 		-- ["loc_talent_adamant_heavy_attacks_increase_damage"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 39 - Serrated Maw +]-- ruof Зазубренная пасть
 		-- ["loc_talent_adamant_dog_applies_brittleness"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 40 - Prosecution Blow +]-- ruof Обвиняющий удар
 		-- ["loc_talent_adamant_crits_rend"] = {
 			-- ru = "Карающий удар",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 41 - March +]-- ruof Марш
 		-- ["loc_talent_adamant_movement_speed_on_block"] = {
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 42 - Monstrosity Hunter +]-- ruof Охота на чудовищ
 		-- ["loc_talent_adamant_monster_hunter"] = {
 			-- ru = "Охотник на чудовищ",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 43 - Strike Down +]-- ruof Сбивающий удар
 		-- ["loc_talent_adamant_melee_attacks_on_staggered_rend"] = {
 			-- ru = "Сокрушительный удар",
+			-- ["zh-tw"] = "",
 		-- },
 		--[+ PASSIVE 44 - True Grit +]-- ruof Истинная выдержка
 		-- ["loc_talent_adamant_limit_dmg_taken_from_hits"] = {
 			-- ru = "Настоящая закалка",
+			-- ["zh-tw"] = "",
 		-- },
 }
 
