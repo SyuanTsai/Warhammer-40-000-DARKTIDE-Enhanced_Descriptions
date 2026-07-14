@@ -180,7 +180,7 @@ local CONFIG = {
 	},
 	fury_text_colour = {
 		Fury = "狂怒",
-		Rampage = "狂暴", -- Hive Scum
+		Rampage = "暴走", -- Hive Scum
 	},
 	momentum_text_colour = {
 		Momentum = "勢能",
