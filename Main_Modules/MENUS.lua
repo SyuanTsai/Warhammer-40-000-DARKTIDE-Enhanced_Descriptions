@@ -83,7 +83,7 @@ local menus_templates = {
 		["loc_contracts_task_label_kill_bosses"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
 			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸", -- 擊殺巨獸
 			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
 		},
 		--[+ Collect Х kind +]--
@@ -118,7 +118,7 @@ local menus_templates = {
 	["loc_contract_view_intro_description"] = {
 		-- en = "Well? What is it you want?",
 		ru = "Ну? Чего ты хочешь?",
-		["zh-tw"] = "好吧，你想要什麼?", -- 好吧，你想要什麼?
+		["zh-tw"] = "好吧，你想要什麼？", -- 好吧，你想要什麼?
 		["zh-cn"] = "嗯？你有什么需要？", -- 梅尔克介绍语
 	},
 	--[+ Melk's Intro Title +]--
