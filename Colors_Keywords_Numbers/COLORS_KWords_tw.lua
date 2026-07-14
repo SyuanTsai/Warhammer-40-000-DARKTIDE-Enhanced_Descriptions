@@ -397,9 +397,9 @@ local function create_phrs_tw(colors_tw)
 		Can_be_refr = Dot_green .. " 可於啟用期間刷新。",
 		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐一減少。",
 		Can_gen_mult = Dot_green .. " 每次揮擊可產生多層。\n",
-		Can_proc_mult = Dot_green .. " 當" .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時，每次揮擊可以觸發多次。\n",
-		Can_proc_mult_str = Dot_green .. " 當" .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時，每次揮擊可以觸發多次。\n",
-		Refr_dur_stappl = Dot_green .. " 應用層數時刷新持續時間。",
+		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時，每次揮擊可觸發多次。\n",
+		Can_proc_mult_str = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時可觸發多次。\n",
+		Refr_dur_stappl = Dot_green .. " 施加層數時刷新持續時間。",
 		-- Psyker
 		Doesnt_Stack_Psy_Aura = Dot_red .. " 不會與其他" .. CKWord("靈能者", "cls_psy_rgb_tw") .. "的相同光環疊加。",
 		Doesnt_Stack_Psy_eff = Dot_red .. " 不會與其他" .. CKWord("靈能者", "cls_psy_rgb_tw") .. "的相同減益效果疊加。",
@@ -410,9 +410,14 @@ local function create_phrs_tw(colors_tw)
 		Doesnt_Stack_Zea_abil = Dot_red .. " 不會與其他" .. CKWord("狂信徒", "cls_zea_rgb_tw") .. "的相同天賦疊加。",
 		-- Ogryn
 		Doesnt_Stack_Ogr_Aura = Dot_red .. " 不會與其他" .. CKWord("歐格林", "cls_ogr_rgb_tw") .. "的相同光環疊加。",
+		Doesnt_Stack_Ogr_abil = Dot_red .. " 不會與其他" .. CKWord("歐格林", "cls_ogr_rgb_tw") .. "的相同天賦疊加。",
+		-- Hive Scum
+		Doesnt_Stack_Scm_Aura = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同光環疊加。",
+		Doesnt_Stack_Scm_eff = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同減益效果疊加。",
 
-		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾應用。",
-		Cant_Crit = Dot_red .. " 無法" .. CKWord("暴擊", "Crit_rgb_tw") .. "。\n",
+		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加。",
+		Cant_be_refr = Dot_red .. " 無法於啟用期間刷新。",
+		Cant_Crit = Dot_red .. " 無法造成" .. CKWord("致命一擊", "Crit_rgb_tw") .. "。\n",
 		Carap_cant_clv = Dot_red .. " 默認情況下，甲殼護甲無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
 		Carap_cant_cleave = Dot_red .. " 默認情況下，甲殼護甲無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
 		Dont_intw_coher_toughn = Dot_red .. " 不與" .. CKWord("協同", "Coherency_rgb_tw") .. CKWord("韌性", "Toughness_rgb_tw") .. "互動。",
