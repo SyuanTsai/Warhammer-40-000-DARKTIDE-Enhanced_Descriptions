@@ -40,18 +40,18 @@ local CONFIG = {
 		Corruption_res = "腐敗抗性", -- Resistance
 	},
 	crit_text_colour = {
-		Crit = "暴擊",
-		Critical = "暴擊",
+		Crit = "致命一擊",
+		Critical = "致命一擊",
 
-		Crit_chance = "暴擊機率",
-		Crt_chance = "暴擊機率",
-		Crit_m_chance = "近戰暴擊機率", -- Melee Crit Chance
-		Crit_r_chance = "遠程暴擊機率", -- Ranged Crit Chance
+		Crit_chance = "爆擊率",
+		Crt_chance = "爆擊率",
+		Crit_m_chance = "近戰爆擊率", -- Melee Crit Chance
+		Crit_r_chance = "遠程爆擊率", -- Ranged Crit Chance
 
-		Crit_hit = "暴擊命中",
-		Crit_hits = "暴擊命中",
-		Crtcll_strk = "暴擊",
-		Crt_hit_chnc = "暴擊命中機率",
+		Crit_hit = "致命一擊",
+		Crit_hits = "致命一擊",
+		Crtcll_strk = "致命一擊",
+		Crt_hit_chnc = "致命一擊機率",
 		Crt_hit_col = "暴擊傷害",
 		Crit_hit_m_dmg = "近戰暴擊傷害", -- Melee Crit Damage
 		Crit_hit_r_dmg = "遠程暴擊傷害", -- Ranged Crit Damage
