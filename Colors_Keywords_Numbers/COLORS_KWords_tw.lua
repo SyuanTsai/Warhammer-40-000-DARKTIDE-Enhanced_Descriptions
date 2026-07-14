@@ -85,8 +85,8 @@ local CONFIG = {
 		Finesse_dmg = "靈巧傷害",
 	},
 	health_text_colour = {
-		Health = "生命",
-		Health_m = "最大生命",
+		Health = "生命值",
+		Health_m = "最大生命值",
 		Wound = "傷痕",
 		Wounds = "傷痕",
 	},
