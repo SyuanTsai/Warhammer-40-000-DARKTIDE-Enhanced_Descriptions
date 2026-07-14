@@ -109,7 +109,7 @@ local CONFIG = {
 		Rending = "撕裂",
 	},
 	soulblaze_text_colour = {
-		Soulblaze = "靈火",
+		Soulblaze = "靈魂之火",
 	},
 	stagger_text_colour = {
 		Stagger = "踉蹌",
