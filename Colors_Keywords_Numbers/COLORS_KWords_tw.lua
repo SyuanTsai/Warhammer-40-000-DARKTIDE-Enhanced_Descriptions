@@ -56,13 +56,13 @@ local CONFIG = {
 		Crit_hit_m_dmg = "近戰暴擊傷害", -- Melee Crit Damage
 		Crit_hit_r_dmg = "遠程暴擊傷害", -- Ranged Crit Damage
 
-		Crit_strike = "暴擊打擊",
-		Crit_strikes = "暴擊",
-		Crt_chnc_r = "暴擊打擊機率",
-		Crt_strk_dmg = "暴擊打擊傷害",
+		Crit_strike = "致命一擊",
+		Crit_strikes = "致命一擊",
+		Crt_chnc_r = "爆擊率",
+		Crt_strk_dmg = "暴擊傷害",
 
-		Crit_Attk = "暴擊攻擊",
-		Crit_shots = "暴擊射擊",
+		Crit_Attk = "致命攻擊",
+		Crit_shots = "致命射擊",
 
 		Crit_dmg_r = "暴擊傷害",
 		Crt_dmg_r = "暴擊傷害",
