@@ -247,7 +247,7 @@ local CONFIG = {
 		martydom = "殉道",
 		shock_gren = "眩暈風暴手雷",
 		shock_gren1 = "眩暈手雷",
-		Stun_gren = "眩暈手榴彈",
+		Stun_gren = "眩暈手雷",
 		zealous = "熱忱",
 		shroudf = "隱秘領域",
 		momentum = "勢能",
@@ -255,7 +255,7 @@ local CONFIG = {
 		Arbites_gren = "法務官手榴彈",
 		BreakZLine = "突破防線",
 		-- Psyker
-		Assail = "攻擊",
+		Assail = "靈能攻擊",
 		assail = "攻擊",
 		Brain_burst = "腦部爆裂",
 		Brain_rupture = "腦部破裂",
