@@ -238,7 +238,7 @@ local localizations = {
 		fr = "Choisissez la langue à utiliser pour les descriptions améliorées\n" ..
 			 "• Auto : Utiliser la langue du jeu\n" ..
 			 "• Manuel : Forcer une langue spécifique pour toutes les descriptions",
-		["zh-tw"] = "選擇用於增強描述的語言\n" ..
+		["zh-tw"] = "選擇用於描述改善的語言\n" ..
 				   "• 自動：使用遊戲語言\n" ..
 				   "• 手動：強制所有描述使用特定語言",
 		["zh-cn"] = "选择用于增强描述的语言\n" ..
