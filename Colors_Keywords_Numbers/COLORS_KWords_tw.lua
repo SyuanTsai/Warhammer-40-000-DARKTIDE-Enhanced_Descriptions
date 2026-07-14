@@ -221,8 +221,8 @@ local CONFIG = {
 	},
 	-- Hive Scum
 	class_scum_text_colour = {
-		cls_scm = "巢都敗類",
-		cls_scm2 = "巢都敗類",
+		cls_scm = "巢都渣滓",
+		cls_scm2 = "巢都渣滓",
 	},
 	chemtox_text_colour = {
 		Chem_Tox = "化學毒素",
