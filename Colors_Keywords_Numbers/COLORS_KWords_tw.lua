@@ -296,9 +296,9 @@ local CONFIG = {
 		volley_fire = "火力齊射",
 		weapspec = "武器專家",
 		-- Ogryn
-		Att_Seeker = "注意力尋求者",
+		Att_Seeker = "渴求關注",
 		big_box = "巨量傷害盒",
-		big_box2 = "投彈完畢！",
+		big_box2 = "投彈完畢!",
 		bigfriendro = "投石問路",
 		bonebraura = "破骨者之環",
 		bull_rush = "蠻牛衝撞",
