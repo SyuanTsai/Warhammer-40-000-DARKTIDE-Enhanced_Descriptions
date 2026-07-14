@@ -310,7 +310,7 @@ local CONFIG = {
 		heavyhitter = "重拳出擊",
 		loyalprot = "忠誠守護者",
 		pbbarrage = "貼身火力",
-		stayclose = "跟緊我！",
+		stayclose = "跟緊我!",
 	-- PENANCES
 		Base_tut_p = "基礎訓練",
 		Curio_p = "珍品",
