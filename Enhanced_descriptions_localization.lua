@@ -699,7 +699,18 @@ local localizations = {
 			.."/ed_reset - Быстрый сброс (очистка кэша + перезагрузка)",
 		fr = "{#color(255, 35, 5)}UNIQUEMENT POUR LES DÉVELOPPEURS !{#reset()}\n"
 			.."Ce module active les commandes de débogage et les utilitaires pour les tests et le dépannage. À utiliser avec prudence.",
-		["zh-tw"] = "{#color(255, 35, 5)}僅供開發者使用！{#reset()}\n此模組啟用除錯指令和用於測試與故障排除的工具。請謹慎使用。",
+		["zh-tw"] = "{#color(255, 35, 5)}僅供開發者使用！{#reset()}\n"
+			.."此模組會啟用用於測試與疑難排解的除錯指令和工具。請謹慎使用。\n"
+			.."/ed_reload - 重新載入 Enhanced Descriptions\n"
+			.."/ed_clear_cache - 清除色彩快取\n"
+			.."/ed_status - 顯示模組狀態\n"
+			.."/ed_mem - 顯示記憶體用量\n"
+			.."/ed_gc - 強制垃圾回收\n"
+			.."/ed_test_color - 測試色彩是否正常\n"
+			.."/ed_lang - 顯示目前語言資訊\n"
+			.."/ed_modules - 檢查已啟用模組\n"
+			.."/ed_test_loc - 測試指定 localization key\n"
+			.."/ed_reset - 快速重置（清除快取 + 重新載入）",
 		["zh-cn"] = "{#color(255, 35, 5)}仅供开发者使用！{#reset()}\n此模块启用调试命令和用于测试与故障排除的工具。请谨慎使用。",
 		de = "{#color(255, 35, 5)}NUR FÜR ENTWICKLER!{#reset()}\nDieses Modul aktiviert Debug-Befehle und Dienstprogramme zum Testen und Fehlerbeheben. Mit Vorsicht verwenden.",
 		it = "{#color(255, 35, 5)}SOLO PER GLI SVILUPPATORI!{#reset()}\nQuesto modulo abilita i comandi di debug e le utilità per il test e la risoluzione dei problemi. Usare con cautela.",
@@ -716,6 +727,8 @@ local localizations = {
 			.."\n{#size(17)}{#color(95, 95, 95)}// Mobility, Melee Damage, Warp Resistance{#reset()}",
 		ru = "Мусорные статы"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Мобильность, Урон рукопашный, Сопротивление варпу{#reset()}",
+		["zh-tw"] = "雜項屬性"
+			.."\n{#size(17)}{#color(95, 95, 95)}// 機動性、近戰傷害、亞空間抗性{#reset()}",
 	},
 --[+DUMP STATS 2+]--
 	dump_stat2_colour = {
@@ -723,6 +736,8 @@ local localizations = {
 			.."\n{#size(17)}{#color(95, 95, 95)}// Ammo, Defences, Heat Management{#reset()}",
 		ru = "Мусорные статы 2"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Боеприпасы, Защита, Отведение тепла{#reset()}",
+		["zh-tw"] = "雜項屬性 2"
+			.."\n{#size(17)}{#color(95, 95, 95)}// 彈藥、防禦、熱量管理{#reset()}",
 	},
 --[+DUMP STATS 3+]--
 	dump_stat3_colour = {
@@ -730,6 +745,8 @@ local localizations = {
 			.."\n{#size(17)}{#color(95, 95, 95)}// Damage{#reset()}",
 		ru = "Мусорные статы 3"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Урон {#reset()}", -- {#size(14)}(Игольный пистолет, Огнемёт и др., наносят урон со временем, на который не влияет эта стата).
+		["zh-tw"] = "雜項屬性 3"
+			.."\n{#size(17)}{#color(95, 95, 95)}// 傷害{#reset()}",
 	},
 
 --[+MAIN+]--
