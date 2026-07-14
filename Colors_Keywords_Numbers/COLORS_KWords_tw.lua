@@ -418,9 +418,9 @@ local function create_phrs_tw(colors_tw)
 		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加。",
 		Cant_be_refr = Dot_red .. " 無法於啟用期間刷新。",
 		Cant_Crit = Dot_red .. " 無法造成" .. CKWord("致命一擊", "Crit_rgb_tw") .. "。\n",
-		Carap_cant_clv = Dot_red .. " 默認情況下，甲殼護甲無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Carap_cant_cleave = Dot_red .. " 默認情況下，甲殼護甲無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Dont_intw_coher_toughn = Dot_red .. " 不與" .. CKWord("協同", "Coherency_rgb_tw") .. CKWord("韌性", "Toughness_rgb_tw") .. "互動。",
+		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Carap_cant_cleave = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Dont_intw_coher_toughn = Dot_red .. " 不會與" .. CKWord("協同", "Coherency_rgb_tw") .. CKWord("韌性", "Toughness_rgb_tw") .. "回復互動。",
 	}
 end
 
@@ -433,11 +433,12 @@ local function create_nts_tw(colors_tw)
 	end
 
 	return {
-		Brtl_note = Dot_green .. " " .. CKWord("脆弱", "Brittleness_rgb_tw") .. "增加隊伍對敵人的" .. CKWord("傷害", "Damage_rgb_tw") .. "。",
-		Fns_note = Dot_green .. " " .. CKWord("靈巧", "Finesse_rgb_tw") .. "增加" .. CKWord("弱點傷害", "Weakspot_dmg_rgb_tw") .. "和" .. CKWord("暴擊傷害", "Crit_dmg_r_rgb_tw") .. "。",
-		Impact_note = Dot_green .. " " .. CKWord("衝擊", "Impact_rgb_tw") .. "增加對敵人的" .. CKWord("踉蹌", "Stagger_rgb_tw") .. "效果。",
-		Pwr_note = Dot_green .. " " .. CKWord("威力", "Strength_rgb_tw") .. "增加" .. CKWord("傷害", "Damage_rgb_tw") .. "、" .. CKWord("踉蹌", "Stagger_rgb_tw") .. "和" .. CKWord("順劈攻擊", "Cleave_rgb_tw") .. "。",
-		Rend_note = Dot_green .. " " .. CKWord("撕裂", "Rending_rgb_tw") .. "增加你自己造成的" .. CKWord("傷害", "Damage_rgb_tw") .. "。",
+		Brtl_note = Dot_green .. " " .. CKWord("脆弱", "Brittleness_rgb_tw") .. "會提高隊伍對敵人造成的" .. CKWord("傷害", "Damage_rgb_tw") .. "。",
+		Fns_note = Dot_green .. " " .. CKWord("靈巧", "Finesse_rgb_tw") .. "會提高" .. CKWord("弱點傷害", "Weakspot_dmg_rgb_tw") .. "和" .. CKWord("暴擊傷害", "Crit_dmg_r_rgb_tw") .. "。",
+		Impact_note = Dot_green .. " " .. CKWord("衝擊", "Impact_rgb_tw") .. "會提高對敵人的" .. CKWord("踉蹌", "Stagger_rgb_tw") .. "效果。",
+		Pwr_note = Dot_green .. " " .. CKWord("威力", "Strength_rgb_tw") .. "會提高" .. CKWord("傷害", "Damage_rgb_tw") .. "、" .. CKWord("踉蹌", "Stagger_rgb_tw") .. "和" .. CKWord("順劈攻擊", "Cleave_rgb_tw") .. "。",
+		Rend_note = Dot_green .. " " .. CKWord("撕裂", "Rending_rgb_tw") .. "會提高你自身造成的" .. CKWord("傷害", "Damage_rgb_tw") .. "。",
+		Weaksp_note = Dot_green .. " " .. CKWord("弱點", "Weakspots_rgb_tw") .. "通常是頭部。納垢巨獸的弱點是背部腫泡。",
 	}
 end
 
