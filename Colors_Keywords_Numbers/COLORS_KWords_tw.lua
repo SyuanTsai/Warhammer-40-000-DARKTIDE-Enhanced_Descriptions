@@ -126,19 +126,19 @@ local CONFIG = {
 		Stamina_c_r = "耐力消耗",
 	},
 	toughness_text_colour = {
-		TDR = "韌性傷害減免",
+		TDR = "韌性減傷",
 		Tghns_dmg = "韌性傷害",
-		Tghns_dmg_red = "韌性傷害減免",
+		Tghns_dmg_red = "韌性減傷",
 		Toughness = "韌性",
 		Toughness_m = "最大韌性",
 		Toughness_rs = "韌性恢復速度",
 	},
 	weakspot_text_colour = {
-		Weak_spot = "弱點部位",
+		Weak_spot = "弱點",
 		Weakspot = "弱點",
 		Weakspots = "弱點",
 
-		Weakspothit = "命中弱點",
+		Weakspothit = "弱點命中",
 		Weakspothits = "弱點命中",
 		Weakspot_m_dmg = "近戰弱點傷害", -- Melee Weakspot Damage
 		Weakspot_r_dmg = "遠程弱點傷害", -- Ranged Weakspot Damage
