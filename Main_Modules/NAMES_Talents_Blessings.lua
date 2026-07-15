@@ -944,7 +944,7 @@ local names_talents_blessings_templates = {
 		-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
 		["loc_talent_melee_damage_boost_medium"] = {
 			ru = "Усиление урона ближнего боя",
-			["zh-tw"] = "重擊傷害增幅",
+			["zh-tw"] = "近戰增幅",
 		},
 		--[+ Movement Speed Boost +]-- ruof Усиление скорости передвижения	20.04.2026
 		-- Psyker 1, Zealot 1, Veteran 1
@@ -982,7 +982,7 @@ local names_talents_blessings_templates = {
 		-- Ogryn 1
 		["loc_talent_armor_pen_low"] = {
 			ru = "Усиление пробивания брони",
-			["zh-tw"] = "撕裂增強",
+			["zh-tw"] = "撕裂增幅",
 		},
 		--[+ Stamina Boost Low +]-- ruof Усиление выносливости	20.04.2026
 		-- Psyker 1, Veteran 1
