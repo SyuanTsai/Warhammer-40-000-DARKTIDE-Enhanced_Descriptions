@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "獲得一件你選擇的武器，只會是褻瀆級(白武)。", -- 獲得一件你選定的褻瀆武器。
+		["zh-tw"] = "取得一件你選擇的褻瀆級武器。", -- 獲得一件你選定的褻瀆武器。
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
@@ -250,23 +250,24 @@ local menus_templates = {
 	["loc_main_menu_warband_count"] = {
 		-- en = "Strike Team",
 		ru = "Ударная группа",
-		["zh-tw"] = "突擊小隊", -- 打擊小隊
+		["zh-tw"] = "打擊小隊", -- 打擊小隊
 	},
 	["loc_social_menu_roster_view_display_name"] = {
 		-- en = "Strike Team",
 		ru = "Ударная группа",
-		["zh-tw"] = "突擊小隊", -- 打擊小隊
+		["zh-tw"] = "打擊小隊", -- 打擊小隊
 	},
 	--[+ Previous Missions +]--
 	["loc_social_menu_roster_players_from_previous_missions"] = {
 		-- en = "Previous Missions",
 		-- ru = , -- руоф Предыдущие задания
-		["zh-tw"] = "歷史任務", -- 歷史任務
+		["zh-tw"] = "先前任務", -- 歷史任務
 	},
 	--[+ STIMM LAB +]--
 	["loc_broker_stimm_builder_view_display_name"] = {
 		-- en = "Stimm Lab",
 		ru = "Стим лаба", -- руоф Стимуляторы
+		["zh-tw"] = "興奮劑實驗室",
 	},
 
 
@@ -294,7 +295,7 @@ local menus_templates = {
 	["loc_havoc_reward_objective_order"] = {
 		-- en = "Complete a Havoc Assignment",
 		ru = "Выполнить задание Хавока",
-		["zh-tw"] = "完成任一場劫任務", -- 完成任一浩劫任務
+		["zh-tw"] = "完成一場浩劫任務", -- 完成任一浩劫任務
 	},
 
 --[+ ++KILLFEED++ +]--
@@ -377,7 +378,7 @@ local menus_templates = {
 	["loc_inventory_view_display_name"] = {
 		-- en = "Loadout",
 		ru = "Снаряжение",
-		["zh-tw"] = "裝備", -- 裝備配置
+		["zh-tw"] = "裝備配置", -- 裝備配置
 		["zh-cn"] = "装备", -- 装备
 	},
 	--[+ Cosmetic slots +]--
