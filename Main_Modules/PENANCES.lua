@@ -137,7 +137,7 @@ local penances_localizations = {
 		["loc_achievement_unlock_gadgets_description"] = {
 			en = "Unlock your first "..CKWord("Curio", "Curio_p_rgb").." slot.",
 			ru = "Разблокируйте вашу первую ячейку "..CKWord("Реликвий", "Curio_p_rgb_ru")..".",
-			["zh-tw"] = "解鎖第一個 "..CKWord("珍品", "Curio_p_rgb_tw").." 。",
+			["zh-tw"] = "解鎖第一個 "..CKWord("珍品", "Curio_p_rgb_tw").."欄位。",
 		},
 	--[+ Well met, Whippersnapper +]-- руоф Какая приятная встреча, молокосос
 	["loc_achievement_unlock_contracts_name"] = {
@@ -148,7 +148,7 @@ local penances_localizations = {
 		["loc_achievement_unlock_contracts_description"] = {
 			en = "Unlock access to "..CKWord("Sire Melk's Requisitorium", "Sir_melk_p_rgb")..".",
 			ru = "Разблокируйте доступ в "..CKWord("Реквизиториум сира Мелка", "Sir_melk_p_rgb_ru")..".",
-			["zh-tw"] = "解鎖 "..CKWord("梅爾克領主的必備品店", "Sir_melk_p_rgb_tw").." 。",
+			["zh-tw"] = "解鎖進入 "..CKWord("梅爾克領主的必備品店", "Sir_melk_p_rgb_tw").." 的權限。",
 		},
 	--[+ Hail the Omnissiah! - Слава Омниссии! +]--
 	["loc_achievement_unlock_crafting_name"] = {
@@ -158,7 +158,7 @@ local penances_localizations = {
 		["loc_achievement_unlock_crafting_description"] = {
 			en = "Unlock access to the "..CKWord("Shrine of the Omnissiah", "Omnissia_p_rgb")..".",
 			ru = "Разблокируйте доступ в "..CKWord("Святилище Омниссии", "Omnissia_p_rgb_ru")..".",
-			["zh-tw"] = "解鎖 "..CKWord("歐姆尼賽亞的神龕", "Omnissia_p_rgb_tw").." 。",
+			["zh-tw"] = "解鎖進入 "..CKWord("歐姆尼賽亞的神龕", "Omnissia_p_rgb_tw").." 的權限。",
 		},
 	--[+ Circle of Trust (1-6) +]-- руоф Круг доверия (1-6)
 	-- ["loc_achievement_path_of_trust_x_name"] = {
@@ -168,7 +168,7 @@ local penances_localizations = {
 		["loc_achievement_path_of_trust_x_description"] = {
 			en = "Complete "..CKWord("Path of Trust", "PthOTrst_p_rgb").." chapter "..CNumb("{target}", "target_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." главу "..CKWord("Пути доверия", "PthOTrst_p_rgb_ru")..".",
-			["zh-tw"] = "完成第 "..CNumb("{target}", "target_rgb").." 章的互信團體。",
+			["zh-tw"] = "完成 "..CKWord("信任之路", "PthOTrst_p_rgb_tw").." 第 "..CNumb("{target}", "target_rgb").." 章。",
 		},
 
 
@@ -185,7 +185,7 @@ local penances_localizations = {
 		["loc_achievement_rank_veteran_2_x_description"] = {
 			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Veteran", "cls_vet_rgb")..".",
 			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Ветераном", "cls_vet2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 		},
 	--[+ Through The Mud (1-5) +]-- руоф Из грязи (1-5) -- 穿越泥沼 (1-5)
 		--[+ Complete 100 Missions as a Veteran. +]-- руоф Выполнить Ветераном задания: 100.
@@ -204,7 +204,7 @@ local penances_localizations = {
 		["loc_achievement_missions_veteran_2_objective_1_description"] = {
 			en = "As a "..CKWord("Veteran", "cls_vet_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
 			ru = "Пройдите "..CKWord("Ветераном", "cls_vet2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
-			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").."，完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+			["zh-tw"] = "使用 "..CKWord("老兵", "cls_vet_rgb_tw").."，每種類型的任務至少完成 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Vantage Point (2) +]-- руоф Точка обзора (2)
 	["loc_achievement_missions_veteran_2_objective_2_name"] = {

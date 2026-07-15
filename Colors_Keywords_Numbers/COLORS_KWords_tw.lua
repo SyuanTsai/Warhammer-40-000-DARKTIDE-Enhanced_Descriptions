@@ -316,6 +316,7 @@ local CONFIG = {
 		Curio_p = "珍品",
 		Omnissia_p = "歐姆尼賽亞的神龕",
 		Prologue_p = "序章",
+		PthOTrst_p = "信任之路",
 		Sir_melk_p = "梅爾克領主的必備品店",
 	},
 
