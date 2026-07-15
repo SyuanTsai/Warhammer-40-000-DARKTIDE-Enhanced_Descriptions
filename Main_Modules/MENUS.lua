@@ -614,19 +614,19 @@ local menus_templates = {
 	["loc_wait_reason_platform_steam"] = {
 		-- en = ,
 		-- ru = "Подключение к Steam",
-		["zh-tw"] = "正在連接Steam...",
+		["zh-tw"] = "正在連接 Steam...",
 	},
 	--[+ Platform Xbox +]--
 	["loc_wait_reason_platform_xbox_live"] = {
 		-- en = ,
 		-- ru = "Подключение к Коробокс", -- Платформа Xbox
-		["zh-tw"] = "正在連接Xbox...",
+		["zh-tw"] = "正在連接 Xbox...",
 	},
 	--[+ Platform PSN +]--
 	["loc_wait_reason_platform_psn"] = {
 		-- en = ,
 		-- ru = "Подключение к ПэЭсЭн", -- Платформа PSN
-		["zh-tw"] = "正在連接PSN...",
+		["zh-tw"] = "正在連接 PSN...",
 	},
 }
 
