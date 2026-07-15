@@ -473,7 +473,7 @@ local zealot_localizations = {
 			..Dot_green.." {movement_speed:%s} 移動速度，\n"
 			..Dot_green.." {backstab_damage:%s} 背刺"..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {finesse_damage:%s} "..CKWord("靈巧傷害", "Finesse_dmg_rgb_tw").."，\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." 和\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").." 和\n"
 			..Dot_green.." {rending:%s} 近戰"..CKWord("撕裂", "Rending_rgb_tw").."。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
@@ -495,8 +495,8 @@ local zealot_localizations = {
 		["zh-tw"] = Dot_green.." {talent_name:%s} 持續時間延長 {duration:%s} 秒。\n"
 			.."\n"
 			.."離開"..CKWord("隱身", "Stealth_rgb_tw").." 後 {buff_duration:%s} 秒內獲得：\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {damage:%s} 背刺"..CKWord("傷害", "Damage_rgb_tw").." 和\n"
-			..Dot_green.." {threat:%s} 威薄。",
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} 背刺"..CKWord("傷害", "Damage_rgb_tw").." 和\n"
+			..Dot_green.." {threat:%s} 威脅。",
 	},
 	--[+ ABILITY 3-2 - Invigorating Revelation +]--	27.03.2026
 	["loc_talent_zealot_stealth_toughness_dr_desc"] = { -- toughness: 40%, time: 5, damage: +20%, time: 5, s->seconds, +colors
@@ -515,7 +515,7 @@ local zealot_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			.."離開"..CKWord("隱身", "Stealth_rgb_tw").." 後 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {dr:%s} 傷害抗性。",
+			..Dot_green.." {dr:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。",
 	},
 	--[+ ABILITY 3-3 - Perfectionist +]--	27.03.2026
 	["loc_talent_zealot_stealth_cooldown_regeneration_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
@@ -529,7 +529,7 @@ local zealot_localizations = {
 			..Dot_green.." {other:%s} - при убийстве других врагов.",
 			--"{talent_name:%s} даёт дополнительно:\n{damage_2:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударе в спину и\n{damage:%s} к "..CKWord("урону от ловкости", "lovkosti_uron_rgb_ru")..", но\nна {cooldown:%s} увеличивается время "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").."."..TALENTS_Enh_desc_ru.ED_ZEA_Ability_3_2_rgb"), -- Перфекционист
 		-- fr = "{talent_name:%s} octroie:\n{damage_2:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." dans le dos et\n{damage:%s} de "..CKWord("Dégâts de finesse", "Finesse_dmg_rgb_fr")..", mais augmente le "..CKWord("Temps de recharge de capacité", "Combat_ability_cd_rgb_fr").." de {cooldown:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_3_2_rgb_fr,
-		["zh-tw"] = ""..CKWord("隱身", "Stealth_rgb_tw").." 擊殺時恢復"..CKWord("技能冷卻", "Ability_cd_rgb_tw").."：\n"
+		["zh-tw"] = CKWord("隱身", "Stealth_rgb_tw").."擊殺時恢復"..CKWord("技能冷卻", "Ability_cd_rgb_tw").."：\n"
 			..Dot_green.." {monster:%s} - 納垢巨獸、混沌魔物、惡魔宿主、瘟疫歐格林，\n"
 			..Dot_green.." {ogryn:%s} - 堡壘、碾壓者、收割者，\n"
 			..Dot_green.." {other:%s} - 其他敵人。",
@@ -547,9 +547,9 @@ local zealot_localizations = {
 			..CKWord("Критические удары", "Krit_udary_rgb_ru").." также засчитываются для активации "..CKWord("Ярости", "Fury_i_rgb_ru")..".",
 		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
 		["zh-tw"] = "{radius:%s} 米內有 {max_stacks:%s} 名敵人死亡時，進入"..CKWord("狂怒", "Fury_rgb_tw").." 並獲得 {duration:%s} 秒：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("暴擊", "Crit_hits_rgb_tw").." 命中也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
+			..CKWord("爆擊命中", "Crit_hits_rgb_tw").."也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
 	},
 	--[+ KEYSTONE 1-1 - Infectious Zeal +]--	27.03.2026
 	["loc_talent_zealot_shared_fanatic_rage_new_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
@@ -559,14 +559,14 @@ local zealot_localizations = {
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".",
 		-- fr = CNumb("10%", "pc_10_rgb").." de "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." est conféré aux alliés en syntonie lorsque vous atteignez "..CNumb("25", "n_25_rgb").." cumuls de "..CKWord("Fureur", "Fury_rgb_fr")..". "..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_3_rgb_fr,
 		["zh-tw"] = "{talent_name:%s} 啟用期間，"..CKWord("協同", "Coherency_rgb_tw").." 盟友獲得：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 1-2 - Righteous Warrior +]--	27.03.2026
 	["loc_talent_zealot_fanatic_rage_improved_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
 		en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." from {talent_name:%s}.",
 		ru = Dot_green.." {crit_chance:%s} "..CKWord("шанса критического удара", "sha_krit_udara_rgb_ru").." дополнительно для таланта {talent_name:%s}.", -- Праведный воин
 		-- fr = "{crit_chance:%s} de "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." grâce à {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_4_rgb_fr,
-		["zh-tw"] = Dot_green.." {talent_name:%s} 額外增加 {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." {talent_name:%s} 額外增加 {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 1-3 - Stalwart +]--	27.03.2026
 	["loc_talent_zealot_fanatic_rage_toughness_replenish_desc"] = { -- toughness: 50%, toughness_damage_reduction: +25%, toughness_small: 2%, +colors
@@ -594,14 +594,14 @@ local zealot_localizations = {
 	["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
 		en = Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
 		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udarah_rgb_ru").." в ближнем бою.", -- 
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").." 恢復速度，持續 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("爆擊命中", "Crit_hits_rgb_tw").."時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度，持續 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 2 - Martyrdom +]--	27.03.2026
 	["loc_talent_zealot_martyrdom_desc"] = { -- damage: +10%, max_wounds: 5, +colors
 		en = Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb").." for each missing "..CKWord("Wound", "Wound_rgb")..", up to a Maximum {max_wounds:%s} missing "..CKWord("Wounds", "Wounds_rgb")..".",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя за каждую потерянную "..CKWord("рану", "ranu_rgb_ru")..", максимум до {max_wounds:%s} потерянных "..CKWord("ран", "ran_rgb_ru")..".", -- Мученичество
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pour chaque "..CKWord("Blessure", "Wound_rgb_fr").." manquante, jusqu'à un maximum de {max_wounds:%s} "..CKWord("Blessures", "Wounds_rgb_fr").." manquantes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_rgb_fr,
-		["zh-tw"] = Dot_green.." 每個缺失的"..CKWord("傷痕", "Wound_rgb_tw").." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."，最多 {max_wounds:%s} 個缺失"..CKWord("傷痕", "Wounds_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 每缺失一個"..CKWord("傷痕", "Wound_rgb_tw").."，獲得 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."，最多計算 {max_wounds:%s} 個缺失"..CKWord("傷痕", "Wounds_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 2-1 - I Shall Not Fall +]--	27.03.2026
 	["loc_talent_zealot_martyrdom_grants_toughness_upd_desc"] = { -- talent_name: Martyrdom, toughness_damage_reduction: +7.5%, +colors
@@ -628,13 +628,13 @@ local zealot_localizations = {
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_modifier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment per Stack of {talent_name:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_modifier:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждый заряд таланта {talent_name:%s}.", -- Маньяк
 		-- fr = "{attack_speed:%s} Vitesse d'attaque de mêlée par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_2_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 每層 {talent_name:%s} {toughness_modifier:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 恢復。",
+		["zh-tw"] = Dot_green.." 每層 {talent_name:%s} "..CNumb("+", "n_plus_rgb").."{toughness_modifier:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
 	},
 	--[+ KEYSTONE 2-5 - Martyr's Purpose +]--	27.03.2026
 	["loc_talent_zealot_damage_taken_restores_cd_new_description"] = { -- talent_name: Martyrdom, cooldown_regen: +50%, current_health: 25%, +colors
 		en = "Up to {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration based on Missing "..CKWord("Health", "Health_rgb")..". Max reached at {current_health:%s} current "..CKWord("Health", "Health_rgb")..".",
 		ru = "До {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boeva_sposobnost_rgb_ru").." в зависимости от потерянного "..CKWord("здоровья", "zdorovia_rgb_ru")..". Максимум достигается при {current_health:%s} текущего "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
-		["zh-tw"] = "依缺失"..CKWord("生命", "Health_rgb_tw").." 最多 {cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").." 恢復速度。當前"..CKWord("生命", "Health_rgb_tw").." 為 {current_health:%s} 時達到最大値。",
+		["zh-tw"] = "依缺失"..CKWord("生命值", "Health_rgb_tw").."，最多獲得 {cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度。當前"..CKWord("生命值", "Health_rgb_tw").."為 {current_health:%s} 時達到最大值。",
 	},
 	--[+ KEYSTONE 3 - Inexorable Judgement +]--	27.03.2026
 	["loc_talent_zealot_quickness_desc"] = { -- max_stacks: 20, melee_attack_speed: +1%, ranged_attack_speed: +1%, damage_modifier: +1%, duration: 6, +colors, note
