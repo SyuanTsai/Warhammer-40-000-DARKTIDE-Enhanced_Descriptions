@@ -1295,6 +1295,9 @@ local penances_localizations = {
 		["loc_achievement_missions_ogryn_2_objective_2_description"] = {
 			en = "As a "..CKWord("Ogryn", "cls_ogr_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Огрином", "cls_ogr2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr_rgb_tw").."，\n"
+				.."在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Beat-em-Up (3) +]-- руоф Всех порву/Бей их всех (3) -- 揍扁他們 (3)
 	["loc_achievement_missions_ogryn_2_objective_3_name"] = {
@@ -1305,6 +1308,9 @@ local penances_localizations = {
 		["loc_achievement_missions_ogryn_2_objective_3_description"] = {
 			en = "As a "..CKWord("Ogryn", "cls_ogr_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Огрином", "cls_ogr2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr_rgb_tw").."，\n"
+				.."在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
 	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
@@ -1315,7 +1321,7 @@ local penances_localizations = {
 		["loc_achievement_group_ogryn_2_description"] = {
 			en = "Complete the following Penances as the "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 			ru = "Выполните следующие Искупления "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 完成以下苦修。",
 		},
 	--[+ Help Everyone +]-- руоф Спаси всех
 	["loc_achievement_ogryn_2_easy_1_name"] = {
@@ -1326,7 +1332,7 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_easy_1_description"] = {
 			en = "Revive or Assist "..CNumb("{target}", "target_rgb").." Knocked Down or Incapacitated Allies.",
 			ru = "Возродите или поднимите "..CNumb("{target}", "target_rgb")..", выведенных из строя или сбитых с ног, союзников.",
-			["zh-tw"] = "救起或復活 "..CNumb("{target}", "target_rgb").." 名被擊倒或癱瘓的隊友。",
+			["zh-tw"] = "復活或協助 "..CNumb("{target}", "target_rgb").." 名被擊倒或失去行動能力的隊友。",
 		},
 	--[+ Keep Them Grounded +]-- руоф Вали их!
 	["loc_achievement_ogryn_2_easy_2_name"] = {
@@ -1348,15 +1354,18 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_medium_2_description"] = {
 			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{amount}", "amount_var_rgb").." enemies with a single Melee Attack, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{amount}", "amount_var_rgb").." врагов одной атакой ближнего боя "..CNumb("{target}", "target_rgb").." раз.",
-			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-			.."單次近戰攻擊擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人，共達成 "..CNumb("{target}", "target_rgb").." 次。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."單次近戰攻擊擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人，共達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Keep Your Friends Close +]-- руоф Держи друзей близко
 		--[+ On Heresy Threat or higher, complete 3 full Missions without any allies being Knocked Down or Incapacitated for longer than 10 seconds, and without any allies dying. +]-- руоф При угрозе «Ересь» или выше полностью выполните задание 3 р., чтобы ни один союзник не умер и не был сбит с ног или небоестрособен дольше 10 с.
 		["loc_achievement_ogryn_2_hard_1_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, complete "..CNumb("{target}", "target_rgb").." full Missions without any Allies being Knocked Down or Incapacitated for longer than "..CNumb("{time}", "time_rgb").." seconds, and without any Allies dying.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, завершите полностью "..CNumb("{target}", "target_rgb").." миссии так, чтобы никто из союзников не был выведен из строя или сбит с ног более "..CNumb("{time}", "time_rgb").." секунд и чтобы никто из союзников не был убит.",
-			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，完整完成 "..CNumb("{target}", "target_rgb").." 場任務，\n且期間無任何隊友陣亡，或被擊倒超過 "..CNumb("{time}", "time_rgb").." 秒。",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
+				.."完整完成 "..CNumb("{target}", "target_rgb").." 場任務，\n"
+				.."且期間沒有任何隊友陣亡，\n"
+				.."也沒有任何隊友被擊倒或失去行動能力超過 "..CNumb("{time}", "time_rgb").." 秒。",
 		},
 	--[+ Bone 'ead (1) +]-- руоф Костяная башка (1)
 	["loc_achievement_group_class_ogryn_2_1_name"] = {
