@@ -1104,7 +1104,7 @@ local zealot_localizations = {
 			..Dot_nc.." Occurs over {time:%s} seconds.",
 		ru = "При получении "..CKWord("урона", "urona_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru")..", вы восстановите {damage_reduction:%s} от этого "..CKWord("урона", "urona_rgb_ru").." в виде "..CKWord("здоровья", "zdorovia_rgb_ru").." в течение {time:%s} секунд.", -- Восстановление веры
 		-- fr = "Lorsque vous subissez des "..CKWord("Dégâts", "Damage_rgb_fr")..", récuperez de la "..CKWord("Santé", "Health_rgb_fr").." à hauteur de {damage_reduction:%s} de ces "..CKWord("Dégâts", "Damage_rgb_fr")..". Se produit sur {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_12_rgb_fr,
-		["zh-tw"] = "受到"..CKWord("生命", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").." 時，{time:%s} 秒內治癒 {damage_reduction:%s} 該"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = "受到"..CKWord("生命值", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").." 時，在 {time:%s} 秒內治癒該"..CKWord("傷害", "Damage_rgb_tw").."的 {damage_reduction:%s}。",
 	},
 	--[+ Passive 41 - Behind the Lines +]--	27.03.2026
 	["loc_talent_zealot_suppress_on_backstab_kill_desc"] = { -- range: 8, cooldown: 5
@@ -1112,7 +1112,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = "Убийства тяжёлой атакой в спину подавляют врагов в радиусе {range:%s} метров.\n" -- руоф В тылу врага
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
-		["zh-tw"] = "重型近戰背刺擊殺壓制 {range:%s} 米內敵人。\n"
+		["zh-tw"] = "重攻擊近戰背刺擊殺會壓制 {range:%s} 米內敵人。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 42 - Relentless Fervor +]--	27.03.2026
@@ -1127,11 +1127,11 @@ local zealot_localizations = {
 			.."\n"
 			.."Бег в течение {duration:%s} секунды даёт:\n"
 			..Dot_green.." Иммунитет к замедлению.",
-		["zh-tw"] = Dot_green.." {sprint_speed:%s} 衝刺速度 和\n"
+		["zh-tw"] = Dot_green.." {sprint_speed:%s} 衝刺速度，並\n"
 			..Dot_green.." {sprint_cost:%s} 衝刺消耗。\n"
 			.."\n"
 			.."衝刺 {duration:%s} 秒後獲得：\n"
-			..Dot_green.." 免疫慢速。",
+			..Dot_green.." 免疫緩速。",
 	},
 	--[+ Passive 43 - Riposte +]--	27.03.2026
 	["loc_talent_zealot_stacking_melee_damage_after_dodge_desc"] = { -- damage: +5%, stacks: 3, duration: 8
