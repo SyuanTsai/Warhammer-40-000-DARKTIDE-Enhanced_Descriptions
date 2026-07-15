@@ -800,7 +800,7 @@ local penances_localizations = {
 		en = "Kill "..CNumb("{target}", "target_rgb").." Specialist and Elites using "..CKWord("Blades of Faith", "klinvery_rgb").." Blitz.",
 		ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов используя блиц "..CKWord("Клинки веры", "klinvery_rgb_ru")..".",
 		["zh-tw"] = "使用 "..CKWord("信仰之刃", "klinvery_rgb_tw").." 閃擊，\n"
-			.."擊殺 "..CNumb("{target}", "target_rgb").." 名專家及精英。",
+			.."擊殺 "..CNumb("{target}", "target_rgb").." 名專家或精英敵人。",
 	},
 	--[+ Purging Flames +]-- руоф Очищающее пламя
 	["loc_achievement_zealot_kills_with_fire_grenade_name"] = {
