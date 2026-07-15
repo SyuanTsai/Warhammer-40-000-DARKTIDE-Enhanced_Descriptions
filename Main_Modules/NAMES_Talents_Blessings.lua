@@ -1280,7 +1280,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Mind in Motion +]-- ruof Движущийся разум	20.04.2026
 		["loc_talent_psyker_venting_doesnt_slow"] = {
 			ru = "Разум в движении",
-			["zh-tw"] = "靈能學者光環",
+			["zh-tw"] = "動中之心",
 		},
 		--[+ PASSIVE 11 - Malefic Momentum +]-- ruof Пагубный моментум	20.04.2026
 		["loc_talent_psyker_kills_stack_other_weapon_damage"] = {
