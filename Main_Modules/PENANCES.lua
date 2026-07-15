@@ -2108,6 +2108,7 @@ local penances_localizations = {
 		["loc_achievement_broker_deploy_stimm_field_description"] = {
 			en = "Deploy the "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Разверните способность "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru").." "..CNumb("{target}", "target_rgb").." раз.",
+			["zh-tw"] = "部署 "..CKWord("化學性依賴", "StimmSupply_rgb_tw").." 技能 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Shared Benefits +]-- руоф 
 	-- ["loc_achievement_broker_buff_allies_chem_field_name"] = {
@@ -2117,6 +2118,7 @@ local penances_localizations = {
 		["loc_achievement_broker_buff_allies_chem_field_description"] = {
 			en = "Buff Allies for "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Stimm Supply", "StimmSupply_rgb").." Ability.",
 			ru = "Усильте союзников на "..CNumb("{target}", "target_rgb").." секунд с помощью способности "..CKWord("Стим-поддержка", "StimmSupply_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("化學性依賴", "StimmSupply_rgb_tw").." 技能強化盟友 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Raptor's Eye +]-- руоф 
 	-- ["loc_achievement_broker_gunslinger_keystone_a_name"] = {
@@ -2126,6 +2128,7 @@ local penances_localizations = {
 		["loc_achievement_broker_gunslinger_keystone_a_description"] = {
 			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
 			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+			["zh-tw"] = "獲得 "..CNumb("{target}", "target_rgb").." 層 "..CKWord("兀鷲印記", "VulturesMark_rgb_tw").." 關鍵石。",
 		},
 	--[+ Raptor's Strike +]-- руоф 
 	-- ["loc_achievement_broker_gunslinger_keystone_b_name"] = {
@@ -2135,6 +2138,7 @@ local penances_localizations = {
 		["loc_achievement_broker_gunslinger_keystone_b_description"] = {
 			en = "Gain "..CNumb("{target}", "target_rgb").." Stacks of "..CKWord("Vulture's Mark", "VulturesMark_rgb").." Keystone.",
 			ru = "Получите "..CNumb("{target}", "target_rgb").." зарядов ключевого таланта "..CKWord("Метка стервятника", "VulturesMark_rgb_ru")..".",
+			["zh-tw"] = "獲得 "..CNumb("{target}", "target_rgb").." 層 "..CKWord("兀鷲印記", "VulturesMark_rgb_tw").." 關鍵石。",
 		},
 	--[+ What a Rush! +]-- руоф 
 	-- ["loc_achievement_broker_ruffian_keystone_a_name"] = {
@@ -2144,6 +2148,7 @@ local penances_localizations = {
 		["loc_achievement_broker_ruffian_keystone_a_description"] = {
 			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+			["zh-tw"] = "觸發 "..CKWord("腎上腺素狂暴", "AdrenFrenz_rgb_tw").." 關鍵石的 "..CKWord("腎上腺素", "Adren_rgb_tw").." 效果 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Battle Focussed +]-- руоф 
 	-- ["loc_achievement_broker_ruffian_keystone_b_name"] = {
@@ -2153,6 +2158,7 @@ local penances_localizations = {
 		["loc_achievement_broker_ruffian_keystone_b_description"] = {
 			en = "Trigger the "..CKWord("Adrenaline", "Adren_rgb").." effect from "..CKWord("Adrenaline Frenzy", "AdrenFrenz_rgb").." Keystone "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Активируйте "..CNumb("{target}", "target_rgb").." раз эффект "..CKWord("Адреналина", "Adren_rgb_ru").." от ключевого таланта "..CKWord("Адреналиновое безумие", "AdrenFrenz_rgb_ru")..".",
+			["zh-tw"] = "觸發 "..CKWord("腎上腺素狂暴", "AdrenFrenz_rgb_tw").." 關鍵石的 "..CKWord("腎上腺素", "Adren_rgb_tw").." 效果 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Stimmed +]-- руоф 
 	-- ["loc_achievement_broker_anarchist_keystone_a_name"] = {
@@ -2162,6 +2168,7 @@ local penances_localizations = {
 		["loc_achievement_broker_anarchist_keystone_a_description"] = {
 			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
 			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+			["zh-tw"] = "讓 "..CKWord("化學性依賴", "ChemDepend_rgb_tw").." 關鍵石維持滿層 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Alchemist +]-- руоф 
 	-- ["loc_achievement_broker_anarchist_keystone_b_name"] = {
@@ -2171,6 +2178,7 @@ local penances_localizations = {
 		["loc_achievement_broker_anarchist_keystone_b_description"] = {
 			en = "Remain at full Stacks of "..CKWord("Chemical Dependency", "ChemDepend_rgb").." Keystone for "..CNumb("{target}", "target_rgb").." seconds.",
 			ru = "Поддерживайте полный заряд ключевого таланта "..CKWord("Хим-зависимость", "ChemDepend_rgb_ru").." в течение "..CNumb("{target}", "target_rgb").." секунд.",
+			["zh-tw"] = "讓 "..CKWord("化學性依賴", "ChemDepend_rgb_tw").." 關鍵石維持滿層 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Speedster +]-- руоф 
 	-- ["loc_achievement_broker_stimm_celerity_potency_name"] = {
@@ -2180,6 +2188,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_celerity_potency_description"] = {
 			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total Attack Speed with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
 			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к скорости атаки с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 中配置至少 "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("黏稠度", "Viscosity_rgb_tw").."，獲得總計 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." 攻擊速度。",
 		},
 	--[+ Clinical Assassin +]-- руоф 
 	-- ["loc_achievement_broker_stimm_hit_weakspots_name"] = {
@@ -2189,6 +2198,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_hit_weakspots_description"] = {
 			en = "Hit "..CKWord("Weakspots", "Weakspots_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Попадите "..CNumb("{target}", "target_rgb").." раз в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 啟用期間，命中"..CKWord("弱點", "Weakspots_rgb_tw").." "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Pugilist +]-- руоф 
 	-- ["loc_achievement_broker_stimm_combat_potency_name"] = {
@@ -2198,6 +2208,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_combat_potency_description"] = {
 			en = "Gain "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." total "..CKWord("Strength", "Strength_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
 			ru = "Получите в общей сложности "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." к "..CKWord("силе", "sile_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 中配置至少 "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("黏稠度", "Viscosity_rgb_tw").."，獲得總計 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("威力", "Strength_rgb_tw").."。",
 		},
 	--[+ Brutal Bludgeons +]-- руоф 
 	-- ["loc_achievement_broker_stimm_heavy_attack_kills_name"] = {
@@ -2207,6 +2218,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_heavy_attack_kills_description"] = {
 			en = "Kill enemies with Heavy Attacks while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов тяжёлыми атаками пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 啟用期間，以重攻擊擊殺敵人 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Enhanced +]-- руоф 
 	-- ["loc_achievement_broker_stimm_durability_potency_name"] = {
@@ -2216,6 +2228,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_durability_potency_description"] = {
 			en = "Replenish "..CNumb("{target}", "target_rgb").." total "..CKWord("Toughness", "Toughness_rgb").." with at least "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Viscosity", "Viscosity_rgb").." allocated in the "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb")..".",
 			ru = "Восстановите в общей сложности "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." с минимум "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Вязкость", "Viscosity_rgb_ru")..", выбранной для "..CKWord("Особого стима Картеля", "Cartel_Stimm_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 中配置至少 "..CNumb("{viscosity_target}", "viscosity_target_rgb")..CNumb("%", "pc_rgb").." "..CKWord("黏稠度", "Viscosity_rgb_tw").."，恢復總計 "..CNumb("{target}", "target_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."。",
 		},
 	--[+ Toxic Shock +]-- руоф 
 	-- ["loc_achievement_broker_stimm_apply_toxin_name"] = {
@@ -2225,6 +2238,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stimm_apply_toxin_description"] = {
 			en = "Apply Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb").." while "..CKWord("Cartel Special Stimm", "Cartel_Stimm_rgb").." is active, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Наложите на врагов "..CNumb("{target}", "target_rgb").." зарядов "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." пока активен "..CKWord("Особый стим Картеля", "Cartel_Stim_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").." 啟用期間，施加 "..CNumb("{target}", "target_rgb").." 層 "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。",
 		},
 
 
