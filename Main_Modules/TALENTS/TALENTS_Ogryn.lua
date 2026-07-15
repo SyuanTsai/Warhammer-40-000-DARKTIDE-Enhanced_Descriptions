@@ -801,7 +801,7 @@ local ogryn_localizations = {
 			.."Взрыв:\n"
 			..Dot_nc.." Радиус: "..CNumb("2.5", "n_2_5_rgb").." метра.\n"
 			..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов, кроме мутантов, чудовищ и капитанов/близнецов.", -- Вспышка боли
-		["zh-tw"] = "{talent_name:%s} 未在"..CKWord("冷卻", "Cd_rgb_tw").." 中，\n"
+		["zh-tw"] = "{talent_name:%s} 未處於"..CKWord("冷卻", "Cd_rgb_tw").."時，\n"
 			.."且層數降至 {stacks:%s} 層或以下時，\n"
 			.."擊退敵人並恢復 {toughness_replenish:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
@@ -812,7 +812,7 @@ local ogryn_localizations = {
 			.."爆炸：\n"
 			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 米。\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，\n"
-			.."（變種人、巨獸及隊長/雙子除外）。",
+			.."（變種人、巨獸及連長/雙子除外）。",
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
 	},
 	--[+ KEYSTONE 2-2 - Strongest! +]--	26.03.2026
@@ -866,7 +866,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_green.." Может генерировать несколько зарядов если несколько врагов "..CKWord("простреливается", "prostrelivaetsa_rgb_ru").." или задевается взрывом.", -- Обход ограничителя очереди -- руоф Взлом ограничителя взрыва
-		["zh-tw"] = Dot_green.." {proc_chance:%s} 機率觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."，\n"
+		["zh-tw"] = Dot_green.." 遠程攻擊有 {proc_chance:%s} 機率觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."，\n"
 			.."且不消耗彈藥。\n"
 			.."\n"
 			.."此外，獲得：\n"
@@ -874,7 +874,7 @@ local ogryn_localizations = {
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_green.." 順劈攻擊或爆炸可一次產生多層。",
+			..Dot_green.." 造成"..CKWord("順劈攻擊", "Cleave_rgb_tw").."或爆炸時可一次產生多層。",
 		-- fr = "{proc_chance:%s} de chance de déclencher "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." et de ne pas consommer de munitions lors des attaques à distance.\n\nDe plus, vous gagnez {ranged_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance lors d'une élimination à distance. Se cumuls {stacks:%s} fois. Dure {duration:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_rgb_fr, -- Obstruction du limiteur de tir
 	},
 	--[+ KEYSTONE 3-1 - Back Off! +]--	26.03.2026
@@ -912,7 +912,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_critical_leadbelcher_desc"] = { -- +colors
 		en = "The shot that triggers "..CKWord("Lucky Bullet", "Lucky_bullet_rgb").." is a guaranteed "..CKWord("Critical", "Critical_rgb").." (if it Hits).",
 		ru = "Выстрел активировавший "..CKWord("Счастливую пулю", "Lucky_bullet_rgb_ru").." гарантированно будет "..CKWord("критическим выстрелом", "krit_vystrelom_rgb_ru").." (если попадёт).", -- Хорошая стрельба -- руоф Хороший выстрел
-		["zh-tw"] = "觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").." 的射擊，\n若命中則必定"..CKWord("暴擊", "Critical_rgb_tw").."。",
+		["zh-tw"] = "觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."的射擊，\n若命中則必定"..CKWord("致命一擊", "Critical_rgb_tw").."。",
 		fr = "Le tir qui déclenche "..CKWord("Balle chanceuse", "Lucky_bullet_rgb_fr").." est un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." garanti (s'il touche).", -- Bonne visée
 	},
 	--[+ KEYSTONE 3-4 - Heat of Battle +]--	26.03.2026
@@ -939,9 +939,7 @@ local ogryn_localizations = {
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_abil"),
-		["zh-tw"] = "{ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效，\n"
-			.."於"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."觸發時。\n"
+		["zh-tw"] = CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."觸發時，你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友獲得 {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -965,10 +963,10 @@ local ogryn_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против бастионов, загонщиков, крушителей, чумных огринов и жнецов.\n"
 			.."\n"
 			..Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." от этих же врагов.", -- Тяжеловес
-		["zh-tw"] = Dot_green.." {damage:%s} 對 堡壘、碾壓者、瘟疫行者、\n"
-			.."瘟疫歐格林和收割者的"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 對堡壘、碾壓者、獸群領主、\n"
+			.."瘟疫歐格林和收割者造成 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." {damage_reduction:%s} 受到上述敵人的"..CKWord("傷害", "Damage_rgb_tw").."減少。",
+			..Dot_green.." 受到上述敵人的"..CKWord("傷害", "Damage_rgb_tw").."減免 {damage_reduction:%s}。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les Remparts, Broyeurs, Ogryns de la Peste et Fauchers. Vous recevez également {damage_reduction:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." contre les mêmes ennemis.", -- Poid Lourd
 	},
 	--[+ Passive 3 - Steady Grip +]--	26.03.2026
@@ -981,7 +979,7 @@ local ogryn_localizations = {
 			..Dot_green.." {toughness_regen:%s} к восполнению "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Dont_intw_coher_toughn"), -- Крепкий хват -- руоф Крепкая хватка
-		["zh-tw"] = "射擊或瘰準時，獲得：\n"
+		["zh-tw"] = "射擊或架槍遠程武器時，獲得：\n"
 			..Dot_green.." {toughness_regen:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Dont_intw_coher_toughn"),
@@ -1005,8 +1003,8 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_green.." 若為重攻擊，則恢復 {heavy_toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 擲彈兵臂鸺(近戰)、震簼槍、雙進重型機槍及反衝者\n的近戰特殊動作視為重攻擊。\n"
-			..Dot_nc.." 撕裂者的近戰特殊動作視為輕攻擊。",
+			..Dot_nc.." 擲彈兵臂鎧（近戰部分）、震盪槍、雙鏈重型機槍及反衝者的近戰特殊動作視為重攻擊。\n"
+			..Dot_nc.." 撕裂槍的近戰特殊動作視為輕攻擊。",
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère après avoir frappé un seul ennemi avec une attaque de mêlée et {heavy_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." si c'est une attaque de mélée puissante.", -- Ecrabouille les
 	},
 	--[+ Passive 5 - The Best Defence +]--	26.03.2026
@@ -1027,8 +1025,8 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_green.." 若為重攻擊，則恢復 {heavy_toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 擲彈兵臂鸺(近戰)、震簼槍、雙進重型機槍及反衝者\n的近戰特殊動作視為重攻擊。\n"
-			..Dot_nc.." 撕裂者的近戰特殊動作視為輕攻擊。",
+			..Dot_nc.." 擲彈兵臂鎧（近戰部分）、震盪槍、雙鏈重型機槍及反衝者的近戰特殊動作視為重攻擊。\n"
+			..Dot_nc.." 撕裂槍的近戰特殊動作視為輕攻擊。",
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère après avoir touché plusieurs ennemis avec une seule attaque de mêlée et {heavy_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." si c'est une attaque de mélée puissante.", -- La meilleure défense
 	},
 	--[+ Passive 6 - Furious +]--	26.03.2026
@@ -1050,7 +1048,7 @@ local ogryn_localizations = {
 			.."下次近戰攻擊時，每層獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，最多 "..CNumb("+", "n_plus_rgb")..CNumb("30%", "pc_30_rgb").."。\n"
 			.."\n"
-			..Dot_nc.." 撕裂者、擲彈兵臂鸺(近戰)、震簼槍、\n雙進重型機槍及反衝者的近戰特殊也可觸發。",
+			..Dot_nc.." 撕裂槍、擲彈兵臂鎧（近戰部分）、震盪槍、雙鏈重型機槍及反衝者的近戰特殊動作也可觸發此天賦。",
 		-- fr = "Vous gagnez "..CNumb("1", "n_1_rgb").." cumul de {damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." par ennemis touchez durant une attaque de mélée unique. Jusqu'à "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." de "..COLORS_KWords_fr.Damage_rgb_fr.." à "..CNumb("10", "n_10_rgb").." cumuls. calculer séparement pour chaque attaque.", -- Furieux
 	},
 	--[+ Passive 7 - Towering Presence +]--	26.03.2026
