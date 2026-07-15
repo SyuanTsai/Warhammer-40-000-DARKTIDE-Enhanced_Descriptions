@@ -667,7 +667,7 @@ local penances_localizations = {
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..".",
 			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』\n"
 				.."或更高威脅等級下，\n"
-				.."以 "..CKWord("暴擊命中", "Crit_hits_rgb_tw").."\n"
+				.."以 "..CKWord("爆擊命中", "Crit_hits_rgb_tw").."\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名\n"
 				..CKWord("眩暈", "Stunned_rgb_tw").." 的敵人。",
 		},
@@ -703,7 +703,7 @@ local penances_localizations = {
 			en = "Complete a full Mission on "..CKWord("Malice", "malice_rgb").." Threat or higher without firing a shot.",
 			ru = "Пройдите полностью миссию на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, не сделав ни одного выстрела.",
 			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-				.."全程參與任務且不使用任何遠程攻擊。",
+				.."完成整場任務且未開任何一槍。",
 		},
 	--[+ Just A Flesh Wound +]-- руоф Просто царапина -- 只是皮外傷
 		--[+ Complete a full mission on Heresy Threat or higher in under 20 minutes, with less than a Wound's worth of Health remaining for 75% of the time. +]--
@@ -711,7 +711,7 @@ local penances_localizations = {
 			en = "Complete a full mission on "..CKWord("Heresy", "heresy_rgb").." Threat or higher in under "..CNumb("{time_window}", "time_wind_rgb").." minutes, with less than a "..CKWord("Wound", "Wound_rgb")..CNumb("'s", "n__s_rgb").." worth of "..CKWord("Health", "Health_rgb").." remaining for "..CNumb("{health}%", "health_pc_rgb").." of the time.",
 			ru = "Пройдите полностью миссию на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, менее чем за "..CNumb("{time_window}", "time_wind_rgb").." минут, при этом "..CNumb("{health}%", "health_pc_rgb").." времени у вас должно быть не более одного сегмента "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
 			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，在 "..CNumb("{time_window}", "time_wind_rgb").." 分鐘內完成整場任務，\n"
-				.."且其中 "..CNumb("{health}%", "health_pc_rgb").." 的時間，只有一格 "..CKWord("最大生命", "Health_rgb_tw").."。", --??? \n
+				.."且任務期間至少 "..CNumb("{health}%", "health_pc_rgb").." 的時間，剩餘"..CKWord("生命", "Health_rgb_tw").."少於一個"..CKWord("傷痕", "Wound_rgb_tw").."區段。",
 		},
 	--[+ Zealot Master of War +]-- руоф Изувер — знаток войны
 
