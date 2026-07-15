@@ -263,6 +263,15 @@ local CONFIG = {
 		RemoteDeton = "遠程引爆",
 		RuthlEffcy = "雷厲風行",
 		TerminusWarr = "終點站令狀",
+		-- Hive Scum
+		Anarchist = "無政府主義者",
+		Blinder = "閃光彈",
+		BoomBringer = "炸彈使者",
+		ChemGrenade = "化學手榴彈",
+		Desperad = "亡命之徒",
+		Gunslinger = "神射手",
+		Rampag = "橫衝直撞!",
+		Ruffian = "惡棍",
 		-- Psyker
 		Assail = "靈能攻擊",
 		assail = "靈能攻擊",

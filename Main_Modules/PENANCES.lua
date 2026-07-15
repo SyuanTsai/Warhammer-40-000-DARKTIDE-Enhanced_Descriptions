@@ -1924,7 +1924,7 @@ local penances_localizations = {
 		["loc_achievement_missions_broker_2_x_description"] = {
 			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 場任務。",
 		},
 	--[+ Savvy Operator +]-- руоф 
 	-- ["loc_achievement_missions_broker_2_objective_1_name"] = {
@@ -1935,7 +1935,7 @@ local penances_localizations = {
 		["loc_achievement_missions_broker_2_objective_1_description"] = {
 			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
 			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
-			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").."，每種類型的任務至少完成 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Savvy Operator (2) +]-- руоф  (2)
 	-- ["loc_achievement_missions_broker_2_objective_2_name"] = {
@@ -1945,6 +1945,9 @@ local penances_localizations = {
 		["loc_achievement_missions_broker_2_objective_2_description"] = {
 			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").."，\n"
+				.."在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Savvy Operator (3) +]-- руоф  (3)
 	-- ["loc_achievement_missions_broker_2_objective_3_name"] = {
@@ -1954,6 +1957,9 @@ local penances_localizations = {
 		["loc_achievement_missions_broker_2_objective_3_description"] = {
 			en = "As a "..CKWord("Hive Scum", "cls_scm_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Отребьем улья", "cls_scm2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").."，\n"
+				.."在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
 	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
@@ -1967,7 +1973,7 @@ local penances_localizations = {
 		["loc_achievement_group_broker_2_description"] = {
 			en = "Complete the following Penances as the "..CKWord("Hive Scum", "cls_scm_rgb")..".",
 			ru = "Выполните следующие Искупления "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 完成以下苦修。",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").." 完成以下苦修。",
 		},
 	--[+ Hive Scum Master of War +]-- руоф 
 
@@ -1980,6 +1986,8 @@ local penances_localizations = {
 		["loc_achievement_broker_gunslinger_aura_description"] = {
 			en = "Share "..CNumb("{target}", "target_rgb").." amount of Ammo using "..CKWord("Gunslinger", "Gunslinger_rgb").." Aura. Ammo shared by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
 			ru = "Раздайте "..CNumb("{target}", "target_rgb").." патронов, используя ауру "..CKWord("Стрелок", "Gunslinger_rgb_ru")..". Патроны, которыми делятся союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+			["zh-tw"] = "透過 "..CKWord("神射手", "Gunslinger_rgb_tw").." 光環分享 "..CNumb("{target}", "target_rgb").." 彈藥量。\n"
+				.."處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友分享的彈藥也會計入。",
 		},
 	--[+ Brawler +]-- руоф 
 	-- ["loc_achievement_broker_ruffian_aura_name"] = {
@@ -1989,6 +1997,9 @@ local penances_localizations = {
 		["loc_achievement_broker_ruffian_aura_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies in Melee while under the effects of "..CKWord("Ruffian", "Ruffian_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою под действием ауры "..CKWord("Хулиган", "Ruffian_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+			["zh-tw"] = "在 "..CKWord("惡棍", "Ruffian_rgb_tw").." 光環效果下，\n"
+				.."以近戰擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				.."處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友擊殺也會計入。",
 		},
 	--[+ Shooter +]-- руоф 
 	-- ["loc_achievement_broker_anarchist_aura_name"] = {
@@ -1998,6 +2009,9 @@ local penances_localizations = {
 		["loc_achievement_broker_anarchist_aura_alt_description"] = {
 			en = "Perform "..CNumb("{target}", "target_rgb").." "..CKWord("Critical strikes", "Crit_strikes_rgb").." while under the effect of "..CKWord("Anarchist", "Anarchist_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." performed by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
 			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Анархист", "Anarchist_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru")..", нанесённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
+			["zh-tw"] = "在 "..CKWord("無政府主義者", "Anarchist_rgb_tw").." 光環效果下，\n"
+				.."造成 "..CNumb("{target}", "target_rgb").." 次"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."。\n"
+				.."處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友造成的"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."也會計入。",
 		},
 	--[+ Blinding! +]-- руоф 
 	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_name"] = {
@@ -2011,6 +2025,8 @@ local penances_localizations = {
 		["loc_achievement_broker_enemies_hit_by_flash_grenade_description"] = {
 			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{enemy_count}", "enemy_count_rgb").." enemies with a "..CKWord("Blinder", "Blinder_rgb").." Blitz, "..CNumb("{target}", "target_rgb").." times.",
 			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{enemy_count}", "enemy_count_rgb").." врагов "..CNumb("{target}", "target_rgb").." раз с помощью блица "..CKWord("Ослепитель", "Blinder_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("閃光彈", "Blinder_rgb_tw").." 閃擊，使 "..CNumb("{enemy_count}", "enemy_count_rgb").." 名敵人"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
+				.."共達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Bring the Boom +]-- руоф 
 	-- ["loc_achievement_broker_enemies_killed_by_missile_launcher_name"] = {
@@ -2024,6 +2040,8 @@ local penances_localizations = {
 		["loc_achievement_broker_enemies_killed_by_missile_launcher_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." Elites or Monstrosities with the "..CKWord("Boom Bringer", "BoomBringer_rgb").." Blitz.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных противников или чудовищ с помощью блица "..CKWord("Бабахер", "BoomBringer_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("炸彈使者", "BoomBringer_rgb_tw").." 閃擊，\n"
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名精英敵人或巨獸。",
 		},
 	--[+ Choke on This +]-- руоф 
 	-- ["loc_achievement_broker_enemies_affected_by_chem_bomb_name"] = {
@@ -2037,6 +2055,7 @@ local penances_localizations = {
 		["loc_achievement_broker_enemies_affected_by_chem_bomb_description"] = {
 			en = "Affect "..CNumb("{target}", "target_rgb").." unique enemies with a "..CKWord("Chem Grenade", "ChemGrenade_rgb").." Blitz.",
 			ru = "Воздействуйте на "..CNumb("{target}", "target_rgb").." уникальных врагов блицом "..CKWord("Хим-граната", "ChemGrenade_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("化學手榴彈", "ChemGrenade_rgb_tw").." 閃擊影響 "..CNumb("{target}", "target_rgb").." 名不同敵人。",
 		},
 	--[+ Gun For Hire +]-- руоф 
 	-- ["loc_achievement_broker_enemies_killed_with_focus_mode_name"] = {
@@ -2046,6 +2065,8 @@ local penances_localizations = {
 		["loc_achievement_broker_enemies_killed_with_focus_mode_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("亡命之徒", "Desperad_rgb_tw").." 技能啟用時，\n"
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Nimble +]-- руоф 
 	-- ["loc_achievement_broker_attacks_dodged_in_focus_mode_name"] = {
@@ -2055,6 +2076,8 @@ local penances_localizations = {
 		["loc_achievement_broker_attacks_dodged_in_focus_mode_description"] = {
 			en = "Dodge "..CNumb("{target}", "target_rgb").." attacks while "..CKWord("Desperado", "Desperad_rgb").." Ability is active.",
 			ru = "Уклонитесь от "..CNumb("{target}", "target_rgb").." атак, пока активна способность "..CKWord("Безбашенный", "Desperad_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("亡命之徒", "Desperad_rgb_tw").." 技能啟用時，\n"
+				.."閃避 "..CNumb("{target}", "target_rgb").." 次攻擊。",
 		},
 	--[+ Hive Streets of Rage +]-- руоф 
 	-- ["loc_achievement_broker_deal_damage_in_punk_rage_name"] = {
@@ -2064,6 +2087,8 @@ local penances_localizations = {
 		["loc_achievement_broker_deal_damage_in_punk_rage_description"] = {
 			en = "Deal "..CNumb("{target}", "target_rgb").." "..CKWord("Damage", "Damage_rgb").." while "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
 			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("урона", "urona_rgb_ru").." пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+			["zh-tw"] = "在 "..CKWord("橫衝直撞!", "Rampag_rgb_tw").." 技能啟用時，\n"
+				.."造成 "..CNumb("{target}", "target_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。",
 		},
 	--[+ Rampager +]-- руоф 
 	-- ["loc_achievement_broker_stay_in_punk_rage_name"] = {
@@ -2073,6 +2098,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stay_in_punk_rage_description"] = {
 			en = "Spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
 			ru = "Проведите "..CNumb("{target}", "target_rgb").." секунд пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
+			["zh-tw"] = "使 "..CKWord("橫衝直撞!", "Rampag_rgb_tw").." 技能保持啟用，累計 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Street Doctor +]-- руоф 
 	-- ["loc_achievement_broker_deploy_stimm_field_name"] = {
