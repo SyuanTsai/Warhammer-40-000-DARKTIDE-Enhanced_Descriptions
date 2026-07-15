@@ -2579,7 +2579,7 @@ local weapon_localizations = {
 			en = CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("Damage", "Damage_rgb").." Bonus vs "..CKWord("Staggered", "Staggered_rgb").." enemies.",
 			ru = CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." к "..CKWord("урону", "uronu_rgb_ru").." против "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов.",
 			fr = CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." de "..CKWord("Dégâts", "Damage_rgb_fr").." Bonus contre les ennemis qui "..CKWord("vacillent", "Staggered_rgb_fr")..".",
-			["zh-tw"] = "攻擊 "..CKWord("硬直中", "Staggered_rgb_tw").." 敵人 "..CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。",
+			["zh-tw"] = "對"..CKWord("踉蹌中", "Staggered_rgb_tw").."敵人 "..CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."加成。",
 			["zh-cn"] = "对"..CKWord("踉跄", "Staggered_rgb_zh_cn").."敌人 "..CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("伤害", "Damage_rgb_zh_cn").."。",
 			de = CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("Schaden", "Damage_rgb_de").." Bonus gegen "..CKWord("taumelnde", "Staggered_rgb_de").." Gegner.",
 			it = CNumb("{vs_stagger:%s}", "dmgvsstgr_var_rgb").." "..CKWord("Danno", "Damage_rgb_it").." Bonus contro nemici "..CKWord("Barcollanti", "Staggered_rgb_it")..".",
@@ -2601,7 +2601,8 @@ local weapon_localizations = {
 			ru = CNumb("{toughness:%s}", "tghns_var_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." при убийстве элитного врага. "
 				..Dot_green.." Может срабатывать несколько раз за выстрел. "..Dot_red.." Не срабатывает от убийств эффектами.",
 			fr = CNumb("{toughness:%s}", "tghns_var_rgb").." de "..CKWord("Robustesse", "Toughness_rgb_fr").." lors d'une élimination d'élite.",
-			["zh-tw"] = "擊殺精英敵人 "..CNumb("{toughness:%s}", "tghns_var_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			["zh-tw"] = "擊殺精英敵人時獲得 "..CNumb("{toughness:%s}", "tghns_var_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."。 "
+				..Dot_green.." 每次射擊可觸發多次。 "..Dot_red.." 持續傷害擊殺無法觸發。",
 			["zh-cn"] = "击杀精英敌人时"..CKWord("韧性", "Toughness_rgb_zh_cn").." "..CNumb("{toughness:%s}", "tghns_var_rgb").."。",
 			de = CNumb("{toughness:%s}", "tghns_var_rgb").." "..CKWord("Zähigkeit", "Toughness_rgb_de").." bei einem Elite-Kill.",
 			it = CNumb("{toughness:%s}", "tghns_var_rgb").." "..CKWord("Tempra", "Toughness_rgb_it").." dopo un'Uccisione di Élite.",
@@ -2622,7 +2623,9 @@ local weapon_localizations = {
 				..CNumb("{value:%s}", "value_var_rgb").." снаряда вылетает при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..". "
 				..Dot_red.." У Электрокинетических посохов и посохов Травмы "..CNumb("{value:%s}", "value_var_rgb").." снаряд появляется только от основных атак.", -- Всплеск
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." à distance.\n"..CNumb("{value:%s}", "value_var_rgb").." tirs lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." de l'attaque principale.",
-			["zh-tw"] = "遠程攻擊 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." 。\n當主攻擊 "..CKWord("暴擊", "Crit_rgb_tw").." 會自動發射 "..CNumb("{value:%s}", "value_var_rgb").." 次。",
+			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+				..CKWord("暴擊命中", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
+				..Dot_red.." 對電動力法杖與虛空爆裂法杖，額外投射物只能由主要攻擊產生。",
 			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n主要攻击"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时，发射 "..CNumb("{value:%s}", "value_var_rgb").." 枚射弹。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Fernkampf-"..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de")..".\n"..CNumb("{value:%s}", "value_var_rgb").." Schüsse bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." des Primärangriffs.",
 			it = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." a Distanza.\n"..CNumb("{value:%s}", "value_var_rgb").." Colpi con un "..CKWord("Colpo Critico", "Crit_hit_rgb_it").." dell'Attacco Primario.",
@@ -2643,7 +2646,9 @@ local weapon_localizations = {
 				..CNumb("{value:%s}", "value_var_rgb").." снаряда вылетает при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..". "
 				..Dot_red.." У Электрокинетических посохов и посохов Травмы "..CNumb("{value:%s}", "value_var_rgb").." снаряд появляется только от основных атак.", -- Всплеск
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." à distance.\n"..CNumb("{value:%s}", "value_var_rgb").." tirs lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." de l'attaque principale.",
-			["zh-tw"] = "遠程攻擊 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." 。\n當主攻擊 "..CKWord("暴擊", "Crit_rgb_tw").." 會自動發射 "..CNumb("{value:%s}", "value_var_rgb").." 次。",
+			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+				..CKWord("暴擊命中", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
+				..Dot_red.." 對電動力法杖與虛空爆裂法杖，額外投射物只能由主要攻擊產生。",
 			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n主要攻击"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时，发射 "..CNumb("{value:%s}", "value_var_rgb").." 枚射弹。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Fernkampf-"..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de")..".\n"..CNumb("{value:%s}", "value_var_rgb").." Schüsse bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." des Primärangriffs.",
 			it = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." a Distanza.\n"..CNumb("{value:%s}", "value_var_rgb").." Colpi con un "..CKWord("Colpo Critico", "Crit_hit_rgb_it").." dell'Attacco Primario.",
@@ -2662,7 +2667,8 @@ local weapon_localizations = {
 			ru = CNumb("{charge_time:%s}", "chrgtime_var_rgb").." от времени заряжания вторичной атаки в серии ударов. Суммируется "..CNumb("{stacks:%s}", "stacks_var_rgb").." раза. "
 				..Dot_red.." Усиления скорости атаки не влияют на этот эффект.",
 			fr = CNumb("{charge_time:%s}", "chrgtime_var_rgb").." de temps de charge lors d'une attaque secondaire. Se cumule "..CNumb("{stacks:%s}", "stacks_var_rgb").." fois.",
-			["zh-tw"] = "連續使用次要攻擊時，\n充能時間 "..CNumb("{charge_time:%s}", "chrgtime_var_rgb").."，\n上限 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。",
+			["zh-tw"] = "連續次要攻擊時，充能時間 "..CNumb("{charge_time:%s}", "chrgtime_var_rgb").."。\n堆疊 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 次。 "
+				..Dot_red.." 充能時間不受攻擊速度增益影響。",
 			["zh-cn"] = "连续进行次要攻击时 \n"..CNumb("{charge_time:%s}", "chrgtime_var_rgb").." 蓄力时间。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。",
 			de = CNumb("{charge_time:%s}", "chrgtime_var_rgb").." Ladezeit bei aufeinanderfolgenden Sekundärangriffen. Stapelt "..CNumb("{stacks:%s}", "stacks_var_rgb").." Mal.",
 			it = CNumb("{charge_time:%s}", "chrgtime_var_rgb").." Tempo di Carica su Attacchi Secondari in Catena. Cumulabile "..CNumb("{stacks:%s}", "stacks_var_rgb").." volte.",
@@ -2681,7 +2687,8 @@ local weapon_localizations = {
 			ru = CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." за каждые "..CNumb("20%", "pc_20_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..". "
 				..Dot_nc.." Суммируется до "..CNumb("4", "n_4_rgb").." раз, вплоть до "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при "..CNumb("80%", "pc_80_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..".", -- Связь с варпом
 			fr = "Obtenez entre "..CNumb("{crit_chance:%s}", "crit_var_rgb").." et "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." en fonction de votre niveau de "..CKWord("Péril", "Peril_rgb_fr").." actuel.",
-			["zh-tw"] = "根據當前的 "..CKWord("反噬", "Peril_rgb_tw").." ，\n增加 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 至 "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").." 。",
+			["zh-tw"] = "每 "..CNumb("20%", "pc_20_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 獲得 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+				..Dot_nc.." 最多堆疊 "..CNumb("4", "n_4_rgb").." 次；在 "..CNumb("80%", "pc_80_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 時最高 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。",
 			["zh-cn"] = "随"..CKWord("危机值", "Peril_rgb_zh_cn").."增长叠加层数，\n每增长 "..CNumb("20%", "pc_20_rgb").."，"..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("4", "n_4_rgb").." 层，最高 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").."。",
 			de = "Erhöht die "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." um "..CNumb("{crit_chance:%s}", "crit_var_rgb").." bis "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." abhängig vom aktuellen "..CKWord("Gefahr", "Peril_rgb_de").."-Level.",
 			it = "Ottieni tra "..CNumb("{crit_chance:%s}", "crit_var_rgb").." e "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." di "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." in base al tuo livello di "..CKWord("Pericolo", "Peril_rgb_it").." attuale.",
@@ -2701,7 +2708,8 @@ local weapon_localizations = {
 			ru = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." подавляется при попадании в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".\n"
 				..Dot_green.." Может срабатывать несколько раз за выстрел при пробивании нескольких противников в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".", -- Перемещение опасности
 			fr = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." de votre "..CKWord("Péril", "Peril_rgb_fr").." est dissipé lors d'un "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr")..".",
-			["zh-tw"] = CKWord("命中弱點", "Weakspothits_rgb_tw").." "..CNumb("-", "n_minus_rgb")..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。",
+			["zh-tw"] = CKWord("命中弱點", "Weakspothit_rgb_tw").."時平息 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
+				..Dot_green.." "..CKWord("順劈命中", "Cleaving_rgb_tw").."敵人"..CKWord("弱點", "Weakspots_rgb_tw").."時，每次射擊可觸發多次。",
 			["zh-cn"] = CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，平息 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。",
 			de = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Gefahr", "Peril_rgb_de").." wird bei einem "..CKWord("Schwachstellentreffer", "Weakspothit_rgb_de").." abgebaut.",
 			it = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Pericolo", "Peril_rgb_it").." viene placato con un "..CKWord("Colpo a Punto Debole", "Weakspothit_rgb_it")..".",
@@ -2719,7 +2727,8 @@ local weapon_localizations = {
 				..CNote("Brtl_note"),
 			ru = "Цель получает до "..CNumb("{stacks:%s}", "stacks_var_rgb").." зарядов по "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." брони в зависимости от времени заряжания вторичной атаки. Длится "..CNumb("{time:%s}", "time_var_rgb").." секунд. Максимум "..CNumb("40%", "pc_40_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." при "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." зарядах.", -- ..CNote("Brtl_note")
 			fr = "La cible subit jusqu'à "..CNumb("{stacks:%s}", "stacks_var_rgb").." cumuls de "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Fragilité", "Brittleness_rgb_fr")..", en fonction du temps de charge de l'attaque secondaire. Dure "..CNumb("{time:%s}", "time_var_rgb").." secondes. "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." cumuls maximum, pour un total de "..CNumb("40%", "pc_40_rgb").."."..CNote("Brtl_note"),
-			["zh-tw"] = "根據次要攻擊的蓄力時間，\n使攻擊目標獲得 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CNumb("{rending:%s}", "rending_var_rgb").." 的 "..CKWord("脆弱", "Brittleness_rgb_tw").."，\n可持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒，上限 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層 "..CNumb("40%", "pc_40_rgb").." 。"..CNote("Brtl_note"),
+			["zh-tw"] = "依次要攻擊蓄力時間，最多施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."。\n持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。最多 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層，最高 "..CNumb("40%", "pc_40_rgb").."。\n"
+				..CNote("Brtl_note"),
 			["zh-cn"] = "随次要攻击蓄力时间提升效果，\n最多对目标施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，\n持续"..CNumb("{time:%s}", "time_var_rgb").." 秒。最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层，最高"..CNumb("40%", "pc_40_rgb").."。"..CNote("Brtl_note"),
 			de = "Fügt dem Ziel basierend auf der Ladezeit des Sekundärangriffs bis zu "..CNumb("{stacks:%s}", "stacks_var_rgb").." Stapel "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Sprödigkeit", "Brittleness_rgb_de").." zu. Hält "..CNumb("{time:%s}", "time_var_rgb").." Sek. Max. "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." Stapel, insgesamt bis zu "..CNumb("40%", "pc_40_rgb").."."..CNote("Brtl_note"),
 			it = "Infligge fino a "..CNumb("{stacks:%s}", "stacks_var_rgb").." accumuli di "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("Fragilità", "Brittleness_rgb_it").." in base al tempo di carica dell'attacco secondario. Dura "..CNumb("{time:%s}", "time_var_rgb").." sec. Max "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." accumuli, fino al "..CNumb("40%", "pc_40_rgb").."."..CNote("Brtl_note"),
@@ -2738,7 +2747,8 @@ local weapon_localizations = {
 			ru = CNumb("-", "n_minus_rgb")..CNumb("{reduction:%s}", "red_var_rgb").." к штрафу скорости передвижения во время вторичной атаки. Ваша вторичная атака не может быть прервана. "
 				..Dot_red.." Вторичные атаки всех посохов и так невозможно прервать.",
 			fr = "Votre attaque secondaire ne peut pas être interrompue et les pénalités de vitesse de déplacement de l'attaque secondaire sont réduite de "..CNumb("{reduction:%s}", "red_var_rgb")..".",
-			["zh-tw"] = "次要攻擊的移動速度懲罰 "..CNumb("-", "n_minus_rgb")..CNumb("{reduction:%s}", "red_var_rgb").."，\n且無法被中斷。",
+			["zh-tw"] = "次要攻擊期間的移動速度懲罰 "..CNumb("-", "n_minus_rgb")..CNumb("{reduction:%s}", "red_var_rgb").."。你的次要攻擊無法被中斷。 "
+				..Dot_red.." 所有法杖的蓄力動作預設已無法被中斷。",
 			["zh-cn"] = "次要攻击蓄力期间 "..CNumb("-", "n_minus_rgb")..CNumb("{reduction:%s}", "red_var_rgb").." 移动速度惩罚，\n同时敌人的近战及远程攻击无法眩晕你。",
 			de = "Euer Sekundärangriff kann nicht unterbrochen werden und die Bewegungsgeschwindigkeitsstrafe für Sekundärangriffe wird um "..CNumb("{reduction:%s}", "red_var_rgb").." reduziert.",
 			it = "Il tuo Attacco Secondario non può essere interrotto e la penalità alla Velocità di Movimento dell'Attacco Secondario è ridotta del "..CNumb("{reduction:%s}", "red_var_rgb")..".",
@@ -2758,7 +2768,8 @@ local weapon_localizations = {
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." заряда "..CKWord("горения души", "gorenia_dushi_rgb_ru").." получает враг при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..". "
 				..CPhrs("Refr_dur_stappl"), --  Вплоть до 6 зарядов. -- Пылающий дух
 			fr = "L'ennemi gagne "..CNumb("{stacks:%s}", "stacks_var_rgb").." cumuls de "..CKWord("Embrasement d'âme", "Soulblaze_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr")..".",
-			["zh-tw"] = "敵人於 "..CKWord("暴擊命中", "Crit_hit_rgb_tw").." 時會獲得 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("靈火", "Soulblaze_rgb_tw").."。",
+			["zh-tw"] = CKWord("暴擊命中", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。 "
+				..CPhrs("Refr_dur_stappl"),
 			["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时, 对敌人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."。",
 			de = "Der Gegner erhält bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." "..CNumb("{stacks:%s}", "stacks_var_rgb").." Stapel "..CKWord("Seelenbrand", "Soulblaze_rgb_de")..".",
 			it = "Il nemico ottiene "..CNumb("{stacks:%s}", "stacks_var_rgb").." accumuli di "..CKWord("Fiamma dell'Anima", "Soulblaze_rgb_it").." con un "..CKWord("Colpo Critico", "Crit_hit_rgb_it")..".",
@@ -2778,7 +2789,9 @@ local weapon_localizations = {
 			ru = "Прямые попадания накладывают "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb").." заряда "..CNumb("1%", "pc_1_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." брони на "..CNumb("{duration:%s}", "dur_var_rgb").." секунд. Вплоть до "..CNumb("20%", "pc_20_rgb")..". "
 				..CPhrs("Can_be_refr")..CNote("Brtl_note"), -- Проникающее пламя
 			fr = "Les coups directs appliquent "..CNumb("1", "n_1_rgb").." cumul de "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb")..CNumb("%", "pc_rgb").." "..CKWord("Fragilité", "Brittleness_rgb_fr").." pendant "..CNumb("{duration:%s}", "dur_var_rgb").." secondes. Jusqu'à "..CNumb("20%", "pc_20_rgb").."."..CNote("Brtl_note"),
-			["zh-tw"] = "被攻擊目標獲得 "..CNumb("1", "n_1_rgb").." 層 "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb")..CNumb("%", "pc_rgb").." 的 "..CKWord("脆弱", "Brittleness_rgb_tw").."，\n持續 "..CNumb("{duration:%s}", "dur_var_rgb").." 秒，上限 "..CNumb("20%", "pc_20_rgb").." 。"..CNote("Brtl_note"),
+			["zh-tw"] = "直接命中會施加 "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb").." 層 "..CNumb("1%", "pc_1_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."，持續 "..CNumb("{duration:%s}", "dur_var_rgb").." 秒。最高 "..CNumb("20%", "pc_20_rgb").."。 "
+				..CPhrs("Can_be_refr").."\n"
+				..CNote("Brtl_note"),
 			["zh-cn"] = "命中时，对目标施加 "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb").." 层 "..CNumb("1%", "pc_1_rgb").." "..CKWord("脆弱", "Brittleness_rgb_zh_cn").."，持续 "..CNumb("{duration:%s}", "dur_var_rgb").." 秒。\n最多叠加 "..CNumb("20", "n_20_rgb").." 层，最高 "..CNumb("20%", "pc_20_rgb").."。"..CNote("Brtl_note"),
 			de = "Direkte Treffer verursachen "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb").." Stapel "..CNumb("1%", "pc_1_rgb").." "..CKWord("Sprödigkeit", "Brittleness_rgb_de").." für "..CNumb("{duration:%s}", "dur_var_rgb").." Sek. Bis zu "..CNumb("20%", "pc_20_rgb").."."..CNote("Brtl_note"),
 			it = "I colpi diretti applicano "..CNumb("{num_stacks:%s}", "stacks_num_var_rgb").." accumuli di "..CNumb("1%", "pc_1_rgb").." "..CKWord("Fragilità", "Brittleness_rgb_it").." per "..CNumb("{duration:%s}", "dur_var_rgb").." sec. Fino al "..CNumb("20%", "pc_20_rgb").."."..CNote("Brtl_note"),
@@ -2795,7 +2808,7 @@ local weapon_localizations = {
 			en = CNumb("{proc_chance:%s}", "procch_var_rgb").." chance Elite and Special enemies Explode on kill.",
 			ru = CNumb("{proc_chance:%s}", "procch_var_rgb").." шанс, что элитные враги или специалисты взорвутся при смерти.", -- Взрывной финал
 			fr = CNumb("{proc_chance:%s}", "procch_var_rgb").." de chance que les Élite et les spécialistes explosent lors d'une élimination.",
-			["zh-tw"] = "精英或專家死亡時，\n有 "..CNumb("{proc_chance:%s}", "procch_var_rgb").." 機率引發爆炸。",
+			["zh-tw"] = "擊殺精英與專家敵人時，有 "..CNumb("{proc_chance:%s}", "procch_var_rgb").." 機率使其爆炸。",
 			["zh-cn"] = "击杀精英和专家敌人时 \n"..CNumb("{proc_chance:%s}", "procch_var_rgb").." 几率引发爆炸。",
 			de = CNumb("{proc_chance:%s}", "procch_var_rgb").." Chance, dass Elite- und Spezialgegner bei einem Kill explodieren.",
 			it = CNumb("{proc_chance:%s}", "procch_var_rgb").." di probabilità che i nemici Élite e Specialisti esplodano alla morte.",
@@ -2814,7 +2827,8 @@ local weapon_localizations = {
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." заряда "..CKWord("горения", "gorenia_rgb_ru").." применяется к врагу при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..", вплоть до "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." зарядов. "
 				..CPhrs("Refr_dur_stappl")..Dot_red.." Заряды "..CKWord("горения", "gorenia_rgb_ru").." не накладываются через щиты.",
 			fr = CNumb("{stacks:%s}", "stacks_var_rgb").." cumuls de "..CKWord("Brûlure", "Burn_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." jusqu'à un maximum de "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." cumuls.",
-			["zh-tw"] = "在 "..CKWord("暴擊命中", "Crit_hit_rgb_tw").." 時 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("燃燒", "Burn_rgb_tw").."，\n上限 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層。",
+			["zh-tw"] = CKWord("暴擊命中", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("燃燒", "Burn_rgb_tw").."，最多 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層。\n"
+				..CPhrs("Refr_dur_stappl")..Dot_red.." 無法透過盾牌施加"..CKWord("燃燒", "Burn_rgb_tw").."。",
 			["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("燃烧", "Burn_rgb_zh_cn").."。最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层。",
 			de = CNumb("{stacks:%s}", "stacks_var_rgb").." Stapel "..CKWord("Verbrennung", "Burn_rgb_de").." bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." bis zu einem Maximum von "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." Stapeln.",
 			it = CNumb("{stacks:%s}", "stacks_var_rgb").." accumuli di "..CKWord("Bruciatura", "Burn_rgb_it").." con un "..CKWord("Colpo Critico", "Crit_hit_rgb_it").." fino a un massimo di "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." accumuli.",
@@ -2833,7 +2847,8 @@ local weapon_localizations = {
 			ru = CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").." от затрат боеприпасов на выстрел раз в "..CNumb("{time:%s}", "time_var_rgb").." секунды. "
 				..Dot_nc.." Модели "..CKWord("VII", "n_VII_rgb").." и "..CKWord("IX", "n_IX_rgb").." тратят "..CNumb("1", "n_1_rgb").." боеприпас за выстрел вместо "..CNumb("3", "n_3_rgb")..", а модель "..CKWord("IIB", "n_IIB_rgb").." - "..CNumb("1", "n_1_rgb").." вместо "..CNumb("2", "n_2_rgb")..".",
 			fr = CNumb("{ammo:%s}", "ammo_var_rgb").." de réduction des munitions dépensées lorsque vous ne tirez pas pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes.",
-			["zh-tw"] = "每過 "..CNumb("{time:%s}", "time_var_rgb").." 秒，\n首次射擊的彈藥消耗將減少 "..CNumb("{ammo:%s}", "ammo_var_rgb").." 。",
+			["zh-tw"] = "每 "..CNumb("{time:%s}", "time_var_rgb").." 秒，每次射擊彈藥消耗 "..CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").."。 "
+				..Dot_nc.." Mk "..CKWord("VII", "n_VII_rgb").." 與 Mk "..CKWord("IX", "n_IX_rgb").." 每次射擊消耗 "..CNumb("1", "n_1_rgb").." 彈藥而非 "..CNumb("3", "n_3_rgb").."；Mk "..CKWord("IIB", "n_IIB_rgb").." 消耗 "..CNumb("1", "n_1_rgb").." 而非 "..CNumb("2", "n_2_rgb").."。",
 			["zh-cn"] = "下次射击 "..CNumb("-", "n_minus_rgb")..CNumb("{ammo:%s}", "ammo_var_rgb").." 弹药消耗，\n冷却时间 "..CNumb("{time:%s}", "time_var_rgb").." 秒。",
 			de = CNumb("{ammo:%s}", "ammo_var_rgb").." weniger Munitionsverbrauch, wenn "..CNumb("{time:%s}", "time_var_rgb").." Sek. nicht geschossen wurde.",
 			it = CNumb("{ammo:%s}", "ammo_var_rgb").." di riduzione del consumo di munizioni se non si spara per "..CNumb("{time:%s}", "time_var_rgb").." secondi.",
@@ -2852,7 +2867,8 @@ local weapon_localizations = {
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при серии попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." любой цели. "
 				..Dot_nc.." До "..CNumb("5", "n_5_rgb").." зарядов. "..Dot_red.." Не влияет на атаки ближнего боя.", -- Сосредоточенный огонь
 			fr = "Jusqu'à "..CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." lors d'un "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr").." répété à distance (toute cible). Jusqu'à "..CNumb("5", "n_5_rgb").." cumuls.",
-			["zh-tw"] = "連續 "..CKWord("弱點命中", "Weakspothit_rgb_tw").." 時（任意目標），\n獲得最多 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n上限 "..CNumb("5", "n_5_rgb").." 層。",
+			["zh-tw"] = "連續遠程"..CKWord("命中弱點", "Weakspothit_rgb_tw").."任意目標時，獲得 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。 "
+				..Dot_nc.." 最多 "..CNumb("5", "n_5_rgb").." 層。 "..Dot_red.." 不會強化近戰攻擊。",
 			["zh-cn"] = "连续"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。",
 			de = "Bis zu "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." bei aufeinanderfolgenden Fernkampf-"..CKWord("Schwachstellentreffern", "Weakspothit_rgb_de").." (beliebiges Ziel). Bis zu "..CNumb("5", "n_5_rgb").." Stapel.",
 			it = "Fino a "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." a Colpi ripetuti a Distanza su "..CKWord("Punto Debole", "Weakspothit_rgb_it").." (qualsiasi bersaglio). Fino a "..CNumb("5", "n_5_rgb").." accumuli.",
