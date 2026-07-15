@@ -919,7 +919,7 @@ local penances_localizations = {
 				.."或更高威脅等級下，\n"
 				.."於 "..CNumb("{time_window}", "time_wind_rgb").." 秒內，\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名\n"
-				.."被你的手雷"..CKWord("眩暈", "Stunned_rgb_tw").."的敵人。",
+				.."被你的手雷 "..CKWord("眩暈", "Stunned_rgb_tw").." 的敵人。",
 		},
 	--[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
 	["loc_achievement_zealot_2_healed_up_after_resisting_death_name"] = {
