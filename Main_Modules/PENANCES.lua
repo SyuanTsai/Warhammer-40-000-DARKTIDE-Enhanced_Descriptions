@@ -1173,9 +1173,9 @@ local penances_localizations = {
 			en = CKWord("Critically strike", "Crtcll_strk_rgb").." "..CNumb("{target}", "target_rgb").." enemies while under the effects of "..CKWord("Prescience", "prescience_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." made by any affected team member also count.",
 			ru = "Нанесите врагам "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Предвидение", "prescience_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru").." любого члена команды, находящегося под действием эффекта ауры, тоже учитываются.",
 			["zh-tw"] = "受到 "..CKWord("預兆", "prescience_rgb_tw").." 光環效果時，\n"
-				..CKWord("暴擊", "Crtcll_strk_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				.."以 "..CKWord("爆擊攻擊", "Crtcll_strk_rgb_tw").."命中 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
 				.."受此光環影響的隊友造成的\n"
-				..CKWord("暴擊", "Crit_strikes_rgb_tw").."也會計入。",
+				..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."也會計入。",
 		},
 	--[+ Charged with Purpose +]-- руоф Заряженные целью -- 壓倒性的存在
 		--[+ Kill 2500 enemies stunned by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
@@ -1201,12 +1201,13 @@ local penances_localizations = {
 		["loc_achievement_psyker_2_stay_at_max_souls_for_duration_description"] = {
 			en = "While on "..CKWord("Malice", "malice_rgb").." Threat or higher, in a single session maintain maximum Warp Charges for "..CNumb("{target}", "target_rgb").." seconds.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, в течение одной миссии сохраняйте максимальное количество зарядов варпа в течение "..CNumb("{target}", "target_rgb").." секунд.",
-			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，於單場任務中持續維持最高層數亞空間充能 "..CNumb("{target}", "target_rgb").." 秒。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."於單場任務中維持最大亞空間充能 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Going Out With a Bang +]-- руоф Эффектный выход
 	["loc_achievement_psyker_2_perils_of_the_warp_elite_kills_name"] = {
 		ru = "Взрывной финал",
-		["zh-tw"] = "赫然死亡",
+		["zh-tw"] = "轟然退場",
 	},
 		--[+ While on Malice Threat or higher, kill 1 elite enemies with a single Perils of the Warp explosion. +]-- руоф При угрозе «Злоба» или выше убейте элитных врагов (1) за однократное применение угрозы от взрыва варпа.
 		["loc_achievement_psyker_2_perils_of_the_warp_elite_kills_description"] = {
@@ -1246,7 +1247,7 @@ local penances_localizations = {
 	["loc_class_ogryn_title"] = {
 		en = CKWord("Ogryn", "cls_ogr_rgb"),
 		ru = CKWord("Огрин", "cls_ogr_rgb_ru"),
-		["zh-tw"] = CKWord("歐格林", "cls_ogr_rgb_ru"),
+		["zh-tw"] = CKWord("歐格林", "cls_ogr_rgb_tw"),
 	},
 		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
 	--[+ Got a Bone to Pick (1-6) +]-- руоф Крепкий орешек (1-6)
@@ -1258,7 +1259,7 @@ local penances_localizations = {
 		["loc_achievement_rank_ogryn_2_x_description"] = {
 			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 		},
 	--[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1) -- 如坦克一般 (1)
 	["loc_achievement_missions_ogryn_2_x_name"] = {
@@ -1269,7 +1270,7 @@ local penances_localizations = {
 		["loc_achievement_missions_ogryn_2_x_description"] = {
 			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 場任務。",
 		},
 	--[+ Beat-em-Up (1) +]-- руоф Всех порву/Бей их всех (1) -- 揍扁他們 (1)
 	["loc_achievement_missions_ogryn_2_objective_1_name"] = {
