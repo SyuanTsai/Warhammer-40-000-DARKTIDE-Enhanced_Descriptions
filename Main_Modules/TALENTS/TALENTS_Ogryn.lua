@@ -40,7 +40,7 @@ local ogryn_localizations = {
 			-- ..Dot_green.." Высокое "..CKWord("ошеломление", "oshelomlenie_rgb_ru").." против всех врагов, кроме чудовищ и капитанов/близнецов.\n"
 			..Dot_nc.." Пополняет все ящики при подборе гранат.", -- Большая коробка боли -- руоф Ящик, полный боли
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés  contre un seul ennemi."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_0_rgb_fr,
-		["zh-tw"] = "以巨大的力量和熱情投擲一箱手榴彈，\n"
+		["zh-tw"] = "以巨大的力量和熱情投擲一箱手雷，\n"
 			.."對單一敵人造成大量"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 衝擊基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1850", "n_1850_rgb").."。\n"
@@ -49,8 +49,8 @@ local ogryn_localizations = {
 			..Dot_green.." 對不屈敵人的"..CKWord("傷害", "Damage_rgb_tw").."略高。\n"
 			..Dot_red.." 對甲殼護甲"..CKWord("傷害", "Damage_rgb_tw").."極低。\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（巨獸及隊長/雙子除外）。\n"
-			..Dot_nc.." 拾取手榴彈時補滿所有彈箱。",
+			.."（巨獸及連長/雙子除外）。\n"
+			..Dot_nc.." 拾取手雷補給時補滿所有箱子。",
 	},
 	--[+ BLITZ 1 - Big Friendly Rock +]--	26.03.2026
 	["loc_ability_ogryn_friend_rock_desc"] = { -- recharge: 45, max_charges: 4, s->seconds
@@ -96,10 +96,10 @@ local ogryn_localizations = {
 			.."\n"
 			.."造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，效果因目標而異：\n"
 			..Dot_green.." 一般敵人：必定"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			..Dot_green.." 巨獸：僅命中"..CKWord("弱點命中", "Weakspothits_rgb_tw").."有效。\n"
-			..Dot_green.." 隊長/雙子：僅在無虛空護盾時有效。\n"
+			..Dot_green.." 巨獸：僅在"..CKWord("弱點命中", "Weakspothits_rgb_tw").."時有效。\n"
+			..Dot_green.." 連長/雙子：僅在無虛空護盾時有效。\n"
 			.."\n"
-			..Dot_red.." 歐格林無法拾取手榴彈彈藥。",
+			..Dot_red.." 歐格林無法拾取手雷彈藥。",
 	},
 	--[+ BLITZ 1-1 - That One Didn't Count +]--	26.03.2026
 	["loc_talent_ogryn_replenish_rock_on_miss_desc"] = { -- +colors
@@ -139,17 +139,17 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_green.." Убивает всех врагов взрывом, кроме: скабов-палачей, крушителей, бастионов, загонщиков, капитанов/близнецов и чудовищ.", -- Фраг-бомба -- руоф Осколочная бомба
 		-- fr = "Lancer une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." de taille Ogryn (la seule taille appropriée !) avec un rayon d'explosion de {radius:%s} mètres, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." accrus au centre."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_2_rgb_fr,
-		["zh-tw"] = "投擲一枚歐格林尺寸的"..CKWord("破片手榴彈", "Frag_gren_rgb_tw").."。\n"
+		["zh-tw"] = "投擲一枚歐格林尺寸的"..CKWord("破片手雷", "Frag_gren_rgb_tw").."。\n"
 			..Dot_nc.." 引信時間："..CNumb("2", "n_2_rgb").." 秒。\n"
 			..Dot_nc.." 爆炸半徑：{radius:%s} 米。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."-"..CNumb("1250", "n_1250_rgb").."]"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."-"..CNumb("1250", "n_1250_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（含巨獸、隊長/雙子，後者僅在無虛空護盾時有效）。\n"
+			.."（含巨獸、連長/雙子，後者僅在無虛空護盾時有效）。\n"
 			.."\n"
 			..Dot_green.." 爆炸擊殺大多數敵人，下列除外：\n"
-			.."重錘兵、碾壓者、 堡壘、瘟疫行者、隊長/雙子、巨獸。",
+			.."重錘兵、碾壓者、堡壘、獸群領主、連長/雙子、巨獸。",
 	},
 	--[+ BLITZ 3 - Bombs Away! +]--	26.03.2026
 	["loc_talent_bonebreaker_grenade_super_armor_explosion_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
@@ -180,26 +180,26 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_nc.." Пополняет все ящики при подборе гранат.", -- Бросай бомбы! -- руоф Кидаю бомбу!
 		-- fr = "Lancer une boîte de grenades avec une grande force et enthousiasme pour infliger des "..COLORS_KWords_fr.Damage_rgb_fr.." élevés à un seul ennemi.\nToucher un ennemi provoque l'ouverture de la boîte, libérant {num_grenades:%s} grenades autour de la cible.\nIl s'agit d'une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_3_rgb_fr,
-		["zh-tw"] = "以巨大力量和熱情投擲一箱手榴彈，\n"
+		["zh-tw"] = "以巨大力量和熱情投擲一箱手雷，\n"
 			.."對單一敵人造成大量"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."命中敵人後彈箱破裂，\n"
-			.."對目標周圍丟出 {num_grenades:%s} 枚手榴彈。\n"
-			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
+			.."在目標周圍釋放 {num_grenades:%s} 枚手雷。\n"
+			..Dot_green.." 這是 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..Dot_green.." 衝擊基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1850", "n_1850_rgb").."。\n"
 			..Dot_green.." 擊殺：槍手、霰彈槍手、渣滓狂怒者、血痂重錘兵、\n"
 			.."變種人、瘟疫獵犬、瘟疫爆者、腐蝕者。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
-			.."（含巨獸、隊長/雙子，後者僅在無虛空護盾時有效）。\n"
+			.."（含巨獸、連長/雙子，後者僅在無虛空護盾時有效）。\n"
 			.."\n"
-			..Dot_nc.." 拾取手榴彈時補滿所有彈箱。",
+			..Dot_nc.." 拾取手雷補給時補滿所有箱子。",
 	},
 	--[+ BLITZ 3-1 - Bigger Box of Hurt +]--	26.03.2026
 	["loc_talent_ogryn_big_box_of_hurt_more_bombs_desc"] = { -- num_grenades: 6, talent_name: Big Box of Hurt, +colors
 		en = Dot_green.." {amount:%s} grenades released, up to "..CNumb("9", "n_9_rgb")..".",
 		ru = Dot_green.." {amount:%s} дополнительные гранаты разбрасывается, вплоть до "..CNumb("9", "n_9_rgb")..".", -- Бросай бомбы! -- руоф Кидаю бомбу!
-		["zh-tw"] = Dot_green.." {amount:%s} 枚手榴彈散落，最多 "..CNumb("9", "n_9_rgb").." 枚。",
+		["zh-tw"] = Dot_green.." 額外釋放 {amount:%s} 枚手雷，最多 "..CNumb("9", "n_9_rgb").." 枚。",
 	},
 --[+ +AURA - АУРА+ +]--
 	--[+ AURA 0 - Intimidating Presence +]--	26.03.2026
@@ -214,12 +214,11 @@ local ogryn_localizations = {
 			..Dot_green.." Также усиливает специальные действия ближнего боя у дробовика-потрошителя, гранатомётной перчатки (часть ближнего боя), гранатомёта, спаренного тяжёлого стаббера и отбойника.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"), -- Устрашающее присутствие -- руоф Пугающее присутствие
-		["zh-tw"] = Dot_green.." {damage:%s} 重型近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。\n"
+		["zh-tw"] = Dot_green.." 你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友獲得 {damage:%s} 重型近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 同樣增強以下武器的近戰特殊動作：\n"
-			.."撕裂者步槍、擲彈兵臂鸺（近戰部分）、\n"
-			.."震簼槍、雙進重型機槍、反衝者。\n"
+			.."撕裂槍、擲彈兵臂鎧（近戰部分）、\n"
+			.."震盪槍、雙鏈重型機槍、反衝者。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"),
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée puissantes pour vous et les alliés en syntonie."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_0_rgb_fr,
@@ -241,13 +240,12 @@ local ogryn_localizations = {
 			..Dot_green.." Также усиливает специальные действия ближнего боя у дробовика-потрошителя, гранатомётной перчатки (часть ближнего боя), гранатомёта, спаренного тяжёлого стаббера и отбойника.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura").."\n", -- Аура костолома
-		["zh-tw"] = Dot_green.." {damage:%s} 近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。\n"
-			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
+		["zh-tw"] = Dot_green.." 你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友獲得 {damage:%s} 近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+			..Dot_green.." 這是 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..Dot_green.." 同樣增強以下武器的近戰特殊動作：\n"
-			.."撕裂者步槍、擲彈兵臂鸺（近戰部分）、\n"
-			.."震簼槍、雙進重型機槍、反衝者。\n"
+			.."撕裂槍、擲彈兵臂鎧（近戰部分）、\n"
+			.."震盪槍、雙鏈重型機槍、反衝者。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura").."\n",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." des attaques de mêlée pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Aura_1_rgb_fr,
@@ -268,8 +266,7 @@ local ogryn_localizations = {
 			..CPhrs("Dont_intw_coher_toughn").."\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"), -- Будь рядом! -- руоф Не расходимся!
-		["zh-tw"] = Dot_green.." {toughness_regen_rate_modifier:%s} "..CKWord("韌性", "Toughness_rgb_tw").."回復，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。\n"
+		["zh-tw"] = Dot_green.." 你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友獲得 {toughness_regen_rate_modifier:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Dont_intw_coher_toughn").."\n"
 			.."\n"
@@ -293,12 +290,11 @@ local ogryn_localizations = {
 			..Dot_nc.." Враги, которых можно подавить: бронированный ворчун, ворчун, отброс-пулемётчик, дрег-охотник, радист, жнец, стрелок-пулемётчик, скаб-стрелок, скаб-охотник.\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"), -- Отсев трусливых -- руоф Трусливые отбросы
-		["zh-tw"] = Dot_green.." {damage:%s} 對受壓制敵人的"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。\n"
+		["zh-tw"] = Dot_green.." 你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友對受壓制敵人造成 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." {suppression:%s} 壓制效果。\n"
-			..Dot_nc.." 可被壓制的敵人類型：裝甲咊瘘者、咊瘘者、\n"
-			.."沙砾槍手、沙砾潛行者、無線電操作員、收割者、\n"
+			..Dot_green.." {suppression:%s} 造成的壓制。\n"
+			..Dot_nc.." 可被壓制的敵人類型：裝甲呻吟者、呻吟者、\n"
+			.."渣滓槍手、渣滓潛行者、無線電操作員、收割者、\n"
 			.."血痂槍手、血痂射手、血痂潛行者。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Ogr_Aura"),
@@ -342,8 +338,8 @@ local ogryn_localizations = {
 			.."\n"
 			.."衝刺：\n"
 			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 米。\n"
-			..Dot_red.." 遇到甲殼/不屈護甲的敵人、巨獸，\n"
-			.."或隊長/雙子的虛空護盾時停止。",
+			..Dot_red.." 遇到甲殼或不屈基礎護甲類型的敵人、巨獸，\n"
+			.."或連長/雙子的虛空護盾時停止。",
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
 	},
 	--[+ ABILITY 1 - Indomitable +]--	26.03.2026
@@ -388,7 +384,7 @@ local ogryn_localizations = {
 			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 米。\n"
 			..Dot_nc.." 可向後輸入取消。\n"
 			..Dot_nc.." 衝刺期間可稍微改變方向。\n"
-			..Dot_nc.." 可穿透隊長/雙子的虛空護盾，\n"
+			..Dot_nc.." 可穿透連長/雙子的虛空護盾，\n"
 			.."但"..CKWord("踉蹌", "Stagger_rgb_tw").."僅在無虛空護盾時有效。\n"
 			..Dot_red.." 跳躍或下落時無法啟動。\n"
 			..Dot_red.." 僅在遇到巨獸時停止。",
@@ -407,7 +403,7 @@ local ogryn_localizations = {
 			..Dot_green.." {damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			..Dot_nc.." Максимум {stack:%s} зарядов.", -- Топот -- руоф Топанье
 		["zh-tw"] = "被 {talent_name:%s} 命中的每個敵人，\n"
-			.."可獲得一層"..CKWord("蹐蹏", "Trample_rgb_tw").."。\n"
+			.."可獲得一層"..CKWord("踐踏", "Trample_rgb_tw").."。\n"
 			.."\n"
 			.."每層在 {duration:%s} 秒內提供：\n"
 			..Dot_green.." {damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
@@ -439,7 +435,7 @@ local ogryn_localizations = {
 			..Dot_red.." Низкий "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.", -- Разбрызгивание -- Крошилово
 		["zh-tw"] = Dot_green.." {ability:%s} 命中的敵人受到 {stacks:%s} 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 可穿透 堡壘盾牌及隊長/雙子虛空護盾施加"..CKWord("流血", "Bleed_rgb_tw").."。\n"
+			..Dot_green.." 可穿透堡壘盾牌及連長/雙子虛空護盾施加"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			..CPhrs("Refr_dur_stappl").."\n"
 			.."\n"
 			..Dot_green.." 對護甲"..CKWord("傷害", "Damage_rgb_tw").."略高於平均值。\n"
