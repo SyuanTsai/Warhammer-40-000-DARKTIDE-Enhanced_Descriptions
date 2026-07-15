@@ -459,13 +459,13 @@ local menus_templates = {
 	["loc_inventory_menu_favorite_item"] = {
 		en = "Favourite",
 		ru = "Избранное", -- руоф Добавить в избранное
-		["zh-tw"] = "最愛",
+		["zh-tw"] = "收藏",
 		["zh-cn"] = "已收藏", -- 收藏物品
 	},
 	["loc_item_type_perk"] = {
 		-- en = "Perk",
 		ru = "Характеристики", -- руоф Улучшение
-		["zh-tw"] = "附加屬性", -- 附加屬性
+		["zh-tw"] = "專長", -- 附加屬性
 	},
 	["loc_weapon_action_title_light"] = {
 		-- en = "Light Attack",
@@ -480,12 +480,12 @@ local menus_templates = {
 	["loc_weapon_action_title_primary"] = {
 		-- en = "Primary Action",
 		ru = "Основная атака", -- руоф Основное действие -- длинно и накладывается
-		["zh-tw"] = "主要攻擊", -- 主要攻擊(杖)
+		["zh-tw"] = "主要動作", -- 主要攻擊(杖)
 	},
 	["loc_weapon_action_title_secondary"] = {
 		-- en = "Secondary Action",
 		ru = "Вторичная атака", -- руоф Дополнительное действие -- длинно и накладывается
-		["zh-tw"] = "次要攻擊", -- 次要攻擊(杖)
+		["zh-tw"] = "次要動作", -- 次要攻擊(杖)
 	},
 	-- ["loc_weapon_action_title_special"] = {
 		-- en = "Special Attack", --???
@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
+		["zh-tw"] = "特殊近戰攻擊", -- 特殊功能(近戰)
 	},
 
 
