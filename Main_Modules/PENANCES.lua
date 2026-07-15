@@ -2257,7 +2257,7 @@ local penances_localizations = {
 		["loc_achievement_enemies_killed_by_barrels_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by blowing up Explosive barrels.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов с помощью подрыва взрывных бочек.",
-			-- ["zh-tw"] = "利用爆炸桶擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "引爆爆炸桶以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ The Enemy of my Enemy is my Friend +]-- руоф Враг моего врага - мой друг
 	["loc_achievement_enemies_killed_by_poxburster_name"] = {
@@ -2267,7 +2267,7 @@ local penances_localizations = {
 		["loc_achievement_enemies_killed_by_poxburster_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies by having a Poxbuster explode next to them.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, взорвав рядом с ними Чумного взрывника.",
-			-- ["zh-tw"] = "引爆瘟疫爆者以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "讓瘟疫爆者在敵人旁爆炸，以擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ No time to Bleed +]--
 	-- ["loc_code"] = {
