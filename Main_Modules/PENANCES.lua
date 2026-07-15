@@ -358,8 +358,8 @@ local penances_localizations = {
 		["loc_achievement_veteran_2_no_missed_shots_empty_ammo_description"] = {
 			en = "Complete a Mission on "..CKWord("Heresy", "heresy_rgb").." Threat or higher with no Ammo remaining, and "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." accuracy.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, пройдите миссию с точностью в "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." и потратив все боеприпасы.",
-			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度下，\n"
-				.."命中率在 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." 以上，且撤離時無任何備彈",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度下完成一場任務，\n"
+				.."命中率達 "..CNumb("{target}", "target_rgb")..CNumb("%", "pc_rgb").." 以上，且沒有剩餘彈藥。",
 		},
 	--[+ Veteran Master of War +]-- руоф Ветеран — знаток войны
 	["loc_achievement_class_meta_name"] = {
@@ -413,7 +413,7 @@ local penances_localizations = {
 	--[+ Killshot Ready +]--
 	["loc_achievement_veteran_enemies_killed_with_max_focus_fire_name"] = {
 		ru = "Смертельный выстрел готов",
-		["zh-tw"] = "射殺預備",
+		["zh-tw"] = "致命射擊就緒",
 	},
 		--[+ Kill 2500 enemies while at 10 stacks of Marksman's focus or more. +]-- руоф Убейте врагов (2500), имея не менее 10 зарядов «Концентрации снайпера».
 		["loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"] = {
