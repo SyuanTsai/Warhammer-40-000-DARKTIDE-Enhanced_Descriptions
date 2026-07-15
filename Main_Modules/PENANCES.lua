@@ -104,7 +104,7 @@ local penances_localizations = {
 		["loc_achievement_multi_class_x_description"] = {
 			en = "Reach Trust Level "..CNumb("30", "n_30_rgb").." with "..CNumb("{target}", "target_rgb").." classes.",
 			ru = "Достигните "..CNumb("30", "n_30_rgb").." уровня доверия "..CNumb("{target}", "target_rgb").." классами.",
-			["zh-tw"] = "將 "..CNumb("{target}", "target_rgb").." 個職業，都達到信任等級 "..CNumb("30", "n_30_rgb").." 。",
+			["zh-tw"] = "將 "..CNumb("{target}", "target_rgb").." 個職業達到信任等級 "..CNumb("30", "n_30_rgb").."。",
 		},
 	--[+ Don't Let Me Down, Criminal +]-- руоф Не подведите меня, преступники
 	["loc_achievement_prologue_name"] = {
@@ -115,12 +115,12 @@ local penances_localizations = {
 		["loc_achievement_prologue_description"] = {
 			en = "Complete the "..CKWord("Prologue", "Prologue_p_rgb")..".",
 			ru = "Пройдите "..CKWord("Пролог", "Prologue_p_rgb_ru")..".",
-			["zh-tw"] = "完成 "..CKWord("Prologue", "Prologue_p_rgb_tw").."。",
+			["zh-tw"] = "完成 "..CKWord("序章", "Prologue_p_rgb_tw").."。",
 		},
 	--[+ Call to Arms +]-- руоф К оружию!
 	["loc_achievement_basic_training_name"] = {
 		ru = "Призыв к оружию",
-		["zh-tw"] = "戰爭召喚",
+		["zh-tw"] = "武裝號召",
 	},
 		--[+ Complete Basic Training. +]-- руоф Завершите базовое обучение.
 		["loc_achievement_basic_training_description"] = {
