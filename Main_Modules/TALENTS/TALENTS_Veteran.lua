@@ -331,18 +331,18 @@ local veteran_localizations = {
 			..Dot_green.." Эта "..CKWord("стойкость", "stoikost_rgb_ru").." может быть восстанавлена убийствами в ближнем бою, соответствующими талантами и благословениями оружия.\n"
 			..Dot_nc.." Действует как дополнительная полоска "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			..Dot_nc.." Может превысить ваш максимальный уровень "..CKWord("стойкости", "stoikosti_rgb_ru")..".",
-		["zh-tw"] = "{talent_name:%s} 現在同樣賦予你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友：\n"
+		["zh-tw"] = "{talent_name:%s} 現在也會賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 持續 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_green.." 可由近戰擊殺、天賦和武器祝福恢復。\n"
-			..Dot_nc.." 如同額外的"..CKWord("韌性", "Toughness_rgb_tw").." 條。\n"
+			..Dot_green.." 可由近戰擊殺、相應天賦和武器祝福恢復。\n"
+			..Dot_nc.." 作用如同第二條"..CKWord("韌性", "Toughness_rgb_tw").."條。\n"
 			..Dot_nc.." 可超過你的最大"..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_revives_new_description"] = { -- talent_name: Voice of Command, +colors
 		en = Dot_green.." {talent_name:%s} revives Knocked Down Allies within its radius.",
 		ru = Dot_green.." {talent_name:%s} поднимает сбитых с ног союзников в радиусе действия.", -- Лишь со смертью заканчивается долг -- руоф Лишь после смерти заканчивается служение долгу
-		["zh-tw"] = Dot_green.." {talent_name:%s} 復活半徑內倒地的盟友。",
+		["zh-tw"] = Dot_green.." {talent_name:%s} 會救起半徑內倒地的盟友。",
 	},
 	--[+ ABILITY 3 - Infiltrate +]--	27.03.2026
 	["loc_talent_veteran_invisibility_on_combat_ability_damage_desc"] = { -- duration: 8, movement_speed: +25%, damage_duration: 5, damage: +30%, cooldown: 45, s->seconds, +colors
@@ -364,7 +364,7 @@ local veteran_localizations = {
 			..Dot_green.." Бонус к "..CKWord("урону", "uronu_rgb_ru").." продлевается на {damage_duration:%s} секунд после окончания действия "..CKWord("Скрытности", "Stealth_rgb_ru")..".\n"
 			..Dot_green.." Выход из "..CKWord("Скрытности", "Stealth_rgb_ru").." подавляет ближайших врагов.\n"
 			..Dot_red.." Любые атаки заставляют вас выйти из "..CKWord("Скрытности", "Stealth_rgb_ru")..".",
-		["zh-tw"] = "進入"..CKWord("隱身", "Stealth_rgb_tw").." {duration:%s} 秒並獲得：\n"
+		["zh-tw"] = "進入"..CKWord("隱身", "Stealth_rgb_tw").."，持續 {duration:%s} 秒，並獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {movement_speed:%s} 移動速度，\n"
 			..Dot_green.." 完全恢復"..CKWord("韌性", "Toughness_rgb_tw").."。\n"
@@ -372,7 +372,7 @@ local veteran_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			..Dot_green.." "..CKWord("傷害", "Damage_rgb_tw").." 加成在"..CKWord("隱身", "Stealth_rgb_tw").." 結束後再持續 {damage_duration:%s} 秒。\n"
 			..Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").." 會壓制附近敵人。\n"
-			..Dot_red.." 攻擊會結束"..CKWord("隱身", "Stealth_rgb_tw").."。",
+			..Dot_red.." 攻擊會解除"..CKWord("隱身", "Stealth_rgb_tw").."。",
 	},
 	--[+ ABILITY 3-1 - Overwatch +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_extra_charge_description"] = { -- charges: +1, ability_cooldown: +33%
@@ -384,16 +384,16 @@ local veteran_localizations = {
 			..Dot_red.." {ability_cooldown:%s} к времени восстановления.\n"
 			.."\n"
 			..Dot_nc.." Восстановление второго заряда начинается только после завершения восстановления первого заряда.",
-		["zh-tw"] = Dot_green.." {charges:%s} "..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").." 充能。\n"
+		["zh-tw"] = Dot_green.." {charges:%s} "..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能次數。\n"
 			..Dot_red.." {ability_cooldown:%s} "..CKWord("冷卻", "Cd_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 第二個充能的冷卻在第一個完成冷卻後才開始。",
+			..Dot_nc.." 第二次充能的冷卻只會在第一次充能完成冷卻後開始。",
 	},
 	--[+ ABILITY 3-2 - Hunter's Resolve +]--	27.03.2026
 	["loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, +colors
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {duration:%s} seconds upon leaving "..CKWord("Stealth", "Stealth_rgb")..".",
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." на {duration:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".", -- Упорство охотника
-		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").." 後 {duration:%s} 秒內，{tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，持續 {duration:%s} 秒。",
 	},
 	--[+ ABILITY 3-3 - Low Profile +]--	27.03.2026
 	["loc_talent_veteran_reduced_threat_after_stealth_desc"] = { -- threat_multiplier: -90%, duration: 10, s->seconds, +colors
@@ -401,7 +401,7 @@ local veteran_localizations = {
 			..Dot_nc.." Less likely to be targeted by enemies.",
 		ru = Dot_green.." {threat_multiplier:%s} к угрозе на {duration:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".\n"
 			..Dot_nc.." Враги реже атакуют вас.", -- Незаметность -- руоф Сдержанность
-		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").." 後 {duration:%s} 秒內，{threat_multiplier:%s} 威脅值。\n"
+		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {threat_multiplier:%s} 威脅值，持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 較不易被敵人鎖定為目標。",
 	},
 	--[+ ABILITY 3-4 - Close Quarters Killzone +]--	27.03.2026
@@ -425,14 +425,14 @@ local veteran_localizations = {
 			..Dot_green.." Это также увеличивает "..CKWord("урон", "uron_rgb_ru").." от взрывов и количество "..CKWord("урона", "urona_rgb_ru").." со временем, пока "..CKWord("Ветеран", "cls_vet_rgb_ru").." находится в пределах "..CNumb("30", "n_30_rgb").." метров от врага.\n"
 			.."\n"
 			..Dot_nc.." При использовании способности {talent_name:%s}, этот талант начинает действовать только после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".",
-		["zh-tw"] = Dot_green.." 使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").." 後 {duration:%s} 秒內，對 "..CNumb("12.5", "n_12_5_rgb").." 米內敵人："..CKWord("傷害", "Damage_rgb_tw").." {power:%s}。\n"
+		["zh-tw"] = Dot_green.." 使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，對 "..CNumb("12.5", "n_12_5_rgb").." 米內敵人造成 {power:%s} "..CKWord("傷害", "Damage_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			.."\n"
 			.."超出 "..CNumb("12.5", "n_12_5_rgb").." 米，傷害線性遞減直至 "..CNumb("30", "n_30_rgb").." 米時消失：\n"
 			.."_______________________________\n"
 			.."距離(m):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."%:  "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
-			..Dot_green.." 只要"..CKWord("老兵", "cls_vet_rgb_tw").." 在敵人 "..CNumb("30", "n_30_rgb").." 米內，也增加爆炸和持續傷害。\n"
+			..Dot_green.." 只要"..CKWord("老兵", "cls_vet_rgb_tw").."位於敵人 "..CNumb("30", "n_30_rgb").." 米內，也會提高爆炸與持續傷害。\n"
 			.."\n"
 			..Dot_nc.." 使用 {talent_name:%s} 時，此效果於離開"..CKWord("隱身", "Stealth_rgb_tw").." 後生效。",
 	},
@@ -463,12 +463,12 @@ local veteran_localizations = {
 			..Dot_green.." {power:%s} к усилению "..CKWord("ловкости", "lovkosti_rgb_ru").." для дальнобойных атак.\n"
 			.."\n"
 			..CNote("Fns_note"),
-		["zh-tw"] = "遠程"..CKWord("弱點", "Weakspot_rgb_tw").." 擊殺獲得 {stacks:%s} 層"..CKWord("專注", "Focus_rgb_tw").."。\n"
+		["zh-tw"] = "遠程"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺會獲得 {stacks:%s} 層"..CKWord("專注", "Focus_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_proc_mult")
 			..Dot_nc.." 最多 {max_stacks} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
-			..Dot_nc.." "..CKWord("弱點", "Weakspot_rgb_tw").." 命中刷新層數，逐一衰減。\n"
+			..Dot_nc.." "..CKWord("弱點命中", "Weakspothit_rgb_tw").."會刷新層數，層數會逐一衰減。\n"
 			.."\n"
 			.."每層"..CKWord("專注", "Focus_rgb_tw").." 提供：\n"
 			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧", "Finesse_rgb_tw").." 強度，\n"
@@ -510,7 +510,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_snipers_focus_increased_stacks_description"] = { -- stacks: 10, new_stacks: 15, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." Maximum "..CKWord("Focus", "Focus_rgb").." Stacks. Increases from {stacks:%s} to {new_stacks:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." к максимуму зарядов "..CKWord("Концентрации", "Focus_rgb_ru")..". Увеличивается с {stacks:%s} до {new_stacks:%s}.", -- Дальнобойный ассасин
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 5 "..CKWord("專注", "Focus_rgb_tw").." 最大層數。從 {stacks:%s} 提高至 {new_stacks:%s}。",
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." "..CKWord("專注", "Focus_rgb_tw").."最大層數。從 {stacks:%s} 提高至 {new_stacks:%s}。",
 	},
 	--[+ KEYSTONE 2 - Focus Target! +]--	27.03.2026
 	["loc_talent_veteran_improved_tag_description"] = { -- time: 1.5, max_stacks: 5, damage: +5%, s->seconds, +colors
@@ -535,8 +535,8 @@ local veteran_localizations = {
 		["zh-tw"] = "每 {time:%s} 秒獲得 "..CNumb("1", "n_1_rgb").." 層"..CKWord("鎖定目標", "Focus_Target_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			.."\n"
-			.."標記敵人時，將所有「"..CKWord("鎖定目標", "Focus_Target_rgb_tw").."」層數套用並重置為 "..CNumb("1", "n_1_rgb").." 層。\n"
-			..Dot_nc.." 此天賦標記的敵人確黃色標出。\n"
+			.."標記敵人時，會將所有"..CKWord("鎖定目標", "Focus_Target_rgb_tw").."層數套用到該敵人，並將你的層數重置為 "..CNumb("1", "n_1_rgb").." 層。\n"
+			..Dot_nc.." 被此天賦標記的敵人會以黃色標出。\n"
 			.."\n"
 			.."每層敵人受到：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。\n"
@@ -550,7 +550,7 @@ local veteran_localizations = {
 		ru = "Когда враг, отмеченный как "..CKWord("Важная цель", "Focus_Targt_rgb_ru")..", умирает, вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливаете за каждый заряд:\n" -- Цель поражена!
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и\n"
 			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".",
-		["zh-tw"] = ""..CKWord("鎖定目標", "Focus_Target_rgb_tw").." 標記的敵人死亡時，你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友每層恢復：\n"
+		["zh-tw"] = "被"..CKWord("鎖定目標", "Focus_Target_rgb_tw").."標記的敵人死亡時，你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友每層恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 和\n"
 			..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
 	},
@@ -562,7 +562,7 @@ local veteran_localizations = {
 		ru = "Когда враг, отмеченный как "..CKWord("Важная цель", "Focus_Targt_rgb_ru")..", умирает, вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." получаете за каждый заряд:\n" -- Перевести огонь!
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			..Dot_nc.." Длится {duration:%s} секунд.",
-		["zh-tw"] = ""..CKWord("鎖定目標", "Focus_Target_rgb_tw").." 標記的敵人死亡時，你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友每層獲得：\n"
+		["zh-tw"] = "被"..CKWord("鎖定目標", "Focus_Target_rgb_tw").."標記的敵人死亡時，你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友每層獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
@@ -570,7 +570,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_improved_tag_more_damage_description"] = { -- max_stacks: 6, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum "..CKWord("Focus Target", "Focus_Target_rgb").." Stacks. Increases from "..CNumb("4", "n_4_rgb").." to {max_stacks:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму зарядов "..CKWord("Важной цели", "Focus_Target_rgb_ru")..". Увеличивается с "..CNumb("4", "n_4_rgb").." до {max_stacks:%s}.", -- Сосредоточенный огонь
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 2 "..CKWord("鎖定目標", "Focus_Target_rgb_tw").." 最大層數。從 "..CNumb("4", "n_4_rgb").." 提高至 {max_stacks:%s}。",
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." "..CKWord("鎖定目標", "Focus_Target_rgb_tw").."最大層數。從 "..CNumb("4", "n_4_rgb").." 提高至 {max_stacks:%s}。",
 	},
 	--[+ KEYSTONE 3 - Weapons Specialist +]--	27.03.2026
 	["loc_talent_veteran_weapon_switch_new_description"] = { -- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, reload_speed: 2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10, s->seconds, +colors
