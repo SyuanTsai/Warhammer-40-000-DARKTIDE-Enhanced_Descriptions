@@ -302,7 +302,8 @@ local penances_localizations = {
 			..CNote("Weaksp_note"),
 		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." из дальнобойного оружия.\n"
 			..CNote("Weaksp_note"),
-		["zh-tw"] = "使用遠程武器 "..CKWord("遠程弱點傷害", "Weakspot_r_dmg_rgb_tw").." "..CNumb("{target}", "target_rgb").." 名敵人。",
+		["zh-tw"] = "使用遠程武器以 "..CKWord("弱點命中", "Weakspothits_rgb_tw").."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+			..CNote("Weaksp_note"),
 	},
 	--[+ Fire Down Range +]-- -- руоф Заградительный огонь
 	["loc_achievement_veteran_2_medium_2_name"] = {
