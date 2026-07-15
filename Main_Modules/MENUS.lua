@@ -83,7 +83,7 @@ local menus_templates = {
 		["loc_contracts_task_label_kill_bosses"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
 			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸", -- 擊殺巨獸
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸(畸形怪獸)
 			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
 		},
 		--[+ Collect Х kind +]--
@@ -146,19 +146,19 @@ local menus_templates = {
 	["loc_contracts_contract_complexity_easy"] = {
 		-- en = "Low",
 		ru = "Низкая",
-		["zh-tw"] = "低",
+		["zh-tw"] = "簡單",
 		["zh-cn"] = "低", -- 低
 	},
 	["loc_contracts_contract_complexity_medium"] = {
 		-- en = "Medium",
 		ru = "Средняя",
-		["zh-tw"] = "中",
+		["zh-tw"] = "普通",
 		["zh-cn"] = "中", -- 中
 	},
 	["loc_contracts_contract_complexity_hard"] = {
 		-- en = "High",
 		ru = "Высокая",
-		["zh-tw"] = "高",
+		["zh-tw"] = "困難",
 		["zh-cn"] = "高", -- 高
 	},
 	--[+ Mystery Acquisitions +]--
@@ -175,7 +175,7 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的防禦性珍品", -- 未知的防禦性珍品
+		["zh-tw"] = "未知的珍品", -- 未知的防禦性珍品
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
@@ -221,7 +221,7 @@ local menus_templates = {
 	["loc_credits_vendor_view_option_buy"] = {
 		en = "Requisition Weapons and Curios", -- Requisition Weapons & Curios
 		ru = "Запросы на оружие и реликвии",
-		["zh-tw"] = "徵用武器與珍品", 			-- 武器&珍品申請單
+		["zh-tw"] = "購買武器與珍品", 			-- 武器&珍品申請單
 		["zh-cn"] = "武器与珍品采购店", -- 武器与珍品采购店
 	},
 	--[+ Brunt's Armoury +]--
@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "取得一件你選擇的褻瀆級武器。", -- 獲得一件你選定的褻瀆武器。
+		["zh-tw"] = "取得一件你選擇的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
@@ -261,7 +261,7 @@ local menus_templates = {
 	["loc_social_menu_roster_players_from_previous_missions"] = {
 		-- en = "Previous Missions",
 		-- ru = , -- руоф Предыдущие задания
-		["zh-tw"] = "先前任務", -- 歷史任務
+		["zh-tw"] = "歷史任務", -- 歷史任務
 	},
 	--[+ STIMM LAB +]--
 	["loc_broker_stimm_builder_view_display_name"] = {
@@ -378,7 +378,7 @@ local menus_templates = {
 	["loc_inventory_view_display_name"] = {
 		-- en = "Loadout",
 		ru = "Снаряжение",
-		["zh-tw"] = "裝備配置", -- 裝備配置
+		["zh-tw"] = "裝備", -- 裝備配置
 		["zh-cn"] = "装备", -- 装备
 	},
 	--[+ Cosmetic slots +]--
@@ -459,13 +459,13 @@ local menus_templates = {
 	["loc_inventory_menu_favorite_item"] = {
 		en = "Favourite",
 		ru = "Избранное", -- руоф Добавить в избранное
-		["zh-tw"] = "收藏",
+		["zh-tw"] = "最愛",
 		["zh-cn"] = "已收藏", -- 收藏物品
 	},
 	["loc_item_type_perk"] = {
 		-- en = "Perk",
 		ru = "Характеристики", -- руоф Улучшение
-		["zh-tw"] = "專長", -- 附加屬性
+		["zh-tw"] = "附加屬性", -- 附加屬性
 	},
 	["loc_weapon_action_title_light"] = {
 		-- en = "Light Attack",
@@ -480,12 +480,12 @@ local menus_templates = {
 	["loc_weapon_action_title_primary"] = {
 		-- en = "Primary Action",
 		ru = "Основная атака", -- руоф Основное действие -- длинно и накладывается
-		["zh-tw"] = "主要動作", -- 主要攻擊(杖)
+		["zh-tw"] = "主要攻擊", -- 主要攻擊(杖)
 	},
 	["loc_weapon_action_title_secondary"] = {
 		-- en = "Secondary Action",
 		ru = "Вторичная атака", -- руоф Дополнительное действие -- длинно и накладывается
-		["zh-tw"] = "次要動作", -- 次要攻擊(杖)
+		["zh-tw"] = "次要攻擊", -- 次要攻擊(杖)
 	},
 	-- ["loc_weapon_action_title_special"] = {
 		-- en = "Special Attack", --???
@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "特殊近戰攻擊", -- 特殊功能(近戰)
+		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
 	},
 
 
@@ -503,17 +503,17 @@ local menus_templates = {
 	["loc_stats_display_mobility_stat"] = { -- Mobility
 		en = CKWord("Mobility", "Mobility_rgb"),
 		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
-		["zh-tw"] = CKWord("機動性", "Mobility_rgb_tw"),
+		["zh-tw"] = CKWord("移動性", "Mobility_rgb_tw"),
 	},
 	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn's Grenadier Gauntlet
 		en = CKWord("Melee Damage", "Melee_dmg_rgb"),
 		ru = CKWord("Урон рукопашный", "Melee_dmg_rgb_ru"),
-		["zh-tw"] = CKWord("近戰傷害", "Melee_dmg_rgb_tw"),
+		["zh-tw"] = CKWord("近戰傷害", "Melee_dmg_rgb_tw"), -- 近戰
 	},
 	["loc_stats_display_warp_resist_stat"] = { -- Warp Resistance -- Psyker
 		en = CKWord("Warp Resistance", "Warp_resist_rgb"),
 		ru = CKWord("Сопротивление варпу", "Warp_resist_rgb_ru"),
-		["zh-tw"] = CKWord("亞空間抗性", "Warp_resist_rgb_tw"),
+		["zh-tw"] = CKWord("反噬抗性", "Warp_resist_rgb_tw"),
 	},
 
 --[+ +DUMP STATS 2+ +]--
@@ -530,7 +530,7 @@ local menus_templates = {
 	["loc_stats_display_heat_management_powersword_2h"] = { -- Heat Management -- Zealot Relic. //Thanks RedF4llc0n
 		en = CKWord("Heat Management", "Heat_mngt_rgb"),
 		ru = CKWord("Отведение тепла", "Heat_mngt_rgb_ru"),
-		["zh-tw"] = CKWord("熱量管理", "Heat_mngt_rgb_tw"),
+		["zh-tw"] = CKWord("熱能管理", "Heat_mngt_rgb_tw"),
 	},
 
 --[+ +DUMP STATS 3+ +]--
@@ -550,7 +550,7 @@ local menus_templates = {
 	["loc_stats_display_flame_size_stat"] = {
 		-- en = "Cloud Radius",
 		ru = "Размер пламени", -- руоф Область распространения
-		["zh-tw"] = "雲霧半徑", -- 火焰範圍
+		["zh-tw"] = "火焰範圍", -- 火焰範圍
 	},
 	["loc_stats_display_control_stat_melee"] = {
 		-- en = "Crowd Control",
