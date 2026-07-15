@@ -253,6 +253,7 @@ local CONFIG = {
 		momentum = "勢能",
 		-- Arbites
 		Arbites_gren = "法務官手榴彈",
+		BreaknDissent = "鎮壓異己",
 		BreakZLine = "突破防線",
 		-- Psyker
 		Assail = "靈能攻擊",

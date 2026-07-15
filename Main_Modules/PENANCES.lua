@@ -1604,7 +1604,7 @@ local penances_localizations = {
 		["loc_achievement_rank_adamant_2_x_description"] = {
 			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
 			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 		},
 	--[+ Enforcer of the Lex (1-5) +]-- руоф  (1-5)
 	-- ["loc_achievement_missions_adamant_2_x_name"] = {
@@ -1614,36 +1614,45 @@ local penances_localizations = {
 		["loc_achievement_missions_adamant_2_x_description"] = {
 			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Arbitrator", "cls_arb_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 次任務。",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 場任務。",
 		},
 	--[+ Diligent Patrol +]-- руоф 
 	["loc_achievement_missions_adamant_2_objective_1_name"] = {
 		en = "Diligent Patrol (1)",
 		ru = "Бдительный дозор (1)",
+		["zh-tw"] = "勤勉巡邏 (1)",
 	},
 		--[+ As a Arbitrator, complete at least one Mission of each type. +]-- руоф Выполнить Арбитратором по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_adamant_2_objective_1_description"] = {
 			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
 			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
-			-- ["zh-tw"] = "使用 "..CKWord("仲裁官", "cls_arb_rgb_tw").."完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").."，每種類型的任務至少完成 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Diligent Patrol (2) +]-- руоф  (2)
 	["loc_achievement_missions_adamant_2_objective_2_name"] = {
 		ru = "Бдительный дозор (2)",
+		["zh-tw"] = "勤勉巡邏 (2)",
 	},
 		--[+ As a Arbitrator, complete a Mission of each type on Malice Threat or higher. +]--
 		["loc_achievement_missions_adamant_2_objective_2_description"] = {
 			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").."，\n"
+				.."在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Diligent Patrol (3) +]-- руоф  (3)
 	["loc_achievement_missions_adamant_2_objective_3_name"] = {
 		ru = "Бдительный дозор (3)",
+		["zh-tw"] = "勤勉巡邏 (3)",
 	},
 		--[+ As a Arbitrator, complete a Mission of each type on Heresy Threat or higher. +]--
 		["loc_achievement_missions_adamant_2_objective_3_description"] = {
 			en = "As a "..CKWord("Arbitrator", "cls_arb_rgb")..", complete "..CNumb("1", "n_1_rgb").." Mission of each type on "..CKWord("Heresy", "heresy_rgb").." Threat or higher.",
 			ru = "Пройдите "..CKWord("Арбитратором", "cls_arb2_rgb_ru").." "..CNumb("1", "n_1_rgb").." миссию каждого типа на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").."，\n"
+				.."在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."完成每種類型的任務各 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 	--[+ Prove Your Worth (1-5) +]-- руоф Докажи, чего стоишь (1-5) -- 證明你的價值 (1-5)
 	--[+ Fight the Good Fight (1-5) +]-- руоф Сражайся достойно (1-5) -- 為正義而戰 (1-5)
@@ -1655,7 +1664,7 @@ local penances_localizations = {
 		["loc_achievement_group_adamant_2_description"] = {
 			en = "Complete the following Penances as the "..CKWord("Arbitrator", "cls_arb_rgb")..".",
 			ru = "Выполните следующие Искупления "..CKWord("Арбитратором", "cls_arb2_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("老兵", "cls_arb_rgb_tw").." 完成以下苦修。",
+			["zh-tw"] = "使用 "..CKWord("法務官", "cls_arb_rgb_tw").." 完成以下苦修。",
 		},
 	--[+ Targeted Kills +]-- руоф 
 	-- ["loc_achievement_adamant_hunt_snipers"] = {
@@ -1665,6 +1674,7 @@ local penances_localizations = {
 		["loc_achievement_adamant_hunt_snipers_desc"] = {
 			en = "Have your Cyber-Mastiff Pounce on "..CNumb("{amount:%s}", "amountp_var_rgb").." Bombers, Snipers, and Trappers.",
 			ru = "Заставьте вашего кибермастифа наброситься на "..CNumb("{amount:%s}", "amountp_var_rgb").." гренадёров, снайперов или ловушечников.",
+			["zh-tw"] = "讓你的電子獒犬撲擊 "..CNumb("{amount:%s}", "amountp_var_rgb").." 名轟炸者、狙擊手與陷阱兵。",
 		},
 	--[+ Guard Command +]-- руоф 
 	-- ["loc_achievement_adamant_knock_chargers"] = {
@@ -1674,6 +1684,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_knock_chargers_desc"] = {
 			en = "Have your Cyber-Mastiff Knock Away "..CNumb("{amount:%s}", "amountp_var_rgb").." Mutants and Poxbusters. Counts once per Enemy.",
 			ru = "Заставьте вашего кибермастифа сбить с ног "..CNumb("{amount:%s}", "amountp_var_rgb").." мутантов и поскбастеров. Засчитывается один раз за врага.",
+			["zh-tw"] = "讓你的電子獒犬擊退 "..CNumb("{amount:%s}", "amountp_var_rgb").." 名變種人與瘟疫爆者。\n"
+				.."每名敵人只計算一次。",
 		},
 	--[+ Shoot'em When They're Down +]-- руоф 
 	-- ["loc_achievement_adamant_kill_pounced_enemies"] = {
@@ -1683,6 +1695,7 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_pounced_enemies_desc"] = {
 			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." enemies pounced by your Cyber-Mastiff.",
 			ru = "Уничтожьте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, на которых набросился ваш кибермастифа.",
+			["zh-tw"] = "擊殺 "..CNumb("{amount:%s}", "amountp_var_rgb").." 名被你的電子獒犬撲擊的敵人。",
 		},
 	--[+ Voltaic Persecution +]-- руоф 
 	-- ["loc_achievement_adamant_kill_electrocuted"] = {
@@ -1692,6 +1705,7 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_electrocuted_desc"] = {
 			en = "Kill "..CNumb("{amount:%s}", "amountp_var_rgb").." Electrocuted enemies.",
 			ru = "Убейте "..CNumb("{amount:%s}", "amountp_var_rgb").." врагов, поражённых электрошоком.",
+			["zh-tw"] = "擊殺 "..CNumb("{amount:%s}", "amountp_var_rgb").." 名被電擊的敵人。",
 		},
 	--[+ Loyal Companion +]-- руоф 
 	-- ["loc_achievement_adamant_saved_from_dog"] = {
@@ -1719,6 +1733,7 @@ local penances_localizations = {
 		["loc_achievement_adamant_block_enemies_desc"] = {
 			en = "Block "..CKWord("Damage", "Damage_rgb").." from "..CNumb("{amount:%s}", "amountp_var_rgb").." unique enemies.",
 			ru = "Заблокируйте "..CKWord("урон", "uron_rgb_ru").." от "..CNumb("{amount:%s}", "amountp_var_rgb").." уникальных врагов.",
+			["zh-tw"] = "格擋來自 "..CNumb("{amount:%s}", "amountp_var_rgb").." 名不同敵人的 "..CKWord("傷害", "Damage_rgb_tw").."。",
 		},
 	--[+ Arbitrator Master of War +]-- руоф Арбитратор — знаток войны
 
@@ -1731,6 +1746,9 @@ local penances_localizations = {
 		["loc_achievement_adamant_team_staggered_enemies_aura_kills_description"] = {
 			en = "Kill "..CNumb("{target:%s}", "target_rgb").." "..CKWord("Staggered", "Staggered_rgb").." enemies while under the effect of "..CKWord("Breaking Dissent", "BreaknDissent_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
 			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." "..CKWord("оглушённых", "oglushennyh_rgb_ru").." врагов, находящихся под действием ауры "..CKWord("Уничтожение инакомыслия", "BreaknDissent_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+			["zh-tw"] = "在 "..CKWord("鎮壓異己", "BreaknDissent_rgb_tw").." 光環效果下，\n"
+				.."擊殺 "..CNumb("{target:%s}", "target_rgb").." 名"..CKWord("踉蹌", "Staggered_rgb_tw").."的敵人。\n"
+				.."與你處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友擊殺也會計入。",
 		},
 	--[+ Efficient Execution +]-- руоф 
 	-- ["loc_achievement_adamant_team_wield_speed_aura_kills_name"] = {
