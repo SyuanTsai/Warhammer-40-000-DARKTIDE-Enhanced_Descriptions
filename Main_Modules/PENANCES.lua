@@ -612,14 +612,14 @@ local penances_localizations = {
 		["loc_achievement_rank_zealot_2_x_description"] = {
 			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Zealot", "cls_zea_rgb")..".",
 			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 		},
 	--[+ Doomseeker (1-5) +]-- руоф Искатель судьбы (1-5) -- 尋求毀滅者 (1-5)
 		--[+ Complete 100 Missions as a Zealot. +]-- руоф Выполнить Изувером задания: 100.
 		["loc_achievement_missions_zealot_2_x_description"] = {
 			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Zealot", "cls_zea_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Изувером", "cls_zea2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 場任務。",
 		},
 	--[+ Praise the God-Emperor! (1-3) +]-- руоф Хвала Богу-Императору! (1-3) -- 讚頌神皇！ (1-3)
 		--[+ As a Zealot, complete at least one Mission of each type. +]-- руоф Выполнить Изувером по меньшей мере одно задание каждого типа.
@@ -627,8 +627,7 @@ local penances_localizations = {
 			en = "As a "..CKWord("Zealot", "cls_zea_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
 			ru = "Пройдите "..CKWord("Изувером", "cls_zea2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
 			["zh-tw"] = "使用 "..CKWord("狂信徒", "cls_zea_rgb_tw").."，\n"
-				.."完成每種類型的任務\n"
-				.."至少 "..CNumb("1", "n_1_rgb").." 次。",
+				.."每種類型的任務至少完成 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 		--[+ As a Zealot, complete a Mission of each type on Malice Threat or higher. +]--
 		["loc_achievement_missions_zealot_2_objective_2_description"] = {
