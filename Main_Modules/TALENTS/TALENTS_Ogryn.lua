@@ -452,7 +452,7 @@ local ogryn_localizations = {
 			.."Эффект повторяется через {first_pulse:%s} и через {second_pulse:%s} секунд.\n"
 			.."\n"
 			.."Восстанавливается: {cooldown:%s} секунд.", -- Верный защитник
-		["zh-tw"] = "嘲譃 {radius:%s} 米範圍內的敵人，\n"
+		["zh-tw"] = CKWord("嘲諷", "Taunt_rgb_tw").." {radius:%s} 米範圍內的敵人，\n"
 			.."使其只攻擊你 {duration:%s} 秒。\n"
 			.."效果分別在 {first_pulse:%s} 秒後和 {second_pulse:%s} 秒後重複。\n"
 			.."\n"
@@ -470,9 +470,9 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_red.." Враги, "..CKWord("спровоцированные", "Taunt_rgb_ru").." талантом "..CKWord("Провокатор", "Att_Seeker_rgb_ru")..", не получают это ослабление.", -- Отвлекающий манёвр -- руоф Ценное отвлечение
 		["zh-tw"] = "被 {talent_name:%s} 影響的敵人，在 "..CNumb("15", "n_15_rgb").." 秒內受到減益：\n"
-			..Dot_green.." {base_damage:%s} 基礎受到"..CKWord("傷害", "Damage_rgb_tw").."（來自所有來源）。\n"
+			..Dot_green.." 受到來自所有來源的 {base_damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 透過"..CKWord("注意力尋求者", "Att_Seeker_rgb_tw").."嘲譃的敵人不受此減益影響。",
+			..Dot_red.." 透過"..CKWord("渴求關注", "Att_Seeker_rgb_tw")..CKWord("嘲諷", "Taunt_rgb_tw").."的敵人不受此減益影響。",
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." provenant de toutes les sources pour les ennemis affectés par {talent_name:%s} pendant "..CNumb("15", "n_15_rgb").." secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_1_rgb_fr,
 	},
 	--[+ ABILITY 2-2 - No Pain! +]--	26.03.2026
@@ -504,13 +504,13 @@ local ogryn_localizations = {
 		["zh-tw"] = "{talent_name:%s} 及其重複效果，立即恢復：\n"
 			..Dot_green.." {tougness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			.."此外，被 {talent_name:%s} 的喇叫命中的每個敵人，\n"
+			.."此外，被 {talent_name:%s} 的吼叫命中的每個敵人，\n"
 			.."提供一個層數。\n"
 			..Dot_nc.." 最多 "..CNumb("20", "n_20_rgb").." 層。\n"
 			..Dot_nc.." 層數持續 "..CNumb("3.25", "n_3_25_rgb").." 秒。\n"
 			.."\n"
 			.."每層恢復：\n"
-			..Dot_green.." {toughness_per_hit:%s} "..CKWord("韌性", "Toughness_rgb_tw").." /秒。\n"
+			..Dot_green.." 每秒 {toughness_per_hit:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..Dot_nc.." 在 {duration:%s} 秒內最多恢復 {max:%s}。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -522,8 +522,8 @@ local ogryn_localizations = {
 			..Dot_green.." {cooldown_reduction:%s} "..CKWord("Cooldown", "Cd_rgb").." of your {talent_name:%s}.",
 		ru = CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врага восполняет:\n"
 			..Dot_green.." {cooldown_reduction:%s} "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru").." {talent_name:%s}.", -- Давай по новой!
-		["zh-tw"] = CKWord("踉蹌", "Staggering_rgb_tw").." 敵人可恢復：\n"
-			..Dot_green.." {cooldown_reduction:%s} "..CKWord("冷卻", "Cd_rgb_tw").." 的 {talent_name:%s}。",
+		["zh-tw"] = "使敵人"..CKWord("踉蹌", "Staggering_rgb_tw").."會恢復：\n"
+			..Dot_green.." {talent_name:%s} 的 {cooldown_reduction:%s} "..CKWord("冷卻", "Cd_rgb_tw").."。",
 		-- fr = "Faire "..COLORS_KWords_fr.Staggering_rgb_fr.." un ennemi régénère {cooldown_reduction:%s} du "..COLORS_KWords_fr.Cd_rgb_fr.." de votre {talent_name:%s}.", -- Encore une fois! --..TALENTS_Enh_desc2.ED_OGR_Ability_2_3_rgb_fr
 	},
 	--[+ ABILITY 3 - Point-Blank Barrage +]--	26.03.2026
@@ -562,9 +562,9 @@ local ogryn_localizations = {
 			..Dot_green.." {damage:%s} 近距離"..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {ranged_attack_speed:%s} 射速，\n"
 			..Dot_green.." {reload_speed:%s} 裝填速度，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {reduced_move_penalty:%s} 瞄準移動速度懲罰。\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{reduced_move_penalty:%s} 架槍移動速度懲罰。\n"
 			.."\n"
-			..Dot_green.." 效果結束後，將期間消耗的 {ammo_return_percent:%s} 彈藥返回備用。\n"
+			..Dot_green.." 效果結束後，會將期間消耗的 {ammo_return_percent:%s} 彈藥返回備用彈藥。\n"
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
@@ -572,7 +572,7 @@ local ogryn_localizations = {
 			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 米時失效：\n"
 			.."_______________________________\n"
 			.."距離("..CNumb("m", "n_meter_rgb").."): "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n",
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 	},
@@ -584,8 +584,9 @@ local ogryn_localizations = {
 		ru = "Пока активна способность {ability:%s}, восполняется:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждый сделанный выстрел и\n"
 			..Dot_green.." {toughness_reload:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждую перезарядку.", -- Бравада стрелка -- руоф Лихая пуля
-		["zh-tw"] = "{ability:%s} 啟動期間，每次射擊恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
-			.."每次裝填恢復 {toughness_reload:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+		["zh-tw"] = "{ability:%s} 啟動期間，恢復：\n"
+			..Dot_green.." 每次射擊 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
+			..Dot_green.." 每次裝填 {toughness_reload:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 		-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." se régénère à chaque tir et {toughness_reload:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." à chaque rechargement pendant que {ability:%s} est actif."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_1_rgb_fr, -- Bravade de la balle
 	},
 	--[+ ABILITY 3-2 - Hail of Fire +]--	26.03.2026
@@ -705,6 +706,7 @@ local ogryn_localizations = {
 			.."\n"
 			.."將歐格林近戰擊殺時獲得的基礎最大"..CKWord("韌性", "Toughness_rgb_tw").." "
 			..CNumb("5%", "pc_5_rgb").."，每層提高 {melee_toughness:%s}：\n"
+			.."_______________________________\n"
 			.."層數: "..CNumb("0", "n_0_rgb").."| "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."| "..CNumb("7", "n_7_rgb").."| "..CNumb("8", "n_8_rgb").."\n"
 			..CKWord("韌性", "Toughness_rgb_tw")..": "..CNumb("5", "n_5_rgb").."| "..CNumb("5.8", "n_5_8_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.3", "n_7_3_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("8.8", "n_8_8_rgb").."| "..CNumb("9.5", "n_9_5_rgb").."| "..CNumb("10.3", "n_10_3_rgb").."| "..CNumb("11", "n_11_rgb").."\n"
 			.."_______________________________\n"
@@ -769,7 +771,7 @@ local ogryn_localizations = {
 			.."\n"
 			.."每層提供：\n"
 			..Dot_green.." {toughness_regen:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復，\n"
-			..Dot_green.." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."減少。\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。\n"
 			.."\n"
 			..Dot_nc.." 每 {duration:%s} 秒恢復 "..CNumb("1", "n_1_rgb").." 層。\n"
 			..Dot_red.." 受到"..CKWord("傷害", "Damage_rgb_tw").."時移除 "..CNumb("1", "n_1_rgb").." 層。\n"
