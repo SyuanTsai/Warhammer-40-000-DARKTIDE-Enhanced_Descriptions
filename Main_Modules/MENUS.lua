@@ -125,7 +125,7 @@ local menus_templates = {
 	["loc_contract_view_intro_title"] = {
 		-- en = "Sire Melk's Requisitorium",
 		ru = "Мелк",
-		["zh-tw"] = "梅爾克領主", -- 梅爾克領主的必備品店
+		["zh-tw"] = "梅爾克領主的必備品店", -- 梅爾克領主的必備品店
 		-- ["zh-cn"] = "梅尔克大人的采购店", -- 梅尔克大人的采购店
 	},
 	--[+ Melk's Option For Check Contracts +]--
@@ -139,26 +139,26 @@ local menus_templates = {
 	["loc_contracts_contract_reward_label"] = {
 		-- en = "Contract completion reward:",
 		ru = "Награда за выполнение:",
-		["zh-tw"] = "獎勵", -- 獎勵
+		["zh-tw"] = "合約完成獎勵：", -- 獎勵
 		-- ["zh-cn"] = "奖励", -- 奖励
 	},
 	--[+ Task difficulty +]--
 	["loc_contracts_contract_complexity_easy"] = {
 		-- en = "Low",
 		ru = "Низкая",
-		["zh-tw"] = "簡單",
+		["zh-tw"] = "低",
 		["zh-cn"] = "低", -- 低
 	},
 	["loc_contracts_contract_complexity_medium"] = {
 		-- en = "Medium",
 		ru = "Средняя",
-		["zh-tw"] = "普通",
+		["zh-tw"] = "中",
 		["zh-cn"] = "中", -- 中
 	},
 	["loc_contracts_contract_complexity_hard"] = {
 		-- en = "High",
 		ru = "Высокая",
-		["zh-tw"] = "困難",
+		["zh-tw"] = "高",
 		["zh-cn"] = "高", -- 高
 	},
 	--[+ Mystery Acquisitions +]--
@@ -175,14 +175,14 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的珍品", -- 未知的防禦性珍品
+		["zh-tw"] = "未知的防禦性珍品", -- 未知的防禦性珍品
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
 	["loc_notification_new_contract"] = {
 		-- en = "New weekly contracts are available", --???
 		-- ru = ,
-		-- ["zh-tw"] = ,
+		["zh-tw"] = "新的每週合約已可用",
 		["zh-cn"] = "新的每周合同可用", -- 新的每周合同可用
 	},
 
@@ -191,14 +191,14 @@ local menus_templates = {
 	["loc_crafting_error_no_consecrate"] = {
 		-- en = "Max Rarity reached!",
 		ru = "Достигнут максимум редкости!",
-		["zh-tw"] = "以聖化至最高稀有度!", -- 已達最高稀有度。
+		["zh-tw"] = "已達最高稀有度!", -- 已達最高稀有度。
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
 		-- en = "Max Power reached!",
 		ru = "Достигнут максимум силы!",
-		["zh-tw"] = "以強化至最高等級!",  -- 已達最高升級級別。
+		["zh-tw"] = "已達最高威力!",  -- 已達最高升級級別。
 		["zh-cn"] = "已达到最高等级。",
 	},
 	--[+ Sacrifice Weapons +]--
@@ -215,13 +215,13 @@ local menus_templates = {
 	["loc_credits_vendor_view_intro_description"] = {
 		-- en = "Which of my humble services do you require?",
 		ru = "Какая из моих скромных услуг вам требуется?",
-		["zh-tw"] = "您需要我為您提供甚麼服務?", -- 您需要我為您提供甚麼服務?
+		["zh-tw"] = "您需要我提供什麼服務？", -- 您需要我為您提供甚麼服務?
 	},
 	--[+ Requisition Weapons & Curios +]--
 	["loc_credits_vendor_view_option_buy"] = {
 		en = "Requisition Weapons and Curios", -- Requisition Weapons & Curios
 		ru = "Запросы на оружие и реликвии",
-		["zh-tw"] = "購買武器和珍品", 			-- 武器&珍品申請單
+		["zh-tw"] = "徵用武器與珍品", 			-- 武器&珍品申請單
 		["zh-cn"] = "武器与珍品采购店", -- 武器与珍品采购店
 	},
 	--[+ Brunt's Armoury +]--
