@@ -1336,7 +1336,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 23 - Solidity +]-- ruof Твердость	20.04.2026
 		["loc_talent_psyker_increased_vent_speed"] = {
 			ru = "Устойчивость",
-			["zh-tw"] = "心如止水",
+			["zh-tw"] = "堅實",
 		},
 		--[+ PASSIVE 24 - Puppet Master +]-- ruof Кукловод	20.04.2026
 		-- ["loc_talent_psyker_coherency_size_increase"] = {
@@ -1375,7 +1375,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 32 - Surety of Arms +]-- ruof Верность оружия	20.04.2026
 		["loc_talent_psyker_reload_speed_warp"] = {
 			ru = "Варп в залог",
-			["zh-tw"] = "武器在手，信心我有。",
+			["zh-tw"] = "武器確信",
 		},
 
 
