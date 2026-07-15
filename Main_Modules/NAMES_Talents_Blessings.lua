@@ -2600,7 +2600,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 11 - Shield Plates +]-- ruof Пластинчатые щиты
 		["loc_talent_adamant_shield_plates"] = {
 			ru = "Щитовые пластины",
-			["zh-tw"] = "盾型裝甲",
+			["zh-tw"] = "盾形裝甲",
 		},
 		--[+ PASSIVE 12 - Arbitrator Armour +]-- ruof Броня Арбитратора
 		["loc_talent_adamant_armor"] = {
