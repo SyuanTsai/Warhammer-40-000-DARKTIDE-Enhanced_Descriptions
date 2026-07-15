@@ -1386,14 +1386,15 @@ local penances_localizations = {
 		["loc_achievement_group_class_ogryn_2_description"] = {
 			en = "Complete the following Penances as the "..CKWord("Ogryn", "cls_ogr_rgb")..".",
 			ru = "Выполните следующие Искупления "..CKWord("Огрином", "cls_ogr2_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("歐格林", "cls_ogr2_rgb_tw").." 完成以下苦修。",
 		},
 	--[+ Friends Will be Friends +]-- руоф Друзья останутся друзьями -- 朋友永遠是朋友
 		--[+ Stay in Conherency with a living teammate at all times during a full Mission on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше постоянно оставайтесь под эффектом «Сплоченность» с живым товарищем по команде во время задания.
 		["loc_achievement_ogryn_2_win_with_coherency_all_alive_units_description"] = {
 			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, stay in "..CKWord("Conherency", "Coherency_rgb").." with a living teammate at all times during a full Mission.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, всегда оставайтесь под действием "..CKWord("сплочённости", "splochennosti_rgb_ru").." с живым союзником на всём протяжении миссии.",
-			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-				-- .."整場任務期間始終與至少一名存活隊友保持在『"..CKWord("", "Coherency_rgb_tw").."』範圍內。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."整場任務期間始終與至少一名存活隊友保持"..CKWord("協同", "Coherency_rgb_tw").."。",
 		},
 		--[+ ABILITIES - СПОСОБНОСТИ - 技能 +]--
 	--[+ Clear the Path +]-- руоф Расчисти путь -- 掃清道路
@@ -1401,17 +1402,19 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_medium_1_fix_description"] = {
 			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, knock down "..CNumb("{num_enemies}", "num_enemies_rgb").." Ranged enemies using "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, "..CNumb("{target}", "target_rgb").." раз сбейте с ног "..CNumb("{num_enemies}", "num_enemies_rgb").." врагов с дальнобойным оружием, используя способность "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..".",
-			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-				-- .."使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
-				-- .."擊倒 "..CNumb("{num_enemies}", "num_enemies_rgb").." 名持遠程武器的敵人 "..CNumb("{target}", "target_rgb").." 次。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."使用 "..CKWord("蠻牛衝撞", "bull_rush_rgb_tw").."或"..CKWord("不屈不撓", "bull_rush4_rgb_tw").." 技能，\n"
+				.."擊倒 "..CNumb("{num_enemies}", "num_enemies_rgb").." 名遠程敵人，共達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Be Your Best +]-- руоф Будь лучшим -- 盡力而為
 		--[+ On Heresy Threat or higher, hit 4 consecutive Elite or Specialist enemies with Big Boxes of Hurt or Bombs Away, without missing. Do this 5 times. +]-- руоф При угрозе «Ересь» или выше попадите по элитным врагам или специалистам х4 подряд «Ящиком, полным боли", ни разу не промахиваясь. Повторите 5 р.
 		["loc_achievement_ogryn_2_hard_2_fix_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, hit "..CNumb("{amount}", "amount_var_rgb").." consecutive Elite or Specialist enemies with "..CKWord("Big Boxes of Hurt", "big_box_rgb").." or "..CKWord("Bombs Away!", "big_box2_rgb").." Blitz, without missing. Do this "..CNumb("{target}", "target_rgb").." times.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, попадите не промахиваясь последовательно по "..CNumb("{amount}", "amount_var_rgb").." элитным врагам или специалистам, используя блиц "..CKWord("Большая коробка боли", "big_box_rgb_ru").." или "..CKWord("Бросай бомбы!", "big_box2_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
-			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』或『"..CKWord("", "big_box2_rgb_tw").."』，\n"
-				-- .."連續成功命中 "..CNumb("{amount}", "amount_var_rgb").." 名精英或專家敵人。需達成 "..CNumb("{target}", "target_rgb").." 次。",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
+				.."使用 "..CKWord("巨量傷害盒", "big_box_rgb_tw").."或"..CKWord("投彈完畢!", "big_box2_rgb_tw").." 閃擊，\n"
+				.."連續命中 "..CNumb("{amount}", "amount_var_rgb").." 名精英或專家敵人且未失手。\n"
+				.."需達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Pick on Someone Your Own Size +]-- руоф Выбирай по размеру
 	["loc_achievement_ogryn_taunt_shout_hit_name"] = {
@@ -1422,8 +1425,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_taunt_shout_hit_description"] = {
 			en = "Taunt "..CNumb("{target}", "target_rgb").." Specialist or Elite enemies using "..CKWord("Loyal Protector", "loyalprot_rgb").." Ability.",
 			ru = "Спровоцируйте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("Верный защитник", "loyalprot_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "loyalprot_rgb_tw").."』嘲諷，\n"
-				-- .."吸引 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+			["zh-tw"] = "使用 "..CKWord("忠誠守護者", "loyalprot_rgb_tw").." 技能，\n"
+				.."嘲諷 "..CNumb("{target}", "target_rgb").." 名專家或精英敵人。",
 		},
 	--[+ Eat This! +]-- руоф Получи!
 	["loc_achievement_ogryn_grenade_rock_elites_or_specialists_name"] = {
@@ -1435,7 +1438,7 @@ local penances_localizations = {
 		["loc_achievement_ogryn_grenade_rock_elites_or_specialists_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists or Elites with the "..CKWord("Big Friendly Rock", "bigfriendro_rgb")..".",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("", "bigfriendro_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "bigfriendro_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+			["zh-tw"] = "使用 "..CKWord("投石問路", "bigfriendro_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名專家或精英敵人。",
 		},
 	--[+ Crowd Control +]-- руоф Сдерживание толпы
 	["loc_achievement_ogryn_grenade_frag_group_of_enemies_name"] = {
@@ -1446,8 +1449,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_grenade_frag_group_of_enemies_description"] = {
 			en = "With one "..CKWord("Frag Bomb", "fragbomb_rgb").." kill "..CNumb("{amount}", "amount_var_rgb").." enemies, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Убейте "..CNumb("{amount}", "amount_var_rgb").." врагов одной осколочной гранатой от блица "..CKWord("Фраг-бомба", "fragbomb_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
-			-- ["zh-tw"] = "使用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "fragbomb_rgb_tw").."』，單次擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
-				-- .."共需達成 "..CNumb("{target}", "target_rgb").." 次。",
+			["zh-tw"] = "使用單顆 "..CKWord("破片炸彈", "fragbomb_rgb_tw").." 擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
+				.."共需達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Onslaught +]-- руоф Сдерживание толпы
 	-- ["loc_achievement_ogryn_grenade_frag_group_of_enemies_name"] = {
@@ -1457,8 +1460,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_kills_during_max_stacks_heavy_hitter_new_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Heavy Attacks, while at Max Stacks of "..CKWord("Heavy Hitter", "heavyhitter_rgb").." Keystone.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, удерживая "..CNumb("5", "n_5_rgb").." зарядов ключевого таланта "..CKWord("Тяжёлый нападающий", "heavyhitter_rgb_ru")..".",
-			-- ["zh-tw"] = "維持 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "heavyhitter_rgb_tw").."』達到 "..CNumb("5", "n_5_rgb").." 層時，\n"
-				-- .."使用重擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "在 "..CKWord("重拳出擊", "heavyhitter_rgb_tw").." 基石達最大層數時，\n"
+				.."使用重擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Spray and Pray (To the Emperor) +]-- руоф Стреляй и восхваляй (Императора)
 	["loc_achievement_ogryn_kills_during_barrage_threshold_name"] = {
@@ -1470,8 +1473,9 @@ local penances_localizations = {
 		["loc_achievement_ogryn_kills_during_barrage_threshold_description"] = {
 			en = "Kill "..CNumb("{amount}", "amount_var_rgb").." enemies during a single activation of "..CKWord("Point-Blank Barrage", "pbbarrage_rgb").." Ability, "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Убейте "..CNumb("{amount}", "amount_var_rgb").." врагов за однократное применение способности "..CKWord("Беспощадный обстрел в упор", "pbbarrage_rgb_ru")..". Повторите это задание "..CNumb("{target}", "target_rgb").." раз.",
-			-- ["zh-tw"] = "使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "pbbarrage_rgb_tw").."』一次擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
-				-- .."完成此目標共需達成 "..CNumb("{target}", "target_rgb").." 次。",
+			["zh-tw"] = "單次啟用 "..CKWord("貼身火力", "pbbarrage_rgb_tw").." 技能期間，\n"
+				.."擊殺 "..CNumb("{amount}", "amount_var_rgb").." 名敵人。\n"
+				.."共需達成 "..CNumb("{target}", "target_rgb").." 次。",
 		},
 	--[+ Can't Catch Me! +]-- руоф Меня не поймать
 	["loc_achievement_ogryn_ogryn_feel_no_pain_kills_at_max_name"] = {
@@ -1482,7 +1486,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_feel_no_pain_kills_at_max_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while at "..CNumb("7", "n_7_rgb").." Stacks or higher of "..CKWord("Feel No Pain", "feelnop_rgb").." Keystone.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..CNumb("7", "n_7_rgb").." зарядов ключевого таланта "..CKWord("Неболит", "feelnop_rgb_ru")..".",
-			-- ["zh-tw"] = "在擁有不少於 "..CNumb("7", "n_7_rgb").." 層"..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "feelnop_rgb_tw").."』效果時，擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "在 "..CKWord("麻木", "feelnop_rgb_tw").." 基石達 "..CNumb("7", "n_7_rgb").." 層以上時，\n"
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Munitorum's Favour +]-- руоф Благосклонность Муниторума -- 軍務部的恩賜
 		--[+ Shoot 4500 free rounds of ammo, courtesy of the Burst Limiter Override. +]-- руоф Стреляйте бесплатными боеприпасами (4500) благодаря «Взлому отсечки очереди».
