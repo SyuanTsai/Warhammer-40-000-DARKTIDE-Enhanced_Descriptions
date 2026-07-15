@@ -1758,6 +1758,9 @@ local penances_localizations = {
 		["loc_achievement_adamant_team_wield_speed_aura_kills_description"] = {
 			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while under the effect of "..CKWord("Ruthless Efficiency", "RuthlEffcy_rgb").." Aura. Kill made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with you also count.",
 			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Безжалостная эффективность", "RuthlEffcy_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вами, также учитываются.",
+			["zh-tw"] = "在 "..CKWord("雷厲風行", "RuthlEffcy_rgb_tw").." 光環效果下，\n"
+				.."擊殺 "..CNumb("{target:%s}", "target_rgb").." 名敵人。\n"
+				.."與你處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友擊殺也會計入。",
 		},
 	--[+ Well Oiled Killteam +]-- руоф 
 	-- ["loc_achievement_adamant_team_companion_in_coherency_kills_name"] = {
@@ -1767,6 +1770,9 @@ local penances_localizations = {
 		["loc_achievement_adamant_team_companion_in_coherency_kills_description"] = {
 			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies while in "..CKWord("Coherency", "Coherency_rgb").." with Cyber-Mastiff under the effect of "..CKWord("Part of the Squad", "PartozSquad_rgb").." Aura. Kills made by Allies in "..CKWord("Coherency", "Coherency_rgb").." with your Cyber-Mastiff also count.",
 			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов, находясь под действием ауры "..CKWord("Часть отряда", "PartozSquad_rgb_ru")..". Убийства, совершённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." с вашим кибермастифом, также учитываются.",
+			["zh-tw"] = "在 "..CKWord("小隊之友", "PartozSquad_rgb_tw").." 光環效果下，\n"
+				.."與電子獒犬處於 "..CKWord("協同", "Coherency_rgb_tw").." 時擊殺 "..CNumb("{target:%s}", "target_rgb").." 名敵人。\n"
+				.."與你的電子獒犬處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友擊殺也會計入。",
 		},
 	--[+ Voltaic Restraint +]-- руоф 
 	-- ["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_name"] = {
@@ -1776,6 +1782,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_time_enemies_electrocuted_by_shockmine_description"] = {
 			en = CKWord("Stun", "Stun_rgb").." enemies using the "..CKWord("Voltaic Shock Mine", "Electro_mine_rgb").." Blitz for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
 			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." врагов используя блиц "..CKWord("Вольтаическая шоковая мина", "Electro_mine0_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+			["zh-tw"] = "使用 "..CKWord("電能地雷", "Electro_mine_rgb_tw").." 閃擊"..CKWord("眩暈", "Stun_rgb_tw").."敵人，\n"
+				.."累計 "..CNumb("{target:%s}", "target_rgb").." 秒。",
 		},
 	--[+ Suppression Protocols +]-- руоф 
 	-- ["loc_achievement_adamant_enemies_affected_by_buff_drone_name"] = {
@@ -1785,6 +1793,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_enemies_affected_by_buff_drone_description"] = {
 			en = "Debuff "..CNumb("{target:%s}", "target_rgb").." enemies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability.",
 			ru = "Ослабьте "..CNumb("{target:%s}", "target_rgb").." врагов с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("天鷹使節", "Nuncio_aquila_rgb_tw").." 技能，\n"
+				.."對 "..CNumb("{target:%s}", "target_rgb").." 名敵人施加減益。",
 		},
 	--[+ Fortifying Command +]-- руоф 
 	-- ["loc_achievement_adamant_time_allies_buffed_by_buff_drone_name"] = {
@@ -1794,6 +1804,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_time_allies_buffed_by_buff_drone_description"] = {
 			en = "Buff Allies using the "..CKWord("Nuncio Aquila", "Nuncio_aquila_rgb").." Ability for a total duration of "..CNumb("{target:%s}", "target_rgb").." seconds.",
 			ru = "Усильте союзников с помощью способности "..CKWord("Нунцио-аквила", "Nuncio_aquila_rgb_ru").." в общей сложности на "..CNumb("{target:%s}", "target_rgb").." секунд.",
+			["zh-tw"] = "使用 "..CKWord("天鷹使節", "Nuncio_aquila_rgb_tw").." 技能強化隊友，\n"
+				.."累計 "..CNumb("{target:%s}", "target_rgb").." 秒。",
 		},
 	--[+ Sanction Redactus +]-- руоф 
 	-- ["loc_achievement_adamant_kill_during_stance"] = {
@@ -1803,6 +1815,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_during_stance_desc"] = {
 			en = "Kill "..CNumb("{target:%s}", "target_rgb").." enemies during "..CKWord("Castigator's Stance", "CastigatorSt_rgb").." Ability.",
 			ru = "Убейте "..CNumb("{target:%s}", "target_rgb").." врагов во время действия способности "..CKWord("Стойка карателя", "CastigatorSt_rgb_ru")..".",
+			["zh-tw"] = "在 "..CKWord("懲戒者姿態", "CastigatorSt_rgb_tw").." 技能期間，\n"
+				.."擊殺 "..CNumb("{target:%s}", "target_rgb").." 名敵人。",
 		},
 	--[+ Street Brawler +]-- руоф 
 	-- ["loc_achievement_adamant_stagger_elites_with_bash"] = {
@@ -1812,6 +1826,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_stagger_elites_with_bash_desc"] = {
 			en = CKWord("Stagger", "Stagger_rgb").." "..CNumb("{target:%s}", "target_rgb").." Elite or Specialist Enemies using "..CKWord("Break the Line", "BreakZLine_rgb").." Ability.",
 			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." "..CNumb("{target:%s}", "target_rgb").." элитных врагов или специалистов с помощью способности "..CKWord("Прорыв строя", "BreakZLine_rgb_ru")..".",
+			["zh-tw"] = "使用 "..CKWord("突破重圍", "BreakZLine_rgb_tw").." 技能，\n"
+				.."使 "..CNumb("{target:%s}", "target_rgb").." 名精英或專家敵人"..CKWord("踉蹌", "Stagger_rgb_tw").."。",
 		},
 	--[+ Abomination Protocols +]-- руоф 
 	-- ["loc_achievement_adamant_stagger_monster_detonation"] = {
@@ -1821,6 +1837,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_stagger_monster_detonation_desc"] = {
 			en = CKWord("Stagger", "Stagger_rgb").." a Monstrosity using "..CKWord("Remote Detonation", "RemoteDeton_rgb").." Blitz, "..CNumb("{target:%s}", "target_rgb").." times.",
 			ru = CKWord("Оглушите", "Oglushite_rgb_ru").." чудовище с помощью блица "..CKWord("Дистанционный подрыв", "RemoteDeton_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+			["zh-tw"] = "使用 "..CKWord("遠程引爆", "RemoteDeton_rgb_tw").." 閃擊，\n"
+				.."使巨獸"..CKWord("踉蹌", "Stagger_rgb_tw").."，共達成 "..CNumb("{target:%s}", "target_rgb").." 次。",
 		},
 	--[+ Efficient Demolition +]-- руоф 
 	-- ["loc_achievement_adamant_kill_cluster_with_grenade"] = {
@@ -1830,6 +1848,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_cluster_with_grenade_desc"] = {
 			en = "Kill "..CNumb("{cluster:%s}", "cluster_var_rgb").." enemies with a single "..CKWord("Arbites Grenade", "Arbites_gren_rgb")..", "..CNumb("{target:%s}", "target_rgb").." times.",
 			ru = "Убейте "..CNumb("{cluster:%s}", "cluster_var_rgb").." врагов одной "..CKWord("Гранатой арбитрес", "Arbites_grenoi_rgb_ru")..". Выполните это задание "..CNumb("{target:%s}", "target_rgb").." раз.",
+			["zh-tw"] = "使用單顆 "..CKWord("法務官手榴彈", "Arbites_gren_rgb_tw").." 擊殺 "..CNumb("{cluster:%s}", "cluster_var_rgb").." 名敵人，\n"
+				.."共達成 "..CNumb("{target:%s}", "target_rgb").." 次。",
 		},
 	--[+ Justice Dispensed +]-- руоф 
 	-- ["loc_achievement_adamant_kill_marked_enemies"] = {
@@ -1839,6 +1859,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_marked_enemies_desc"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies marked by "..CKWord("Execution Order", "ExecutOrder_rgb").." Keystone.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов, отмеченных ключевым талантом "..CKWord("Приказ на казнь", "ExecutOrder_rgb_ru")..".",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名被 "..CKWord("處刑命令", "ExecutOrder_rgb_tw").." 基石標記的敵人。",
 		},
 	--[+ Castigator's Arrest +]-- руоф 
 	-- ["loc_achievement_adamant_kill_with_melee"] = {
@@ -1848,6 +1870,9 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_with_melee_desc"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Melee Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в ближнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."使用 "..CKWord("終點站令狀", "TerminusWarr_rgb_tw").." 基石時，\n"
+				.."以近戰攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Arbites Gunner +]-- руоф 
 	-- ["loc_achievement_adamant_kill_with_ranged"] = {
@@ -1857,6 +1882,9 @@ local penances_localizations = {
 		["loc_achievement_adamant_kill_with_ranged_desc"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, Kill "..CNumb("{target}", "target_rgb").." enemies with Ranged Attacks while using "..CKWord("Terminus Warrant", "TerminusWarr_rgb").." Keystone.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов в дальнем бою с помощью ключевого таланта "..CKWord("Ордер Терминус", "TerminusWarr_rgb_ru")..".",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."使用 "..CKWord("終點站令狀", "TerminusWarr_rgb_tw").." 基石時，\n"
+				.."以遠程攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Full Force of the Lex +]-- руоф 
 	-- ["loc_achievement_adamant_time_in_forceful"] = {
@@ -1866,6 +1894,8 @@ local penances_localizations = {
 		["loc_achievement_adamant_time_in_forceful_desc"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Forceful", "Forceful_rgb").." Keystone active.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, проведите "..CNumb("{target}", "target_rgb").." секунд с активным ключевым талантом "..CKWord("Неудержимый", "Forceful_rgb_ru")..".",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級下，\n"
+				.."使 "..CKWord("堅定不移", "Forceful_rgb_tw").." 基石保持啟用，累計 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 
 
@@ -1873,6 +1903,7 @@ local penances_localizations = {
 	["loc_class_broker_title"] = {
 		en = CKWord("Hive scum", "cls_scm_rgb"),
 		ru = CKWord("Отребье улья", "cls_scm_rgb_ru"),
+		["zh-tw"] = CKWord("巢都渣滓", "cls_scm_rgb_tw"),
 	},
 		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
 	--[+ Trusted Cartel Member (1-6) +]-- руоф  (1-6)
@@ -1883,7 +1914,7 @@ local penances_localizations = {
 		["loc_achievement_rank_broker_2_x_description"] = {
 			en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Hive Scum", "cls_scm_rgb")..".",
 			ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Отребьем улья", "cls_scm2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("蜂巢渣滓", "cls_scm_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+			["zh-tw"] = "使用 "..CKWord("巢都渣滓", "cls_scm_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 		},
 	--[+ Conclave's Will (1-5) +]-- руоф  (1-5)
 	-- ["loc_achievement_missions_broker_2_x_name"] = {

@@ -198,7 +198,7 @@ local CONFIG = {
 		cls_vet2 = "老兵",
 	},
 	focus_text_colour = {
-		Forceful = "強力",
+		Forceful = "堅定不移",
 		Focus = "專注",
 	},
 	focust_text_colour = {
@@ -254,7 +254,15 @@ local CONFIG = {
 		-- Arbites
 		Arbites_gren = "法務官手榴彈",
 		BreaknDissent = "鎮壓異己",
-		BreakZLine = "突破防線",
+		BreakZLine = "突破重圍",
+		CastigatorSt = "懲戒者姿態",
+		Electro_mine = "電能地雷",
+		ExecutOrder = "處刑命令",
+		Nuncio_aquila = "天鷹使節",
+		PartozSquad = "小隊之友",
+		RemoteDeton = "遠程引爆",
+		RuthlEffcy = "雷厲風行",
+		TerminusWarr = "終點站令狀",
 		-- Psyker
 		Assail = "靈能攻擊",
 		assail = "靈能攻擊",
