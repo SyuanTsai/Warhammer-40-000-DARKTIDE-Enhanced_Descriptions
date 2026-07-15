@@ -2247,7 +2247,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 5 - Steady Grip +]-- ruof Крепкая хватка
 		["loc_talent_ogryn_toughness_regen_while_bracing"] = {
 			ru = "Крепкий хват",
-			["zh-tw"] = "穩固握持",
+			["zh-tw"] = "穩定握持",
 		},
 		--[+ PASSIVE 6 - Smash 'Em! +]-- ruof Вдарь им!
 		["loc_talent_ogryn_toughness_on_single_heavy"] = {
