@@ -275,7 +275,7 @@ local talent_localizations = {
 		["loc_talent_warp_charge_low_desc"] = { -- warp_charge: -10.00%
 			en = Dot_green.." {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." Generation.",
 			ru = Dot_green.." {warp_charge:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".",-- руоф Сопротивление угрозе
-			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."產生。", -- 反噬抗性
+			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."增長。", -- 反噬抗性
 			-- fr = "{warp_charge:%s} de Génération de "..COLORS_KWords_fr.Peril_rgb_fr.." .",
 			-- ["zh-cn"] = "{warp_charge:%s} "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."产生。", -- 危机值抗性
 		},
@@ -374,7 +374,7 @@ local talent_localizations = {
 		["loc_talent_toughness_damage_reduction_low_desc"] = { -- toughness: +5%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- руоф Снижение урона стойкости
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
 			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 低
 		},
@@ -383,7 +383,7 @@ local talent_localizations = {
 		["loc_talent_toughness_damage_reduction_medium_desc"] = { -- toughness: +10%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- Снижение урона стойкости среднее
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
 			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 中
 		},
