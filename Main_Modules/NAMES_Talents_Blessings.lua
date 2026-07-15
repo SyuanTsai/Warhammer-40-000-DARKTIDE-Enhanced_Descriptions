@@ -941,7 +941,7 @@ local names_talents_blessings_templates = {
 			["zh-tw"] = "衝擊增幅",
 		},
 		--[+ Melee Damage Boost Low - Medium +]-- ruof Усиление урона в ближнем бою	20.04.2026
-		-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
+		-- Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
 		["loc_talent_melee_damage_boost_medium"] = {
 			ru = "Усиление урона ближнего боя",
 			["zh-tw"] = "近戰增幅",
@@ -1280,7 +1280,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Mind in Motion +]-- ruof Движущийся разум	20.04.2026
 		["loc_talent_psyker_venting_doesnt_slow"] = {
 			ru = "Разум в движении",
-			["zh-tw"] = "動中之心",
+			["zh-tw"] = "思維活躍",
 		},
 		--[+ PASSIVE 11 - Malefic Momentum +]-- ruof Пагубный моментум	20.04.2026
 		["loc_talent_psyker_kills_stack_other_weapon_damage"] = {
@@ -1336,7 +1336,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 23 - Solidity +]-- ruof Твердость	20.04.2026
 		["loc_talent_psyker_increased_vent_speed"] = {
 			ru = "Устойчивость",
-			["zh-tw"] = "堅實",
+			["zh-tw"] = "穩固",
 		},
 		--[+ PASSIVE 24 - Puppet Master +]-- ruof Кукловод	20.04.2026
 		-- ["loc_talent_psyker_coherency_size_increase"] = {
@@ -1375,7 +1375,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 32 - Surety of Arms +]-- ruof Верность оружия	20.04.2026
 		["loc_talent_psyker_reload_speed_warp"] = {
 			ru = "Варп в залог",
-			["zh-tw"] = "武器確信",
+			["zh-tw"] = "武器在手，信心我有。",
 		},
 
 
@@ -2247,7 +2247,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 5 - Steady Grip +]-- ruof Крепкая хватка
 		["loc_talent_ogryn_toughness_regen_while_bracing"] = {
 			ru = "Крепкий хват",
-			["zh-tw"] = "穩定握持",
+			["zh-tw"] = "穩固握持",
 		},
 		--[+ PASSIVE 6 - Smash 'Em! +]-- ruof Вдарь им!
 		["loc_talent_ogryn_toughness_on_single_heavy"] = {
