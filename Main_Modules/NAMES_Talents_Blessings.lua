@@ -2495,7 +2495,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 4-5 - Not Far Behind +]-- ruof Не так далеко позади
 		["loc_talent_adamant_pinning_dog_bonus_moving_towards"] = {
 			ru = "В зоне досягаемости",
-			["zh-tw"] = "不弱人後",
+			["zh-tw"] = "不落人後",
 		},
 		--[+ KEYSTONE 5 - Terminus Warrant +]-- ruof Распоряжение «Терминус»
 		["loc_talent_adamant_bullet_rain"] = {
@@ -2505,6 +2505,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 5-1 - Dispense Justice +]-- ruof Охват правосудия
 		["loc_talent_adamant_bullet_rain_fire_rate"] = {
 			ru = "Исполнение приговора",
+			["zh-tw"] = "伸張正義",
 			-- TODO Unknown
 		},
 		--[+ KEYSTONE 5-2 - Obstinate +]-- ruof Упрямый
