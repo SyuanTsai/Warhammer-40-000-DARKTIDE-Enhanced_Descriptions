@@ -1318,7 +1318,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Срабатывает даже если отталкивание не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." врага.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"), -- ru = "{stacks:%s} заряда "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." применяется к врагам при отталкивании. До максимум "..CNumb("40%", "pc_40_rgb").." при "..CNumb("16", "n_16_rgb").." зарядах.", -- Грубая сила
-		["zh-tw"] = Dot_green.." {stacks:%s} 層 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."，推擊時施加於敵人。\n"
+		["zh-tw"] = Dot_green.." 推擊時對敵人施加 {stacks:%s} 層 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 持續 "..CNumb("5", "n_5_rgb").." 秒。\n"
 			..Dot_nc.." 最多 "..CNumb("40%", "pc_40_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."（"..CNumb("16", "n_16_rgb").." 層時）。\n"
@@ -1345,13 +1345,13 @@ local ogryn_localizations = {
 			.."При выведении союзника из строя вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {revive_speed:%s} к скорости поднятия и\n"
 			..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru")..".", -- За малых -- руоф За малявок
-		["zh-tw"] = "隊友的"..CKWord("韌性", "Toughness_rgb_tw").." 被擊破時，在 {duration:%s} 秒內獲得：\n"
+		["zh-tw"] = "隊友的"..CKWord("韌性", "Toughness_rgb_tw").."被擊破時，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {power:%s} "..CKWord("威力", "Strength_rgb_tw").."，\n"
 			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			.."隊友倒地時，在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {revive_speed:%s} 急救速度，\n"
+			..Dot_green.." {revive_speed:%s} 救援速度，\n"
 			..Dot_green.." "..CKWord("眩暈", "Stun_rgb_tw").."免疫。",
 		-- fr = "{power:%s} de "..COLORS_KWords_fr.Strength_rgb_fr.." et {toughness_damage_reduction:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr.." pendant {duration:%s} secondes quand la "..COLORS_KWords_fr.Toughness_rgb_fr.." d'un allié se brise. Temps de recharge : {cooldown:%s} secondes.\n\n{revive_speed:%s} de vitesse de réanimation et l'immunité à l'"..COLORS_KWords_fr.Stuns_rgb_fr.." pendant {duration:%s} secondes quand un allié tombe à terre.", -- Pour les microbes
 	},
@@ -1369,12 +1369,12 @@ local ogryn_localizations = {
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{recoil_reduction:%s} к отдаче,\n"
 			.."но теряете:\n"
 			..Dot_red.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." в секунду.", -- Сосредоточься
-		["zh-tw"] = "瘰準時，獲得：\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {sway_reduction:%s} 武器晴動，\n"
+		["zh-tw"] = "架槍遠程武器時，獲得：\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {sway_reduction:%s} 武器晃動，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {spread_reduction:%s} 散射，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {recoil_reduction:%s} 後座力，\n"
 			.."但損失：\n"
-			..Dot_red.." {stamina:%s} "..CKWord("耔力", "Stamina_rgb_tw").." /秒。",
+			..Dot_red.." 每秒 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
 		-- fr = "Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.", -- Concentration
 	},
 	--[+ Passive 25 - Fire Away +]--	26.03.2026
@@ -1391,7 +1391,7 @@ local ogryn_localizations = {
 			..Dot_nc.." До максимум {max_stacks:%s} зарядов "..CKWord("горения", "gorenia_rgb_ru").." на цели.", -- Поджиг
 		["zh-tw"] = Dot_green.." 你的爆炸施加 {stacks:%s} 層"..CKWord("燃燒", "Burn_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 如目標在爆炸中心，則施加 {more_stacks:%s} 層。\n"
+			..Dot_green.." 若目標位於爆炸中心內，則施加 {more_stacks:%s} 層。\n"
 			.."\n"
 			..Dot_nc.." 對目標最多 {max_stacks:%s} 層"..CKWord("燃燒", "Burn_rgb_tw").."。",
 		-- fr = "{stacks:%s} cumul de "..COLORS_KWords_fr.Burn_rgb_fr.." est appliqué à vos explosions.\n{more_stacks:%s} cumuls ci la cible est dans l'épicentre de l'explosion.\nJusqu'à {max_stacks:%s} cumuls de "..COLORS_KWords_fr.Burn_rgb_fr.." maximum sur une cible.", -- Flamboiment
@@ -1423,11 +1423,11 @@ local ogryn_localizations = {
 			.."減少來自任何敵方來源的"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，包括：\n"
 			..Dot_nc.." 瘟疫爆者爆炸，\n"
 			..Dot_nc.." 毒氣，\n"
-			..Dot_nc.." 瘟疫游屍近戰攻擊，\n"
+			..Dot_nc.." 瘟疫行者近戰攻擊，\n"
 			..Dot_nc.." 瘟疫獵犬跳撲，\n"
-			..Dot_nc.." 納格爾之獸嘔吐/黏液/吞噬，\n"
+			..Dot_nc.." 納垢之獸嘔吐/黏液/吞噬，\n"
 			..Dot_nc.." 惡魔宿主，\n"
-			..Dot_nc.." 黑魔書等。",
+			..Dot_nc.." 法術書等。",
 		-- fr = "{resistance:%s} de résistance à la "..COLORS_KWords_fr.Corruption_rgb_fr..".\nréduit les "..COLORS_KWords_fr.Corruptdmg_rgb_fr.." subit de toute les sources:  explosion des crache-peste, gaz toxique, attaque de mélée des scrofuleux, morsures des cerbère, le vomit/résidu/avalement de la bête de Nurgle, Hôte Daemoniaque, grimoires, etc.",
 	},
 	--[+ Passive 27 - Unbreakable +]--	26.03.2026
@@ -1440,7 +1440,7 @@ local ogryn_localizations = {
 			.."\n"
 			.."При идеальном блоке получаете на "..CNumb("5", "n_5_rgb").." секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.", -- Непробиваемый
-		["zh-tw"] = "完美格擋可格擋所有近戰攻擊，含頂頭攻擊。\n"
+		["zh-tw"] = "完美格擋可格擋所有近戰攻擊，包含過頂攻擊。\n"
 			.."\n"
 			.."完美格擋後，在 "..CNumb("5", "n_5_rgb").." 秒內獲得：\n"
 			..Dot_green.." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。",
@@ -1452,7 +1452,7 @@ local ogryn_localizations = {
 			..Dot_green.." {toughness_multiplier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment.",
 		ru = "Пока у вас ниже {health:%s} "..CKWord("здоровья", "zdorovia_rgb_ru").." вы получаете:\n"
 			..Dot_green.." {toughness_multiplier:%s} к восполнению "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Слишком упёртый, чтобы умереть -- руоф Слишком упрям, чтобы умереть
-		["zh-tw"] = "當"..CKWord("生命", "Health_rgb_tw").." 低於 {health:%s} 時：\n"
+		["zh-tw"] = "當"..CKWord("生命值", "Health_rgb_tw").."低於 {health:%s} 時：\n"
 			..Dot_green.." {toughness_multiplier:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
 		-- fr = "{toughness_multiplier:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." Récupération en dessous de {health:%s} de "..COLORS_KWords_fr.Health_rgb_fr..".", -- Trop têtu pour mourir
 	},
@@ -1505,12 +1505,14 @@ local ogryn_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			.."\n"
 			..CPhrs("Cant_be_refr"), -- Провокатор -- руоф Внимание искателя
-		["zh-tw"] = "推擊、格擋近戰攻擊或用護盾格擋遠程攻擊時，\n"
-			.."嘲譃敵人，迫使其攻擊你。\n"
+		["zh-tw"] = "你透過以下方式"..CKWord("嘲諷", "Taunt_rgb_tw").."敵人，迫使其攻擊你：\n"
+			..Dot_nc.." 推擊，\n"
+			..Dot_nc.." 格擋近戰攻擊，\n"
+			..Dot_nc.." 使用護盾格擋遠程攻擊。\n"
 			.."\n"
-			.."嘲譃遠程敵人，迬使其進入近戰。\n"
+			..CKWord("嘲諷", "Taunt_rgb_tw").."遠程敵人會迫使其進入近戰。\n"
 			..Dot_nc.." 對槍手、收割者、巨獸無效。\n"
-			..Dot_nc.." 對隊長和雙子有效。\n"
+			..Dot_nc.." 對連長和雙子有效。\n"
 			.."\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
@@ -1527,9 +1529,9 @@ local ogryn_localizations = {
 			..Dot_green.." {cooldown_regen:%s} восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"), -- Бугай
-		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").." 內的隊友擊殺精英敵人後，\n"
+		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").."中的隊友擊殺精英敵人後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度。\n"
+			..Dot_green.." {cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
 		-- fr = "+{cooldown_regen:%s} de régénération du "..COLORS_KWords_fr.Combat_ability_cd_rgb_fr.." pendant {duration:%s} secondes quand vous ou un allié en syntonie effectués une élimination d'élite.", -- Cogneure
@@ -1545,9 +1547,9 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_nc.." Может активироваться от атак ближнего и дальнего боя, отталкиваний, взрывов и "..CKWord("ошеломляющих", "oshelomlauschih_rgb_ru").." способностей.", -- Задающий ритм -- руоф Водитель ритма
 		["zh-tw"] = "單次攻擊命中 {multi_hit:%s} 名或更多敵人後，\n"
-			..Dot_green.." {reload_speed:%s} 下次裝填速度。\n"
+			..Dot_green.." 下次裝填速度增加 {reload_speed:%s}。\n"
 			.."\n"
-			..Dot_nc.." 可由近戰/遠程攻擊、推擊、爆炸及"..CKWord("踉蹌", "Staggering_rgb_tw").." 技能觸發。",
+			..Dot_nc.." 可由近戰或遠程攻擊、推擊、爆炸及"..CKWord("踉蹌", "Staggering_rgb_tw").."技能觸發。",
 		-- fr = "{reload_speed:%s} Vitesse de rechargement pendant {duration:%s} secondes en touchant {multi_hit:%s} ennemis ou plus avec une seule attaque.", -- Stimulateur
 	},
 	--[+ Passive 33 - Unstoppable Momentum +]--	26.03.2026
@@ -1582,8 +1584,8 @@ local ogryn_localizations = {
 			..Dot_nc.." Этот талант сокращает время затрачиваемое на смену слотов предметов (оружие, гранаты, стимуляторы, медпаки, ящики с боеприпасами, книги и т.д.).",
 		["zh-tw"] = Dot_green.." {wield_speed:%s} 切換速度。\n"
 			.."\n"
-			..Dot_nc.." 減少切換物品欄位時的行動時間，\n"
-			.."（武器、手榴彈、補充劑、醫包、彈藥箱、書籍等）。",
+			..Dot_nc.." 減少切換物品欄位時的持用動作時間，\n"
+			.."（武器、手榴彈、興奮劑、醫包、彈藥箱、法術書等）。",
 	},
 	--[+ Passive 36 - Mobile Emplacement +]--	26.03.2026
 	["loc_talent_ogryn_bracing_or_shooting_reduces_damage_taken_desc"] = { -- damage_taken_multiplier: 25%, +colors
@@ -1591,8 +1593,8 @@ local ogryn_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken_multiplier:%s} "..CKWord("Damage", "Damage_rgb").." Reduction.",
 		ru = "Пока вы целитесь или стреляете из дальнобойного оружия, получаете:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken_multiplier:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".", -- Мобильная огневая точка -- руоф Передвижной окоп
-		["zh-tw"] = "射擊或瞄準遠程武器時：\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken_multiplier:%s} "..CKWord("傷害", "Damage_rgb_tw").."減少。",
+		["zh-tw"] = "射擊或架槍遠程武器時：\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken_multiplier:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。",
 		-- fr = "Vous réduisez les "..COLORS_KWords_fr.Damage_rgb_fr.." de {damage_taken_multiplier:%s} en utilisant une arme à distance.",
 	},
 	--[+ Passive 37 - Implacable +]--	26.03.2026
