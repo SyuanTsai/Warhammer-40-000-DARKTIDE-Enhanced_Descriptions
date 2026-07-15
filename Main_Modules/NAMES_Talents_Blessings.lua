@@ -2141,7 +2141,7 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-2 - Go Again +]-- ruof Еще раз!
 		["loc_talent_ogryn_taunt_stagger_cd"] = {
 			ru = "Давай по новой!",
-			["zh-tw"] = "再來!",
+			["zh-tw"] = "再來",
 		},
 		--[+ ABILITY 2-3 - Big Lungs +]-- ruof Мощные легкие
 		-- ["loc_talent_ogryn_taunt_radius_increase"] = {
