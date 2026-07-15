@@ -950,21 +950,21 @@ local penances_localizations = {
 	["loc_achievement_rank_psyker_2_x_description"] = {
 		en = "Reach Trust Level "..CNumb("{target}", "target_rgb").." as a "..CKWord("Psyker", "cls_psy_rgb")..".",
 		ru = "Достигните "..CNumb("{target}", "target_rgb").." уровня доверия "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
-		["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").." 。",
+		["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 達到信任等級 "..CNumb("{target}", "target_rgb").."。",
 	},
 	--[+ Lifeleech (1-5) +]-- руоф Похититель жизни (1-5) -- 生命榨取 (1-5)
 		--[+ Complete _ Missions as a Psyker. +]-- руоф Выполнить Псайкером задания: _.
 		["loc_achievement_missions_psyker_2_x_description"] = {
 			en = "Complete "..CNumb("{target}", "target_rgb").." Missions as a "..CKWord("Psyker", "cls_psy_rgb")..".",
 			ru = "Пройдите "..CNumb("{target}", "target_rgb").." миссий "..CKWord("Псайкером", "cls_psy2_rgb_ru")..".",
-			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 項任務。",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").." 完成 "..CNumb("{target}", "target_rgb").." 場任務。",
 		},
 	--[+ Touch the Void (1-3) +]-- руоф Прикоснись к пустоте (1-3) -- 觸碰虛空 (1-3)
 		--[+ As a Psyker, complete at least one Mission of each type. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_psyker_2_objective_1_description"] = {
 			en = "As a "..CKWord("Psyker", "cls_psy_rgb")..", complete at least "..CNumb("1", "n_1_rgb").." Mission of each type.",
 			ru = "Пройдите "..CKWord("Псайкером", "cls_psy2_rgb_ru").." как минимум "..CNumb("1", "n_1_rgb").." миссию каждого типа.",
-			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").."，完成以下任務 "..CNumb("1", "n_1_rgb").." 次。",
+			["zh-tw"] = "使用 "..CKWord("靈能者", "cls_psy_rgb_tw").."，每種類型的任務至少完成 "..CNumb("1", "n_1_rgb").." 次。",
 		},
 		--[+ As a Psyker, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Псайкером по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 		["loc_achievement_missions_psyker_2_objective_2_description"] = {
@@ -1002,8 +1002,8 @@ local penances_localizations = {
 		["loc_achievement_psyker_2_medium_2_description"] = {
 			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies with Warp attacks.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов варп-атаками.",
-			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-				.."使用 "..CKWord("亞空間傷害", "Damagewrp_a_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."使用 "..CKWord("亞空間攻擊", "Damagewrp_a_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Keep Your Distance +]-- руоф Не подходи близко
 	["loc_achievement_psyker_2_hard_2_name"] = {
@@ -1014,7 +1014,7 @@ local penances_localizations = {
 		["loc_achievement_psyker_2_hard_2_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, complete "..CNumb("{target}", "target_rgb").." full Missions without being hit in melee by an Elite enemy.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, пройдите полностью "..CNumb("{target}", "target_rgb").." миссии без получения ударов в ближнем бою от элитных врагов.",
-			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
 				.."完成 "..CNumb("{target}", "target_rgb").." 場任務，且未曾被精英敵人以近戰攻擊命中。",
 		},
 	--[+ Kinetic Killer (1-3) +]-- руоф Кинетический убийца (1-3) -- 靈能殺手 (1-3)
