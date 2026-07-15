@@ -656,7 +656,7 @@ local zealot_localizations = {
 		["zh-tw"] = "移動時獲得"..CKWord("勢能", "Momentum_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			.."\n"
-			.."命中敵人時消耗所有"..CKWord("勢能", "Momentum_rgb_tw").."，每層 {duration:%s} 秒內獲得：\n"
+			.."命中敵人時消耗所有"..CKWord("勢能", "Momentum_rgb_tw").."，每層在 {duration:%s} 秒內提供：\n"
 			..Dot_green.." {damage_modifier:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {melee_attack_speed:%s} 近戰攻擊速度，\n"
 			..Dot_green.." {ranged_attack_speed:%s} 遠程攻擊速度。",
@@ -666,14 +666,14 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." is replenished per spent Stack of "..CKWord("Momentum", "Momentum_rgb").." during its Duration.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается за каждый потраченный заряд "..CKWord("Моментума", "Momentum_rgb_ru").." во время его действия.", -- Стойка карателя
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." est régénérée pour chaque cumul de "..CKWord("Élan", "Momentum_rgb_fr").." dépensé."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 活動期間每消耗一層"..CKWord("勢能", "Momentum_rgb_tw").." 恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 持續期間每消耗一層"..CKWord("勢能", "Momentum_rgb_tw").."，恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-2 - Inebriate's Poise +]--	27.03.2026
 	["loc_talent_zealot_quickness_dodge_stacks_desc"] = { -- stacks: 3, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{stacks:%s} Stacks of "..CKWord("Momentum", "Momentum_rgb").." on a successful Dodge.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{stacks:%s} заряда "..CKWord("Моментума", "Momentum_rgb_ru").." при успешном уклонении.", -- Грация пьяницы -- руоф Самообладание пьяницы
 		-- fr = "Gagnez {stacks:%s} cumuls de "..CKWord("Élan", "Momentum_rgb_fr").." après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_2_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {stacks:%s} 層"..CKWord("勢能", "Momentum_rgb_tw").."，成功閃避時觸發。",
+		["zh-tw"] = Dot_green.." 成功閃避時獲得 "..CNumb("+", "n_plus_rgb").."{stacks:%s} 層"..CKWord("勢能", "Momentum_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Eternal +]--	27.03.2026
 	["loc_talent_zealot_quickness_increased_duration_desc"] = { -- duration: 10, +colors
@@ -686,7 +686,7 @@ local zealot_localizations = {
 	["loc_talent_zealot_cooldown_on_backstab_weakspot_desc"] = { -- cooldown: +75%, duration: 2, +colors
 		en = Dot_green.." {cooldown:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds after a Melee Backstab or Melee "..CKWord("Weakspot Hit", "Weakspothit_rgb")..".",
 		ru = Dot_green.." {cooldown:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды после удара в спину или попадания в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." в ближнем бою.", -- руоф Добродетельный головорез
-		["zh-tw"] = Dot_green.." 近戰背刺或弱點命中後 {duration:%s} 秒內，{cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").." 恢復速度。",
+		["zh-tw"] = Dot_green.." 近戰背刺或近戰"..CKWord("弱點命中", "Weakspothit_rgb_tw").."後 {duration:%s} 秒內，{cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度。",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Anoint in Blood +]--	27.03.2026
@@ -694,7 +694,7 @@ local zealot_localizations = {
 		en = "Up to {damage:%s} Base Ranged "..CKWord("Damage", "Damage_rgb")..", reduced the further you are from the target.",
 		ru = "До {damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru").." дальнего боя, уменьшается по мере удаления от цели.", -- Помазанный кровью
 		-- fr = "Jusqu'à {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." à distance , réduits plus vous êtes éloigné de la cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_3_rgb_fr,
-		["zh-tw"] = "最多 {damage:%s} 基礎遠程"..CKWord("傷害", "Damage_rgb_tw").."，距目標越遠則冇。",
+		["zh-tw"] = "最多 {damage:%s} 基礎遠程"..CKWord("傷害", "Damage_rgb_tw").."，距離目標越遠效果越低。",
 	},
 	--[+ Passive 2 - Disdain +]--	27.03.2026
 	["loc_talent_zealot_3_tier_2_ability_1_description"] = { -- damage: +5%, max_stacks: 5, +colors
@@ -703,7 +703,7 @@ local zealot_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждую вторую атаку ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя.\n" -- Презрение
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 每次第二次近戰攻擊，每命中一個前一次攻擊擊中的敵人 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 你每次第二下近戰攻擊，前一次近戰攻擊每命中一名敵人就獲得 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。",
 	},
 	--[+ Passive 3 - Backstabber +]--	27.03.2026
@@ -711,14 +711,14 @@ local zealot_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." on Backstab and Flanking Hits.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." при ударах в спину и с фланга.", -- Бьющий в спину
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." sur les coups dans le dos en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_2_rgb_fr,
-		["zh-tw"] = Dot_green.." {damage:%s} 背刺和測翼命中"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 背刺與側翼命中時，{damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
 	--[+ Passive 4 - The Voice of Terra +]--	27.03.2026
 	["loc_talent_zealot_toughness_on_ranged_kill_desc"] = { -- toughness: 4%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on Ranged Kill.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве дальнобойной атакой.", -- Голос Терры
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." régénérée lors d'une élimination à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_11_rgb_fr,
-		["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 在遠程擊殺時恢復。",
+		["zh-tw"] = Dot_green.." 遠程擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 5 - Enemies Within, Enemies Without +]--	27.03.2026
 	["loc_talent_zealot_toughness_near_enemies_desc"] = { -- toughness: +2.5%, range: 5, more_toughness: +1%, monster_count: 5, max: +7.5%, +colors
@@ -735,8 +735,8 @@ local zealot_localizations = {
 			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CNumb("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
-		["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." /秒，在 {range:%s} 米內有敵人時恢復。\n"
-			..Dot_green.." 每額外一個敵人 {more_toughness:%s}。巨獸計為 {monster_count:%s}。最多 {max:%s}。\n"
+		["zh-tw"] = Dot_green.." 當 {range:%s} 米內有敵人時，每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+			..Dot_green.." 每多一名敵人增加 {more_toughness:%s}。巨獸視為 {monster_count:%s} 名。最多 {max:%s}。\n"
 			.."_______________________________\n"
 			.."敵人數：     "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| >"..CNumb("5", "n_5_rgb").."\n"
 			..CKWord("韌性", "Toughness_rgb_tw").."%:  "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
@@ -747,28 +747,28 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment on Melee Kill.",
 		ru = Dot_green.." {toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." при убийстве в ближнем бою.", -- Искупление кровью -- руоф Кровавое искупление
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
-		["zh-tw"] = Dot_green.." {toughness:%s} 近戰擊殺時"..CKWord("韌性", "Toughness_rgb_tw").." 恢復。",
+		["zh-tw"] = Dot_green.." 近戰擊殺時 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
 	},
 	--[+ Passive 7 - Second Wind +]--	27.03.2026
 	["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on a Successful Dodge.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при успешном уклонении.", -- Второе дыхание -- руоф Второй ветер
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une Esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_13_rgb_fr,
-		["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 成功閃避時恢復。",
+		["zh-tw"] = Dot_green.." 成功閃避時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 8 - Vicious Offering +]--	27.03.2026
 	["loc_talent_zealot_toughness_on_heavy_kills_desc"] = { -- toughness: 10%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on Heavy Attack Kill.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве тяжёлой атакой.", -- Жертвоприношение -- руоф Порочное подношение
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée avec une attaque puissante ."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_10_rgb_fr,
-		["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 重攻擊殺時恢復。",
+		["zh-tw"] = Dot_green.." 重攻擊擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 9 - Purge the Unclean +]--	27.03.2026
 	["loc_talent_zealot_3_passive_2_description"] = { -- damage: +20%, &->and, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." against Infested and Unyielding Enemies.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против заражённых и несгибаемых врагов.", -- Очищение нечестивых -- руоф Очищение нечистых
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." contre les ennemis infestés et implacable."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_7_rgb_fr,
-		["zh-tw"] = Dot_green.." {damage:%s} 對被感染和不屈敵人的"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 對被感染與不屈敵人造成 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
 	--[+ Passive 10 - Duellist +]--	27.03.2026
 	["loc_talent_zealot_duelist_new_desc"] = { -- damage: +50%, duration: 3, s->seconds, +colors
