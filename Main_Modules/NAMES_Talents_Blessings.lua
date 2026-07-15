@@ -1490,7 +1490,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 1-1 - Stalwart +]-- ruof Верный последователь	20.04.2026
 		["loc_talent_zealot_fanatic_rage_toughness"] = {
 			ru = "Непоколебимый",
-			["zh-tw"] = "忠誠",
+			["zh-tw"] = "死忠",
 		},
 		--[+ KEYSTONE 1-2 - Fury Rising +]-- ruof Подъем ярости	20.04.2026
 		["loc_talent_zealot_fanatic_rage_crits"] = {
