@@ -419,7 +419,7 @@ local penances_localizations = {
 		["loc_achievement_veteran_enemies_killed_with_max_focus_fire_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies while at "..CNumb("10", "n_10_rgb").." Stacks of "..CKWord("Marksman's Focus", "snipcon_rgb").." Keystone or more.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов, имея не менее "..CNumb("10", "n_10_rgb").." зарядов ключевого таланта "..CKWord("", "snipcon_rgb_ru")..".",
-			["zh-tw"] = "在 "..CKWord("鷹眼聚焦", "snipcon_rgb_tw").." 基石\n"
+			["zh-tw"] = "在 "..CKWord("狙擊專注", "snipcon_rgb_tw").." 基石\n"
 				.."達到 "..CNumb("10", "n_10_rgb").." 層或以上時，\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
@@ -450,7 +450,7 @@ local penances_localizations = {
 	--[+ Focus Soldier! +]-- руоф Солдат в прицеле!
 	["loc_achievement_veteran_kills_with_improved_tag_name"] = {
 		ru = "Прицелься, солдат!",
-		["zh-tw"] = "士兵，鎖定目標!",
+		["zh-tw"] = "士兵，鎖定目標！",
 	},
 		--[+ Kill 500 enemies tagged by Focus Target! +]-- руоф Убейте врагов (500), отмеченных эффектом «В прицеле!».
 		["loc_achievement_veteran_kills_with_improved_tag_description"] = {
@@ -493,7 +493,7 @@ local penances_localizations = {
 	--[+ Keep it Tight +]-- руоф Держать в секрете
 	["loc_achievement_veteran_team_movement_amplifed_name"] = {
 		ru = "Держитесь вместе",
-		["zh-tw"] = "保持陣型.",
+		["zh-tw"] = "保持陣型",
 	},
 		--[+ Move a total of 10000 meters in coherency with your team members while under the effect of Close and Kill. +]-- руоф Переместитесь с членами команды под действием «Сплоченности» суммарно на 10000 м, пока действует эффект «Приблизиться и убить».
 		["loc_achievement_veteran_team_movement_amplifed_description"] = {
