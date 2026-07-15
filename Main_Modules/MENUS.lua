@@ -503,34 +503,41 @@ local menus_templates = {
 	["loc_stats_display_mobility_stat"] = { -- Mobility
 		en = CKWord("Mobility", "Mobility_rgb"),
 		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
+		["zh-tw"] = CKWord("機動性", "Mobility_rgb_tw"),
 	},
 	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn's Grenadier Gauntlet
 		en = CKWord("Melee Damage", "Melee_dmg_rgb"),
 		ru = CKWord("Урон рукопашный", "Melee_dmg_rgb_ru"),
+		["zh-tw"] = CKWord("近戰傷害", "Melee_dmg_rgb_tw"),
 	},
 	["loc_stats_display_warp_resist_stat"] = { -- Warp Resistance -- Psyker
 		en = CKWord("Warp Resistance", "Warp_resist_rgb"),
 		ru = CKWord("Сопротивление варпу", "Warp_resist_rgb_ru"),
+		["zh-tw"] = CKWord("亞空間抗性", "Warp_resist_rgb_tw"),
 	},
 
 --[+ +DUMP STATS 2+ +]--
 	["loc_stats_display_ammo_stat"] = { -- Ammo -- Ogryn's Ripper Gun
 		en = CKWord("Ammo", "Ammo_rgb"),
 		ru = CKWord("Боеприпасы", "Ammo_rgb_ru"),
+		["zh-tw"] = CKWord("彈藥", "Ammo_rgb_tw"),
 	},
 	["loc_stats_display_defense_stat"] = { -- Defences
 		en = CKWord("Defences", "Defences_rgb"),
 		ru = CKWord("Защита", "Defences_rgb_ru"),
+		["zh-tw"] = CKWord("防禦", "Defences_rgb_tw"),
 	},
 	["loc_stats_display_heat_management_powersword_2h"] = { -- Heat Management -- Zealot Relic. //Thanks RedF4llc0n
 		en = CKWord("Heat Management", "Heat_mngt_rgb"),
 		ru = CKWord("Отведение тепла", "Heat_mngt_rgb_ru"),
+		["zh-tw"] = CKWord("熱量管理", "Heat_mngt_rgb_tw"),
 	},
 
 --[+ +DUMP STATS 3+ +]--
 	["loc_stats_display_damage_stat"] = { -- Damage -- DoT guns: Needle Gun, Flamethrower, etc. This stat only affect direct damage and not DoT. //Thanks Hater
 		en = CKWord("Damage", "DamageDS_rgb"),
 		ru = CKWord("Урон", "DamageDS_rgb_ru"),
+		["zh-tw"] = CKWord("傷害", "DamageDS_rgb_tw"),
 	},
 
 
@@ -543,7 +550,7 @@ local menus_templates = {
 	["loc_stats_display_flame_size_stat"] = {
 		-- en = "Cloud Radius",
 		ru = "Размер пламени", -- руоф Область распространения
-		["zh-tw"] = "火焰範圍", -- 火焰範圍
+		["zh-tw"] = "雲霧半徑", -- 火焰範圍
 	},
 	["loc_stats_display_control_stat_melee"] = {
 		-- en = "Crowd Control",
@@ -583,7 +590,7 @@ local menus_templates = {
 	["loc_wait_reason_dedicated_server"] = {
 		-- en = ,
 		ru = "Выдаём рекаф и брикеты", -- Выделенный сервер
-		["zh-tw"] = "正在載入著色器或模組包",
+		["zh-tw"] = "正在連接專用伺服器...",
 	},
 	--[+ Waiting for other player(s) +]--
 	["loc_wait_reason_other_player"] = {
@@ -595,7 +602,7 @@ local menus_templates = {
 	["loc_wait_reason_backend"] = {
 		-- en = ,
 		ru = "Пытаемся сшить связь, потому что она порвалась...", -- Взаимодействие с бэкэндом Fatshark
-		["zh-tw"] = "正在與Fatshark伺服器進行連線... T_T",
+		["zh-tw"] = "正在與 Fatshark 後端通訊...",
 	},
 	--[+ Store +]--
 	["loc_wait_reason_store"] = {
