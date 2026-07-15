@@ -1494,16 +1494,16 @@ local penances_localizations = {
 		["loc_achievement_ogryn_leadbelcher_free_shot_description"] = {
 			en = "Shoot "..CNumb("{target}", "target_rgb").." free rounds of Ammo, courtesy of the "..CKWord("Burst Limiter Override", "burstlimo_rgb").." Keystone.",
 			ru = "Отстреляйте "..CNumb("{target}", "target_rgb").." бесплатных патронов, полученных с помощью ключевого таланта "..CKWord("Обход ограничителя очереди", "burstlimo_rgb_ru")..".",
-			-- ["zh-tw"] = "射出 "..CNumb("{target}", "target_rgb").." 發由 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "burstlimo_rgb_tw").."』所獲得的免費子彈。",
+			["zh-tw"] = "射出 "..CNumb("{target}", "target_rgb").." 發由 "..CKWord("爆限超載", "burstlimo_rgb_tw").." 基石提供的免費彈藥。",
 		},
 	--[+ Pile On +]-- руоф Навались -- 堆起來
 		--[+ Kill 5000 enemies with Heavy Attacks while under the effect of Bonebreaker's Aura. Heavy Attack kills made by your team members also count. +]-- руоф Убейте врагов (5000) мощными атаками, находясь под действием «Ауры костолома». Если члены команды убивают мощными атаками, это тоже учитывается.
 		["loc_achievement_ogryn_team_heavy_aura_kills_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with Heavy Attacks while under the effect of "..CKWord("Bonebreaker's Aura", "bonebraura_rgb")..". Heavy Attack kills made by your team members also count.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов заряженными атаками, находясь под действием ауры "..CKWord("", "bonebraura_rgb_ru")..". Убийства заряженными атаками, совершённые членами команды также учитываются.",
-			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "bonebraura_rgb_tw").."』效果內，\n"
-				-- .."以蓄力攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
-				-- .."隊友的蓄力擊殺也會計算。",
+			["zh-tw"] = "在 "..CKWord("破骨者之環", "bonebraura_rgb_tw").." 效果下，\n"
+				.."以重擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				.."隊友的重擊擊殺也會計入。",
 		},
 	--[+ You Can't Hide from Us! +]-- руоф От нас не спрятаться!
 	["loc_achievement_ogryn_team_suppressed_aura_kills_name"] = {
@@ -1514,17 +1514,18 @@ local penances_localizations = {
 		["loc_achievement_ogryn_team_suppressed_aura_kills_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." Suppressed enemies while under the effect of "..CKWord("Coward Culling", "cowculaura_rgb")..". Kills made by any affected team member also count.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." подавленных врагов, находясь под эффектом ауры "..CKWord("Отсев трусливых", "cowculaura_rgb_ru")..". Убийства, совершённые любым членом команды под действием эффекта ауры, также учитываются.",
-			-- ["zh-tw"] = "在 "..CKWord("", "Aura_p_rgb_tw").."『"..CKWord("", "cowculaura_rgb_tw").."』效果內，擊殺 "..CNumb("{target}", "target_rgb").." 名被壓制的敵人。\n"
-				-- .."隊友在光環下所造成的擊殺同樣會被計算。",
+			["zh-tw"] = "在 "..CKWord("優勝劣汰", "cowculaura_rgb_tw").." 效果下，\n"
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名被壓制的敵人。\n"
+				.."受此光環影響的隊友擊殺也會計入。",
 		},
 	--[+ Loyal Protector +]-- руоф Верный защитник -- 忠誠守衛
 		--[+ Restore a total of 15000 Toughness to you or allies in coherency with Stay Close. +]-- руоф Восстановите стойкость свою или союзников под действием «Сплоченности» (суммарно 15000) с помощью «Держись рядом».
 		["loc_achievement_ogryn_team_toughness_restored_aura_description"] = {
 			en = "Restore a total of "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." to you or Allies in "..CKWord("Coherency", "Coherency_rgb").." with "..CKWord("Stay Close!", "stayclose_rgb").." Aura.",
 			ru = "Восстановите суммарно "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." себе или союзникам, находящимся под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..", с помощью эффекта ауры "..CKWord("Держись рядом!", "stayclose_rgb_ru")..".",
-			-- ["zh-tw"] = "使用 "..CKWord("", "KeyStone_p_rgb_tw").."『"..CKWord("", "stayclose_rgb_tw").."』效果，\n"
-				-- .."為自己或處於『"..CKWord("", "Coherency_rgb_tw").."』範圍內的隊友，\n"
-				-- .."恢復累計 "..CNumb("{target}", "target_rgb").." 點『"..CKWord("", "Toughness_rgb_tw").."』。",
+			["zh-tw"] = "透過 "..CKWord("跟緊我!", "stayclose_rgb_tw").." 光環，\n"
+				.."為自己或處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友\n"
+				.."恢復總計 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("韌性", "Toughness_rgb_tw").."。",
 		},
 	--[+ I'm in Charge +]-- руоф Я главнее
 	["loc_achievement_ogryn_2_bull_rushed_charging_ogryn_name"] = {
@@ -1535,8 +1536,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_bull_rushed_charging_ogryn_fix_description"] = {
 			en = "Use "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability to interrupt a Plague Ogryn's charge.",
 			ru = "Используйте способность "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..", чтобы прервать рывок Чумного Огрина.",
-			-- ["zh-tw"] = "用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
-				-- .."中斷瘟疫歐格林的衝鋒。",
+			["zh-tw"] = "使用 "..CKWord("蠻牛衝撞", "bull_rush_rgb_tw").."或"..CKWord("不屈不撓", "bull_rush4_rgb_tw").." 技能，\n"
+				.."中斷瘟疫歐格林的衝鋒。",
 		},
 	--[+ Something In Your Eye +]-- руоф Нечто в твоих глазах
 	["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_name"] = {
@@ -1547,7 +1548,8 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"] = {
 			en = "Kill a Corruptor by hitting it in the eye with grenade box from "..CKWord("Big Boxes of Hurt", "big_box_rgb").." or "..CKWord("Bombs Away!", "big_box2_rgb").." Blitz.",
 			ru = "Убейте Осквернителя, попав ему в глаз ящиком блица "..CKWord("Большая коробка боли", "big_box_rgb_ru").." или "..CKWord("Бросай бомбы!", "big_box2_rgb_ru")..".",
-			-- ["zh-tw"] = "用 "..CKWord("", "Blitz_p_rgb_tw").."『"..CKWord("", "big_box_rgb_tw").."』直接擊中腐蝕者眼睛將其擊殺。",
+			["zh-tw"] = "用 "..CKWord("巨量傷害盒", "big_box_rgb_tw").."或"..CKWord("投彈完畢!", "big_box2_rgb_tw").." 閃擊的手榴彈箱\n"
+				.."擊中腐蝕者眼睛，將其擊殺。",
 		},
 	--[+ Gone Bowling +]-- руоф Играю в боулинг
 	["loc_achievement_ogryn_2_bull_rushed_100_enemies_name"] = {
@@ -1558,9 +1560,9 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_bull_rushed_100_enemies_fix_description"] = {
 			en = "Knock down "..CNumb("{target}", "target_rgb").." enemies with a single "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
 			ru = "Сбейте "..CNumb("{target}", "target_rgb").." врагов за одно использование способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru").." на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
-			-- ["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度中，\n"
-				-- .."使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n"
-				-- .."單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。",
+			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+				.."使用單次 "..CKWord("蠻牛衝撞", "bull_rush_rgb_tw").."或"..CKWord("不屈不撓", "bull_rush4_rgb_tw").." 技能，\n"
+				.."擊倒 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	-- --[+ Don't Stop Me Now! +]-- руоф Меня не остановить!
 	["loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_name"] = {
@@ -1571,15 +1573,19 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_bull_rushed_70_within_25_seconds_fix_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, move "..CNumb("{target}", "target_rgb").." metres with "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability in under "..CNumb("{time_window}", "time_wind_rgb").." seconds.",
 			ru = "Переместитесь на "..CNumb("{target}", "target_rgb").." метров с помощью способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru").." в течение "..CNumb("{time_window}", "time_wind_rgb").." секунд на сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше.",
-			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n"
-				-- .."於 "..CNumb("{time_window}", "time_wind_rgb").." 秒內，使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』技能移動累計 "..CNumb("{target}", "target_rgb").." 公尺。",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
+				.."於 "..CNumb("{time_window}", "time_wind_rgb").." 秒內，\n"
+				.."使用 "..CKWord("蠻牛衝撞", "bull_rush_rgb_tw").."或"..CKWord("不屈不撓", "bull_rush4_rgb_tw").." 技能移動 "..CNumb("{target}", "target_rgb").." 公尺。",
 		},
 	--[+ Heavyweight Champion +]-- руоф Чемпион-тяжеловес -- 重量級冠軍
 		--[+ On Heresy Threat or higher, knock down 4 enemy Ogryns (Bulwarks, Crushers, Plague Ogryns, and/or Reapers) with a single Bull Rush or Indomitable charge. +]-- руоф При угрозе «Ересь» или выше сбейте с ног одним зарядом «Бычьего натиска» вражеских Огринов (Бастион, Дробитель, Чумной Огрин и/или Жнец): 4.
 		["loc_achievement_ogryn_2_bull_rushed_4_ogryns_fix_description"] = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, knock down "..CNumb("{target}", "target_rgb").." enemy Ogryns with a single "..CKWord("Bull Rush", "bull_rush_rgb").." or "..CKWord("Indomitable", "bull_rush4_rgb").." Ability charge. The Ogryns are: Bulwark, Crusher, Reaper, Pack Master, and Plague Ogryn.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, сбейте с ног "..CNumb("{target}", "target_rgb").." любых вражеских огрина одним зарядом способности "..CKWord("Рывок быка", "bull_rush_rgb_ru").." или "..CKWord("Неукротимый", "bull_rush4_rgb_ru")..". Огринами являются: Бастион, Дробитель, Жнец, Загонщик и Чумной огрин.",
-			-- ["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高難度中，\n使用 "..CKWord("", "Ability_p_rgb_tw").."『"..CKWord("", "bull_rush_rgb_tw").."』或『"..CKWord("", "bull_rush4_rgb_tw").."』，\n單次衝鋒擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n歐格林敵人包含：堡壘、碾壓者、收割者與瘟疫歐格林。",
+			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
+				.."使用單次 "..CKWord("蠻牛衝撞", "bull_rush_rgb_tw").."或"..CKWord("不屈不撓", "bull_rush4_rgb_tw").." 技能衝鋒，\n"
+				.."擊倒 "..CNumb("{target}", "target_rgb").." 名敵方歐格林。\n"
+				.."歐格林敵人包含：堡壘、碾壓者、收割者、獸群領主與瘟疫歐格林。",
 		},
 
 
@@ -1587,6 +1593,7 @@ local penances_localizations = {
 	["loc_class_adamant_title"] = {
 		en = CKWord("Arbitrator", "cls_arb_rgb"),
 		ru = CKWord("Арбитратор", "cls_arb_rgb_ru"),
+		["zh-tw"] = CKWord("法務官", "cls_arb_rgb_tw"),
 	},
 		--[+ PROGRESSION - ПРОГРЕСС - 進度 +]--
 	--[+ By the Lex, I am Witness! (1-6) +]-- руоф Именем Закона, я свидетель! (1-6)
