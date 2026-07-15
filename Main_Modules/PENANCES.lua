@@ -1057,7 +1057,7 @@ local penances_localizations = {
 			en = "Use "..CKWord("Psykinetic's Wrath", "psy_wrath_rgb").." or "..CKWord("Venting Shriek", "psy_wrath2_rgb").." Ability to survive "..CKWord("Perils of the Warp", "PerilsozWarp_rgb").." "..CNumb("{target}", "target_rgb").." times.",
 			ru = "Используйте "..CNumb("{target}", "target_rgb").." раз способность "..CKWord("Гнев психокинетика", "psy_wrath_rgb_ru").." или "..CKWord("Сбрасывающий вопль", "psy_wrath2_rgb_ru")..", чтобы избежать самоподрыва от "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." при превышении "..CNumb("100%", "pc_100_rgb").." уровня "..CKWord("опасности", "opasnosti_rgb_ru")..".",
 			["zh-tw"] = "使用 "..CKWord("靈能學者之怒", "psy_wrath_rgb_tw").."\n"
-				.."或 "..CKWord("刺耳尖嘯", "psy_wrath2_rgb_tw").." 技能，\n"
+				.."或 "..CKWord("靈能尖嘯", "psy_wrath2_rgb_tw").." 技能，\n"
 				.."從 "..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").." 中存活\n"
 				..CNumb("{target}", "target_rgb").." 次。",
 		},
@@ -1092,7 +1092,7 @@ local penances_localizations = {
 				.."或 "..CKWord("顱腦崩裂", "Brain_rupture_rgb_tw").." 閃擊，\n"
 				.."在瘟疫獵犬、變種人或血痂陷阱兵\n"
 				.."使你或隊友失去行動能力前，\n"
-				.."擊殺牠們，共 "..CNumb("{target}", "target_rgb").." 次。",
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名此類敵人。",
 		},
 	--[+ Mind Lance - Копьё разума +]-- руоф Копье разума
 	["loc_achievement_psyker_elite_or_special_kills_with_assail_name"] = {
@@ -1103,7 +1103,7 @@ local penances_localizations = {
 		["loc_achievement_psyker_elite_or_special_kills_with_assail_description"] = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." Specialists and Elites using "..CKWord("Assail", "Assail_rgb")..".",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью блица "..CKWord("Нападение", "Assail_rgb_ru")..".",
-			["zh-tw"] = "使用『"..CKWord("攻擊", "assail_rgb_tw").."』擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
+			["zh-tw"] = "使用 "..CKWord("靈能攻擊", "assail_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名專家與精英敵人。",
 		},
 	--[+ Perilous Focus +]-- руоф Пагубная концентрация
 		--[+ Kill 40 enemies under the effects of a single Scrier's Gaze activation. +]-- руоф Убейте врагов (40), находясь под действием одного заряда «Взора Скрира».
@@ -1120,7 +1120,7 @@ local penances_localizations = {
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью способностей, усиленных ключевым талантом "..CKWord("Усиленные псионики", "empsionics_rgb_ru")..".",
 			["zh-tw"] = "使用由 "..CKWord("靈能強化", "empsionics_rgb_tw").." 基石\n"
 				.."強化後的能力，\n"
-				.."擊殺 "..CNumb("{target}", "target_rgb").." 名專家或精英。",
+				.."擊殺 "..CNumb("{target}", "target_rgb").." 名專家或精英敵人。",
 		},
 	--[+ Defy Fate +]-- руоф Брось вызов судьбе -- 抵抗命運
 		--[+ Maintain 15 stacks or more of Disrupt Destiny for a total of 1800 seconds. +]-- руоф Удерживайте не менее 15 зарядов «Разрушенной судьбы» на протяжении 1800 с.
@@ -1157,7 +1157,7 @@ local penances_localizations = {
 	--[+ Empyric Recovery +]-- руоф Эмпирическое восстановление
 	["loc_achievement_psyker_team_cooldown_reduced_name"] = {
 		ru = "Эмпирейское восстановление",
-		["zh-tw"] = "經驗恢復",
+		["zh-tw"] = "亞空間恢復",
 	},
 		--[+ Restore you or your allies' abilities a total of 2000 seconds faster, while under the effects of Seer's Presence. +]-- руоф Восстановите способности свои или союзников суммарно на 2000 с. быстрее, находясь под действием «Присутствия провидца».
 		["loc_achievement_psyker_team_cooldown_reduced_description"] = {
