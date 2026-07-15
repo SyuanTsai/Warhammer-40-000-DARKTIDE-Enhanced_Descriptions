@@ -37,13 +37,13 @@ local arbites_localizations = {
 			..Dot_nc.." Средний "..CKWord("урон", "uron_rgb_ru").." по противоосколочной броне.\n"
 			..Dot_red.." Слабый "..CKWord("урон", "uron_rgb_ru").." по панцирной броне.",
 		["zh-tw"] = "投擲一枚"..CKWord("法務官手榴彈", "Arbites_gren_rgb_tw").."，短暫延遲後爆炸。\n"
-			..Dot_nc.." {charges:%s} 最大手榴彈數量。\n"
+			..Dot_nc.." 手榴彈上限 {charges:%s}。\n"
 			.."\n"
 			..Dot_green.." 爆炸中心基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1500", "n_1500_rgb").."。\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，\n"
-			.."（變種人與有虛空護盾的敵人除外）\n"
+			.."（變種人與有虛空護盾的敵人除外）。\n"
 			..Dot_nc.." 最大爆炸半徑："..CNumb("10", "n_10_rgb").." 米。\n"
-			..Dot_nc.." 對護甲"..CKWord("傷害", "Damage_rgb_tw").."略高於平均值。\n"
+			..Dot_nc.." 對護甲的"..CKWord("傷害", "Damage_rgb_tw").."略高於平均值。\n"
 			..Dot_red.." 對甲殼護甲"..CKWord("傷害", "Damage_rgb_tw").."極低。",
 	},
 	--[+ BLITZ 1 - Remote Detonation +]--	26.03.2026
@@ -74,15 +74,15 @@ local arbites_localizations = {
 			..Dot_red.." Арбитратор не может подбирать гранаты.", -- Дистанционный подрыв
 		["zh-tw"] = "在電子獒犬所在位置引發爆炸，\n"
 			.."使附近敵人"..CKWord("踉蹌", "Staggering_rgb_tw").."並受到"..CKWord("電擊", "Electrocute_rgb_tw").."。\n"
-			..Dot_nc.." {max_charges:%s} 充能次數。\n"
+			..Dot_nc.." {max_charges:%s} 次充能。\n"
 			..Dot_nc.." 冷卻時間 {cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("200", "n_200_rgb").."]。\n"
 			.."\n"
-			..Dot_green.." 使範圍內所有敵人輕度"..CKWord("踉蹌", "Stagger_rgb_tw").." "..CNumb("2.5", "n_2_5_rgb").." 秒。\n"
+			..Dot_green.." 使範圍內所有敵人輕度"..CKWord("踉蹌", "Stagger_rgb_tw").."，持續 "..CNumb("2.5", "n_2_5_rgb").." 秒。\n"
 			..Dot_nc.." 最大爆炸半徑："..CNumb("4", "n_4_rgb").." 米。\n"
 			.."\n"
-			..Dot_red.." 仲裁官無法拾取手榴彈彈藥。",
+			..Dot_red.." 法務官無法拾取手榴彈彈藥。",
 	},
 	--[+ BLITZ 2 - Voltaic Shock Mine +]--	26.03.2026
 	["loc_talent_ability_shock_mine_description"] = { -- talent_name: Voltaic Shock Min, duration: 15, range: 3, s->seconds, m->meters, +colors
@@ -103,7 +103,7 @@ local arbites_localizations = {
 			..Dot_nc.." Максимум {charges:%s} гранаты.\n"
 			..Dot_green.." Это улучшенная версия таланта {talent_name:%s}.",  -- Граната арбитрес -- руоф Граната Арбитрес
 		["zh-tw"] = "投擲一枚 {talent_name:%s}，短暫延遲後爆炸。\n"
-			..Dot_nc.." {charges:%s} 最大手榴彈數量。\n"
+			..Dot_nc.." 手榴彈上限 {charges:%s}。\n"
 			..Dot_green.." 此為 {talent_name:%s} 的強化版本。",
 	},
 --[+ +AURA - АУРА+ +]--
@@ -111,7 +111,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_companion_coherency_desc"] = { 
 		en = "Your Cyber-Mastiff counts towards unit "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = "Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
-		["zh-tw"] = "你的電子獒犬計入隊伍"..CKWord("協同", "Coherency_rgb_tw").."人數。",
+		["zh-tw"] = "你的電子獒犬會計入隊伍"..CKWord("協同", "Coherency_rgb_tw").."。",
 	},
 	--[+ AURA 1 - Part of the Squad +]--	26.03.2026
 	["loc_talent_adamant_companion_coherency_alt_desc"] = { -- tdr: +7.5%, +colors
@@ -121,24 +121,24 @@ local arbites_localizations = {
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n"
 			.."\n"
 			.."Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
-		["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。\n"
+		["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
+			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友生效。\n"
 			.."\n"
-			.."你的電子獒犬計入隊伍"..CKWord("協同", "Coherency_rgb_tw").."人數。",
+			.."你的電子獒犬會計入隊伍"..CKWord("協同", "Coherency_rgb_tw").."。",
 	},
 	--[+ AURA 2 - Ruthless Efficiency +]--	26.03.2026
 	["loc_talent_adamant_reload_speed_aura_desc"] = { -- reload_speed: +7.5%, +colors
 		en = Dot_green.." {reload_speed:%s} Reload Speed for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Беспощадная эффективность -- руоф Беспощадная сила
-		["zh-tw"] = Dot_green.." {reload_speed:%s} 裝填速度，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。",
+		["zh-tw"] = Dot_green.." 裝填速度增加 {reload_speed:%s}，\n"
+			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友生效。",
 	},
 	--[+ AURA 3 - Breaking Dissent +]--	26.03.2026
 	["loc_talent_adamant_damage_vs_staggered_aura_alt_desc"] = { -- damage_vs_stagger: +10%, +colors
 		en = Dot_green.." {damage_vs_stagger:%s} "..CKWord("Damage", "Damage_rgb").." vs "..CKWord("Staggered", "Staggered_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".",
 		ru = Dot_green.." {damage_vs_stagger:%s} к "..CKWord("урону", "uronu_rgb_ru").." по "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Подавление инакомыслия -- руоф Преодоление разногласий
-		["zh-tw"] = Dot_green.." {damage_vs_stagger:%s} 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人的"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友生效。",
+		["zh-tw"] = Dot_green.." 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_vs_stagger:%s}，\n"
+			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友生效。",
 	},
 --[+ +ABILITIES - СПОСОБНОСТЬ+ +]--
 	--[+ ABILITY 0 - Nuncio-Aquila +]--	26.03.2026
@@ -164,10 +164,10 @@ local arbites_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.", -- Нунцио-аквила
 		["zh-tw"] = "在指定方向部署 {talent_name:%s}，\n"
-			.."對 {range:%s} 米範圍內的隊友提供增益，\n"
+			.."對 {range:%s} 米範圍內的盟友提供增益，\n"
 			.."對敵人施加減益。\n"
 			.."\n"
-			.."隊友：\n"
+			.."盟友：\n"
 			..Dot_green.." 每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			.."敵人：\n"
@@ -200,8 +200,8 @@ local arbites_localizations = {
 			.."期間獲得：\n"
 			..Dot_green.." {strength:%s} "..CKWord("威力", "Strength_rgb_tw").."，\n"
 			..Dot_green.." {movement_speed:%s} 移動速度，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {damage_taken:%s} 受到的"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {movement_reduction:%s} 行動時移動速度懲罰。\n"
+			..Dot_green.." 受到的"..CKWord("傷害", "Damage_rgb_tw").." "..CNumb("-", "n_minus_rgb").."{damage_taken:%s}，\n"
+			..Dot_green.." 行動造成的移動速度懲罰 "..CNumb("-", "n_minus_rgb").."{movement_reduction:%s}。\n"
 			..Dot_green.." 啟動時完全恢復"..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..Dot_red.." 無法衝刺。\n"
 			.."\n"
@@ -218,7 +218,7 @@ local arbites_localizations = {
 			..Dot_green.." Округляется в большую сторону.\n"
 			..Dot_nc.." Срабатывает раз за атаку.", -- Благословенное вооружение -- руоф Благословенное орудие
 		["zh-tw"] = "在 {stance_name:%s} 期間，遠程擊殺可恢復彈藥：\n"
-			..Dot_green.." 最多 {ammo:%s} 的備用彈藥至彈夾。\n"
+			..Dot_green.." 從備彈補充至彈匣，最多為彈匣總彈量的 {ammo:%s}。\n"
 			..Dot_green.." 向上取整計算。\n"
 			..Dot_nc.." 每次攻擊最多觸發一次。",
 	},
@@ -235,7 +235,7 @@ local arbites_localizations = {
 		["zh-tw"] = "在 {stance_name:%s} 期間，\n"
 			.."每次擊殺精英或專家可獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
-			..Dot_nc.." 最大 {stacks:%s} 層。\n"
+			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
 	--[+ ABILITY 1-3 - Bloodlust +]--	26.03.2026
@@ -285,12 +285,12 @@ local arbites_localizations = {
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
 			..Dot_green.." Это улучшенная версия способности {nuncio_name:%s}.", -- Нунцио-аквила
 		["zh-tw"] = "在指定方向部署 {nuncio_name:%s}，\n"
-			.."對 {range:%s} 米範圍內的隊友提供增益，\n"
+			.."對 {range:%s} 米範圍內的盟友提供增益，\n"
 			.."對敵人施加減益。\n"
 			.."\n"
-			.."隊友：\n"
+			.."盟友：\n"
 			..Dot_green.." 每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
-			..Dot_green.." {suppression:%s} 壓制效果，\n"
+			..Dot_green.." {suppression:%s} 造成的壓制，\n"
 			..Dot_green.." {impact:%s} "..CKWord("衝擊", "Impact_rgb_tw").."，\n"
 			..Dot_green.." {recoil:%s} 後座力，\n"
 			..Dot_green.." "..CKWord("眩暈", "Stun_rgb_tw").."免疫，\n"
@@ -314,9 +314,9 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..",\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} к скорости оживления и\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} к скорости атаки.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
-		["zh-tw"] = "受影響的隊友還額外獲得：\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {revive_speed:%s} 急救速度，\n"
+		["zh-tw"] = "受影響的盟友還額外獲得：\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {revive_speed:%s} 救援速度，\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {attack_speed:%s} 攻擊速度。",	},
 	--[+ ABILITY 2-2 - Fear of Justice +]--	26.03.2026
 	["loc_talent_adamant_drone_debuff_talent_desc"] = { -- damage_reduction: 25%, attack_speed_reduction: 50%, +colors
