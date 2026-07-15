@@ -804,8 +804,8 @@ local zealot_localizations = {
 		ru = "Когда действие таланта {talent_name:%s} заканчивается, вы восстанавливаете "..CKWord("здоровье", "zdorovie_rgb_ru").." в зависимости от нанесённого "..CKWord("урона", "urona_rgb_ru").." во время действия таланта {talent_name:%s}, максимум до {max_health:%s} максимального "..CKWord("здоровья", "zdorovia_rgb_ru")..".\n" -- Святой призрак -- руоф Священный призрак
 			..CKWord("Урон", "Uron_rgb_ru").." в ближнем бою восстанавливает в {melee_multiplier:%s} раза больше "..CKWord("здоровья", "zdorovia_rgb_ru")..".",
 		-- fr = "Lorsque {talent_name:%s} se termine, vous récupérez de la "..CKWord("Santé", "Health_rgb_fr").." en fonction des "..CKWord("Dégâts", "Damage_rgb_fr").." que vous avez infligés pendant {talent_name:%s}, jusqu'à {max_health:%s} de la "..CKWord("Santé", "Health_rgb_fr").." maximum. Les "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée guérissent pour {melee_multiplier:%s} fois ce montant."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_24_rgb_fr,
-		["zh-tw"] = "{talent_name:%s} 結束時，依 {talent_name:%s} 期間造成的"..CKWord("傷害", "Damage_rgb_tw").." 恢復"..CKWord("生命", "Health_rgb_tw").."，最多 {max_health:%s} 最大"..CKWord("生命", "Health_rgb_tw").."。\n"
-			.."近戰"..CKWord("傷害", "Damage_rgb_tw").." 的治療量為 {melee_multiplier:%s} 倍。",
+		["zh-tw"] = "{talent_name:%s} 結束時，依 {talent_name:%s} 期間造成的"..CKWord("傷害", "Damage_rgb_tw").."恢復"..CKWord("生命值", "Health_rgb_tw").."，最多為 {max_health:%s} 最大"..CKWord("生命值", "Health_rgb_tw").."。\n"
+			.."近戰"..CKWord("傷害", "Damage_rgb_tw").."會以 {melee_multiplier:%s} 倍數值治療。",
 	},
 	--[+ Passive 14 - Thy Wrath be Swift +]--	27.03.2026
 	["loc_talent_zealot_movement_speed_on_damaged_desc"] = { -- movement_speed: +15%, time: 2, s->seconds, +colors
@@ -830,7 +830,7 @@ local zealot_localizations = {
 			..CKWord("Урон", "Uron_rgb_ru").."("..CNumb("%", "pc_rgb").."):                  "..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
-		["zh-tw"] = "依缺失"..CKWord("耐力", "Stamina_rgb_tw").." 最多 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."：\n"
+		["zh-tw"] = "依缺失的"..CKWord("耐力", "Stamina_rgb_tw").."，最多獲得 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
 			..CKWord("耐力", "Stamina_rgb_tw").."%:   "..CNumb("100", "n_100_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
 			..CKWord("傷害", "Damage_rgb_tw").."%:   "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
@@ -877,8 +877,8 @@ local zealot_localizations = {
 			..Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Срабатывает раз в {cooldown:%s} секунд.",
-		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").." 盟友受到"..CKWord("生命", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").." 時，{duration:%s} 秒內獲得：\n"
-			..Dot_green.." {damage_reduction:%s} 傷害抗性。\n"
+		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").."中的盟友受到"..CKWord("生命值", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").."時，{duration:%s} 秒內獲得：\n"
+			..Dot_green.." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。\n"
 			.."\n"
 			..Dot_nc.." 每 {cooldown:%s} 秒觸發一次。",
 	},
@@ -886,7 +886,7 @@ local zealot_localizations = {
 	["loc_talent_zealot_damage_vs_nonthreat_desc"] = { -- damage: +15%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Enemies not targeting you.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против врагов, которые не атакуют вас.", -- руоф Невидимый клинок
-		["zh-tw"] = Dot_green.." {damage:%s} 對未鎖定你的敵人"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 對未鎖定你的敵人造成 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
 	--[+ Passive 20 - Out of Pocket +]--	27.03.2026
 	["loc_talent_zealot_reload_from_backstab_desc"] = { -- ammo: +5%, stacks: 5
@@ -894,7 +894,7 @@ local zealot_localizations = {
 			..Dot_nc.." Stacks {stacks:%s} times.",
 		ru = "Убийства в спину восстанавливают {ammo:%s} недостающих патронов из вашего резерва при переключении на дальнобойное оружие.\n"
 			..Dot_nc.." Суммируется до {stacks:%s} раз.", -- руоф За свой счет
-		["zh-tw"] = "近戰背刺擊殺將備用彈藥補充 {ammo:%s} 缺少的彈藥，切換遠程武器時觸發。\n"
+		["zh-tw"] = "切換至遠程武器時，近戰背刺擊殺會從備用彈藥補充你缺失彈藥的 {ammo:%s}。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。",
 	},
 	--[+ Passive 21 - Faithful Frenzy +]--	27.03.2026
@@ -917,10 +917,10 @@ local zealot_localizations = {
 			..Dot_green.." {movement_speed:%s} к скорости движения и\n"
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- Правоверное неистовство -- руоф Верное безумие
 		-- fr = "{attack_speed:%s} Vitesse d'attaque en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_30_rgb_fr,
-		["zh-tw"] = Dot_green.." {revive_speed:%s} 恢復速度。\n"
+		["zh-tw"] = Dot_green.." {revive_speed:%s} 復活速度。\n"
 			.."\n"
-			.."你救助或恢復的盟友 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {movement_speed:%s} 移動速度 和\n"
+			.."你救助或復活的盟友 {duration:%s} 秒內獲得：\n"
+			..Dot_green.." {movement_speed:%s} 移動速度，並\n"
 			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 23 - Good Balance +]--	27.03.2026
@@ -928,7 +928,7 @@ local zealot_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for {duration:%s} seconds after a successful Dodge.",
 		ru = Dot_green.." {damage:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после успешного уклонения.", -- Хороший баланс -- руоф Разумный баланс
 		-- fr = "{damage:%s} Réduction des "..CKWord("Dégâts", "Damage_rgb_fr").." pendant {duration:%s} secondes après une esquive réussie."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_22_rgb_fr,
-		["zh-tw"] = Dot_green.." 成功閃避後 {duration:%s} 秒內，{damage:%s} 傷害抑制。",
+		["zh-tw"] = Dot_green.." 成功閃避後 {duration:%s} 秒內，{damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。",
 	},
 	--[+ Passive 24 - Impassible +]--	27.03.2026
 	["loc_talent_zealot_block_dodging_desc"] = { -- linger_time: 2, block_cost: +50%, cooldown: 8, dodges: 3, s->seconds, +colors
