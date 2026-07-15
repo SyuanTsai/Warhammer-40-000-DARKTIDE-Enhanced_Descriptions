@@ -1604,7 +1604,7 @@ local ogryn_localizations = {
 		ru = "При заряжании атак ближнего боя:\n"
 			..Dot_green.." {damage_taken_multiplier:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".", -- Непоколебимый
 		["zh-tw"] = "蓄力近戰攻擊時：\n"
-			..Dot_green.." {damage_taken_multiplier:%s} "..CKWord("傷害", "Damage_rgb_tw").."減少。",
+			..Dot_green.." {damage_taken_multiplier:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。",
 		-- fr = "{damage_taken_multiplier:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." pendant le chargement des attaques de mêlée.",
 	},
 	--[+ Passive 38 - Dominate +]--	26.03.2026
@@ -1632,7 +1632,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Can only trigger once every {cooldown:%s} seconds.",
 		ru = Dot_green.." {push_impact_modifier:%s} к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." для ваших отталкиваний.\n"
 			..Dot_nc.." Может срабатывать только раз в {cooldown:%s} секунд.", -- Не слабак
-		["zh-tw"] = Dot_green.." {push_impact_modifier:%s} 推擊的"..CKWord("踉蹌", "Stagger_rgb_tw").."加成。\n"
+		["zh-tw"] = Dot_green.." 推擊的"..CKWord("踉蹌", "Stagger_rgb_tw").."加成 {push_impact_modifier:%s}。\n"
 			..Dot_nc.." 每 {cooldown:%s} 秒最多觸發一次。",
 		-- fr = "{push_impact_modifier:%s} de "..COLORS_KWords_fr.Stagger_rgb_fr.." pour vos poussées. Peut se déclencher une fois toutes les {cooldown:%s} secondes.",
 	},
@@ -1647,7 +1647,7 @@ local ogryn_localizations = {
 			..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru").." и\n"
 			..Dot_green.." Иммунитет к подавлению.", -- Очертя голову
 		["zh-tw"] = "啟動"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").." 時，\n"
-			.."你與"..CKWord("協同", "Coherency_rgb_tw").." 範圍內的隊友在 {time:%s} 秒內獲得：\n"
+			.."你與"..CKWord("協同", "Coherency_rgb_tw").."中的隊友在 {time:%s} 秒內獲得：\n"
 			..Dot_green.." {movement_speed:%s} 移動速度，\n"
 			..Dot_green.." "..CKWord("眩暈", "Stun_rgb_tw").."免疫，\n"
 			..Dot_green.." 壓制免疫。",
@@ -1658,7 +1658,7 @@ local ogryn_localizations = {
 		en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on Reload.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнего боя на {duration:%s} секунд при перезарядке.", -- К бою готов! -- Перезаряжен и готов -- руоф Заряжен и готов
 		["zh-tw"] = Dot_green.." 裝填後 {duration:%s} 秒內，\n"
-			.."{damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。",
+			.."遠程"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à distance pendant {duration:%s} secondes lors du rechargement.",
 	},
 	--[+ Passive 42 - Massacre +]--	26.03.2026
@@ -1714,8 +1714,8 @@ local ogryn_localizations = {
 			..Dot_green.." {damage:%s} Melee "..CKWord("Damage", "Damage_rgb")..".",
 		ru = "Враги "..CKWord("ошеломлённые", "oshelomlennye_rgb_ru").." вашими атаками ближнего боя получают в течение {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.", -- Тяжёлые удары -- руоф Мощные удары
-		["zh-tw"] = "被你近戰攻擊"..CKWord("踉蹌", "Staggered_rgb_tw").." 的敵人，在 {duration:%s} 秒內受到：\n"
-			..Dot_green.." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = "被你近戰攻擊"..CKWord("踉蹌", "Staggered_rgb_tw").."的敵人，\n"
+			.."在 {duration:%s} 秒內受到的近戰"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." subit pendant {duration:%s} secondes par les ennemies qui "..COLORS_KWords_fr.Staggered_rgb_fr.." à cause de vos attaques de mélées.", -- Coup dur
 	},
 	--[+ Passive 46 - No Hurting Friends! +]--	26.03.2026
@@ -1742,7 +1742,7 @@ local ogryn_localizations = {
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"), -- За друзей порву!
-		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").." 內的隊友受到"..CKWord("傷害", "Damage_rgb_tw").." 時，獲得 "..CNumb("1", "n_1_rgb").." 層。\n"
+		["zh-tw"] = "你或"..CKWord("協同", "Coherency_rgb_tw").."中的隊友受到"..CKWord("傷害", "Damage_rgb_tw").."時，獲得 "..CNumb("1", "n_1_rgb").." 層。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			..Dot_nc.." 每層持續 {duration:%s} 秒。\n"
 			.."\n"
@@ -1759,7 +1759,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_tanky_with_downed_allies_desc"] = { -- damage_taken: +20%, range: 20, +colors
 		en = Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for each Knocked Down or Incapacitated Ally within {range:%s} meters.",
 		ru = Dot_green.." {damage_taken:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." за каждого выведенного из строя союзника в радиусе {range:%s} метров.", -- Не сдамся
-		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("傷害", "Damage_rgb_tw").."減少，\n"
+		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免，\n"
 			.."每名 {range:%s} 米內倒地或失能的隊友提供一份。",
 		-- fr = "{damage_taken:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." pour chaque allié à terre или incapacité dans un rayon de {range:%s} mètres.",
 	},
@@ -1771,7 +1771,7 @@ local ogryn_localizations = {
 		ru = "Опустошение вашего магазина даёт на {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя и\n"
 			..Dot_green.." {attack_speed:%s} к скорости атак ближнего боя.", -- Отстрелял - добил -- Отстрелял - порубил
-		["zh-tw"] = "打空彈夾後，在 {duration:%s} 秒內獲得：\n"
+		["zh-tw"] = "打空彈匣後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {attack_speed:%s} 近戰攻擊速度。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée et {attack_speed:%s} de vitesse d'attaque de mélée pendant {duration:%s} secondes после avoir vidé votre chargeur.", -- Canardage
@@ -1780,7 +1780,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_crit_damage_increase_desc"] = { -- stacks: +4, +colors
 		en = Dot_green.." {crit_damage:%s} "..CKWord("Critical Strike Damage", "Crt_strk_dmg_rgb")..".",
 		ru = Dot_green.." {crit_damage:%s} к "..CKWord("урону критического удара", "krit_udara_uron_rgb_ru")..".", -- Месиво
-		["zh-tw"] = Dot_green.." {crit_damage:%s} "..CKWord("暴擊打擊傷害", "Crt_strk_dmg_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." {crit_damage:%s} "..CKWord("暴擊傷害", "Crt_strk_dmg_rgb_tw").."。",
 		-- fr = "{crit_damage:%s} de "..COLORS_KWords_fr.Crit_dmg_r_rgb_fr.." sur vos attaques de mélées et de distances.", -- Coup chanceux
 	},
 }
