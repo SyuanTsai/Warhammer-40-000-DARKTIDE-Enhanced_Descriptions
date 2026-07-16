@@ -598,25 +598,25 @@ local arbites_localizations = {
 		["zh-tw"] = "遠程攻擊累積"..CKWord("近戰正義", "Meleejust_rgb_tw").."層數。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 層數無持續時間。\n"
-			..Dot_nc.." "..CNumb("1", "n_1_rgb").." 層/命中。\n"
-			..Dot_green.." "..CKWord("命中弱點", "Weakspothit_rgb_tw").." 得 {weakspot_stacks:%s} 層。\n"
+			..Dot_nc.." 每命中一名敵人獲得 "..CNumb("1", "n_1_rgb").." 層。\n"
+			..Dot_green.." "..CKWord("命中弱點", "Weakspothit_rgb_tw").."時獲得 {weakspot_stacks:%s} 層。\n"
 			.."\n"
 			.."切換至主武器時，消耗"..CKWord("近戰正義", "Meleejust_rgb_tw").."層數，\n"
-			.." 在 {melee_duration:%s} 秒內獲得：\n"
+			.."在 {melee_duration:%s} 秒內獲得：\n"
 			..Dot_green.." {melee_strength:%s} 近戰"..CKWord("威力", "Strength_rgb_tw").."，\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			.."近戰命中累積"..CKWord("遠程正義", "Rangedjust_rgb_tw").."層數。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 層數無持續時間。\n"
-			..Dot_nc.." "..CNumb("1", "n_1_rgb").." 層/命中。\n"
+			..Dot_nc.." 每命中一名敵人獲得 "..CNumb("1", "n_1_rgb").." 層。\n"
 			..Dot_red.." 電子獒犬的攻擊不計入。\n"
 			.."\n"
 			.."切換至副武器時，消耗"..CKWord("遠程正義", "Rangedjust_rgb_tw").."層數，\n"
-			.." 在 {ranged_duration:%s} 秒內獲得：\n"
+			.."在 {ranged_duration:%s} 秒內獲得：\n"
 			..Dot_green.." {ranged_strength:%s} 遠程"..CKWord("威力", "Strength_rgb_tw").."，\n"
 			..Dot_green.." {ranged_cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."，\n"
-			..Dot_green.." {suppression:%s} 壓制效果。\n"
+			..Dot_green.." {suppression:%s} 造成的壓制。\n"
 			.."\n"
 			..CNote("Pwr_note"),
 	},
@@ -628,7 +628,7 @@ local arbites_localizations = {
 			..Dot_green.." {cdr:%s} "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..".", -- Непреклонный -- руоф Упрямый
 		["zh-tw"] = "消耗 {stacks:%s} 層後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {cdr:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度。",
+			..Dot_green.." "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復增加 {cdr:%s}。",
 	},
 	--[+ KEYSTONE 5-2 - Terminal Decree +]--	26.03.2026
 	["loc_talent_adamant_terminus_warrant_support_desc"] = { -- toughness: 1%, +colors
@@ -640,7 +640,7 @@ local arbites_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Вплоть до "..CNumb("20", "pc_20_rgb").." "..CKWord("Toughness", "Toughness_rgb")..".", -- Последний приговор -- руоф Окончательное постановление
-		["zh-tw"] = "你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友，\n"
+		["zh-tw"] = "你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友，\n"
 			.."每消耗一層可恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
@@ -657,7 +657,7 @@ local arbites_localizations = {
 		["zh-tw"] = "消耗 {melee_stacks:%s} 層後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crt_hit_chnc_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 6 - Forceful +]--	26.03.2026
 	["loc_talent_adamant_forceful_base_alt_desc"] = { -- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, +colors
@@ -679,8 +679,8 @@ local arbites_localizations = {
 			..Dot_green.." {dr:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			..Dot_red.." Заряды снимаются при получении "..CKWord("урона", "urona_rgb_ru")..".", -- Неудержимый -- руоф Напористый
-		["zh-tw"] = CKWord("踉蹌", "Staggering_rgb_tw").." 命中與格擋攻擊，\n"
-			.."累積"..CKWord("強力", "Forceful_rgb_tw").."層數。\n"
+		["zh-tw"] = CKWord("踉蹌", "Staggering_rgb_tw").."命中與格擋攻擊，\n"
+			.."累積"..CKWord("堅定不移", "Forceful_rgb_tw").."層數。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 最多疊加 {stacks:%s} 層。\n"
 			.."\n"
@@ -698,7 +698,7 @@ local arbites_localizations = {
 		ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов упадёт ниже "..CNumb("10", "n_10_rgb")..", вы получаете:\n"
 			..Dot_green.." Иммунитет к "..CKWord("ошеломлению", "oshelomleniu_rgb_ru")..",\n"
 			..Dot_green.." Идеальные блоки могут блокировать все атаки.", -- Адамантовая воля
-		["zh-tw"] = "持有 "..CNumb("10", "n_10_rgb").." 層"..CKWord("強力", "Forceful_rgb_tw").."，\n"
+		["zh-tw"] = "持有 "..CNumb("10", "n_10_rgb").." 層"..CKWord("堅定不移", "Forceful_rgb_tw").."，\n"
 			.."以及降至 "..CNumb("10", "n_10_rgb").." 層以下後 {duration:%s} 秒內，\n"
 			.."你獲得：\n"
 			..Dot_green.." "..CKWord("眩暈", "Stun_rgb_tw").."免疫，\n"
@@ -708,7 +708,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_forceful_toughness_regen_per_stack_desc"] = { -- toughness: +0.5%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished each second per "..CKWord("Forceful", "Forceful_rgb").." Stack.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается каждую секунду за заряд "..CKWord("Неудержимости", "Forceful_rgb_ru")..".",
-		["zh-tw"] = Dot_green.." 每層"..CKWord("強力", "Forceful_rgb_tw").."，\n"
+		["zh-tw"] = Dot_green.." 每層"..CKWord("堅定不移", "Forceful_rgb_tw").."，\n"
 			.."每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 6-3 - Targets Acquired +]--	26.03.2026
@@ -719,7 +719,7 @@ local arbites_localizations = {
 		ru = "Пока у вас "..CNumb("10", "n_10_rgb").." зарядов "..CKWord("Неудержимости", "Forceful_rgb_ru").." и на {duration:%s} секунды после того, как количество зарядов упадёт ниже "..CNumb("10", "n_10_rgb")..", вы получаете:\n"
 			..Dot_green.." {attack_speed:%s} к скорости атаки и\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов.", -- Цели обнаружены
-		["zh-tw"] = "持有 "..CNumb("10", "n_10_rgb").." 層"..CKWord("強力", "Forceful_rgb_tw").."，\n"
+		["zh-tw"] = "持有 "..CNumb("10", "n_10_rgb").." 層"..CKWord("堅定不移", "Forceful_rgb_tw").."，\n"
 			.."以及降至 "..CNumb("10", "n_10_rgb").." 層以下後 {duration:%s} 秒內，\n"
 			.."你獲得：\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，\n"
@@ -747,7 +747,7 @@ local arbites_localizations = {
 			..Dot_nc.." Восстанавливается {cooldown:%s} секунд.\n"
 			..Dot_nc.." Восстановление раздельное для {low_stacks:%s} зарядов и для {high_stacks:%s} зарядов.", -- Сила правосудия -- руоф Судебная сила
 		["zh-tw"] = CKWord("踉蹌", "Stagger_rgb_tw").." 附近敵人，\n"
-			.."當"..CKWord("強力", "Forceful_rgb_tw").."層數達到 {low_stacks:%s} 或 {high_stacks:%s} 層時觸發。\n"
+			.."當"..CKWord("堅定不移", "Forceful_rgb_tw").."層數達到 {low_stacks:%s} 或 {high_stacks:%s} 層時觸發。\n"
 			..Dot_nc.." 冷卻時間 {cooldown:%s} 秒。\n"
 			..Dot_nc.." {low_stacks:%s} 層與 {high_stacks:%s} 層的冷卻分開計算。",
 	},
@@ -772,14 +772,14 @@ local arbites_localizations = {
 		en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Reloading.",
 		ru = Dot_green.." {damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после перезарядки.", -- Истребляющий огонь -- Изнуряющий огонь
 		["zh-tw"] = Dot_green.." 裝填後 {duration:%s} 秒內，\n"
-			.."{damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。",
+			.."遠程"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
 	},
 	--[+ Passive 3 - Hammer of Judgement +]--	26.03.2026
 	["loc_talent_adamant_multiple_hits_attack_speed_desc"] = { -- melee_attack_speed: +10%, duration: 3, hits: 3, s->seconds
 		en = Dot_green.." {melee_attack_speed:%s} Melee Attack Speed for {duration:%s} seconds on hitting {hits:%s} or more enemies with a Melee Attack.",
 		ru = Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя на {duration:%s} секунды при попадании по {hits:%s} или более врагам атакой ближнего боя.", -- Молот Правосудия -- руоф Молот правосудия
 		["zh-tw"] = Dot_green.." 近戰攻擊命中 {hits:%s} 名或更多敵人時，\n"
-			.."{melee_attack_speed:%s} 近戰攻擊速度，\n"
+			.."近戰攻擊速度增加 {melee_attack_speed:%s}，\n"
 			.."持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 4 - Razor-Jaw Augment +]--	26.03.2026
@@ -798,8 +798,8 @@ local arbites_localizations = {
 			..Dot_green.." {instant_toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." мгновенно и\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.", -- Цель уничтожена -- руоф Цель нейтрализована
 		["zh-tw"] = "擊殺精英或專家後，恢復：\n"
-			..Dot_green.." {instant_toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."立即），\n"
-			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."在 {duration:%s} 秒內）。",
+			..Dot_green.." 立即恢復 {instant_toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
+			..Dot_green.." 在 {duration:%s} 秒內恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 6 - Up Close +]--	26.03.2026
 	["loc_talent_adamant_close_kills_restore_toughness_desc"] = { -- toughness: 5%, +colors
