@@ -1122,7 +1122,7 @@ local arbites_localizations = {
 			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." при "..CKWord("ошеломлении", "oshelomlenii_rgb_ru").." врагов ударами в ближнем бою.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Последнее предупреждение
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."，\n"
+		["zh-tw"] = Dot_green.." 遠程"..CKWord("傷害", "Damage_rgb_tw").." "..CNumb("+", "n_plus_rgb").."{damage:%s}，\n"
 			.."近戰"..CKWord("踉蹌", "Staggering_rgb_tw").."命中時觸發。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
@@ -1130,7 +1130,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_heavy_attacks_increase_damage_desc"] = { -- damage: +15%, duration: 5, s->seconds, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Heavy Melee Attack.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после заряженной атаки ближнего боя.", -- Вес Закона
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
+		["zh-tw"] = Dot_green.." "..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}，\n"
 			.."蓄力近戰攻擊後持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 39 - Serrated Maw +]--	26.03.2026
@@ -1146,8 +1146,8 @@ local arbites_localizations = {
 	["loc_talent_adamant_crits_rend_alt_desc"] = { -- rending: +20%, +colors
 		en = Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb").." on Ranged "..CKWord("Critical Strike", "Crit_strike_rgb")..".",
 		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..".", -- Карающий удар -- руоф Обвиняющий удар
-		["zh-tw"] = Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."，\n"
-			.."遠程"..CKWord("暴擊打擊", "Crit_strike_rgb_tw").."時觸發。",
+		["zh-tw"] = Dot_green.." 遠程"..CKWord("致命一擊", "Crit_strike_rgb_tw").."時，\n"
+			..CKWord("撕裂", "Rending_rgb_tw").."增加 {rending:%s}。",
 	},
 	--[+ Passive 41 - March +]--	26.03.2026
 	["loc_talent_adamant_movement_speed_on_block_alt_desc"] = { -- movement_speed: +15%, duration: 3, s->seconds, +colors
@@ -1155,7 +1155,7 @@ local arbites_localizations = {
 			..Dot_nc.." Lasts {duration:%s} seconds.",
 		ru = Dot_green.." {movement_speed:%s} к скорости движения после любой дальнобойной атаки.\n"
 			..Dot_nc.." Длится {duration:%s} секунды.", -- Марш
-		["zh-tw"] = Dot_green.." {movement_speed:%s} 移動速度，\n"
+		["zh-tw"] = Dot_green.." 移動速度增加 {movement_speed:%s}，\n"
 			.."遠程命中時觸發。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
@@ -1163,20 +1163,20 @@ local arbites_localizations = {
 	["loc_talent_adamant_monster_hunter_desc"] = { -- damage: +20%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ogryns and Monstrosities.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Охотник на чудовищ -- руоф Охота на чудовищ
-		["zh-tw"] = Dot_green.." {damage:%s} 對歐格林和巨獸的"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 對歐格林和巨獸的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
 	},
 	--[+ Passive 43 - Strike Down +]--	26.03.2026
 	["loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"] = { -- rending: +15%, +colors
 		en = Dot_green.." {rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." on "..CKWord("Staggered", "Staggered_rgb").." Enemies.",
 		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." в ближнем бою "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам.", -- Сокрушительный удар -- руоф Сбивающий удар
-		["zh-tw"] = Dot_green.." {rending:%s} 近戰"..CKWord("撕裂", "Rending_rgb_tw").."，\n"
-			.."對"..CKWord("踉蹌", "Staggered_rgb_tw").." 的敵人觸發。",
+		["zh-tw"] = Dot_green.." 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人時，\n"
+			.."近戰"..CKWord("撕裂", "Rending_rgb_tw").."增加 {rending:%s}。",
 	},
 	--[+ Passive 44 - True Grit +]--	26.03.2026
 	["loc_talent_adamant_limit_dmg_taken_from_hits_desc"] = { -- limit: 50, +colors
 		en = "Limit the Maximum "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken from an Attack to {limit:%s}.",
 		ru = "Максимальный получаемый "..CKWord("урон", "uron_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru").." от атак снижается до {limit:%s}.", -- Настоящая закалка -- руоф Истинная выдержка
-		["zh-tw"] = "將每次攻擊受到的最大"..CKWord("生命", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").."，\n"
+		["zh-tw"] = "將每次攻擊受到的最大"..CKWord("生命值", "Health_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			.."限制為 {limit:%s}。",
 	},
 }
