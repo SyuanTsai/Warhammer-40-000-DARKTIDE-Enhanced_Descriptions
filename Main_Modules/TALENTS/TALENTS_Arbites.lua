@@ -827,7 +827,7 @@ local arbites_localizations = {
 			.."При идеальном блокировании вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
 			..Dot_green.." {attack_speed:%s} к скорости атаки.",
-		["zh-tw"] = Dot_green.." "..CNumb("-", "n_minus_rgb").." {block_cost:%s} 格擋消耗。\n"
+		["zh-tw"] = Dot_green.." 格擋消耗 "..CNumb("-", "n_minus_rgb").."{block_cost:%s}。\n"
 			.."\n"
 			.."完美格擋後 {duration:%s} 秒內，你獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
@@ -889,8 +889,8 @@ local arbites_localizations = {
 	["loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"] = { -- duration: 4, s->seconds, +colors
 		en = "Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb").." make the Enemy count as "..CKWord("Staggered", "Staggered_rgb").." for {duration:%s} seconds.",
 		ru = "Попадания в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою "..CKWord("ошеломляют", "oshelomlaut_rgb_ru").." врагов на {duration:%s} секунды.", -- Ошеломление -- руоф Сотрясение
-		["zh-tw"] = "近戰"..CKWord("弱點命中", "Weakspothits_rgb_tw").." 使敵人，\n"
-			.."被視為"..CKWord("踉蹌", "Staggered_rgb_tw").." {duration:%s} 秒。",
+		["zh-tw"] = "近戰"..CKWord("弱點命中", "Weakspothits_rgb_tw").."會使敵人\n"
+			.."被視為"..CKWord("踉蹌", "Staggered_rgb_tw").."，持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 16 - Canine Morale +]--	26.03.2026
 	["loc_talent_adamant_pinning_dog_kills_buff_allies_description"] = { -- tdr: +20%, toughness: +10%, duration: 5, s->seconds, +colors
@@ -901,16 +901,16 @@ local arbites_localizations = {
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." и\n"
 			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s}.",
 		["zh-tw"] = "擊殺被撲倒的目標後，\n"
-			.."你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
-			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").." /秒，最多 {toughness:%s}。",
+			.."你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友在 {duration:%s} 秒內獲得：\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." 每秒恢復 "..CNumb("2%", "pc_2_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，最多 {toughness:%s}。",
 	},
 	--[+ Passive 17 - Imposing Force +]--	26.03.2026
 	["loc_talent_adamant_damage_reduction_after_elite_kill_desc"] = { -- damage_reduction: +25%, duration: 5, s->seconds, +colors
 		en = Dot_green.." {damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." Resistance for {duration:%s} seconds after Elite or Specialist Kill.",
 		ru = Dot_green.." {damage_reduction:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после убийства элитного врага или специалиста.", -- Давящая мощь -- руоф Впечатляющая сила
 		["zh-tw"] = Dot_green.." 擊殺精英或專家後 {duration:%s} 秒內，\n"
-			.."{damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。",
+			..CKWord("傷害", "Damage_rgb_tw").."抗性增加 {damage_reduction:%s}。",
 	},
 	--[+ Passive 18 - Suppression Force +]--	26.03.2026
 	["loc_talent_adamant_staggered_enemies_deal_less_damage_desc"] = { -- damage: -20%, duration: 5, s->seconds, +colors
@@ -920,9 +920,9 @@ local arbites_localizations = {
 		ru = "Враги, "..CKWord("ошеломлённые", "oshelomlennye_rgb_ru").." вами с помощью атак ближнего боя, толчков или прямых столкновений способности "..CKWord("Прорыв вражеского строя", "BreakZLined_rgb_ru")..", наносят:\n"
 			..Dot_green.." {damage:%s} "..CKWord("урона", "urona_rgb_ru")..".\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
-		["zh-tw"] = "被近戰攻擊、推擊或"..CKWord("突破防線", "BreakZLine_rgb_tw").." 直接撞擊，\n"
+		["zh-tw"] = "被近戰攻擊、推擊或"..CKWord("突破重圍", "BreakZLine_rgb_tw").."直接撞擊，\n"
 			.."而"..CKWord("踉蹌", "Staggered_rgb_tw").." 的敵人，\n"
-			.."其"..CKWord("傷害", "Damage_rgb_tw").." 降低 {damage:%s}。\n"
+			.."造成的"..CKWord("傷害", "Damage_rgb_tw").." {damage:%s}。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 19 - Suppression Protocols +]--	26.03.2026
@@ -933,7 +933,7 @@ local arbites_localizations = {
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..".", -- Протоколы подавления
 		["zh-tw"] = "單次攻擊命中 {hits:%s} 名或更多敵人後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 20 - Plasteel Plates +]--	26.03.2026
 	["loc_talent_adamant_plasteel_plates_desc"] = { -- toughness: +25, +colors
