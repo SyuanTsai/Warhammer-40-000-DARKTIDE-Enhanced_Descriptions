@@ -1480,14 +1480,14 @@ local scum_localizations = {
 			.."["..CKWord("Крит. урон", "Krt_uron_rgb_ru").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").."]\n"
 			.."\n"
 			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, загонщик, капитаны/близнецы, крушитель.",
-		["zh-tw"] = CKWord("暴擊打擊", "Crit_strike_rgb_tw").."會立即擊殺人類體型敵人，\n"
-			.."前提是敵人目前"..CKWord("生命", "Health_rgb_tw").."低於該次"..CKWord("暴擊打擊", "Crit_strike_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
+		["zh-tw"] = CKWord("致命一擊", "Crit_strike_rgb_tw").."會立即擊殺人類體型敵人，\n"
+			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strike_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
 			.."\n"
-			..Dot_nc.." ["..CKWord("暴擊傷害", "Crit_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命", "Health_rgb_tw").."]\n"
+			..Dot_nc.." ["..CKWord("暴擊傷害", "Crit_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
 			.."\n"
 			..Dot_nc.." 不視為「人類體型」的敵人：\n"
 			.."   "..Dot_nc.." 納垢巨獸、堡壘、隊長/雙子、\n"
-			.."   "..Dot_nc.." 混沌魔物、碾壓者、惡魔宿主、\n"
+			.."   "..Dot_nc.." 混沌魔物、粉碎者、惡魔宿主、\n"
 			.."   "..Dot_nc.." 獸群領主、瘟疫歐格林、收割者。",
 	},
 	--[+ Passive 28 - The Sweet Spot +]--	26.03.2026
@@ -1549,7 +1549,7 @@ local scum_localizations = {
 			.."固定"..CKWord("傷害", "Damage_rgb_tw").."等於：\n"
 			..Dot_green.." 你過量"..CKWord("傷害", "Damage_rgb_tw").."的 {percentage:%s}。\n"
 			.."\n"
-			..Dot_nc.." [過量"..CKWord("傷害", "Damage_rgb_tw").."] "..CNumb("=", "n_equal_rgb").." [造成的"..CKWord("傷害", "Damage_rgb_tw").."] "..CNumb("-", "n_minus_rgb").." [敵人剩餘"..CKWord("生命", "Health_rgb_tw").."]。\n"
+			..Dot_nc.." [過量"..CKWord("傷害", "Damage_rgb_tw").."] "..CNumb("=", "n_equal_rgb").." [造成的"..CKWord("傷害", "Damage_rgb_tw").."] "..CNumb("-", "n_minus_rgb").." [敵人剩餘"..CKWord("生命值", "Health_rgb_tw").."]。\n"
 			.."\n"
 			..Dot_nc.." 只有新的過量"..CKWord("傷害", "Damage_rgb_tw").."高於前一次時，\n"
 			.."   才會刷新增益持續時間。",
@@ -1577,7 +1577,7 @@ local scum_localizations = {
 			..Dot_green.." {multiplier:%s} "..CKWord("Cleave", "Cleave_rgb").." for your next Melee Attack.",
 		ru = "Попадание по {min_targets:%s} или более врагам атакой ближнего боя даёт:\n"
 			..Dot_green.." {multiplier:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов для следующей атаки ближнего боя.",
-		["zh-tw"] = "單次近戰攻擊命中 {min_targets:%s} 個以上敵人時，\n"
+		["zh-tw"] = "單次近戰攻擊命中 {min_targets:%s} 名以上敵人時，\n"
 			.."獲得：\n"
 			..Dot_green.." 下次近戰攻擊 {multiplier:%s} "..CKWord("順劈攻擊", "Cleave_rgb_tw").."。",
 	},
@@ -1585,7 +1585,7 @@ local scum_localizations = {
 	["loc_talent_broker_passive_increased_blitz_ammo_desc"] = { -- ammo: +1, +colors
 		en = Dot_green.." {ammo:%s} Blitz Charge.",
 		ru = Dot_green.." {ammo:%s} заряд блица.",
-		["zh-tw"] = Dot_green.." {ammo:%s} 閃擊技能充能。",
+		["zh-tw"] = Dot_green.." {ammo:%s} 閃擊充能。",
 	},
 	--[+ Passive 34 - Pocket Toxin +]--	26.03.2026
 	["loc_talent_broker_passive_blitz_inflicts_toxin_desc_02"] = { -- blinder_stacks: 3, missile_launcher_stacks: 6, chem_grenade_stacks: 10, +colors
@@ -1597,18 +1597,18 @@ local scum_localizations = {
 			..Dot_green.." {blinder:%s}: {blinder_stacks:%s} заряда всем целям в радиусе "..CNumb("3.5", "n_3_5_rgb").." метров.\n"
 			..Dot_green.." {missile_launcher:%s}: {missile_launcher_stacks:%s} зарядов всем целям в радиусе "..CNumb("7", "n_7_rgb").." метров.\n"
 			..Dot_green.." {chem_grenade:%s}: {chem_grenade_stacks:%s} зарядов всем целям в радиусе "..CNumb("4", "n_4_rgb").." метров.",
-		["zh-tw"] = "閃擊技能爆炸會依你選擇的閃擊技能，\n"
+		["zh-tw"] = "閃擊爆炸會依你選擇的閃擊，\n"
 			.."以不同方式使敵人感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."層數：\n"
-			..Dot_green.." {blinder:%s}：對 "..CNumb("3.5", "n_3_5_rgb").." 米半徑內所有目標施加 {blinder_stacks:%s} 層。\n"
-			..Dot_green.." {missile_launcher:%s}：對 "..CNumb("7", "n_7_rgb").." 米半徑內所有目標施加 {missile_launcher_stacks:%s} 層。\n"
-			..Dot_green.." {chem_grenade:%s}：對 "..CNumb("4", "n_4_rgb").." 米半徑內所有目標施加 {chem_grenade_stacks:%s} 層。",
+			..Dot_green.." {blinder:%s}：對 "..CNumb("3.5", "n_3_5_rgb").." 公尺半徑內所有目標施加 {blinder_stacks:%s} 層。\n"
+			..Dot_green.." {missile_launcher:%s}：對 "..CNumb("7", "n_7_rgb").." 公尺半徑內所有目標施加 {missile_launcher_stacks:%s} 層。\n"
+			..Dot_green.." {chem_grenade:%s}：對 "..CNumb("4", "n_4_rgb").." 公尺半徑內所有目標施加 {chem_grenade_stacks:%s} 層。",
 	},
 	--[+ Passive 35 - Splash Damage +]--	26.03.2026
 	["loc_talent_broker_passive_toxin_spread_on_kills_desc_02"] = { -- max_targets: 10, radius: 4, toxin_stacks: 2, +colors
 		en = "Killing an Elite Enemy with a Melee Attack infects up to {max_targets:%s} enemies within {radius:%s} meters of the target with {toxin_stacks:%s} Stacks of "..CKWord("Chem Toxin", "Chem_Tox_rgb")..".",
 		ru = "Убийсто элитного врага атакой ближнего боя заражает до {max_targets:%s} врагов в радиусе {radius:%s} метров от цели {toxin_stacks:%s} зарядами "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru")..".",
 		["zh-tw"] = "以近戰攻擊擊殺精英敵人時，\n"
-			.."使目標 {radius:%s} 米內最多 {max_targets:%s} 名敵人\n"
+			.."使目標 {radius:%s} 公尺內最多 {max_targets:%s} 名敵人\n"
 			.."感染 {toxin_stacks:%s} 層"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。",
 	},
 	--[+ Passive 36 - Toxic Renewal +]--	26.03.2026
@@ -1621,7 +1621,7 @@ local scum_localizations = {
 			..Dot_green.." {toughness_amount:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.\n"
 			.."\n"
 			..Dot_nc.." Вплоть до {max_enemies:%s}"..CNumb("%", "pc_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.",
-		["zh-tw"] = "{range:%s} 米內每有一名感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人，\n"
+		["zh-tw"] = "{range:%s} 公尺內每有一名感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人，\n"
 			.."你會恢復：\n"
 			..Dot_green.." 每秒 {toughness_amount:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
@@ -1637,7 +1637,7 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Суммируется "..CNumb("3", "n_3_rgb").." раза.\n"
 			..Dot_nc.." До {damage_max:%s} к "..CKWord("урону", "uronu_rgb_ru")..".",
-		["zh-tw"] = Dot_green.." "..CNumb("12.5", "n_12_5_rgb").." 米內每有一名感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人，\n"
+		["zh-tw"] = Dot_green.." "..CNumb("12.5", "n_12_5_rgb").." 公尺內每有一名感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人，\n"
 			.."獲得 {damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 可疊加 "..CNumb("3", "n_3_rgb").." 次。\n"
@@ -1660,7 +1660,7 @@ local scum_localizations = {
 		ru = "Каждый {critical_chance:%s} вашего текущего "..CKWord("шанса критического удара", "sha_krit_udara_rgb_ru").." даёт заряд {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
 			..Dot_nc.." Вплоть до {max_melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.",
-		["zh-tw"] = "你目前每有 {critical_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n"
+		["zh-tw"] = "你目前每有 {critical_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n"
 			.."就獲得一層 {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 可疊加 {max_stacks:%s} 次。\n"
 			..Dot_nc.." 最高 {max_melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。",
