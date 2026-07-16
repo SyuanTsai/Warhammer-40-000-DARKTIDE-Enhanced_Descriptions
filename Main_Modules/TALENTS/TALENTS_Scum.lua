@@ -1672,8 +1672,8 @@ local scum_localizations = {
 		ru = "Когда вы заражаете врагов "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." они получают на {duration:%s} секунд:\n"
 			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru").." из любых источников.",
 		["zh-tw"] = "當你使敵人感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."時，\n"
-			.."敵人獲得 {duration:%s} 秒：\n"
-			..Dot_green.." 來自所有來源的承受"..CKWord("傷害", "Damage_rgb_tw").." {damage_taken:%s}。",
+			.."敵人會獲得 {duration:%s} 秒：\n"
+			..Dot_green.." 受到所有來源的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_taken:%s}。",
 	},
 	--[+ Passive 41 - Targeted Toxin +]--	26.03.2026
 	["loc_talent_broker_passive_reduced_damage_by_toxined_desc"] = { -- default: -15%, monster: -30%, +colors
@@ -1687,7 +1687,7 @@ local scum_localizations = {
 			.."\n"
 			.."Чудовища наносят:\n"
 			..Dot_green.." {monster:%s} "..CKWord("урона", "urona_rgb_ru")..".",
-		["zh-tw"] = "你感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人造成：\n"
+		["zh-tw"] = "被你感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的敵人造成：\n"
 			..Dot_green.." {default:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			.."巨獸造成：\n"
@@ -1710,7 +1710,7 @@ local scum_localizations = {
 			..CPhrs("Dont_intw_coher_toughn").."\n",
 			ru = Dot_green.." {toughness_replenish_modifier:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." от убийств в ближнем бою, талантов и благословений оружия.\n"
 			..CPhrs("Dont_intw_coher_toughn").."\n",
-			["zh-tw"] = Dot_green.." 近戰擊殺、天賦與部分武器祝福造成的"..CKWord("韌性", "Toughness_rgb_tw").."恢復 {toughness_replenish_modifier:%s}。\n"
+			["zh-tw"] = Dot_green.." 近戰擊殺、天賦與部分武器祝福造成的"..CKWord("韌性", "Toughness_rgb_tw").."恢復量 {toughness_replenish_modifier:%s}。\n"
 			..CPhrs("Dont_intw_coher_toughn").."\n",
 		},
 		["loc_talent_stat_damage_taken_multiplier"] = { -- damage_taken_multiplier: -4%, +colors
@@ -1734,7 +1734,7 @@ local scum_localizations = {
 			ru = Dot_green.." {power_level:%s} к "..CKWord("силе", "sile_rgb_ru").." атак ближнего боя, дальнобойных атак, эффектов урона со временем и взрывов.\n"
 				..CNote("Pwr_note")
 				.."\n",
-			["zh-tw"] = Dot_green.." 近戰與遠程攻擊、持續傷害、爆炸的"..CKWord("威力", "Strength_rgb_tw").." {power_level:%s}。\n"
+			["zh-tw"] = Dot_green.." 近戰攻擊、遠程攻擊、持續傷害與爆炸的"..CKWord("威力", "Strength_rgb_tw").." {power_level:%s}。\n"
 				..CNote("Pwr_note")
 				.."\n",
 		},
@@ -1757,7 +1757,7 @@ local scum_localizations = {
 		["loc_talent_stat_critical_strike_chance"] = { -- critical_strike_chance: +5%, +colors
 			en = Dot_green.." {critical_strike_chance:%s} "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".\n",
 			ru = Dot_green.." {critical_strike_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".",
-			["zh-tw"] = Dot_green.." {critical_strike_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n",
+			["zh-tw"] = Dot_green.." {critical_strike_chance:%s} "..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n",
 		},
 	--[+ Spur I-V +]--
 		["loc_talent_stat_attack_speed"] = { -- attack_speed: +4%, +colors
@@ -1776,7 +1776,7 @@ local scum_localizations = {
 				..Dot_nc.." Этот талант сокращает время затрачиваемое на смену слотов предметов (оружие, гранаты, стимуляторы, медпаки, ящики с боеприпасами, книги и т.д.)."
 			.."\n",
 			["zh-tw"] = Dot_green.." {wield_speed:%s} 切換速度。\n"
-				..Dot_nc.." 這會縮短切換物品欄位時，裝備動作所需的時間（武器、手雷、興奮劑、醫療包、彈藥箱、書籍等）。"
+				..Dot_nc.." 這會縮短切換物品欄位時，取出動作所需的時間（武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。"
 			.."\n",
 		},
 		["loc_talent_stat_stamina_cost_multiplier"] = { -- stamina_cost_multiplier: -15%, +colors
