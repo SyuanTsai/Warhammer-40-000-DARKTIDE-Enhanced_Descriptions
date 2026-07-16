@@ -554,12 +554,17 @@ local scum_localizations = {
 			.."Этот "..CKWord("Крик", "Shout_rgb_ru").." повторяется после окончания действия способности {punk_rage:%s}\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_eff"),
-		["zh-tw"] = "啟用 {punk_rage:%s} 時釋放一次大吼，半徑 4.5 米，持續 {duration:%s} 秒。\n"
-			.."大吼對命中敵人施加減益：\n"
+		["zh-tw"] = "強化 {punk_rage:%s}，使其在啟用時釋放一次怒吼。\n"
+			..Dot_nc.." 半徑： "..CNumb("4.5", "n_4_5_rgb").." 公尺。\n"
+			..Dot_nc.." 持續：{duration:%s} 秒。\n"
+			.."\n"
+			.."這次怒吼會對命中的所有敵人施加減益：\n"
 			..Dot_green.." {attack_speed_reduction:%s} 攻擊間隔時間。\n"
-			..Dot_green.." "..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			.."{punk_rage:%s} 結束時再重複一次。\n"
-			..Dot_red.." 不與其他"..CKWord("巢都敗類", "cls_scm_rgb_tw").." 的相同效果疊加。",
+			..Dot_green.." 造成"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
+			.."\n"
+			.."這次怒吼會在 {punk_rage:%s} 結束時再次釋放。\n"
+			.."\n"
+			..CPhrs("Doesnt_Stack_Scm_eff"),
 	},
 	--[+ ABILITY 2-4 - Pulverising Strikes +]--	26.03.2026
 	["loc_talent_broker_ability_punk_rage_sub_2_desc"] = { -- punk_rage: Rampage!, cleave: +50%, melee_power: +2.5%, max_stacks: 10, s->seconds, +colors
@@ -580,8 +585,10 @@ local scum_localizations = {
 		["zh-tw"] = "{punk_rage:%s} 啟用期間：\n"
 			..Dot_green.." {cleave:%s} "..CKWord("順劈攻擊", "Cleave_rgb_tw").."。\n"
 			.."\n"
-			.."每秒增加一層，最多 {max_stacks:%s} 層。每層獲得：\n"
-			..Dot_green.." {melee_power:%s} 近戰"..CKWord("威力", "Strength_rgb_tw").."，最多 +25%。",
+			.."{punk_rage:%s} 啟用期間每秒獲得層數，最多 {max_stacks:%s} 層。\n"
+			.."\n"
+			.."每層獲得：\n"
+			..Dot_green.." {melee_power:%s} 近戰"..CKWord("威力", "Strength_rgb_tw").."，最多 "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").."。",
 	},
 	--[+ ABILITY 3 - Stimm Supply +]--	26.03.2026
 	["loc_talent_broker_ability_stimm_field_desc_3"] = { -- duration: 20, total_corruption_heal: 40, stimm_field: Stimm Supply, cooldown: 60, s->seconds, +colors
@@ -609,13 +616,15 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Базовое время восстановления: {cooldown:%s} секунд.\n"
 			..Dot_red.." Пока {stimm_field:%s} активен, время восстановления останавливается и не может быть уменьшен.",
-		["zh-tw"] = "在地面放置改裝醫包，加強你和盟友 {duration:%s} 秒。半徑 3 米。\n"
+		["zh-tw"] = "在地面部署改裝醫療包，強化你與盟友 {duration:%s} 秒。\n"
 			.."\n"
-			.."吸入氣體的成員治癒"..CKWord("腐敗", "Corruption_rgb_tw").." 並獲得免疫。\n"
-			..Dot_green.." 每 0.25 秒移除 0.5 "..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，最多 {total_corruption_heal:%s}。\n"
-			..Dot_green.." 治癒"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").." 至下一個"..CKWord("生命", "Health_rgb_tw").." 段。\n"
+			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。\n"
 			.."\n"
-			.."若裝備了興奮劑，{stimm_field:%s} 會複製其內容並散布到空氣中，賦予附近盟友效果。\n"
+			.."吸入醫療包氣體的特工會隨時間治療"..CKWord("腐敗", "Corruption_rgb_tw").."，並免疫腐敗。\n"
+			..Dot_green.." 對範圍內所有盟友每 "..CNumb("0.25", "n_0_25_rgb").." 秒移除 "..CNumb("0.5", "n_0_5_rgb").." "..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，最多 {total_corruption_heal:%s}。\n"
+			..Dot_green.." 治療"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，直到下一個"..CKWord("生命值", "Health_rgb_tw").."區段。\n"
+			.."\n"
+			.."此外，如果你裝備了興奮劑，{stimm_field:%s} 會複製其內容並散布到空氣中，將效果賦予附近盟友。\n"
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			..Dot_red.." {stimm_field:%s} 啟用期間暫停冷卻且不可縮短。",
@@ -638,13 +647,13 @@ local scum_localizations = {
 			.."Активация заблокирована при:\n"
 			..Dot_red.." Активном {stimm_field:%s}.\n"
 			..Dot_red.." Замене экипированного стима на другой.",
-		["zh-tw"] = "以下情況重置 {stimm_field:%s} 冷卻：\n"
+		["zh-tw"] = "當你符合以下條件時，重置 {stimm_field:%s} 的冷卻：\n"
 			..Dot_green.." 拾取興奮劑，\n"
-			..Dot_green.." 從盟友接受興奮劑，\n"
-			..Dot_green.." 卡特爾特殊興奮劑冷卻結束。\n"
+			..Dot_green.." 從盟友獲得興奮劑，\n"
+			..Dot_green.." "..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").."結束冷卻。\n"
 			.."\n"
-			.."啟用被阻止情況：\n"
-			..Dot_red.." {stimm_field:%s} 啟用期間。\n"
+			.."以下情況會阻止觸發：\n"
+			..Dot_red.." {stimm_field:%s} 作用中。\n"
 			..Dot_red.." 替換已裝備的興奮劑。",
 	},
 	--[+ ABILITY 3-2 - Booby Trap +]--	26.03.2026
@@ -659,8 +668,9 @@ local scum_localizations = {
 			..Dot_nc.." Радиус: "..CNumb("3", "n_3_rgb").." метра.\n"
 			.."\n"
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru")..": "..CNumb("200", "n_200_rgb")..".",
-		["zh-tw"] = "{stimm_field:%s} 持續時間結束時爆炸，對附近敵人施加 {stacks:%s} 層"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
-			..Dot_nc.." 半徑 3 米。\n"
+		["zh-tw"] = "{stimm_field:%s} 持續時間結束時會爆炸，使附近敵人感染 {stacks:%s} 層"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
+			.."\n"
+			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。\n"
 			.."\n"
 			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."： "..CNumb("200", "n_200_rgb").."。",
 	},
@@ -672,9 +682,9 @@ local scum_localizations = {
 		ru = Dot_red.." Длительность способности {stimm_field:%s} сокращается с "..CNumb("20", "n_20_rgb").." до {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_green.." Но его эффекты сохраняются {linger_duration:%s} секунд после выхода из области.",
-		["zh-tw"] = Dot_red.." {stimm_field:%s} 持續時間從 20 秒縮短至 {duration:%s} 秒。\n"
+		["zh-tw"] = Dot_red.." {stimm_field:%s} 持續時間從 "..CNumb("20", "n_20_rgb").." 秒縮短至 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_green.." 髖區後 {linger_duration:%s} 秒內持續生效。",
+			..Dot_green.." 離開區域後，殘留效果會持續 {linger_duration:%s} 秒。",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ KEYSTONE 0-1 - Alley Rat +]--	26.03.2026
@@ -723,16 +733,18 @@ local scum_localizations = {
 			.."\n"
 			.." При максимальных зарядах, убийства элитных врагов и специалистов оружием дальнего боя восстанавливают вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru")..":\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- Метка стервятника
-		["zh-tw"] = "遠程武器擊殺特殊或精英敵人獲得一層"..CKWord("禿鷹標記", "VultsMark_rgb_tw").."。\n"
-			..Dot_nc.." 持續 {duration:%s} 秒。最多 {max_stacks:%s} 層。\n"
+		["zh-tw"] = "以遠程武器擊殺專家或精英敵人時，獲得一層"..CKWord("禿鷹標記", "VultsMark_rgb_tw").."。\n"
+			.."\n"
+			..Dot_nc.." 持續 {duration:%s} 秒。\n"
+			..Dot_nc.." 可疊加 {max_stacks:%s} 次。\n"
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
 			.."每層獲得：\n"
 			..Dot_green.." {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." {movement_speed:%s} 移動速度，\n"
-			..Dot_green.." {crit_chance:%s} 遠程"..CKWord("暴擊機率", "Crt_hit_chnc_rgb_tw").."。\n"
+			..Dot_green.." {movement_speed:%s} 移動速度，且\n"
+			..Dot_green.." {crit_chance:%s} 遠程"..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n"
 			.."\n"
-			.."滿層時，遠程擊殺特殊或精英敵人恢復你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友：\n"
+			.."滿層時，遠程擊殺專家或精英敵人會為你與處於"..CKWord("協同", "Coherency_rgb_tw").."的盟友恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 1-1 - Vulture's Push +]--	26.03.2026
@@ -743,7 +755,9 @@ local scum_localizations = {
 		ru = "Убийство элитных врагов или специалистов атаками дальнего боя создаёт не наносящий "..CKWord("урон", "uron_rgb_ru").." взрыв, который почти не "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." врагов вокруг вас.\n"
 			.."\n"
 			..Dot_nc.." Радиус "..CNumb("3", "n_3_rgb").." метров.",
-		["zh-tw"] = "遠程擊殺精英或專家時，在你所在位置中心 3 米內造成不造成傷害的爆炸，"..CKWord("踉蹌", "Staggers_rgb_tw").." 附近敵人。",
+		["zh-tw"] = "以遠程攻擊擊殺精英或專家敵人時，在你的位置產生不造成傷害的爆炸，幾乎不會使任何東西"..CKWord("踉蹌", "Staggers_rgb_tw").."。\n"
+			.."\n"
+			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。",
 	},
 	--[+ KEYSTONE 1-2 - Vulture's Dodge +]--	26.03.2026
 	["loc_talent_broker_keystone_vultures_mark_dodge_on_ranged_crit_desc"] = { -- duration: 1, s->second, +colors
@@ -755,7 +769,7 @@ local scum_localizations = {
 			..Dot_green.." Иммунитет ко всем атакам.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "遠程"..CKWord("暴擊打擊", "Crit_strikes_rgb_tw").." 獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "遠程"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."會給予 {duration:%s} 秒：\n"
 			..Dot_green.." 免疫所有攻擊。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -764,7 +778,7 @@ local scum_localizations = {
 	["loc_talent_broker_keystone_vultures_mark_increased_duration_desc"] = { -- duration: 12, s->seconds, +colors
 		en = Dot_green.." Increases duration of "..CKWord("Vulture's Mark", "VultsMark_rgb").." from "..CNumb("8", "n_8_rgb").." to {duration:%s} seconds.",
 		ru = Dot_green.." Увеличена длительность "..CKWord("Метки стервятника", "VultsMark_rgb_ru").." с "..CNumb("8", "n_8_rgb").." до {duration:%s} секунд.",
-		["zh-tw"] = Dot_green.." "..CKWord("禿鷹標記", "VultsMark_rgb_tw").." 持續時間從 8 秒增加至 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." "..CKWord("禿鷹標記", "VultsMark_rgb_tw").." 持續時間從 "..CNumb("8", "n_8_rgb").." 秒增加至 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 2 - Adrenaline Frenzy +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_desc"] = { -- adrenaline: Adrenaline, on_crit: +1, duration: 2, max_stacks: 30, frenzy: Adrenaline Frenzy, melee_damage: +25%, attack_speed: +10%, frenzy_duration: 10, s->seconds, +colors
@@ -797,13 +811,19 @@ local scum_localizations = {
 			.."{frenzy:%s} даёт:\n"
 			..Dot_green.." {melee_damage:%s} "..CKWord("урона", "uronu_rgb_ru").." в ближнем бою и\n"
 			..Dot_green.." {attack_speed:%s} к скорости атаки.", -- Адреналиновое безумие
-		["zh-tw"] = "近戰命中獲得"..CKWord("腎上腺素", "Adren_rgb_tw").." 層數。最多 {max_stacks:%s} 層，持續 {duration:%s} 秒，逐一衰減。\n"
+		["zh-tw"] = "近戰命中會使你獲得"..CKWord("腎上腺素", "Adren_rgb_tw").."層數。\n"
 			.."\n"
-			..CKWord("暴擊", "Critical_rgb_tw").." 近戰命中額外 +{on_crit:%s} 層。\n"
+			..Dot_nc.." 可疊加 {max_stacks:%s} 次。\n"
+			..Dot_nc.." 層數持續 {duration:%s} 秒，並逐層掉落。\n"
+			..CPhrs("Can_proc_mult")
 			.."\n"
-			.."滿層時，消耗所有"..CKWord("腎上腺素", "Adren_rgb_tw").." 層數，獲得 {frenzy:%s} {frenzy_duration:%s} 秒。\n"
-			.."{frenzy:%s} 提供：\n"
-			..Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").." 和\n"
+			..CKWord("致命", "Critical_rgb_tw").."近戰命中會給予：\n"
+			..Dot_green.." 額外 {on_crit:%s} 層。\n"
+			.."\n"
+			.."滿層時，移除所有"..CKWord("腎上腺素", "Adren_rgb_tw").."層數，並獲得 {frenzy:%s} {frenzy_duration:%s} 秒。\n"
+			.."\n"
+			.."{frenzy:%s} 給予：\n"
+			..Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."，且\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度。",
 	},
 	--[+ KEYSTONE 2-1 - Adrenaline Assassin +]--	26.03.2026
@@ -820,9 +840,12 @@ local scum_localizations = {
 			..Dot_red.." Обычные попадания в ближнем бою не дают зарядов.\n"
 			.."\n"
 			..Dot_green.." Попадания в ближнем бою не по "..CKWord("уязвимым местам", "ujazvimym_mestam_rgb_ru")..", но "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..", всё ещё дают {stacks:%s} заряда.",
-		["zh-tw"] = CKWord("弱點", "Weakspot_rgb_tw").." 命中現在給予 {stacks:%s} 額外"..CKWord("腎上腺素", "Adren_rgb_tw").." 層，從 1 增至 3 層。\n"
-			..Dot_red.." 普通近戰命中不給予。\n"
-			..Dot_green.." 非弱點卻暴擊的近戰命中，仍給予 {stacks:%s} 層。",
+		["zh-tw"] = CKWord("弱點命中", "Weakspothits_rgb_tw").."現在給予：\n"
+			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("3", "n_3_rgb").." 層。\n"
+			.."\n"
+			..Dot_red.." 一般近戰命中不再給予層數。\n"
+			.."\n"
+			..Dot_green.." 非"..CKWord("弱點", "Weakspot_rgb_tw").."但屬於"..CKWord("致命", "Critical_rgb_tw").."的近戰命中，仍會產生 {stacks:%s} 層。",
 	},
 	--[+ KEYSTONE 2-2 - Adrenaline Smiter +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_2_desc"] = { -- stacks: +4, adrenaline: Adrenaline, elite_stacks: +10, +colors
@@ -847,10 +870,17 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." дополнительный заряд, в дополнение к другим зарядам "..CKWord("Адреналина", "Adren_rgb_ru").." за каждого убитого врага.\n"
 			.."\n"
 			..Dot_red.." Не смертельные удары не дают ничего.",
-		["zh-tw"] = "譴殺現在給予 {stacks:%s} 額外"..CKWord("腎上腺素", "Adren_rgb_tw").." 層，從 1 增至 5 層。\n"
-			.."譴殺精英額外 +14 層，增至 15 層。\n"
-			..CKWord("暴擊", "Critical_rgb_tw").." 譴殺額外 +1 層/敵人。\n"
-			..Dot_red.." 非譴殺不給予層數。",
+		["zh-tw"] = "擊殺打擊現在給予：\n"
+			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("5", "n_5_rgb").." 層。\n"
+			.."\n"
+			.."精英擊殺打擊給予：\n"
+			..Dot_green.." 額外 "..CNumb("+", "n_plus_rgb")..CNumb("14", "n_14_rgb").." 層。\n"
+			.."提高至 "..CNumb("15", "n_15_rgb").." 層。\n"
+			.."\n"
+			.."如果攻擊是"..CKWord("致命", "Critical_rgb_tw").."，每擊殺一名敵人額外產生：\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。\n"
+			.."\n"
+			..Dot_red.." 非擊殺打擊不給予層數。",
 	},
 	--[+ KEYSTONE 2-3 - Stoked Rage +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_3_desc"] = { -- frenzy: Adrenaline Frenzy, duration: 20, +colors
