@@ -886,7 +886,7 @@ local scum_localizations = {
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_3_desc"] = { -- frenzy: Adrenaline Frenzy, duration: 20, +colors
 		en = Dot_green.." Increases duration of {frenzy:%s} from "..CNumb("10", "n_10_rgb").." to {duration:%s} seconds.",
 		ru = Dot_green.." Увеличена длительность таланта {frenzy:%s} с "..CNumb("10", "n_10_rgb").." до {duration:%s} секунд.",
-		["zh-tw"] = Dot_green.." {frenzy:%s} 持續時間從 10 秒增加至 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." {frenzy:%s} 持續時間從 "..CNumb("10", "n_10_rgb").." 秒增加至 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 2-4 - Adrenaline Unbound +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_5_desc"] = { -- frenzy: Adrenaline Frenzy, toughness: 5%, +colors
@@ -894,13 +894,14 @@ local scum_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." per second.",
 		ru = "Пока активен {frenzy:%s}, вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду.",
-		["zh-tw"] = "{frenzy:%s} 啟用期間，{toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." /秒恢復。",
+		["zh-tw"] = "{frenzy:%s} 啟用期間，你會恢復：\n"
+			..Dot_green.." 每秒 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 2-5 - Uncontrolled Aggression +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_4_desc"] = { -- adrenaline: Adrenaline, duration: 4, +colors
 		en = Dot_green.." Increases duration of "..CKWord("Adrenaline", "Adren_rgb").." from "..CNumb("2", "n_2_rgb").." to {duration:%s} seconds.",
 		ru = Dot_green.." Увеличена длительность "..CKWord("Адреналина", "Adren_rgb_ru").." с "..CNumb("2", "n_2_rgb").." до {duration:%s} секунд.",
-		["zh-tw"] = Dot_green.." "..CKWord("腎上腺素", "Adren_rgb_tw").." 持續時間從 2 秒增加至 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." "..CKWord("腎上腺素", "Adren_rgb_tw").." 持續時間從 "..CNumb("2", "n_2_rgb").." 秒增加至 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 3 - Chemical Dependency +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_desc"] = { -- dependency: Dependency, duration: 90, : +10%, : 3, +colors
@@ -918,17 +919,19 @@ local scum_localizations = {
 			.."\n"
 			.."За каждый заряд вы получаете:\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{cooldown_reduction:%s} от времени "..CKWord("восстановления способности", "vost_sposobnosti_rgb_ru")..".", -- Зависимость от химии - Химическая зависимость
-		["zh-tw"] = "使用興奮劑獲得 {dependency:%s} 層，持續 {duration:%s} 秒。最多 {max_stacks:%s} 層。\n"
+		["zh-tw"] = "使用興奮劑會使你獲得一層 {dependency:%s}，持續 {duration:%s} 秒。\n"
+			.."\n"
+			..Dot_nc.." 可疊加 {max_stacks:%s} 次。\n"
 			..CPhrs("Can_be_refr_drop_1").."\n"
 			.."\n"
 			.."每層獲得：\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {cooldown_reduction:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").." 減少。",
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{cooldown_reduction:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."縮減。",
 	},
 	--[+ KEYSTONE 3-1 - Chem Enhanced +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_1_desc"] = { -- dependency: Dependency, critical_chance: +5%, +colors
 		en = Dot_green.." {critical_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." per Stack of {dependency:%s}.",
 		ru = Dot_green.." {critical_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." за каждый заряд "..CKWord("Зависимости", "Depend_rgb_ru")..".",
-		["zh-tw"] = Dot_green.." 每層 {dependency:%s} {critical_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 每層 {dependency:%s} 提供 {critical_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-2 - Chem Fortified +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_2_desc"] = { -- toughness: 50%, toughness: +5%, dependency: Dependency, +colors
@@ -943,7 +946,7 @@ local scum_localizations = {
 		["zh-tw"] = "使用興奮劑恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 每層 {dependency:%s} {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Maxed Out Chems +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_3_desc"] = { -- : , +colors
@@ -953,9 +956,9 @@ local scum_localizations = {
 		ru = Dot_red.." Длительность зарядов "..CKWord("Зависимости", "Depend_rgb_ru").." уменьшена с "..CNumb("90", "n_90_rgb").." до {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_green.." Максимальное количество зарядов увеличено с "..CNumb("3", "n_3_rgb").." до {max_stacks:%s}.",
-		["zh-tw"] = Dot_red.." {dependency:%s} 層數持續時間從 90 秒減短至 {duration:%s} 秒。\n"
+		["zh-tw"] = Dot_red.." {dependency:%s} 層數持續時間從 "..CNumb("90", "n_90_rgb").." 秒縮短至 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_green.." 最大層數從 3 增加至 {max_stacks:%s}。",
+			..Dot_green.." 最大層數從 "..CNumb("3", "n_3_rgb").." 增加至 {max_stacks:%s}。",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ Passive 1 - Voice of Tertium +]--	26.03.2026
@@ -974,7 +977,7 @@ local scum_localizations = {
 			..Dot_green.." {toughness_elites:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_proc_mult_str"),
-		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 米內以遠程擊殺時，恢復：\n"
+		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			.."精英與專家敵人改為恢復：\n"
@@ -1011,7 +1014,7 @@ local scum_localizations = {
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
 		["zh-tw"] = "成功閃避後，獲得 {duration:%s} 秒：\n"
-			..Dot_green.." 對 "..CNumb("12.5", "n_12_5_rgb").." 米內目標造成 {damage_near:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+			..Dot_green.." 對 "..CNumb("12.5", "n_12_5_rgb").." 公尺內目標造成 {damage_near:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."_______________________________\n"
 			.."距離 ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
@@ -1048,11 +1051,11 @@ local scum_localizations = {
 		["zh-tw"] = "近戰命中恢復：\n"
 			..Dot_green.." {default:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			.."近戰"..CKWord("暴擊打擊", "Crit_strikes_rgb_tw")
+			.."近戰"..CKWord("致命一擊", "Crit_strikes_rgb_tw")
 			.."與"..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {weakspot:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("暴擊", "Critical_rgb_tw").." "
+			..CKWord("致命", "Critical_rgb_tw").." "
 			..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {critical:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
@@ -1067,9 +1070,9 @@ local scum_localizations = {
 		ru = Dot_green.." {damage_near:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." по целям в пределах {range_near:%s} метров.\n"
 			.."\n"
 			..Dot_nc.." Уменьшается до {damage_far:%s} к "..CKWord("урону", "uronu_rgb_ru").." на дистанции от {range_far:%s} метров и далее.", -- В харю
-		["zh-tw"] = Dot_green.." 對 {range_near:%s} 米內目標造成 {damage_near:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 對 {range_near:%s} 公尺內目標造成 {damage_near:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 逐漸降低，至 {range_far:%s} 米及更遠時，"
+			..Dot_nc.." 逐漸降低，至 {range_far:%s} 公尺及更遠時，"
 			.."最低為 {damage_far:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
 	--[+ Passive 5 - Calling for a Time Out +]--	26.03.2026
@@ -1080,7 +1083,7 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
 		["zh-tw"] = "裝填期間與裝填完成後 {duration:%s} 秒，獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} "
-			..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 6 - Burst of Energy +]--	26.03.2026
 	["loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc"] = { -- duration: 6, toughness: +50%, cooldown: 10, +colors
@@ -1130,7 +1133,7 @@ local scum_localizations = {
 			.."雙持自動手槍與雙持短管手槍。\n"
 			.."\n"
 			..Dot_nc.." 切換速度會縮短切換物品欄位時的取出動作\n"
-			.."   （武器、手雷、興奮劑、醫療包、彈藥箱、書籍等）。",
+			.."   （武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。",
 	},
 	--[+ Passive 8 - A Tertium Welcome +]--	26.03.2026
 	["loc_talent_broker_passive_first_target_damage_desc"] = { -- damage: +15%, +colors
