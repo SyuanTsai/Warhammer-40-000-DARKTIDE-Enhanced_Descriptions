@@ -1152,7 +1152,7 @@ local scum_localizations = {
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 米內以遠程擊殺時，獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，獲得 {duration:%s} 秒：\n"
 			..Dot_green.." {reload_speed:%s} 裝填速度。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1180,7 +1180,7 @@ local scum_localizations = {
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
 		["zh-tw"] = "完美格擋與成功閃避會獲得 {duration:%s} 秒：\n"
-			..Dot_green.." {critical_strike_chance:%s} "..CKWord("暴擊打擊機率", "Crt_chnc_r_rgb_tw").."。\n"
+			..Dot_green.." {critical_strike_chance:%s} "..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
@@ -1327,7 +1327,7 @@ local scum_localizations = {
 			..CKWord("戰鬥興奮劑", "Combat_Stimm_rgb_tw").."、"
 			..CKWord("專注興奮劑", "Conc_Stimm_rgb_tw").."與"
 			..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw")
-			.."的基礎持續時間 {duration_increase:%s} 秒。\n"
+			.."的基礎持續時間增加 {duration_increase:%s} 秒。\n"
 			..Dot_nc.." 從 "..CNumb("15", "n_15_rgb").." 秒提高至 "..CNumb("20", "n_20_rgb").." 秒。\n"
 			.."\n"
 			..Dot_nc.." 只會提高套用在你身上的興奮劑持續時間。\n"
@@ -1376,7 +1376,7 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." 具有精英或巨獸標籤的品種：納垢巨獸、"
 			.."堡壘、混沌魔物、粉碎者、惡魔宿主、砲手、"
-			.."大槌、群主、瘟疫歐格林、電漿槍手、"
+			.."大槌、獸群領主、瘟疫歐格林、電漿槍手、"
 			.."通訊兵、狂怒者、收割者、霰彈兵。",
 	},
 	--[+ Passive 21 - Hive City Brawler +]--	26.03.2026
@@ -1405,10 +1405,10 @@ local scum_localizations = {
 			..Dot_green.." {power_heavy:%s} к "..CKWord("силе", "sile_rgb_ru").." против средне и сильно "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов.\n"
 			.."\n"
 			..CNote("Pwr_note"),
-		["zh-tw"] = Dot_green.." 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人造成 {power_light:%s} "..CKWord("威力", "Strength_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人獲得 {power_light:%s} "..CKWord("威力", "Strength_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 對中度與重度"..CKWord("踉蹌", "Staggered_rgb_tw")
-			.."敵人造成 {power_heavy:%s} "..CKWord("威力", "Strength_rgb_tw").."。\n"
+			.."敵人獲得 {power_heavy:%s} "..CKWord("威力", "Strength_rgb_tw").."。\n"
 			.."\n"
 			..CNote("Pwr_note"),
 	},
@@ -1428,7 +1428,7 @@ local scum_localizations = {
 			..Dot_nc.." До "..CNumb("+", "n_plus_rgb")..CNumb("50%", "pc_50_rgb").." к "..CKWord("рассечению", "rassecheniu_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_proc_mult"),
-		["zh-tw"] = "近戰擊殺會使每層提供 {duration:%s} 秒：\n"
+		["zh-tw"] = "近戰擊殺會給予層數，持續 {duration:%s} 秒，每層提供：\n"
 			..Dot_green.." {multiplier:%s} 近戰"..CKWord("順劈攻擊", "Cleave_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 可疊加 {max_stacks:%s} 層。\n"
@@ -1444,7 +1444,7 @@ local scum_localizations = {
 		ru = Dot_green.." {stacks:%s} заряд "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru").." накладывается на врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru").." в ближнем бою.\n"
 			.."\n"
 			..CPhrs("Can_appl_thr_shldsb"),
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("暴擊打擊", "Crit_strikes_rgb_tw")
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("致命一擊", "Crit_strikes_rgb_tw")
 			.."會對敵人施加 {stacks:%s} 層"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_appl_thr_shldsb"),
