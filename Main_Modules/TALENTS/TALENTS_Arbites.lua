@@ -2,8 +2,11 @@
 -- ARBITES TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ АРБИТРЕС
 
 local mod = get_mod("Enhanced_descriptions")
+
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
@@ -14,7 +17,7 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF ARBITES TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ АРБИТРЕС
+-- Localization of Arbites talents -- Локализации талантов арбитрес
 local arbites_localizations = {
 --[+ ++ARBITES - АРБИТЕС++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
@@ -317,7 +320,8 @@ local arbites_localizations = {
 		["zh-tw"] = "受影響的隊友還額外獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {revive_speed:%s} 急救速度，\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {attack_speed:%s} 攻擊速度。",	},
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {attack_speed:%s} 攻擊速度。",
+	},
 	--[+ ABILITY 2-2 - Fear of Justice +]--	26.03.2026
 	["loc_talent_adamant_drone_debuff_talent_desc"] = { -- damage_reduction: 25%, attack_speed_reduction: 50%, +colors
 		en = "Affected enemies also gain debuffs to their Melee Attacks:\n"
@@ -328,7 +332,8 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed_reduction:%s} к увеличению времени между атаками.", -- Страх перед Правосудием -- руоф Страх правосудия
 		["zh-tw"] = "受影響的敵人的近戰攻擊還受到以下減益：\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {attack_speed_reduction:%s} 攻擊間隔時間。",	},
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").." {attack_speed_reduction:%s} 攻擊間隔時間。",
+	},
 	--[+ ABILITY 3 - Break the Line +]--	26.03.2026
 	["loc_ability_adamant_charge_blocking_desc"] = { -- damage: +25%, stagger: +50%, duration: 6, cooldown: 20, s->seconds, +colors
 		en = "Charge forward and Bash, causing high "..CKWord("Stagger", "Stagger_rgb").." to enemies in front of you, and gain for {duration:%s} seconds:\n"
@@ -365,7 +370,8 @@ local arbites_localizations = {
 		["zh-tw"] = "每命中一名精英、專家或巨獸，恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 			..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
-			.."上限：{toughness_max:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 與 {stamina_max:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",	},
+			.."上限：{toughness_max:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 與 {stamina_max:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
+	},
 	--[+ ABILITY 3-2 - Targeted Brutality +]--	26.03.2026
 	["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 1, max_cooldown: 5, s->seconds, +colors
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
@@ -1181,7 +1187,7 @@ local arbites_localizations = {
 	},
 }
 
--- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
+-- Creating templates -- Создаём шаблоны
 local arbites_templates = {}
 
 for loc_key, locales in pairs(arbites_localizations) do

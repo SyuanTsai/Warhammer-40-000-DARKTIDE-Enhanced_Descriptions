@@ -3,10 +3,10 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
--- USING CACHED UTILITIES - ИСПОЛЬЗУЕМ КЭШИРОВАННЫЕ УТИЛИТЫ
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
--- IMPORTING ALL NECESSARY FUNCTIONS AND CONSTANTS - ИМПОРТ ВСЕХ НУЖНЫХ ФУНКЦИЙ И КОНСТАНТ
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
