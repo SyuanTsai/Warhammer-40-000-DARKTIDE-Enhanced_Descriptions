@@ -1418,8 +1418,8 @@ local skitarii_localizations = {
 			.."\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			..Dot_nc.." Max one Stack per Attack.",
-			["zh-tw"] = "命中時，獲得以下效果 {duration:%s} 秒：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+			["zh-tw"] = "命中時，在 {duration:%s} 秒內獲得以下效果：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。\n"
 				..Dot_nc.." 每次攻擊最多獲得一層。",
@@ -1446,7 +1446,7 @@ local skitarii_localizations = {
 		en = CKWord("Weakspot", "Weakspot_rgb").." kills grant for {duration:%s} seconds:\n"
 			..Dot_green.." "..CKWord("Stun", "Stun_rgb").." Immunity and\n"
 			..Dot_green.." Suppression Immunity.",
-			["zh-tw"] = CKWord("弱點", "Weakspot_rgb_tw").."擊殺會提供以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "命中"..CKWord("弱點", "Weakspot_rgb_tw").."並擊殺時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." 免疫"..CKWord("眩暈", "Stun_rgb_tw").."，以及\n"
 				..Dot_green.." 免疫壓制。",
 			ru = "Убийства в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." дают на {duration:%s} секунды:\n"
@@ -1459,7 +1459,7 @@ local skitarii_localizations = {
 			..Dot_green.." {melee_attack_speed:%s} Melee Attack Speed.\n"
 			.."\n"
 			..Dot_nc.." Stacks {stacks:%s} times.",
-			["zh-tw"] = "成功的近戰攻擊會提供以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "近戰攻擊成功時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {melee_attack_speed:%s} 近戰攻擊速度。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。",
@@ -1483,7 +1483,7 @@ local skitarii_localizations = {
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Stacks {stacks:%s} times.",
-			["zh-tw"] = "近戰攻擊成功時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "近戰攻擊成功時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。",
@@ -1510,7 +1510,7 @@ local skitarii_localizations = {
 			..Dot_green.." {damage_resistance:%s} "..CKWord("Damage", "Damage_rgb").." Resistance.\n"
 			.."\n"
 			..Dot_nc.." Can only occur once every {cooldown:%s} seconds.",
-			["zh-tw"] = CKWord("韌性", "Toughness_rgb_tw").."被擊破時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = CKWord("韌性", "Toughness_rgb_tw").."被擊破時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage_resistance:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
 				.."\n"
 				..Dot_nc.." 每 {cooldown:%s} 秒最多發生一次。",
@@ -1526,7 +1526,7 @@ local skitarii_localizations = {
 			..Dot_green.." {damage:%s} Heavy Melee "..CKWord("Damage", "Damage_rgb")..".",
 			["zh-tw"] = Dot_green.." 近戰攻擊蓄力期間不會被打斷。\n"
 				.."\n"
-				..Dot_green.." {damage:%s} 近戰重攻擊"..CKWord("傷害", "Damage_rgb_tw").."。",
+				..Dot_green.." {damage:%s} 重型近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."。",
 			ru = Dot_green.." Вы получаете Непрерываемость во время заряжания атак ближнего боя.\n"
 			.."\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." тяжёлых атак ближнего боя.",
