@@ -620,7 +620,7 @@ local veteran_localizations = {
 			.."持用遠程武器時，會啟用"..CKWord("遠程專家", "Rangedspec_rgb_tw").."效果，每層獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} 裝填速度，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").."，\n"
 			..Dot_green.." {ranged_attack_speed:%s} 遠程攻擊速度，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").."，\n"
-			..Dot_green.." 下一次射擊獲得 {ranged_crit_chance:%s} 遠程"..CKWord("爆擊命中", "Crit_hit_rgb_tw").."率。"..CNumb("3", "n_3_rgb").." 層時保證"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
+			..Dot_green.." 下一次射擊獲得 {ranged_crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_hit_rgb_tw").."。"..CNumb("3", "n_3_rgb").." 層時保證"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {ranged_duration:%s} 秒。\n"
 			.."\n"
 			.."持用近戰武器時，會啟用"..CKWord("近戰專家", "Meleespec_rgb_tw").."效果，獲得：\n"
@@ -754,12 +754,12 @@ local veteran_localizations = {
 			.."Дистанция("..CKWord("м", "n_metr_rgb").."): "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}|  "..CNumb("15", "n_15_rgb").."|   "..CNumb("20", "n_20_rgb").."|  "..CNumb("25", "n_25_rgb").."|  "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
 			..CKWord("Урон", "Uron_rgb_ru").." ("..CNumb("%", "pc_rgb").."):        "..CNumb("10", "n_10_rgb").."|    "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."|  "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
-		["zh-tw"] = Dot_green.." 在 {ranged_close:%s} 米內獲得 {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 在 {ranged_close:%s} 公尺內獲得 {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			.."超出 {ranged_close:%s} 米的目標，遠程"..CKWord("傷害", "Damage_rgb_tw").." 線性增加至 {ranged_far:%s} 米時 {max_ranged_damage:%s}：\n"
+			.."超出 {ranged_close:%s} 公尺的目標，遠程"..CKWord("傷害", "Damage_rgb_tw").." 線性增加至 {ranged_far:%s} 公尺時 {max_ranged_damage:%s}：\n"
 			.."_______________________________\n"
-			.."距離(m):   "..CNumb("1", "n_1_rgb").."| {ranged_close:%s}| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."| "..CNumb("25", "n_25_rgb").."\n"
+			.."距離（公尺）："..CNumb("1", "n_1_rgb").." | {ranged_close:%s} | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("10", "n_10_rgb").." | "..CNumb("10", "n_10_rgb").." | "..CKWord("~12", "n__12_rgb").." | "..CKWord("~16", "n__16_rgb").." | "..CKWord("~20", "n__20_rgb").." | "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 	},
 	--[+ Passive 6 - Covering Fire +]--	27.03.2026
@@ -774,7 +774,7 @@ local veteran_localizations = {
 			..Dot_green.." {base_damage:%s} к базовому "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "以遠程攻擊擊殺敵人時，目標 {radius:%s} 米內的盟友獲得：\n"
+		["zh-tw"] = "以遠程攻擊擊殺敵人時，目標 {radius:%s} 公尺內的盟友獲得：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 			..Dot_green.." {base_damage:%s} 所有基礎"..CKWord("傷害", "Damage_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			.."\n"
