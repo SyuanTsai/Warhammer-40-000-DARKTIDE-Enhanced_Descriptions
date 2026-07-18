@@ -2510,7 +2510,7 @@ local psyker_localizations = {
 		en = Dot_green.." {warp_charge_amount:%s} "..CKWord("Peril", "Peril_rgb").." Generation Reduction for each Warp Charge.",
 		ru = Dot_green.." {warp_charge_amount:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru").." за каждый варп-заряд.", -- Внутреннее спокойствие
 		fr = Dot_green.." {warp_charge_amount:%s} de réduction de génération de "..CKWord("Péril", "Peril_rgb_fr").." par Charge Warp.",
-		["zh-tw"] = Dot_green.." 每個亞空間充能減少 {warp_charge_amount:%s} "..CKWord("反噬", "Peril_rgb_tw").."生成。",
+		["zh-tw"] = Dot_green.." 每層亞空間充能使"..CKWord("反噬", "Peril_rgb_tw").."產生量降低 {warp_charge_amount:%s}。",
 		["zh-cn"] = Dot_green.." 每个亚空间充能使"..CKWord("危机值", "Peril_rgb_zh_cn").."产生减少{warp_charge_amount:%s}。",
 		de = Dot_green.." {warp_charge_amount:%s} "..CKWord("Gefahr", "Peril_rgb_de").."-Erzeugungsreduzierung pro Warp-Ladung.",
 		it = Dot_green.." {warp_charge_amount:%s} di riduzione della generazione di "..CKWord("Pericolo", "Peril_rgb_it").." per ogni Carica Warp.",
@@ -2534,10 +2534,10 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr")
 			..Dot_nc.." N'augmente pas la quantité de "..CKWord("Robustesse", "Toughness_rgb_fr").." restaurée.",
-		["zh-tw"] = Dot_green.." "..CNumb("6%", "pc_6_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."/秒，獲得亞空間充能後持續 {time:%s} 秒，最多 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
-			..CPhrs("Can_be_refr").."\n"
+		["zh-tw"] = Dot_green.." 獲得亞空間充能後，每秒恢復 "..CNumb("6%", "pc_6_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，持續 {time:%s} 秒，最多恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 不提高"..CKWord("韌性", "Toughness_rgb_tw").."最大恢復量。",
+			..CPhrs("Can_be_refr").."\n"
+			..Dot_nc.." 不會提高恢復的"..CKWord("韌性", "Toughness_rgb_tw").."總量。",
 		["zh-cn"] = Dot_green.." 获得亚空间充能后，每秒恢复"..CNumb("6%", "pc_6_rgb").." "..CKWord("韧性", "Toughness_rgb_zh_cn").."，持续{time:%s}秒，最多恢复{toughness:%s}"..CKWord("韧性", "Toughness_rgb_zh_cn").."。\n"
 			.."\n"
 			..CPhrs("Can_be_refr")
@@ -2598,10 +2598,9 @@ local psyker_localizations = {
 		fr = Dot_green.." {chance:%s} de chance d'obtenir une Charge Warp lorsque vous ou un allié tuez un ennemi actuellement affecté par "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr")..".\n"
 			.."\n"
 			..Dot_nc.." Cet effet n'a pas de limite de portée et bénéficie à tous les "..CKWord("Psykers", "cls_psys_rgb_fr").." qui ont ce talent équipé.",
-		["zh-tw"] = Dot_green.." 您或盟友擊殺一個受"..CKWord("靈火", "Soulblaze_rgb_tw").." 影響的敵人時，有 {chance:%s} 機率獲得一個亞空間充能。\n"
+		["zh-tw"] = Dot_green.." 你或隊友擊殺受"..CKWord("靈火", "Soulblaze_rgb_tw").."影響的敵人時，有 {chance:%s} 機率獲得一層亞空間充能。\n"
 			.."\n"
-			..Dot_nc.." 讀取範圍無限制。\n"
-			..Dot_nc.." 此效果對所有裝備此天賦的"..CKWord("靈能者", "cls_psy_rgb_tw").." 生效。",
+			..Dot_nc.." 此效果沒有距離限制，所有裝備此天賦的"..CKWord("靈能者", "cls_psy_rgb_tw").."都能受益。",
 		["zh-cn"] = Dot_green.." 当你或盟友杀死正受到"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."影响的敌人时，{chance:%s}几率获得一个亚空间充能。\n"
 			.."\n"
 			..Dot_nc.." 此效果没有距离限制，并会影响所有装备此天赋的"..CKWord("灵能者", "cls_psys_rgb_zh_cn").."。",
@@ -2638,9 +2637,9 @@ local psyker_localizations = {
 		fr = Dot_green.." {soul_chance:%s} de chance d'obtenir une Charge Warp chaque fois que vous ou un allié en "..CKWord("Syntonie", "Coherency_rgb_fr").." tuez un ennemi.\n"
 			.."\n"
 			..Dot_nc.." L'effet de ce talent est partagé avec tous les "..CKWord("Psykers", "cls_psys_rgb_fr").." alliés en "..CKWord("Syntonie", "Coherency_rgb_fr").." qui l'ont également.",
-		["zh-tw"] = Dot_green.." 您或"..CKWord("協同", "Coherency_rgb_tw").." 範圍內的盟友擊殺敵人時，有 {soul_chance:%s} 機率獲得一個亞空間充能。\n"
+		["zh-tw"] = Dot_green.." 你或"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友擊殺敵人時，有 {soul_chance:%s} 機率獲得一層亞空間充能。\n"
 			.."\n"
-			..Dot_nc.." 此效果對所有裝備此天賦的"..CKWord("靈能者", "cls_psy_rgb_tw").." 生效。",
+			..Dot_nc.." 此天賦的效果會與"..CKWord("協同", "Coherency_rgb_tw").."範圍內同樣裝備此天賦的所有隊友"..CKWord("靈能者", "cls_psy_rgb_tw").."共享。",
 		["zh-cn"] = Dot_green.." 每当您或"..CKWord("连携", "Coherency_rgb_zh_cn").."中的盟友杀死敌人时，{soul_chance:%s}几率获得一个亚空间充能。\n"
 			.."\n"
 			..Dot_nc.." 此天赋的效果会与"..CKWord("连携", "Coherency_rgb_zh_cn").."中同样装备此天赋的盟友"..CKWord("灵能者", "cls_psys_rgb_zh_cn").."共享。",
@@ -2716,7 +2715,7 @@ local psyker_localizations = {
 			..Dot_green.." augmentation des "..CKWord("Dégâts", "Damage_rgb_fr").." de {throwing_knives_old_damage:%s} à {throwing_knives_new_damage:%s}.\n"
 			..Dot_green.." Ne consomme aucune charge.\n"
 			..Dot_green.." Permet d'incanter à "..CNumb("100%", "pc_100_rgb").." de "..CKWord("Péril", "Peril_rgb_fr")..".",
-		["zh-tw"] = "擊殺有 {chance:%s} 機率增強下一次神速攻擊。\n"
+		["zh-tw"] = "擊殺有 {chance:%s} 機率強化你的下一次閃擊。\n"
 			.."\n"
 			.."增強{blitz_one:%s}：\n"
 			..Dot_green.." {smite_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
@@ -2729,8 +2728,8 @@ local psyker_localizations = {
 			.."\n"
 			.."增強{blitz_three:%s}：\n"
 			..Dot_green.." {throwing_knives_cost:%s} "..CKWord("反噬", "Peril_rgb_tw").." 消耗減少，\n"
-			..CKWord("傷害", "Damage_rgb_tw").." 從 {throwing_knives_old_damage:%s} 提高至 {throwing_knives_new_damage:%s}，\n"
-			..Dot_green.." 不消耗彈藥。\n"
+			..Dot_green.." "..CKWord("傷害", "Damage_rgb_tw").."從 {throwing_knives_old_damage:%s} 提高至 {throwing_knives_new_damage:%s}。\n"
+			..Dot_green.." 不消耗任何充能。\n"
 			..Dot_green.." 可在 "..CNumb("100%", "pc_100_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 時使用。",
 		["zh-cn"] = "击杀有{chance:%s}几率强化你的下一次闪电。\n"
 			.."\n"
@@ -2866,7 +2865,7 @@ local psyker_localizations = {
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." chance to gain {talent_name:%s} on Kill. Increases from {proc_chance_before:%s} to {proc_chance_after:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." к шансу получить заряд таланта {talent_name:%s} при убийстве. Увеличивается с {proc_chance_before:%s} до {proc_chance_after:%s}.", -- Биопритяжение
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." de chance d'obtenir {talent_name:%s} par élimination. Augmente de {proc_chance_before:%s} à {proc_chance_after:%s}.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 5% 在擊殺時獲得 {talent_name:%s} 的機率。從 {proc_chance_before:%s} 提高至 {proc_chance_after:%s}。",
+		["zh-tw"] = Dot_green.." 擊殺時獲得 {talent_name:%s} 的機率 "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").."，從 {proc_chance_before:%s} 提高至 {proc_chance_after:%s}。",
 		["zh-cn"] = Dot_green.." 击杀时获得{talent_name:%s}的几率"..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." 。从{proc_chance_before:%s}提高至{proc_chance_after:%s}。",
 		de = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." Chance, {talent_name:%s} bei einer Tötung zu erhalten. Erhöht von {proc_chance_before:%s} auf {proc_chance_after:%s}.",
 		it = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "pc_5_rgb").." probabilità di ottenere {talent_name:%s} con un'uccisione. Aumenta da {proc_chance_before:%s} a {proc_chance_after:%s}.",
@@ -2881,7 +2880,7 @@ local psyker_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenishes for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on using your Blitz while {talent_name:%s} is active.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восполняется для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при использовании вашего блица, пока активны {talent_name:%s}.", -- Психическое высасывание -- руоф Психическая пиявка
 		fr = Dot_green.." {toughness:%s} de "..CKWord("Robustesse", "Toughness_rgb_fr").." sont restaurés pour vous et les alliés en "..CKWord("Syntonie", "Coherency_rgb_fr").." lors de l'utilisation de votre Blitz tandis que {talent_name:%s} est actif.",
-		["zh-tw"] = Dot_green.." 使用神速攻擊時，你和"..CKWord("協同", "Coherency_rgb_tw").." 範圍內盟友恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."（需 {talent_name:%s} 啟用）。",
+		["zh-tw"] = Dot_green.." {talent_name:%s} 啟用時使用閃擊，會使你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 当{talent_name:%s}启动时，使用闪电为你和"..CKWord("连携", "Coherency_rgb_zh_cn").."中的盟友恢复{toughness:%s}"..CKWord("韧性", "Toughness_rgb_zh_cn").."。",
 		de = Dot_green.." {toughness:%s} "..CKWord("Widerstand", "Toughness_rgb_de").." werden für Sie und Verbündete in "..CKWord("Kohärenz", "Coherency_rgb_de").." wiederhergestellt, wenn Sie Ihren Blitz verwenden, während {talent_name:%s} aktiv ist.",
 		it = Dot_green.." {toughness:%s} di "..CKWord("Robustezza", "Toughness_rgb_it").." vengono ripristinati per te e gli alleati in "..CKWord("Coerenza", "Coherency_rgb_it").." quando usi il tuo Blitz mentre {talent_name:%s} è attivo.",
@@ -3121,7 +3120,7 @@ local psyker_localizations = {
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." to Maximum "..CKWord("Precision", "Precision_rgb").." Bonus Stacks. Increases from {stacks_previous:%s} to {stacks_after:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." к максимуму зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {stacks_previous:%s} до {stacks_after:%s}.", -- Перфекционизм
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." au maximum des bonus de "..CKWord("Précision", "Precision_rgb_fr")..". Passe de {stacks_previous:%s} à {stacks_after:%s}.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 10 "..CKWord("精準", "Precision_rgb_tw").." 最大層數。從 {stacks_previous:%s} 提高至 {stacks_after:%s}。",
+		["zh-tw"] = Dot_green.." "..CKWord("精準", "Precision_rgb_tw").."最大層數 "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").."，從 {stacks_previous:%s} 提高至 {stacks_after:%s}。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." 最大"..CKWord("精准", "Precision_rgb_zh_cn").."奖励层数。从{stacks_previous:%s}提高至{stacks_after:%s}。",
 		de = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." zum Maximum der "..CKWord("Präzision", "Precision_rgb_de").."-Boni. Erhöht von {stacks_previous:%s} auf {stacks_after:%s}.",
 		it = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("10", "n_10_rgb").." al massimo dei bonus di "..CKWord("Precisione", "Precision_rgb_it")..". Aumenta da {stacks_previous:%s} a {stacks_after:%s}.",
@@ -3136,7 +3135,7 @@ local psyker_localizations = {
 		en = Dot_green.." {chance:%s} chance to instantly Quell {warp_charge_percentage:%s} of your "..CKWord("Peril", "Peril_rgb").." on killing enemies "..CKWord("Marked", "Psy_Mark_rgb").." {talent_name:%s}.",
 		ru = Dot_green.." {chance:%s} шанс, что вы моментально подавите {warp_charge_percentage:%s} вашей "..CKWord("опасности", "opasnosti_rgb_ru").." при убийстве врага, "..CKWord("отмеченного", "Psy_Mark_ogo_rgb_ru").." талантом {talent_name:%s}.", -- Похищение провидения -- руоф Похищенное провидение
 		fr = Dot_green.." {chance:%s} de chance d'apaiser instantanément {warp_charge_percentage:%s} de votre "..CKWord("Péril", "Peril_rgb_fr").." en tuant des ennemis "..CKWord("Marqués", "Psy_Mark_rgb_fr").." par {talent_name:%s}.",
-		["zh-tw"] = Dot_green.." {chance:%s} 機率，擊殺 "..CKWord("標記", "Psy_Mark_rgb_tw").." {talent_name:%s} 的敵人時立即平息 {warp_charge_percentage:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 擊殺受 {talent_name:%s} "..CKWord("標記", "Psy_Mark_rgb_tw").."的敵人時，有 {chance:%s} 機率立即平息 {warp_charge_percentage:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 击杀被{talent_name:%s}"..CKWord("标记", "Psy_Mark_rgb_zh_cn").."的敌人时，有{chance:%s}几率立即压制{warp_charge_percentage:%s}的"..CKWord("危机值", "Peril_rgb_zh_cn").."。",
 		de = Dot_green.." {chance:%s} Chance, sofort {warp_charge_percentage:%s} Ihrer "..CKWord("Gefahr", "Peril_rgb_de").." zu unterdrücken, wenn Sie Gegner töten, die von {talent_name:%s} "..CKWord("markiert", "Psy_Mark_rgb_de").." sind.",
 		it = Dot_green.." {chance:%s} probabilità di placare istantaneamente {warp_charge_percentage:%s} del tuo "..CKWord("Pericolo", "Peril_rgb_it").." uccidendo nemici "..CKWord("Segnati", "Psy_Mark_rgb_it").." da {talent_name:%s}.",
@@ -3151,7 +3150,7 @@ local psyker_localizations = {
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." seconds to the duration of "..CKWord("Precision", "Precision_rgb").." Stacks. Increases from {duration_previous:%s} to {duration_after:%s} seconds.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." секунд к длительности зарядов "..CKWord("меткости", "Precision_rgb_ru")..". Увеличивается с {duration_previous:%s} до {duration_after:%s} секунд.", -- Длительное влияние -- руоф Длящееся влияние
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." secondes à la durée des cumuls de "..CKWord("Précision", "Precision_rgb_fr")..". Passe de {duration_previous:%s} à {duration_after:%s} secondes.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." 5 秒"..CKWord("精準", "Precision_rgb_tw").." 層的持續時間。從 {duration_previous:%s} 提高至 {duration_after:%s} 秒。",
+		["zh-tw"] = Dot_green.." "..CKWord("精準", "Precision_rgb_tw").."層數持續時間 "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." 秒，從 {duration_previous:%s} 提高至 {duration_after:%s} 秒。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").."秒"..CKWord("精准", "Precision_rgb_zh_cn").."层数的持续时间。从{duration_previous:%s}秒提高至{duration_after:%s}秒。",
 		de = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." Sekunden zur Dauer der "..CKWord("Präzision", "Precision_rgb_de").."-Stapel. Erhöht von {duration_previous:%s} auf {duration_after:%s} Sekunden.",
 		it = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." secondi alla durata degli accumuli di "..CKWord("Precisione", "Precision_rgb_it")..". Aumenta da {duration_previous:%s} a {duration_after:%s} secondi.",
@@ -3174,7 +3173,7 @@ local psyker_localizations = {
 			..Dot_nc.." Se déclenche sur les attaques de mêlée, à distance, "..CKWord("Assail", "Assail_rgb_fr").." ou "..CKWord("Brain Rupture", "Brain_rupture_rgb_fr")..".",
 		["zh-tw"] = Dot_green.." "..CKWord("弱點", "Weakspot_rgb_tw").." 擊殺額外獲得 {stacks:%s} 層 {talent_name:%s}。\n"
 			.."\n"
-			..Dot_nc.." 進行近戰、遠程、靈能攻擊或顆腦崩裂攻擊時觸發。",
+			..Dot_nc.." 可由近戰、遠程、"..CKWord("靈能攻擊", "Assail_rgb_tw").."或"..CKWord("顱腦崩裂", "Brain_rupture_rgb_tw").."觸發。",
 		["zh-cn"] = Dot_green.." "..CKWord("弱点", "Weakspot_rgb_zh_cn").."击杀给予{stacks:%s}额外{talent_name:%s}层数。\n"
 			.."\n"
 			..Dot_nc.." 触发近战、远程、"..CKWord("攻击", "Assail_rgb_zh_cn").."或"..CKWord("脑部破裂", "Brain_rupture_rgb_zh_cn").."攻击。",
