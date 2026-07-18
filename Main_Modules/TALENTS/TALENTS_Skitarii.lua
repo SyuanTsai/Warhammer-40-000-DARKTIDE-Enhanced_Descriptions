@@ -1138,14 +1138,14 @@ local skitarii_localizations = {
 	--[+ PASSIVES - ПАССИВНЫЙ - 19 - Target Prioritization Psalms - Псалмы приоритизации целей +]--	17.07.2026
 	["loc_talent_cryptic_specials_marking_desc"] = { -- damage: +15%, +colors
 			en = "Specialists that get within {range:%s} meters of you are Marked.",
-			["zh-tw"] = "進入你周圍 {range:%s} 米內的專家會被標記。",
+			["zh-tw"] = "進入你周圍 {range:%s} 公尺內的專家會被標記。",
 			ru = "Специалисты, оказавшиеся в радиусе {range:%s} метров от вас, помечаются.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 20 - Moebian Conductor - Моэбианский проводник +]--	17.07.2026
 	["loc_talent_cryptic_damage_on_ability_desc"] = { -- ammo: +5%, stacks: 5
 		en = "On "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
-			["zh-tw"] = "使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 			ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".",
@@ -1179,8 +1179,8 @@ local skitarii_localizations = {
 		en = "While bracing or aiming down sights you gain:\n"
 			..Dot_green.." {spread:%s} Spread and\n"
 			..Dot_green.." {movement_speed_modifier:%s} Movement Speed penalty.",
-			["zh-tw"] = "腰射瞄準或使用瞄具期間獲得：\n"
-				..Dot_green.." {spread:%s} 擴散，\n"
+			["zh-tw"] = "架槍或使用瞄具期間獲得：\n"
+				..Dot_green.." {spread:%s} 散布，\n"
 				..Dot_green.." {movement_speed_modifier:%s} 移動速度懲罰。",
 			ru = "При прицеливании вы получаете:\n"
 			..Dot_green.." {spread:%s} к разбросу и\n"
@@ -1200,9 +1200,9 @@ local skitarii_localizations = {
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
 			.."\n"
 			..Dot_green.." {tdr_per_charge:%s} additional "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per current "..CKWord("Combat Ability", "Cmbt_abil_rgb").." сharge.",
-			["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+			["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
-				..Dot_green.." 每層現有"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，額外獲得 {tdr_per_charge:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+				..Dot_green.." 每層現有"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，額外獲得 {tdr_per_charge:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 			ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {tdr_per_charge:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." дополнительно за каждый текущий заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".",
