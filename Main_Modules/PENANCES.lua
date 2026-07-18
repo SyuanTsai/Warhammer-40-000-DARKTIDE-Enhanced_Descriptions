@@ -1523,7 +1523,7 @@ local penances_localizations = {
 		["loc_achievement_ogryn_team_toughness_restored_aura_description"] = {
 			en = "Restore a total of "..CNumb("{target}", "target_rgb").." "..CKWord("Toughness", "Toughness_rgb").." to you or Allies in "..CKWord("Coherency", "Coherency_rgb").." with "..CKWord("Stay Close!", "stayclose_rgb").." Aura.",
 			ru = "Восстановите суммарно "..CNumb("{target}", "target_rgb").." "..CKWord("стойкости", "stoikosti_rgb_ru").." себе или союзникам, находящимся под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..", с помощью эффекта ауры "..CKWord("Держись рядом!", "stayclose_rgb_ru")..".",
-			["zh-tw"] = "透過 "..CKWord("跟緊我!", "stayclose_rgb_tw").." 光環，\n"
+			["zh-tw"] = "透過 "..CKWord("跟緊我！", "stayclose_rgb_tw").." 光環，\n"
 				.."為自己或處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友\n"
 				.."恢復總計 "..CNumb("{target}", "target_rgb").." 點 "..CKWord("韌性", "Toughness_rgb_tw").."。",
 		},
@@ -1548,7 +1548,7 @@ local penances_localizations = {
 		["loc_achievement_ogryn_2_killed_corruptor_with_grenade_impact_description"] = {
 			en = "Kill a Corruptor by hitting it in the eye with grenade box from "..CKWord("Big Boxes of Hurt", "big_box_rgb").." or "..CKWord("Bombs Away!", "big_box2_rgb").." Blitz.",
 			ru = "Убейте Осквернителя, попав ему в глаз ящиком блица "..CKWord("Большая коробка боли", "big_box_rgb_ru").." или "..CKWord("Бросай бомбы!", "big_box2_rgb_ru")..".",
-			["zh-tw"] = "用 "..CKWord("巨量傷害盒", "big_box_rgb_tw").."或"..CKWord("投彈完畢!", "big_box2_rgb_tw").." 閃擊的手榴彈箱\n"
+			["zh-tw"] = "用 "..CKWord("巨量傷害盒", "big_box_rgb_tw").."或"..CKWord("投彈完畢！", "big_box2_rgb_tw").." 閃擊的手榴彈箱\n"
 				.."擊中腐蝕者眼睛，將其擊殺。",
 		},
 	--[+ Gone Bowling +]-- руоф Играю в боулинг
