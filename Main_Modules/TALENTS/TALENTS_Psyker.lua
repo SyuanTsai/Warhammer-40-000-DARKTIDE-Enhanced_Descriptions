@@ -4896,7 +4896,7 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 超載爆炸"..CKWord("傷害", "Damage_rgb_tw").."增加 {overload_damage:%s}，\n"
 			..Dot_green.." 超載爆炸半徑增加 {overload_radius:%s}。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."～"..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
 			.."\n"
 			..Dot_green.." 因"..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").."而超載時不再將你擊倒，但會因"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."失去 "..CNumb("1", "n_1_rgb").." 格"..CKWord("生命值", "Health_rgb_tw").."。\n"
@@ -5107,9 +5107,9 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." Recharger un chargeur vide génère la quantité maximale de {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr")..".",
 		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 {threshold:%s} 時，裝填速度 "..CNumb("+", "n_plus_rgb").."{reload_speed:%s}。\n"
-			..Dot_red.." 換彈時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
+			..Dot_red.." 裝填時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 彈匣為空時換彈，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
+			..Dot_red.." 彈匣為空時裝填，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 当"..CKWord("危机值", "Peril_rgb_zh_cn").."低于{threshold:%s}时，获得"..CNumb("+", "n_plus_rgb").."{reload_speed:%s}装填速度。\n"
 			..Dot_red.." 装填时，根据恢复的弹匣百分比生成最多{warp_charge:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."。\n"
 			.."\n"
