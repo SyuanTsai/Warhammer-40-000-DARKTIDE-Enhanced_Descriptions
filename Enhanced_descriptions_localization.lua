@@ -585,7 +585,7 @@ local localizations = {
 		en = "This module highlights the keywords and numbers of Penances and slightly expands descriptions of some of them. You can disable this module if you don't need it.",
 		ru = "Этот модуль выделяет ключевые слова и цифры Искуплений и немного дополняет описания некоторых из них. Вы можете отключить этот модуль, если он вам не нужен.",
 		fr = "Ce module met en évidence les mots-clés et les chiffres des Pénitences et complète légèrement les descriptions de certaines d'entre elles. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
-		["zh-tw"] = "此模組會醒目標示苦修的關鍵詞和數字，並稍微擴充其中部分描述。若不需要此模組，可以將其停用。",
+		["zh-tw"] = "此模組會醒目標示苦修的關鍵字和數值，並稍微擴充部分苦修的描述。若不需要此模組，可以將其停用。",
 		["zh-cn"] = "此模块会高亮显示苦修的关键词与数字，并稍微扩充部分苦修的描述。如果不需要，可以禁用此模块。",
 		de = "Dieses Modul hebt die Schlüsselwörter und Zahlen der Bußen hervor und erweitert leicht die Beschreibungen einiger davon. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
 		it = "Questo modulo evidenzia le parole chiave e i numeri delle Penitenze e amplia leggermente le descrizioni di alcune di esse. Puoi disattivare questo modulo se non ne hai bisogno.",
@@ -615,7 +615,7 @@ local localizations = {
 			.."This module changes the names of weapons and enemies. You can disable this module if you don't need it.",
 		ru = "Этот модуль исправляет названия некоторых врагов, видов брони и тела, а также названия оружия. Вы можете отключить этот модуль, если он вам не нужен.",
 		fr = "Ce module modifie les noms des armes et des ennemis. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
-		["zh-tw"] = "{#color(255, 35, 5)}僅限非英文在地化！{#reset()}\n"
+		["zh-tw"] = "{#color(255, 35, 5)}僅適用於非英文語系！{#reset()}\n"
 			.."此模組會更改武器與敵人的名稱。若不需要此模組，可以將其停用。",
 		["zh-cn"] = "此模块会更改武器和敌人的名称。如果不需要，可以禁用此模块。",
 		de = "Dieses Modul ändert die Namen von Waffen und Feinden. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
@@ -646,7 +646,7 @@ local localizations = {
 			.."This module changes the names of Talents and Blessings. You can disable this module if you don't need it.",
 		ru = "Этот модуль исправляет названия некоторых Талантов и Благословений. Вы можете отключить этот модуль, если он вам не нужен.",
 		fr = "Ce module modifie les noms des Talents et Bénédictions. Vous pouvez désactiver ce module si vous n'en avez pas besoin.",
-		["zh-tw"] = "{#color(255, 35, 5)}僅限非英文在地化！{#reset()}\n"
+		["zh-tw"] = "{#color(255, 35, 5)}僅適用於非英文語系！{#reset()}\n"
 			.."此模組會更改天賦與祝福的名稱。若不需要此模組，可以將其停用。",
 		["zh-cn"] = "此模块会更改天赋和祝福的名称。如果不需要，可以禁用此模块。",
 		de = "Dieses Modul ändert die Namen von Talenten und Segnungen. Sie können dieses Modul deaktivieren, wenn Sie es nicht benötigen.",
@@ -701,15 +701,15 @@ local localizations = {
 			.."Ce module active les commandes de débogage et les utilitaires pour les tests et le dépannage. À utiliser avec prudence.",
 		["zh-tw"] = "{#color(255, 35, 5)}僅供開發者使用！{#reset()}\n"
 			.."此模組會啟用用於測試與疑難排解的除錯指令和工具。請謹慎使用。\n"
-			.."/ed_reload - 重新載入 Enhanced Descriptions\n"
+			.."/ed_reload - 重新載入強化描述\n"
 			.."/ed_clear_cache - 清除色彩快取\n"
-			.."/ed_status - 顯示模組狀態\n"
+			.."/ed_status - 顯示 MOD 狀態\n"
 			.."/ed_mem - 顯示記憶體用量\n"
 			.."/ed_gc - 強制垃圾回收\n"
 			.."/ed_test_color - 測試色彩是否正常\n"
 			.."/ed_lang - 顯示目前語言資訊\n"
 			.."/ed_modules - 檢查已啟用模組\n"
-			.."/ed_test_loc - 測試指定 localization key\n"
+			.."/ed_test_loc - 測試指定在地化鍵值\n"
 			.."/ed_reset - 快速重置（清除快取 + 重新載入）",
 		["zh-cn"] = "{#color(255, 35, 5)}仅供开发者使用！{#reset()}\n此模块启用调试命令和用于测试与故障排除的工具。请谨慎使用。",
 		de = "{#color(255, 35, 5)}NUR FÜR ENTWICKLER!{#reset()}\nDieses Modul aktiviert Debug-Befehle und Dienstprogramme zum Testen und Fehlerbeheben. Mit Vorsicht verwenden.",
@@ -728,7 +728,7 @@ local localizations = {
 		ru = "Мусорные статы"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Мобильность, Урон рукопашный, Сопротивление варпу{#reset()}",
 		["zh-tw"] = "雜項屬性"
-			.."\n{#size(17)}{#color(95, 95, 95)}// 機動性、近戰傷害、亞空間抗性{#reset()}",
+			.."\n{#size(17)}{#color(95, 95, 95)}// 機動性、近戰傷害、反噬抗性{#reset()}",
 	},
 --[+DUMP STATS 2+]--
 	dump_stat2_colour = {
@@ -737,7 +737,7 @@ local localizations = {
 		ru = "Мусорные статы 2"
 			.."\n{#size(17)}{#color(95, 95, 95)}// Боеприпасы, Защита, Отведение тепла{#reset()}",
 		["zh-tw"] = "雜項屬性 2"
-			.."\n{#size(17)}{#color(95, 95, 95)}// 彈藥、防禦、熱量管理{#reset()}",
+			.."\n{#size(17)}{#color(95, 95, 95)}// 彈藥、防禦、熱能管理{#reset()}",
 	},
 --[+DUMP STATS 3+]--
 	dump_stat3_colour = {
