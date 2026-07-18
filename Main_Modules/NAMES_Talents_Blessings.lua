@@ -1046,7 +1046,7 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 1-2 - Kinetic Flayer +]-- ruof Кинетический истребитель	20.04.2026
 		["loc_talent_psyker_smite_on_hit"] = {
 			ru = "Кинетический живодёр",
-			["zh-tw"] = "動能剝皮者",
+			["zh-tw"] = "動能撕裂者",
 		},
 		--[+ BLITZ 2 - Smite +]-- ruof Сокрушение	20.04.2026
 		-- ["loc_ability_psyker_chain_lightning"] = {
