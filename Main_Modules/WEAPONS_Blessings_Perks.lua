@@ -1110,7 +1110,7 @@ local weapon_localizations = {
 			fr = CNumb("+", "n_plus_rgb")..CNumb("{stacks:%s}", "stacks_var_rgb").." Cumuls de "..CNumb("{rending:%s}", "rending_var_rgb").." de "..CKWord("Fragilité", "Brittleness_rgb_fr").." pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes sur un "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr")..". Jusqu'à "..CNumb("40%", "pc_40_rgb").." à "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." Cumuls. "
 				..CPhrs("Can_be_refr")
 				..CNote("Brtl_note"),
-			["zh-tw"] = "敵人"..CKWord("弱點命中", "Weakspothit_rgb_tw").."時，使目標獲得 "..CNumb("+", "n_plus_rgb")..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."，持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
+			["zh-tw"] = CKWord("弱點命中", "Weakspothit_rgb_tw").."敵人時，使目標獲得 "..CNumb("+", "n_plus_rgb")..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CNumb("{rending:%s}", "rending_var_rgb").." "..CKWord("脆弱", "Brittleness_rgb_tw").."，持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
 				.."在 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層時最高 "..CNumb("40%", "pc_40_rgb").."。"
 				..CPhrs("Can_be_refr")
 				..CNote("Brtl_note"),
@@ -1169,7 +1169,7 @@ local weapon_localizations = {
 				..Dot_nc.." До "..CNumb("5", "n_5_rgb").." зарядов.\n"
 				..CNote("Impact_note"), -- Жестокий разрез
 			fr = CNumb("{impact:%s}", "impact_var_rgb").." d'"..CKWord("Impact", "Impact_rgb_fr").." à la cible pour chaque ennemie déjà touché par la même attaque. Jusqu'à "..CNumb("5", "n_5_rgb").." cumuls.",
-			["zh-tw"] = "同一次攻擊已命中的每名敵人，會使目標獲得 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("衝擊", "Impact_rgb_tw").."。"
+			["zh-tw"] = "攻擊命中同一敵人，會獲得 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("衝擊", "Impact_rgb_tw").."。"
 						..Dot_nc.." 最多 "..CNumb("5", "n_5_rgb").." 層。"..CNote("Impact_note"),
 			["zh-cn"] = "每有一个已被同一攻击命中的敌人，\n"..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."。最多叠加 "..CNumb("5", "n_5_rgb").." 层。",
 			de = CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("Wucht", "Impact_rgb_de").." auf das Ziel für jeden Gegner, der bereits von demselben Angriff getroffen wurde. Bis zu "..CNumb("5", "n_5_rgb").." Stapel.",
