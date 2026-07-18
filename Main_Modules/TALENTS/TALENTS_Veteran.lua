@@ -428,14 +428,14 @@ local veteran_localizations = {
 			..Dot_green.." Это также увеличивает "..CKWord("урон", "uron_rgb_ru").." от взрывов и количество "..CKWord("урона", "urona_rgb_ru").." со временем, пока "..CKWord("Ветеран", "cls_vet_rgb_ru").." находится в пределах "..CNumb("30", "n_30_rgb").." метров от врага.\n"
 			.."\n"
 			..Dot_nc.." При использовании способности {talent_name:%s}, этот талант начинает действовать только после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".",
-		["zh-tw"] = Dot_green.." 使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，對 "..CNumb("12.5", "n_12_5_rgb").." 米內敵人造成 {power:%s} "..CKWord("傷害", "Damage_rgb_tw").."，持續 {duration:%s} 秒。\n"
+		["zh-tw"] = Dot_green.." 使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，對 "..CNumb("12.5", "n_12_5_rgb").." 公尺內敵人造成 {power:%s} "..CKWord("傷害", "Damage_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			.."\n"
-			.."超出 "..CNumb("12.5", "n_12_5_rgb").." 米，傷害線性遞減直至 "..CNumb("30", "n_30_rgb").." 米時消失：\n"
+			.."超出 "..CNumb("12.5", "n_12_5_rgb").." 公尺，傷害線性遞減直至 "..CNumb("30", "n_30_rgb").." 公尺時消失：\n"
 			.."_______________________________\n"
-			.."距離(m):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			.."距離（公尺）："..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("15", "n_15_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." | "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
-			..Dot_green.." 只要"..CKWord("老兵", "cls_vet_rgb_tw").."位於敵人 "..CNumb("30", "n_30_rgb").." 米內，也會提高爆炸與持續傷害。\n"
+			..Dot_green.." 只要"..CKWord("老兵", "cls_vet_rgb_tw").."位於敵人 "..CNumb("30", "n_30_rgb").." 公尺內，也會提高爆炸與持續傷害。\n"
 			.."\n"
 			..Dot_nc.." 使用 {talent_name:%s} 時，此效果於離開"..CKWord("隱身", "Stealth_rgb_tw").." 後生效。",
 	},
@@ -474,7 +474,7 @@ local veteran_localizations = {
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
 			.."每層"..CKWord("專注", "Focus_rgb_tw").." 提供：\n"
-			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧傷害", "Finesse_rgb_tw").."，\n"
+			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧威力", "Finesse_rgb_tw").."，\n"
 			..Dot_green.." {reload_speed:%s} 裝填速度。\n"
 			.."\n"
 			..CNote("Fns_note"),
