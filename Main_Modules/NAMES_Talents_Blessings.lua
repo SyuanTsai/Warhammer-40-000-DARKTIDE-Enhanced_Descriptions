@@ -2204,7 +2204,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-3 - Toughest! +]-- ruof Самый выносливый!
 		["loc_talent_ogryn_carapace_armor_more_toughness"] = {
 			ru = "Стойкий!",
-			["zh-tw"] = "最堅韌!",
+			["zh-tw"] = "最堅韌！",
 		},
 		--[+ KEYSTONE 3 - Burst Limiter Override +]-- ruof Взлом ограничителя взрыва
 		["loc_talent_ogryn_chance_to_not_consume_ammo"] = {
@@ -2223,7 +2223,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-3 - More Burst Limiter Overrides! +]-- ruof Больше взлома ограничителя взрыва!
 		["loc_talent_ogryn_increased_leadbelcher_chance"] = {
 			ru = "Ещё больший обход ограничителя очереди!",
-			["zh-tw"] = "爆限大超載!",
+			["zh-tw"] = "爆限大超載！",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - Furious +]-- ruof Разъяренный
@@ -2247,12 +2247,12 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 5 - Steady Grip +]-- ruof Крепкая хватка
 		["loc_talent_ogryn_toughness_regen_while_bracing"] = {
 			ru = "Крепкий хват",
-			["zh-tw"] = "穩固握持",
+			["zh-tw"] = "穩定握持",
 		},
 		--[+ PASSIVE 6 - Smash 'Em! +]-- ruof Вдарь им!
 		["loc_talent_ogryn_toughness_on_single_heavy"] = {
 			ru = "Круши их!",
-			["zh-tw"] = "碾碎它們!",
+			["zh-tw"] = "碾碎它們！",
 		},
 		--[+ PASSIVE 7 - Lynchpin +]-- ruof Переломный момент
 		["loc_talent_ogryn_coherency_toughness_increase"] = {
