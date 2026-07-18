@@ -334,7 +334,7 @@ local penances_localizations = {
 			en = "Kill "..CNumb("{target}", "target_rgb").." enemies with the last round in your clip during a single Mission on "..CKWord("Malice", "malice_rgb").." Threat or higher.",
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов последним патроном в обойме в течение одной миссии на сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше.",
 			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，\n"
-				.."使用最後一發子彈擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+				.."在單場任務中使用最後一發子彈擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ On Overwatch +]-- руоф Под прикрытием
 	["loc_achievement_veteran_2_no_melee_damage_taken_name"] = {
