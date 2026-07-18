@@ -4368,8 +4368,8 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 無論當前"..CKWord("反噬", "Peril_rgb_tw").."多少，至少獲得 {min_damage:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，並依比例線性提升：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("TDR", "TDR_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."| "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("TDR", "TDR_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("10", "n_10_rgb").." | "..CKWord("~15", "n__15_rgb").." | "..CKWord("~19", "n__19_rgb").." | "..CKWord("~22", "n__22_rgb").." | "..CKWord("~24", "n__24_rgb").." | "..CKWord("~28", "n__28_rgb").." | "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."获得{min_damage:%s}至{max_damage:%s}的"..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."。\n"
 			.."\n"
@@ -4505,7 +4505,7 @@ local psyker_localizations = {
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} de vitesse d'apaisement.\n"
 			.."\n"
 			..Dot_nc.." S'applique uniquement à l'apaisement actif, l'apaisement passif n'est pas affecté.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {vent_speed:%s} 平息速度。\n"
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} 平息速度。\n"
 			.."\n"
 			..Dot_nc.." 僅適用於主動平息，被動平息不受影響。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} 镇静速度。\n"
@@ -4582,8 +4582,8 @@ local psyker_localizations = {
 			.."_______________________________",
 		["zh-tw"] = Dot_green.." 依當前"..CKWord("反噬", "Peril_rgb_tw").." 等級，最多 {max_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("10", "n_10_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."造成最多{max_damage:%s}额外"..CKWord("伤害", "Damage_rgb_zh_cn").."：\n"
 			.."_______________________________\n"
@@ -4742,7 +4742,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." {toughness_reduction:%s} de "..CKWord("Robustesse", "Toughness_rgb_fr").." restaurée.\n"
 			..CPhrs("Dont_intw_coher_toughn").." Affecte uniquement les éliminations en mêlée et les talents.",
-		["zh-tw"] = Dot_green.." {peril_reduction:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成。\n"
+		["zh-tw"] = Dot_green.." {peril_reduction:%s} "..CKWord("反噬", "Peril_rgb_tw").."產生量。\n"
 			.."\n"
 			..Dot_red.." {toughness_reduction:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 恢復。\n"
 			..CPhrs("Dont_intw_coher_toughn").." 僅影響近戰擊殺和天賦的"..CKWord("韌性", "Toughness_rgb_tw").." 恢復。",
@@ -4804,8 +4804,8 @@ local psyker_localizations = {
 			..CNote("Rend_note"),
 		["zh-tw"] = Dot_green.." 依"..CKWord("反噬", "Peril_rgb_tw").." 等級，亞空間攻擊最多 {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("撕裂", "Rending_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("撕裂", "Rending_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("10", "n_10_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
