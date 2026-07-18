@@ -41,7 +41,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 爆心基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("500", "n_500_rgb").."。\n"
 			..Dot_green.." 對所有敵人（包括巨獸）造成強力"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			..Dot_nc.." 最大爆炸半徑："..CNumb("10", "n_10_rgb").." 米。",
+			..Dot_nc.." 最大爆炸半徑："..CNumb("10", "n_10_rgb").." 公尺。",
 	},
 	--[+ BLITZ 1 - Shredder Frag Grenade +]--	27.03.2026
 	["loc_talent_veteran_grenade_apply_bleed_desc"] = { -- stacks: 6, talent_name: Frag Grenade, +colors
@@ -69,10 +69,10 @@ local veteran_localizations = {
 			.."對所有命中敵人施加 {stacks:%s} 層"..CKWord("流血", "Bleed_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_green.." 這是 {talent_name:%s} 的強化版本。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("500", "n_500_rgb").."-"..CNumb("200", "n_200_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("500", "n_500_rgb").."～"..CNumb("200", "n_200_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人（包括巨獸）造成強力"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			..Dot_nc.." 最大爆炸半徑："..CNumb("10", "n_10_rgb").." 米。\n"
+			..Dot_nc.." 最大爆炸半徑："..CNumb("10", "n_10_rgb").." 公尺。\n"
 			..Dot_nc.." 最多 "..CNumb("16", "n_16_rgb").." 層"..CKWord("流血", "Bleed_rgb_tw").."。",
 	},
 	--[+ BLITZ 2 - Krak Grenade +]--	27.03.2026
@@ -96,10 +96,10 @@ local veteran_localizations = {
 		["zh-tw"] = "投擲"..CKWord("穿甲手雷", "krak_gr_rgb_tw").."，"..CNumb("1", "n_1_rgb").." 秒後爆炸，造成毀滅性"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."吸附於防彈護甲、甲殼護甲和不屈敵人。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("2400", "n_2400_rgb").."-"..CNumb("500", "n_500_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("2400", "n_2400_rgb").."～"..CNumb("500", "n_500_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人（包括巨獸）造成強力"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
-			..Dot_nc.." 最大爆炸半徑："..CNumb("5", "n_5_rgb").." 米。",
+			..Dot_nc.." 最大爆炸半徑："..CNumb("5", "n_5_rgb").." 公尺。",
 	},
 	--[+ BLITZ 3 - Smoke Grenade +]--	27.03.2026
 	["loc_ability_smoke_grenade_description"] = { -- duration: 15, +colors
@@ -114,7 +114,7 @@ local veteran_localizations = {
 		["zh-tw"] = "投擲"..CKWord("煙霧手雷", "smok_gr_rgb_tw").."，"..CNumb("1.5", "n_1_5_rgb").." 秒後爆炸，產生持續 {duration:%s} 秒的煙霧雲。\n"
 			.."煙霧阻斷大多數敵人的視線，並降低雲中敵人的視野範圍。\n"
 			.."\n"
-			..Dot_nc.." 煙霧效果半徑："..CNumb("5.5", "n_5_5_rgb").." 米。\n"
+			..Dot_nc.." 煙霧效果半徑："..CNumb("5.5", "n_5_5_rgb").." 公尺。\n"
 			..Dot_red.." 對轟炸者、變種人和瘟疫爆者無效。",
 	},
 --[+ +AURA - АУРА+ +]--
@@ -253,7 +253,7 @@ local veteran_localizations = {
 			..Dot_green.." 這是 {old_talent_name:%s} 的強化版本。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
-			..Dot_nc.." 距離"..CKWord("老兵", "cls_vet_rgb_tw").." "..CNumb("50", "n_50_rgb").." 米內的人類大小精英與專家敵人會被標出 {duration:%s} 秒。\n"
+			..Dot_nc.." 距離"..CKWord("老兵", "cls_vet_rgb_tw").." "..CNumb("50", "n_50_rgb").." 公尺內的人類大小精英與專家敵人會被標出 {duration:%s} 秒。\n"
 			..Dot_nc.." 擊殺被標出的敵人時，會將"..CKWord("遠程姿態", "Rangd_stnc_rgb_tw").."的啟用持續時間刷新 {refresh_duration:%s} 秒。這也會刷新敵人對"..CKWord("老兵", "cls_vet_rgb_tw").."的標出持續時間。\n"
 			..Dot_red.." 標記僅對"..CKWord("老兵", "cls_vet_rgb_tw").."可見。",
 	},
@@ -314,7 +314,7 @@ local veteran_localizations = {
 			..Dot_nc.." Удерживание кнопки активации способности показывает радиус действия. Отменяется блоком.\n"
 			..Dot_red.." Не может "..CKWord("ошеломить", "oshelomit_rgb_ru").." уже "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов и врагов с активным пустотным щитом.\n",
 		["zh-tw"] = Dot_green.." 啟用時恢復 "..CNumb("100%", "pc_100_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
-			..Dot_green.." "..CKWord("踉蹌", "Staggers_rgb_tw").." {range:%s} 米內所有敵人。\n"
+			..Dot_green.." "..CKWord("踉蹌", "Staggers_rgb_tw").." {range:%s} 公尺內所有敵人。\n"
 			..Dot_nc.." 基礎冷卻 {cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_nc.." 按住技能鍵會顯示吼叫範圍。格擋可取消。\n"
