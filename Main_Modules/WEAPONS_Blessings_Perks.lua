@@ -1771,7 +1771,7 @@ local weapon_localizations = {
 				..CPhrs("Can_be_refr").."\n"
 				..Dot_red.." Не влияет на дальнобойные атаки.",
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes lors d'un coup d'action spéciale.",
-			["zh-tw"] = "特殊動作命中時 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
+			["zh-tw"] = "特殊動作命中時 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
 				..CPhrs("Can_be_refr")..Dot_red.." 不會強化遠程武器。",
 			["zh-cn"] = "特殊攻击命中敌人时 \n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." für "..CNumb("{time:%s}", "time_var_rgb").." Sek. bei einem Spezialangriff-Treffer.",
@@ -1831,7 +1831,7 @@ local weapon_localizations = {
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." на "..CNumb("{time:%s}", "time_var_rgb").." секунды при отталкивании врагов.\n"
 				..CPhrs("Can_be_refr"),
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes en poussant les ennemies.",
-			["zh-tw"] = "推開敵人時 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
+			["zh-tw"] = "推開敵人時 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
 				..CPhrs("Can_be_refr"),
 			["zh-cn"] = "推搡敌人时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，\n持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." für "..CNumb("{time:%s}", "time_var_rgb").." Sek. beim Schubsen von Gegnern.",
