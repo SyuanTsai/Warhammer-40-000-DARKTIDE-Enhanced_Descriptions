@@ -805,7 +805,9 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_overload_keystone_abilities_desc"] = { -- talent_name: Martyrdom, toughness_modifier: 5%, +colors
 		en = "Per each "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge spent, you gain:\n"
 			..Dot_green.." {stacks:%s} Stacks of "..CKWord("Power Overload", "PowerOverload_rgb")..".",
-		ru = "За каждый потраченный заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете:\n"
+			["zh-tw"] = "每消耗一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，獲得：\n"
+				..Dot_green.." {stacks:%s} 層"..CKWord("威力超載", "PowerOverload_rgb_tw").."。",
+			ru = "За каждый потраченный заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете:\n"
 			..Dot_green.." {stacks:%s} зарядов таланта "..CKWord("Перегрузка питания", "PowerOverload_rgb_ru")..".",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 3 - Flensing Protocols - Протоколы свежевания +]--	17.07.2026
@@ -823,7 +825,20 @@ local skitarii_localizations = {
 			.."Elite and Specialist Kills restore:\n"
 			..Dot_green.." {elite_special_stack:%s} Stacks and\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
-		ru = "У вас может быть до {max_stacks:%s} зарядов таланта {talent_name:%s}.\n"
+			["zh-tw"] = "你最多可擁有 {max_stacks:%s} 層 {talent_name:%s}。\n"
+				.."\n"
+				.."每層提供：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				.."\n"
+				.."受到傷害時移除：\n"
+				..Dot_red.." {removed_stacks:%s} 層。\n"
+				..Dot_nc.." 每秒最多發生一次。\n"
+				.."\n"
+				.."擊殺精英或專家時恢復：\n"
+				..Dot_green.." {elite_special_stack:%s} 層，以及\n"
+				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = "У вас может быть до {max_stacks:%s} зарядов таланта {talent_name:%s}.\n"
 			.."\n"
 			.."Каждый заряд даёт:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
@@ -842,7 +857,10 @@ local skitarii_localizations = {
 		en = "Each Stack also grants:\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." and\n"
 			..Dot_green.." {attack_speed:%s} Melee Attack Speed.",
-		ru = "Каждый заряд также даёт:\n"
+			["zh-tw"] = "每層還會提供：\n"
+				..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."，以及\n"
+				..Dot_green.." {attack_speed:%s} 近戰攻擊速度。",
+			ru = "Каждый заряд также даёт:\n"
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." и\n"
 			..Dot_green.." {attack_speed:%s} к скорости атак ближнего боя.",
 	},
@@ -850,18 +868,22 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_dissector_power_desc"] = { -- stacks: 3, +colors
 		en = "Elite and Specialist Kills restore an additional:\n"
 			..Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb")..".",
-		ru = "Убийства элитных врагов и специалистов восстанавливают дополнительно:\n"
+			["zh-tw"] = "擊殺精英或專家時額外恢復：\n"
+				..Dot_green.." {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			ru = "Убийства элитных врагов и специалистов восстанавливают дополнительно:\n"
 			..Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru")..".",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 3-3 - Enhanced Capacitance Protocols - Усиленные протоколы ёмкости +]--	17.07.2026
 	["loc_talent_cryptic_dissector_ability_stacks_desc"] = { -- duration: 10, +colors
-		en = Dot_green.." Using an "..CKWord("Ability", "Ability_rgb").." replenishes All Stacks.",
-		ru = Dot_green.." Использование "..CKWord("способности", "sposobnosti_rgb_ru").." восполняет все заряды.",
+			en = Dot_green.." Using an "..CKWord("Ability", "Ability_rgb").." replenishes All Stacks.",
+			["zh-tw"] = Dot_green.." 使用"..CKWord("技能", "Ability_rgb_tw").."會恢復所有層數。",
+			ru = Dot_green.." Использование "..CKWord("способности", "sposobnosti_rgb_ru").." восполняет все заряды.",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 3-4 - Honed Dissector - Отточенный диссектор +]--	17.07.2026
 	["loc_talent_cryptic_dissector_max_stacks_desc"] = { -- cooldown: +75%, duration: 2, +colors
-		en = Dot_green.." Increase Max Stacks to {max_stacks:%s}.",
-		ru = Dot_green.." Максимум зарядов увеличивается до {max_stacks:%s}.",
+			en = Dot_green.." Increase Max Stacks to {max_stacks:%s}.",
+			["zh-tw"] = Dot_green.." 將最大層數提高至 {max_stacks:%s}。",
+			ru = Dot_green.." Максимум зарядов увеличивается до {max_stacks:%s}.",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 	--[+ PASSIVES - ПАССИВНЫЙ - 1 - Overcharge Transfer Lattice - Решётка переноса перегрузки +]--	17.07.2026
@@ -869,7 +891,10 @@ local skitarii_localizations = {
 		en = "When an Enemy hits you with a Melee Attack, they and Enemies within {range:%s} meters are "..CKWord("Electrocuted", "Electrocuted_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
-		ru = "Когда враг попадает по вам атакой ближнего боя, он и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru")..".\n"
+			["zh-tw"] = "敵人以近戰攻擊命中你時，該敵人及 {range:%s} 米內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 冷卻時間：{cooldown:%s} 秒。",
+			ru = "Когда враг попадает по вам атакой ближнего боя, он и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru")..".\n"
 			.."\n"
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 	},
@@ -878,7 +903,10 @@ local skitarii_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs "..CKWord("Electrocuted", "Electrocuted_rgb")..".\n"
 			.."\n"
 			..Dot_green.." {more_damage:%s} more "..CKWord("Damage", "Damage_rgb").." per current "..CKWord("Combat Ability", "Cmbt_abil_rgb").." сharge.",
-		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против поражённых "..CKWord("электрошоком", "elektroshokom_rgb_ru").." врагов.\n"
+			["zh-tw"] = Dot_green.." 對"..CKWord("電擊", "Electrocuted_rgb_tw").."敵人的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。\n"
+				.."\n"
+				..Dot_green.." 每層現有"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能再使"..CKWord("傷害", "Damage_rgb_tw").."增加 {more_damage:%s}。",
+			ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." против поражённых "..CKWord("электрошоком", "elektroshokom_rgb_ru").." врагов.\n"
 			.."\n"
 			..Dot_green.." {more_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дополнительно за каждый заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".",
 	},
@@ -888,21 +916,28 @@ local skitarii_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.\n"
 			.."\n"
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
-		ru = "При получении "..CKWord("урона", "urona_rgb_ru")..", вы восстанавливаете:\n"
+			["zh-tw"] = "受到"..CKWord("傷害", "Damage_rgb_tw").."時，恢復：\n"
+				..Dot_green.." 在 {duration:%s} 秒內恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 冷卻時間：{cooldown:%s} 秒。",
+			ru = "При получении "..CKWord("урона", "urona_rgb_ru")..", вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.\n"
 			.."\n"
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 4 - System Shock - Системный шок +]--	17.07.2026
 	["loc_talent_cryptic_electrocution_applies_brittleness_desc"] = { -- toughness: 4%, +colors
-		en = Dot_green.." {stacks:%s} Stacks of "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("Brittleness", "Brittleness_rgb").." applied to enemies on "..CKWord("Electrocution", "Electrocution_rgb")..".",
-		ru = Dot_green.." {stacks:%s} заряда "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." накладывается на врагов при поражении их "..CKWord("электрошоком", "elektroshokom_rgb_ru")..".",
+			en = Dot_green.." {stacks:%s} Stacks of "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("Brittleness", "Brittleness_rgb").." applied to enemies on "..CKWord("Electrocution", "Electrocution_rgb")..".",
+			["zh-tw"] = Dot_green.." "..CKWord("電擊", "Electrocution_rgb_tw").."敵人時，對其施加 {stacks:%s} 層、每層 "..CNumb("2.5%", "pc_2_5_rgb").." 的"..CKWord("脆弱", "Brittleness_rgb_tw").."。",
+			ru = Dot_green.." {stacks:%s} заряда "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("хрупкости", "hrupkosti_rgb_ru").." накладывается на врагов при поражении их "..CKWord("электрошоком", "elektroshokom_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 5 - Entropic Transfer - Энтропийный перенос +]--	17.07.2026
 	["loc_talent_cryptic_electrocution_toughness_desc"] = { -- toughness: +2.5%, range: 5, more_toughness: +1%, monster_count: 5, max: +7.5%, +colors
 		en = "On "..CKWord("Electrocuting", "Electrocuting_rgb").." an Enemy, you restore:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.",
-		ru = "При поражении врага "..CKWord("электрошоком", "elektroshokom_rgb_ru")..", вы восстанавливаете:\n"
+			["zh-tw"] = CKWord("電擊", "Electrocuting_rgb_tw").."敵人時，恢復：\n"
+				..Dot_green.." 在 {duration:%s} 秒內恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = "При поражении врага "..CKWord("электрошоком", "elektroshokom_rgb_ru")..", вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 6 - Weakness Analysis Doctrine - Доктрина анализа уязвимостей +]--	17.07.2026
@@ -918,7 +953,18 @@ local skitarii_localizations = {
 			..Dot_nc.." "..CKWord("Chem Toxin", "Chem_Tox_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Triggers on both Melee and Ranged attacks.",
-		ru = "Попадание по врагу, поражённому любым из нижеследующих эффектов, даёт на {duration:%s} секунд:\n"
+			["zh-tw"] = "命中受下列任一效果影響的敵人時，獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+				.."\n"
+				.."效果：\n"
+				..Dot_nc.." "..CKWord("電擊", "Electrocuted_rgb_tw").."，\n"
+				..Dot_nc.." "..CKWord("靈火", "Soulblaze_rgb_tw").."，\n"
+				..Dot_nc.." "..CKWord("燃燒", "Burn_rgb_tw").."，\n"
+				..Dot_nc.." "..CKWord("流血", "Bleed_rgb_tw").."，\n"
+				..Dot_nc.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 近戰與遠程攻擊皆可觸發。",
+			ru = "Попадание по врагу, поражённому любым из нижеследующих эффектов, даёт на {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			.."Эффекты:\n"
@@ -935,7 +981,10 @@ local skitarii_localizations = {
 		en = "Pushing an Enemy applies "..CKWord("Electrocution", "Electrocution_rgb")..", dealing "..CKWord("Damage", "Damage_rgb").." and "..CKWord("Stunning", "Stunning_rgb").." them.\n"
 			.."\n"
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
-		ru = "Отталкивание врагов накладывает на них "..CKWord("электрошок", "elektroshok_rgb_ru")..", наносит "..CKWord("урон", "uron_rgb_ru").." и "..CKWord("оглушает", "oglushaet_rgb_ru").." их.\n"
+			["zh-tw"] = "推開敵人時會施加"..CKWord("電擊", "Electrocution_rgb_tw").."，造成"..CKWord("傷害", "Damage_rgb_tw").."並使其"..CKWord("眩暈", "Stunning_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 冷卻時間：{cooldown:%s} 秒。",
+			ru = "Отталкивание врагов накладывает на них "..CKWord("электрошок", "elektroshok_rgb_ru")..", наносит "..CKWord("урон", "uron_rgb_ru").." и "..CKWord("оглушает", "oglushaet_rgb_ru").." их.\n"
 			.."\n"
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 	},
@@ -944,7 +993,10 @@ local skitarii_localizations = {
 		en = Dot_green.." {corruption_resistance:%s} "..CKWord("Corruption", "Corruption_rgb").." Resistance.\n"
 			.."\n"
 			..Dot_red.." {corruption_damage_flat:%s} "..CKWord("Corruption Damage", "Corruptdmg_rgb").." taken every {interval:%s} seconds.",
-		ru = Dot_green.." {corruption_resistance:%s} к сопротивлению "..CKWord("порче", "porche_rgb_ru")..".\n"
+			["zh-tw"] = Dot_green.." {corruption_resistance:%s} "..CKWord("腐敗", "Corruption_rgb_tw").."抗性。\n"
+				.."\n"
+				..Dot_red.." 每 {interval:%s} 秒受到 {corruption_damage_flat:%s} "..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
+			ru = Dot_green.." {corruption_resistance:%s} к сопротивлению "..CKWord("порче", "porche_rgb_ru")..".\n"
 			.."\n"
 			..Dot_red.." {corruption_damage_flat:%s} "..CKWord("урона от порчи", "porchi_urona_rgb_ru").." накладывается каждые {interval:%s} секунд.",
 	},
@@ -952,7 +1004,9 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_pushing_grants_cleave_alt_desc"] = { -- damage: +20%, &->and, +colors
 		en = "On Pushing an Enemy, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {cleave:%s} Melee "..CKWord("Cleave", "Cleave_rgb")..".",
-		ru = "При отталкивании врага вы получаете на {duration:%s} секунд:\n"
+			["zh-tw"] = "推開敵人時，獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {cleave:%s} 近戰"..CKWord("順劈攻擊", "Cleave_rgb_tw").."。",
+			ru = "При отталкивании врага вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов в ближнем бою.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 10 - Galvanized Coating - Оцинкованное покрытие +]--	17.07.2026
