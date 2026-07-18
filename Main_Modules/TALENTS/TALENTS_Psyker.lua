@@ -708,7 +708,7 @@ local psyker_localizations = {
 			..Dot_nc.." 發射一枚自導射彈，飛行 "..CNumb("3", "n_3_rgb").." 秒，擊中 "..CNumb("50", "n_50_rgb").." 米半徑內的所有敵人。\n"
 			..Dot_nc.." 造成 "..CNumb("380", "n_380_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."，消耗 "..CNumb("25%", "pc_25_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 可以"..CKWord("暴擊", "Crit_rgb_tw").."。\n"
+			..Dot_green.." 可以造成"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
 			..Dot_nc.." 消耗 "..CNumb("1", "n_1_rgb").." 枚彈藥。\n"
 			..Dot_nc.." 每 "..CNumb("3", "n_3_rgb").." 秒恢復 "..CNumb("1", "n_1_rgb").." 枚彈藥。\n"
 			..Dot_red.." 預設無法以"..CKWord("順劈攻擊", "Cleave_rgb_tw").."穿透甲殼護甲。\n"
@@ -1034,9 +1034,9 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." S'applique à toutes les attaques qui peuvent être "..CKWord("Critiques", "Crit_rgb_fr")..".\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
-		["zh-tw"] = Dot_green.." 你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友，"..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."增加 {critical_strike_chance:%s}。\n"
+		["zh-tw"] = Dot_green.." 你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友，"..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."增加 {critical_strike_chance:%s}。\n"
 			.."\n"
-			..Dot_nc.." 適用於所有可以"..CKWord("暴擊", "Crit_rgb_tw").."的攻擊。\n"
+			..Dot_nc.." 適用於所有可以造成"..CKWord("致命一擊", "Crit_rgb_tw").."的攻擊。\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 		["zh-cn"] = Dot_green.." 您与"..CKWord("连携", "Coherency_rgb_zh_cn").."中的盟友获得{critical_strike_chance:%s}"..CKWord("暴击命中几率", "Crt_hit_chnc_rgb_zh_cn").."。\n"
 			.."\n"
@@ -1384,9 +1384,9 @@ local psyker_localizations = {
 			..CPhrs("Refr_dur_stappl").."\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." très élevés contre armure.\n"
 			..Dot_red.." "..CKWord("Dégâts", "Damage_rgb_fr").." très faibles contre Carapace.",
-		["zh-tw"] = "{talent_name:%s} 依當前"..CKWord("反噬", "Peril_rgb_tw").." 對命中目標施加 {min_stacks:%s}-{warpfire_stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."：\n"
+		["zh-tw"] = "{talent_name:%s} 依當前"..CKWord("反噬", "Peril_rgb_tw").." 對命中目標施加 {min_stacks:%s}-{warpfire_stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("靈火", "Soulblaze_rgb_tw").."：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."\n"
+			..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."\n"
 			..CKWord("反噬", "Peril_rgb_tw").." ("..CNumb("%", "pc_rgb").."):     "..CNumb("0", "n_0_rgb").." | "..CKWord("~17", "n__17_rgb").." | "..CKWord("~33", "n__33_rgb").." | "..CKWord("~50", "n__50_rgb").." | "..CKWord("~67", "n__67_rgb").." | "..CKWord("~83", "n__83_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
@@ -1543,7 +1543,7 @@ local psyker_localizations = {
 			.."   "..Dot_green.." 遠程即時命中攻擊，\n"
 			.."   "..Dot_green.." 投射物（轟炸者手榴彈），\n"
 			.."   "..Dot_green.." 陷阱兵的網，\n"
-			.."   "..Dot_green.." 火焰噴射器的直接命中。\n"
+			.."   "..Dot_green.." 火焰兵的直接命中。\n"
 			..Dot_red.." 無法阻擋：\n"
 			.."   "..Dot_red.." 地面火焰，\n"
 			.."   "..Dot_red.." 毒氣雲，\n"
@@ -2028,7 +2028,7 @@ local psyker_localizations = {
 			..Dot_nc.." Temps de recharge de base : {cooldown:%s} secondes.",
 		["zh-tw"] = "進入"..CKWord("占卜者的凝視", "Scrier_gaze_rgb_tw").."，消除 {vent:%s} "..CKWord("反噬", "Peril_rgb_tw").."，並獲得：\n"
 			..Dot_green.." {base_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n"
 			..Dot_green.." {weakspot_damage:%s} "..CKWord("弱點傷害", "Weakspot_dmg_rgb_tw").."，\n"
 			..Dot_green.." 每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
@@ -2598,7 +2598,7 @@ local psyker_localizations = {
 		fr = Dot_green.." {chance:%s} de chance d'obtenir une Charge Warp lorsque vous ou un allié tuez un ennemi actuellement affecté par "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr")..".\n"
 			.."\n"
 			..Dot_nc.." Cet effet n'a pas de limite de portée et bénéficie à tous les "..CKWord("Psykers", "cls_psys_rgb_fr").." qui ont ce talent équipé.",
-		["zh-tw"] = Dot_green.." 你或隊友擊殺受"..CKWord("靈火", "Soulblaze_rgb_tw").."影響的敵人時，有 {chance:%s} 機率獲得一層亞空間充能。\n"
+		["zh-tw"] = Dot_green.." 你或隊友擊殺受"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."影響的敵人時，有 {chance:%s} 機率獲得一層亞空間充能。\n"
 			.."\n"
 			..Dot_nc.." 此效果沒有距離限制，所有裝備此天賦的"..CKWord("靈能者", "cls_psy_rgb_tw").."都能受益。",
 		["zh-cn"] = Dot_green.." 当你或盟友杀死正受到"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."影响的敌人时，{chance:%s}几率获得一个亚空间充能。\n"
@@ -3238,12 +3238,12 @@ local psyker_localizations = {
 			..Dot_nc.." Se cumule {stacks:%s} fois.\n"
 			..Dot_green.." Peut générer plusieurs cumuls par "..CKWord("Attaque critique", "Crit_Attk_rgb_fr").." lors d'un "..CKWord("Transpercement", "Cleaving_rgb_fr")..".\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." "..CKWord("暴擊命中", "Crit_hits_rgb_tw").."時，每秒恢復 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，在 {seconds:%s} 秒內最多恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，每秒恢復 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，在 {seconds:%s} 秒內最多恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
-			..Dot_green.." "..CKWord("暴擊命中", "Crit_hits_rgb_tw").."時獲得 {movement_speed:%s} 移動速度，持續 {seconds:%s} 秒。\n"
+			..Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時獲得 {movement_speed:%s} 移動速度，持續 {seconds:%s} 秒。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
-			..Dot_green.." 以"..CKWord("暴擊攻擊", "Crit_Attk_rgb_tw").."進行"..CKWord("順劈攻擊", "Cleaving_rgb_tw").."時，每次攻擊可產生多層。\n"
+			..Dot_green.." 以"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."進行"..CKWord("順劈攻擊", "Cleaving_rgb_tw").."時，每次攻擊可產生多層。\n"
 			..CPhrs("Can_be_refr"),
 		["zh-cn"] = Dot_green.." "..CKWord("暴击命中", "Crit_hits_rgb_zh_cn").."时，每秒恢复"..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("韧性", "Toughness_rgb_zh_cn").."，在{seconds:%s}秒内最多恢复{toughness:%s}"..CKWord("韧性", "Toughness_rgb_zh_cn").."。\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -3406,12 +3406,12 @@ local psyker_localizations = {
 			..Dot_green.." Se déclenche sur les Élites ou Spécialistes tués par les ticks de "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr")..", de "..CKWord("Brûlure", "Burn_rgb_fr").." ou de "..CKWord("Saignement", "Bleed_rgb_fr")..".\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." très élevés contre armure.\n"
 			..Dot_red.." "..CKWord("Dégâts", "Damage_rgb_fr").." très faibles contre Carapace.",
-		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 米內所有敵人施加 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
+		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 米內所有敵人施加 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
 			.."\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
 			..CPhrs("Refr_dur_stappl").."\n"
-			..Dot_green.." "..CKWord("靈火", "Soulblaze_rgb_tw").."、"..CKWord("燃燒", "Burn_rgb_tw").."或"..CKWord("流血", "Bleed_rgb_tw").."的持續傷害擊殺精英或專家時也可觸發。\n"
+			..Dot_green.." "..CKWord("靈魂之火", "Soulblaze_rgb_tw").."、"..CKWord("燃燒", "Burn_rgb_tw").."或"..CKWord("流血", "Bleed_rgb_tw").."的持續傷害擊殺精英或專家時也可觸發。\n"
 			..Dot_green.." 對一般護甲"..CKWord("傷害", "Damage_rgb_tw").." 極高。\n"
 			..Dot_red.." 對甲殼護甲造成的"..CKWord("傷害", "Damage_rgb_tw").."極低。",
 		["zh-cn"] = "击杀精英或专家敌人时，对半径"..CNumb("4", "n_4_rgb").."米内所有敌人施加{stacks:%s}层"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."。单一目标最多"..CNumb("31", "n_31_rgb").."层。\n"
@@ -3638,7 +3638,7 @@ local psyker_localizations = {
 			..Dot_nc.." 持續 {secondary_time:%s} 秒。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
-			..Dot_red.." 對業火法力杖，兩個加成僅增加火焰直擊"..CKWord("傷害", "Damage_rgb_tw").."，"..CKWord("靈火", "Soulblaze_rgb_tw").." 傷害不受影響。",
+			..Dot_red.." 對烈焰力場法杖，兩個加成僅增加火焰直擊"..CKWord("傷害", "Damage_rgb_tw").."，"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 傷害不受影響。",
 		["zh-cn"] = Dot_green.." 完全充能的次要攻击后，下一次灵能杖的主要攻击获得{damage:%s}"..CKWord("伤害", "Damage_rgb_zh_cn").."。\n"
 			..Dot_nc.." 持续{time:%s}秒。\n"
 			.."\n"
@@ -3763,8 +3763,8 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_green.." Les effets de ce talent n'ont pas de limite de portée et peuvent se déclencher à n'importe quelle distance de l'ennemi mourant.",
-		["zh-tw"] = "以"..CKWord("靈火", "Soulblaze_rgb_tw").." 擊殺敵人，獲得 {duration:%s} 秒效果：\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."，\n"
+		["zh-tw"] = "以"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 擊殺敵人，獲得 {duration:%s} 秒效果：\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("3%", "pc_3_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").." /秒，最多 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -4024,16 +4024,16 @@ local psyker_localizations = {
 			.."_______________________________\n"
 			..Dot_red.." Les cibles ne reçoivent pas de cumuls de "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr").." si elles en ont déjà {stacks:%s} ou plus.\n"
 			..Dot_nc.." Les Hôtes Démoniaques ne sont pas des cibles valides.",
-		["zh-tw"] = "當受你"..CKWord("靈火", "Soulblaze_rgb_tw").." 影響的敵人死亡時，\n"
-			.."周圍每個敵人最多獲得 {stacks:%s} 層"..CKWord("靈火", "Soulblaze_rgb_tw").."，\n"
+		["zh-tw"] = "當受你"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 影響的敵人死亡時，\n"
+			.."周圍每個敵人最多獲得 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."，\n"
 			.."且不超過死亡敵人的層數。\n"
 			.."\n"
-			..Dot_nc.." 擴散層數取決於死亡敵人的"..CKWord("靈火", "Soulblaze_rgb_tw").."層數：\n"
+			..Dot_nc.." 擴散層數取決於死亡敵人的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."層數：\n"
 			.."_______________________________\n"
 			.."層數：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| >"..CNumb("4", "n_4_rgb").."\n"
 			.."擴散：       "..CNumb("0", "n_0_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("4", "n_4_rgb").."\n"
 			.."_______________________________\n"
-			..Dot_red.." 若目標已有 "..CNumb("4", "n_4_rgb").." 層或以上，不再獲得該天賦造成的"..CKWord("靈火", "Soulblaze_rgb_tw").." 層。\n"
+			..Dot_red.." 若目標已有 "..CNumb("4", "n_4_rgb").." 層或以上，不再獲得該天賦造成的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 層。\n"
 			..Dot_nc.." 惡魔宿主不是有效目標。",
 		["zh-cn"] = "当敌人死于你的"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."时，附近的每个敌人获得最多{stacks:%s}层"..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."。它们获得的层数不会超过死去敌人原有的层数。\n"
 			.."\n"
@@ -4313,7 +4313,7 @@ local psyker_localizations = {
 		fr = Dot_green.." Un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." vous fait compter comme Esquivant contre les attaques à distance pendant {duration:%s} seconde.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." "..CKWord("暴擊命中", "Crit_hit_rgb_tw").."會使你在 {duration:%s} 秒內，面對遠程攻擊時視為正在閃避。\n"
+		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hit_rgb_tw").."會使你在 {duration:%s} 秒內，面對遠程攻擊時視為正在閃避。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
 		["zh-cn"] = Dot_green.." "..CKWord("暴击命中", "Crit_hit_rgb_zh_cn").."使你在{duration:%s}秒内视为正在闪避远程攻击。\n"
@@ -4643,11 +4643,11 @@ local psyker_localizations = {
 			..Dot_nc.." Les cumuls de "..CKWord("Point faible", "Weakspot_rgb_fr").." durent jusqu'à consommation.\n"
 			..Dot_nc.." Ne peut se déclencher qu'une seule fois par attaque.\n"
 			..Dot_red.." Tirer dans le vide consomme le "..CKWord("Critique", "Crit_rgb_fr").." garanti.",
-		["zh-tw"] = Dot_green.." 達成 {weakspot_hits:%s} 次"..CKWord("弱點命中", "Weakspothits_rgb_tw").."後，下一次遠程攻擊必定"..CKWord("暴擊", "Critical_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 達成 {weakspot_hits:%s} 次"..CKWord("弱點命中", "Weakspothits_rgb_tw").."後，下一次遠程攻擊必定造成"..CKWord("致命一擊", "Critical_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("弱點", "Weakspot_rgb_tw").." 層數保留至消耗。\n"
 			..Dot_nc.." 每次攻擊只觸發一次。\n"
-			..Dot_red.." 對空射擊會消耗這次必定"..CKWord("暴擊", "Crit_rgb_tw").."。",
+			..Dot_red.." 對空射擊會消耗這次必定造成的"..CKWord("致命一擊", "Crit_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 命中{weakspot_hits:%s}次"..CKWord("弱点", "Weakspothits_rgb_zh_cn").."后，下一次远程攻击必定"..CKWord("暴击", "Critical_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("弱点", "Weakspot_rgb_zh_cn").."层数持续直到被消耗。\n"
@@ -5055,7 +5055,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Se déclenche en touchant des boucliers.\n"
 			..Dot_red.." Se déclenche une seule fois par tir, quel que soit le nombre d'ennemis touchés.",
-		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("致命一擊", "Crit_hits_rgb_tw").."時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 命中護盾時也會觸發。\n"
 			..Dot_red.." 每次射擊只觸發一次，無論命中多少敵人。",
@@ -5106,7 +5106,7 @@ local psyker_localizations = {
 			..Dot_red.." Au rechargement, générez jusqu'à {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr").." en fonction du pourcentage de chargeur restauré.\n"
 			.."\n"
 			..Dot_red.." Recharger un chargeur vide génère la quantité maximale de {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr")..".",
-		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 {threshold:%s} 時，換彈速度 "..CNumb("+", "n_plus_rgb").."{reload_speed:%s}。\n"
+		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 {threshold:%s} 時，裝填速度 "..CNumb("+", "n_plus_rgb").."{reload_speed:%s}。\n"
 			..Dot_red.." 換彈時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_red.." 彈匣為空時換彈，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",

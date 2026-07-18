@@ -1484,13 +1484,13 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, загонщик, капитаны/близнецы, крушитель.",
 		["zh-tw"] = CKWord("近戰爆擊", "Critical_rgb_tw").."攻擊會立即擊殺人類體型敵人，\n"
-			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
+			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
 			.."\n"
-			..Dot_nc.." ["..CKWord("爆擊傷害", "Crt_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
+			..Dot_nc.." ["..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
 			.."\n"
 			..Dot_nc.." 不視為「人類體型」的敵人：\n"
 			.."   "..Dot_nc.." 納垢巨獸、堡壘、隊長/雙子、\n"
-			.."   "..Dot_nc.." 混沌魔物、粉碎者、惡魔宿主、\n"
+			.."   "..Dot_nc.." 混沌魔物、碾壓者、惡魔宿主、\n"
 			.."   "..Dot_nc.." 獸群領主、瘟疫歐格林、收割者。",
 	},
 	--[+ Passive 28 - The Sweet Spot +]--	26.03.2026

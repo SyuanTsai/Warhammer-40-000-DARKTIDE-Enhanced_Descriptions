@@ -474,8 +474,8 @@ local veteran_localizations = {
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
 			.."每層"..CKWord("專注", "Focus_rgb_tw").." 提供：\n"
-			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧", "Finesse_rgb_tw").."強度，\n"
-			..Dot_green.." {reload_speed:%s} 換彈速度。\n"
+			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧傷害", "Finesse_rgb_tw").."，\n"
+			..Dot_green.." {reload_speed:%s} 裝填速度。\n"
 			.."\n"
 			..CNote("Fns_note"),
 	},

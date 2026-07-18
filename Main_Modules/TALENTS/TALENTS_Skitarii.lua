@@ -150,11 +150,11 @@ local skitarii_localizations = {
 				.."Use your Primary Action to switch between\n"
 				..Dot_nc.." Dispersed or\n"
 				..Dot_nc.." Focused Fire Mode.",
-			["zh-tw"] = "你額外配備一個裝有"..CKWord("火焰噴射器", "Flamer_rgb_tw").."的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。\n"
+			["zh-tw"] = "你額外配備一個裝有"..CKWord("淨化噴火器", "Flamer_rgb_tw").."的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。\n"
 				.."\n"
 				.."指定一個區域來部署它。\n"
 				.."\n"
-				.."使用主要動作即可切換：\n"
+				.."使用主要攻擊即可切換：\n"
 				..Dot_nc.." 分散火力模式，或\n"
 				..Dot_nc.." 集中火力模式。",
 			ru = "У вас есть дополнительный "..CKWord("сервочереп", "servocherep_rgb_ru")..", оснащённый "..CKWord("огнемётом", "Flamer_rgb_ru")..".\n"
@@ -242,7 +242,7 @@ local skitarii_localizations = {
 		--[+ BLITZ - БЛИЦ - 3-2 - Voltaic Resistance - Вольтаическое сопротивление +]--	17.07.2026
 		["loc_talent_cryptic_force_field_arcs_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "When your Refraction Emitter ends, shoot up to {max_arcs:%s} "..CKWord("Arcs", "Arcs_rgb").." towards enemies in front of you, based on the number of attacks absorbed.",
-			["zh-tw"] = "折射力場發射器結束時，依吸收的攻擊次數，向前方敵人射出最多 {max_arcs:%s} 道"..CKWord("電弧", "Arcs_rgb_tw").."。",
+			["zh-tw"] = "艾曼納圖斯力場結束時，依吸收的攻擊次數，向前方敵人射出最多 {max_arcs:%s} 道"..CKWord("電弧", "Arcs_rgb_tw").."。",
 			ru = "Когда ваш рефракционный излучатель заканчивает действие, он выпускает до {max_arcs:%s} "..CKWord("электродуг", "elektrodug_rgb_ru").." во врагов перед вами, в зависимости от количества поглощённых атак.",
 		},
 		--[+ BLITZ - БЛИЦ - 3-3 - Kinetic Repulsion - Кинетическое отталкивание +]--	17.07.2026
@@ -335,7 +335,7 @@ local skitarii_localizations = {
 			.."\n"
 			.."以 {charge_three:%s} 層或以上充能使用 {talent_name:%s} 時，接下來 {buff_duration:%s} 秒內，你的攻擊會"..CKWord("電擊", "Electrocute_rgb_tw").."命中的敵人 {short_duration:%s} 秒並造成"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			.."這是"..CKWord("電能擴展器", "VoltaicExpander_rgb_tw").."技能的強化版。",
+			.."這是"..CKWord("電能擴張器", "VoltaicExpander_rgb_tw").."技能的強化版。",
 		ru = "Вы выпускаете "..CKWord("Электрический разряд", "ElectrDisch_rgb_ru").." вокруг себя и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru").." на {duration:%s} секунды, "..CKWord("ошеломляются", "oshelomlautsa_rgb_ru").." и получают "..CKWord("урон", "uron_rgb_ru")..".\n"
 			.."\n"
 			.."При использовании способности {talent_name:%s} с {charge_two:%s} и более зарядами, у стрелков в радиусе {far_range:%s} метров выходит из строя оружие на {malfunction_duration:%s} секунд.\n"
@@ -388,7 +388,7 @@ local skitarii_localizations = {
 			..Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb")..".",
 		["zh-tw"] = "使用"..CKWord("弦爪", "Chordclaw_rgb_tw").."施展強力近戰重攻擊。\n"
 			.."\n"
-			.."此攻擊必定造成"..CKWord("暴擊", "Crit_strike_rgb_tw").."，並具有：\n"
+			.."此攻擊必定造成"..CKWord("致命一擊", "Crit_strike_rgb_tw").."，並具有：\n"
 			..Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."。",
 		ru = "Вы выполняете мощную тяжёлую атаку ближнего боя с помощью "..CKWord("Аккордовых когтей", "Chordclaw_rgb_ru")..".\n"
 			.."\n"
@@ -586,7 +586,7 @@ local skitarii_localizations = {
 		en = "While {ability_name:%s} is active, and for {duration:%s} seconds after it ends, you gain:\n"
 			..Dot_green.." {reload_speed:%s} Reload Speed.",
 			["zh-tw"] = "{ability_name:%s} 啟用期間及結束後 {duration:%s} 秒內，獲得：\n"
-				..Dot_green.." {reload_speed:%s} 換彈速度。",
+				..Dot_green.." {reload_speed:%s} 裝填速度。",
 			ru = "Пока активна способность {ability_name:%s} и в течение {duration:%s} секунд после её окончания, вы получаете:\n"
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки.",
 	},
@@ -601,11 +601,11 @@ local skitarii_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_crit_chance:%s} Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".",
 			["zh-tw"] = "{talent_name:%s} 啟用期間獲得：\n"
 				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."，以及\n"
-				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} 遠程"..CKWord("暴擊率", "Crt_chnc_r_rgb_tw").."。\n"
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} 遠程"..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n"
 				.."\n"
 				.."經過 {duration:%s} 秒後提高至：\n"
 				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."，以及\n"
-				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_crit_chance:%s} 遠程"..CKWord("暴擊率", "Crt_chnc_r_rgb_tw").."。",
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_crit_chance:%s} 遠程"..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。",
 			ru = "Пока активна способность {talent_name:%s} вы получаете:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{cleave:%s} к "..CKWord("прострелу", "prostrelu_rgb_ru").." и\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru")..".\n"
@@ -632,7 +632,7 @@ local skitarii_localizations = {
 	--[+ ABILITY - СПОСОБНОСТЬ - 6 - Flux Conduit Build-Up - Проводник накопления потока +]--	17.07.2026
 	["loc_talent_cryptic_crits_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated over {duration:%s} seconds on "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
-			["zh-tw"] = Dot_green.." "..CKWord("暴擊命中", "Crit_hits_rgb_tw").."時，在 {duration:%s} 秒內產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，在 {duration:%s} 秒內產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
 			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в течение {duration:%s} секунд при "..CKWord("критических ударах", "krit_udarah_rgb_ru")..".",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 7 - Reactor Coil Recharge - Перезарядка катушки реактора +]--	17.07.2026
@@ -806,7 +806,7 @@ local skitarii_localizations = {
 		en = "Per each "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge spent, you gain:\n"
 			..Dot_green.." {stacks:%s} Stacks of "..CKWord("Power Overload", "PowerOverload_rgb")..".",
 			["zh-tw"] = "每消耗一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，獲得：\n"
-				..Dot_green.." {stacks:%s} 層"..CKWord("威力超載", "PowerOverload_rgb_tw").."。",
+				..Dot_green.." {stacks:%s} 層"..CKWord("能量超載", "PowerOverload_rgb_tw").."。",
 			ru = "За каждый потраченный заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете:\n"
 			..Dot_green.." {stacks:%s} зарядов таланта "..CKWord("Перегрузка питания", "PowerOverload_rgb_ru")..".",
 	},
@@ -858,7 +858,7 @@ local skitarii_localizations = {
 			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb").." and\n"
 			..Dot_green.." {attack_speed:%s} Melee Attack Speed.",
 			["zh-tw"] = "每層還會提供：\n"
-				..Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."，以及\n"
+				..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."，以及\n"
 				..Dot_green.." {attack_speed:%s} 近戰攻擊速度。",
 			ru = "Каждый заряд также даёт:\n"
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." и\n"
@@ -958,7 +958,7 @@ local skitarii_localizations = {
 				.."\n"
 				.."效果：\n"
 				..Dot_nc.." "..CKWord("電擊", "Electrocuted_rgb_tw").."，\n"
-				..Dot_nc.." "..CKWord("靈火", "Soulblaze_rgb_tw").."，\n"
+				..Dot_nc.." "..CKWord("靈魂之火", "Soulblaze_rgb_tw").."，\n"
 				..Dot_nc.." "..CKWord("燃燒", "Burn_rgb_tw").."，\n"
 				..Dot_nc.." "..CKWord("流血", "Bleed_rgb_tw").."，\n"
 				..Dot_nc.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
@@ -1030,7 +1030,7 @@ local skitarii_localizations = {
 	--[+ PASSIVES - ПАССИВНЫЙ - 11 - Electro-Strike Conduit - Проводник электроудара +]--	17.07.2026
 	["loc_talent_cryptic_melee_crits_electrocute_first_desc"] = { -- active_duration: 5, cooldown_duration: 120, s->seconds, +colors
 			en = "Melee "..CKWord("Critical Hits", "Crit_hits_rgb").." "..CKWord("Electrocute", "Electrocute_rgb").." the first Enemy hit.",
-			["zh-tw"] = "近戰"..CKWord("暴擊命中", "Crit_hits_rgb_tw").."會"..CKWord("電擊", "Electrocute_rgb_tw").."第一名命中的敵人。",
+			["zh-tw"] = "近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."會"..CKWord("電擊", "Electrocute_rgb_tw").."第一名命中的敵人。",
 			ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." в ближнем бою накладывают "..CKWord("электрошок", "elektroshok_rgb_ru").." на первого поражённого врага.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 12 - Data Sensor Protocol - Протокол сенсора данных +]--	17.07.2026
@@ -1213,7 +1213,7 @@ local skitarii_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").."\n"
 			.."and gain for {duration:%s} seconds:\n"
 			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
-			["zh-tw"] = CKWord("暴擊命中", "Crit_hits_rgb_tw").."時，恢復：\n"
+			["zh-tw"] = CKWord("致命一擊", "Crit_hits_rgb_tw").."時，恢復：\n"
 				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 				.."並獲得以下效果 {duration:%s} 秒：\n"
 				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
@@ -1285,10 +1285,10 @@ local skitarii_localizations = {
 			.."\n"
 			.."When at {low_charges:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." сharges you gain:\n"
 			..Dot_green.." {crit_chance_high:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".",
-			["zh-tw"] = Dot_green.." {crit_chance_low:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。\n"
+			["zh-tw"] = Dot_green.." {crit_chance_low:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。\n"
 				.."\n"
 				..""..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能為 {low_charges:%s} 層時獲得：\n"
-				..Dot_green.." {crit_chance_high:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+				..Dot_green.." {crit_chance_high:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。",
 			ru = Dot_green.." {crit_chance_low:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			.."\n"
 			.."При {low_charges:%s} зарядах "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете:\n"
@@ -1378,7 +1378,7 @@ local skitarii_localizations = {
 			.."\n"
 			.."After {duration:%s} seconds without shooting, each additional second reloads:\n"
 			..Dot_green.." {reload_percent:%s} of your Clip from Reserve.",
-			["zh-tw"] = Dot_green.." {reload_speed:%s} 換彈速度。\n"
+			["zh-tw"] = Dot_green.." {reload_speed:%s} 裝填速度。\n"
 				.."\n"
 				.."停止射擊 {duration:%s} 秒後，每多一秒未射擊會從儲備彈藥自動填裝：\n"
 				..Dot_green.." 彈匣容量的 {reload_percent:%s}。",
