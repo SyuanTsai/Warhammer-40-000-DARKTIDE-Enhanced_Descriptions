@@ -1213,7 +1213,11 @@ local skitarii_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").."\n"
 			.."and gain for {duration:%s} seconds:\n"
 			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
-		ru = "При "..CKWord("критических ударах", "krit_udarah_rgb_ru").." вы восстанавливаете:\n"
+			["zh-tw"] = CKWord("暴擊命中", "Crit_hits_rgb_tw").."時，恢復：\n"
+				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
+				.."並獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			ru = "При "..CKWord("критических ударах", "krit_udarah_rgb_ru").." вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").."\n"
 			.."и получаете на {duration:%s} секунды:\n"
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
@@ -1222,7 +1226,9 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_elite_kills_toughness_desc"] = { -- damage: +15%, +colors
 		en = "Elite Kills restore:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.",
-		ru = "Убийства элитных врагов восстанавливают:\n"
+			["zh-tw"] = "擊殺精英時恢復：\n"
+				..Dot_green.." 在 {duration:%s} 秒內恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = "Убийства элитных врагов восстанавливают:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 26 - Threat Detection Imperative - Императив обнаружения угроз +]--	17.07.2026
@@ -1234,7 +1240,14 @@ local skitarii_localizations = {
 			.."\n"
 			..Dot_nc.." Max {stacks:%s} Stacks.\n"
 			..Dot_nc.." Stacks decay one at a time.",
-		ru = "Убийства в дальнем бою дают заряды.\n"
+			["zh-tw"] = "遠程擊殺會提供層數。\n"
+				.."\n"
+				.."每層提供以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 最多 {stacks:%s} 層。\n"
+				..Dot_nc.." 層數會逐一衰減。",
+			ru = "Убийства в дальнем бою дают заряды.\n"
 			.."\n"
 			.."Каждый заряд даёт на {duration:%s} секунд:\n"
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
@@ -1244,21 +1257,26 @@ local skitarii_localizations = {
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 27 - Assassination Protocols - Протоколы устранения +]--	17.07.2026
 	["loc_talent_cryptic_ranged_vs_bfg_desc"] = { -- spread: -75%, recoil: -50%, duration: 3, s->seconds, +colors
-		en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." vs Ogryns, Monstrosities and Captains.",
-		ru = Dot_green.." {damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." по огринам, чудовищам и капитанам.",
+			en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." vs Ogryns, Monstrosities and Captains.",
+			["zh-tw"] = Dot_green.." 對歐格林、巨獸與連長的遠程"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
+			ru = Dot_green.." {damage:%s} к дальнобойному "..CKWord("урону", "uronu_rgb_ru").." по огринам, чудовищам и капитанам.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 28 - Evasive Servo Recovery - Восстановление серво-уклонения +]--	17.07.2026
 	["loc_talent_cryptic_successful_dodge_stamina_desc"] = { -- impact_modifier: +50%, +colors
 		en = "On Successful Dodge, you restore:\n"
 			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..".",
-		ru = "При успешном уклонении вы восстанавливаете:\n"
+			["zh-tw"] = "成功閃避時恢復：\n"
+				..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
+			ru = "При успешном уклонении вы восстанавливаете:\n"
 			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 29 - Channelled Motive Force - Направленная движущая сила +]--	17.07.2026
 	["loc_talent_cryptic_stamina_increases_damage_desc"] = { -- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, +colors
 		en = "On spending at least {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..", you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
-		ru = "Если вы потратили как минимум {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..", вы получаете на {duration:%s} секунды:\n"
+			["zh-tw"] = "消耗至少 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."時，獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
+			ru = "Если вы потратили как минимум {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..", вы получаете на {duration:%s} секунды:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 30 - Last Stand Relay - Реле последнего рубежа +]--	17.07.2026
@@ -1267,15 +1285,20 @@ local skitarii_localizations = {
 			.."\n"
 			.."When at {low_charges:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." сharges you gain:\n"
 			..Dot_green.." {crit_chance_high:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".",
-		ru = Dot_green.." {crit_chance_low:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
+			["zh-tw"] = Dot_green.." {crit_chance_low:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。\n"
+				.."\n"
+				..""..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能為 {low_charges:%s} 層時獲得：\n"
+				..Dot_green.." {crit_chance_high:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。",
+			ru = Dot_green.." {crit_chance_low:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			.."\n"
 			.."При {low_charges:%s} зарядах "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете:\n"
 			..Dot_green.." {crit_chance_high:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 31 - Ammo-Cell Augury - Авгурия ячейки боеприпасов +]--	17.07.2026
 	["loc_talent_cryptic_ammo_reserve_desc"] = { -- attack_speed: +10%, duration: 5, s->seconds
-		en = Dot_green.." {ammo:%s} Ammo Reserve.",
-		ru = Dot_green.." {ammo:%s} к запасу боеприпасов.",
+			en = Dot_green.." {ammo:%s} Ammo Reserve.",
+			["zh-tw"] = Dot_green.." {ammo:%s} 彈藥儲備。",
+			ru = Dot_green.." {ammo:%s} к запасу боеприпасов.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 32 - Galvanic Marking Array - Гальванический маркировочный массив +]--	17.07.2026
 	["loc_talent_cryptic_elite_kills_damage_desc"] = { -- damage_reduction: 40%, +colors
@@ -1286,7 +1309,14 @@ local skitarii_localizations = {
 			.."\n"
 			..Dot_nc.." Max {stacks:%s} Stacks.\n"
 			..Dot_nc.." Stacks decay one at a time.",
-		ru = "Убийства элитных врагов в дальнем бою дают заряды.\n"
+			["zh-tw"] = "以遠程攻擊擊殺精英會提供層數。\n"
+				.."\n"
+				.."每層提供以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 最多 {stacks:%s} 層。\n"
+				..Dot_nc.." 層數會逐一衰減。",
+			ru = "Убийства элитных врагов в дальнем бою дают заряды.\n"
 			.."\n"
 			.."Каждый заряд даёт на {duration:%s} секунд:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
@@ -1300,20 +1330,26 @@ local skitarii_localizations = {
 			..Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on your next Shot.\n"
 			.."\n"
 			..Dot_nc.." Stacks {stacks:%s} times.",
-		ru = "Если вы не стреляли {duration:%s} секунду, то каждая последующая секунда без стрельбы даёт:\n"
+			["zh-tw"] = "停止射擊 {duration:%s} 秒後，每多一秒未射擊都會使下一發射擊獲得：\n"
+				..Dot_green.." {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 最多 {stacks:%s} 層。",
+			ru = "Если вы не стреляли {duration:%s} секунду, то каждая последующая секунда без стрельбы даёт:\n"
 			..Dot_green.." {ranged_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." для вашего следующего выстрела.\n"
 			.."\n"
 			..Dot_nc.." Суммируется до {stacks:%s} раз.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 34 - Servo-Core Recharge Engine - Двигатель перезарядки сервоядра +]--	17.07.2026
 	["loc_talent_cryptic_weakspot_kills_restore_toughness_desc"] = { -- damage_resistance: +15%, duration: 4, +colors
-		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on "..CKWord("Weakspot", "Weakspot_rgb").." Kill.",
-		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".",
+			en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on "..CKWord("Weakspot", "Weakspot_rgb").." Kill.",
+			["zh-tw"] = Dot_green.." 以"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 35 - Voltaic Restoration - Вольтаическое восстановление +]--	17.07.2026
 	["loc_talent_cryptic_coherency_toughness_on_ability_desc"] = { -- damage_taken: +15%, duration: 5, +colors
-		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." restored to you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.",
-		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".",
+			en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." restored to you and Allies in "..CKWord("Coherency", "Coherency_rgb").." on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.",
+			["zh-tw"] = Dot_green.." 使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." при использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 36 - Protectorate Protocol - Протокол протектората +]--	17.07.2026
 	["loc_talent_cryptic_disabled_allies_defense_post_boost_desc"] = { -- damage: 10%, toughness: 15%, duration: 5, +colors
@@ -1323,7 +1359,13 @@ local skitarii_localizations = {
 			.."If you free them, they gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage_resistance_post:%s} "..CKWord("Damage", "Damage_rgb").." Resistance and\n"
 			..Dot_green.." "..CKWord("Stun", "Stun_rgb").." Immunity.",
-		ru = "Пока союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." выведен из строя, он получает до освобождения:\n"
+			["zh-tw"] = ""..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友失去行動能力時，在獲救前獲得：\n"
+				..Dot_green.." {damage_resistance:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
+				.."\n"
+				.."若由你救出，他們會獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {damage_resistance_post:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性，以及\n"
+				..Dot_green.." 免疫"..CKWord("眩暈", "Stun_rgb_tw").."。",
+			ru = "Пока союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." выведен из строя, он получает до освобождения:\n"
 			..Dot_green.." {damage_resistance:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			.."Если вы освобождаете его, он получает на {duration:%s} секунд:\n"
@@ -1336,15 +1378,20 @@ local skitarii_localizations = {
 			.."\n"
 			.."After {duration:%s} seconds without shooting, each additional second reloads:\n"
 			..Dot_green.." {reload_percent:%s} of your Clip from Reserve.",
-		ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
+			["zh-tw"] = Dot_green.." {reload_speed:%s} 換彈速度。\n"
+				.."\n"
+				.."停止射擊 {duration:%s} 秒後，每多一秒未射擊會從儲備彈藥自動填裝：\n"
+				..Dot_green.." 彈匣容量的 {reload_percent:%s}。",
+			ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
 			.."\n"
 			.."Если вы не стреляли {duration:%s} секунд, то за каждую последующую секунду перезаряжается:\n"
 			..Dot_green.." {reload_percent:%s} магазина из резерва.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 38 - Ammunition-Restoration Pod - Капсула восстановления боеприпасов +]--	17.07.2026
 	["loc_talent_cryptic_passive_ammo_replenishment_desc"] = {
-		en = Dot_green.." {percent:%s} of your Max Ammo Reserve replenished every {interval:%s} seconds.",
-		ru = Dot_green.." {percent:%s} от максимального запаса боеприпасов восстанавливается каждые {interval:%s} секунд.",
+			en = Dot_green.." {percent:%s} of your Max Ammo Reserve replenished every {interval:%s} seconds.",
+			["zh-tw"] = Dot_green.." 每 {interval:%s} 秒恢復最大彈藥儲備的 {percent:%s}。",
+			ru = Dot_green.." {percent:%s} от максимального запаса боеприпасов восстанавливается каждые {interval:%s} секунд.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 39 - Adaptive Combat Calibration - Адаптивная боевая калибровка +]--	17.07.2026
 	["loc_talent_cryptic_melee_cleave_and_impact_desc"] = { -- health_segment: +2
