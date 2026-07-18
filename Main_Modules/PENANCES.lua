@@ -594,7 +594,7 @@ local penances_localizations = {
 				.."於單次使用 "..CKWord("火力齊射", "volley_fire_rgb_tw").."\n"
 				.."或 "..CKWord("處決者姿態", "exec_stan_rgb_tw").." 技能期間，\n"
 				.."使用武器次要動作，\n"
-				.."以 "..CKWord("弱點命中", "Weakspothits_rgb_tw").." 擊殺\n"
+				.."以 "..CKWord("命中弱點", "Weakspothits_rgb_tw").." 擊殺\n"
 				..CNumb("{target}", "target_rgb").." 名被標示的敵人。\n"
 			..CNote("Weaksp_note"),
 		},
