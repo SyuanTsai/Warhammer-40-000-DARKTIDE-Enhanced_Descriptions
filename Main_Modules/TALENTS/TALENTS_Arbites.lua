@@ -1135,7 +1135,7 @@ local arbites_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Heavy Melee Attack.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд после заряженной атаки ближнего боя.", -- Вес Закона
 		["zh-tw"] = Dot_green.." "..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}，\n"
-			.."蓄力近戰攻擊後持續 {duration:%s} 秒。",
+			.."重型近戰攻擊後持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 39 - Serrated Maw +]--	26.03.2026
 	["loc_talent_adamant_dog_applies_brittleness_desc"] = { -- stacks: 6, +colors
@@ -1173,7 +1173,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_melee_attacks_on_staggered_rend_alt_desc"] = { -- rending: +15%, +colors
 		en = Dot_green.." {rending:%s} Melee "..CKWord("Rending", "Rending_rgb").." on "..CKWord("Staggered", "Staggered_rgb").." Enemies.",
 		ru = Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." в ближнем бою "..CKWord("ошеломлённым", "oshelomlennym_rgb_ru").." врагам.", -- Сокрушительный удар -- руоф Сбивающий удар
-		["zh-tw"] = Dot_green.." 對"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人時，\n"
+		["zh-tw"] = Dot_green.." 攻擊"..CKWord("踉蹌", "Staggered_rgb_tw").."敵人時，\n"
 			.."近戰"..CKWord("撕裂", "Rending_rgb_tw").."增加 {rending:%s}。",
 	},
 	--[+ Passive 44 - True Grit +]--	26.03.2026
