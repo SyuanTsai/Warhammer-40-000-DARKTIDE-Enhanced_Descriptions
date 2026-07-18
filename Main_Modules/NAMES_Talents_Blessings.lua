@@ -1985,7 +1985,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 27 - Keep Their Heads Down! +]-- ruof Пригнитесь!	20.04.2026
 		["loc_talent_veteran_increase_suppression"] = {
 			ru = "Не давай им поднять головы!",
-			["zh-tw"] = "讓他們全趴下!",
+			["zh-tw"] = "讓他們全趴下！",
 		},
 		--[+ PASSIVE 28 - Reciprocity +]-- ruof Взаимная выгода	20.04.2026
 		["loc_talent_veteran_dodging_grants_crit"] = {
@@ -2058,7 +2058,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 43 - Bring it Down! +]-- ruof Убивай!	20.04.2026
 		["loc_talent_veteran_big_game_hunter"] = {
 			ru = "Убей их!",
-			["zh-tw"] = "幹掉它!",
+			["zh-tw"] = "幹掉它！",
 		},
 
 
