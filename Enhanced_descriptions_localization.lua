@@ -111,7 +111,7 @@ local function add_localisation_entry(localizations, type_name)
 		en = "Pick color",
 		ru = "Выберите цвет",
 		fr = "Couleur", 
-		["zh-tw"] = "顏色",
+		["zh-tw"] = "選擇顏色",
 		["zh-cn"] = "颜色",
 		de = "Farbe auswählen",
 		it = "Seleziona colore",
@@ -128,7 +128,7 @@ local localizations = {
 		en = "{#color(192, 255, 26)} Enhanced Descriptions{#reset()}",
 		ru = "{#color(192, 255, 26)} Улучшенные описания{#reset()}",
 		fr = "{#color(192, 255, 26)} Descriptions améliorées{#reset()}",
-		["zh-tw"] = "{#color(192, 255, 26)} 描述改善{#reset()}",
+		["zh-tw"] = "{#color(192, 255, 26)} 強化描述{#reset()}",
 		["zh-cn"] = "{#color(192, 255, 26)} 描述增强{#reset()}",
 		de = "{#color(192, 255, 26)} Erweiterte Beschreibungen{#reset()}",
 		it = "{#color(192, 255, 26)} Descrizioni Migliorate{#reset()}",
@@ -142,7 +142,7 @@ local localizations = {
 		en = "Improves readability by highlighting numbers and keywords in descriptions of Talents, Blessings, Penances, Curios, and other menu texts. Also fixes localizations and adds clarity to some descriptions.",
 		ru = "Enhanced Descriptions - Улучшает читаемость за счёт выделения чисел и ключевых слов в описаниях Талантов, Благословений, Искуплений, Реликвий и других текстах меню. Также вносит исправления в локализации и добавляет ясности в некоторые описания.",
 		fr = "Améliore la lisibilité en mettant en évidence les nombres et mots-clés dans les descriptions des Talents, Bénédictions, Pénitences, Curiosités et autres textes de menu. Corrige également les localisations et ajoute de la clarté à certaines descriptions.",
-		["zh-tw"] = "透過高亮顯示天賦、祝福、苦修、珍品及其他選單文字描述中的數值與效果，提升整體可讀性；同時修正翻譯問題，改善描述內容的清晰度與一致性。",
+		["zh-tw"] = "透過醒目標示天賦、祝福、苦修、珍品及其他選單文字描述中的數值與關鍵字，提升可讀性。此外也會修正翻譯，並讓部分描述更清楚。",
 		["zh-cn"] = "通过高亮显示天赋、祝福、苦修、珍品和其他菜单文本描述中的数字和关键词来提升可读性。同时修复本地化问题并为部分描述增加清晰度。",
 		de = "Verbessert die Lesbarkeit durch Hervorhebung von Zahlen und Schlüsselwörtern in Beschreibungen von Talenten, Segnungen, Bußen, Kuriositäten und anderen Menütexten. Korrigiert außerdem Lokalisierungsfehler und fügt einigen Beschreibungen mehr Klarheit hinzu.",
 		it = "Migliora la leggibilità evidenziando numeri e parole chiave nelle descrizioni di Talenti, Benedizioni, Penitenze, Curiosità e altri testi di menu. Corregge anche le localizzazioni e aggiunge chiarezza ad alcune descrizioni.",
@@ -238,7 +238,7 @@ local localizations = {
 		fr = "Choisissez la langue à utiliser pour les descriptions améliorées\n" ..
 			 "• Auto : Utiliser la langue du jeu\n" ..
 			 "• Manuel : Forcer une langue spécifique pour toutes les descriptions",
-		["zh-tw"] = "選擇用於描述改善的語言\n" ..
+		["zh-tw"] = "選擇強化描述所使用的語言\n" ..
 				   "• 自動：使用遊戲語言\n" ..
 				   "• 手動：強制所有描述使用特定語言",
 		["zh-cn"] = "选择用于增强描述的语言\n" ..
