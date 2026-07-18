@@ -403,7 +403,7 @@ local psyker_localizations = {
 		["zh-tw"] = "釋放在敵人之間跳躍的鏈式生物閃電，造成低量持續"..CKWord("電擊", "Electrcuting_rgb_tw")..CKWord("傷害", "Damage_rgb_tw").."，並造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
 			.."次要蓄力攻擊造成更高"..CKWord("傷害", "Damage_rgb_tw").."，且跳躍速度更快。\n"
 			.."\n"
-			..Dot_nc.." 最大射程："..CNumb("16", "n_16_rgb").." 米。\n"
+			..Dot_nc.." 最大射程："..CNumb("16", "n_16_rgb").." 公尺。\n"
 			..Dot_nc.." 僅命中軀幹部位。\n"
 			..CPhrs("Cant_Crit")
 			..Dot_nc.." 對護甲造成中等"..CKWord("傷害", "Damage_rgb_tw").."。\n"
@@ -705,7 +705,7 @@ local psyker_localizations = {
 			..Dot_nc.." 對首個目標造成 "..CNumb("225", "n_225_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."，消耗 "..CNumb("10%", "pc_10_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			.."次要攻擊：\n"
-			..Dot_nc.." 發射一枚自導射彈，飛行 "..CNumb("3", "n_3_rgb").." 秒，擊中 "..CNumb("50", "n_50_rgb").." 米半徑內的所有敵人。\n"
+			..Dot_nc.." 發射一枚自導射彈，飛行 "..CNumb("3", "n_3_rgb").." 秒，擊中 "..CNumb("50", "n_50_rgb").." 公尺半徑內的所有敵人。\n"
 			..Dot_nc.." 造成 "..CNumb("380", "n_380_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."，消耗 "..CNumb("25%", "pc_25_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 可以造成"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
@@ -862,7 +862,7 @@ local psyker_localizations = {
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} vitesse de rechargement des charges de {talent_name:%s}.\n"
 			.."\n"
 			..Dot_nc.." Réduit le temps de recharge des projectiles de "..CNumb("3", "n_3_rgb").." à "..CNumb("2.1", "n_2_1_rgb").." secondes par projectile.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {recharge:%s} {talent_name:%s} 充能恢復速度。\n"
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s} 充能恢復速度。\n"
 			.."\n"
 			..Dot_nc.." 每枚射彈恢復時間由 "..CNumb("3", "n_3_rgb").." 秒縮短至 "..CNumb("2.1", "n_2_1_rgb").." 秒。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s}充能恢复速度。\n"
@@ -1096,8 +1096,8 @@ local psyker_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_nc.." 可用來防止"..CKWord("靈能者", "cls_psy_rgb_tw").."自爆。\n"
-			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 米，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
-			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 米半徑內的敵人。",
+			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 公尺，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
+			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 公尺半徑內的敵人。",
 		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Staggers_rgb_zh_cn").."前方的敌人。\n"
 			..Dot_nc.." 基础冷却：{cooldown:%s}秒。\n"
 			.."\n"
