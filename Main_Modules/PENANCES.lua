@@ -924,7 +924,7 @@ local penances_localizations = {
 	--[+ There is Nothing But the Abyss... +]-- руоф Есть только бездна...
 	["loc_achievement_zealot_2_healed_up_after_resisting_death_name"] = {
 		ru = "Нет ничего, кроме Бездны...",
-		["zh-tw"] = "唯有深淵......",
+		["zh-tw"] = "唯有深淵……",
 	},
 		--[+ On Heresy threat or higher, heal to 25 Health with life gained solely from the Holy Revenant Talent. +]-- руоф При угрозе «Ересь» или выше восстановите 25% здоровья исключительно за счет таланта «Святой призрак».
 		["loc_achievement_zealot_2_healed_up_after_resisting_death_description"] = {
