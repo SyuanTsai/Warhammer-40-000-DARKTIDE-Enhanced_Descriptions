@@ -667,7 +667,7 @@ local penances_localizations = {
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..".",
 			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』\n"
 				.."或更高威脅等級下，\n"
-				.."以 "..CKWord("爆擊命中", "Crit_hits_rgb_tw").."\n"
+				.."以 "..CKWord("致命一擊", "Crit_hits_rgb_tw").."\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名\n"
 				..CKWord("眩暈", "Stunned_rgb_tw").." 的敵人。",
 		},
@@ -682,8 +682,8 @@ local penances_localizations = {
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов в ближнем бою специальными атаками цепного или силового оружия.",
 			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』\n"
 				.."或更高威脅等級下，\n"
-				.."使用鏈鋸或動力武器的\n"
-				.."充能近戰攻擊，\n"
+				.."使用鏈鋸或動力武器啟動後的\n"
+				.."近戰攻擊，\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名精英或專家敵人。",
 		},
 	--[+ Sainted Path (1-3) +]-- руоф Священный путь (1-3) -- 朝聖之路 (1-3)
