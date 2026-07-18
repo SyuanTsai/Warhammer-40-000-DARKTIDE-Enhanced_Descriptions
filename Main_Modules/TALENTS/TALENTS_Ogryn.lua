@@ -1373,9 +1373,9 @@ local ogryn_localizations = {
 			.."но теряете:\n"
 			..Dot_red.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." в секунду.", -- Сосредоточься
 		["zh-tw"] = "架槍遠程武器時，獲得：\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {sway_reduction:%s} 武器晃動，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {spread_reduction:%s} 散射，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {recoil_reduction:%s} 後座力，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{sway_reduction:%s} 武器搖晃，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{spread_reduction:%s} 散布，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{recoil_reduction:%s} 後座力，\n"
 			.."但損失：\n"
 			..Dot_red.." 每秒 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
 		-- fr = "Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.", -- Concentration
