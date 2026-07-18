@@ -2272,7 +2272,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Crunch! +]-- ruof Хрясь!
 		["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger"] = {
 			ru = "Хрусь!",
-			["zh-tw"] = "嘎嘎!",
+			["zh-tw"] = "嘎嘎！",
 		},
 		--[+ PASSIVE 11 - Batter +]-- ruof Месиво
 		-- ["loc_talent_ogryn_bleed_on_multiple_hit"] = {
