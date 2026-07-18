@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "取得一件你選擇的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
+		["zh-tw"] = "取得一件自選的褻瀆級武器。",
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
