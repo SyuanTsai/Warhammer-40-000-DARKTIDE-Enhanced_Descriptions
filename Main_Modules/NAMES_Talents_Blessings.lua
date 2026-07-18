@@ -795,7 +795,7 @@ local names_talents_blessings_templates = {
 		-- Plasma Gun
 		["loc_trait_bespoke_crit_chance_scaled_on_heat"] = {
 			ru = "Перегрев!",
-			["zh-tw"] = "燃起來!",
+			["zh-tw"] = "燃起來！",
 		},
 		--[+ VOLATILE +]-- ruof Испарение	20.04.2026
 		-- Plasma Gun
