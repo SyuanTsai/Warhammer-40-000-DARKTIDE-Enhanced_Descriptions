@@ -48,16 +48,16 @@ local CONFIG = {
 		Crit_m_chance = "近戰爆擊率", -- Melee Crit Chance
 		Crit_r_chance = "遠程爆擊率", -- Ranged Crit Chance
 
-		Crit_hit = "爆擊命中",
-		Crit_hits = "爆擊命中",
-		Crtcll_strk = "爆擊攻擊",
+		Crit_hit = "致命一擊",
+		Crit_hits = "致命一擊",
+		Crtcll_strk = "致命一擊",
 		Crt_hit_chnc = "爆擊率",
 		Crt_hit_col = "暴擊傷害",
 		Crit_hit_m_dmg = "近戰暴擊傷害", -- Melee Crit Damage
 		Crit_hit_r_dmg = "遠程暴擊傷害", -- Ranged Crit Damage
 
-		Crit_strike = "爆擊攻擊",
-		Crit_strikes = "爆擊攻擊",
+		Crit_strike = "致命一擊",
+		Crit_strikes = "致命一擊",
 		Crt_chnc_r = "爆擊率",
 		Crt_strk_dmg = "暴擊傷害",
 
