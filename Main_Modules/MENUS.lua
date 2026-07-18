@@ -83,7 +83,7 @@ local menus_templates = {
 		["loc_contracts_task_label_kill_bosses"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
 			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸",
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸(畸形怪獸)
 			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
 		},
 		--[+ Collect Х kind +]--
@@ -96,7 +96,7 @@ local menus_templates = {
 		--[+ Kill Х enemy_type with weapon_type +]--
 		["loc_contracts_task_label_kill_minions"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
-			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
+			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",  -- 完成[x]場任務
 			["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
 			["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
 		},
@@ -104,7 +104,7 @@ local menus_templates = {
 		["loc_contracts_task_label_complete_missions"] = {
 			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
 			ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
-			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務",
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務", -- 完成[x]場任務，並且無人死亡
 			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
 		},
 		--[+ Complete Х missions with no player deaths +]--
@@ -175,7 +175,7 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的防禦性珍品",
+		["zh-tw"] = "未知的珍品",
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
@@ -191,14 +191,14 @@ local menus_templates = {
 	["loc_crafting_error_no_consecrate"] = {
 		-- en = "Max Rarity reached!",
 		ru = "Достигнут максимум редкости!",
-		["zh-tw"] = "已達最高稀有度！",
+		["zh-tw"] = "已達最高稀有度！", -- 已達最高稀有度。
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
 		-- en = "Max Power reached!",
 		ru = "Достигнут максимум силы!",
-		["zh-tw"] = "已達最高威力！",
+		["zh-tw"] = "已達最高威力！",  -- 已達最高升級級別。
 		["zh-cn"] = "已达到最高等级。",
 	},
 	--[+ Sacrifice Weapons +]--
@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "取得一件自選的褻瀆級武器。",
+		["zh-tw"] = "取得一件自選的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "近戰特殊攻擊",
+		["zh-tw"] = "特殊攻擊(近戰)", -- 特殊功能(近戰)
 	},
 
 
@@ -503,7 +503,7 @@ local menus_templates = {
 	["loc_stats_display_mobility_stat"] = { -- Mobility
 		en = CKWord("Mobility", "Mobility_rgb"),
 		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
-		["zh-tw"] = CKWord("機動性", "Mobility_rgb_tw"),
+		["zh-tw"] = CKWord("移動性", "Mobility_rgb_tw"),
 	},
 	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn's Grenadier Gauntlet
 		en = CKWord("Melee Damage", "Melee_dmg_rgb"),

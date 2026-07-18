@@ -174,7 +174,7 @@ local talent_localizations = {
 		["loc_glossary_talent_keystone_modifier"] = {
 			-- en = "Keystone Modifier",
 			ru = "Модификатор ключевого таланта", -- руоф Модификатор краеугольного камня
-			["zh-tw"] = "鑰石修正項",
+			["zh-tw"] = "鑰石修改器",
 			-- ["zh-cn"] = "楔石修正",
 		},
 
