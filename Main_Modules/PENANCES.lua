@@ -2010,8 +2010,8 @@ local penances_localizations = {
 			en = "Perform "..CNumb("{target}", "target_rgb").." "..CKWord("Critical strikes", "Crit_strikes_rgb").." while under the effect of "..CKWord("Anarchist", "Anarchist_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." performed by Allies in "..CKWord("Coherency", "Coherency_rgb").." also count.",
 			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Анархист", "Anarchist_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru")..", нанесённые союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru")..", также учитываются.",
 			["zh-tw"] = "在 "..CKWord("無政府主義者", "Anarchist_rgb_tw").." 光環效果下，\n"
-				.."造成 "..CNumb("{target}", "target_rgb").." 次"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."。\n"
-				.."處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友造成的"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."也會計入。",
+				.."造成 "..CNumb("{target}", "target_rgb").." 次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."。\n"
+				.."處於 "..CKWord("協同", "Coherency_rgb_tw").." 的隊友造成的"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."也會計入。",
 		},
 	--[+ Blinding! +]-- руоф 
 	-- ["loc_achievement_broker_enemies_hit_by_flash_grenade_name"] = {
@@ -2087,7 +2087,7 @@ local penances_localizations = {
 		["loc_achievement_broker_deal_damage_in_punk_rage_description"] = {
 			en = "Deal "..CNumb("{target}", "target_rgb").." "..CKWord("Damage", "Damage_rgb").." while "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
 			ru = "Нанесите "..CNumb("{target}", "target_rgb").." "..CKWord("урона", "urona_rgb_ru").." пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
-			["zh-tw"] = "在 "..CKWord("橫衝直撞!", "Rampag_rgb_tw").." 技能啟用時，\n"
+			["zh-tw"] = "在 "..CKWord("橫衝直撞！", "Rampag_rgb_tw").." 技能啟用時，\n"
 				.."造成 "..CNumb("{target}", "target_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。",
 		},
 	--[+ Rampager +]-- руоф 
@@ -2098,7 +2098,7 @@ local penances_localizations = {
 		["loc_achievement_broker_stay_in_punk_rage_description"] = {
 			en = "Spend "..CNumb("{target}", "target_rgb").." seconds with "..CKWord("Rampage!", "Rampag_rgb").." Ability is active.",
 			ru = "Проведите "..CNumb("{target}", "target_rgb").." секунд пока активна способность "..CKWord("Ярость!", "Rampag_rgb_ru"),
-			["zh-tw"] = "使 "..CKWord("橫衝直撞!", "Rampag_rgb_tw").." 技能保持啟用，累計 "..CNumb("{target}", "target_rgb").." 秒。",
+			["zh-tw"] = "使 "..CKWord("橫衝直撞！", "Rampag_rgb_tw").." 技能保持啟用，累計 "..CNumb("{target}", "target_rgb").." 秒。",
 		},
 	--[+ Street Doctor +]-- руоф 
 	-- ["loc_achievement_broker_deploy_stimm_field_name"] = {
