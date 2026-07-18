@@ -37,6 +37,20 @@ local skitarii_localizations = {
 			.."Burning enemies receive for {debuff_duration:%s} seconds:\n"
 			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
 			..CPhrs("Can_be_refr"),
+		["zh-tw"] = "你有一個隨行的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."；連按兩次標記鍵即可下令。你可以命令它射擊附近敵人，也可以命令它完成資料審訊。\n"
+			.."\n"
+			.."啟用閃擊會強化你的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."，使其在 {duration:%s} 秒內獲得：\n"
+			..Dot_green.." {attack_speed:%s} 射速，\n"
+			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+			..Dot_nc.." 冷卻時間 {cooldown:%s} 秒。\n"
+			.."\n"
+			.."它的攻擊會施加：\n"
+			..Dot_green.." {burn_stacks:%s} 層"..CKWord("燃燒", "Burn_rgb_tw").."。\n"
+			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
+			.."\n"
+			.."燃燒中的敵人會在 {debuff_duration:%s} 秒內：\n"
+			..Dot_green.." 受到的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_taken:%s}。\n"
+			..CPhrs("Can_be_refr"),
 		ru = "Вас сопровождает "..CKWord("сервочереп", "servocherep_rgb_ru")..", которому вы можете отдавать приказы двойным нажатием кнопки метки. Вы можете приказать ему стрелять в ближайших врагов или отправить расшифровывать данные.\n"
 			.."\n"
 			.."Активация блица усиливает ваш "..CKWord("сервочереп", "servocherep_rgb_ru")..", и он получает на {duration:%s} секунд:\n"
@@ -71,6 +85,23 @@ local skitarii_localizations = {
 			.."Burning enemies receive for {debuff_duration:%s} seconds:\n"
 			..Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
 			..CPhrs("Can_be_refr"),
+		["zh-tw"] = "你有一個隨行的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."；連按兩次標記鍵即可下令。\n"
+			.."你可以命令它射擊附近敵人。\n"
+			.."你也可以命令它完成資料審訊。\n"
+			.."\n"
+			..CKWord("伺服頭骨", "Servoskull_rgb_tw").."基礎閃擊啟用時提供的加成現在永久生效。\n"
+			.."\n"
+			.."你的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."獲得：\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("100%", "pc_100_rgb").." 射速，\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("25%", "pc_25_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+			.."\n"
+			.."它的攻擊會施加：\n"
+			..Dot_green.." {burn_stacks:%s} 層"..CKWord("燃燒", "Burn_rgb_tw").."。\n"
+			..Dot_nc.." 最多 "..CNumb("8", "n_8_rgb").." 層。\n"
+			.."\n"
+			.."燃燒中的敵人會在 {debuff_duration:%s} 秒內：\n"
+			..Dot_green.." 受到的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_taken:%s}。\n"
+			..CPhrs("Can_be_refr"),
 		ru = "Вас сопровождает "..CKWord("сервочереп", "servocherep_rgb_ru")..", которому вы можете отдавать приказы двойным нажатием кнопки метки.\n"
 			.."Вы можете приказать ему стрелять в ближайших врагов.\n"
 			.."Вы также можете отправить его на расшифровку данных.\n"
@@ -97,6 +128,12 @@ local skitarii_localizations = {
 				..Dot_green.." {toughness_per_second:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
 				..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
 				..Dot_nc.." Lasts for {duration:%s} seconds.",
+			["zh-tw"] = "你額外配備一個裝有"..CKWord("適應型醫療注射器", "AdMedSyringe_rgb_tw").."的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。指定一名倒地、被綁或被網住的隊友，對其進行注射。\n"
+				.."\n"
+				.."注射會救起該隊友，並使其每秒獲得：\n"
+				..Dot_green.." {toughness_per_second:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，以及\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_nc.." 持續 {duration:%s} 秒。",
 			ru = "У вас есть дополнительный "..CKWord("сервочереп", "servocherep_rgb_ru").." со встроенными "..CKWord("адаптированными медике-шприцами", "AdMedSyringe_rgb_ru")..". Выберите целью сбитого с ног, связанного или опутанного сетью союзника, чтобы сделать ему инъекцию.\n"
 				.."\n"
 				.."Инъекция оживляет его, а также даёт ему за каждую секунду:\n"
@@ -113,6 +150,13 @@ local skitarii_localizations = {
 				.."Use your Primary Action to switch between\n"
 				..Dot_nc.." Dispersed or\n"
 				..Dot_nc.." Focused Fire Mode.",
+			["zh-tw"] = "你額外配備一個裝有"..CKWord("火焰噴射器", "Flamer_rgb_tw").."的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。\n"
+				.."\n"
+				.."指定一個區域來部署它。\n"
+				.."\n"
+				.."使用主要動作即可切換：\n"
+				..Dot_nc.." 分散火力模式，或\n"
+				..Dot_nc.." 集中火力模式。",
 			ru = "У вас есть дополнительный "..CKWord("сервочереп", "servocherep_rgb_ru")..", оснащённый "..CKWord("огнемётом", "Flamer_rgb_ru")..".\n"
 				.."\n"
 				.."Укажите область для его размещения.\n"
@@ -126,6 +170,9 @@ local skitarii_localizations = {
 			en = "Ordering your "..CKWord("Servo-Skull", "Servoskull_rgb").." to attack an Enemy will greatly increase its Fire Rate for {duration:%s} seconds.\n"
 				.."\n"
 				..Dot_red.." Costs {capacitance:%s} "..CKWord("Capacitance", "Capacitance_rgb")..".",
+			["zh-tw"] = "命令你的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."攻擊敵人時，會大幅提高其射速，持續 {duration:%s} 秒。\n"
+				.."\n"
+				..Dot_red.." 消耗 {capacitance:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
 			ru = "Вы приказываете вашему "..CKWord("сервочерепу", "servocherepu_rgb_ru").." атаковать врага, что значительно увеличивает его скорострельность на {duration:%s} секунды.\n"
 				.."\n"
 				..Dot_red.." Тратится {capacitance:%s} "..CKWord("ёмкости", "emkosti_rgb_ru")..".",
@@ -136,6 +183,9 @@ local skitarii_localizations = {
 		en = "Throw an "..CKWord("Arc Grenade", "Arcgren_rgb")..", creating an electrical explosion that "..CKWord("Arcs", "Arcs_rgb").." {number:%s} times.\n"
 				.."\n"
 				..CKWord("Arcs", "Arcs_rgb").." prioritising Armoured and Specialist Enemies, dealing massive "..CKWord("Damage", "Damage_rgb").." and "..CKWord("Impact", "Impact_rgb")..".",
+		["zh-tw"] = "投擲一枚"..CKWord("電弧手榴彈", "Arcgren_rgb_tw").."，引發會產生 {number:%s} 次"..CKWord("電弧", "Arcs_rgb_tw").."的電氣爆炸。\n"
+			.."\n"
+			..CKWord("電弧", "Arcs_rgb_tw").."會優先攻擊裝甲敵人與專家，造成大量"..CKWord("傷害", "Damage_rgb_tw").."和"..CKWord("衝擊", "Impact_rgb_tw").."。",
 		ru = "Вы бросаете "..CKWord("Электродуговую гранату", "Arcgren_rgb_ru")..", создающую электрический взрыв, который поражает врагов "..CKWord("электродугами", "elektrodugami_rgb_ru").." {number:%s} раза.\n"
 				.."\n"
 				..CKWord("Электродуги", "Elektrodugi_rgb_ru").." отдают приоритет бронированным врагам и специалистам, нанося им огромный "..CKWord("урон", "uron_rgb_ru").." и "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..".",
@@ -146,6 +196,10 @@ local skitarii_localizations = {
 				.."\n"
 				.."The "..CKWord("Arcs", "Arcs_rgb").." apply to enemies on hit:\n"
 				..Dot_green.." {stacks:%s} Stacks of "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("Brittleness", "Brittleness_rgb")..".",
+			["zh-tw"] = Dot_green.." 你的 {talent_name:%s} 產生的"..CKWord("電弧", "Arcs_rgb_tw").."數量 "..CNumb("+", "n_plus_rgb").."{number:%s}。\n"
+				.."\n"
+				..CKWord("電弧", "Arcs_rgb_tw").."命中時會對敵人施加：\n"
+				..Dot_green.." {stacks:%s} 層、每層 "..CNumb("2.5%", "pc_2_5_rgb").." 的"..CKWord("脆弱", "Brittleness_rgb_tw").."。",
 			ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{number:%s} к количеству "..CKWord("электродуг", "elektrodug_rgb_ru")..", которые создают ваши {talent_name:%s}.\n"
 				.."\n"
 				.."Враги, при поражении "..CKWord("электродугами", "elektrodugami_rgb_ru")..", получают:\n"
@@ -154,6 +208,7 @@ local skitarii_localizations = {
 		--[+ BLITZ - БЛИЦ - 2-2 - Enhanced Arc Grenades - Улучшенные электродуговые гранаты +]--	17.07.2026
 		["loc_talent_cryptic_arc_grenades_weapon_malfunction_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "Your {talent_name:%s} also cause Ranged Enemies within {range:%s} meters to have their Ranged weapons Malfunction, making them unable to use them for {duration:%s} seconds.",
+			["zh-tw"] = "你的 {talent_name:%s} 還會使 {range:%s} 米內遠程敵人的遠程武器發生"..CKWord("武器故障", "WeaponMalfunction_rgb_tw").."，使其在 {duration:%s} 秒內無法使用該武器。",
 			ru = "Ваши {talent_name:%s} также блокируют на {duration:%s} секунд дальнобойное оружие у стрелков в радиусе {range:%s} метров.",
 		},
 
@@ -163,6 +218,10 @@ local skitarii_localizations = {
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
 			.."\n"
 			.."Upon activation, and again when it ends, cause an electric explosion around you, applying "..CKWord("Electrocution", "Electrocution_rgb").." to enemies within {range:%s} meters.",
+		["zh-tw"] = "以護盾包圍自己，吸收所有受到的遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+			..Dot_nc.." 持續 {duration:%s} 秒。\n"
+			.."\n"
+			.."啟用時及效果結束時，會在你周圍引發電氣爆炸，對 {range:%s} 米內的敵人施加"..CKWord("電擊", "Electrocution_rgb_tw").."。",
 		ru = "Вы окружаете себя щитом, поглощающим весь входящий "..CKWord("урон", "uron_rgb_ru").." дальнего боя.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			.."\n"
@@ -173,6 +232,9 @@ local skitarii_localizations = {
 			en = Dot_green.." Increase the field duration to {increased_duration:%s} seconds.\n"
 				.."\n"
 				..Dot_green.." In addition, you "..CKWord("Electrocute", "Electrocute_rgb").." nearby enemies an additional time at the midpoint of its duration.",
+			["zh-tw"] = Dot_green.." 將力場持續時間延長至 {increased_duration:%s} 秒。\n"
+				.."\n"
+				..Dot_green.." 此外，在持續時間過半時，會額外"..CKWord("電擊", "Electrocute_rgb_tw").."附近敵人一次。",
 			ru = Dot_green.." Увеличивает длительность действия поля до {increased_duration:%s} секунд.\n"
 				.."\n"
 				..Dot_green.." Кроме того, вы поражаете "..CKWord("электрошоком", "elektroshokom_rgb_ru").." ближайших врагов дополнительный раз в середине действия поля.",
@@ -180,17 +242,20 @@ local skitarii_localizations = {
 		--[+ BLITZ - БЛИЦ - 3-2 - Voltaic Resistance - Вольтаическое сопротивление +]--	17.07.2026
 		["loc_talent_cryptic_force_field_arcs_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "When your Refraction Emitter ends, shoot up to {max_arcs:%s} "..CKWord("Arcs", "Arcs_rgb").." towards enemies in front of you, based on the number of attacks absorbed.",
+			["zh-tw"] = "折射力場發射器結束時，依吸收的攻擊次數，向前方敵人射出最多 {max_arcs:%s} 道"..CKWord("電弧", "Arcs_rgb_tw").."。",
 			ru = "Когда ваш рефракционный излучатель заканчивает действие, он выпускает до {max_arcs:%s} "..CKWord("электродуг", "elektrodug_rgb_ru").." во врагов перед вами, в зависимости от количества поглощённых атак.",
 		},
 		--[+ BLITZ - БЛИЦ - 3-3 - Kinetic Repulsion - Кинетическое отталкивание +]--	17.07.2026
 		["loc_talent_cryptic_force_field_health_damage_limit_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "Limit all "..CKWord("Health", "Health_rgb").." "..CKWord("Damage", "Damage_rgb").." Taken while {force_field_name:%s} is active to {limit:%s}.",
+			["zh-tw"] = "{force_field_name:%s} 啟用期間，受到的所有"..CKWord("生命值", "Health_rgb_tw")..CKWord("傷害", "Damage_rgb_tw").."上限為 {limit:%s}。",
 			ru = "Пока активен блиц {force_field_name:%s}, весь получаемый "..CKWord("урон", "uron_rgb_ru").." "..CKWord("здоровью", "zdoroviu_rgb_ru").." ограничивается до {limit:%s} единиц.",
 		},
 --[+ +AURA - АУРЫ+ +]--
 	--[+ AURA - АУРА - 0 - Resurgence - Возрождение +]--	17.07.2026
 	["loc_talent_cryptic_coherency_regen_aura_desc"] = { -- damage_reduction: +7.5%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb").." regenerated by you and Allies in "..CKWord("Coherency", "Coherency_rgb").." regardless of enemy proximity.",
+		["zh-tw"] = Dot_green.." 無論敵人是否在附近，你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友都能恢復 {toughness:%s} "..CKWord("協同", "Coherency_rgb_tw")..CKWord("韌性", "Toughness_rgb_tw").."。",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." от "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливается вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." независимо от близости врагов.",
 	},
 	--[+ AURA - АУРА - 1 - Resurgence - Возрождение +]--	17.07.2026
@@ -198,6 +263,9 @@ local skitarii_localizations = {
 		en = Dot_green.." {toughness_flat:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
 			.."\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Coherency", "Coherency_rgb").." "..CKWord("Toughness", "Toughness_rgb").." regenerated by you and Allies in "..CKWord("Coherency", "Coherency_rgb")..",  regardless of enemy proximity.\n",
+		["zh-tw"] = Dot_green.." {toughness_flat:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+			.."\n"
+			..Dot_green.." 無論敵人是否在附近，你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友都能恢復 {toughness:%s} "..CKWord("協同", "Coherency_rgb_tw")..CKWord("韌性", "Toughness_rgb_tw").."。\n",
 		ru = Dot_green.." {toughness_flat:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." от "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливается вам и союзникам в "..CKWord("сплочённости", "splochennosti_rgb_ru").." независимо от близости врагов.",
@@ -207,6 +275,9 @@ local skitarii_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
 			.."\n"
 			..Dot_green.." {ammo:%s} Ammo Reserve to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n",
+		["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+			.."\n"
+			..Dot_green.." 你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友獲得 {ammo:%s} 彈藥儲備。\n",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {ammo:%s} к запасу боеприпасов для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".",
