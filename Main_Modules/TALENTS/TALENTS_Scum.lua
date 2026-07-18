@@ -1779,7 +1779,7 @@ local scum_localizations = {
 				..Dot_nc.." Этот талант сокращает время затрачиваемое на смену слотов предметов (оружие, гранаты, стимуляторы, медпаки, ящики с боеприпасами, книги и т.д.)."
 			.."\n",
 			["zh-tw"] = Dot_green.." {wield_speed:%s} 切換速度。\n"
-				..Dot_nc.." 這會縮短切換物品欄位時，取出動作所需的時間（武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。"
+				..Dot_nc.." 這會縮短切換物品欄位時，持用動作所需的時間（武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。"
 			.."\n",
 		},
 		["loc_talent_stat_stamina_cost_multiplier"] = { -- stamina_cost_multiplier: -15%, +colors
@@ -1866,7 +1866,7 @@ local scum_localizations = {
 			..Dot_green.." {cooldown:%s} к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-			["zh-tw"] = "啟用時，近戰擊殺會賦予 {duration:%s} 秒：\n"
+			["zh-tw"] = "啟用期間，近戰擊殺會使你在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1881,7 +1881,7 @@ local scum_localizations = {
 			..Dot_green.." {cooldown:%s} к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-			["zh-tw"] = "啟用時，遠程擊殺會賦予 {duration:%s} 秒：\n"
+			["zh-tw"] = "啟用期間，遠程擊殺會使你在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
