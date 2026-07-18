@@ -4164,10 +4164,10 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{warp_generation:%s} de génération de "..CKWord("Péril", "Peril_rgb_fr").." pendant {duration:%s} secondes par élimination en mêlée sur "..CKWord("Points faibles", "Weakspot_rgb_fr")..".\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." {vent:%s} "..CKWord("反噬", "Peril_rgb_tw").." 平息，近戰"..CKWord("弱點", "Weakspot_rgb_tw").." 擊殺時觸發。\n"
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時平息 {vent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			..CPhrs("Can_proc_mult")
 			.."\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {warp_generation:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成，持續 {duration:%s} 秒，近戰"..CKWord("弱點", "Weakspot_rgb_tw").." 擊殺時觸發。\n"
+			..Dot_green.." 近戰"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時，"..CKWord("反噬", "Peril_rgb_tw").."產生量 "..CNumb("-", "n_minus_rgb").."{warp_generation:%s}，持續 {duration:%s} 秒。\n"
 			..CPhrs("Can_be_refr"),
 		["zh-cn"] = Dot_green.." 近战"..CKWord("弱点", "Weakspot_rgb_zh_cn").."击杀时，压制{vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."。\n"
 			..CPhrs("Can_proc_mult")
@@ -4224,7 +4224,7 @@ local psyker_localizations = {
 			.."\n"
 			.."À "..CNumb("97%", "pc_97_rgb").." ou plus de "..CKWord("Péril", "Peril_rgb_fr").." et pendant {duration:%s} secondes après être passé sous ce seuil, octroie l'immunité aux "..CKWord("Étourdissements", "Stuns_rgb_fr").." des attaques de mêlée et à distance.\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." {dr:%s} 傷害抗性。\n"
+		["zh-tw"] = Dot_green.." {dr:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
 			.."\n"
 			.."在"..CKWord("反噬", "Peril_rgb_tw").." "..CNumb("97%", "pc_97_rgb").." 或以上時，以及降至以下後 {duration:%s} 秒內，\n"
 			.."免疫近戰和遠程攻擊的"..CKWord("眩暈", "Stuns_rgb_tw").."。\n"
@@ -4313,7 +4313,7 @@ local psyker_localizations = {
 		fr = Dot_green.." Un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." vous fait compter comme Esquivant contre les attaques à distance pendant {duration:%s} seconde.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = CKWord("暴擊命中", "Crit_hit_rgb_tw").." 使你在 {duration:%s} 秒內對遠程攻擊視為閪避狀態。\n"
+		["zh-tw"] = Dot_green.." "..CKWord("暴擊命中", "Crit_hit_rgb_tw").."會使你在 {duration:%s} 秒內，面對遠程攻擊時視為正在閃避。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
 		["zh-cn"] = Dot_green.." "..CKWord("暴击命中", "Crit_hit_rgb_zh_cn").."使你在{duration:%s}秒内视为正在闪避远程攻击。\n"
@@ -4364,12 +4364,12 @@ local psyker_localizations = {
 			..CKWord("Péril", "Peril_rgb_fr").." :        "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|   "..CNumb("50", "n_50_rgb").."|   "..CNumb("60", "n_60_rgb").."|   "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
 			..CKWord("TDR", "TDR_rgb_fr").."("..CNumb("%", "pc_rgb")..") : "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."|   "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
-		["zh-tw"] = Dot_green.." 依當前"..CKWord("反噬", "Peril_rgb_tw").." 等級，"..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").." {min_damage:%s} 至 {max_damage:%s}。\n"
+		["zh-tw"] = Dot_green.." 依當前"..CKWord("反噬", "Peril_rgb_tw").."，獲得 {min_damage:%s} 至 {max_damage:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 無論"..CKWord("反噬", "Peril_rgb_tw").." 多少，至少保證 {min_damage:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，線性縮放：\n"
+			..Dot_green.." 無論當前"..CKWord("反噬", "Peril_rgb_tw").."多少，至少獲得 {min_damage:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，並依比例線性提升：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("TDR", "TDR_rgb_tw").."(%):  "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."| "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("TDR", "TDR_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."| "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."获得{min_damage:%s}至{max_damage:%s}的"..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."。\n"
 			.."\n"
@@ -4433,7 +4433,7 @@ local psyker_localizations = {
 		en = Dot_green.." {percent:%s} of "..CKWord("Damage", "Damage_rgb").." Taken is converted into "..CKWord("Peril", "Peril_rgb")..", while below "..CNumb("97%", "pc_97_rgb").." "..CKWord("Peril", "Peril_rgb")..".",
 		ru = Dot_green.." {percent:%s} получаемого "..CKWord("урона", "urona_rgb_ru").." преобразуется в "..CKWord("опасность", "opasnost_rgb_ru")..", пока ваш уровень "..CKWord("опасности", "opasnosti_rgb_ru").." ниже "..CNumb("97%", "pc_97_rgb")..".", -- Лишь сон -- руоф Просто грезы
 		fr = Dot_green.." {percent:%s} des "..CKWord("Dégâts", "Damage_rgb_fr").." subis sont convertis en "..CKWord("Péril", "Peril_rgb_fr")..", en dessous de "..CNumb("97%", "pc_97_rgb").." de "..CKWord("Péril", "Peril_rgb_fr")..".",
-		["zh-tw"] = Dot_green.." 在"..CKWord("反噬", "Peril_rgb_tw").." 低於 "..CNumb("97%", "pc_97_rgb").." 時，{percent:%s} 受到的"..CKWord("傷害", "Damage_rgb_tw").." 轉化為"..CKWord("反噬", "Peril_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 "..CNumb("97%", "pc_97_rgb").." 時，將受到的"..CKWord("傷害", "Damage_rgb_tw").."之 {percent:%s} 轉化為"..CKWord("反噬", "Peril_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 在"..CKWord("危机值", "Peril_rgb_zh_cn").."低于"..CNumb("97%", "pc_97_rgb").."时，受到的{percent:%s}"..CKWord("伤害", "Damage_rgb_zh_cn").."转化为"..CKWord("危机值", "Peril_rgb_zh_cn").."。",
 		de = Dot_green.." {percent:%s} des erlittenen "..CKWord("Schadens", "Damage_rgb_de").." wird in "..CKWord("Gefahr", "Peril_rgb_de").." umgewandelt, solange Sie sich unter "..CNumb("97%", "pc_97_rgb").." "..CKWord("Gefahr", "Peril_rgb_de").." befinden.",
 		it = Dot_green.." {percent:%s} dei "..CKWord("Danni", "Damage_rgb_it").." subiti vengono convertiti in "..CKWord("Pericolo", "Peril_rgb_it")..", mentre sei al di sotto del "..CNumb("97%", "pc_97_rgb").." di "..CKWord("Pericolo", "Peril_rgb_it")..".",
@@ -4457,7 +4457,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." {dodge_linger_time:%s} de durée d'esquive.\n"
 			..Dot_nc.." Passe de "..CNumb("0.2", "n_0_2_rgb").." à "..CNumb("0.3", "n_0_3_rgb").." secondes.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {extra_consecutive_dodges:%s} 有效閃避次數。\n"
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{extra_consecutive_dodges:%s} 次有效閃避。\n"
 			.."\n"
 			..Dot_green.." {dodge_linger_time:%s} 閃避持續時間。\n"
 			..Dot_nc.." 從 "..CNumb("0.2", "n_0_2_rgb").." 提高至 "..CNumb("0.3", "n_0_3_rgb").." 秒。",
@@ -4553,7 +4553,7 @@ local psyker_localizations = {
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." vs Ogryns and Monstrosities.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." огринам и чудовищам.", -- Уязвимые разумы -- руоф Уязвимые сознания
 		fr = Dot_green.." {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." contre les Ogryns et les Monstruosités.",
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 對歐格林和巨獸。",
+		["zh-tw"] = Dot_green.." 對歐格林與巨獸的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。",
 		["zh-cn"] = Dot_green.." 对欧格林和巨兽造成的"..CKWord("伤害", "Damage_rgb_zh_cn").."提高{damage:%s}。",
 		de = Dot_green.." {damage:%s} "..CKWord("Schaden", "Damage_rgb_de").." gegen Ogryns und Monstrositäten.",
 		it = Dot_green.." {damage:%s} di "..CKWord("Danno", "Damage_rgb_it").." contro Ogryn e Mostruosità.",
@@ -4582,8 +4582,8 @@ local psyker_localizations = {
 			.."_______________________________",
 		["zh-tw"] = Dot_green.." 依當前"..CKWord("反噬", "Peril_rgb_tw").." 等級，最多 {max_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."造成最多{max_damage:%s}额外"..CKWord("伤害", "Damage_rgb_zh_cn").."：\n"
 			.."_______________________________\n"
@@ -4643,11 +4643,11 @@ local psyker_localizations = {
 			..Dot_nc.." Les cumuls de "..CKWord("Point faible", "Weakspot_rgb_fr").." durent jusqu'à consommation.\n"
 			..Dot_nc.." Ne peut se déclencher qu'une seule fois par attaque.\n"
 			..Dot_red.." Tirer dans le vide consomme le "..CKWord("Critique", "Crit_rgb_fr").." garanti.",
-		["zh-tw"] = Dot_green.." 命中 {weakspot_hits:%s} 次"..CKWord("弱點", "Weakspot_rgb_tw").." 後，下一次遠程攻擊必定"..CKWord("暴擊", "Critical_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 達成 {weakspot_hits:%s} 次"..CKWord("弱點命中", "Weakspothits_rgb_tw").."後，下一次遠程攻擊必定"..CKWord("暴擊", "Critical_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("弱點", "Weakspot_rgb_tw").." 層數保留至消耗。\n"
 			..Dot_nc.." 每次攻擊只觸發一次。\n"
-			..Dot_red.." 對空射擊會消耗必定"..CKWord("暴擊", "Critical_rgb_tw").."。",
+			..Dot_red.." 對空射擊會消耗這次必定"..CKWord("暴擊", "Crit_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 命中{weakspot_hits:%s}次"..CKWord("弱点", "Weakspothits_rgb_zh_cn").."后，下一次远程攻击必定"..CKWord("暴击", "Critical_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("弱点", "Weakspot_rgb_zh_cn").."层数持续直到被消耗。\n"
@@ -4700,7 +4700,7 @@ local psyker_localizations = {
 		fr = Dot_green.." Lorsque vous êtes en dessous de "..CNumb("97%", "pc_97_rgb").." de "..CKWord("Péril", "Peril_rgb_fr")..", bloquer une attaque vous fait gagner du "..CKWord("Péril", "Peril_rgb_fr").." au lieu de perdre de l'"..CKWord("Endurance", "Stamina_rgb_fr")..".\n"
 			.."\n"
 			..Dot_nc.." Le "..CKWord("Péril", "Peril_rgb_fr").." gagné est de {warp_charge_block_cost:%s} du coût en "..CKWord("Endurance", "Stamina_rgb_fr").." de l'attaque bloquée.",
-		["zh-tw"] = "在"..CKWord("反噬", "Peril_rgb_tw").." 低於 "..CNumb("97%", "pc_97_rgb").." 時，格擋攻擊改為增加"..CKWord("反噬", "Peril_rgb_tw").." 而非消耗"..CKWord("耐力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 "..CNumb("97%", "pc_97_rgb").." 時，格擋攻擊會增加"..CKWord("反噬", "Peril_rgb_tw").."，而不會消耗"..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 獲得的"..CKWord("反噬", "Peril_rgb_tw").." 為格擋正常"..CKWord("耐力", "Stamina_rgb_tw").." 消耗的 {warp_charge_block_cost:%s}。",
 		["zh-cn"] = Dot_green.." 当"..CKWord("危机值", "Peril_rgb_zh_cn").."低于"..CNumb("97%", "pc_97_rgb").."时，格挡攻击会使你获得"..CKWord("危机值", "Peril_rgb_zh_cn").."而非消耗"..CKWord("体力", "Stamina_rgb_zh_cn").."。\n"
@@ -4804,8 +4804,8 @@ local psyker_localizations = {
 			..CNote("Rend_note"),
 		["zh-tw"] = Dot_green.." 依"..CKWord("反噬", "Peril_rgb_tw").." 等級，亞空間攻擊最多 {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("撕裂", "Rending_rgb_tw").."(%):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("撕裂", "Rending_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
