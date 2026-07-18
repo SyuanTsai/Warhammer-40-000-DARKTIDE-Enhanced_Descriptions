@@ -1415,8 +1415,8 @@ local weapon_localizations = {
 			ru = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru").." подавляется при повторном попадании в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..". "
 				..Dot_nc.." Срабатывает только "..CNumb("1", "n_1_rgb").." раз за атаку.",
 			fr = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." du "..CKWord("Péril", "Peril_rgb_fr").." est dissipé sur les "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr").." répété.",
-			["zh-tw"] = "重複"..CKWord("弱點命中", "Weakspothit_rgb_tw").."時，抑制 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。"
-				..Dot_nc.." 無論命中多少敵人"..CKWord("弱點", "Weakspots_rgb_tw").."，每次揮擊只觸發一次。",
+			["zh-tw"] = "連續"..CKWord("命中弱點", "Weakspothit_rgb_tw").."時，抑制 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。"
+				..Dot_nc.." 無論命中多少敵人的"..CKWord("弱點", "Weakspots_rgb_tw").."，每次揮擊只觸發一次。",
 			["zh-cn"] = "连锁攻击"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，\n平息 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。",
 			de = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Gefahr", "Peril_rgb_de").." wird bei wiederholten "..CKWord("Schwachstellentreffern", "Weakspothit_rgb_de").." abgebaut.",
 			it = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Pericolo", "Peril_rgb_it").." placato a Colpi ripetuti su "..CKWord("Punto Debole", "Weakspothit_rgb_it")..".",
@@ -1509,7 +1509,7 @@ local weapon_localizations = {
 			ru = CKWord("Ошеломление", "Oshelomlenie_rgb_ru").." врага с шансом в "..CNumb("{chance:%s}", "chnc_var_rgb").." может наложить эффект "..CKWord("электрошока", "elektroshoka_rgb_ru").." на врага. Восстанавливается "..CNumb("{cooldown:%s}", "cd_var_rgb").." секунды. "
 				..Dot_red.." Не срабатывает при толчках.",
 			fr = "Faire "..CKWord("vaciller", "Staggering_rgb_fr").." un ennemie à "..CNumb("{chance:%s}", "chnc_var_rgb").." de chance de l'"..CKWord("Électrocuter", "Electrocute_rgb_fr")..". Temps de recharge : "..CNumb("{cooldown:%s}", "cd_var_rgb").." secondes.",
-			["zh-tw"] = "使敵人"..CKWord("踉蹌", "Staggering_rgb_tw").."時，有 "..CNumb("{chance:%s}", "chnc_var_rgb").." 機率使該敵人"..CKWord("電擊", "Electrocute_rgb_tw").."。冷卻時間 "..CNumb("{cooldown:%s}", "cd_var_rgb").." 秒。"
+			["zh-tw"] = "使敵人"..CKWord("踉蹌", "Staggering_rgb_tw").."時，有 "..CNumb("{chance:%s}", "chnc_var_rgb").." 機率"..CKWord("電擊", "Electrocute_rgb_tw").."該敵人。冷卻時間 "..CNumb("{cooldown:%s}", "cd_var_rgb").." 秒。"
 				..Dot_red.." 推擊不會觸發。",
 			["zh-cn"] = CKWord("踉跄", "Stagger_rgb_zh_cn").."敌人时 "..CNumb("{chance:%s}", "chnc_var_rgb").." 几率使目标"..CKWord("眩晕", "Electrocute_rgb_zh_cn").."。\n冷却时间 "..CNumb("{cooldown:%s}", "cd_var_rgb").." 秒。",
 			de = "Hat eine Chance von "..CNumb("{chance:%s}", "chnc_var_rgb")..", einen "..CKWord("taumelnden", "Staggering_rgb_de").." Gegner zu "..CKWord("elektrokutieren", "Electrocute_rgb_de")..". Abklingzeit "..CNumb("{cooldown:%s}", "cd_var_rgb").." Sek.",
@@ -1568,7 +1568,7 @@ local weapon_localizations = {
 			en = CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." "..CKWord("Heat", "Heat_rgb").." is reduced immediately upon Lockout, and you cause an Explosion around you.",
 			ru = CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." "..CKWord("перегрева", "peregreva_rgb_ru").." немедленно сбрасывается при полном перегреве.\nТакже происходит небольшой взрыв, который наносит малый "..CKWord("урон", "uron_rgb_ru").." и слегка "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." врагов.",
 			fr = "Lorsque vous entrez en état de Verouillage, vous produisez une Explosion autour de vous et réduisez immédiatement la "..CKWord("Chaleur", "Heat_rgb_fr").." de "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb")..".",
-			["zh-tw"] = "進入鎖定狀態時，立即降低 "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." "..CKWord("熱能", "Heat_rgb_tw").."，並在你周圍產生爆炸。",
+			["zh-tw"] = "進入過熱鎖定時，立即降低 "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." "..CKWord("熱能", "Heat_rgb_tw").."，並在周圍產生爆炸。",
 			["zh-cn"] = CKWord("热量", "Heat_rgb_zh_cn").."达到 "..CNumb("100%", "pc_100_rgb").." 并进入锁定状态时，\n在周身范围引发一次爆炸，\n并立刻减少 "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." "..CKWord("热量", "Heat_rgb_zh_cn").."。",
 			de = "Beim Erreichen der Überhitzungssperre wird eine Explosion um euch herum ausgelöst und die "..CKWord("Hitze", "Heat_rgb_de").." sofort um "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb").." reduziert.",
 			it = "Quando entri in stato di Blocco, provochi un'Esplosione intorno a te e riduci immediatamente il "..CKWord("Calore", "Heat_rgb_it").." del "..CNumb("{overheat_reduction:%s}", "overheat_red_var_rgb")..".",
@@ -1606,7 +1606,7 @@ local weapon_localizations = {
 			ru = CNumb("-", "n_minus_rgb")..CNumb("{amount}", "amount_var_rgb").." "..CKWord("перегрева", "peregreva_rgb_ru").." за "..CNumb("{time:%s}", "time_var_rgb").." секунды после убийств "..CKWord("Critical Hits", "krit_udarami_rgb_ru").." или убийств в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
 				..CPhrs("Can_be_refr"),
 			fr = "Les éliminations sur "..CKWord("Point faible", "Weakspot_rgb_fr").." et "..CKWord("Coups critiques", "Crit_hits_rgb_fr").." réduisent la "..CKWord("Chaleur", "Heat_rgb_fr").." de "..CNumb("{amount}", "amount_var_rgb").." sur "..CNumb("{time:%s}", "time_var_rgb").." secondes.",
-			["zh-tw"] = CKWord("弱點", "Weakspot_rgb_tw").."或"..CKWord("暴擊", "Critical_rgb_tw").."擊殺時，在 "..CNumb("{time:%s}", "time_var_rgb").." 秒內降低 "..CNumb("-", "n_minus_rgb")..CNumb("{amount}", "amount_var_rgb").." "..CKWord("熱能", "Heat_rgb_tw").."。"
+			["zh-tw"] = CKWord("弱點", "Weakspot_rgb_tw").."或"..CKWord("致命一擊", "Critical_rgb_tw").."擊殺時，在 "..CNumb("{time:%s}", "time_var_rgb").." 秒內降低 "..CNumb("-", "n_minus_rgb")..CNumb("{amount}", "amount_var_rgb").." "..CKWord("熱能", "Heat_rgb_tw").."。"
 				..CPhrs("Can_be_refr"),
 			["zh-cn"] = CKWord("弱点击杀", "Weakspothits_k_rgb_zh_cn").."和"..CKWord("暴击击杀", "Crit_hits_k_rgb_zh_cn").."时，\n在 "..CNumb("{time:%s}", "time_var_rgb").." 秒内减少"..CNumb("{amount}", "amount_var_rgb").." "..CKWord("热量", "Heat_rgb_zh_cn").."。",
 			de = CNumb("{amount}", "amount_var_rgb").." "..CKWord("Hitze", "Heat_rgb_de").." wird über "..CNumb("{time:%s}", "time_var_rgb").." Sek. bei "..CKWord("Schwachstellen-", "Weakspot_rgb_de").." oder "..CKWord("Kritischen Kills", "Crit_hits_rgb_de").." reduziert.",
@@ -1685,7 +1685,7 @@ local weapon_localizations = {
 				..Dot_red.." Не влияет на дальнобойные атаки.",
 			fr = CNumb("{damage:%s}", "dmg_var_rgb").." de "..CKWord("Dégât sur point faible", "Weakspot_dmg_rgb_fr").." pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes lors d'une poussée d'ennemis.",
 			["zh-tw"] = "推開敵人時，獲得 "..CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("弱點傷害", "Weakspot_dmg_rgb_tw").."，持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。"
-				..CPhrs("Can_be_refr")..Dot_red.." 不會使遠程攻擊受益。",
+				..CPhrs("Can_be_refr")..Dot_red.." 遠程攻擊無法受益。",
 			["zh-cn"] = "推搡敌人 \n"..CNumb("{damage:%s}", "dmg_var_rgb").." 近战"..CKWord("弱点伤害", "Weakspot_dmg_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。",
 			de = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Schwachstellen-Schaden", "Weakspot_dmg_rgb_de").." für "..CNumb("{time:%s}", "time_var_rgb").." Sek. beim Schubsen von Gegnern.",
 			it = CNumb("{damage:%s}", "dmg_var_rgb").." "..CKWord("Danno a punto debole", "Weakspot_dmg_rgb_it").." per "..CNumb("{time:%s}", "time_var_rgb").." sec. spingendo i nemici.",
