@@ -717,7 +717,7 @@ local zealot_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждую вторую атаку ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя.\n" -- Презрение
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 你每次第二下近戰攻擊，前一次近戰攻擊每命中一名敵人就獲得 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 每隔一次近戰攻擊，前一次近戰攻擊每命中一名敵人就獲得 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。",
 	},
 	--[+ Passive 3 - Backstabber +]--	27.03.2026
@@ -749,11 +749,11 @@ local zealot_localizations = {
 			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CNumb("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
-		["zh-tw"] = Dot_green.." 當 {range:%s} 米內有敵人時，每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 當 {range:%s} 公尺內有敵人時，每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..Dot_green.." 每多一名敵人增加 {more_toughness:%s}。巨獸視為 {monster_count:%s} 名。最多 {max:%s}。\n"
 			.."_______________________________\n"
-			.."敵人數：     "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| >"..CNumb("5", "n_5_rgb").."\n"
-			..CKWord("韌性", "Toughness_rgb_tw").."%:  "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			.."敵人數：     "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("5", "n_5_rgb").." | >"..CNumb("5", "n_5_rgb").."\n"
+			..CKWord("韌性", "Toughness_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("2.5", "n_2_5_rgb").." | "..CNumb("3.5", "n_3_5_rgb").." | "..CNumb("4.5", "n_4_5_rgb").." | "..CNumb("5.5", "n_5_5_rgb").." | "..CNumb("6.5", "n_6_5_rgb").." | "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 6 - Blood Redemption +]--	27.03.2026
@@ -761,7 +761,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment on Melee Kill.",
 		ru = Dot_green.." {toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." при убийстве в ближнем бою.", -- Искупление кровью -- руоф Кровавое искупление
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
-		["zh-tw"] = Dot_green.." 近戰擊殺時 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
+		["zh-tw"] = Dot_green.." 近戰擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 7 - Second Wind +]--	27.03.2026
 	["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
