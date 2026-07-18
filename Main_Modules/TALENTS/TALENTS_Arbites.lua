@@ -809,7 +809,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_close_kills_restore_toughness_desc"] = { -- toughness: 5%, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished after killing enemy within "..CNumb("12.5", "n_12_5_rgb").." meters.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве на дистанции до "..CNumb("12.5", "n_12_5_rgb").." метров.", -- В упор -- руоф Лицом к лицу
-		["zh-tw"] = Dot_green.." 在 "..CNumb("12.5", "n_12_5_rgb").." 米內擊殺敵人後，\n"
+		["zh-tw"] = Dot_green.." 在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內擊殺敵人後，\n"
 			.."恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 7 - Force of Will +]--	26.03.2026
@@ -841,7 +841,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_toughness_regen_near_companion_desc"] = { -- toughness: 5%, range: 8, m->meters, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished per second while Cyber-Mastiff is within {range:%s} meters of you.",
 		ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается в секунду пока ваш кибермастиф в пределах {range:%s} метров от вас.", -- Человек и кибермастиф
-		["zh-tw"] = Dot_green.." 電子獒犬在 {range:%s} 米範圍內時，\n"
+		["zh-tw"] = Dot_green.." 電子獒犬在 {range:%s} 公尺範圍內時，\n"
 			.."每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 10 - Walk It Off +]--	26.03.2026
@@ -893,7 +893,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_melee_weakspot_hits_count_as_stagger_desc"] = { -- duration: 4, s->seconds, +colors
 		en = "Melee "..CKWord("Weakspot Hits", "Weakspothits_rgb").." make the Enemy count as "..CKWord("Staggered", "Staggered_rgb").." for {duration:%s} seconds.",
 		ru = "Попадания в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." в ближнем бою "..CKWord("ошеломляют", "oshelomlaut_rgb_ru").." врагов на {duration:%s} секунды.", -- Ошеломление -- руоф Сотрясение
-		["zh-tw"] = "近戰"..CKWord("弱點命中", "Weakspothits_rgb_tw").."會使敵人\n"
+		["zh-tw"] = "近戰"..CKWord("命中弱點", "Weakspothits_rgb_tw").."會使敵人\n"
 			.."被視為"..CKWord("踉蹌", "Staggered_rgb_tw").."，持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 16 - Canine Morale +]--	26.03.2026
@@ -906,7 +906,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s}.",
 		["zh-tw"] = "擊殺被撲倒的目標後，\n"
 			.."你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." 每秒恢復 "..CNumb("2%", "pc_2_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，最多 {toughness:%s}。",
 	},
 	--[+ Passive 17 - Imposing Force +]--	26.03.2026
@@ -937,7 +937,7 @@ local arbites_localizations = {
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..".", -- Протоколы подавления
 		["zh-tw"] = "單次攻擊命中 {hits:%s} 名或更多敵人後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 20 - Plasteel Plates +]--	26.03.2026
 	["loc_talent_adamant_plasteel_plates_desc"] = { -- toughness: +25, +colors
