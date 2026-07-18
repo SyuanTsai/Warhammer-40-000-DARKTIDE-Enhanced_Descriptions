@@ -400,7 +400,7 @@ local arbites_localizations = {
 	["loc_talent_adamant_charge_longer_distance_desc"] = { -- charge_ability_name: Break the Line, distance: 7.5, m->meters
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} meters to the distance of {charge_ability_name:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{distance:%s} метров к расстоянию способности {charge_ability_name:%s}.", -- Дальний прорыв -- руоф К бою
-		["zh-tw"] = Dot_green.." {charge_ability_name:%s} 的距離增加 "..CNumb("+", "n_plus_rgb").."{distance:%s} 米。",
+		["zh-tw"] = Dot_green.." {charge_ability_name:%s} 的距離增加 "..CNumb("+", "n_plus_rgb").."{distance:%s} 公尺。",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВОЙ ТАЛАНТ+ +]--
 	--[+ KEYSTONE 1 - Unleashed Brutality +]--
@@ -440,13 +440,13 @@ local arbites_localizations = {
 		["zh-tw"] = "你不再有電子獒犬陪同，但獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			.."閃擊技能：\n"
-			..Dot_green.." 最大充能增加 {charges:%s}。\n"
+			..Dot_green.." 最大充能：{charges:%s}。\n"
 			..Dot_green.." "..CNumb("1", "n_1_rgb").." 充能恢復間隔：\n"
-			.."    "..Dot_green.." {grenade_time:%s} 秒 - {grenade_blitz_name:%s}，\n"
-			.."    "..Dot_green.." {time_shock_mine:%s} 秒 - {shock_mine_name:%s}。",
+			.."    "..Dot_green.." {grenade_time:%s} 秒－{grenade_blitz_name:%s}，\n"
+			.."    "..Dot_green.." {time_shock_mine:%s} 秒－{shock_mine_name:%s}。",
 	},
 	--[+ KEYSTONE 3 - Go Get 'Em! +]--
 	["loc_talent_adamant_cyber_mastiff_ranged_desc"] = { -- !damage!: +50%, +colors
@@ -504,7 +504,7 @@ local arbites_localizations = {
 			..Dot_green.." {crit_damage:%s} к "..CKWord("критическому урону", "krit_uronu_rgb_ru")..".\n"
 			..Dot_nc.." Длится {time:%s} секунд.", -- Эффективный убийца
 		["zh-tw"] = "擊殺"..CKWord("標記敵人", "Markedenemy_rgb_tw").." 後，你獲得：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crt_chance_rgb_tw").."，\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_chance_rgb_tw").."，\n"
 			..Dot_green.." {crit_damage:%s} "..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {time:%s} 秒。",
 	},
