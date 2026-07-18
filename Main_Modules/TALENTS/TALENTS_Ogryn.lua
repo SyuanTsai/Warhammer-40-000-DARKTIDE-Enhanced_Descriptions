@@ -1673,7 +1673,7 @@ local ogryn_localizations = {
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раз.", -- Резня
 		["zh-tw"] = "擊殺敵人後，在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。",
 		-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant {duration:%s} secondes en tuant un ennemi. Se cumul jusqu'à {max_stacks:%s} fois.",
 	},
@@ -1763,7 +1763,7 @@ local ogryn_localizations = {
 		en = Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for each Knocked Down or Incapacitated Ally within {range:%s} meters.",
 		ru = Dot_green.." {damage_taken:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." за каждого выведенного из строя союзника в радиусе {range:%s} метров.", -- Не сдамся
 		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免，\n"
-			.."每名 {range:%s} 米內倒地或失能的隊友提供一份。",
+			.."每名 {range:%s} 公尺內倒地或失能的隊友提供一份。",
 		-- fr = "{damage_taken:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." pour chaque allié à terre или incapacité dans un rayon de {range:%s} mètres.",
 	},
 	--[+ Passive 48 - Spray and Slay +]--	26.03.2026
