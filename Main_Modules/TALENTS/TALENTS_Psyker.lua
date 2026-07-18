@@ -4893,13 +4893,13 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." La surcharge due aux "..CKWord("Périls du Warp", "PerilsozWarp_rgb_fr").." ne vous renverse plus, mais vous perdez "..CNumb("1", "n_1_rgb").." segment de "..CKWord("Santé", "Health_rgb_fr").." par "..CKWord("Dégâts de corruption", "Corruptdmg_rgb_fr")..".\n"
 			..Dot_green.." Si l'explosion tue un ennemi d'élite, vous ne subissez aucun "..CKWord("Dégâts de corruption", "Corruptdmg_rgb_fr")..".",
-		["zh-tw"] = "超載爆炸（達 "..CNumb("100%", "pc_100_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 後）獲得：\n"
-			..Dot_green.." {overload_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
-			..Dot_green.." {overload_radius:%s} 爆炸半徑。\n"
+		["zh-tw"] = Dot_green.." 超載爆炸"..CKWord("傷害", "Damage_rgb_tw").."增加 {overload_damage:%s}，\n"
+			..Dot_green.." 超載爆炸半徑增加 {overload_radius:%s}。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").." - "..CNumb("100", "n_100_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
-			..Dot_green.." "..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").." 造成的超載不再打扱，但會消耗 "..CNumb("1", "n_1_rgb").." 個 "..CKWord("生命", "Health_rgb_tw").." 段超載炸啊倒，並受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。\n"
+			.."\n"
+			..Dot_green.." 因"..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").."而超載時不再將你擊倒，但會因"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."失去 "..CNumb("1", "n_1_rgb").." 格"..CKWord("生命值", "Health_rgb_tw").."。\n"
 			..Dot_green.." 若爆炸擊殺精英敵人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 超载爆炸"..CKWord("伤害", "Damage_rgb_zh_cn").."提高{overload_damage:%s}，\n"
 			..Dot_green.." 超载爆炸半径提高{overload_radius:%s}。\n"
@@ -5057,7 +5057,7 @@ local psyker_localizations = {
 			..Dot_red.." Se déclenche une seule fois par tir, quel que soit le nombre d'ennemis touchés.",
 		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊命中", "Crit_hits_rgb_tw").." 時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 命中盾牧時觸發。\n"
+			..Dot_green.." 命中護盾時也會觸發。\n"
 			..Dot_red.." 每次射擊只觸發一次，無論命中多少敵人。",
 		["zh-cn"] = Dot_green.." 非亚空间远程"..CKWord("暴击命中", "Crit_hits_rgb_zh_cn").."时，压制{percent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."。\n"
 			.."\n"
@@ -5106,7 +5106,7 @@ local psyker_localizations = {
 			..Dot_red.." Au rechargement, générez jusqu'à {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr").." en fonction du pourcentage de chargeur restauré.\n"
 			.."\n"
 			..Dot_red.." Recharger un chargeur vide génère la quantité maximale de {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr")..".",
-		["zh-tw"] = Dot_green.." 在"..CKWord("反噬", "Peril_rgb_tw").." 低於 {threshold:%s} 時，{reload_speed:%s} 換彈速度。\n"
+		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 {threshold:%s} 時，換彈速度 "..CNumb("+", "n_plus_rgb").."{reload_speed:%s}。\n"
 			..Dot_red.." 換彈時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_red.." 彈匣為空時換彈，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
