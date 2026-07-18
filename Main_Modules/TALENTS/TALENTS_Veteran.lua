@@ -859,7 +859,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_bonus_crit_chance_on_ammo_desc"] = { -- ammo: 20%, crit_chance: +10%, +colors
 		en = Dot_green.." {crit_chance:%s} Ranged "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance for the first {ammo:%s} of Ammo after a Reload.",
 		ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." для первых {ammo:%s} патронов после перезарядки.", -- Открывающий залп
-		["zh-tw"] = Dot_green.." 裝填後前 {ammo:%s} 彈藥獲得 {crit_chance:%s} 遠程"..CKWord("爆擊命中", "Crit_hit_rgb_tw").."率。",
+		["zh-tw"] = Dot_green.." 裝填後前 {ammo:%s} 彈藥獲得 {crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_hit_rgb_tw").."。",
 	},
 
 	--[+ Passive 16 - Covert Operative +]--	27.03.2026
@@ -937,9 +937,9 @@ local veteran_localizations = {
 			 ..Dot_green.." {smoke_time:%s} секунд - {smoke_grenade:%s},\n"
 			 ..Dot_green.." {frag_time:%s} секунд - {frag_grenade:%s}.", -- Склад взрывчатки
 		["zh-tw"] = "每隔下列時間補充 {amount:%s} 枚手雷：\n"
-			 ..Dot_green.." {krak_time:%s} 秒 - {krak_grenade:%s}，\n"
-			 ..Dot_green.." {smoke_time:%s} 秒 - {smoke_grenade:%s}，\n"
-			 ..Dot_green.." {frag_time:%s} 秒 - {frag_grenade:%s}。",
+			..Dot_green.." {krak_time:%s} 秒 — {krak_grenade:%s}，\n"
+			..Dot_green.." {smoke_time:%s} 秒 — {smoke_grenade:%s}，\n"
+			..Dot_green.." {frag_time:%s} 秒 — {frag_grenade:%s}。",
 	},
 	--[+ Passive 21 - Grenade Tinkerer +]--	27.03.2026
 	["loc_talent_veteran_improved_grenades_desc"] = { -- krak_grenade: Krak Grenade, krak: +75%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100%, &->and, +colors
@@ -1003,7 +1003,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_red.." Этот талант не действует на плазмомёт.",
 		["zh-tw"] = "在"..CKWord("耐力", "Stamina_rgb_tw").." 大於 "..CNumb("0", "n_0_rgb").." 時瞄準並獲得：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."，\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{sway_reduction:%s} 武器搖晃，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("19%", "pc_19_rgb").." 散布，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("12%", "pc_12_rgb").." 後座力。\n"
