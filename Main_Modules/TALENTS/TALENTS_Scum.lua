@@ -1483,13 +1483,13 @@ local scum_localizations = {
 			.."["..CKWord("Крит. урон", "Krt_uron_rgb_ru").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").."]\n"
 			.."\n"
 			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, загонщик, капитаны/близнецы, крушитель.",
-		["zh-tw"] = CKWord("近戰爆擊", "Critical_rgb_tw").."攻擊會立即擊殺人類體型敵人，\n"
-			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
+		["zh-tw"] = "近戰攻擊造成"..CKWord("致命一擊", "Critical_rgb_tw").."時，會立即擊殺人類體型敵人，\n"
+			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." × {threshold:%s}。\n"
 			.."\n"
-			..Dot_nc.." ["..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
+			..Dot_nc.." ["..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").." × {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
 			.."\n"
 			..Dot_nc.." 不視為「人類體型」的敵人：\n"
-			.."   "..Dot_nc.." 納垢巨獸、堡壘、隊長/雙子、\n"
+			.."   "..Dot_nc.." 納垢巨獸、堡壘、連長/雙子、\n"
 			.."   "..Dot_nc.." 混沌魔物、碾壓者、惡魔宿主、\n"
 			.."   "..Dot_nc.." 獸群領主、瘟疫歐格林、收割者。",
 	},
@@ -1518,7 +1518,7 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 		["zh-tw"] = "裝填你的遠程武器後，\n"
-			.."獲得 {duration:%s} 秒：\n"
+			.."在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			.."效果期間每消耗彈匣 {ammo_per_stack:%s}，\n"
@@ -1569,7 +1569,7 @@ local scum_localizations = {
 			..Dot_nc.." Срабатывает раз в {cooldown:%s} секунд.",
 		["zh-tw"] = "受到近戰"..CKWord("傷害", "Damage_rgb_tw").."時，\n"
 			.."擊退你周圍所有附近敵人，\n"
-			.."並獲得 {duration:%s} 秒：\n"
+			.."並在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {movement_speed:%s} 移動速度。\n"
 			.."\n"
 			..Dot_nc.." 每 {cooldown:%s} 秒只能觸發一次。",
