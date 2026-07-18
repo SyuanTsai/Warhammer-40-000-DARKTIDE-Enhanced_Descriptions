@@ -222,7 +222,7 @@ local penances_localizations = {
 	--[+ Vantage Point (3) +]-- руоф Точка обзора (3)
 	["loc_achievement_missions_veteran_2_objective_3_name"] = {
 		ru = "Выгодная позиция (3)",
-		["zh-tw"] = "有利地形 (3)",
+		["zh-tw"] = "有利地形（3）",
 	},
 		--[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]--
 		["loc_achievement_missions_veteran_2_objective_3_description"] = {
@@ -277,12 +277,12 @@ local penances_localizations = {
 	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
 	["loc_achievement_group_rank_4_difficulty_3_name"] = {
 		ru = "Задания для продвижения (1)",
-		["zh-tw"] = "樹立榜樣 (1)",
+		["zh-tw"] = "樹立榜樣（1）",
 	},
 	--[+ Promotion Material (2) +]-- руоф Материалы пропаганды (2)
 	["loc_achievement_group_rank_5_difficulty_4_name"] = {
 		ru = "Задания для продвижения (2)",
-		["zh-tw"] = "樹立榜樣 (2)",
+		["zh-tw"] = "樹立榜樣（2）",
 	},
 	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
 		--[+ Complete the following Penances as the Veteran. +]-- руоф Выполнить следующие искупления за Ветерана.
@@ -302,20 +302,20 @@ local penances_localizations = {
 			..CNote("Weaksp_note"),
 		ru = "Убейте "..CNumb("{target}", "target_rgb").." врагов в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." из дальнобойного оружия.\n"
 			..CNote("Weaksp_note"),
-		["zh-tw"] = "使用遠程武器以 "..CKWord("弱點命中", "Weakspothits_rgb_tw").."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+		["zh-tw"] = "使用遠程武器以 "..CKWord("命中弱點", "Weakspothits_rgb_tw").."擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
 			..CNote("Weaksp_note"),
 	},
 	--[+ Fire Down Range +]-- -- руоф Заградительный огонь
 	["loc_achievement_veteran_2_medium_2_name"] = {
 		ru = "Дистанция ведения стрельбы",
-		["zh-tw"] = "順風射擊",
+		["zh-tw"] = "遠距開火",
 	},
 	--[+ On Malice Threat or higher, kill 100 ranged enemies that are over 30 meters away. +]-- руоф При угрозе «Злоба» или выше убейте врагов (100) на расстоянии дальше 30 м.
 	["loc_achievement_veteran_2_medium_2_description"] = {
 		en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." ranged enemies that are over "..CNumb("{distance}", "dist_rgb").." meters away.",
 		ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов-стрелков, находящихся на расстоянии более "..CNumb("{distance}", "dist_rgb").." метров от вас.",
 		["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高難度下，\n"
-			.."擊殺 "..CNumb("{target}", "target_rgb").." 名距離 "..CNumb("{distance}", "dist_rgb").." 公尺以上的敵人。",
+			.."擊殺 "..CNumb("{target}", "target_rgb").." 名距離 "..CNumb("{distance}", "dist_rgb").." 公尺以上的遠程敵人。",
 	},
 	--[+ On Target (1-3) +]-- руоф Держи прицел (1-3) -- 使命必達 (1-3)
 		--[+ Complete the following Penances as the Veteran. +]-- руоф Выполнить следующие искупления за Ветерана.
