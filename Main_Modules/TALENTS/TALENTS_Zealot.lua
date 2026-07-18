@@ -984,7 +984,7 @@ local zealot_localizations = {
 		ru = "При получении удара в ближнем бою вы отбрасываете атакующего врага.\n" -- Возмездие Владыки
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 		-- fr = "Repousse l'attaquant après avoir reçu un coup de mêlée. Temps de recharge : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_32_rgb_fr,
-		["zh-tw"] = "受到近戰攻擊時打飛攻擊者。\n"
+		["zh-tw"] = "受到近戰攻擊時擊退攻擊者。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 27 - Dance of Death +]--	27.03.2026
@@ -1020,7 +1020,7 @@ local zealot_localizations = {
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.", -- Бичевание -- руоф Бич
 		-- fr = "Les coups "..CKWord("Critiques", "Crit_hits_rgb_fr").." en mêlée appliquent "..CKWord("Saignement", "Bleed_rgb_fr")..", causant des "..CKWord("Dégâts", "Damage_rgb_fr").." au fil du temps.\nLes coups en mêlée sur les ennemis qui "..CKWord("Saignent", "Bleeding_rgb_fr").." octroient {crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." pendant {duration:%s} secondes. Se cumule jusqu'à {max_stacks:%s} fois. Jusqu'à "..CNumb("16", "n_16_rgb").." cumuls de saignement max sur une cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_4_rgb_fr,
-		["zh-tw"] = "近戰"..CKWord("爆擊命中", "Crit_hits_rgb_tw").."會施加"..CKWord("流血", "Bleed_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。每個目標最多 "..CNumb("16", "n_16_rgb").." 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
+		["zh-tw"] = "近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."會施加"..CKWord("流血", "Bleed_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。每個目標最多 "..CNumb("16", "n_16_rgb").." 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			.."\n"
 			.."近戰命中"..CKWord("流血中", "Bleeding_rgb_tw").."敵人時，{duration:%s} 秒內獲得：\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
@@ -1031,7 +1031,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {time:%s} seconds on "..CKWord("Critical Hit", "Crit_hit_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." на {time:%s} секунды при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..".", -- Непоколебимая вера
 		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CKWord("爆擊命中", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 31 - Punish Impiety +]--	27.03.2026
 	["loc_talent_zealot_push_attacks_attack_speed_desc"] = { -- attack_speed: +10%, duration: 5, s->seconds
@@ -1044,7 +1044,7 @@ local zealot_localizations = {
 		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." that would take your "..CKWord("Health", "Health_rgb").." to the next "..CKWord("Wound", "Wound_rgb")..".",
 		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..", который привёл бы к потере "..CKWord("здоровья", "zdorovia_rgb_ru").." до следующей "..CKWord("раны", "rany_rgb_ru")..".", -- Кровь за Императора -- руоф Кровь во имя Императора
 		-- fr = "Les "..CKWord("Dégâts", "Damage_rgb_fr").." qui réduirait votre "..CKWord("Santé", "Health_rgb_fr").." à la prochaine "..CKWord("Blessure", "Wound_rgb_fr").." sont réduit de {damage_reduction:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_9_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} 會使你的"..CKWord("生命值", "Health_rgb_tw").."進入下一個"..CKWord("傷痕", "Wound_rgb_tw").."區段的"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 會使你的"..CKWord("生命值", "Health_rgb_tw").."進入下一個"..CKWord("傷痕", "Wound_rgb_tw").."區段的"..CKWord("傷害", "Damage_rgb_tw").." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s}。",
 	},
 	--[+ Passive 33 - Time to Kill +]--	27.03.2026
 	["loc_talent_zealot_backstab_periodic_damage_desc"] = { -- damage: +50%, cooldown: 8, +colors
@@ -1090,7 +1090,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восстанавливается при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." в ближнем бою.\n" -- Без передышки
 			..Dot_nc.." Восстановление: {cooldown:%s} секунда.",
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("爆擊命中", "Crit_hit_rgb_tw").."時恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("致命一擊", "Crit_hit_rgb_tw").."時恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 38 - Unfaltering +]--	27.03.2026
