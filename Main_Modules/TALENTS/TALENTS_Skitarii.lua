@@ -1215,8 +1215,8 @@ local skitarii_localizations = {
 			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			["zh-tw"] = CKWord("致命一擊", "Crit_hits_rgb_tw").."時，恢復：\n"
 				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
-				.."並獲得以下效果 {duration:%s} 秒：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+				.."並在 {duration:%s} 秒內獲得以下效果：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 			ru = "При "..CKWord("критических ударах", "krit_udarah_rgb_ru").." вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").."\n"
 			.."и получаете на {duration:%s} секунды:\n"
@@ -1242,8 +1242,8 @@ local skitarii_localizations = {
 			..Dot_nc.." Stacks decay one at a time.",
 			["zh-tw"] = "遠程擊殺會提供層數。\n"
 				.."\n"
-				.."每層提供以下效果 {duration:%s} 秒：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				.."每層會在 {duration:%s} 秒內提供以下效果：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。\n"
 				..Dot_nc.." 層數會逐一衰減。",
@@ -1274,7 +1274,7 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_stamina_increases_damage_desc"] = { -- crit_chance: +10%, duration: 3, max_stacks: 3, s->seconds, +colors
 		en = "On spending at least {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..", you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".",
-			["zh-tw"] = "消耗至少 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "消耗至少 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 			ru = "Если вы потратили как минимум {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..", вы получаете на {duration:%s} секунды:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".",
@@ -1311,7 +1311,7 @@ local skitarii_localizations = {
 			..Dot_nc.." Stacks decay one at a time.",
 			["zh-tw"] = "以遠程攻擊擊殺精英會提供層數。\n"
 				.."\n"
-				.."每層提供以下效果 {duration:%s} 秒：\n"
+				.."每層會在 {duration:%s} 秒內提供以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。\n"
@@ -1342,7 +1342,7 @@ local skitarii_localizations = {
 	--[+ PASSIVES - ПАССИВНЫЙ - 34 - Servo-Core Recharge Engine - Двигатель перезарядки сервоядра +]--	17.07.2026
 	["loc_talent_cryptic_weakspot_kills_restore_toughness_desc"] = { -- damage_resistance: +15%, duration: 4, +colors
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished on "..CKWord("Weakspot", "Weakspot_rgb").." Kill.",
-			["zh-tw"] = Dot_green.." 以"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			["zh-tw"] = Dot_green.." 命中"..CKWord("弱點", "Weakspot_rgb_tw").."並擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 			ru = Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." восстанавливается при убийстве в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru")..".",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 35 - Voltaic Restoration - Вольтаическое восстановление +]--	17.07.2026
@@ -1362,7 +1362,7 @@ local skitarii_localizations = {
 			["zh-tw"] = ""..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友失去行動能力時，在獲救前獲得：\n"
 				..Dot_green.." {damage_resistance:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
 				.."\n"
-				.."若由你救出，他們會獲得以下效果 {duration:%s} 秒：\n"
+				.."若由你救出，他們會在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage_resistance_post:%s} "..CKWord("傷害", "Damage_rgb_tw").."抗性，以及\n"
 				..Dot_green.." 免疫"..CKWord("眩暈", "Stun_rgb_tw").."。",
 			ru = "Пока союзник в "..CKWord("сплочённости", "splochennosti_rgb_ru").." выведен из строя, он получает до освобождения:\n"
@@ -1380,7 +1380,7 @@ local skitarii_localizations = {
 			..Dot_green.." {reload_percent:%s} of your Clip from Reserve.",
 			["zh-tw"] = Dot_green.." {reload_speed:%s} 裝填速度。\n"
 				.."\n"
-				.."停止射擊 {duration:%s} 秒後，每多一秒未射擊會從儲備彈藥自動填裝：\n"
+				.."停止射擊 {duration:%s} 秒後，每多一秒未射擊會從備用彈藥自動填裝：\n"
 				..Dot_green.." 彈匣容量的 {reload_percent:%s}。",
 			ru = Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
 			.."\n"
