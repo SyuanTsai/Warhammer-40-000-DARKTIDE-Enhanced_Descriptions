@@ -585,7 +585,9 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_precision_stance_reload_speed_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 		en = "While {ability_name:%s} is active, and for {duration:%s} seconds after it ends, you gain:\n"
 			..Dot_green.." {reload_speed:%s} Reload Speed.",
-		ru = "Пока активна способность {ability_name:%s} и в течение {duration:%s} секунд после её окончания, вы получаете:\n"
+			["zh-tw"] = "{ability_name:%s} 啟用期間及結束後 {duration:%s} 秒內，獲得：\n"
+				..Dot_green.." {reload_speed:%s} 換彈速度。",
+			ru = "Пока активна способность {ability_name:%s} и в течение {duration:%s} секунд после её окончания, вы получаете:\n"
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки.",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 3-5 - Piercing Sight - Пронзающий взгляд +]--	17.07.2026
@@ -597,7 +599,14 @@ local skitarii_localizations = {
 			.."After {duration:%s} seconds, these increase to:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_cleave:%s} Ranged "..CKWord("Cleave", "Cleave_rgb").." and\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_crit_chance:%s} Ranged "..CKWord("Critical Strike Chance", "Crt_chnc_r_rgb")..".",
-		ru = "Пока активна способность {talent_name:%s} вы получаете:\n"
+			["zh-tw"] = "{talent_name:%s} 啟用期間獲得：\n"
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."，以及\n"
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} 遠程"..CKWord("暴擊率", "Crt_chnc_r_rgb_tw").."。\n"
+				.."\n"
+				.."經過 {duration:%s} 秒後提高至：\n"
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."，以及\n"
+				..Dot_green.." "..CNumb("+", "n_plus_rgb").."{increased_crit_chance:%s} 遠程"..CKWord("暴擊率", "Crt_chnc_r_rgb_tw").."。",
+			ru = "Пока активна способность {talent_name:%s} вы получаете:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{cleave:%s} к "..CKWord("прострелу", "prostrelu_rgb_ru").." и\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru")..".\n"
 			.."\n"
@@ -609,23 +618,28 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_multi_hits_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 		en = "On hitting {number:%s} or more enemies with a single Attack, you restore:\n"
 			..Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb")..".",
-		ru = "При попадании по {number:%s} или более врагам одной атакой, вы восстанавливаете:\n"
+			["zh-tw"] = "單次攻擊命中 {number:%s} 名或以上敵人時，恢復：\n"
+				..Dot_green.." {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			ru = "При попадании по {number:%s} или более врагам одной атакой, вы восстанавливаете:\n"
 			..Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru")..".",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 5 - Augmented Power-Cycle - Усиленный силовой цикл +]--	17.07.2026
 	["loc_talent_cryptic_increased_passive_cooldown_regen_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
-		en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated per second.",
-		ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в секунду.",
+			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated per second.",
+			["zh-tw"] = Dot_green.." 每秒產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в секунду.",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 6 - Flux Conduit Build-Up - Проводник накопления потока +]--	17.07.2026
 	["loc_talent_cryptic_crits_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
-		en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated over {duration:%s} seconds on "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
-		ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в течение {duration:%s} секунд при "..CKWord("критических ударах", "krit_udarah_rgb_ru")..".",
+			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated over {duration:%s} seconds on "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
+			["zh-tw"] = Dot_green.." "..CKWord("暴擊命中", "Crit_hits_rgb_tw").."時，在 {duration:%s} 秒內產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в течение {duration:%s} секунд при "..CKWord("критических ударах", "krit_udarah_rgb_ru")..".",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 7 - Reactor Coil Recharge - Перезарядка катушки реактора +]--	17.07.2026
 	["loc_talent_cryptic_weakspot_kills_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
-		en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated on "..CKWord("Weakspot", "Weakspot_rgb").." Kills.",
-		ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".",
+			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated on "..CKWord("Weakspot", "Weakspot_rgb").." Kills.",
+			["zh-tw"] = Dot_green.." 以"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 1 - Redline Capacitors - Конденсаторы предельной нагрузки +]--	17.07.2026
@@ -638,7 +652,15 @@ local skitarii_localizations = {
 			..Dot_nc.." Stacks decay one at a time.\n"
 			.."\n"
 			..Dot_green.." {max_charges:%s} Max Ability Charges.",
-		ru = "Трата или получение "..CKWord("Заряда", "Charga_rgb_ru").." даёт вам на {duration:%s} секунд:\n"
+			["zh-tw"] = "消耗或獲得一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能時，獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {capacitance:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量，以及\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				.."\n"
+				..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
+				..Dot_nc.." 層數會逐一衰減。\n"
+				.."\n"
+				..Dot_green.." "..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."最大充能數 {max_charges:%s}。",
+			ru = "Трата или получение "..CKWord("Заряда", "Charga_rgb_ru").." даёт вам на {duration:%s} секунд:\n"
 			..Dot_green.." {capacitance:%s} к генерации "..CKWord("ёмкости", "emkosti_rgb_ru").." и\n"
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
 			.."\n"
@@ -651,7 +673,9 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_redline_strength_clarified_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
 		en = "On "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {strength:%s} "..CKWord("Strength", "Strength_rgb").." per "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge you had on use.",
-		ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете на {duration:%s} секунд:\n"
+			["zh-tw"] = "使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." 使用時每有一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，便獲得 {strength:%s} "..CKWord("威力", "Strength_rgb_tw").."。",
+			ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {strength:%s} к "..CKWord("силе", "sile_rgb_ru").." за каждый имеющийся "..CKWord("Заряд", "Charge_rgb_ru").." на момент активации.",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 1-2 - Resource Optimisation Canticles  - Славословие оптимизации ресурсов +]--	17.07.2026
@@ -659,7 +683,10 @@ local skitarii_localizations = {
 		en = Dot_green.." {charges:%s} Max "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charges.\n"
 			.."\n"
 			..Dot_green.." {redline_stack:%s} Max {talent_name:%s} Stacks.",
-		ru = Dot_green.." {charges:%s} к максимуму зарядов "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
+			["zh-tw"] = Dot_green.." "..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."最大充能數 {charges:%s}。\n"
+				.."\n"
+				..Dot_green.." {talent_name:%s} 最大層數 {redline_stack:%s}。",
+			ru = Dot_green.." {charges:%s} к максимуму зарядов "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {redline_stack:%s} к максимуму зарядов таланта {talent_name:%s}.",
 	},
@@ -667,14 +694,18 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_redline_rending_clarified_desc"] = { -- toughness: 50%, toughness_damage_reduction: +25%, toughness_small: 2%, +colors
 		en = "While at {stacks:%s} {talent_name:%s} Stacks or above you gain:\n"
 			..Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb")..".",
-		ru = "При наличии {stacks:%s} или более зарядов таланта {talent_name:%s} вы получаете:\n"
+			["zh-tw"] = "{talent_name:%s} 達 {stacks:%s} 層或以上時獲得：\n"
+				..Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."。",
+			ru = "При наличии {stacks:%s} или более зарядов таланта {talent_name:%s} вы получаете:\n"
 			..Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони.",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 1-4 - Surge-Extension - Расширение импульса +]--	17.07.2026
 	["loc_talent_cryptic_redline_toughness_clarified_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
 		en = "Gaining a {talent_name:%s} Stack replenishes:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." over {duration:%s} seconds.",
-		ru = "Получение заряда таланта {talent_name:%s} восстанавливает:\n"
+			["zh-tw"] = "獲得一層 {talent_name:%s} 時恢復：\n"
+				..Dot_green.." 在 {duration:%s} 秒內恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
+			ru = "Получение заряда таланта {talent_name:%s} восстанавливает:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." в течение {duration:%s} секунд.",
 	},
 	--[+ KEYSTONE - КЛЮЧЕВОЙ ТАЛАНТ - 2 - Power Overload - Перегрузка питания +]--	17.07.2026
@@ -689,7 +720,17 @@ local skitarii_localizations = {
 			.."The "..CKWord("Overload", "Overload_rgb").." grants you and Allies in "..CKWord("Coherency", "Coherency_rgb").." for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." and\n"
 			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
-		ru = "Убийства совершённые вами или союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." дают:\n"
+			["zh-tw"] = "你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內隊友的擊殺會提供：\n"
+				..Dot_nc.." {low_stack:%s} 層 {talent_name:%s}。\n"
+				..Dot_nc.." 擊殺精英或專家時提供 {elite_stacks:%s} 層。\n"
+				..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
+				.."\n"
+				.."達到最大層數時觸發"..CKWord("超載", "Overload_rgb_tw").."，並重設為 {zero:%s} 層。\n"
+				.."\n"
+				..CKWord("超載", "Overload_rgb_tw").."會使你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友獲得以下效果 {duration:%s} 秒：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			ru = "Убийства совершённые вами или союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." дают:\n"
 			..Dot_nc.." {low_stack:%s} заряд таланта {talent_name:%s}.\n"
 			..Dot_nc.." {elite_stacks:%s} заряда вы получаете за убийство элитного врага или специалиста.\n"
 			..Dot_nc.." Максимум {max_stacks:%s} зарядов.\n"
@@ -706,7 +747,11 @@ local skitarii_localizations = {
 			.."\n"
 			.."Affected enemies take for {duration:%s} seconds:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken:%s} "..CKWord("Damage", "Damage_rgb")..".",
-		ru = "Теперь "..CKWord("Перегрузка", "Overloada_rgb_ru").." также накладывает "..CKWord("электрошок", "elektroshok_rgb_ru").." на врагов в радиусе ближнего боя.\n"
+			["zh-tw"] = CKWord("超載", "Overload_rgb_tw").."現在也會對近戰範圍內的敵人施加"..CKWord("電擊", "Electrocution_rgb_tw").."。\n"
+				.."\n"
+				.."受影響的敵人在 {duration:%s} 秒內：\n"
+				..Dot_green.." 受到的"..CKWord("傷害", "Damage_rgb_tw").." "..CNumb("+", "n_plus_rgb").."{damage_taken:%s}。",
+			ru = "Теперь "..CKWord("Перегрузка", "Overloada_rgb_ru").." также накладывает "..CKWord("электрошок", "elektroshok_rgb_ru").." на врагов в радиусе ближнего боя.\n"
 			.."\n"
 			.."Поражённые враги получают в течение {duration:%s} секунд:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage_taken:%s} "..CKWord("урона", "urona_rgb_ru")..".",
@@ -716,7 +761,10 @@ local skitarii_localizations = {
 		en = "When the "..CKWord("Overload", "Overload_rgb").." occurs, you and Allies in "..CKWord("Coherency", "Coherency_rgb").." restore:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
 			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb")..".",
-		ru = "При возникновении "..CKWord("Перегрузки", "Overloadki_rgb_ru").." вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливаете:\n"
+			["zh-tw"] = CKWord("超載", "Overload_rgb_tw").."發生時，你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友恢復：\n"
+				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，以及\n"
+				..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
+			ru = "При возникновении "..CKWord("Перегрузки", "Overloadki_rgb_ru").." вы и союзники в "..CKWord("сплочённости", "splochennosti_rgb_ru").." восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").." и\n"
 			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".",
 	},
@@ -732,7 +780,17 @@ local skitarii_localizations = {
 			..Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generation.\n"
 			.."\n"
 			..Dot_nc.." Bonuses last until death.",
-		ru = "После получения "..CKWord("перегрузки", "overloading_rgb_ru").." в {first_threshold:%s} раз вы получаете:\n"
+			["zh-tw"] = CKWord("超載", "overloading_rgb_tw").." {first_threshold:%s} 次後獲得：\n"
+				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+				.."\n"
+				..CKWord("超載", "overloading_rgb_tw").." {second_threshold:%s} 次後獲得：\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				.."\n"
+				..CKWord("超載", "overloading_rgb_tw").." {third_threshold:%s} 次後獲得：\n"
+				..Dot_green.." {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量。\n"
+				.."\n"
+				..Dot_nc.." 加成會持續至死亡。",
+			ru = "После получения "..CKWord("перегрузки", "overloading_rgb_ru").." в {first_threshold:%s} раз вы получаете:\n"
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			.."После получения "..CKWord("перегрузки", "Overload_rgb_ru").." в {second_threshold:%s} раз вы получаете:\n"
