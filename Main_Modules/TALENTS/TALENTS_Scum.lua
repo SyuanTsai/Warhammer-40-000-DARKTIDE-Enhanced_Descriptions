@@ -1675,7 +1675,7 @@ local scum_localizations = {
 		ru = "Когда вы заражаете врагов "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." они получают на {duration:%s} секунд:\n"
 			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru").." из любых источников.",
 		["zh-tw"] = "當你使敵人感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."時，\n"
-			.."敵人會獲得 {duration:%s} 秒：\n"
+			.."敵人在 {duration:%s} 秒內：\n"
 			..Dot_green.." 受到所有來源的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_taken:%s}。",
 	},
 	--[+ Passive 41 - Targeted Toxin +]--	26.03.2026
