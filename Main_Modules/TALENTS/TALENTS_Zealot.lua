@@ -846,8 +846,8 @@ local zealot_localizations = {
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
 		["zh-tw"] = "依缺失的"..CKWord("耐力", "Stamina_rgb_tw").."，最多獲得 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("耐力", "Stamina_rgb_tw").."%:   "..CNumb("100", "n_100_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."%:   "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("耐力", "Stamina_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("100", "n_100_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 16 - Punishment +]--	27.03.2026
@@ -876,7 +876,7 @@ local zealot_localizations = {
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется до {stacks:%s} раз.",
-		["zh-tw"] = "每 {num_enemies:%s} 個在 {range:%s} 米內的敵人獲得：\n"
+		["zh-tw"] = "每 {num_enemies:%s} 個在 {range:%s} 公尺內的敵人獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 和\n"
 			..Dot_green.." {cleave:%s} "..CKWord("順劈攻擊", "Cleave_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。",
@@ -968,7 +968,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = "При пробивании блока вы не "..CKWord("оглушаетесь", "oglushaetes_rgb_ru")..", а вместо этого восстанавливаете {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n" -- руоф Активная оборона
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
-		["zh-tw"] = "格擋被穿透時不再"..CKWord("眩暈", "Stunned_rgb_tw").."，改為恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = "格擋被擊破時不再"..CKWord("眩暈", "Stunned_rgb_tw").."，改為恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 25 - Abolish Blasphemers +]--	27.03.2026
