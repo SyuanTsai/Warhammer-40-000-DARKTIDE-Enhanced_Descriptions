@@ -440,7 +440,7 @@ local function create_phrs_tw(colors_tw)
 		Doesnt_Stack_Scm_Aura = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同光環疊加。",
 		Doesnt_Stack_Scm_eff = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同減益效果疊加。",
 
-		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加。",
+		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加此效果。",
 		Cant_be_refr = Dot_red .. " 無法於啟用期間刷新。",
 		Cant_Crit = Dot_red .. " 無法造成" .. CKWord("致命一擊", "Crit_rgb_tw") .. "。\n",
 		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
