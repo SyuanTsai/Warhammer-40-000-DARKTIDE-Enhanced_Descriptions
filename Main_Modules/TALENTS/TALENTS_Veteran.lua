@@ -469,13 +469,12 @@ local veteran_localizations = {
 		["zh-tw"] = "遠程"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺會獲得 {stacks:%s} 層"..CKWord("專注", "Focus_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_proc_mult_str")
-			..Dot_green.." "..CKWord("弱點", "Weakspot_rgb_tw").." 命中刷新層數，逐一衰減。\n"
+			..Dot_green.." 近戰與遠程"..CKWord("弱點命中", "Weakspothits_rgb_tw").."可刷新層數，層數會逐一衰減。\n"
 			..Dot_nc.." 最多 {max_stacks} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
-			..Dot_nc.." "..CKWord("弱點命中", "Weakspothit_rgb_tw").."會刷新層數，層數會逐一衰減。\n"
 			.."\n"
 			.."每層"..CKWord("專注", "Focus_rgb_tw").." 提供：\n"
-			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧", "Finesse_rgb_tw").." 強度，\n"
+			..Dot_green.." {power:%s} 遠程"..CKWord("靈巧", "Finesse_rgb_tw").."強度，\n"
 			..Dot_green.." {reload_speed:%s} 換彈速度。\n"
 			.."\n"
 			..CNote("Fns_note"),
@@ -937,7 +936,10 @@ local veteran_localizations = {
 			 ..Dot_green.." {krak_time:%s} секунд - {krak_grenade:%s},\n"
 			 ..Dot_green.." {smoke_time:%s} секунд - {smoke_grenade:%s},\n"
 			 ..Dot_green.." {frag_time:%s} секунд - {frag_grenade:%s}.", -- Склад взрывчатки
-		-- ["zh-tw"] = Dot_green.." 每 {time:%s} 秒補充 {amount:%s} 個手雷。",
+		["zh-tw"] = "每隔下列時間補充 {amount:%s} 枚手雷：\n"
+			 ..Dot_green.." {krak_time:%s} 秒 - {krak_grenade:%s}，\n"
+			 ..Dot_green.." {smoke_time:%s} 秒 - {smoke_grenade:%s}，\n"
+			 ..Dot_green.." {frag_time:%s} 秒 - {frag_grenade:%s}。",
 	},
 	--[+ Passive 21 - Grenade Tinkerer +]--	27.03.2026
 	["loc_talent_veteran_improved_grenades_desc"] = { -- krak_grenade: Krak Grenade, krak: +75%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100%, &->and, +colors

@@ -1483,10 +1483,10 @@ local scum_localizations = {
 			.."["..CKWord("Крит. урон", "Krt_uron_rgb_ru").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").."]\n"
 			.."\n"
 			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, загонщик, капитаны/близнецы, крушитель.",
-		["zh-tw"] = CKWord("致命一擊", "Crit_strike_rgb_tw").."會立即擊殺人類體型敵人，\n"
-			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strike_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
+		["zh-tw"] = CKWord("近戰爆擊", "Critical_rgb_tw").."攻擊會立即擊殺人類體型敵人，\n"
+			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
 			.."\n"
-			..Dot_nc.." ["..CKWord("暴擊傷害", "Crit_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
+			..Dot_nc.." ["..CKWord("爆擊傷害", "Crt_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
 			.."\n"
 			..Dot_nc.." 不視為「人類體型」的敵人：\n"
 			.."   "..Dot_nc.." 納垢巨獸、堡壘、隊長/雙子、\n"

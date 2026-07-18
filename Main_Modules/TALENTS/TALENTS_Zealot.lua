@@ -664,12 +664,16 @@ local zealot_localizations = {
 			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1", "pc_1_rgb").." сброса времени счётчика уклонений.",
 		-- fr = "Vos déplacement vous octroient "..CKWord("Élan", "Momentum_rgb_fr")..". Se cumule {max_stacks:%s} fois.\nLorsque vous touchez un ennemi, dépensez tout les cumuls de "..CKWord("Élan", "Momentum_rgb_fr").." et gagnez par cumul pendant {duration:%s} secondes:\n{damage_modifier:%s} de "..CKWord("Dégâts", "Damage_rgb_fr")..",\n{melee_attack_speed:%s} Vitesse d'attaque de mêlée,\n{ranged_attack_speed:%s} Vitesse d'attaque à distance."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_3_rgb_fr,
 		["zh-tw"] = "移動時獲得"..CKWord("勢能", "Momentum_rgb_tw").."。\n"
+			..Dot_green.." 衝刺會以兩倍速度產生層數。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			.."\n"
 			.."命中敵人時消耗所有"..CKWord("勢能", "Momentum_rgb_tw").."，每層在 {duration:%s} 秒內提供：\n"
 			..Dot_green.." {damage_modifier:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {melee_attack_speed:%s} 近戰攻擊速度，\n"
-			..Dot_green.." {ranged_attack_speed:%s} 遠程攻擊速度。",
+			..Dot_green.." {ranged_attack_speed:%s} 遠程攻擊速度，\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("0.5", "pc_0_5_rgb").." 閃避速度，\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("0.5", "pc_0_5_rgb").." 閃避距離，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb")..CNumb("1", "pc_1_rgb").." 閃避次數重置時間。",
 	},
 	--[+ KEYSTONE 3-1 - Retributor's Stance +]--	27.03.2026
 	["loc_talent_zealot_momentum_toughness_replenish_desc"] = { -- toughness: 0.4%, +colors
