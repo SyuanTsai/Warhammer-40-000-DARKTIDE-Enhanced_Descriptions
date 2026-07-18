@@ -1126,7 +1126,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = "Убийства тяжёлой атакой в спину подавляют врагов в радиусе {range:%s} метров.\n" -- руоф В тылу врага
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
-		["zh-tw"] = "重攻擊近戰背刺擊殺會壓制 {range:%s} 米內敵人。\n"
+		["zh-tw"] = "重攻擊近戰背刺擊殺會壓制 {range:%s} 公尺內敵人。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 42 - Relentless Fervor +]--	27.03.2026
