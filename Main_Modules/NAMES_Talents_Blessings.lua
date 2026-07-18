@@ -969,14 +969,14 @@ local names_talents_blessings_templates = {
 		["loc_talent_reload_speed_low"] = {
 			en = "Reload Boost Low",
 			ru = "Усиление скорости перезарядки малое",
-			["zh-tw"] = "換彈速度增幅(小)",
+			["zh-tw"] = "換彈速度增幅（小）",
 		},
 		--[+ Reload Boost Medium +]-- ruof Усиление перезарядки	20.04.2026
 		-- Veteran 1
 		["loc_talent_reload_speed_medium"] = {
 			en = "Reload Boost Medium",
 			ru = "Усиление скорости перезарядки среднее",
-			["zh-tw"] = "換彈速度增幅(中)",
+			["zh-tw"] = "換彈速度增幅（中）",
 		},
 		-- [+ Rending Boost Low +]-- ruof Усиление «Терзания»	20.04.2026
 		-- Ogryn 1
@@ -999,28 +999,28 @@ local names_talents_blessings_templates = {
 		["loc_talent_toughness_boost_low"] = {
 			en = "Toughness Boost Low",
 			ru = "Усиление стойкости малое",
-			["zh-tw"] = "韌性增幅(小)",
+			["zh-tw"] = "韌性增幅（小）",
 		},
 		--[+ Toughness Boost Medium +]-- ruof Усиление стойкости	20.04.2026
 		-- Psyker 2, Zealot 1, Ogryn 2, Veteran 2, Scum 2
 		["loc_talent_toughness_boost_medium"] = {
 			en = "Toughness Boost Medium",
 			ru = "Усиление стойкости среднее",
-			["zh-tw"] = "韌性增幅(中)",
+			["zh-tw"] = "韌性增幅（中）",
 		},
 		--[+ Toughness Damage Reduction Low +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Ogryn 1
 		["loc_talent_toughness_damage_reduction_low"] = {
 			en = "Toughness Damage Reduction Low",
 			ru = "Снижение урона стойкости малое",
-			["zh-tw"] = "韌性減傷(小)",
+			["zh-tw"] = "韌性減傷（小）",
 		},
 		--[+ Toughness Damage Reduction Medium +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Zealot 1, Ogryn 1, Arbites 1, Veteran 1
 		["loc_talent_toughness_damage_reduction_medium"] = {
 			en = "Toughness Damage Reduction Medium",
 			ru = "Снижение урона стойкости среднее",
-			["zh-tw"] = "韌性減傷(中)",
+			["zh-tw"] = "韌性減傷（中）",
 		},
 		--[+ Potent Tox +]-- ruof Мощный токсин	20.04.2026
 		-- Scum 1
