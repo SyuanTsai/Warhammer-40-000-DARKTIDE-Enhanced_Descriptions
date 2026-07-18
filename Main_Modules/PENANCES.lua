@@ -1620,7 +1620,7 @@ local penances_localizations = {
 	["loc_achievement_missions_adamant_2_objective_1_name"] = {
 		en = "Diligent Patrol (1)",
 		ru = "Бдительный дозор (1)",
-		["zh-tw"] = "勤勉巡邏 (1)",
+		["zh-tw"] = "勤勉巡邏（1）",
 	},
 		--[+ As a Arbitrator, complete at least one Mission of each type. +]-- руоф Выполнить Арбитратором по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_adamant_2_objective_1_description"] = {
@@ -1631,7 +1631,7 @@ local penances_localizations = {
 	--[+ Diligent Patrol (2) +]-- руоф  (2)
 	["loc_achievement_missions_adamant_2_objective_2_name"] = {
 		ru = "Бдительный дозор (2)",
-		["zh-tw"] = "勤勉巡邏 (2)",
+		["zh-tw"] = "勤勉巡邏（2）",
 	},
 		--[+ As a Arbitrator, complete a Mission of each type on Malice Threat or higher. +]--
 		["loc_achievement_missions_adamant_2_objective_2_description"] = {
@@ -1644,7 +1644,7 @@ local penances_localizations = {
 	--[+ Diligent Patrol (3) +]-- руоф  (3)
 	["loc_achievement_missions_adamant_2_objective_3_name"] = {
 		ru = "Бдительный дозор (3)",
-		["zh-tw"] = "勤勉巡邏 (3)",
+		["zh-tw"] = "勤勉巡邏（3）",
 	},
 		--[+ As a Arbitrator, complete a Mission of each type on Heresy Threat or higher. +]--
 		["loc_achievement_missions_adamant_2_objective_3_description"] = {
