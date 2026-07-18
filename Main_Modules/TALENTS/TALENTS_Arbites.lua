@@ -608,7 +608,7 @@ local arbites_localizations = {
 			.."切換至主武器時，消耗"..CKWord("近戰正義", "Meleejust_rgb_tw").."層數，\n"
 			.."在 {melee_duration:%s} 秒內獲得：\n"
 			..Dot_green.." {melee_strength:%s} 近戰"..CKWord("威力", "Strength_rgb_tw").."，\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			.."近戰命中累積"..CKWord("遠程正義", "Rangedjust_rgb_tw").."層數。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
@@ -661,7 +661,7 @@ local arbites_localizations = {
 		["zh-tw"] = "消耗 {melee_stacks:%s} 層後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crt_hit_chnc_rgb_tw").."。",
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 6 - Forceful +]--	26.03.2026
 	["loc_talent_adamant_forceful_base_alt_desc"] = { -- forceful_name: Forceful, duration: 5, stacks: 10, impact: +5%, dr: +2.5%, s->seconds, +colors
@@ -683,7 +683,7 @@ local arbites_localizations = {
 			..Dot_green.." {dr:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru")..".\n"
 			.."\n"
 			..Dot_red.." Заряды снимаются при получении "..CKWord("урона", "urona_rgb_ru")..".", -- Неудержимый -- руоф Напористый
-		["zh-tw"] = CKWord("踉蹌", "Staggering_rgb_tw").."命中與格擋攻擊，\n"
+		["zh-tw"] = "造成"..CKWord("踉蹌", "Staggering_rgb_tw").."的命中與成功格擋攻擊，\n"
 			.."累積"..CKWord("堅定不移", "Forceful_rgb_tw").."層數。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 最多疊加 {stacks:%s} 層。\n"
