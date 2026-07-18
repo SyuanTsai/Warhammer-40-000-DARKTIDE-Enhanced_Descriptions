@@ -83,7 +83,7 @@ local menus_templates = {
 		["loc_contracts_task_label_kill_bosses"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
 			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸(畸形怪獸)
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸",
 			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
 		},
 		--[+ Collect Х kind +]--
@@ -104,21 +104,21 @@ local menus_templates = {
 		["loc_contracts_task_label_complete_missions"] = {
 			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
 			ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
-			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務",
 			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
 		},
 		--[+ Complete Х missions with no player deaths +]--
 		["loc_contracts_task_label_complete_mission_no_death"] = {
 			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
 			ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
-			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務，且沒有玩家死亡",
 			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
 		},
 	--[+ Melk's Intro +]--
 	["loc_contract_view_intro_description"] = {
 		-- en = "Well? What is it you want?",
 		ru = "Ну? Чего ты хочешь?",
-		["zh-tw"] = "好吧，你想要什麼？", -- 好吧，你想要什麼?
+		["zh-tw"] = "嗯？你想要什麼？",
 		["zh-cn"] = "嗯？你有什么需要？", -- 梅尔克介绍语
 	},
 	--[+ Melk's Intro Title +]--
