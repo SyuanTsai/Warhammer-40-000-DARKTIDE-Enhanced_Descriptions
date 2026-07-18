@@ -175,14 +175,14 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的珍品", -- 未知的防禦性珍品
+		["zh-tw"] = "未知的防禦性珍品",
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
 	["loc_notification_new_contract"] = {
 		-- en = "New weekly contracts are available", --???
 		-- ru = ,
-		["zh-tw"] = "新的每週合約已可用",
+		["zh-tw"] = "新的每週合約現已開放",
 		["zh-cn"] = "新的每周合同可用", -- 新的每周合同可用
 	},
 
@@ -191,14 +191,14 @@ local menus_templates = {
 	["loc_crafting_error_no_consecrate"] = {
 		-- en = "Max Rarity reached!",
 		ru = "Достигнут максимум редкости!",
-		["zh-tw"] = "已達最高稀有度!", -- 已達最高稀有度。
+		["zh-tw"] = "已達最高稀有度！",
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
 		-- en = "Max Power reached!",
 		ru = "Достигнут максимум силы!",
-		["zh-tw"] = "已達最高威力!",  -- 已達最高升級級別。
+		["zh-tw"] = "已達最高威力！",
 		["zh-cn"] = "已达到最高等级。",
 	},
 	--[+ Sacrifice Weapons +]--
