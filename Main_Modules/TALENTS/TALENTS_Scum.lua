@@ -2,8 +2,11 @@
 -- HIVE SCUM TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ ОТРЕБЬЯ УЛЬЯ
 
 local mod = get_mod("Enhanced_descriptions")
+
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
@@ -14,7 +17,7 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF HIVE SCUM TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ ОТРЕБЬЯ УЛЬЯ
+-- Localization of hive Scum talents -- Локализации талантов отребья улья
 local scum_localizations = {
 --[+ ++HIVE SCUM - ОТРЕБЬЕ УЛЬЯ++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
@@ -1470,7 +1473,7 @@ local scum_localizations = {
 	},
 	--[+ Passive 27 - Hyper-Critical +]--	26.03.2026
 	["loc_talent_broker_passive_melee_crit_instakill_desc"] = { -- threshold: 2, +colors
-		en = CKWord("Critical Strikes", "Crit_strikes_rgb").." instantly kill Human Sized Enemies if their current "..CKWord("Health", "Health_rgb").." is less than {threshold:%s} times the amount of "..CKWord("Damage", "Damage_rgb").." of the "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".\n"
+		en = CKWord("Critical", "Critical_rgb").." Melee Attacks instantly kill Human Sized Enemies if their current "..CKWord("Health", "Health_rgb").." is less than {threshold:%s} times the amount of "..CKWord("Damage", "Damage_rgb").." of the "..CKWord("Critical Strikes", "Crit_strikes_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." ["..CKWord("Crit Damage", "Crt_dmg_r_rgb").."] x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Health", "Health_rgb").."]\n"
 			.."\n"
@@ -1885,7 +1888,7 @@ local scum_localizations = {
 		},
 }
 
--- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
+-- Creating templates -- Создаём шаблоны
 local scum_templates = {}
 
 for loc_key, locales in pairs(scum_localizations) do

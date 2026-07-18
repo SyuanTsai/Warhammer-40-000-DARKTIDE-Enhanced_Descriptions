@@ -2,8 +2,11 @@
 -- ARBITES TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ АРБИТРЕС
 
 local mod = get_mod("Enhanced_descriptions")
+
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
@@ -14,7 +17,7 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF ARBITES TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ АРБИТРЕС
+-- Localization of Arbites talents -- Локализации талантов арбитрес
 local arbites_localizations = {
 --[+ ++ARBITES - АРБИТЕС++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
@@ -365,7 +368,8 @@ local arbites_localizations = {
 		["zh-tw"] = "每命中一名精英、專家或巨獸，恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 			..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
-			.."上限：{toughness_max:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 與 {stamina_max:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",	},
+			.."上限：{toughness_max:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 與 {stamina_max:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
+	},
 	--[+ ABILITY 3-2 - Targeted Brutality +]--	26.03.2026
 	["loc_talent_adamant_charge_cooldown_alt_description"] = { -- cooldown: 0.5, cooldown_elite: 1, max_cooldown: 5, s->seconds, +colors
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
@@ -1181,7 +1185,7 @@ local arbites_localizations = {
 	},
 }
 
--- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
+-- Creating templates -- Создаём шаблоны
 local arbites_templates = {}
 
 for loc_key, locales in pairs(arbites_localizations) do

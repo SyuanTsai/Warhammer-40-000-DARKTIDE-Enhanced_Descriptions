@@ -2,8 +2,11 @@
 -- VETERAN TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ ВЕТЕРАНА
 
 local mod = get_mod("Enhanced_descriptions")
+
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
@@ -14,7 +17,7 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF VETERAN TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ ВЕТЕРАНА
+-- Localization of Veteran talents -- Локализации талантов ветерана
 local veteran_localizations = {
 --[+ ++VETERAN - ВЕТЕРАН++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
@@ -98,7 +101,7 @@ local veteran_localizations = {
 			..Dot_green.." 對所有敵人（包括巨獸）造成強力"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
 			..Dot_nc.." 最大爆炸半徑："..CNumb("5", "n_5_rgb").." 米。",
 	},
-	--[+ BLITZ 3 - Smoke Grenade +]--	27.03.2026
+	--[+ BLITZ 3 - Smoke Grenade +]--	27.03.2026
 	["loc_ability_smoke_grenade_description"] = { -- duration: 15, +colors
 		en = "Throw a grenade that explodes after "..CNumb("1.5", "n_1_5_rgb").." seconds and creates a lingering Smoke cloud for {duration:%s} seconds. The cloud blocks line of sight for most enemies and reduces the sight range of enemies inside it.\n"
 			.."\n"
@@ -115,7 +118,7 @@ local veteran_localizations = {
 			..Dot_red.." 對轟炸者、變種人和瘟疫爆者無效。",
 	},
 --[+ +AURA - АУРА+ +]--
-	--[+ AURA 0 - Scavenger +]--	27.03.2026
+	--[+ AURA 0 - Scavenger +]--	27.03.2026
 	["loc_talent_veteran_elite_kills_grant_ammo_coop_cd_desc"] = { -- ammo: 0.75%, cooldown: 5
 		en = Dot_green.." {ammo:%s} Ammo replenishes for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds.\n"
 			.."\n"
@@ -127,7 +130,7 @@ local veteran_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Vet_Aura"),
 	},
-	--[+ AURA 1 - Survivalist +]--	27.03.2026
+	--[+ AURA 1 - Survivalist +]--	27.03.2026
 	["loc_talent_veteran_elite_kills_grant_ammo_coop_improved_cd_desc"] = { -- ammo_2: 1%, cooldown: 5, talent_name: Scavenger
 		en = Dot_green.." {ammo_2:%s} Ammo replenishes for you and Allies in "..CKWord("Coherency", "Coherency_rgb").." whenever any of you Kill an Elite or Specialist Enemy. This can occur once every {cooldown:%s} seconds.\n"
 			..Dot_green.." This is an augmented version of {talent_name:%s}.\n"
@@ -142,7 +145,7 @@ local veteran_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Vet_Aura"),
 	},
-	--[+ AURA 2 - Fire Team +]--	27.03.2026
+	--[+ AURA 2 - Fire Team +]--	27.03.2026
 	["loc_talent_veteran_damage_coherency_desc"] = { -- damage: +7.5%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." for you and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -154,7 +157,7 @@ local veteran_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Vet_Aura"),
 	},
-	--[+ AURA 3 - Close and Kill +]--	27.03.2026
+	--[+ AURA 3 - Close and Kill +]--	27.03.2026
 	["loc_talent_veteran_movement_speed_coherency_desc"] = { -- movement_speed: +5%
 		en = Dot_green.." {movement_speed:%s} Movement Speed for your and Allies in "..CKWord("Coherency", "Coherency_rgb")..".\n"
 			.."\n"
@@ -167,7 +170,7 @@ local veteran_localizations = {
 			..CPhrs("Doesnt_Stack_Vet_Aura"),
 	},
 --[+ +ABILITIES - СПОСОБНОСТИ+ +]--
-	--[+ ABILITY 0 - Volley Fire +]--	27.03.2026
+	--[+ ABILITY 0 - Volley Fire +]--	27.03.2026
 	["loc_ability_veteran_base_ability_desc"] = { -- duration: 6, damage: +25%, weakspot_damage: +25%, cooldown: 30, &->and, s->seconds, +colors
 		en = "You enter "..CKWord("Ranged Stance", "Rangd_stnc_rgb").." for {duration:%s} seconds, instantly equip your Ranged weapon and gain:\n"
 			..Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -203,7 +206,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 擊殺被標出的敵人時，"..CKWord("遠程姿態", "Rangd_stnc_rgb_tw").."的啟用持續時間會刷新 {duration:%s} 秒。",
 	},
-	--[+ ABILITY 1 - Executioner's Stance +]--	27.03.2026
+	--[+ ABILITY 1 - Executioner's Stance +]--	27.03.2026
 	["loc_talent_veteran_ranged_stance_toughness_description"] = { -- duration: 5, damage: +25%, weakspot_damage: +25%, toughness: 10%, refresh_duration: 5, cooldown: 30, old_talent_name: Volley Fire, s->seconds, +colors
 		en = "You enter "..CKWord("Ranged Stance", "Rangd_stnc_rgb").." for {duration:%s} seconds, instantly equip your Ranged weapon and gain:\n"
 			..Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -254,19 +257,19 @@ local veteran_localizations = {
 			..Dot_nc.." 擊殺被標出的敵人時，會將"..CKWord("遠程姿態", "Rangd_stnc_rgb_tw").."的啟用持續時間刷新 {refresh_duration:%s} 秒。這也會刷新敵人對"..CKWord("老兵", "cls_vet_rgb_tw").."的標出持續時間。\n"
 			..Dot_red.." 標記僅對"..CKWord("老兵", "cls_vet_rgb_tw").."可見。",
 	},
-	--[+ ABILITY 1-1 - Enhanced Target Priority +]--	27.03.2026
+	--[+ ABILITY 1-1 - Enhanced Target Priority +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_coherency_outlines_description"] = { -- talent_name: Executioner's Stance, duration: 5, &->and, s->seconds
 		en = Dot_green.." {talent_name:%s} now outlines all Specials and human-sized Elites for Allies in "..CKWord("Coherency", "Coherency_rgb").." for {duration:%s} seconds.",
 		ru = Dot_green.." {talent_name:%s} теперь также отмечает всех элитных врагов человеческого роста и специалистов для ваших союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru").." на {duration:%s} секунд.", -- Повышенный приоритет целей -- руоф Повышенный приоритет цели
 		["zh-tw"] = Dot_green.." {talent_name:%s} 現在也會為"..CKWord("協同", "Coherency_rgb_tw").."中的盟友標出所有專家與人類大小精英，持續 {duration:%s} 秒。",
 	},
-	--[+ ABILITY 1-2 - Counter-Fire +]--	27.03.2026
+	--[+ ABILITY 1-2 - Counter-Fire +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_ranged_enemies_outlines_description"] = { -- talent_name: Executioner's Stance
 		en = Dot_green.." {talent_name:%s} now outlines Scab/Dreg Stalkers and Scab Shooters, additionally to all human-sized Elites and Specials.",
 		ru = Dot_green.." {talent_name:%s} теперь также отмечает и других дальнобойных врагов: скабов-охотников, дрегов-охотников и скабов-стрелков, в дополнение к элитным врагам человеческого роста и специалистам.", -- Ответный огонь
 		["zh-tw"] = Dot_green.." 除所有人類大小精英與專家外，{talent_name:%s} 現在也會標出血痂潛行者、渣滓潛行者和血痂射手。",
 	},
-	--[+ ABILITY 1-3 - The Bigger they Are... +]--	27.03.2026
+	--[+ ABILITY 1-3 - The Bigger they Are... +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_ogryn_outlines_damage_description"] = { -- talent_name: Executioner's Stance, duration: 8
 		en = Dot_green.." {talent_name:%s} now outlines Bulwarks, Crushers and Reapers, Captains, and Monstrosity Enemies, additionally to all human-sized Elites and Specials.\n"
 			.."\n"
@@ -278,7 +281,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 持續時間增加至 {duration:%s} 秒。",
 	},
-	--[+ ABILITY 1-4 - Marksman +]--	27.03.2026
+	--[+ ABILITY 1-4 - Marksman +]--	27.03.2026
 	["loc_talent_veteran_ability_marksman_desc"] = { -- duration: 10, power: +20%, talent_name: Infiltrate, s->seconds, +colors
 		en = "{power:%s} "..CKWord("Strength", "Strength_rgb").." to "..CKWord("Weakspot Hits", "Weakspothits_rgb").." for {duration:%s} seconds on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.\n"
 			.."\n"
@@ -296,7 +299,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Pwr_note"),
 	},
-	--[+ ABILITY 2 - Voice of Command +]--	27.03.2026
+	--[+ ABILITY 2 - Voice of Command +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_stagger_nearby_enemies_description"] = { -- range: 9, cooldown: 30, &->and, m->meters, s->seconds, +colors
 		en = Dot_green.." "..CNumb("100%", "pc_100_rgb").." "..CKWord("Toughness", "Toughness_rgb").." restored on activation.\n"
 			..Dot_green.." "..CKWord("Staggers", "Staggers_rgb").." all Enemies within {range:%s} meters.\n"
@@ -317,7 +320,7 @@ local veteran_localizations = {
 			..Dot_nc.." 按住技能鍵會顯示吼叫範圍。格擋可取消。\n"
 			..Dot_red.." 無法"..CKWord("踉蹌", "Stagger_rgb_tw").."已經"..CKWord("踉蹌", "Staggered_rgb_tw").."的敵人，以及有啟用中虛空護盾的敵人。",
 	},
-	--[+ ABILITY 2-1 - Duty and Honour +]--	27.03.2026
+	--[+ ABILITY 2-1 - Duty and Honour +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_increase_and_restore_toughness_to_coherency_description"] = { -- talent_name: Voice of Command, toughness: +50, duration: 10, s->seconds, +colors
 		en = "{talent_name:%s} now also grants to you and Allies in "..CKWord("Coherency", "Coherency_rgb")..":\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." for {duration:%s} seconds.\n"
@@ -338,13 +341,13 @@ local veteran_localizations = {
 			..Dot_nc.." 作用如同第二條"..CKWord("韌性", "Toughness_rgb_tw").."條。\n"
 			..Dot_nc.." 可超過你的最大"..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
-	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--	27.03.2026
+	--[+ ABILITY 2-2 - Only In Death Does Duty End +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_revives_new_description"] = { -- talent_name: Voice of Command, +colors
 		en = Dot_green.." {talent_name:%s} revives Knocked Down Allies within its radius.",
 		ru = Dot_green.." {talent_name:%s} поднимает сбитых с ног союзников в радиусе действия.", -- Лишь со смертью заканчивается долг -- руоф Лишь после смерти заканчивается служение долгу
 		["zh-tw"] = Dot_green.." {talent_name:%s} 會救起半徑內倒地的盟友。",
 	},
-	--[+ ABILITY 3 - Infiltrate +]--	27.03.2026
+	--[+ ABILITY 3 - Infiltrate +]--	27.03.2026
 	["loc_talent_veteran_invisibility_on_combat_ability_damage_desc"] = { -- duration: 8, movement_speed: +25%, damage_duration: 5, damage: +30%, cooldown: 45, s->seconds, +colors
 		en = "You enter "..CKWord("Stealth", "Stealth_rgb").." for {duration:%s} seconds and gain:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -374,7 +377,7 @@ local veteran_localizations = {
 			..Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").." 會壓制附近敵人。\n"
 			..Dot_red.." 攻擊會解除"..CKWord("隱身", "Stealth_rgb_tw").."。",
 	},
-	--[+ ABILITY 3-1 - Overwatch +]--	27.03.2026
+	--[+ ABILITY 3-1 - Overwatch +]--	27.03.2026
 	["loc_talent_veteran_combat_ability_extra_charge_description"] = { -- charges: +1, ability_cooldown: +33%
 		en = Dot_green.." {charges:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge.\n"
 			..Dot_red.." {ability_cooldown:%s} "..CKWord("Cooldown", "Cd_rgb")..".\n"
@@ -389,13 +392,13 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_nc.." 第二次充能的冷卻只會在第一次充能完成冷卻後開始。",
 	},
-	--[+ ABILITY 3-2 - Hunter's Resolve +]--	27.03.2026
+	--[+ ABILITY 3-2 - Hunter's Resolve +]--	27.03.2026
 	["loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, +colors
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {duration:%s} seconds upon leaving "..CKWord("Stealth", "Stealth_rgb")..".",
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." на {duration:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".", -- Упорство охотника
 		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，持續 {duration:%s} 秒。",
 	},
-	--[+ ABILITY 3-3 - Low Profile +]--	27.03.2026
+	--[+ ABILITY 3-3 - Low Profile +]--	27.03.2026
 	["loc_talent_veteran_reduced_threat_after_stealth_desc"] = { -- threat_multiplier: -90%, duration: 10, s->seconds, +colors
 		en = Dot_green.." {threat_multiplier:%s} Threat for {duration:%s} seconds on leaving "..CKWord("Stealth", "Stealth_rgb")..".\n"
 			..Dot_nc.." Less likely to be targeted by enemies.",
@@ -404,7 +407,7 @@ local veteran_localizations = {
 		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {threat_multiplier:%s} 威脅值，持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 較不易被敵人鎖定為目標。",
 	},
-	--[+ ABILITY 3-4 - Close Quarters Killzone +]--	27.03.2026
+	--[+ ABILITY 3-4 - Close Quarters Killzone +]--	27.03.2026
 	["loc_talent_veteran_ability_assault_desc"] = { -- power: +15%, duration: 10, talent_name: Infiltrate, s->seconds, +colors
 		en = Dot_green.." {power:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds to enemies within "..CNumb("12.5", "n_12_5_rgb").." meters on "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use.\n"
 			.."Beyond "..CNumb("12.5", "n_12_5_rgb").." meters, the "..CKWord("Damage", "Damage_rgb").." buff decreases linearly until it loses its effect at "..CNumb("30", "n_30_rgb").." meters:\n"
@@ -437,14 +440,14 @@ local veteran_localizations = {
 			..Dot_nc.." 使用 {talent_name:%s} 時，此效果於離開"..CKWord("隱身", "Stealth_rgb_tw").." 後生效。",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
-	--[+ KEYSTONE 1 - Marksman's Focus +]--	27.03.2026
+	--[+ KEYSTONE 1 - Marksman's Focus +]--	27.03.2026
 	["loc_talent_veteran_snipers_focus_duration_desc"] = { -- stacks: 3, max_stacks: 10, duration: 5, power: +7.5%, reload_speed: +1%, stack(s)->stacks, s->second/seconds, +colors, +note
 		en = "Ranged "..CKWord("Weakspot", "Weakspot_rgb").." kills grant {stacks:%s} Stacks of "..CKWord("Focus", "Focus_rgb")..".\n"
 			.."\n"
-			..CPhrs("Can_proc_mult")
+			..CPhrs("Can_proc_mult_str")
+			..Dot_green.." Stacks can be refreshed by Melee and Ranged "..CKWord("Weakspot Hits", "Weakspothits_rgb").." and are dropped one by one.\n"
 			..Dot_nc.." Up to {max_stacks} Max Stacks.\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
-			..Dot_nc.." Stacks are refreshed on "..CKWord("Weakspot Hit", "Weakspothit_rgb")..". and decay one at a time.\n"
 			.."\n"
 			.."Each Stack of "..CKWord("Focus", "Focus_rgb").." grants:\n"
 			..Dot_green.." {power:%s} Ranged "..CKWord("Finesse", "Finesse_rgb").." strength,\n"
@@ -454,9 +457,9 @@ local veteran_localizations = {
 		ru = "Убийства выстрелами в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." дают {stacks:%s} заряда "..CKWord("Концентрации", "Focus_rgb_ru")..".\n" -- Концентрация снайпера
 			.."\n"
 			..CPhrs("Can_proc_mult_str")
+			..Dot_green.." Заряды обновляются при попаданиях в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." в ближнем и дальнем бою, и сбрасываются по одному.\n"
 			..Dot_nc.." Максимум {max_stacks} зарядов.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
-			..Dot_nc.." Заряды обновляются при попадании в "..CKWord("уязвимое место", "ujazvimoe_mesto_rgb_ru").." и сбрасываются по одному.\n"
 			.."\n"
 			.."Каждый заряд "..CKWord("Концентрации", "Focus_rgb_ru").." даёт:\n"
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки,\n"
@@ -465,7 +468,8 @@ local veteran_localizations = {
 			..CNote("Fns_note"),
 		["zh-tw"] = "遠程"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺會獲得 {stacks:%s} 層"..CKWord("專注", "Focus_rgb_tw").."。\n"
 			.."\n"
-			..CPhrs("Can_proc_mult")
+			..CPhrs("Can_proc_mult_str")
+			..Dot_green.." "..CKWord("弱點", "Weakspot_rgb_tw").." 命中刷新層數，逐一衰減。\n"
 			..Dot_nc.." 最多 {max_stacks} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			..Dot_nc.." "..CKWord("弱點命中", "Weakspothit_rgb_tw").."會刷新層數，層數會逐一衰減。\n"
@@ -476,7 +480,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Fns_note"),
 	},
-	--[+ KEYSTONE 1-1 - Chink in their Armour +]--	27.03.2026
+	--[+ KEYSTONE 1-1 - Chink in their Armour +]--	27.03.2026
 	["loc_talent_veteran_snipers_focus_rending_bonus_description"] = { -- rending: +10%, stacks: 10, +colors, +note
 		en = Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb").." when at, or over, {stacks:%s} Stacks of "..CKWord("Focus", "Focus_rgb")..".\n"
 			.."\n"
@@ -488,7 +492,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Rend_note"),
 	},
-	--[+ KEYSTONE 1-2 - Tunnel Vision +]--	27.03.2026
+	--[+ KEYSTONE 1-2 - Tunnel Vision +]--	27.03.2026
 	["loc_talent_veteran_snipers_focus_stamina_bonus_desc"] = { -- toughness_replenish_multiplier: +5%, stamina: 10%, +colors
 		en = Dot_green.." {toughness_replenish_multiplier:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment per "..CKWord("Focus", "Focus_rgb").." Stack.\n"
 			..CPhrs("Dont_intw_coher_toughn").."\n"
@@ -506,13 +510,13 @@ local veteran_localizations = {
 			..Dot_green.." 遠程"..CKWord("弱點", "Weakspot_rgb_tw").." 擊殺恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..CPhrs("Can_proc_mult"),
 	},
-	--[+ KEYSTONE 1-3 - Long Range Assassin +]--	27.03.2026
+	--[+ KEYSTONE 1-3 - Long Range Assassin +]--	27.03.2026
 	["loc_talent_veteran_snipers_focus_increased_stacks_description"] = { -- stacks: 10, new_stacks: 15, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." Maximum "..CKWord("Focus", "Focus_rgb").." Stacks. Increases from {stacks:%s} to {new_stacks:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." к максимуму зарядов "..CKWord("Концентрации", "Focus_rgb_ru")..". Увеличивается с {stacks:%s} до {new_stacks:%s}.", -- Дальнобойный ассасин
 		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("5", "n_5_rgb").." "..CKWord("專注", "Focus_rgb_tw").."最大層數。從 {stacks:%s} 提高至 {new_stacks:%s}。",
 	},
-	--[+ KEYSTONE 2 - Focus Target! +]--	27.03.2026
+	--[+ KEYSTONE 2 - Focus Target! +]--	27.03.2026
 	["loc_talent_veteran_improved_tag_description"] = { -- time: 1.5, max_stacks: 5, damage: +5%, s->seconds, +colors
 		en = "Gain "..CNumb("1", "n_1_rgb").." Stack of "..CKWord("Focus Target", "Focus_Target_rgb").." every {time:%s} seconds.\n"
 			..Dot_nc.." Stacks {max_stacks:%s} times.\n"
@@ -542,7 +546,7 @@ local veteran_localizations = {
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").." "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 "..CNumb("25", "n_25_rgb").." 秒。",
 	},
-	--[+ KEYSTONE 2-1 - Target Down! +]--	27.03.2026
+	--[+ KEYSTONE 2-1 - Target Down! +]--	27.03.2026
 	["loc_talent_veteran_improved_tag_dead_bonus_description"] = { -- toughness: 5%, stamina: 5%, +colors
 		en = "When an enemy tagged with "..CKWord("Focus Target", "Focus_Target_rgb").." dies, you and Allies in "..CKWord("Coherency", "Coherency_rgb").." restore per Stack:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." and\n"
@@ -554,7 +558,7 @@ local veteran_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 和\n"
 			..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
 	},
-	--[+ KEYSTONE 2-2 - Redirect Fire! +]--	27.03.2026
+	--[+ KEYSTONE 2-2 - Redirect Fire! +]--	27.03.2026
 	["loc_talent_veteran_improved_tag_dead_coherency_bonus_description"] = { -- damage: +2.5%, duration: 10, s->seconds, +colors
 		en = "When an enemy tagged with "..CKWord("Focus Target", "Focus_Target_rgb").." dies, you and Allies in "..CKWord("Coherency", "Coherency_rgb").." gain per Stack:\n"
 			..Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb")..".\n"
@@ -566,13 +570,13 @@ local veteran_localizations = {
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
-	--[+ KEYSTONE 2-3 - Focused Fire +]--	27.03.2026
+	--[+ KEYSTONE 2-3 - Focused Fire +]--	27.03.2026
 	["loc_talent_veteran_improved_tag_more_damage_description"] = { -- max_stacks: 6, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." Maximum "..CKWord("Focus Target", "Focus_Target_rgb").." Stacks. Increases from "..CNumb("4", "n_4_rgb").." to {max_stacks:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." к максимуму зарядов "..CKWord("Важной цели", "Focus_Target_rgb_ru")..". Увеличивается с "..CNumb("4", "n_4_rgb").." до {max_stacks:%s}.", -- Сосредоточенный огонь
 		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." "..CKWord("鎖定目標", "Focus_Target_rgb_tw").."最大層數。從 "..CNumb("4", "n_4_rgb").." 提高至 {max_stacks:%s}。",
 	},
-	--[+ KEYSTONE 3 - Weapons Specialist +]--	27.03.2026
+	--[+ KEYSTONE 3 - Weapons Specialist +]--	27.03.2026
 	["loc_talent_veteran_weapon_switch_new_description"] = { -- ranged_stacks: 10, melee_stacks: 1, ranged_attack_speed: +2%, reload_speed: 2%, ranged_crit_chance: +33%, ranged_duration: 5, melee_attack_speed: +15%, dodge_modifier: 10%, melee_duration: 10, s->seconds, +colors
 		en = "Gain "..CKWord("Ranged Specialist", "Rangedspec_rgb").." on Melee kills.\n"
 			..Dot_nc.." Stacks {ranged_stacks:%s} times.\n"
@@ -626,7 +630,7 @@ local veteran_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{dodge_modifier:%s} 閃避距離。\n"
 			..Dot_nc.." 持續 {melee_duration:%s} 秒。",
 	},
-	--[+ KEYSTONE 3-1 - Always Prepared +]--	27.03.2026
+	--[+ KEYSTONE 3-1 - Always Prepared +]--	27.03.2026
 	["loc_talent_veteran_weapon_switch_replenish_ammo_description"] = { -- ammo: 3.3%, +colors
 		en = "On activation, "..CKWord("Ranged Specialist", "Rangedspec_rgb").." restores from Reserves per Stack:\n"
 			..Dot_green.." {ammo:%s} of your missing Clip ammo, up to "..CNumb("33%", "pc_33_rgb")..".\n"
@@ -638,7 +642,7 @@ local veteran_localizations = {
 			..Dot_green.." {ammo:%s} 已缺少的彈匣彈藥，最多 "..CNumb("33%", "pc_33_rgb").."。\n"
 			..Dot_nc.." 無條件進位。",
 	},
-	--[+ KEYSTONE 3-2 - Invigorated +]--	27.03.2026
+	--[+ KEYSTONE 3-2 - Invigorated +]--	27.03.2026
 	["loc_talent_veteran_weapon_switch_replenish_stamina_new_description"] = { -- stamina: 20%, stamina_reduction: 25%, +colors
 		en = "On activation, "..CKWord("Melee Specialist", "Meleespec_rgb").." grants you for {duration:%s} seconds:\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{stamina:%s} Maximum "..CKWord("Stamina", "Stamina_rgb")..",\n"
@@ -650,7 +654,7 @@ local veteran_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{stamina:%s} 最大"..CKWord("耐力", "Stamina_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{stamina_reduction:%s} "..CKWord("耐力", "Stamina_rgb_tw").."消耗。",
 	},
-	--[+ KEYSTONE 3-3 - On Your Toes +]--	27.03.2026
+	--[+ KEYSTONE 3-3 - On Your Toes +]--	27.03.2026
 	["loc_talent_veteran_weapon_switch_replenish_toughness_description"] = { -- toughness: 20%, cooldown: 3, s->seconds, +colors
 		en = "Activating "..CKWord("Melee Specialist", "Meleespec_rgb").." or "..CKWord("Ranged Specialist", "Rangedspec_rgb").." replenishes:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..".\n"
@@ -663,7 +667,7 @@ local veteran_localizations = {
 			..Dot_nc.." 各自冷卻：{cooldown:%s} 秒。",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--
-	--[+ Passive 1 - Exhilarating Takedown +]--	27.03.2026
+	--[+ Passive 1 - Exhilarating Takedown +]--	27.03.2026
 	["loc_talent_veteran_toughness_on_weakspot_kill_alt_desc"] = { -- toughness: 15%, toughness_damage_reduction: +10%, duration: 8, stacks: 3, s->seconds, +colors
 		en = "On Ranged "..CKWord("Weakspot", "Weakspot_rgb").." Kill, you gain:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..",\n"
@@ -690,7 +694,7 @@ local veteran_localizations = {
 			..CPhrs("Can_proc_mult")
 			..CPhrs("Can_be_refr_drop_1"),
 	},
-	--[+ Passive 2 - Confirmed Kill +]--	27.03.2026
+	--[+ Passive 2 - Confirmed Kill +]--	27.03.2026
 	["loc_talent_veteran_toughness_on_elite_kill_desc"] = { -- toughness: 10%, toughness_over_time: 20%, duration: 10, s->seconds, +colors
 		en = "On Elite or Specialist Kill:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." restored instantly,\n"
@@ -708,7 +712,7 @@ local veteran_localizations = {
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 	},
-	--[+ Passive 3 - Out for Blood +]--	27.03.2026
+	--[+ Passive 3 - Out for Blood +]--	27.03.2026
 	["loc_talent_veteran_all_kills_replenish_toughness_description"] = { -- toughness: 5%, +colors
 		en = Dot_green.." {toughness:%s} of Maximum "..CKWord("Toughness", "Toughness_rgb").." replenished on any Kill.\n"
 			.."\n"
@@ -720,7 +724,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 遠程、近戰、爆炸和持續傷害擊殺均可觸發。",
 	},
-	--[+ Passive 4 - Volley Adept +]--	27.03.2026
+	--[+ Passive 4 - Volley Adept +]--	27.03.2026
 	["loc_talent_veteran_reload_speed_on_elite_kill_desc"] = { -- reload_speed: +30%, &->and
 		en = Dot_green.." {reload_speed:%s} Reload Speed on Elite and Specialist Enemy Kill.\n"
 			.."\n"
@@ -735,7 +739,7 @@ local veteran_localizations = {
 			..Dot_nc.." 裝填時消耗。\n"
 			..Dot_nc.." 也會提高戰鬥霰彈槍特殊裝填動作的速度。",
 	},
-	--[+ Passive 5 - Longshot +]--	27.03.2026
+	--[+ Passive 5 - Longshot +]--	27.03.2026
 	["loc_talent_veteran_increased_damage_based_on_range_new_desc"] = { -- ranged_damage: +20%, ranged_close: 12.5, max_ranged_damage: +25%, ranged_far: 30, +colors
 		en = Dot_green.." {ranged_damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." at a distance within {ranged_close:%s} meters.\n"
 			.."\n"
@@ -759,7 +763,7 @@ local veteran_localizations = {
 			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CKWord("~12", "n__12_rgb").."| "..CKWord("~16", "n__16_rgb").."| "..CKWord("~20", "n__20_rgb").."| "..CNumb("25", "n_25_rgb").."\n"
 			.."_______________________________\n",
 	},
-	--[+ Passive 6 - Covering Fire +]--	27.03.2026
+	--[+ Passive 6 - Covering Fire +]--	27.03.2026
 	["loc_talent_veteran_replenish_toughness_and_boost_allies_desc"] = { -- radius: 8, toughness: 15%, base_damage: +15%, duration: 6, &->and s->seconds, +colors
 		en = "When you Kill an Enemy with a Ranged Attack, Allies within {radius:%s} meters of the target gain:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb")..",\n"
@@ -777,7 +781,7 @@ local veteran_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 	},
-	--[+ Passive 7 - One Motion +]--	27.03.2026
+	--[+ Passive 7 - One Motion +]--	27.03.2026
 	["loc_talent_veteran_reduce_swap_time_desc"] = { -- swap_speed: +50%
 		en = Dot_green.." {swap_speed} Swap Speed.\n"
 			.."\n"
@@ -789,7 +793,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_nc.." 減少切換物品欄位時的持用動作時間（武器、手雷、興奮劑、醫包、彈藥箱、書籍等）。",
 	},
-	--[+ Passive 8 - Tactical Reload +]--	27.03.2026
+	--[+ Passive 8 - Tactical Reload +]--	27.03.2026
 	["loc_talent_veteran_reload_speed_non_empty_mag_desc"] = { -- reload_speed: +25%
 		en = Dot_green.." {reload_speed:%s} Reload Speed if your Weapon contains Ammo.\n"
 			.."\n"
@@ -801,31 +805,31 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_nc.." 也會提高戰鬥霰彈槍特殊裝填動作的速度。",
 	},
-	--[+ Passive 9 - Close Order Drill +]--	27.03.2026
+	--[+ Passive 9 - Close Order Drill +]--	27.03.2026
 	["loc_talent_veteran_toughness_damage_reduction_per_ally_description"] = { -- toughness: +33%, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Ally in "..CKWord("Coherency", "Coherency_rgb")..". Stacks up to {toughness:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждого союзника в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Суммируется до {toughness:%s}.", -- Строевая подготовка
 		["zh-tw"] = Dot_green.." 每有一名"..CKWord("協同", "Coherency_rgb_tw").."中的盟友，獲得 "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。最多 {toughness:%s}。",
 	},
-	--[+ Passive 10 - Superiority Complex +]--	27.03.2026
+	--[+ Passive 10 - Superiority Complex +]--	27.03.2026
 	["loc_talent_veteran_increase_damage_vs_elites_desc"] = { -- damage: +15%, +colors
 		en = Dot_green.." {damage:%s} Base "..CKWord("Damage", "Damage_rgb").." to Elite Enemies.",
 		ru = Dot_green.." {damage:%s} к базовому "..CKWord("урон", "uronu_rgb_ru").." по элитным врагам.", -- Мания величия
 		["zh-tw"] = Dot_green.." 對精英敵人造成 {damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
-	--[+ Passive 11 - Iron Will +]--	27.03.2026
+	--[+ Passive 11 - Iron Will +]--	27.03.2026
 	["loc_talent_veteran_tdr_on_high_toughness_desc"] = { -- toughness_damage_reduction: +50%, toughness_percent: 75%, +colors
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." if above {toughness_percent:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..", если ваш уровень "..CKWord("стойкости", "stoikosti_rgb_ru").." выше {toughness_percent:%s}.", -- Железная воля
 		["zh-tw"] = Dot_green.." "..CKWord("韌性", "Toughness_rgb_tw").."高於 {toughness_percent:%s} 時，獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
-	--[+ Passive 12 - Trench Fighter Drill +]--	27.03.2026
+	--[+ Passive 12 - Trench Fighter Drill +]--	27.03.2026
 	["loc_talent_veteran_attack_speed_description"] = { -- melee_attack_speed: +10%
 		en = Dot_green.." {melee_attack_speed:%s} Melee Attack Speed.",
 		ru = Dot_green.." {melee_attack_speed:%s} к скорости атак ближнего боя.", -- Отработка окопного боя -- руоф Тренировка в окопах
 		["zh-tw"] = Dot_green.." {melee_attack_speed:%s} 近戰攻擊速度。",
 	},
-	--[+ Passive 13 - Field Improvisation +]--	27.03.2026
+	--[+ Passive 13 - Field Improvisation +]--	27.03.2026
 	["loc_talent_veteran_better_deployables_description"] = { -- damage_heal: +100%, toughness: 1%, &->and, +colors
 		en = "Medi-Packs provide:\n"
 			..Dot_green.." {damage_heal:%s} Healing Speed,\n"
@@ -852,21 +856,21 @@ local veteran_localizations = {
 		ru = "{cleave:%s} "..CKWord("прострелу", "prostrelu_rgb_ru").." врагов.",
 		["zh-tw"] = "{cleave:%s} 遠程"..CKWord("順劈攻擊", "Cleave_rgb_tw").."。",
 	},
-	--[+ Passive 15 - Opening Salvo +]--	27.03.2026
+	--[+ Passive 15 - Opening Salvo +]--	27.03.2026
 	["loc_talent_veteran_bonus_crit_chance_on_ammo_desc"] = { -- ammo: 20%, crit_chance: +10%, +colors
 		en = Dot_green.." {crit_chance:%s} Ranged "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance for the first {ammo:%s} of Ammo after a Reload.",
 		ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." для первых {ammo:%s} патронов после перезарядки.", -- Открывающий залп
 		["zh-tw"] = Dot_green.." 裝填後前 {ammo:%s} 彈藥獲得 {crit_chance:%s} 遠程"..CKWord("爆擊命中", "Crit_hit_rgb_tw").."率。",
 	},
 
-	--[+ Passive 16 - Covert Operative +]--	27.03.2026
+	--[+ Passive 16 - Covert Operative +]--	27.03.2026
 	["loc_talent_zealot_increased_flanking_damage_description"] = { -- damage: +30%, +colors 
 		en = Dot_green.." {damage:%s} "..CKWord("Damage", "Damage_rgb").." to Ranged Backstab Attacks.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнобойных атак в спину.", -- Секретный агент -- руоф Тайный оперативник
 		["zh-tw"] = Dot_green.." 遠程背刺攻擊造成 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
 
-	--[+ Passive 17 - Serrated Blade +]--	27.03.2026
+	--[+ Passive 17 - Serrated Blade +]--	27.03.2026
 	["loc_talent_veteran_hits_cause_bleed_desc"] = { -- stacks: 2 -- Stack(s)->Stacks, +colors
 		en = "{stacks:%s} Stacks of "..CKWord("Bleed", "Bleed_rgb").." to the target on Melee Hit.\n"
 			..Dot_nc.." Up to "..CNumb("16", "n_16_rgb").." Stacks.\n"
@@ -896,7 +900,7 @@ local veteran_localizations = {
 			..Dot_red.." 對甲殼護甲的"..CKWord("傷害", "Damage_rgb_tw").."低。\n"
 			..CPhrs("Cant_appl_thr_shlds"),
 	},
-	--[+ Passive 18 - Catch a Breath +]--	27.03.2026
+	--[+ Passive 18 - Catch a Breath +]--	27.03.2026
 	["loc_talent_veteran_replenish_toughness_outside_melee_hit_desc"] = { -- toughness: 5%, range: 8, m->meters, +colors
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." replenished per second when not targeted by Melee Attacks for {duration:%s} seconds.\n"
 			.."\n"
@@ -911,7 +915,7 @@ local veteran_localizations = {
 			..Dot_nc.." 格擋或受近戰傷害後，天賦冷卻 "..CNumb("5", "n_5_rgb").." 秒。\n"
 			..CPhrs("Dont_intw_coher_toughn"),
 	},
-	--[+ Passive 19 - Grenadier +]--	27.03.2026
+	--[+ Passive 19 - Grenadier +]--	27.03.2026
 	["loc_talent_veteran_extra_grenade_and_throw_chance_description"] = { -- ammo: 1,  20%, Grenade(s)->Grenade
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{ammo:%s} extra Grenade.\n"
 			.."\n"
@@ -923,13 +927,19 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." {chance:%s} 機率多投擲一枚手雷，且只消耗 "..CNumb("1", "n_1_rgb").." 枚手雷。",
 	},
-	--[+ Passive 20 - Demolition Stockpile +]--	27.03.2026
-	["loc_talent_veteran_replenish_grenade_desc"] = { -- amount: 1, time: 60, Grenade(s)->Grenade, s->seconds
-		en = Dot_green.." {amount:%s} Grenade Replenished every {time:%s} seconds.",
-		ru = Dot_green.." {amount:%s} граната выдаётся вам каждые {time:%s} секунд.", -- Склад взрывчатки
-		["zh-tw"] = Dot_green.." 每 {time:%s} 秒補充 {amount:%s} 個手雷。",
+	--[+ Passive 20 - Demolition Stockpile +]--	09.06.2026
+	["loc_talent_veteran_grenade_regeneration_per_grenade_desc"] = { -- amount: 1, time: 60, Grenade(s)->Grenade, s->seconds
+		en = "{amount:%s} Grenade Replenished every:\n"
+			 ..Dot_green.." {krak_time:%s} seconds - {krak_grenade:%s},\n"
+			 ..Dot_green.." {smoke_time:%s} seconds - {smoke_grenade:%s},\n"
+			 ..Dot_green.." {frag_time:%s} seconds - {frag_grenade:%s}.",
+		ru = "{amount:%s} граната восстановливается каждые:\n"
+			 ..Dot_green.." {krak_time:%s} секунд - {krak_grenade:%s},\n"
+			 ..Dot_green.." {smoke_time:%s} секунд - {smoke_grenade:%s},\n"
+			 ..Dot_green.." {frag_time:%s} секунд - {frag_grenade:%s}.", -- Склад взрывчатки
+		-- ["zh-tw"] = Dot_green.." 每 {time:%s} 秒補充 {amount:%s} 個手雷。",
 	},
-	--[+ Passive 21 - Grenade Tinkerer +]--	27.03.2026
+	--[+ Passive 21 - Grenade Tinkerer +]--	27.03.2026
 	["loc_talent_veteran_improved_grenades_desc"] = { -- krak_grenade: Krak Grenade, krak: +75%, frag_grenade: Frag Grenade, frag_damage: +25%, smoke_grenade: Smoke Grenade, smoke: +100%, &->and, +colors
 		en = "{krak_grenade:%s}:\n"
 			..Dot_green.." {krak:%s} explosion "..CKWord("Damage", "Damage_rgb")..".\n"
@@ -962,13 +972,13 @@ local veteran_localizations = {
 			.."{smoke_grenade:%s}：\n"
 			..Dot_green.." {smoke:%s} 持續時間。從 "..CNumb("15", "n_15_rgb").." 提高至 "..CNumb("30", "n_30_rgb").." 秒。",
 	},
-	--[+ Passive 22 - Precision Strikes +]--	27.03.2026
+	--[+ Passive 22 - Precision Strikes +]--	27.03.2026
 	["loc_talent_veteran_increased_weakspot_damage_desc"] = { -- damage: +30%, +colors
 		en = Dot_green.." {damage:%s} "..CKWord("Weakspot Damage", "Weakspot_dmg_rgb").." of Melee and Ranged attacks.",
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону по уязвимым местам", "u_mestam_uronu_rgb_ru").." для атак ближнего и дальнего боя.", -- Точные удары
 		["zh-tw"] = Dot_green.." 近戰與遠程攻擊獲得 {damage:%s} "..CKWord("弱點傷害", "Weakspot_dmg_rgb_tw").."。",
 	},
-	--[+ Passive 23 - Deadshot +]--	27.03.2026
+	--[+ Passive 23 - Deadshot +]--	27.03.2026
 	["loc_talent_veteran_ads_drains_stamina_boost_desc"] = { -- crit_chance: +25%, sway_reduction: +60%, stamina: 0.75, stamina_per_shot: 0.1, &->and, +colors
 		en = "While Aiming with "..CKWord("Stamina", "Stamina_rgb").." above "..CNumb("0", "n_0_rgb").." you gain:\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("Critical Chance", "Crit_chance_rgb")..",\n"
@@ -1013,7 +1023,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 你恢復的任何"..CKWord("韌性", "Toughness_rgb_tw").."，其 {toughness:%s} 也會給予"..CKWord("協同", "Coherency_rgb_tw").."中的盟友。",
 	},
-	--[+ Passive 25 - Leave No One Behind +]--	27.03.2026
+	--[+ Passive 25 - Leave No One Behind +]--	27.03.2026
 	["loc_talent_veteran_movement_speed_towards_downed_description"] = { -- revive_speed: +20%, movement_speed: +20%, damage_reduction: +33%, duration: 5, &->and, s->seconds, +colors
 		en = "When moving towards a Knocked Down or Incapacitated Ally, you gain:\n"
 			..Dot_green.." {revive_speed:%s} Assist Speed,\n"
@@ -1040,7 +1050,7 @@ local veteran_localizations = {
 			.."每次救起倒地盟友後，對方會獲得以下效果 {duration:%s} 秒：\n"
 			..Dot_green.." {damage_reduction:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免。",
 	},
-	--[+ Passive 26 - Demolition Team +]--	27.03.2026
+	--[+ Passive 26 - Demolition Team +]--	27.03.2026
 	["loc_talent_veteran_grenade_on_elite_kills_coop_desc"] = { -- chance: 5%
 		en = Dot_green.." {chance:%s} chance to replenish a Grenade when you or an Ally in "..CKWord("Coherency", "Coherency_rgb").." kills an Elite or Specialist Enemy.\n"
 			.."\n"
@@ -1052,7 +1062,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_green.." 無論你是否與盟友處於"..CKWord("協同", "Coherency_rgb_tw").."中，均可觸發。",
 	},
-	--[+ Passive 27 - Reciprocity +]--	27.03.2026
+	--[+ Passive 27 - Reciprocity +]--	27.03.2026
 	["loc_talent_veteran_dodging_grants_crit_description"] = { -- crit_chance: +5%, duration: 8, stacks: 5, s->seconds, +colors
 		en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance for {duration:%s} seconds on successful Dodge.\n"
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
@@ -1097,7 +1107,7 @@ local veteran_localizations = {
 			.."   "..Dot_red.." 收割者射擊，以及\n"
 			.."   "..Dot_red.." 狙擊手的射擊。",
 	},
-	--[+ Passive 28 - Duck and Dive +]--	27.03.2026
+	--[+ Passive 28 - Duck and Dive +]--	27.03.2026
 	["loc_talent_veteran_stamina_on_ranged_dodge_desc"] = { -- stamina: +30%
 		en = Dot_green.." {stamina:%s} of Max "..CKWord("Stamina", "Stamina_rgb").." on avoiding Ranged Attacks by Dodging, Sprinting or Sliding.\n"
 			.."\n"
@@ -1112,7 +1122,7 @@ local veteran_localizations = {
 			..Dot_nc.." 需要 "..CNumb("0", "n_0_rgb").." 以上"..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..Dot_nc.." 內部冷卻 "..CNumb("3", "n_3_rgb").." 秒。",
 	},
-	--[+ Passive 29 - Fully Loaded +]--	27.03.2026
+	--[+ Passive 29 - Fully Loaded +]--	27.03.2026
 	["loc_talent_veteran_ammo_increase_desc"] = { -- ammo: +25%
 		en = Dot_green.." {ammo:%s} Maximum Ammo in reserve.\n"
 			.."\n"
@@ -1124,7 +1134,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_nc.." 無條件捨去。",
 	},
-	--[+ Passive 30 - Tactical Awareness +]--	27.03.2026
+	--[+ Passive 30 - Tactical Awareness +]--	27.03.2026
 	["loc_talent_veteran_elite_kills_reduce_cooldown_alt_desc"] = { -- regen: +100%, time: 3, s->seconds, +colors
 		en = "On Specialist Kill:\n"
 			..Dot_green.." {regen:%s} "..CKWord("Combat Ability", "Cmbt_abil_rgb").." Cooldown Regeneration for {time:%s} seconds.",
@@ -1133,7 +1143,7 @@ local veteran_localizations = {
 		["zh-tw"] = "擊殺專家時：\n"
 			..Dot_green.." {regen:%s} "..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."冷卻恢復，持續 {time:%s} 秒。",
 	},
-	--[+ Passive 31 - Desperado +]--	27.03.2026
+	--[+ Passive 31 - Desperado +]--	27.03.2026
 	["loc_talent_veteran_increased_melee_crit_chance_and_melee_finesse_desc"] = { -- crit_chance: +10%, finesse: +25%, &->and, +colors
 		en = Dot_green.." {crit_chance:%s} Melee "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".\n"
 			..Dot_green.." {finesse:%s} Melee "..CKWord("Finesse", "Finesse_rgb").." Bonus.\n"
@@ -1148,13 +1158,13 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Fns_note"),
 	},
-	--[+ Passive 32 - Keep Their Heads Down! +]--	27.03.2026
+	--[+ Passive 32 - Keep Their Heads Down! +]--	27.03.2026
 	["loc_talent_veteran_increase_suppression_desc"] = { -- suppression: +75%
 		en = Dot_green.." {suppression:%s} Ranged Attack Suppression.",
 		ru = Dot_green.." {suppression:%s} к подавлению врагов выстрелами.", -- Не давай им поднять головы! -- руоф Пригнитесь!
 		["zh-tw"] = Dot_green.." {suppression:%s} 遠程攻擊壓制效果。",
 	},
-	--[+ Passive 33 - Competitive Urge +]--	27.03.2026
+	--[+ Passive 33 - Competitive Urge +]--	27.03.2026
 	["loc_talent_veteran_ally_kills_increase_damage_description"] = { -- proc_chance: 2.5%, damage: +20%, melee_impact: +20%, suppression: +20%, duration: 8, &->and, s->seconds, +colors
 		en = "Whenever an Ally kills an Enemy you have a {proc_chance:%s} chance to gain for {duration:%s} seconds:\n"
 			..Dot_green.." {damage:%s} Base "..CKWord("Damage", "Damage_rgb")..",\n"
@@ -1181,7 +1191,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Impact_note"),
 	},
-	--[+ Passive 34 - Rending Strikes +]--	27.03.2026
+	--[+ Passive 34 - Rending Strikes +]--	27.03.2026
 	["loc_talent_veteran_rending_bonus_desc"] = { -- rending_multiplier: +10%, +colors
 		en = Dot_green.." {rending_multiplier:%s} "..CKWord("Rending", "Rending_rgb").." to all weapons.\n"
 			.."\n"
@@ -1193,7 +1203,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Rend_note"),
 	},
-	--[+ Passive 35 - Agile Engagement +]--	27.03.2026
+	--[+ Passive 35 - Agile Engagement +]--	27.03.2026
 	["loc_talent_veteran_kill_grants_damage_to_other_slot_desc"] = { -- damage: +25%, duration: 5, s->seconds, +colors
 		en = Dot_green.." {damage:%s} Ranged "..CKWord("Damage", "Damage_rgb").." on killing an enemy with a Melee attack.\n"
 			..Dot_nc.." Lasts {duration:%s} seconds.\n"
@@ -1211,7 +1221,7 @@ local veteran_localizations = {
 			..Dot_green.." 以遠程攻擊擊殺敵人時，獲得 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
-	--[+ Passive 36 - Skirmisher +]--	27.03.2026
+	--[+ Passive 36 - Skirmisher +]--	27.03.2026
 	["loc_talent_veteran_damage_damage_after_sprinting_or_sliding_desc"] = { -- base_damage: +6.25%, duration: 10, stacks: 4, s->seconds, +colors
 		en = Dot_green.." {base_damage:%s} to all Base "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds after Sprinting or Sliding.\n"
 			..Dot_nc.." Stacks {stacks:%s} times.",
@@ -1220,13 +1230,13 @@ local veteran_localizations = {
 		["zh-tw"] = Dot_green.." 衝刺或滑行後，獲得 {base_damage:%s} 所有基礎"..CKWord("傷害", "Damage_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。",
 	},
-	--[+ Passive 37 - Shock Trooper +]--	27.03.2026
+	--[+ Passive 37 - Shock Trooper +]--	27.03.2026
 	["loc_talent_veteran_no_ammo_consumption_on_lasweapon_crit_desc"] = { -- +colors
 		en = Dot_green.." "..CKWord("Critical Shots", "Crit_shots_rgb").." with Las-weapons consume no Ammo.",
 		ru = Dot_green.." "..CKWord("Критические выстрелы", "Krit_vystrely_rgb_ru").." из лазерного оружия не потребляют боеприпасы.", -- Штурмовик
 		["zh-tw"] = Dot_green.." 雷射武器的"..CKWord("爆擊射擊", "Crit_shots_rgb_tw").."不消耗彈藥。",
 	},
-	--[+ Passive 38 - Kill Zone +]--	27.03.2026
+	--[+ Passive 38 - Kill Zone +]--	27.03.2026
 	["loc_talent_veteran_ranged_power_out_of_melee_new_desc"] = { -- ranged_damage: +20%, radius: 8, m->meters, +colors
 		en = "{ranged_damage:%s} Base Ranged "..CKWord("Damage", "Damage_rgb").." when you have avoided Melee Attacks for {cooldown:%s} seconds.\n"
 			.."\n"
@@ -1241,7 +1251,7 @@ local veteran_localizations = {
 
 -- !!! DOUBLE! ARBITES - Passive 35 - Priority Endowment !!!
 	--[+ Passive 39 - Lock and Load +]--	08.12.2025 -- Оружие к бою 
-	-- ["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +25% },	27.03.2026
+	-- ["loc_talent_adamant_clip_size_alt_desc"] = { -- clip_size: +25% },	27.03.2026
 
 	--[+ Passive 40 - Bring it Down! +]--	27.03.2026
 	["loc_talent_veteran_big_game_hunter_description"] = { -- damage: +20%, &->and, +colors
@@ -1255,7 +1265,7 @@ local veteran_localizations = {
 			.."\n"
 			..Dot_red.." 不會增強對連長/雙子的"..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
-	--[+ Passive 41 - Onslaught +]--	27.03.2026
+	--[+ Passive 41 - Onslaught +]--	27.03.2026
 	["loc_talent_veteran_continous_hits_apply_rending_description"] = { -- rending_multiplier: 2.5%, duration: 5, max_stacks: 16, +colors
 		en = "On continuous hits to a Single target:\n"
 			..Dot_green.." {rending_multiplier:%s} "..CKWord("Brittleness", "Brittleness_rgb").." for {duration:%s} seconds.\n"
@@ -1279,7 +1289,7 @@ local veteran_localizations = {
 			.."\n"
 			..CNote("Brtl_note"),
 	},
-	--[+ Passive 42 - Exploit Weakness +]--	27.03.2026
+	--[+ Passive 42 - Exploit Weakness +]--	27.03.2026
 	["loc_talent_veteran_crits_rend_alt_description"] = { -- damage: 20%, duration: 6, s->seconds, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("Damage", "Damage_rgb").." for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." на {duration:%s} секунд при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." атакой ближнего боя.", -- Использование слабостей
@@ -1287,7 +1297,7 @@ local veteran_localizations = {
 	},
 }
 
--- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
+-- Creating templates -- Создаём шаблоны
 local veteran_templates = {}
 
 for loc_key, locales in pairs(veteran_localizations) do
@@ -1302,4 +1312,3 @@ for loc_key, locales in pairs(veteran_localizations) do
 end
 
 return veteran_templates
-

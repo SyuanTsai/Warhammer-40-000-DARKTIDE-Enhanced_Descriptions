@@ -2,8 +2,11 @@
 -- OGRYN TALENT MODULE -- МОДУЛЬ ТАЛАНТОВ ОГРИНА
 
 local mod = get_mod("Enhanced_descriptions")
+
+-- Using cached utilities - Используем кэшированные утилиты
 local Utils = mod.get_utils()
 
+-- Importing all necessary functions and constants - Импорт всех нужных функций и констант
 local create_template = Utils.create_template
 local loc_text = Utils.loc_text
 local CKWord = Utils.CKWord
@@ -14,7 +17,7 @@ local Dot_nc = Utils.DOT_NC or "•"
 local Dot_red = Utils.DOT_RED or "•"
 local Dot_green = Utils.DOT_GREEN or "•"
 
--- LOCALIZATION OF OGRYN TALENTS -- ЛОКАЛИЗАЦИИ ТАЛАНТОВ ОГРИНА
+-- Localization of Ogryn talents -- Локализации талантов огрина
 local ogryn_localizations = {
 --[+ ++OGRYN - ОГРИН++ +]--
 --[+ +BLITZ - БЛИЦ+ +]--
@@ -1785,7 +1788,7 @@ local ogryn_localizations = {
 	},
 }
 
--- CREATING TEMPLATES -- СОЗДАЁМ ШАБЛОНЫ
+-- Creating templates -- Создаём шаблоны
 local ogryn_templates = {}
 
 for loc_key, locales in pairs(ogryn_localizations) do
@@ -1800,4 +1803,3 @@ for loc_key, locales in pairs(ogryn_localizations) do
 end
 
 return ogryn_templates
-
