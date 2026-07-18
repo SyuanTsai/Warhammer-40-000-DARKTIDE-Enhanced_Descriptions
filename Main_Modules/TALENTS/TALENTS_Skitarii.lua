@@ -132,7 +132,7 @@ local skitarii_localizations = {
 				.."\n"
 				.."注射會救起該隊友，並使其每秒獲得：\n"
 				..Dot_green.." {toughness_per_second:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				..Dot_nc.." 持續 {duration:%s} 秒。",
 			ru = "У вас есть дополнительный "..CKWord("сервочереп", "servocherep_rgb_ru").." со встроенными "..CKWord("адаптированными медике-шприцами", "AdMedSyringe_rgb_ru")..". Выберите целью сбитого с ног, связанного или опутанного сетью союзника, чтобы сделать ему инъекцию.\n"
 				.."\n"
@@ -208,7 +208,7 @@ local skitarii_localizations = {
 		--[+ BLITZ - БЛИЦ - 2-2 - Enhanced Arc Grenades - Улучшенные электродуговые гранаты +]--	17.07.2026
 		["loc_talent_cryptic_arc_grenades_weapon_malfunction_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "Your {talent_name:%s} also cause Ranged Enemies within {range:%s} meters to have their Ranged weapons Malfunction, making them unable to use them for {duration:%s} seconds.",
-			["zh-tw"] = "你的 {talent_name:%s} 還會使 {range:%s} 米內遠程敵人的遠程武器發生"..CKWord("武器故障", "WeaponMalfunction_rgb_tw").."，使其在 {duration:%s} 秒內無法使用該武器。",
+			["zh-tw"] = "你的 {talent_name:%s} 還會使 {range:%s} 公尺內遠程敵人的遠程武器發生"..CKWord("武器故障", "WeaponMalfunction_rgb_tw").."，使其在 {duration:%s} 秒內無法使用該武器。",
 			ru = "Ваши {talent_name:%s} также блокируют на {duration:%s} секунд дальнобойное оружие у стрелков в радиусе {range:%s} метров.",
 		},
 
@@ -221,7 +221,7 @@ local skitarii_localizations = {
 		["zh-tw"] = "以護盾包圍自己，吸收所有受到的遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
-			.."啟用時及效果結束時，會在你周圍引發電氣爆炸，對 {range:%s} 米內的敵人施加"..CKWord("電擊", "Electrocution_rgb_tw").."。",
+			.."啟用時及效果結束時，會在你周圍引發電氣爆炸，對 {range:%s} 公尺內的敵人施加"..CKWord("電擊", "Electrocution_rgb_tw").."。",
 		ru = "Вы окружаете себя щитом, поглощающим весь входящий "..CKWord("урон", "uron_rgb_ru").." дальнего боя.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.\n"
 			.."\n"
