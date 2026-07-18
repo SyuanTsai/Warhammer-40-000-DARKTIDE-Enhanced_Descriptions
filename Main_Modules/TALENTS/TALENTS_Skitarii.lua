@@ -638,7 +638,7 @@ local skitarii_localizations = {
 	--[+ ABILITY - СПОСОБНОСТЬ - 7 - Reactor Coil Recharge - Перезарядка катушки реактора +]--	17.07.2026
 	["loc_talent_cryptic_weakspot_kills_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated on "..CKWord("Weakspot", "Weakspot_rgb").." Kills.",
-			["zh-tw"] = Dot_green.." 以"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			["zh-tw"] = Dot_green.." 命中"..CKWord("弱點", "Weakspot_rgb_tw").."並擊殺時產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
 			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".",
 	},
 --[+ +KEYSTONES - КЛЮЧЕВЫЕ+ +]--
@@ -652,9 +652,9 @@ local skitarii_localizations = {
 			..Dot_nc.." Stacks decay one at a time.\n"
 			.."\n"
 			..Dot_green.." {max_charges:%s} Max Ability Charges.",
-			["zh-tw"] = "消耗或獲得一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "消耗或獲得一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {capacitance:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 				..Dot_nc.." 層數會逐一衰減。\n"
@@ -673,7 +673,7 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_redline_strength_clarified_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
 		en = "On "..CKWord("Combat Ability", "Cmbt_abil_rgb").." use, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {strength:%s} "..CKWord("Strength", "Strength_rgb").." per "..CKWord("Combat Ability", "Cmbt_abil_rgb").." charge you had on use.",
-			["zh-tw"] = "使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "使用"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." 使用時每有一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，便獲得 {strength:%s} "..CKWord("威力", "Strength_rgb_tw").."。",
 			ru = "При использовании "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {strength:%s} к "..CKWord("силе", "sile_rgb_ru").." за каждый имеющийся "..CKWord("Заряд", "Charge_rgb_ru").." на момент активации.",
@@ -727,9 +727,9 @@ local skitarii_localizations = {
 				.."\n"
 				.."達到最大層數時觸發"..CKWord("超載", "Overload_rgb_tw").."，並重設為 {zero:%s} 層。\n"
 				.."\n"
-				..CKWord("超載", "Overload_rgb_tw").."會使你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友獲得以下效果 {duration:%s} 秒：\n"
+				..CKWord("超載", "Overload_rgb_tw").."會使你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 			ru = "Убийства совершённые вами или союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." дают:\n"
 			..Dot_nc.." {low_stack:%s} заряд таланта {talent_name:%s}.\n"
 			..Dot_nc.." {elite_stacks:%s} заряда вы получаете за убийство элитного врага или специалиста.\n"
@@ -784,7 +784,7 @@ local skitarii_localizations = {
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 				.."\n"
 				..CKWord("超載", "overloading_rgb_tw").." {second_threshold:%s} 次後獲得：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..CKWord("超載", "overloading_rgb_tw").." {third_threshold:%s} 次後獲得：\n"
 				..Dot_green.." {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量。\n"
