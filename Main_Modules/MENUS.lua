@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
+		["zh-tw"] = "近戰特殊攻擊",
 	},
 
 
