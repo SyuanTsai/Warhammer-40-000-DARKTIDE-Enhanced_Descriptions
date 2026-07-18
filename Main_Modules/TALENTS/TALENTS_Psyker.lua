@@ -3406,7 +3406,7 @@ local psyker_localizations = {
 			..Dot_green.." Se déclenche sur les Élites ou Spécialistes tués par les ticks de "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr")..", de "..CKWord("Brûlure", "Burn_rgb_fr").." ou de "..CKWord("Saignement", "Bleed_rgb_fr")..".\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." très élevés contre armure.\n"
 			..Dot_red.." "..CKWord("Dégâts", "Damage_rgb_fr").." très faibles contre Carapace.",
-		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 米內所有敵人施加 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
+		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 公尺內所有敵人施加 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
 			.."\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
@@ -3559,11 +3559,11 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_red.." Génère "..CNumb("1", "n_1_rgb").." cumul par "..CKWord("Attaque critique", "Crit_Attk_rgb_fr")..", quel que soit le nombre d'ennemis touchés.",
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 持續 {duration:%s} 秒，"..CKWord("暴擊攻擊", "Crit_Attk_rgb_tw").."時觸發。\n"
+		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 持續 {duration:%s} 秒，"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."時觸發。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
-			..Dot_red.." 每次"..CKWord("暴擊攻擊", "Crit_Attk_rgb_tw").."只觸發一層，無論擊中多少敵人。",
+			..Dot_red.." 每次"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."只觸發一層，無論擊中多少敵人。",
 		["zh-cn"] = Dot_green.." "..CKWord("暴击攻击", "Crit_Attk_rgb_zh_cn").."时，获得{damage:%s}"..CKWord("伤害", "Damage_rgb_zh_cn").."，持续{duration:%s}秒。\n"
 			..Dot_nc.." 叠加{stacks:%s}次。\n"
 			.."\n"
@@ -3715,7 +3715,7 @@ local psyker_localizations = {
 		fr = "Votre vitesse de déplacement n'est pas réduite en apaisant le "..CKWord("Péril", "Peril_rgb_fr").." ou en rechargeant.\n"
 			.."\n"
 			..Dot_red.." N'interagit pas avec les bonus de vitesse de déplacement.",
-		["zh-tw"] = "平息"..CKWord("反噬", "Peril_rgb_tw").." 或換彈時，移動速度不降低。\n"
+		["zh-tw"] = "平息"..CKWord("反噬", "Peril_rgb_tw").." 或裝填時，移動速度不降低。\n"
 			.."\n"
 			..Dot_red.." 不與移動速度增益互動。",
 		["zh-cn"] = "压制"..CKWord("危机值", "Peril_rgb_zh_cn").."或重新装填时，你的移动速度不会降低。\n"
@@ -4030,8 +4030,8 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." 擴散層數取決於死亡敵人的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."層數：\n"
 			.."_______________________________\n"
-			.."層數：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| >"..CNumb("4", "n_4_rgb").."\n"
-			.."擴散：       "..CNumb("0", "n_0_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("4", "n_4_rgb").."\n"
+			.."層數：       "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | >"..CNumb("4", "n_4_rgb").."\n"
+			.."擴散：       "..CNumb("0", "n_0_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("4", "n_4_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_red.." 若目標已有 "..CNumb("4", "n_4_rgb").." 層或以上，不再獲得該天賦造成的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 層。\n"
 			..Dot_nc.." 惡魔宿主不是有效目標。",
