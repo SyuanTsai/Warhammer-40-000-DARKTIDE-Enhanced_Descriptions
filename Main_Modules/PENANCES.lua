@@ -198,7 +198,7 @@ local penances_localizations = {
 	["loc_achievement_missions_veteran_2_objective_1_name"] = {
 		en = "Vantage Point (1)",
 		ru = "Выгодная позиция (1)",
-		["zh-tw"] = "有利地形 (1)",
+		["zh-tw"] = "有利地形（1）",
 	},
 		--[+ As a Veteran, complete at least one Mission of each type. +]-- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_veteran_2_objective_1_description"] = {
@@ -209,7 +209,7 @@ local penances_localizations = {
 	--[+ Vantage Point (2) +]-- руоф Точка обзора (2)
 	["loc_achievement_missions_veteran_2_objective_2_name"] = {
 		ru = "Выгодная позиция (2)",
-		["zh-tw"] = "有利地形 (2)",
+		["zh-tw"] = "有利地形（2）",
 	},
 		--[+ As a Veteran, complete a Mission of each type on Malice Threat or higher. +]--
 		["loc_achievement_missions_veteran_2_objective_2_description"] = {
