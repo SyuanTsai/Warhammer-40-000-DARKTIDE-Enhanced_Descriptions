@@ -811,7 +811,7 @@ local penances_localizations = {
 			en = "Burn "..CNumb("{target}", "target_rgb").." enemies using the "..CKWord("Immolation Grenade", "fire_gren_rgb")..".",
 			ru = "Сожгите "..CNumb("{target}", "target_rgb").." врагов с помощью "..CKWord("Сжигающей гранаты", "fire_gren_rgb_ru")..".",
 			["zh-tw"] = "使用 "..CKWord("獻祭手雷", "fire_gren_rgb_tw").."，\n"
-				.."燒灼 "..CNumb("{target}", "target_rgb").." 名敵人。",
+				.."使 "..CNumb("{target}", "target_rgb").." 名敵人燃燒。",
 		},
 	--[+ Behind Enemy Lines +]-- руоф В тылу врага
 	["loc_achievement_zealot_aura_backstab_kills_while_alone_name"] = {
