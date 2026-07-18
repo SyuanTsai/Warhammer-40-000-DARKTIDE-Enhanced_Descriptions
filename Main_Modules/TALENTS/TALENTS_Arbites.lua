@@ -982,7 +982,7 @@ local arbites_localizations = {
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
-			..CKWord("踉蹌", "Staggering_rgb_tw").." 非人類體型的敵人可獲得 {ogryn_stacks:%s} 層。",
+			.."使非人類體型敵人"..CKWord("踉蹌", "Staggering_rgb_tw").."時，可獲得 {ogryn_stacks:%s} 層。",
 	},
 	--[+ Passive 24 - Judicious Efficiency +]--	26.03.2026
 	["loc_talent_adamant_elite_special_kills_reload_speed_desc"] = { -- reload_speed: 20%
@@ -1047,7 +1047,7 @@ local arbites_localizations = {
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при убийстве.\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Фанатичная преданность
-		["zh-tw"] = Dot_green.." 擊殺時，"..CKWord("暴擊機率", "Crt_chnc_r_rgb_tw").." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s}。\n"
+		["zh-tw"] = Dot_green.." 擊殺時，"..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").." "..CNumb("+", "n_plus_rgb").."{crit_chance:%s}。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
@@ -1095,7 +1095,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{strength:%s} к силе атак в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раз.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Поиск виновных душ
-		["zh-tw"] = CKWord("弱點命中", "Weakspothits_rgb_tw").." 可獲得：\n"
+		["zh-tw"] = CKWord("命中弱點", "Weakspothits_rgb_tw").." 可獲得：\n"
 			..Dot_green.." "..CKWord("弱點", "Weakspot_rgb_tw").."攻擊威力 "..CNumb("+", "n_plus_rgb").."{strength:%s}。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
@@ -1111,7 +1111,7 @@ local arbites_localizations = {
 			..Dot_nc.." Округляется в большую сторону.", -- Приоритетное снабжение
 		["zh-tw"] = Dot_green.." 彈匣容量增加 {clip_size:%s}。\n"
 			.."\n"
-			..Dot_nc.." 向上取整計算。",
+			..Dot_nc.." 無條件進位。",
 	},
 	--[+ Passive 36 - Target Priority +]--	26.03.2026
 	["loc_talent_adamant_increased_damage_to_high_health_desc"] = { -- damage: 15%, health: 75%, +colors
