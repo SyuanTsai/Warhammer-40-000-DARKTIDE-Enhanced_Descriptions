@@ -1155,7 +1155,7 @@ local scum_localizations = {
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {reload_speed:%s} 裝填速度。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1182,7 +1182,7 @@ local scum_localizations = {
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
-		["zh-tw"] = "完美格擋與成功閃避會獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "完美格擋與成功閃避後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {critical_strike_chance:%s} "..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -1291,8 +1291,8 @@ local scum_localizations = {
 			..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").."剩餘"..CKWord("冷卻", "Cd_rgb_tw").."。\n"
 			.."\n"
 			.."每次擊殺的縮短量：\n"
-			..Dot_green.." 任意攻擊： "..CNumb("-", "n_minus_rgb").."{restore:%s}。\n"
-			..Dot_green.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."跳傷： "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}。\n"
+			..Dot_green.." 任意攻擊："..CNumb("-", "n_minus_rgb").."{restore:%s}。\n"
+			..Dot_green.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."每次生效："..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}。\n"
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 	},
