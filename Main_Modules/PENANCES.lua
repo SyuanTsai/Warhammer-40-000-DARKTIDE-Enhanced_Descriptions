@@ -1173,9 +1173,9 @@ local penances_localizations = {
 			en = CKWord("Critically strike", "Crtcll_strk_rgb").." "..CNumb("{target}", "target_rgb").." enemies while under the effects of "..CKWord("Prescience", "prescience_rgb").." Aura. "..CKWord("Critical strikes", "Crit_strikes_rgb").." made by any affected team member also count.",
 			ru = "Нанесите врагам "..CNumb("{target}", "target_rgb").." "..CKWord("критических ударов", "krit_udarov_rgb_ru")..", находясь под действием ауры "..CKWord("Предвидение", "prescience_rgb_ru")..". "..CKWord("Критические удары", "Krit_udary_rgb_ru").." любого члена команды, находящегося под действием эффекта ауры, тоже учитываются.",
 			["zh-tw"] = "受到 "..CKWord("預兆", "prescience_rgb_tw").." 光環效果時，\n"
-				.."以 "..CKWord("爆擊攻擊", "Crtcll_strk_rgb_tw").."命中 "..CNumb("{target}", "target_rgb").." 名敵人。\n"
+				.."對 "..CNumb("{target}", "target_rgb").." 名敵人造成"..CKWord("致命一擊", "Crtcll_strk_rgb_tw").."。\n"
 				.."受此光環影響的隊友造成的\n"
-				..CKWord("爆擊攻擊", "Crit_strikes_rgb_tw").."也會計入。",
+				..CKWord("致命一擊", "Crit_strikes_rgb_tw").."也會計入。",
 		},
 	--[+ Charged with Purpose +]-- руоф Заряженные целью -- 壓倒性的存在
 		--[+ Kill 2500 enemies stunned by your Smite. Kills made by your team members also count. +]-- руоф Убейте врагов (2500), оглушенных вашим «Сокрушением». Убийства, совершенные членами команды, тоже учитываются.
@@ -1253,7 +1253,7 @@ local penances_localizations = {
 	--[+ Got a Bone to Pick (1-6) +]-- руоф Крепкий орешек (1-6)
 	["loc_achievement_rank_ogryn_2_x_name"] = {
 		ru = "Кость в горле ({tier})",
-		["zh-tw"] = "撿塊骨頭 ({tier})",
+		["zh-tw"] = "撿塊骨頭（{tier}）",
 	},
 		--[+ Reach Trust Level 30 as a Ogryn. +]-- руоф Получить уровень доверия 30, играя за Огрина.
 		["loc_achievement_rank_ogryn_2_x_description"] = {
@@ -1264,7 +1264,7 @@ local penances_localizations = {
 	--[+ Built Like a Tank (1) +]-- руоф Настоящий танк (1) -- 如坦克一般 (1)
 	["loc_achievement_missions_ogryn_2_x_name"] = {
 		ru = "Крепкий как танк ({tier})",
-		["zh-tw"] = "如坦克一般 ({tier})",
+		["zh-tw"] = "如坦克一般（{tier}）",
 	},
 		--[+ Complete 100 Missions as a Ogryn. +]-- руоф Выполнить Огрином задания: 100.
 		["loc_achievement_missions_ogryn_2_x_description"] = {
@@ -1276,7 +1276,7 @@ local penances_localizations = {
 	["loc_achievement_missions_ogryn_2_objective_1_name"] = {
 		en = "Beat-em-Up (1)",
 		ru = "Месилово (1)",
-		["zh-tw"] = "揍扁他們 (1)",
+		["zh-tw"] = "揍扁他們（1）",
 	},
 		--[+ As a Ogryn, complete a Mission of each type. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_ogryn_2_objective_1_description"] = {
