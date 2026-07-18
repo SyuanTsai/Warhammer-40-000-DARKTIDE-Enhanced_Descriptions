@@ -309,11 +309,11 @@ local skitarii_localizations = {
 			.."When using {talent_name:%s} at {charge_two:%s} charges, extend the Range to {range_two:%s} meters.\n"
 			.."\n"
 			.."When using {talent_name:%s} at {charge_three:%s} charges or above, extend the Range to {range_three:%s} meters.",
-		["zh-tw"] = "在周圍釋放"..CKWord("電能放電", "ElectrDisch_rgb_tw").."。{range:%s} 米內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").." {duration:%s} 秒，使其"..CKWord("眩暈", "Stunning_rgb_tw").."並受到"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = "在周圍釋放"..CKWord("電能放電", "ElectrDisch_rgb_tw").."。{range:%s} 公尺內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").." {duration:%s} 秒，使其"..CKWord("眩暈", "Stunning_rgb_tw").."並受到"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			.."以 {charge_two:%s} 層充能使用 {talent_name:%s} 時，範圍擴大至 {range_two:%s} 米。\n"
+			.."以 {charge_two:%s} 層充能使用 {talent_name:%s} 時，範圍擴大至 {range_two:%s} 公尺。\n"
 			.."\n"
-			.."以 {charge_three:%s} 層或以上充能使用 {talent_name:%s} 時，範圍擴大至 {range_three:%s} 米。",
+			.."以 {charge_three:%s} 層或以上充能使用 {talent_name:%s} 時，範圍擴大至 {range_three:%s} 公尺。",
 		ru = "Вы выпускаете "..CKWord("Электрический разряд", "ElectrDisch_rgb_ru").." вокруг себя и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru").." на {duration:%s} секунды, "..CKWord("ошеломляются", "oshelomlautsa_rgb_ru").." и получают "..CKWord("урон", "uron_rgb_ru")..".\n"
 			.."\n"
 			.."При использовании способности {talent_name:%s} с {charge_two:%s} и более зарядами, радиус поражения увеличивается до {range_two:%s} метров.\n"
@@ -329,13 +329,13 @@ local skitarii_localizations = {
 			.."When using {talent_name:%s} at {charge_three:%s} charges or above, for the next {buff_duration:%s} seconds your attacks "..CKWord("Electrocute", "Electrocute_rgb").." enemies hit for {short_duration:%s} seconds, dealing "..CKWord("Damage", "Damage_rgb")..".\n"
 			.."\n"
 			.."This is an enhanced version of the "..CKWord("Voltaic Expander", "VoltaicExpander_rgb").." Ability.",
-		["zh-tw"] = "在周圍釋放"..CKWord("電能放電", "ElectrDisch_rgb_tw").."。{range:%s} 米內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").." {duration:%s} 秒，使其"..CKWord("眩暈", "Stunning_rgb_tw").."並受到"..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = "在周圍釋放"..CKWord("電能放電", "ElectrDisch_rgb_tw").."。{range:%s} 公尺內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").." {duration:%s} 秒，使其"..CKWord("眩暈", "Stunning_rgb_tw").."並受到"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			.."以 {charge_two:%s} 層或以上充能使用 {talent_name:%s} 時，使 {far_range:%s} 米內遠程敵人的武器故障 {malfunction_duration:%s} 秒。\n"
+			.."以 {charge_two:%s} 層或以上充能使用 {talent_name:%s} 時，使 {far_range:%s} 公尺內遠程敵人的武器故障 {malfunction_duration:%s} 秒。\n"
 			.."\n"
 			.."以 {charge_three:%s} 層或以上充能使用 {talent_name:%s} 時，接下來 {buff_duration:%s} 秒內，你的攻擊會"..CKWord("電擊", "Electrocute_rgb_tw").."命中的敵人 {short_duration:%s} 秒並造成"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			.."這是"..CKWord("電能擴張器", "VoltaicExpander_rgb_tw").."技能的強化版。",
+			.."這是"..CKWord("電能擴張器", "VoltaicExpander_rgb_tw").."技能的強化版本。",
 		ru = "Вы выпускаете "..CKWord("Электрический разряд", "ElectrDisch_rgb_ru").." вокруг себя и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru").." на {duration:%s} секунды, "..CKWord("ошеломляются", "oshelomlautsa_rgb_ru").." и получают "..CKWord("урон", "uron_rgb_ru")..".\n"
 			.."\n"
 			.."При использовании способности {talent_name:%s} с {charge_two:%s} и более зарядами, у стрелков в радиусе {far_range:%s} метров выходит из строя оружие на {malfunction_duration:%s} секунд.\n"
@@ -363,7 +363,7 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_discharge_two_charge_bonus_desc"] = { -- talent_name: Fury of the Faithful, charges: 2
 		en = "When using {talent_name:%s} at {charge:%s} charge or above, gain for {duration:%s} seconds:\n"
 			..Dot_green.." {attack_speed:%s} Attack Speed.",
-		["zh-tw"] = "以 {charge:%s} 層或以上充能使用 {talent_name:%s} 時，獲得以下效果 {duration:%s} 秒：\n"
+		["zh-tw"] = "以 {charge:%s} 層或以上充能使用 {talent_name:%s} 時，在 {duration:%s} 秒內獲得以下效果：\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度。",
 		ru = "При использовании способности {talent_name:%s} с {charge:%s} и более зарядами, вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {attack_speed:%s} к скорости атаки.",
@@ -386,7 +386,7 @@ local skitarii_localizations = {
 			.."\n"
 			.."The Attack is a Guaranteed "..CKWord("Critical Strike", "Crit_strike_rgb").." and has:\n"
 			..Dot_green.." {rending:%s} "..CKWord("Rending", "Rending_rgb")..".",
-		["zh-tw"] = "使用"..CKWord("弦爪", "Chordclaw_rgb_tw").."施展強力近戰重攻擊。\n"
+		["zh-tw"] = "使用"..CKWord("弦爪", "Chordclaw_rgb_tw").."施展強力重型近戰攻擊。\n"
 			.."\n"
 			.."此攻擊必定造成"..CKWord("致命一擊", "Crit_strike_rgb_tw").."，並具有：\n"
 			..Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."。",
@@ -476,12 +476,12 @@ local skitarii_localizations = {
 			.."啟用時會使一層充能的剩餘"..CKWord("冷卻", "Cd_rgb_tw").."增加 "..CNumb("25%", "pc_25_rgb").."（預設："..CNumb("12.5", "n_12_5_rgb").." 秒）。\n"
 			.."\n"
 			.."啟用期間獲得：\n"
-			..Dot_green.." {spread:%s} 擴散，\n"
+			..Dot_green.." {spread:%s} 散布，\n"
 			..Dot_green.." {recoil:%s} 後座力。\n"
 			.."但會消耗：\n"
 			..Dot_red.." 每秒 {capacitance_drain:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."，以及\n"
 			..Dot_red.." 每次射擊 {capacitance_shot:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。\n"
-			..Dot_green.." 換彈期間會暫停消耗。\n"
+			..Dot_green.." 裝填期間會暫停消耗。\n"
 			.."\n"
 			.."技能啟用期間，剩餘"..CKWord("冷卻", "Cd_rgb_tw").."增加：\n"
 			..Dot_red.." 每秒 "..CNumb("10%", "pc_10_rgb").."，\n"
