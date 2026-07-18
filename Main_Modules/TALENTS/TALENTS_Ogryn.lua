@@ -1058,7 +1058,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_bigger_coherency_radius_desc"] = { -- radius: +50%
 		en = Dot_green.." {radius:%s} "..CKWord("Coherency", "Coherency_rgb").." radius. Increases from "..CNumb("8", "n_8_rgb").." to "..CNumb("14", "n_14_rgb").." meters.",
 		ru = Dot_green.." {radius:%s} к радиусу "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Увеличивается с "..CNumb("8", "n_8_rgb").." до "..CNumb("14", "n_14_rgb").." метров.", -- Живая башня -- Величественное присутствие -- руоф Выдающееся присутствие
-		["zh-tw"] = Dot_green.." "..CKWord("協同", "Coherency_rgb_tw").."半徑增加 {radius:%s}，由 "..CNumb("8", "n_8_rgb").." 米提高至 "..CNumb("14", "n_14_rgb").." 米。",
+		["zh-tw"] = Dot_green.." "..CKWord("協同", "Coherency_rgb_tw").."半徑增加 {radius:%s}，由 "..CNumb("8", "n_8_rgb").." 公尺提高至 "..CNumb("14", "n_14_rgb").." 公尺。",
 		-- fr = "{radius:%s} de rayon de syntonie.",
 	},
 	--[+ Passive 8 - Soften Them Up +]--	26.03.2026
@@ -1186,7 +1186,7 @@ local ogryn_localizations = {
 		ru = "При успешной тяжёлой атаке ближнего боя вы получаете:\n"
 			..Dot_green.." {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- ru = "{melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя при успешной тяжёлой атаке ближнего боя. Длится {duration:%s} секунд.", -- Дай им отпор -- руоф Дай сдачи
-		["zh-tw"] = "成功重近戰攻擊後，你獲得：\n"
+		["zh-tw"] = "成功以重型近戰攻擊命中後，你獲得：\n"
 			..Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 		-- fr = "{melee_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée lors d'une attaque puissante de mélée réussie. Dure pendant {duration:%s} secondes.",
@@ -1233,7 +1233,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_increased_ammo_desc"] = { -- max_ammo: +25%
 		en = Dot_green.." {max_ammo:%s} to your Maximum Ammo reserve. Rounds down.",
 		ru = Dot_green.." {max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону.", -- Схрон патронов
-		["zh-tw"] = Dot_green.." 最大備用彈藥增加 {max_ammo:%s}，向下取整計算。",
+		["zh-tw"] = Dot_green.." 最大備用彈藥增加 {max_ammo:%s}，無條件捨去小數。",
 		-- fr = "Augmente votre réserve de munitions maximale de {max_ammo:%s}, arrondi à l'inférieur.",
 	},
 	--[+ Passive 19 - Big Boom +]--	26.03.2026
