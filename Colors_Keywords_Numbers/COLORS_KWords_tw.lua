@@ -61,8 +61,8 @@ local CONFIG = {
 		Crt_chnc_r = "爆擊率",
 		Crt_strk_dmg = "暴擊傷害",
 
-		Crit_Attk = "爆擊攻擊",
-		Crit_shots = "爆擊射擊",
+		Crit_Attk = "致命攻擊",
+		Crit_shots = "致命射擊",
 
 		Crit_dmg_r = "暴擊傷害",
 		Crt_dmg_r = "暴擊傷害",
