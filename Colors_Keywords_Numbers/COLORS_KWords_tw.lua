@@ -368,12 +368,12 @@ local CONFIG = {
 	dump_stat_text_colour = {
 		Mobility = "機動性",
 		Melee_dmg = "近戰傷害",
-		Warp_resist = "亞空間抗性",
+		Warp_resist = "反噬抗性",
 	},
 	dump_stat2_text_colour = {
 		Ammo = "彈藥",
 		Defences = "防禦",
-		Heat_mngt = "熱量管理",
+		Heat_mngt = "熱能管理",
 	},
 	dump_stat3_text_colour = {
 		DamageDS = "傷害",
@@ -417,10 +417,10 @@ local function create_phrs_tw(colors_tw)
 	end
 
 	return {
-		Can_appl_thr_shlds = Dot_green .. " 可穿透護盾施加。",
-		Can_appl_thr_shldsb = Dot_green .. " 可穿透堡壘盾牌施加。",
+		Can_appl_thr_shlds = Dot_green .. " 可穿透護盾施加此效果。",
+		Can_appl_thr_shldsb = Dot_green .. " 可穿透堡壘盾牌施加此效果。",
 		Can_be_refr = Dot_green .. " 可於啟用期間刷新。",
-		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐一減少。",
+		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐層消退。",
 		Can_gen_mult = Dot_green .. " 每次揮擊可產生多層。\n",
 		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時，每次揮擊可觸發多次。\n",
 		Can_proc_mult_str = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時可觸發多次。\n",
