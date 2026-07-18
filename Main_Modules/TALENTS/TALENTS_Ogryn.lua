@@ -813,7 +813,7 @@ local ogryn_localizations = {
 			..Dot_green.." 同時產生一次不造成"..CKWord("傷害", "Damage_rgb_tw").." 但使周圍敵人"..CKWord("踉蹌", "Staggers_rgb_tw").." 的爆炸。\n"
 			.."\n"
 			.."爆炸：\n"
-			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 米。\n"
+			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 公尺。\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，\n"
 			.."（變種人、巨獸及連長/雙子除外）。",
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
