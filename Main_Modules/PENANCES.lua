@@ -472,7 +472,7 @@ local penances_localizations = {
 			ru = "Убейте "..CNumb("{target}", "target_rgb").." элитных врагов или специалистов с помощью "..CKWord("критических", "kritickih_rgb_ru").." попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru")..", пока действует ключевой талант "..CKWord("Специалист по оружию", "weapspec_rgb_ru")..".\n"
 			..CNote("Weaksp_note"),
 			["zh-tw"] = "在 "..CKWord("武器專家", "weapspec_rgb_tw").." 基石啟用時，\n"
-				.."以 "..CKWord("暴擊", "Critical_rgb_tw").." "..CKWord("弱點命中", "Weakspothits_rgb_tw").."\n"
+				.."以 "..CKWord("致命一擊", "Critical_rgb_tw").."並"..CKWord("命中弱點", "Weakspothits_rgb_tw").."\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名專家或精英。\n"
 			..CNote("Weaksp_note"),
 		},
