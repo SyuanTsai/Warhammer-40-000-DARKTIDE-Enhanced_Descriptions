@@ -996,7 +996,7 @@ local penances_localizations = {
 	--[+ Unleash the Warp - Высвободи варп +]-- руоф Извергни варп
 	["loc_achievement_psyker_2_medium_2_name"] = {
 		ru = "Высвободи варп",
-		["zh-tw"] = "亞空間釋放",
+		["zh-tw"] = "釋放亞空間之力",
 	},
 		--[+ On Malice Threat or higher, kill 2500 enemies with Warp attacks. +]-- руоф При угрозе «Злоба» или выше убейте врагов (2500) варп-атаками.
 		["loc_achievement_psyker_2_medium_2_description"] = {
