@@ -1055,11 +1055,11 @@ local scum_localizations = {
 			..Dot_green.." {default:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			.."近戰"..CKWord("致命一擊", "Crit_strikes_rgb_tw")
-			.."與"..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
+			.."與"..CKWord("命中弱點", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {weakspot:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("致命", "Critical_rgb_tw").." "
-			..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
+			..CKWord("致命一擊", "Critical_rgb_tw")
+			..CKWord("命中弱點", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {critical:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			..Dot_red.." 每次近戰攻擊只觸發一次，"
@@ -1086,7 +1086,7 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
 		["zh-tw"] = "裝填期間與裝填完成後 {duration:%s} 秒，獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} "
-			..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 6 - Burst of Energy +]--	26.03.2026
 	["loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc"] = { -- duration: 6, toughness: +50%, cooldown: 10, +colors
@@ -1130,12 +1130,12 @@ local scum_localizations = {
 			.."\n"
 			.."腰射或架槍射擊時，獲得：\n"
 			..Dot_green.." {recoil:%s} 後座力，並\n"
-			..Dot_green.." {spread:%s} 擴散。\n"
+			..Dot_green.." {spread:%s} 散布。\n"
 			.."\n"
 			..Dot_nc.." 可架槍武器：自動手槍、架勢自動槍、"
 			.."雙持自動手槍與雙持短管手槍。\n"
 			.."\n"
-			..Dot_nc.." 切換速度會縮短切換物品欄位時的取出動作\n"
+			..Dot_nc.." 切換速度會縮短切換物品欄位時的持用動作\n"
 			.."   （武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。",
 	},
 	--[+ Passive 8 - A Tertium Welcome +]--	26.03.2026
