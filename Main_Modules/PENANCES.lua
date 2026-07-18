@@ -1289,7 +1289,7 @@ local penances_localizations = {
 	--[+ Beat-em-Up (2) +]-- руоф Всех порву/Бей их всех (2) -- 揍扁他們 (2)
 	["loc_achievement_missions_ogryn_2_objective_2_name"] = {
 		ru = "Месилово (2)",
-		["zh-tw"] = "揍扁他們 (2)",
+		["zh-tw"] = "揍扁他們（2）",
 	},
 		--[+ As a Ogryn, complete a Mission of each type on Malice Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа при угрозе «Злоба» или выше.
 		["loc_achievement_missions_ogryn_2_objective_2_description"] = {
@@ -1302,7 +1302,7 @@ local penances_localizations = {
 	--[+ Beat-em-Up (3) +]-- руоф Всех порву/Бей их всех (3) -- 揍扁他們 (3)
 	["loc_achievement_missions_ogryn_2_objective_3_name"] = {
 		ru = "Месилово (3)",
-		["zh-tw"] = "揍扁他們 (3)",
+		["zh-tw"] = "揍扁他們（3）",
 	},
 		--[+ As a Ogryn, complete a Mission of each type on Heresy Threat or higher. +]-- руоф Выполнить Огрином по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_ogryn_2_objective_3_description"] = {
@@ -1363,24 +1363,24 @@ local penances_localizations = {
 			en = "On "..CKWord("Heresy", "heresy_rgb").." Threat or higher, complete "..CNumb("{target}", "target_rgb").." full Missions without any Allies being Knocked Down or Incapacitated for longer than "..CNumb("{time}", "time_rgb").." seconds, and without any Allies dying.",
 			ru = "На сложности "..CKWord("Ересь", "heresy_rgb_ru").." или выше, завершите полностью "..CNumb("{target}", "target_rgb").." миссии так, чтобы никто из союзников не был выведен из строя или сбит с ног более "..CNumb("{time}", "time_rgb").." секунд и чтобы никто из союзников не был убит.",
 			["zh-tw"] = "在『"..CKWord("異端", "heresy_rgb_tw").."』或更高威脅等級中，\n"
-				.."完整完成 "..CNumb("{target}", "target_rgb").." 場任務，\n"
+				.."完成 "..CNumb("{target}", "target_rgb").." 場完整任務，\n"
 				.."且期間沒有任何隊友陣亡，\n"
 				.."也沒有任何隊友被擊倒或失去行動能力超過 "..CNumb("{time}", "time_rgb").." 秒。",
 		},
 	--[+ Bone 'ead (1) +]-- руоф Костяная башка (1)
 	["loc_achievement_group_class_ogryn_2_1_name"] = {
 		ru = "Башковитый (1)",
-		["zh-tw"] = "骨頭骨腦 (1)",
+		["zh-tw"] = "骨頭骨腦（1）",
 	},
 	--[+ Bone 'ead (2) +]-- руоф Костяная башка (2)
 	["loc_achievement_group_class_ogryn_2_2_name"] = {
 		ru = "Башковитый (2)",
-		["zh-tw"] = "骨頭骨腦 (2)",
+		["zh-tw"] = "骨頭骨腦（2）",
 	},
 	--[+ Bone 'ead (3) +]-- руоф Костяная башка (3)
 	["loc_achievement_group_class_ogryn_2_3_name"] = {
 		ru = "Башковитый (3)",
-		["zh-tw"] = "骨頭骨腦 (3)",
+		["zh-tw"] = "骨頭骨腦（3）",
 	},
 		--[+ Complete the following Penances as the Ogryn. +]-- руоф Выполните следующие искупления за Огрина.
 		["loc_achievement_group_class_ogryn_2_description"] = {
