@@ -2076,7 +2076,7 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 2 - Bombs Away! +]-- ruof Кидаю бомбу!
 		["loc_talent_bonebreaker_grenade_super_armor_explosion"] = {
 			ru = "Бросай бомбы!",
-			["zh-tw"] = "投彈完畢!",
+			["zh-tw"] = "投彈完畢！",
 		},
 		--[+ BLITZ 3 - Frag Bomb +]-- ruof Осколочная бомба
 		["loc_ability_ogryn_grenade_demolition"] = {
@@ -2096,7 +2096,7 @@ local names_talents_blessings_templates = {
 		--[+ AURA 2 - Stay Close! +]-- ruof Не расходимся!
 		["loc_talent_ogryn_toughness_regen_aura"] = {
 			ru = "Держись рядом!",
-			["zh-tw"] = "跟緊我!",
+			["zh-tw"] = "跟緊我！",
 		},
 		--[+ AURA 3 - Coward Culling +]-- ruof Трусливые отбросы
 		["loc_talent_ogryn_damage_vs_suppressed"] = {
