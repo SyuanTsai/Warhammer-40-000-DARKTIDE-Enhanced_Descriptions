@@ -455,7 +455,7 @@ local ogryn_localizations = {
 			.."Эффект повторяется через {first_pulse:%s} и через {second_pulse:%s} секунд.\n"
 			.."\n"
 			.."Восстанавливается: {cooldown:%s} секунд.", -- Верный защитник
-		["zh-tw"] = CKWord("嘲諷", "Taunt_rgb_tw").." {radius:%s} 米範圍內的敵人，\n"
+		["zh-tw"] = CKWord("嘲諷", "Taunt_rgb_tw").." {radius:%s} 公尺範圍內的敵人，\n"
 			.."使其只攻擊你 {duration:%s} 秒。\n"
 			.."效果分別在 {first_pulse:%s} 秒後和 {second_pulse:%s} 秒後重複。\n"
 			.."\n"
@@ -475,7 +475,7 @@ local ogryn_localizations = {
 		["zh-tw"] = "被 {talent_name:%s} 影響的敵人，在 "..CNumb("15", "n_15_rgb").." 秒內受到減益：\n"
 			..Dot_green.." 受到來自所有來源的 {base_damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 透過"..CKWord("渴求關注", "Att_Seeker_rgb_tw")..CKWord("嘲諷", "Taunt_rgb_tw").."的敵人不受此減益影響。",
+			..Dot_red.." 受到"..CKWord("渴求關注", "Att_Seeker_rgb_tw")..CKWord("嘲諷", "Taunt_rgb_tw").."的敵人不受此減益影響。",
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." provenant de toutes les sources pour les ennemis affectés par {talent_name:%s} pendant "..CNumb("15", "n_15_rgb").." secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_1_rgb_fr,
 	},
 	--[+ ABILITY 2-2 - No Pain! +]--	26.03.2026
@@ -571,11 +571,11 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
-			.."近距離"..CKWord("傷害", "Damage_rgb_tw").."加成在 "..CNumb("12.5", "n_12_5_rgb").." 米內最大，\n"
-			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 米時失效：\n"
+			.."近距離"..CKWord("傷害", "Damage_rgb_tw").."加成在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內最大，\n"
+			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 公尺時失效：\n"
 			.."_______________________________\n"
-			.."距離("..CNumb("m", "n_meter_rgb").."): "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			.."距離（"..CNumb("公尺", "n_meter_rgb").."）："..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("15", "n_15_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." | "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n",
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 	},
@@ -710,8 +710,8 @@ local ogryn_localizations = {
 			.."將歐格林近戰擊殺時獲得的基礎最大"..CKWord("韌性", "Toughness_rgb_tw").." "
 			..CNumb("5%", "pc_5_rgb").."，每層提高 {melee_toughness:%s}：\n"
 			.."_______________________________\n"
-			.."層數: "..CNumb("0", "n_0_rgb").."| "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."| "..CNumb("7", "n_7_rgb").."| "..CNumb("8", "n_8_rgb").."\n"
-			..CKWord("韌性", "Toughness_rgb_tw")..": "..CNumb("5", "n_5_rgb").."| "..CNumb("5.8", "n_5_8_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.3", "n_7_3_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("8.8", "n_8_8_rgb").."| "..CNumb("9.5", "n_9_5_rgb").."| "..CNumb("10.3", "n_10_3_rgb").."| "..CNumb("11", "n_11_rgb").."\n"
+			.."層數："..CNumb("0", "n_0_rgb").." | "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("5", "n_5_rgb").." | "..CNumb("6", "n_6_rgb").." | "..CNumb("7", "n_7_rgb").." | "..CNumb("8", "n_8_rgb").."\n"
+			..CKWord("韌性", "Toughness_rgb_tw").."："..CNumb("5", "n_5_rgb").." | "..CNumb("5.8", "n_5_8_rgb").." | "..CNumb("6.5", "n_6_5_rgb").." | "..CNumb("7.3", "n_7_3_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("8.8", "n_8_8_rgb").." | "..CNumb("9.5", "n_9_5_rgb").." | "..CNumb("10.3", "n_10_3_rgb").." | "..CNumb("11", "n_11_rgb").."\n"
 			.."_______________________________\n"
 			.."* 四捨五入供參考。\n",
 		-- fr = "{melee_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée par les éliminations en mêlée par cumuls de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_3_rgb_fr, -- Instoppable
