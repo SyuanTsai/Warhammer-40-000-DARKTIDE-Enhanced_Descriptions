@@ -443,9 +443,9 @@ local function create_phrs_tw(colors_tw)
 		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加此效果。",
 		Cant_be_refr = Dot_red .. " 無法於啟用期間刷新。",
 		Cant_Crit = Dot_red .. " 無法造成" .. CKWord("致命一擊", "Crit_rgb_tw") .. "。\n",
-		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Carap_cant_cleave = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Dont_intw_coher_toughn = Dot_red .. " 不會與" .. CKWord("協同", "Coherency_rgb_tw") .. CKWord("韌性", "Toughness_rgb_tw") .. "回復互動。",
+		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法遭到" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Carap_cant_cleave = Dot_red .. " 甲殼護甲預設無法遭到" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Dont_intw_coher_toughn = Dot_red .. " 不會影響" .. CKWord("協同", "Coherency_rgb_tw") .. "中的" .. CKWord("韌性", "Toughness_rgb_tw") .. "恢復。",
 	}
 end
 
