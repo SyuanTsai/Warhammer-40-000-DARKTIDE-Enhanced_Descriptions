@@ -144,9 +144,9 @@ local ogryn_localizations = {
 		-- fr = "Lancer une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." de taille Ogryn (la seule taille appropriée !) avec un rayon d'explosion de {radius:%s} mètres, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." accrus au centre."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_2_rgb_fr,
 		["zh-tw"] = "投擲一枚歐格林尺寸的"..CKWord("破片手雷", "Frag_gren_rgb_tw").."。\n"
 			..Dot_nc.." 引信時間："..CNumb("2", "n_2_rgb").." 秒。\n"
-			..Dot_nc.." 爆炸半徑：{radius:%s} 米。\n"
+			..Dot_nc.." 爆炸半徑：{radius:%s} 公尺。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."-"..CNumb("1250", "n_1250_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."～"..CNumb("1250", "n_1250_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
 			.."（含巨獸、連長/雙子，後者僅在無虛空護盾時有效）。\n"
@@ -340,7 +340,7 @@ local ogryn_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			.."衝刺：\n"
-			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 米。\n"
+			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 公尺。\n"
 			..Dot_red.." 遇到甲殼或不屈基礎護甲類型的敵人、巨獸，\n"
 			.."或連長/雙子的虛空護盾時停止。",
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
@@ -384,7 +384,7 @@ local ogryn_localizations = {
 			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			.."衝刺：\n"
-			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 米。\n"
+			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 公尺。\n"
 			..Dot_nc.." 可向後輸入取消。\n"
 			..Dot_nc.." 衝刺期間可稍微改變方向。\n"
 			..Dot_nc.." 可穿透連長/雙子的虛空護盾，\n"
