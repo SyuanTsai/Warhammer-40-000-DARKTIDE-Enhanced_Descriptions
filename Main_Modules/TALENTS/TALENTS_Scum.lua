@@ -843,7 +843,7 @@ local scum_localizations = {
 			..Dot_red.." Обычные попадания в ближнем бою не дают зарядов.\n"
 			.."\n"
 			..Dot_green.." Попадания в ближнем бою не по "..CKWord("уязвимым местам", "ujazvimym_mestam_rgb_ru")..", но "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..", всё ещё дают {stacks:%s} заряда.",
-		["zh-tw"] = CKWord("弱點命中", "Weakspothits_rgb_tw").."現在給予：\n"
+		["zh-tw"] = CKWord("命中弱點", "Weakspothits_rgb_tw").."現在給予：\n"
 			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("3", "n_3_rgb").." 層。\n"
 			.."\n"
 			..Dot_red.." 一般近戰命中不再給予層數。\n"
@@ -873,17 +873,17 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." дополнительный заряд, в дополнение к другим зарядам "..CKWord("Адреналина", "Adren_rgb_ru").." за каждого убитого врага.\n"
 			.."\n"
 			..Dot_red.." Не смертельные удары не дают ничего.",
-		["zh-tw"] = "擊殺打擊現在給予：\n"
+		["zh-tw"] = "造成擊殺的攻擊現在給予：\n"
 			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("5", "n_5_rgb").." 層。\n"
 			.."\n"
-			.."精英擊殺打擊給予：\n"
+			.."擊殺精英的攻擊給予：\n"
 			..Dot_green.." 額外 "..CNumb("+", "n_plus_rgb")..CNumb("14", "n_14_rgb").." 層。\n"
 			.."提高至 "..CNumb("15", "n_15_rgb").." 層。\n"
 			.."\n"
 			.."如果攻擊是"..CKWord("致命", "Critical_rgb_tw").."，每擊殺一名敵人額外產生：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 非擊殺打擊不給予層數。",
+			..Dot_red.." 未造成擊殺的攻擊不給予層數。",
 	},
 	--[+ KEYSTONE 2-3 - Stoked Rage +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_3_desc"] = { -- frenzy: Adrenaline Frenzy, duration: 20, +colors
@@ -949,7 +949,7 @@ local scum_localizations = {
 		["zh-tw"] = "使用興奮劑恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Maxed Out Chems +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_3_desc"] = { -- : , +colors
@@ -1016,11 +1016,11 @@ local scum_localizations = {
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
-		["zh-tw"] = "成功閃避後，獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "成功閃避後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." 對 "..CNumb("12.5", "n_12_5_rgb").." 公尺內目標造成 {damage_near:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."_______________________________\n"
-			.."距離 ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
+			.."距離（"..CNumb("公尺", "n_meter_rgb").."）："..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("15", "n_15_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." | "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			.."成功閃避下列攻擊時觸發：\n"
