@@ -503,7 +503,7 @@ local menus_templates = {
 	["loc_stats_display_mobility_stat"] = { -- Mobility
 		en = CKWord("Mobility", "Mobility_rgb"),
 		ru = CKWord("Мобильность", "Mobility_rgb_ru"),
-		["zh-tw"] = CKWord("移動性", "Mobility_rgb_tw"),
+		["zh-tw"] = CKWord("機動性", "Mobility_rgb_tw"),
 	},
 	["loc_glossary_term_melee_damage"] = { -- Melee Damage -- Ogryn's Grenadier Gauntlet
 		en = CKWord("Melee Damage", "Melee_dmg_rgb"),
@@ -590,19 +590,19 @@ local menus_templates = {
 	["loc_wait_reason_dedicated_server"] = {
 		-- en = ,
 		ru = "Выдаём рекаф и брикеты", -- Выделенный сервер
-		["zh-tw"] = "正在連接專用伺服器...",
+		["zh-tw"] = "正在連接專用伺服器……",
 	},
 	--[+ Waiting for other player(s) +]--
 	["loc_wait_reason_other_player"] = {
 		-- en = ,
 		ru = "Шлёпаем уборщицу за вырванные кабели...", -- Ожидание других игроков -- Добавление других оперативников к сеансу связи...
-		["zh-tw"] = "正在等待其他玩家加入...",
+		["zh-tw"] = "正在等待其他玩家加入……",
 	},
 	--[+ Communicating with Fatshark backend +]--
 	["loc_wait_reason_backend"] = {
 		-- en = ,
 		ru = "Пытаемся сшить связь, потому что она порвалась...", -- Взаимодействие с бэкэндом Fatshark
-		["zh-tw"] = "正在與 Fatshark 後端通訊...",
+		["zh-tw"] = "正在與 Fatshark 後端通訊……",
 	},
 	--[+ Store +]--
 	["loc_wait_reason_store"] = {
