@@ -608,25 +608,25 @@ local menus_templates = {
 	["loc_wait_reason_store"] = {
 		-- en = ,
 		ru = "Попытка установить обновление магазина чаще, чем раз в две недели... Критический провал!", -- Магазин
-		["zh-tw"] = "正在更新商店...",
+		["zh-tw"] = "正在更新商店……",
 	},
 	--[+ Platform Steam - Платформа Steam +]--
 	["loc_wait_reason_platform_steam"] = {
 		-- en = ,
 		-- ru = "Подключение к Steam",
-		["zh-tw"] = "正在連接 Steam...",
+		["zh-tw"] = "正在連接 Steam……",
 	},
 	--[+ Platform Xbox +]--
 	["loc_wait_reason_platform_xbox_live"] = {
 		-- en = ,
 		-- ru = "Подключение к Коробокс", -- Платформа Xbox
-		["zh-tw"] = "正在連接 Xbox...",
+		["zh-tw"] = "正在連接 Xbox……",
 	},
 	--[+ Platform PSN +]--
 	["loc_wait_reason_platform_psn"] = {
 		-- en = ,
 		-- ru = "Подключение к ПэЭсЭн", -- Платформа PSN
-		["zh-tw"] = "正在連接 PSN...",
+		["zh-tw"] = "正在連接 PSN……",
 	},
 }
 
