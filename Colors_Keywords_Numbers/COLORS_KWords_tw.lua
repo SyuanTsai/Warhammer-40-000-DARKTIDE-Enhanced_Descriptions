@@ -204,7 +204,7 @@ local CONFIG = {
 	focust_text_colour = {
 		Focus_Target = "鎖定目標",
 		Markedenemy = "標記敵人", -- Psyker
-		VultsMark = "禿鷹標記", -- Hive Scum
+		VultsMark = "兀鷲印記", -- Hive Scum
 	},
 	meleespec_text_colour = {
 		Meleespec = "近戰專家",
