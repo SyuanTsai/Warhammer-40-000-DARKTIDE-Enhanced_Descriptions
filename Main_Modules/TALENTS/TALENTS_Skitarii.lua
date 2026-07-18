@@ -829,7 +829,7 @@ local skitarii_localizations = {
 				.."\n"
 				.."每層提供：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				.."受到傷害時移除：\n"
 				..Dot_red.." {removed_stacks:%s} 層。\n"
@@ -891,7 +891,7 @@ local skitarii_localizations = {
 		en = "When an Enemy hits you with a Melee Attack, they and Enemies within {range:%s} meters are "..CKWord("Electrocuted", "Electrocuted_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
-			["zh-tw"] = "敵人以近戰攻擊命中你時，該敵人及 {range:%s} 米內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").."。\n"
+			["zh-tw"] = "敵人以近戰攻擊命中你時，該敵人及 {range:%s} 公尺內的敵人會被"..CKWord("電擊", "Electrocuted_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 冷卻時間：{cooldown:%s} 秒。",
 			ru = "Когда враг попадает по вам атакой ближнего боя, он и враги в радиусе {range:%s} метров поражаются "..CKWord("электрошоком", "elektroshokom_rgb_ru")..".\n"
@@ -953,7 +953,7 @@ local skitarii_localizations = {
 			..Dot_nc.." "..CKWord("Chem Toxin", "Chem_Tox_rgb")..".\n"
 			.."\n"
 			..Dot_nc.." Triggers on both Melee and Ranged attacks.",
-			["zh-tw"] = "命中受下列任一效果影響的敵人時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "命中受下列任一效果影響的敵人時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 				.."\n"
 				.."效果：\n"
@@ -981,7 +981,7 @@ local skitarii_localizations = {
 		en = "Pushing an Enemy applies "..CKWord("Electrocution", "Electrocution_rgb")..", dealing "..CKWord("Damage", "Damage_rgb").." and "..CKWord("Stunning", "Stunning_rgb").." them.\n"
 			.."\n"
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
-			["zh-tw"] = "推開敵人時會施加"..CKWord("電擊", "Electrocution_rgb_tw").."，造成"..CKWord("傷害", "Damage_rgb_tw").."並使其"..CKWord("眩暈", "Stunning_rgb_tw").."。\n"
+			["zh-tw"] = "推擊敵人時會施加"..CKWord("電擊", "Electrocution_rgb_tw").."，造成"..CKWord("傷害", "Damage_rgb_tw").."並使其"..CKWord("眩暈", "Stunning_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 冷卻時間：{cooldown:%s} 秒。",
 			ru = "Отталкивание врагов накладывает на них "..CKWord("электрошок", "elektroshok_rgb_ru")..", наносит "..CKWord("урон", "uron_rgb_ru").." и "..CKWord("оглушает", "oglushaet_rgb_ru").." их.\n"
@@ -1004,7 +1004,7 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_pushing_grants_cleave_alt_desc"] = { -- damage: +20%, &->and, +colors
 		en = "On Pushing an Enemy, you gain for {duration:%s} seconds:\n"
 			..Dot_green.." {cleave:%s} Melee "..CKWord("Cleave", "Cleave_rgb")..".",
-			["zh-tw"] = "推開敵人時，獲得以下效果 {duration:%s} 秒：\n"
+			["zh-tw"] = "推擊敵人時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {cleave:%s} 近戰"..CKWord("順劈攻擊", "Cleave_rgb_tw").."。",
 			ru = "При отталкивании врага вы получаете на {duration:%s} секунд:\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru").." врагов в ближнем бою.",
