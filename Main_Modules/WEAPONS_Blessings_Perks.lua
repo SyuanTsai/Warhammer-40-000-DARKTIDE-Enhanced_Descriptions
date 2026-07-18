@@ -2610,8 +2610,8 @@ local weapon_localizations = {
 				..CNumb("{value:%s}", "value_var_rgb").." снаряда вылетает при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..". "
 				..Dot_red.." У Электрокинетических посохов и посохов Травмы "..CNumb("{value:%s}", "value_var_rgb").." снаряд появляется только от основных атак.", -- Всплеск
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." à distance.\n"..CNumb("{value:%s}", "value_var_rgb").." tirs lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." de l'attaque principale.",
-			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
-				..CKWord("暴擊命中", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
+			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
+				..CKWord("致命一擊", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
 				..Dot_red.." 對電動力法杖與虛空爆裂法杖，額外投射物只能由主要攻擊產生。",
 			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n主要攻击"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时，发射 "..CNumb("{value:%s}", "value_var_rgb").." 枚射弹。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Fernkampf-"..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de")..".\n"..CNumb("{value:%s}", "value_var_rgb").." Schüsse bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." des Primärangriffs.",
@@ -2633,8 +2633,8 @@ local weapon_localizations = {
 				..CNumb("{value:%s}", "value_var_rgb").." снаряда вылетает при "..CKWord("критическом выстреле", "krit_vystrele_rgb_ru")..". "
 				..Dot_red.." У Электрокинетических посохов и посохов Травмы "..CNumb("{value:%s}", "value_var_rgb").." снаряд появляется только от основных атак.", -- Всплеск
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." à distance.\n"..CNumb("{value:%s}", "value_var_rgb").." tirs lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." de l'attaque principale.",
-			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
-				..CKWord("暴擊命中", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
+			["zh-tw"] = "遠程 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
+				..CKWord("致命一擊", "Crit_hit_rgb_tw").."時發射 "..CNumb("{value:%s}", "value_var_rgb").." 發。 "
 				..Dot_red.." 對電動力法杖與虛空爆裂法杖，額外投射物只能由主要攻擊產生。",
 			["zh-cn"] = CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n主要攻击"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时，发射 "..CNumb("{value:%s}", "value_var_rgb").." 枚射弹。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." Fernkampf-"..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de")..".\n"..CNumb("{value:%s}", "value_var_rgb").." Schüsse bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." des Primärangriffs.",
@@ -2674,8 +2674,8 @@ local weapon_localizations = {
 			ru = CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." за каждые "..CNumb("20%", "pc_20_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..". "
 				..Dot_nc.." Суммируется до "..CNumb("4", "n_4_rgb").." раз, вплоть до "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при "..CNumb("80%", "pc_80_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..".", -- Связь с варпом
 			fr = "Obtenez entre "..CNumb("{crit_chance:%s}", "crit_var_rgb").." et "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." en fonction de votre niveau de "..CKWord("Péril", "Peril_rgb_fr").." actuel.",
-			["zh-tw"] = "每 "..CNumb("20%", "pc_20_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 獲得 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
-				..Dot_nc.." 最多堆疊 "..CNumb("4", "n_4_rgb").." 次；在 "..CNumb("80%", "pc_80_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 時最高 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。",
+			["zh-tw"] = "每 "..CNumb("20%", "pc_20_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 獲得 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
+				..Dot_nc.." 最多堆疊 "..CNumb("4", "n_4_rgb").." 次；在 "..CNumb("80%", "pc_80_rgb").." "..CKWord("反噬", "Peril_rgb_tw").." 時最高 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。",
 			["zh-cn"] = "随"..CKWord("危机值", "Peril_rgb_zh_cn").."增长叠加层数，\n每增长 "..CNumb("20%", "pc_20_rgb").."，"..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("4", "n_4_rgb").." 层，最高 "..CNumb("+", "n_plus_rgb")..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").."。",
 			de = "Erhöht die "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." um "..CNumb("{crit_chance:%s}", "crit_var_rgb").." bis "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." abhängig vom aktuellen "..CKWord("Gefahr", "Peril_rgb_de").."-Level.",
 			it = "Ottieni tra "..CNumb("{crit_chance:%s}", "crit_var_rgb").." e "..CNumb("{crit_chance_max:%s}", "critchmax_var_rgb").." di "..CKWord("Probabilità di critico", "Crit_chance_rgb_it").." in base al tuo livello di "..CKWord("Pericolo", "Peril_rgb_it").." attuale.",
@@ -2755,7 +2755,7 @@ local weapon_localizations = {
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." заряда "..CKWord("горения души", "gorenia_dushi_rgb_ru").." получает враг при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..". "
 				..CPhrs("Refr_dur_stappl"), --  Вплоть до 6 зарядов. -- Пылающий дух
 			fr = "L'ennemi gagne "..CNumb("{stacks:%s}", "stacks_var_rgb").." cumuls de "..CKWord("Embrasement d'âme", "Soulblaze_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr")..".",
-			["zh-tw"] = CKWord("暴擊命中", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。 "
+			["zh-tw"] = CKWord("致命一擊", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。 "
 				..CPhrs("Refr_dur_stappl"),
 			["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时, 对敌人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层 "..CKWord("灵魂之火", "Soulblaze_rgb_zh_cn").."。",
 			de = "Der Gegner erhält bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." "..CNumb("{stacks:%s}", "stacks_var_rgb").." Stapel "..CKWord("Seelenbrand", "Soulblaze_rgb_de")..".",
@@ -2814,7 +2814,7 @@ local weapon_localizations = {
 			ru = CNumb("{stacks:%s}", "stacks_var_rgb").." заряда "..CKWord("горения", "gorenia_rgb_ru").." применяется к врагу при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..", вплоть до "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." зарядов. "
 				..CPhrs("Refr_dur_stappl")..Dot_red.." Заряды "..CKWord("горения", "gorenia_rgb_ru").." не накладываются через щиты.",
 			fr = CNumb("{stacks:%s}", "stacks_var_rgb").." cumuls de "..CKWord("Brûlure", "Burn_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." jusqu'à un maximum de "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." cumuls.",
-			["zh-tw"] = CKWord("暴擊命中", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("燃燒", "Burn_rgb_tw").."，最多 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層。\n"
+			["zh-tw"] = CKWord("致命一擊", "Crit_hit_rgb_tw").."時，對敵人施加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層 "..CKWord("燃燒", "Burn_rgb_tw").."，最多 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 層。\n"
 				..CPhrs("Refr_dur_stappl")..Dot_red.." 無法透過盾牌施加"..CKWord("燃燒", "Burn_rgb_tw").."。",
 			["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层"..CKWord("燃烧", "Burn_rgb_zh_cn").."。最多叠加 "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." 层。",
 			de = CNumb("{stacks:%s}", "stacks_var_rgb").." Stapel "..CKWord("Verbrennung", "Burn_rgb_de").." bei einem "..CKWord("Kritischen Treffer", "Crit_hit_rgb_de").." bis zu einem Maximum von "..CNumb("{max_stacks:%s}", "maxstks_var_rgb").." Stapeln.",
@@ -2834,7 +2834,7 @@ local weapon_localizations = {
 			ru = CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").." от затрат боеприпасов на выстрел раз в "..CNumb("{time:%s}", "time_var_rgb").." секунды. "
 				..Dot_nc.." Модели "..CKWord("VII", "n_VII_rgb").." и "..CKWord("IX", "n_IX_rgb").." тратят "..CNumb("1", "n_1_rgb").." боеприпас за выстрел вместо "..CNumb("3", "n_3_rgb")..", а модель "..CKWord("IIB", "n_IIB_rgb").." - "..CNumb("1", "n_1_rgb").." вместо "..CNumb("2", "n_2_rgb")..".",
 			fr = CNumb("{ammo:%s}", "ammo_var_rgb").." de réduction des munitions dépensées lorsque vous ne tirez pas pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes.",
-			["zh-tw"] = "每 "..CNumb("{time:%s}", "time_var_rgb").." 秒，每次射擊彈藥消耗 "..CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").."。 "
+			["zh-tw"] = "每 "..CNumb("{time:%s}", "time_var_rgb").." 秒，使一次射擊的彈藥消耗 "..CNumb("-", "n_minus_rgb")..CNumb("66%", "pc_66_rgb").."。 "
 				..Dot_nc.." Mk "..CKWord("VII", "n_VII_rgb").." 與 Mk "..CKWord("IX", "n_IX_rgb").." 每次射擊消耗 "..CNumb("1", "n_1_rgb").." 彈藥而非 "..CNumb("3", "n_3_rgb").."；Mk "..CKWord("IIB", "n_IIB_rgb").." 消耗 "..CNumb("1", "n_1_rgb").." 而非 "..CNumb("2", "n_2_rgb").."。",
 			["zh-cn"] = "下次射击 "..CNumb("-", "n_minus_rgb")..CNumb("{ammo:%s}", "ammo_var_rgb").." 弹药消耗，\n冷却时间 "..CNumb("{time:%s}", "time_var_rgb").." 秒。",
 			de = CNumb("{ammo:%s}", "ammo_var_rgb").." weniger Munitionsverbrauch, wenn "..CNumb("{time:%s}", "time_var_rgb").." Sek. nicht geschossen wurde.",
@@ -2854,7 +2854,7 @@ local weapon_localizations = {
 			ru = CNumb("{crit_chance:%s}", "crit_var_rgb").." к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." при серии попаданий в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." любой цели. "
 				..Dot_nc.." До "..CNumb("5", "n_5_rgb").." зарядов. "..Dot_red.." Не влияет на атаки ближнего боя.", -- Сосредоточенный огонь
 			fr = "Jusqu'à "..CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." lors d'un "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr").." répété à distance (toute cible). Jusqu'à "..CNumb("5", "n_5_rgb").." cumuls.",
-			["zh-tw"] = "連續遠程"..CKWord("命中弱點", "Weakspothit_rgb_tw").."任意目標時，獲得 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。 "
+			["zh-tw"] = "連續遠程"..CKWord("命中弱點", "Weakspothit_rgb_tw").."任意目標時，獲得 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。 "
 				..Dot_nc.." 最多 "..CNumb("5", "n_5_rgb").." 層。 "..Dot_red.." 不會強化近戰攻擊。",
 			["zh-cn"] = "连续"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." 远程"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."。\n最多叠加 "..CNumb("5", "n_5_rgb").." 层。",
 			de = "Bis zu "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." bei aufeinanderfolgenden Fernkampf-"..CKWord("Schwachstellentreffern", "Weakspothit_rgb_de").." (beliebiges Ziel). Bis zu "..CNumb("5", "n_5_rgb").." Stapel.",
