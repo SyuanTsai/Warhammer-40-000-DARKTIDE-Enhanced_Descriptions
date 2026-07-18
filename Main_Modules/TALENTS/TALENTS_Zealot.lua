@@ -549,10 +549,10 @@ local zealot_localizations = {
 			.."\n"
 			..CKWord("Критические удары", "Krit_udary_rgb_ru").." также засчитываются для активации "..CKWord("Ярости", "Fury_i_rgb_ru")..".",
 		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
-		["zh-tw"] = "{radius:%s} 米內有 {max_stacks:%s} 名敵人死亡時，進入"..CKWord("狂怒", "Fury_rgb_tw").." 並獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "{radius:%s} 公尺內有 {max_stacks:%s} 名敵人死亡時，進入"..CKWord("狂怒", "Fury_rgb_tw").." 並獲得 {duration:%s} 秒：\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("爆擊命中", "Crit_hits_rgb_tw").."也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
+			..CKWord("致命一擊", "Crit_hits_rgb_tw").."也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
 	},
 	--[+ KEYSTONE 1-1 - Infectious Zeal +]--	27.03.2026
 	["loc_talent_zealot_shared_fanatic_rage_new_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
@@ -597,7 +597,7 @@ local zealot_localizations = {
 	["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
 		en = Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
 		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udarah_rgb_ru").." в ближнем бою.", -- 
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("爆擊命中", "Crit_hits_rgb_tw").."時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度，持續 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度，持續 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 2 - Martyrdom +]--	27.03.2026
 	["loc_talent_zealot_martyrdom_desc"] = { -- damage: +10%, max_wounds: 5, +colors
