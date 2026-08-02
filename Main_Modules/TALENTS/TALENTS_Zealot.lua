@@ -147,7 +147,7 @@ local zealot_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
 		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." pour vous et les alliés en syntonie."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 {damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 {damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
 	},
@@ -162,7 +162,7 @@ local zealot_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
 		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de l'Aura de base - {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 {damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 {damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			..Dot_green.." 為基礎光環 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
@@ -427,7 +427,7 @@ local zealot_localizations = {
 			..CPhrs("Doesnt_Stack_Zea_abil"),
 		-- fr = "Après avoir canalisé {stacks:%s} pulsations, accorde {toughness:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." à vous et aux alliés en syntonie. Dure {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_1_rgb_fr,
 		["zh-tw"] = "引導 {stacks:%s} 次脈衝後，你和"..CKWord("協同", "Coherency_rgb_tw").." 盟友獲得：\n"
-			..Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_abil"),
@@ -590,7 +590,7 @@ local zealot_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			..CKWord("狂怒", "Fury_rgb_tw").." 啟用期間獲得：\n"
-			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." {toughness_small:%s} "..CKWord("韌性", "Toughness_rgb_tw").." /秒。",
 	},
 	--[+ KEYSTONE 1-4 - Invocation of Death +]--	27.03.2026
@@ -611,7 +611,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Stack of {talent_name:%s}.",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." за каждый заряд таланта {talent_name:%s}.", -- Я не паду -- руоф Я не отступлю
 		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." par "..CKWord("Blessure", "Wound_rgb_fr").." manquante."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_2_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 每層 {talent_name:%s} {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 每層 {talent_name:%s} {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 2-2 - On the Brink +]--	27.03.2026
 	["loc_talent_zealot_corruption_resistance_stacking_desc"] = { -- talent_name: Martyrdom, corruption_resistance: +10%, +colors
@@ -935,7 +935,7 @@ local zealot_localizations = {
 			.."\n"
 			.."你救助或復活的盟友 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {movement_speed:%s} 移動速度，並\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 23 - Good Balance +]--	27.03.2026
 	["loc_talent_reduced_damage_after_dodge_description"] = { -- damage: +25%, duration: 2.5, s->seconds, +colors
@@ -1031,7 +1031,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {time:%s} seconds on "..CKWord("Critical Hit", "Crit_hit_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." на {time:%s} секунды при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..".", -- Непоколебимая вера
 		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 31 - Punish Impiety +]--	27.03.2026
 	["loc_talent_zealot_push_attacks_attack_speed_desc"] = { -- attack_speed: +10%, duration: 5, s->seconds

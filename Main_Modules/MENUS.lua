@@ -96,7 +96,7 @@ local menus_templates = {
 		--[+ Kill Х enemy_type with weapon_type +]--
 		["loc_contracts_task_label_kill_minions"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
-			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",  -- 完成[x]場任務
+			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
 			["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
 			["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
 		},

@@ -396,7 +396,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_toughness_bonus_leaving_invisibility_desc"] = { -- talent_name: Infiltrate, tdr: +50%, duration: 10, s->seconds, +colors
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {duration:%s} seconds upon leaving "..CKWord("Stealth", "Stealth_rgb")..".",
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." на {duration:%s} секунд после выхода из "..CKWord("Скрытности", "Stealth_rgb_ru")..".", -- Упорство охотника
-		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，持續 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." 離開"..CKWord("隱身", "Stealth_rgb_tw").."後，獲得 {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，持續 {duration:%s} 秒。",
 	},
 	--[+ ABILITY 3-3 - Low Profile +]--	27.03.2026
 	["loc_talent_veteran_reduced_threat_after_stealth_desc"] = { -- threat_multiplier: -90%, duration: 10, s->seconds, +colors
@@ -686,7 +686,7 @@ local veteran_localizations = {
 			..CPhrs("Can_be_refr_drop_1"),
 		["zh-tw"] = "以遠程攻擊"..CKWord("弱點", "Weakspot_rgb_tw").."擊殺時獲得：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
-			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
@@ -808,7 +808,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_toughness_damage_reduction_per_ally_description"] = { -- toughness: +33%, +colors
 		en = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per Ally in "..CKWord("Coherency", "Coherency_rgb")..". Stacks up to {toughness:%s}.",
 		ru = Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru").." за каждого союзника в "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Суммируется до {toughness:%s}.", -- Строевая подготовка
-		["zh-tw"] = Dot_green.." 每有一名"..CKWord("協同", "Coherency_rgb_tw").."中的盟友，獲得 "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。最多 {toughness:%s}。",
+		["zh-tw"] = Dot_green.." 每有一名"..CKWord("協同", "Coherency_rgb_tw").."中的盟友，獲得 "..CNumb("+", "n_plus_rgb")..CNumb("11%", "pc_11_rgb").." "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。最多 {toughness:%s}。",
 	},
 	--[+ Passive 10 - Superiority Complex +]--	27.03.2026
 	["loc_talent_veteran_increase_damage_vs_elites_desc"] = { -- damage: +15%, +colors
@@ -820,7 +820,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_tdr_on_high_toughness_desc"] = { -- toughness_damage_reduction: +50%, toughness_percent: 75%, +colors
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." if above {toughness_percent:%s} "..CKWord("Toughness", "Toughness_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..", если ваш уровень "..CKWord("стойкости", "stoikosti_rgb_ru").." выше {toughness_percent:%s}.", -- Железная воля
-		["zh-tw"] = Dot_green.." "..CKWord("韌性", "Toughness_rgb_tw").."高於 {toughness_percent:%s} 時，獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." "..CKWord("韌性", "Toughness_rgb_tw").."高於 {toughness_percent:%s} 時，獲得 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 12 - Trench Fighter Drill +]--	27.03.2026
 	["loc_talent_veteran_attack_speed_description"] = { -- melee_attack_speed: +10%

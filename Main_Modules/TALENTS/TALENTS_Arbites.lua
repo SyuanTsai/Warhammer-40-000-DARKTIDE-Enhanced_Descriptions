@@ -124,7 +124,7 @@ local arbites_localizations = {
 		ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n"
 			.."\n"
 			.."Ваш кибермастиф учитывается как союзник под действием "..CKWord("сплочённости", "splochennosti_rgb_ru")..".", -- Часть отряда
-		["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
+		["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
 			.."對你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友生效。\n"
 			.."\n"
 			.."你的電子獒犬會計入隊伍"..CKWord("協同", "Coherency_rgb_tw").."。",
@@ -318,7 +318,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} к скорости оживления и\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} к скорости атаки.", -- Воодушевляющая проповедь -- руоф Вдохновляющая декламация
 		["zh-tw"] = "受影響的盟友還額外獲得：\n"
-			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{revive_speed:%s} 救援速度，\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{attack_speed:%s} 攻擊速度。",	},
 	--[+ ABILITY 2-2 - Fear of Justice +]--	26.03.2026
@@ -440,7 +440,7 @@ local arbites_localizations = {
 		["zh-tw"] = "你不再有電子獒犬陪同，但獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			.."閃擊技能：\n"
 			..Dot_green.." 最大充能：{charges:%s}。\n"
@@ -608,7 +608,7 @@ local arbites_localizations = {
 			.."切換至主武器時，消耗"..CKWord("近戰正義", "Meleejust_rgb_tw").."層數，\n"
 			.."在 {melee_duration:%s} 秒內獲得：\n"
 			..Dot_green.." {melee_strength:%s} 近戰"..CKWord("威力", "Strength_rgb_tw").."，\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 			.."\n"
 			.."近戰命中累積"..CKWord("遠程正義", "Rangedjust_rgb_tw").."層數。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
@@ -906,7 +906,7 @@ local arbites_localizations = {
 			..Dot_green.." "..CNumb("2%", "pc_2_rgb").." восстановления "..CKWord("стойкости", "stoikosti_rgb_ru").." в секунду, вплоть до {toughness:%s}.",
 		["zh-tw"] = "擊殺被撲倒的目標後，\n"
 			.."你與"..CKWord("協同", "Coherency_rgb_tw").."中的盟友在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."，\n"
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." 每秒恢復 "..CNumb("2%", "pc_2_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，最多 {toughness:%s}。",
 	},
 	--[+ Passive 17 - Imposing Force +]--	26.03.2026
@@ -937,7 +937,7 @@ local arbites_localizations = {
 			..Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "Toughness_dmg_red_u_rgb_ru")..".", -- Протоколы подавления
 		["zh-tw"] = "單次攻擊命中 {hits:%s} 名或更多敵人後，\n"
 			.."在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 20 - Plasteel Plates +]--	26.03.2026
 	["loc_talent_adamant_plasteel_plates_desc"] = { -- toughness: +25, +colors

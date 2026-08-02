@@ -132,7 +132,7 @@ local skitarii_localizations = {
 				.."\n"
 				.."注射會救起該隊友，並使其每秒獲得：\n"
 				..Dot_green.." {toughness_per_second:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				..Dot_nc.." 持續 {duration:%s} 秒。",
 			ru = "У вас есть дополнительный "..CKWord("сервочереп", "servocherep_rgb_ru").." со встроенными "..CKWord("адаптированными медике-шприцами", "AdMedSyringe_rgb_ru")..". Выберите целью сбитого с ног, связанного или опутанного сетью союзника, чтобы сделать ему инъекцию.\n"
 				.."\n"
@@ -654,7 +654,7 @@ local skitarii_localizations = {
 			..Dot_green.." {max_charges:%s} Max Ability Charges.",
 			["zh-tw"] = "消耗或獲得一層"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能時，在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {capacitance:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {max_stacks:%s} 層。\n"
 				..Dot_nc.." 層數會逐一衰減。\n"
@@ -729,7 +729,7 @@ local skitarii_localizations = {
 				.."\n"
 				..CKWord("超載", "Overload_rgb_tw").."會使你與"..CKWord("協同", "Coherency_rgb_tw").."範圍內的隊友在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 			ru = "Убийства совершённые вами или союзниками в "..CKWord("сплочённости", "splochennosti_rgb_ru").." дают:\n"
 			..Dot_nc.." {low_stack:%s} заряд таланта {talent_name:%s}.\n"
 			..Dot_nc.." {elite_stacks:%s} заряда вы получаете за убийство элитного врага или специалиста.\n"
@@ -784,7 +784,7 @@ local skitarii_localizations = {
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 				.."\n"
 				..CKWord("超載", "overloading_rgb_tw").." {second_threshold:%s} 次後獲得：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..CKWord("超載", "overloading_rgb_tw").." {third_threshold:%s} 次後獲得：\n"
 				..Dot_green.." {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."產生量。\n"
@@ -829,7 +829,7 @@ local skitarii_localizations = {
 				.."\n"
 				.."每層提供：\n"
 				..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，以及\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				.."受到傷害時移除：\n"
 				..Dot_red.." {removed_stacks:%s} 層。\n"
@@ -1200,9 +1200,9 @@ local skitarii_localizations = {
 		en = Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".\n"
 			.."\n"
 			..Dot_green.." {tdr_per_charge:%s} additional "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." per current "..CKWord("Combat Ability", "Cmbt_abil_rgb").." сharge.",
-			["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+			["zh-tw"] = Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
-				..Dot_green.." 每層現有"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，額外獲得 {tdr_per_charge:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+				..Dot_green.." 每層現有"..CKWord("戰鬥技能", "Cmbt_abil_rgb_tw").."充能，額外獲得 {tdr_per_charge:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 			ru = Dot_green.." {tdr:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {tdr_per_charge:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." дополнительно за каждый текущий заряд "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".",
@@ -1216,7 +1216,7 @@ local skitarii_localizations = {
 			["zh-tw"] = CKWord("致命一擊", "Crit_hits_rgb_tw").."時，恢復：\n"
 				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 				.."並在 {duration:%s} 秒內獲得以下效果：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 			ru = "При "..CKWord("критических ударах", "krit_udarah_rgb_ru").." вы восстанавливаете:\n"
 			..Dot_green.." {toughness:%s} "..CKWord("стойкости", "stoikosti_rgb_ru").."\n"
 			.."и получаете на {duration:%s} секунды:\n"
@@ -1243,7 +1243,7 @@ local skitarii_localizations = {
 			["zh-tw"] = "遠程擊殺會提供層數。\n"
 				.."\n"
 				.."每層會在 {duration:%s} 秒內提供以下效果：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。\n"
 				..Dot_nc.." 層數會逐一衰減。",
@@ -1419,7 +1419,7 @@ local skitarii_localizations = {
 			..Dot_nc.." Stacks {stacks:%s} times.\n"
 			..Dot_nc.." Max one Stack per Attack.",
 			["zh-tw"] = "命中時，在 {duration:%s} 秒內獲得以下效果：\n"
-				..Dot_green.." {tdr:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
+				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。\n"
 				.."\n"
 				..Dot_nc.." 最多 {stacks:%s} 層。\n"
 				..Dot_nc.." 每次攻擊最多獲得一層。",

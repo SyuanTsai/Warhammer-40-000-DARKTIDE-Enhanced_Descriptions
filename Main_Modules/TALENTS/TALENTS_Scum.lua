@@ -949,7 +949,7 @@ local scum_localizations = {
 		["zh-tw"] = "使用興奮劑恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Maxed Out Chems +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_3_desc"] = { -- : , +colors
@@ -1086,7 +1086,7 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
 		["zh-tw"] = "裝填期間與裝填完成後 {duration:%s} 秒，獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} "
-			..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+			..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 6 - Burst of Energy +]--	26.03.2026
 	["loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc"] = { -- duration: 6, toughness: +50%, cooldown: 10, +colors

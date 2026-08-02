@@ -35,7 +35,7 @@
 - Secondary Action - 次要攻擊(當使用在武器描述時Action翻譯成攻擊)
 - Heat Management - 熱能管理
 - Cloud Radius - 火焰範圍(Cloud意指火雲)
-
+- Mobility - 移動性
 
 
 ### 通用名詞
@@ -80,9 +80,9 @@
 
 ### 增益效果 (BUFFS)
 
-- Crit 
-  - 致命一擊(指已發生的攻擊結果、觸發事件或次數)
-  - 爆擊率(指機率屬性、百分比或觸發可能性)
+- Crit（不可固定翻譯，須依上下文判斷其代表「攻擊結果」或「機率屬性」）
+  - 致命一擊（用於已發生的攻擊結果、觸發事件，或致命一擊的次數；例如「致命一擊時」與「造成 3 次致命一擊」）
+  - 爆擊率（用於造成致命一擊的機率屬性或觸發可能性，通常搭配百分比、機率增減等數值）
 - Rending - 撕裂
 - Impact - 衝擊
 - Cleave - 順劈攻擊
@@ -118,6 +118,7 @@
 - Note - 備註
 - Talents - 天賦
 - Keystone - 鑰石
+- Keystone Modifier - 鑰石修改器
 - Weapon Perks - 武器專長
 - Auspex - 占卜儀
 - Aura - 光環
