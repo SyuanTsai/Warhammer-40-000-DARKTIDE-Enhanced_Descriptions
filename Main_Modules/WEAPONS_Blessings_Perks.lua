@@ -638,7 +638,7 @@ local weapon_localizations = {
 				..Dot_nc.." Даёт "..CNumb("1", "n_1_rgb").." заряд за удар. "..CPhrs("Can_be_refr")..CPhrs("Carap_cant_cleave"),
 			fr = CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("Transpercement", "Cleave_rgb_fr").." lors d'un coup pendant "..CNumb("3.5", "n_3_5_rgb").." secondes. Se Cumule "..CNumb("{stacks:%s}", "stacks_var_rgb").." fois.",
 			["zh-tw"] = "擊中敵人時獲得 "..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("順劈攻擊", "Cleave_rgb_tw").."，持續 "..CNumb("3.5", "n_3_5_rgb").." 秒。可疊加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。\n"
-				..Dot_nc.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr")..CPhrs("Carap_cant_cleave"),
+				..Dot_nc.." 每次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr")..CPhrs("Carap_cant_cleave"),
 			["zh-cn"] = "连锁攻击命中时 "..CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("劈裂值", "Cleave_rgb_zh_cn").."，\n持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。",
 			de = CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("Spaltwert", "Cleave_rgb_de").." bei Treffer für "..CNumb("3.5", "n_3_5_rgb").." Sekunden. Stapelt "..CNumb("{stacks:%s}", "stacks_var_rgb").." Mal.",
 			it = CNumb("{cleave:%s}", "cleave_var_rgb").." "..CKWord("Fendente", "Cleave_rgb_it").." a Colpo per "..CNumb("3.5", "n_3_5_rgb").." secondi. Cumulabile "..CNumb("{stacks:%s}", "stacks_var_rgb").." volte.",
@@ -659,7 +659,7 @@ local weapon_localizations = {
 				..CPhrs("Can_be_refr")..""..Dot_red.." Не влияет на оружие дальнего боя.", -- Кромсание
 			fr = CNumb("{crit_chance:%s}", "crit_var_rgb").." de "..CKWord("Taux de coup critique", "Crit_chance_rgb_fr").." lors d'un coup en chaîne pendant "..CNumb("3.5", "n_3_5_rgb").." secondes. Se Cumule "..CNumb("{stacks:%s}", "stacks_var_rgb").." fois.",
 			["zh-tw"] = "連續命中時獲得 "..CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，持續 "..CNumb("3.5", "n_3_5_rgb").." 秒。可疊加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。\n"
-				..Dot_nc.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr").."\n"
+				..Dot_nc.." 每次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr").."\n"
 				..Dot_red.." 遠程武器無法受益。",
 			["zh-cn"] = "连锁攻击命中时\n"..CNumb("{crit_chance:%s}", "crit_var_rgb").." 近战"..CKWord("暴击几率", "Crit_chance_rgb_zh_cn").."，持续 "..CNumb("3.5", "n_3_5_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。",
 			de = CNumb("{crit_chance:%s}", "crit_var_rgb").." "..CKWord("Kritische Trefferchance", "Crit_chance_rgb_de").." bei aufeinanderfolgenden Treffern für "..CNumb("3.5", "n_3_5_rgb").." Sek. Stapelt "..CNumb("{stacks:%s}", "stacks_var_rgb").." Mal.",
@@ -737,7 +737,7 @@ local weapon_localizations = {
 				..CPhrs("Can_be_refr").."\n"
 				..CNote("Pwr_note"),
 			fr = CNumb("{power_level:%s}", "pwrlvl_var_rgb").." de "..CKWord("Puissance", "Strength_rgb_fr").." en enchaînant continuellement plus de "..CNumb("2", "n_2_rgb").." attaques. Se Cumule "..CNumb("{stacks:%s}", "stacks_var_rgb").." fois."..CNote("Pwr_note"),
-			["zh-tw"] = "連續使出 "..CNumb("2", "n_2_rgb")..CNumb("+", "n_plus_rgb").." 次攻擊時，獲得 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("威力", "Strength_rgb_tw").."。可疊加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。\n"..Dot_nc.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr")..CNote("Pwr_note"),
+			["zh-tw"] = "連續使出 "..CNumb("2", "n_2_rgb")..CNumb("+", "n_plus_rgb").." 次攻擊時，獲得 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("威力", "Strength_rgb_tw").."。可疊加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。\n"..Dot_nc.." 每次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 層。"..CPhrs("Can_be_refr")..CNote("Pwr_note"),
 			["zh-cn"] = "连锁攻击命中 "..CNumb("2", "n_2_rgb").." 次时 "..CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("强度", "Strength_rgb_zh_cn").."。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。"..CNote("Pwr_note"),
 			de = CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("Stärke", "Strength_rgb_de").." beim Verketten von über "..CNumb("2", "n_2_rgb").." Angriffen. Stapelt "..CNumb("{stacks:%s}", "stacks_var_rgb").." Mal."..CNote("Pwr_note"),
 			it = CNumb("{power_level:%s}", "pwrlvl_var_rgb").." "..CKWord("Potenza", "Strength_rgb_it").." concatenando più di "..CNumb("2", "n_2_rgb").." attacchi. Cumulabile "..CNumb("{stacks:%s}", "stacks_var_rgb").." volte."..CNote("Pwr_note"),
@@ -1177,7 +1177,7 @@ local weapon_localizations = {
 				..Dot_green.." Может дать несколько зарядов за удар или толчок. "..CPhrs("Can_be_refr"), -- Молотобой
 			fr = CNumb("{impact:%s}", "impact_var_rgb").." d'"..CKWord("Impact", "Impact_rgb_fr").." pendant "..CNumb("{time:%s}", "time_var_rgb").." secondes lors d'un coup. Se cumule "..CNumb("{stacks:%s}", "stacks_var_rgb").." fois. Jusqu'à "..CNumb("5", "n_5_rgb").." cumuls par coup.",
 			["zh-tw"] = "命中時獲得 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("衝擊", "Impact_rgb_tw").."，持續 "..CNumb("{time:%s}", "time_var_rgb").." 秒。可疊加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 層。"
-				..Dot_green.." 每次揮擊或推擊動作可產生多層。"..CPhrs("Can_be_refr"),
+				..Dot_green.." 單次近戰攻擊或推擊可產生多層。"..CPhrs("Can_be_refr"),
 			["zh-cn"] = "命中时 "..CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("冲击", "Impact_rgb_zh_cn").."，持续 "..CNumb("{time:%s}", "time_var_rgb").." 秒。\n最多叠加 "..CNumb("{stacks:%s}", "stacks_var_rgb").." 层。\n攻击每命中一个目标叠加 "..CNumb("1", "n_1_rgb").." 层。",
 			de = CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("Wucht", "Impact_rgb_de").." für "..CNumb("{time:%s}", "time_var_rgb").." Sek. bei Treffer. Stapelt "..CNumb("{stacks:%s}", "stacks_var_rgb").." Mal. Kann pro Schlag mehrere Stapel erzeugen.",
 			it = CNumb("{impact:%s}", "impact_var_rgb").." "..CKWord("Impatto", "Impact_rgb_it").." per "..CNumb("{time:%s}", "time_var_rgb").." sec. a Colpo. Cumulabile "..CNumb("{stacks:%s}", "stacks_var_rgb").." volte. Può generare più accumuli per colpo.",
@@ -1416,7 +1416,7 @@ local weapon_localizations = {
 				..Dot_nc.." Срабатывает только "..CNumb("1", "n_1_rgb").." раз за атаку.",
 			fr = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." du "..CKWord("Péril", "Peril_rgb_fr").." est dissipé sur les "..CKWord("Coup sur point faible", "Weakspothit_rgb_fr").." répété.",
 			["zh-tw"] = "連續"..CKWord("命中弱點", "Weakspothit_rgb_tw").."時，抑制 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。"
-				..Dot_nc.." 無論命中多少敵人的"..CKWord("弱點", "Weakspots_rgb_tw").."，每次揮擊只觸發一次。",
+				..Dot_nc.." 無論命中多少敵人的"..CKWord("弱點", "Weakspots_rgb_tw").."，單次近戰攻擊只觸發一次。",
 			["zh-cn"] = "连锁攻击"..CKWord("命中弱点", "Weakspothit_rgb_zh_cn").."时，\n平息 "..CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。",
 			de = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Gefahr", "Peril_rgb_de").." wird bei wiederholten "..CKWord("Schwachstellentreffern", "Weakspothit_rgb_de").." abgebaut.",
 			it = CNumb("{warp_charge:%s}", "warpchrg_var_rgb").." "..CKWord("Pericolo", "Peril_rgb_it").." placato a Colpi ripetuti su "..CKWord("Punto Debole", "Weakspothit_rgb_it")..".",

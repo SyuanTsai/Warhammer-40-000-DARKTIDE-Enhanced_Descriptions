@@ -653,7 +653,7 @@ local ogryn_localizations = {
 			.."每層持續 {duration:%s} 秒並提供：\n"
 			..Dot_green.." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 或 {heavy_stacks:%s} 層，\n"
+			..Dot_red.." 單次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 或 {heavy_stacks:%s} 層，\n"
 			.."而非依命中敵人數量計算。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de Mélée pendant {duration:%s} secondes lors d'une attaque réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_rgb_fr, -- Frappe lourde
 	},
@@ -896,7 +896,7 @@ local ogryn_localizations = {
 			..Dot_green.." {chance:%s} 機率下次射擊觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
-			..Dot_red.." 每次揮擊只獲得 "..CNumb("1", "n_1_rgb").." 層，\n"
+			..Dot_red.." 單次近戰攻擊只獲得 "..CNumb("1", "n_1_rgb").." 層，\n"
 			.."無論擊殺幾名敵人。",
 		-- fr = "{chance:%s} de chance de déclancher une "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." lors de votre prochain tir lors d'une élimination en mélée. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_1_rgb_fr, -- Reculez!
 	},
@@ -1141,7 +1141,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Суммируется {stacks:%s} раз.\n"
 			.."\n"
 			..Dot_nc.." Заряды снимаются только при получении "..CKWord("урона", "urona_rgb_ru").." в ближнем бою.", -- Сосредоточенный боец
-		["zh-tw"] = "成功近戰攻擊時，每次揮擊獲得 "..CNumb("1", "n_1_rgb").." 層：\n"
+		["zh-tw"] = "每次成功的近戰攻擊獲得 "..CNumb("1", "n_1_rgb").." 層：\n"
 			..Dot_green.." {reduction:%s} 來自近戰攻擊的"..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
@@ -1477,7 +1477,7 @@ local ogryn_localizations = {
 			..Dot_green.." {attack_speed:%s} 近戰攻擊速度。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
-			..Dot_nc.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 層。\n"
+			..Dot_nc.." 每次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 層。\n"
 			..CPhrs("Can_be_refr"),
 		-- fr = "{attack_speed:%s} de vitesse d'attaque de mélée lors de coup en chaîne pendant {duration:%s} secondes. Se cumuls {stacks:%s} fois. Génère "..CNumb("1", "n_1_rgb").." cumul par coup. La durée est rafraichie une fois le mumuls maximal atteint.",
 	},
