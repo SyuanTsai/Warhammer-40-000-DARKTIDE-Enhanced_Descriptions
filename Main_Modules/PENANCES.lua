@@ -667,7 +667,7 @@ local penances_localizations = {
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." "..CKWord("ошеломлённых", "oshelomlennyh_rgb_ru").." врагов "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..".",
 			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』\n"
 				.."或更高威脅等級下，\n"
-				.."以 "..CKWord("致命一擊", "Crit_hits_rgb_tw").."\n"
+				.."以 "..CKWord("暴擊", "Crit_hits_rgb_tw").."\n"
 				.."擊殺 "..CNumb("{target}", "target_rgb").." 名\n"
 				..CKWord("眩暈", "Stunned_rgb_tw").." 的敵人。",
 		},

@@ -3238,10 +3238,10 @@ local psyker_localizations = {
 			..Dot_nc.." Se cumule {stacks:%s} fois.\n"
 			..Dot_green.." Peut générer plusieurs cumuls par "..CKWord("Attaque critique", "Crit_Attk_rgb_fr").." lors d'un "..CKWord("Transpercement", "Cleaving_rgb_fr")..".\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，每秒恢復 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，在 {seconds:%s} 秒內最多恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." "..CKWord("暴擊", "Crit_hits_rgb_tw").."時，每秒恢復 "..CNumb("2.5%", "pc_2_5_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."，在 {seconds:%s} 秒內最多恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..CPhrs("Can_be_refr").."\n"
 			.."\n"
-			..Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時獲得 {movement_speed:%s} 移動速度，持續 {seconds:%s} 秒。\n"
+			..Dot_green.." "..CKWord("暴擊", "Crit_hits_rgb_tw").."時獲得 {movement_speed:%s} 移動速度，持續 {seconds:%s} 秒。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			..Dot_green.." 以"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."進行"..CKWord("順劈攻擊", "Cleaving_rgb_tw").."時，每次攻擊可產生多層。\n"
 			..CPhrs("Can_be_refr"),
@@ -5055,7 +5055,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Se déclenche en touchant des boucliers.\n"
 			..Dot_red.." Se déclenche une seule fois par tir, quel que soit le nombre d'ennemis touchés.",
-		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("致命一擊", "Crit_hits_rgb_tw").."時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 非亞空間遠程"..CKWord("暴擊", "Crit_hits_rgb_tw").."時平息 {percent:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 命中護盾時也會觸發。\n"
 			..Dot_red.." 每次射擊只觸發一次，無論命中多少敵人。",

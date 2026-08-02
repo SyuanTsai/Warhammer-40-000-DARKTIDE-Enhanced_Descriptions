@@ -1255,7 +1255,7 @@ local weapon_localizations = {
 						..Dot_green.." Carapace armor can be "..CKWord("Cleaved", "Cleaved_rgb")..".",
 			ru = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." к "..CKWord("урону критического удара", "krit_udara_uron_rgb_ru").." в ближнем бою. "..CKWord("Критические удары", "Krit_udary_rgb_ru").." игнорируют "..CKWord("ударную массу", "udarn_massu_rgb_ru").." от брони, позволяя "..CKWord("рассекать", "rassekat_rgb_ru").." панцирную броню.",
 			fr = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." de "..CKWord("Dégâts", "Damage_rgb_fr").." de "..CKWord("Coup critique", "Crit_hit_rgb_fr").." en mélée. Les "..CKWord("Coups critiques", "Crit_hits_rgb_fr").." ignore le "..CKWord("Coups en masse", "Hit_mass_rgb_fr").." de l'armure.",
-			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 近戰"..CKWord("致命一擊", "Crit_hit_rgb_tw")..CKWord("傷害", "Damage_rgb_tw").."。"..CKWord("致命一擊", "Crit_hits_rgb_tw").."會無視護甲提供的"..CKWord("順劈目標", "Hit_mass_rgb_tw").."加成。\n"
+			["zh-tw"] = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." 近戰"..CKWord("致命一擊", "Crit_hit_rgb_tw")..CKWord("傷害", "Damage_rgb_tw").."。"..CKWord("暴擊", "Crit_hits_rgb_tw").."會無視護甲提供的"..CKWord("順劈目標", "Hit_mass_rgb_tw").."加成。\n"
 						..Dot_green.." 可"..CKWord("順劈", "Cleaved_rgb_tw").."甲殼護甲。",
 			["zh-cn"] = "近战"..CKWord("暴击命中", "Crit_hit_rgb_tw").."时 "..CNumb("{crit_damage:%s}", "critdmg_var_rgb")..CKWord("", "Damage_rgb_zh_cn").."。\n"..CKWord("暴击", "Crit0_rgb_zh_cn").."同时无视装甲赋予的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"),
 			de = CNumb("{crit_damage:%s}", "critdmg_var_rgb").." Nahkampf-"..CKWord("Kritischer Trefferschaden", "Crt_strk_dmg_rgb_de")..". "..CKWord("Kritische Treffer", "Crit_hits_rgb_de").." ignorieren den "..CKWord("Treffermasse", "Hit_mass_rgb_de").."-Bonus durch Rüstung.",
@@ -3072,7 +3072,7 @@ local weapon_localizations = {
 			en = CKWord("Critical Hits", "Crit_hits_rgb").." spend Ammo from your Reserve instead of you current fuel tank.",
 			ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." тратят топливо из вашего резерва вместо текущего топливного бака.", -- Неугасимое пламя
 			fr = "Les "..CKWord("Coups critiques", "Crit_hits_rgb_fr").." dépensent des munitions de votre réserve à la place de votre réservoir de carburant actuel.",
-			["zh-tw"] = CKWord("致命一擊", "Crit_hits_rgb_tw").."會消耗備彈，而非目前燃料罐中的彈藥。",
+			["zh-tw"] = CKWord("暴擊", "Crit_hits_rgb_tw").."會消耗備彈，而非目前燃料罐中的彈藥。",
 			["zh-cn"] = CKWord("暴击命中", "Crit_hit_rgb_tw").."时，从弹药储备填装数枚弹药。",
 			de = CKWord("Kritische Treffer", "Crit_hits_rgb_de").." verbrauchen Munition aus eurer Reserve anstatt aus dem aktuellen Tank.",
 			it = "I "..CKWord("Colpi Critici", "Crit_hits_rgb_it").." consumano munizioni dalla Riserva invece che dal serbatoio attuale.",

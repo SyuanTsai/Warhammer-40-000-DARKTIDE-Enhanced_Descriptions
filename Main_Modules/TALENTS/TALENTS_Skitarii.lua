@@ -632,7 +632,7 @@ local skitarii_localizations = {
 	--[+ ABILITY - СПОСОБНОСТЬ - 6 - Flux Conduit Build-Up - Проводник накопления потока +]--	17.07.2026
 	["loc_talent_cryptic_crits_grant_power_desc"] = { -- talent_name: Shroudfield, damage: +50%, damage_2: +50%, cooldown: 25%, &->and, +colors
 			en = Dot_green.." {power:%s} "..CKWord("Capacitance", "Capacitance_rgb").." generated over {duration:%s} seconds on "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
-			["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，在 {duration:%s} 秒內產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
+			["zh-tw"] = Dot_green.." "..CKWord("暴擊", "Crit_hits_rgb_tw").."時，在 {duration:%s} 秒內產生 {power:%s} "..CKWord("電容量", "Capacitance_rgb_tw").."。",
 			ru = Dot_green.." {power:%s} "..CKWord("ёмкости", "emkosti_rgb_ru").." генерируется в течение {duration:%s} секунд при "..CKWord("критических ударах", "krit_udarah_rgb_ru")..".",
 	},
 	--[+ ABILITY - СПОСОБНОСТЬ - 7 - Reactor Coil Recharge - Перезарядка катушки реактора +]--	17.07.2026
@@ -1030,7 +1030,7 @@ local skitarii_localizations = {
 	--[+ PASSIVES - ПАССИВНЫЙ - 11 - Electro-Strike Conduit - Проводник электроудара +]--	17.07.2026
 	["loc_talent_cryptic_melee_crits_electrocute_first_desc"] = { -- active_duration: 5, cooldown_duration: 120, s->seconds, +colors
 			en = "Melee "..CKWord("Critical Hits", "Crit_hits_rgb").." "..CKWord("Electrocute", "Electrocute_rgb").." the first Enemy hit.",
-			["zh-tw"] = "近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."會"..CKWord("電擊", "Electrocute_rgb_tw").."第一名命中的敵人。",
+			["zh-tw"] = "近戰"..CKWord("暴擊", "Crit_hits_rgb_tw").."會"..CKWord("電擊", "Electrocute_rgb_tw").."第一名命中的敵人。",
 			ru = CKWord("Критические удары", "Krit_udary_rgb_ru").." в ближнем бою накладывают "..CKWord("электрошок", "elektroshok_rgb_ru").." на первого поражённого врага.",
 	},
 	--[+ PASSIVES - ПАССИВНЫЙ - 12 - Data Sensor Protocol - Протокол сенсора данных +]--	17.07.2026
@@ -1213,7 +1213,7 @@ local skitarii_localizations = {
 			..Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").."\n"
 			.."and gain for {duration:%s} seconds:\n"
 			..Dot_green.." {tdr:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
-			["zh-tw"] = CKWord("致命一擊", "Crit_hits_rgb_tw").."時，恢復：\n"
+			["zh-tw"] = CKWord("暴擊", "Crit_hits_rgb_tw").."時，恢復：\n"
 				..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."，\n"
 				.."並在 {duration:%s} 秒內獲得以下效果：\n"
 				..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
