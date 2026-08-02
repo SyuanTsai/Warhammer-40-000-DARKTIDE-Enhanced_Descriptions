@@ -39,7 +39,7 @@ local zealot_localizations = {
 			..CPhrs("Can_be_refr"),
 		-- fr = "Lancez une "..CKWord("Grenade étourdissante", "Stun_gren_rgb_fr").." qui vas "..CKWord("Électrocute", "Electrocute_rgb_fr").." et "..CKWord("Étourdit", "Stun_rgb_fr").." tous les ennemis dans son rayon d'explosion.",
 		["zh-tw"] = "投擲"..CKWord("眩暈手雷", "Stun_gren_rgb_tw").."，"..CNumb("1.5", "n_1_5_rgb").." 秒後爆炸，"..CKWord("電擊", "Electrocutes_rgb_tw").." 爆炸範圍內所有敵人。\n"
-			..Dot_nc.." 爆炸半徑："..CNumb("8", "n_8_rgb").." 米。\n"
+			..Dot_nc.." 爆炸半徑："..CNumb("8", "n_8_rgb").." 公尺。\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			.."\n"
 			..Dot_green.." "..CKWord("踉蹌", "Staggers_rgb_tw").." 範圍內所有敵人，變種人、瘟疫爆者、巨獸和隊長/雙子除外。\n"
@@ -66,8 +66,8 @@ local zealot_localizations = {
 			..CPhrs("Can_be_refr"),
 		-- fr = "Lancez une "..CKWord("Grenade étourdissante", "Stun_gren_rgb_fr").." qui vas "..CKWord("Électrocute", "Electrocute_rgb_fr").." et "..CKWord("Étourdit", "Stun_rgb_fr").." tous les ennemis dans sa portée.\n\nCeci est une version augmentée de {talent_name:%s} avec un rayon d'explosion de {radius:%s}.",
 		["zh-tw"] = "投擲"..CKWord("眩暈手雷", "Stun_gren_rgb_tw").."，"..CNumb("1.5", "n_1_5_rgb").." 秒後爆炸，"..CKWord("電擊", "Electrocutes_rgb_tw").." 範圍內所有敵人。\n"
-			..Dot_green.." 為 {talent_name:%s} 的增強版，爆炸半徑增加 {radius:%s}。\n"
-			..Dot_nc.." 爆炸半徑："..CNumb("12", "n_12_rgb").." 米。\n"
+			..Dot_green.." 為 {talent_name:%s} 的強化版本，爆炸半徑增加 {radius:%s}。\n"
+			..Dot_nc.." 爆炸半徑："..CNumb("12", "n_12_rgb").." 公尺。\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			.."\n"
 			..Dot_green.." "..CKWord("踉蹌", "Staggers_rgb_tw").." 範圍內所有敵人，變種人、瘟疫爆者、巨獸和隊長/雙子除外。\n"
@@ -132,10 +132,10 @@ local zealot_localizations = {
 			..Dot_red.." 對甲殼護甲無"..CKWord("傷害", "Damage_rgb_tw").."，"..CKWord("弱點", "Weakspots_rgb_tw").." 除外。\n"
 			.."\n"
 			..Dot_nc.." 匕首補充：\n"
-			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." - 近戰擊殺精英或專家。\n"
-			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." - 拾取小型彈藥包。\n"
-			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("6", "n_6_rgb").." - 拾取大型彈藥包。\n"
-			.."    "..Dot_nc.." 全部 - 彈藥箱。",
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." — 近戰擊殺精英或專家。\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("2", "n_2_rgb").." — 拾取小型彈藥包。\n"
+			.."    "..Dot_nc.." "..CNumb("+", "n_plus_rgb")..CNumb("6", "n_6_rgb").." — 拾取大型彈藥包。\n"
+			.."    "..Dot_nc.." 全部 — 彈藥箱。",
 	},
 --[+ +AURA - АУРЫ+ +]--
 	--[+ AURA 0 - The Emperors's Will +]--	27.03.2026
@@ -163,7 +163,7 @@ local zealot_localizations = {
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
 		-- fr = "{damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." pour vous et les alliés en syntonie.\n\nCeci est une version augmentée de l'Aura de base - {talent_name:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Aura_0_n_1_rgb_fr,
 		["zh-tw"] = Dot_green.." 賦予你和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 {damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。\n"
-			..Dot_green.." 為基礎光環 {talent_name:%s} 的增強版本。\n"
+			..Dot_green.." 為基礎光環 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Zea_Aura"),
 	},
@@ -235,16 +235,16 @@ local zealot_localizations = {
 		-- fr = "Effectuez une ruée vers l'avant, régénérez {toughness:%s} "..CKWord("Endurance", "Toughness_rgb_fr")..". Votre prochaine attaque de mêlée gagne {damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." et est un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." garanti.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_0_rgb_fr,
 		["zh-tw"] = "向前衝刺並恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
-			.."下一次近戰命中必定"..CKWord("爆擊命中", "Crit_hit_rgb_tw").." 且造成：\n"
+			.."下一次近戰命中必定造成"..CKWord("致命一擊", "Crit_hit_rgb_tw").." 且獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，持續 "..CNumb("3", "n_3_rgb").." 秒。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_green.." 衝刺期間免疫"..CKWord("韌性", "Toughness_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").." 並閃避所有攻擊。\n"
-			..Dot_green.." 衝擊時對 "..CNumb("3", "n_3_rgb").." 米半徑內的敵人造成輕度"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
+			..Dot_green.." 衝擊時對 "..CNumb("3", "n_3_rgb").." 公尺半徑內的敵人造成輕度"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 衝刺距離：\n"
-			.."    "..Dot_nc.." 基礎："..CNumb("7", "n_7_rgb").." 米。\n"
-			.."    "..Dot_nc.." 瞄準：最遠 "..CNumb("21", "n_21_rgb").." 米。",
+			.."    "..Dot_nc.." 基礎："..CNumb("7", "n_7_rgb").." 公尺。\n"
+			.."    "..Dot_nc.." 瞄準：最遠 "..CNumb("21", "n_21_rgb").." 公尺。",
 	},
 	--[+ ABILITY 1 - Fury of the Faithful +]--	27.03.2026
 	["loc_talent_zealot_attack_speed_after_dash_new_desc"] = { -- toughness: 50%, attack_speed: +20%, time: 10, damage: +25%, cooldown: 30, talent_name: Chastise the Wicked, &->and, s->seconds, +colors
@@ -294,18 +294,18 @@ local zealot_localizations = {
 			.."另獲得：\n"
 			..Dot_green.." {attack_speed:%s} 攻擊速度，持續 {time:%s} 秒。\n"
 			.."\n"
-			.."下一次近戰命中必定"..CKWord("爆擊命中", "Crit_hit_rgb_tw").." 且獲得：\n"
+			.."下一次近戰命中必定造成"..CKWord("致命一擊", "Crit_hit_rgb_tw").." 且獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 和\n"
 			..Dot_green.." "..CNumb("100%", "pc_100_rgb").." "..CKWord("撕裂", "Rending_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
-			..Dot_green.." 為 {talent_name:%s} 的增強版本。\n"
+			..Dot_green.." 為 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..Dot_green.." 衝刺期間免疫"..CKWord("韌性", "Toughness_rgb_tw").." "..CKWord("傷害", "Damage_rgb_tw").." 並閃避所有攻擊。\n"
 			.."\n"
 			..Dot_nc.." 衝刺距離：\n"
-			.."    "..Dot_nc.." 基礎："..CNumb("7", "n_7_rgb").." 米。\n"
-			.."    "..Dot_nc.." 瞄準：最遠 "..CNumb("21", "n_21_rgb").." 米。\n"
+			.."    "..Dot_nc.." 基礎："..CNumb("7", "n_7_rgb").." 公尺。\n"
+			.."    "..Dot_nc.." 瞄準：最遠 "..CNumb("21", "n_21_rgb").." 公尺。\n"
 			..Dot_nc.." 你無法改變方向，但可以用格擋或後退按鍵取消衝刺。\n"
 			..Dot_red.." 跳躍或墜落時無法啟用。\n"
 			..Dot_red.." 不屈敵人、甲殼護甲敵人、巨獸與虛空護盾都能阻止你。",
@@ -390,7 +390,7 @@ local zealot_localizations = {
 		-- fr = "Utilisez une relique sacrée qui libère des pulsations énérgetiques "..CNumb("7", "n_7_rgb").." fois toutes les {interval:%s} secondes.\nChaque pulsation accorde au Fanatique et aux alliés en syntonie une immunité aux "..CKWord("Étourdissements", "Stuns_rgb_fr").." des attaques de mêlée et de distance et une invulnérabilité de "..CNumb("1.5", "n_1_5_rgb").." secondes.\nChaque pulsation régénère {toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." pour les alliés en syntonie. Si l'allié est à toute ça "..CKWord("Endurance", "Toughness_rgb_fr")..", il gagne à la place {flat_toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." maximale (jaune) jusqu'à un total de {max_toughness:%s}.\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Ability_2_rgb_fr,
 		["zh-tw"] = "揮舞"..CKWord("聖物", "Holy_relic_rgb_tw").."，每 {interval:%s} 秒釋放一次能量脈衝，共 "..CNumb("7", "n_7_rgb").." 次。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
-			..Dot_nc.." 半徑："..CNumb("10", "n_10_rgb").." 米。\n"
+			..Dot_nc.." 半徑："..CNumb("10", "n_10_rgb").." 公尺。\n"
 			..Dot_nc.." 可透過格擋、衝刺、切換武器，或再次按下技能鍵取消。\n"
 			.."\n"
 			.."每次脈衝賦予"..CKWord("狂信徒", "cls_zea_rgb_tw").."和"..CKWord("協同", "Coherency_rgb_tw").."中的盟友 "..CNumb("1.5", "n_1_5_rgb").." 秒：\n"
@@ -549,10 +549,10 @@ local zealot_localizations = {
 			.."\n"
 			..CKWord("Критические удары", "Krit_udary_rgb_ru").." также засчитываются для активации "..CKWord("Ярости", "Fury_i_rgb_ru")..".",
 		-- fr = "Quand {max_stacks:%s} ennemis meurent dans un rayon de {radius:%s} mètres autour de vous, vous entrez en "..CKWord("Fureur", "Fury_rgb_fr").." et obtenez {crit_chance:%s} "..CKWord("Chances de coup critique", "Crt_hit_chnc_rgb_fr").." pendant {duration:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Keystone_1_rgb_fr,
-		["zh-tw"] = "{radius:%s} 米內有 {max_stacks:%s} 名敵人死亡時，進入"..CKWord("狂怒", "Fury_rgb_tw").." 並獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "{radius:%s} 公尺內有 {max_stacks:%s} 名敵人死亡時，進入"..CKWord("狂怒", "Fury_rgb_tw").." 並獲得 {duration:%s} 秒：\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("爆擊命中", "Crit_hits_rgb_tw").."也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
+			..CKWord("致命一擊", "Crit_hits_rgb_tw").."也計入觸發"..CKWord("狂怒", "Fury_rgb_tw").." 的次數。",
 	},
 	--[+ KEYSTONE 1-1 - Infectious Zeal +]--	27.03.2026
 	["loc_talent_zealot_shared_fanatic_rage_new_desc"] = { -- crit_chance: +10%, talent_name: Blazing Piety, +colors
@@ -597,7 +597,7 @@ local zealot_localizations = {
 	["loc_talent_maniac_cooldown_on_melee_crits_buff_desc"] = { -- cooldown_regen: +100%, duration: 3, +colors
 		en = Dot_green.." {cooldown_regen:%s} "..CKWord("Ability Cooldown", "Ability_cd_rgb").." Regeneration for {duration:%s} seconds on Melee "..CKWord("Critical Hits", "Crit_hits_rgb")..".",
 		ru = Dot_green.." {cooldown_regen:%s} к скорости восстановления "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru").." на {duration:%s} секунды при "..CKWord("критических ударах", "krit_udarah_rgb_ru").." в ближнем бою.", -- 
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("爆擊命中", "Crit_hits_rgb_tw").."時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度，持續 {duration:%s} 秒。",
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."時，{cooldown_regen:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復速度，持續 {duration:%s} 秒。",
 	},
 	--[+ KEYSTONE 2 - Martyrdom +]--	27.03.2026
 	["loc_talent_zealot_martyrdom_desc"] = { -- damage: +10%, max_wounds: 5, +colors
@@ -717,7 +717,7 @@ local zealot_localizations = {
 		ru = Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." за каждую вторую атаку ближнего боя за каждого врага, поражённого вашей предыдущей атакой ближнего боя.\n" -- Презрение
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.",
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." pour chaque deuxième attaque de mêlée que vous effectuez pour chaque ennemi touché par votre précédente attaque de mêlée. Se cumule jusqu'à {max_stacks:%s} fois."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_1_rgb_fr,
-		["zh-tw"] = Dot_green.." 你每次第二下近戰攻擊，前一次近戰攻擊每命中一名敵人就獲得 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 每隔一次近戰攻擊，前一次近戰攻擊每命中一名敵人就獲得 {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。",
 	},
 	--[+ Passive 3 - Backstabber +]--	27.03.2026
@@ -749,11 +749,11 @@ local zealot_localizations = {
 			..CKWord("Стойкость", "Stoikost_rgb_ru").."("..CNumb("%", "pc_rgb").."): "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." par seconde lorsque vous êtes à moins de {range:%s} mètres d'au moins {num_enemies:%s} ennemis."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_5_rgb_fr,
-		["zh-tw"] = Dot_green.." 當 {range:%s} 米內有敵人時，每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 當 {range:%s} 公尺內有敵人時，每秒恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			..Dot_green.." 每多一名敵人增加 {more_toughness:%s}。巨獸視為 {monster_count:%s} 名。最多 {max:%s}。\n"
 			.."_______________________________\n"
-			.."敵人數：     "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| >"..CNumb("5", "n_5_rgb").."\n"
-			..CKWord("韌性", "Toughness_rgb_tw").."%:  "..CNumb("2.5", "n_2_5_rgb").."| "..CNumb("3.5", "n_3_5_rgb").."| "..CNumb("4.5", "n_4_5_rgb").."| "..CNumb("5.5", "n_5_5_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.5", "n_7_5_rgb").."\n"
+			.."敵人數：     "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("5", "n_5_rgb").." | >"..CNumb("5", "n_5_rgb").."\n"
+			..CKWord("韌性", "Toughness_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("2.5", "n_2_5_rgb").." | "..CNumb("3.5", "n_3_5_rgb").." | "..CNumb("4.5", "n_4_5_rgb").." | "..CNumb("5.5", "n_5_5_rgb").." | "..CNumb("6.5", "n_6_5_rgb").." | "..CNumb("7.5", "n_7_5_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 6 - Blood Redemption +]--	27.03.2026
@@ -761,7 +761,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness:%s} "..CKWord("Toughness", "Toughness_rgb").." Replenishment on Melee Kill.",
 		ru = Dot_green.." {toughness:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." при убийстве в ближнем бою.", -- Искупление кровью -- руоф Кровавое искупление
 		-- fr = "{toughness:%s} de "..CKWord("Endurance", "Toughness_rgb_fr").." lors d'une élimination en mêlée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_8_rgb_fr,
-		["zh-tw"] = Dot_green.." 近戰擊殺時 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
+		["zh-tw"] = Dot_green.." 近戰擊殺時恢復 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。",
 	},
 	--[+ Passive 7 - Second Wind +]--	27.03.2026
 	["loc_talent_zealot_toughness_on_dodge_desc"] = { -- toughness: 15%, +colors
@@ -846,8 +846,8 @@ local zealot_localizations = {
 		-- fr = "{damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." de mêlée pendant {duration:%s} secondes lorsque "..CKWord("Endurance", "Stamina_rgb_fr").." est épuisée."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_23_rgb_fr,
 		["zh-tw"] = "依缺失的"..CKWord("耐力", "Stamina_rgb_tw").."，最多獲得 {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("耐力", "Stamina_rgb_tw").."%:   "..CNumb("100", "n_100_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."%:   "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("耐力", "Stamina_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("100", "n_100_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 	},
 	--[+ Passive 16 - Punishment +]--	27.03.2026
@@ -876,7 +876,7 @@ local zealot_localizations = {
 			..Dot_green.." {damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." и\n"
 			..Dot_green.." {cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется до {stacks:%s} раз.",
-		["zh-tw"] = "每 {num_enemies:%s} 個在 {range:%s} 米內的敵人獲得：\n"
+		["zh-tw"] = "每 {num_enemies:%s} 個在 {range:%s} 公尺內的敵人獲得：\n"
 			..Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 和\n"
 			..Dot_green.." {cleave:%s} "..CKWord("順劈攻擊", "Cleave_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。",
@@ -968,7 +968,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = "При пробивании блока вы не "..CKWord("оглушаетесь", "oglushaetes_rgb_ru")..", а вместо этого восстанавливаете {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n" -- руоф Активная оборона
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
-		["zh-tw"] = "格擋被穿透時不再"..CKWord("眩暈", "Stunned_rgb_tw").."，改為恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = "格擋被擊破時不再"..CKWord("眩暈", "Stunned_rgb_tw").."，改為恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 25 - Abolish Blasphemers +]--	27.03.2026
@@ -984,7 +984,7 @@ local zealot_localizations = {
 		ru = "При получении удара в ближнем бою вы отбрасываете атакующего врага.\n" -- Возмездие Владыки
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
 		-- fr = "Repousse l'attaquant après avoir reçu un coup de mêlée. Temps de recharge : {cooldown:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_32_rgb_fr,
-		["zh-tw"] = "受到近戰攻擊時打飛攻擊者。\n"
+		["zh-tw"] = "受到近戰攻擊時擊退攻擊者。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 27 - Dance of Death +]--	27.03.2026
@@ -1020,7 +1020,7 @@ local zealot_localizations = {
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется до {max_stacks:%s} раз.", -- Бичевание -- руоф Бич
 		-- fr = "Les coups "..CKWord("Critiques", "Crit_hits_rgb_fr").." en mêlée appliquent "..CKWord("Saignement", "Bleed_rgb_fr")..", causant des "..CKWord("Dégâts", "Damage_rgb_fr").." au fil du temps.\nLes coups en mêlée sur les ennemis qui "..CKWord("Saignent", "Bleeding_rgb_fr").." octroient {crit_chance:%s} "..CKWord("Chances de coup critique", "Crit_chance_rgb_fr").." pendant {duration:%s} secondes. Se cumule jusqu'à {max_stacks:%s} fois. Jusqu'à "..CNumb("16", "n_16_rgb").." cumuls de saignement max sur une cible."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_4_rgb_fr,
-		["zh-tw"] = "近戰"..CKWord("爆擊命中", "Crit_hits_rgb_tw").."會施加"..CKWord("流血", "Bleed_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。每個目標最多 "..CNumb("16", "n_16_rgb").." 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
+		["zh-tw"] = "近戰"..CKWord("致命一擊", "Crit_hits_rgb_tw").."會施加"..CKWord("流血", "Bleed_rgb_tw").."，造成持續"..CKWord("傷害", "Damage_rgb_tw").."。每個目標最多 "..CNumb("16", "n_16_rgb").." 層"..CKWord("流血", "Bleed_rgb_tw").."。\n"
 			.."\n"
 			.."近戰命中"..CKWord("流血中", "Bleeding_rgb_tw").."敵人時，{duration:%s} 秒內獲得：\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
@@ -1031,7 +1031,7 @@ local zealot_localizations = {
 		en = Dot_green.." {toughness_damage_reduction:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb").." for {time:%s} seconds on "..CKWord("Critical Hit", "Crit_hit_rgb")..".",
 		ru = Dot_green.." {toughness_damage_reduction:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru").." на {time:%s} секунды при "..CKWord("критическом ударе", "krit_udare_rgb_ru")..".", -- Непоколебимая вера
 		-- fr = "{toughness_damage_reduction:%s} de "..CKWord("Réduction des dégâts sur l'Endurance", "Tghns_dmg_red_rgb_fr").." lors d'un "..CKWord("Coup critique", "Crit_hit_rgb_fr").." pendant {time:%s} secondes."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_14_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CKWord("爆擊命中", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." "..CKWord("致命一擊", "Crit_hit_rgb_tw").."時，{time:%s} 秒內獲得 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 31 - Punish Impiety +]--	27.03.2026
 	["loc_talent_zealot_push_attacks_attack_speed_desc"] = { -- attack_speed: +10%, duration: 5, s->seconds
@@ -1044,7 +1044,7 @@ local zealot_localizations = {
 		en = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} "..CKWord("Damage", "Damage_rgb").." that would take your "..CKWord("Health", "Health_rgb").." to the next "..CKWord("Wound", "Wound_rgb")..".",
 		ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} к "..CKWord("урону", "uronu_rgb_ru")..", который привёл бы к потере "..CKWord("здоровья", "zdorovia_rgb_ru").." до следующей "..CKWord("раны", "rany_rgb_ru")..".", -- Кровь за Императора -- руоф Кровь во имя Императора
 		-- fr = "Les "..CKWord("Dégâts", "Damage_rgb_fr").." qui réduirait votre "..CKWord("Santé", "Health_rgb_fr").." à la prochaine "..CKWord("Blessure", "Wound_rgb_fr").." sont réduit de {damage_reduction:%s}."..TALENTS_Enh_desc_fr.ED_ZEA_Passive_9_rgb_fr,
-		["zh-tw"] = Dot_green.." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s} 會使你的"..CKWord("生命值", "Health_rgb_tw").."進入下一個"..CKWord("傷痕", "Wound_rgb_tw").."區段的"..CKWord("傷害", "Damage_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 會使你的"..CKWord("生命值", "Health_rgb_tw").."進入下一個"..CKWord("傷痕", "Wound_rgb_tw").."區段的"..CKWord("傷害", "Damage_rgb_tw").." "..CNumb("-", "n_minus_rgb").."{damage_reduction:%s}。",
 	},
 	--[+ Passive 33 - Time to Kill +]--	27.03.2026
 	["loc_talent_zealot_backstab_periodic_damage_desc"] = { -- damage: +50%, cooldown: 8, +colors
@@ -1090,7 +1090,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восстанавливается при "..CKWord("критическом ударе", "krit_udare_rgb_ru").." в ближнем бою.\n" -- Без передышки
 			..Dot_nc.." Восстановление: {cooldown:%s} секунда.",
-		["zh-tw"] = Dot_green.." 近戰"..CKWord("爆擊命中", "Crit_hit_rgb_tw").."時恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 近戰"..CKWord("致命一擊", "Crit_hit_rgb_tw").."時恢復 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 38 - Unfaltering +]--	27.03.2026
@@ -1126,7 +1126,7 @@ local zealot_localizations = {
 			..Dot_nc.." Cooldown: {cooldown:%s} seconds.",
 		ru = "Убийства тяжёлой атакой в спину подавляют врагов в радиусе {range:%s} метров.\n" -- руоф В тылу врага
 			..Dot_nc.." Восстановление: {cooldown:%s} секунд.",
-		["zh-tw"] = "重攻擊近戰背刺擊殺會壓制 {range:%s} 米內敵人。\n"
+		["zh-tw"] = "重攻擊近戰背刺擊殺會壓制 {range:%s} 公尺內敵人。\n"
 			..Dot_nc.." 冷卻：{cooldown:%s} 秒。",
 	},
 	--[+ Passive 42 - Relentless Fervor +]--	27.03.2026

@@ -96,7 +96,7 @@ local menus_templates = {
 		--[+ Kill Х enemy_type with weapon_type +]--
 		["loc_contracts_task_label_kill_minions"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s} with {weapon_type:%s}",
-			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",
+			ru = "{weapon_type:%s}: убейте "..CNumb("{count:%d}", "countd_var_rgb").." врагов типа {enemy_type:%s}",  -- 完成[x]場任務
 			["zh-tw"] = "使用 {weapon_type:%s} 擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." {enemy_type:%s}", -- 使用[遠/近]擊殺[x][血痂/渣仔]
 			["zh-cn"] = "用{weapon_type:%s}杀死 "..CNumb("{count:%d}", "countd_var_rgb").." 个{enemy_type:%s}", -- 用 weapon_type 杀死 X enemy_type
 		},
@@ -104,21 +104,21 @@ local menus_templates = {
 		["loc_contracts_task_label_complete_missions"] = {
 			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions",
 			ru = "Завершите "..CNumb("{count:%d}", "countd_var_rgb").." миссий",
-			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務", -- 完成[x]場任務
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務", -- 完成[x]場任務，並且無人死亡
 			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 个任务", -- 完成 X 任务
 		},
 		--[+ Complete Х missions with no player deaths +]--
 		["loc_contracts_task_label_complete_mission_no_death"] = {
 			en = "Complete "..CNumb("{count:%d}", "countd_var_rgb").." missions with no player deaths",
 			ru = "Завершите миссии без гибели союзников: "..CNumb("{count:%d}", "countd_var_rgb"),
-			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任務，且無玩家死亡", -- 完成[x]場任務，並且無人死亡
+			["zh-tw"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 場任務，且沒有玩家死亡",
 			["zh-cn"] = "完成 "..CNumb("{count:%d}", "countd_var_rgb").." 任务且没有玩家死亡", -- 完成 X 任务且没有玩家死亡
 		},
 	--[+ Melk's Intro +]--
 	["loc_contract_view_intro_description"] = {
 		-- en = "Well? What is it you want?",
 		ru = "Ну? Чего ты хочешь?",
-		["zh-tw"] = "好吧，你想要什麼？", -- 好吧，你想要什麼?
+		["zh-tw"] = "嗯？你想要什麼？",
 		["zh-cn"] = "嗯？你有什么需要？", -- 梅尔克介绍语
 	},
 	--[+ Melk's Intro Title +]--
@@ -175,14 +175,14 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的珍品", -- 未知的防禦性珍品
+		["zh-tw"] = "未知的珍品",
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
 	["loc_notification_new_contract"] = {
 		-- en = "New weekly contracts are available", --???
 		-- ru = ,
-		["zh-tw"] = "新的每週合約已可用",
+		["zh-tw"] = "新的每週合約現已開放",
 		["zh-cn"] = "新的每周合同可用", -- 新的每周合同可用
 	},
 
@@ -191,14 +191,14 @@ local menus_templates = {
 	["loc_crafting_error_no_consecrate"] = {
 		-- en = "Max Rarity reached!",
 		ru = "Достигнут максимум редкости!",
-		["zh-tw"] = "已達最高稀有度!", -- 已達最高稀有度。
+		["zh-tw"] = "已達最高稀有度！", -- 已達最高稀有度。
 		-- ["zh-cn"] = "已达到最高稀有度。",
 	},
 	--[+ Max Power reached! +]--
 	["loc_crafting_error_max_power"] = {
 		-- en = "Max Power reached!",
 		ru = "Достигнут максимум силы!",
-		["zh-tw"] = "已達最高威力!",  -- 已達最高升級級別。
+		["zh-tw"] = "已達最高威力！",  -- 已達最高升級級別。
 		["zh-cn"] = "已达到最高等级。",
 	},
 	--[+ Sacrifice Weapons +]--
@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "取得一件你選擇的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
+		["zh-tw"] = "取得一件自選的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "特殊攻擊", -- 特殊功能(近戰)
+		["zh-tw"] = "特殊攻擊(近戰)", -- 特殊功能(近戰)
 	},
 
 
@@ -590,43 +590,43 @@ local menus_templates = {
 	["loc_wait_reason_dedicated_server"] = {
 		-- en = ,
 		ru = "Выдаём рекаф и брикеты", -- Выделенный сервер
-		["zh-tw"] = "正在連接專用伺服器...",
+		["zh-tw"] = "正在連接專用伺服器……",
 	},
 	--[+ Waiting for other player(s) +]--
 	["loc_wait_reason_other_player"] = {
 		-- en = ,
 		ru = "Шлёпаем уборщицу за вырванные кабели...", -- Ожидание других игроков -- Добавление других оперативников к сеансу связи...
-		["zh-tw"] = "正在等待其他玩家加入...",
+		["zh-tw"] = "正在等待其他玩家加入……",
 	},
 	--[+ Communicating with Fatshark backend +]--
 	["loc_wait_reason_backend"] = {
 		-- en = ,
 		ru = "Пытаемся сшить связь, потому что она порвалась...", -- Взаимодействие с бэкэндом Fatshark
-		["zh-tw"] = "正在與 Fatshark 後端通訊...",
+		["zh-tw"] = "正在與 Fatshark 後端通訊……",
 	},
 	--[+ Store +]--
 	["loc_wait_reason_store"] = {
 		-- en = ,
 		ru = "Попытка установить обновление магазина чаще, чем раз в две недели... Критический провал!", -- Магазин
-		["zh-tw"] = "正在更新商店...",
+		["zh-tw"] = "正在更新商店……",
 	},
 	--[+ Platform Steam - Платформа Steam +]--
 	["loc_wait_reason_platform_steam"] = {
 		-- en = ,
 		-- ru = "Подключение к Steam",
-		["zh-tw"] = "正在連接 Steam...",
+		["zh-tw"] = "正在連接 Steam……",
 	},
 	--[+ Platform Xbox +]--
 	["loc_wait_reason_platform_xbox_live"] = {
 		-- en = ,
 		-- ru = "Подключение к Коробокс", -- Платформа Xbox
-		["zh-tw"] = "正在連接 Xbox...",
+		["zh-tw"] = "正在連接 Xbox……",
 	},
 	--[+ Platform PSN +]--
 	["loc_wait_reason_platform_psn"] = {
 		-- en = ,
 		-- ru = "Подключение к ПэЭсЭн", -- Платформа PSN
-		["zh-tw"] = "正在連接 PSN...",
+		["zh-tw"] = "正在連接 PSN……",
 	},
 }
 

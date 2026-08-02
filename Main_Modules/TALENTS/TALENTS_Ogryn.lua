@@ -144,9 +144,9 @@ local ogryn_localizations = {
 		-- fr = "Lancer une "..COLORS_KWords_fr.Frag_gren_rgb_fr.." de taille Ogryn (la seule taille appropriée !) avec un rayon d'explosion de {radius:%s} mètres, infligeant des "..COLORS_KWords_fr.Damage_rgb_fr.." accrus au centre."..TALENTS_Enh_desc2_fr.ED_OGR_Blitz_2_rgb_fr,
 		["zh-tw"] = "投擲一枚歐格林尺寸的"..CKWord("破片手雷", "Frag_gren_rgb_tw").."。\n"
 			..Dot_nc.." 引信時間："..CNumb("2", "n_2_rgb").." 秒。\n"
-			..Dot_nc.." 爆炸半徑：{radius:%s} 米。\n"
+			..Dot_nc.." 爆炸半徑：{radius:%s} 公尺。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."-"..CNumb("1250", "n_1250_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("1500", "n_1500_rgb").."～"..CNumb("1250", "n_1250_rgb").."]。\n"
 			.."\n"
 			..Dot_green.." 對所有敵人造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."，\n"
 			.."（含巨獸、連長/雙子，後者僅在無虛空護盾時有效）。\n"
@@ -340,7 +340,7 @@ local ogryn_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			.."衝刺：\n"
-			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 米。\n"
+			..Dot_nc.." 距離："..CNumb("12", "n_12_rgb").." 公尺。\n"
 			..Dot_red.." 遇到甲殼或不屈基礎護甲類型的敵人、巨獸，\n"
 			.."或連長/雙子的虛空護盾時停止。",
 		-- fr = "Chargez vers l'avant avec une grande force, repoussant les ennemis et les faisant "..COLORS_KWords_fr.Staggering_rgb_fr..". Gagnez {attack_speed:%s} de vitesse d'attaque et {move_speed:%s} de vitesse de déplacement pendant {duration:%s} secondes. La charge est arrêtée en cas de collision avec des ennemis en armure carapace, implacables et des monstruosités.\n\nTemps de recharge de base : {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_0_rgb_fr,
@@ -384,7 +384,7 @@ local ogryn_localizations = {
 			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			.."衝刺：\n"
-			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 米。\n"
+			..Dot_nc.." 距離："..CNumb("24", "n_24_rgb").." 公尺。\n"
 			..Dot_nc.." 可向後輸入取消。\n"
 			..Dot_nc.." 衝刺期間可稍微改變方向。\n"
 			..Dot_nc.." 可穿透連長/雙子的虛空護盾，\n"
@@ -455,7 +455,7 @@ local ogryn_localizations = {
 			.."Эффект повторяется через {first_pulse:%s} и через {second_pulse:%s} секунд.\n"
 			.."\n"
 			.."Восстанавливается: {cooldown:%s} секунд.", -- Верный защитник
-		["zh-tw"] = CKWord("嘲諷", "Taunt_rgb_tw").." {radius:%s} 米範圍內的敵人，\n"
+		["zh-tw"] = CKWord("嘲諷", "Taunt_rgb_tw").." {radius:%s} 公尺範圍內的敵人，\n"
 			.."使其只攻擊你 {duration:%s} 秒。\n"
 			.."效果分別在 {first_pulse:%s} 秒後和 {second_pulse:%s} 秒後重複。\n"
 			.."\n"
@@ -475,7 +475,7 @@ local ogryn_localizations = {
 		["zh-tw"] = "被 {talent_name:%s} 影響的敵人，在 "..CNumb("15", "n_15_rgb").." 秒內受到減益：\n"
 			..Dot_green.." 受到來自所有來源的 {base_damage:%s} 基礎"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 透過"..CKWord("渴求關注", "Att_Seeker_rgb_tw")..CKWord("嘲諷", "Taunt_rgb_tw").."的敵人不受此減益影響。",
+			..Dot_red.." 受到"..CKWord("渴求關注", "Att_Seeker_rgb_tw")..CKWord("嘲諷", "Taunt_rgb_tw").."的敵人不受此減益影響。",
 		-- fr = "{base_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." provenant de toutes les sources pour les ennemis affectés par {talent_name:%s} pendant "..CNumb("15", "n_15_rgb").." secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_2_1_rgb_fr,
 	},
 	--[+ ABILITY 2-2 - No Pain! +]--	26.03.2026
@@ -571,11 +571,11 @@ local ogryn_localizations = {
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
-			.."近距離"..CKWord("傷害", "Damage_rgb_tw").."加成在 "..CNumb("12.5", "n_12_5_rgb").." 米內最大，\n"
-			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 米時失效：\n"
+			.."近距離"..CKWord("傷害", "Damage_rgb_tw").."加成在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內最大，\n"
+			.."然後線性遞減至 "..CNumb("30", "n_30_rgb").." 公尺時失效：\n"
 			.."_______________________________\n"
-			.."距離("..CNumb("m", "n_meter_rgb").."): "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."): "..CNumb("15", "n_15_rgb").."| "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."| "..CKWord("~9", "n__9_rgb").."| "..CKWord("~4", "n__4_rgb").."| "..CNumb("0", "n_0_rgb").."\n"
+			.."距離（"..CNumb("公尺", "n_meter_rgb").."）："..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("15", "n_15_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." | "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n",
 		-- fr = "Échange et recharge votre arme à distance. Pendant les {duration:%s} secondes suivantes, vous avez une vitesse de tir de {ranged_attack_speed:%s}, une vitesse de recharge de {reload_speed:%s}, des pénalités de vitesse de déplacement réduites de {reduced_move_penalty:%s}, et vous gagnez {damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." à courte portée.\nTemps de recharge de base {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Ability_3_rgb_fr, -- Barrage à bout portant
 	},
@@ -653,7 +653,7 @@ local ogryn_localizations = {
 			.."每層持續 {duration:%s} 秒並提供：\n"
 			..Dot_green.." {damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 或 {heavy_stacks:%s} 層，\n"
+			..Dot_red.." 單次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 或 {heavy_stacks:%s} 層，\n"
 			.."而非依命中敵人數量計算。",
 		-- fr = "{damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de Mélée pendant {duration:%s} secondes lors d'une attaque réussie. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_rgb_fr, -- Frappe lourde
 	},
@@ -710,8 +710,8 @@ local ogryn_localizations = {
 			.."將歐格林近戰擊殺時獲得的基礎最大"..CKWord("韌性", "Toughness_rgb_tw").." "
 			..CNumb("5%", "pc_5_rgb").."，每層提高 {melee_toughness:%s}：\n"
 			.."_______________________________\n"
-			.."層數: "..CNumb("0", "n_0_rgb").."| "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."| "..CNumb("7", "n_7_rgb").."| "..CNumb("8", "n_8_rgb").."\n"
-			..CKWord("韌性", "Toughness_rgb_tw")..": "..CNumb("5", "n_5_rgb").."| "..CNumb("5.8", "n_5_8_rgb").."| "..CNumb("6.5", "n_6_5_rgb").."| "..CNumb("7.3", "n_7_3_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("8.8", "n_8_8_rgb").."| "..CNumb("9.5", "n_9_5_rgb").."| "..CNumb("10.3", "n_10_3_rgb").."| "..CNumb("11", "n_11_rgb").."\n"
+			.."層數："..CNumb("0", "n_0_rgb").." | "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("5", "n_5_rgb").." | "..CNumb("6", "n_6_rgb").." | "..CNumb("7", "n_7_rgb").." | "..CNumb("8", "n_8_rgb").."\n"
+			..CKWord("韌性", "Toughness_rgb_tw").."："..CNumb("5", "n_5_rgb").." | "..CNumb("5.8", "n_5_8_rgb").." | "..CNumb("6.5", "n_6_5_rgb").." | "..CNumb("7.3", "n_7_3_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("8.8", "n_8_8_rgb").." | "..CNumb("9.5", "n_9_5_rgb").." | "..CNumb("10.3", "n_10_3_rgb").." | "..CNumb("11", "n_11_rgb").."\n"
 			.."_______________________________\n"
 			.."* 四捨五入供參考。\n",
 		-- fr = "{melee_toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée par les éliminations en mêlée par cumuls de {talent_name:%s}."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_1_3_rgb_fr, -- Instoppable
@@ -813,7 +813,7 @@ local ogryn_localizations = {
 			..Dot_green.." 同時產生一次不造成"..CKWord("傷害", "Damage_rgb_tw").." 但使周圍敵人"..CKWord("踉蹌", "Staggers_rgb_tw").." 的爆炸。\n"
 			.."\n"
 			.."爆炸：\n"
-			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 米。\n"
+			..Dot_nc.." 半徑："..CNumb("2.5", "n_2_5_rgb").." 公尺。\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，\n"
 			.."（變種人、巨獸及連長/雙子除外）。",
 		-- fr = "{toughness_replenish:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr.." régénérée quand {talent_name:%s} atteint {stacks:%s} cumul ou moins. Cela crée aussi une explosion qui ne cause pas de dégâts mais fait "..COLORS_KWords_fr.Staggering_rgb_fr.." les ennemis environnants.\n\nCet effet peut se produire une fois toutes les {cooldown:%s} secondes."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_2_1_rgb_fr, -- Éclat de douleur
@@ -896,7 +896,7 @@ local ogryn_localizations = {
 			..Dot_green.." {chance:%s} 機率下次射擊觸發"..CKWord("幸運子彈", "Lucky_bullet_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
-			..Dot_red.." 每次揮擊只獲得 "..CNumb("1", "n_1_rgb").." 層，\n"
+			..Dot_red.." 單次近戰攻擊只獲得 "..CNumb("1", "n_1_rgb").." 層，\n"
 			.."無論擊殺幾名敵人。",
 		-- fr = "{chance:%s} de chance de déclancher une "..COLORS_KWords_fr.Lucky_bullet_rgb_fr.." lors de votre prochain tir lors d'une élimination en mélée. Se cumuls {stacks:%s} fois."..TALENTS_Enh_desc2_fr.ED_OGR_Keystone_3_1_rgb_fr, -- Reculez!
 	},
@@ -1058,7 +1058,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_bigger_coherency_radius_desc"] = { -- radius: +50%
 		en = Dot_green.." {radius:%s} "..CKWord("Coherency", "Coherency_rgb").." radius. Increases from "..CNumb("8", "n_8_rgb").." to "..CNumb("14", "n_14_rgb").." meters.",
 		ru = Dot_green.." {radius:%s} к радиусу "..CKWord("сплочённости", "splochennosti_rgb_ru")..". Увеличивается с "..CNumb("8", "n_8_rgb").." до "..CNumb("14", "n_14_rgb").." метров.", -- Живая башня -- Величественное присутствие -- руоф Выдающееся присутствие
-		["zh-tw"] = Dot_green.." "..CKWord("協同", "Coherency_rgb_tw").."半徑增加 {radius:%s}，由 "..CNumb("8", "n_8_rgb").." 米提高至 "..CNumb("14", "n_14_rgb").." 米。",
+		["zh-tw"] = Dot_green.." "..CKWord("協同", "Coherency_rgb_tw").."半徑增加 {radius:%s}，由 "..CNumb("8", "n_8_rgb").." 公尺提高至 "..CNumb("14", "n_14_rgb").." 公尺。",
 		-- fr = "{radius:%s} de rayon de syntonie.",
 	},
 	--[+ Passive 8 - Soften Them Up +]--	26.03.2026
@@ -1141,7 +1141,7 @@ local ogryn_localizations = {
 			..Dot_nc.." Суммируется {stacks:%s} раз.\n"
 			.."\n"
 			..Dot_nc.." Заряды снимаются только при получении "..CKWord("урона", "urona_rgb_ru").." в ближнем бою.", -- Сосредоточенный боец
-		["zh-tw"] = "成功近戰攻擊時，每次揮擊獲得 "..CNumb("1", "n_1_rgb").." 層：\n"
+		["zh-tw"] = "每次成功的近戰攻擊獲得 "..CNumb("1", "n_1_rgb").." 層：\n"
 			..Dot_green.." {reduction:%s} 來自近戰攻擊的"..CKWord("傷害", "Damage_rgb_tw").."抗性。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
@@ -1186,7 +1186,7 @@ local ogryn_localizations = {
 		ru = "При успешной тяжёлой атаке ближнего боя вы получаете:\n"
 			..Dot_green.." {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.\n"
 			..Dot_nc.." Длится {duration:%s} секунд.", -- ru = "{melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя при успешной тяжёлой атаке ближнего боя. Длится {duration:%s} секунд.", -- Дай им отпор -- руоф Дай сдачи
-		["zh-tw"] = "成功重近戰攻擊後，你獲得：\n"
+		["zh-tw"] = "成功以重型近戰攻擊命中後，你獲得：\n"
 			..Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 		-- fr = "{melee_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée lors d'une attaque puissante de mélée réussie. Dure pendant {duration:%s} secondes.",
@@ -1233,7 +1233,7 @@ local ogryn_localizations = {
 	["loc_talent_ogryn_increased_ammo_desc"] = { -- max_ammo: +25%
 		en = Dot_green.." {max_ammo:%s} to your Maximum Ammo reserve. Rounds down.",
 		ru = Dot_green.." {max_ammo:%s} к максимальному количеству боеприпасов в резерве. Округляется в меньшую сторону.", -- Схрон патронов
-		["zh-tw"] = Dot_green.." 最大備用彈藥增加 {max_ammo:%s}，向下取整計算。",
+		["zh-tw"] = Dot_green.." 最大備用彈藥增加 {max_ammo:%s}，無條件捨去小數。",
 		-- fr = "Augmente votre réserve de munitions maximale de {max_ammo:%s}, arrondi à l'inférieur.",
 	},
 	--[+ Passive 19 - Big Boom +]--	26.03.2026
@@ -1373,9 +1373,9 @@ local ogryn_localizations = {
 			.."но теряете:\n"
 			..Dot_red.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." в секунду.", -- Сосредоточься
 		["zh-tw"] = "架槍遠程武器時，獲得：\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {sway_reduction:%s} 武器晃動，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {spread_reduction:%s} 散射，\n"
-			..Dot_green.." "..CNumb("-", "n_minus_rgb").." {recoil_reduction:%s} 後座力，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{sway_reduction:%s} 武器搖晃，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{spread_reduction:%s} 散布，\n"
+			..Dot_green.." "..CNumb("-", "n_minus_rgb").."{recoil_reduction:%s} 後座力，\n"
 			.."但損失：\n"
 			..Dot_red.." 每秒 {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。",
 		-- fr = "Lors de la mis en joue de votre arme à distance vous gagnez:\n{sway_reduction:%s} de réduction du balancement ,\n{spread_reduction:%s} de réduction du dispercement et\n{recoil_reduction:%s} de réduction du recul,\nMaisvous perdez {stamina:%s} d'"..COLORS_KWords_fr.Stamina_rgb_fr.." par seconde.", -- Concentration
@@ -1477,7 +1477,7 @@ local ogryn_localizations = {
 			..Dot_green.." {attack_speed:%s} 近戰攻擊速度。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
-			..Dot_nc.." 每次揮擊產生 "..CNumb("1", "n_1_rgb").." 層。\n"
+			..Dot_nc.." 每次近戰攻擊產生 "..CNumb("1", "n_1_rgb").." 層。\n"
 			..CPhrs("Can_be_refr"),
 		-- fr = "{attack_speed:%s} de vitesse d'attaque de mélée lors de coup en chaîne pendant {duration:%s} secondes. Se cumuls {stacks:%s} fois. Génère "..CNumb("1", "n_1_rgb").." cumul par coup. La durée est rafraichie une fois le mumuls maximal atteint.",
 	},
@@ -1673,7 +1673,7 @@ local ogryn_localizations = {
 			..Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".\n"
 			..Dot_nc.." Суммируется {max_stacks:%s} раз.", -- Резня
 		["zh-tw"] = "擊殺敵人後，在 {duration:%s} 秒內獲得：\n"
-			..Dot_green.." {crit_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
 			..Dot_nc.." 最多 {max_stacks:%s} 層。",
 		-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crit_chance_rgb_fr.." pendant {duration:%s} secondes en tuant un ennemi. Se cumul jusqu'à {max_stacks:%s} fois.",
 	},
@@ -1763,7 +1763,7 @@ local ogryn_localizations = {
 		en = Dot_green.." {damage_taken:%s} "..CKWord("Damage", "Damage_rgb").." Reduction for each Knocked Down or Incapacitated Ally within {range:%s} meters.",
 		ru = Dot_green.." {damage_taken:%s} к сопротивлению "..CKWord("урону", "uronu_rgb_ru").." за каждого выведенного из строя союзника в радиусе {range:%s} метров.", -- Не сдамся
 		["zh-tw"] = Dot_green.." {damage_taken:%s} "..CKWord("傷害", "Damage_rgb_tw").."減免，\n"
-			.."每名 {range:%s} 米內倒地或失能的隊友提供一份。",
+			.."每名 {range:%s} 公尺內倒地或失能的隊友提供一份。",
 		-- fr = "{damage_taken:%s} de réduction de "..COLORS_KWords_fr.Damage_rgb_fr.." pour chaque allié à terre или incapacité dans un rayon de {range:%s} mètres.",
 	},
 	--[+ Passive 48 - Spray and Slay +]--	26.03.2026

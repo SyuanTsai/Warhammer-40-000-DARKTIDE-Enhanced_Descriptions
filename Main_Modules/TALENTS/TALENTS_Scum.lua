@@ -43,7 +43,7 @@ local scum_localizations = {
 			.."\n"
 			..Dot_green.." 每在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內擊殺 {num_kills:%s} 名敵人，生成 {num_charges:%s} 顆手榴彈。\n"
 			..Dot_nc.." 手榴彈上限：{max_charges:%s}。\n"
-			..Dot_nc.." 最大爆炸半徑： "..CNumb("3.5", "n_3_5_rgb").." 公尺。\n"
+			..Dot_nc.." 最大爆炸半徑："..CNumb("3.5", "n_3_5_rgb").." 公尺。\n"
 			.."\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，變種人、巨獸、女性雙子除外；連長僅在沒有虛空護盾時會受影響。\n"
 			..Dot_nc.." 拾取手榴彈補給時補滿所有手榴彈。",
@@ -69,11 +69,11 @@ local scum_localizations = {
 			..Dot_green.." "..CKWord("Ошеломляет", "Oshelomlaet_rgb_ru").." всех врагов, кроме мутантов, чудовищ, сестры из близнецов и капитанов только без пустотного щита.\n"
 			..Dot_nc.." Все гранаты пополняются из подобранного ящика гранат.", -- Затмение
 		["zh-tw"] = "快速使用的手榴彈，可使敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."。\n"
-			..Dot_green.." 這是 {talent_name:%s} 的增強版本。\n"
+			..Dot_green.." 此為 {talent_name:%s} 的強化版本。\n"
 			.."\n"
 			..Dot_green.." 每在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內擊殺 {num_kills:%s} 名敵人，生成 {num_charges:%s} 顆手榴彈。\n"
 			..Dot_nc.." 手榴彈上限：{max_charges:%s}。\n"
-			..Dot_nc.." 最大爆炸半徑： "..CNumb("3.5", "n_3_5_rgb").." 公尺。\n"
+			..Dot_nc.." 最大爆炸半徑："..CNumb("3.5", "n_3_5_rgb").." 公尺。\n"
 			.."\n"
 			..Dot_green.." 使所有敵人"..CKWord("踉蹌", "Staggers_rgb_tw").."，變種人、巨獸、女性雙子除外；連長僅在沒有虛空護盾時會受影響。\n"
 			..Dot_nc.." 拾取手榴彈補給時補滿所有手榴彈。",
@@ -130,13 +130,13 @@ local scum_localizations = {
 		["zh-tw"] = "高威力飛彈發射器。\n"
 			.."\n"
 			..Dot_nc.." 飛彈上限：{max_charges:%s}。\n"
-			..Dot_nc.." 最大爆炸半徑： "..CNumb("7", "n_7_rgb").." 公尺。\n"
-			..Dot_nc.." 最長飛行時間： "..CNumb("1.5", "n_1_5_rgb").." 秒。\n"
+			..Dot_nc.." 最大爆炸半徑："..CNumb("7", "n_7_rgb").." 公尺。\n"
+			..Dot_nc.." 最長飛行時間："..CNumb("1.5", "n_1_5_rgb").." 秒。\n"
 			.."\n"
-			..Dot_nc.." 投射物命中基礎"..CKWord("傷害", "Damage_rgb_tw").."： "..CNumb("1800", "n_1800_rgb").."。\n"
+			..Dot_nc.." 投射物命中基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("1800", "n_1800_rgb").."。\n"
 			..Dot_green.." 護甲"..CKWord("傷害", "Damage_rgb_tw").."修正：\n"
 			.."_______________________________\n"
-			.."甲殼裝甲                                       |      "..CNumb("1.1", "n_1_1_rgb").."\n"
+			.."甲殼護甲                                       |      "..CNumb("1.1", "n_1_1_rgb").."\n"
 			.."無甲、防彈裝甲、虛空護盾       |        "..CNumb("1", "n_1_rgb").."\n"
 			.."狂人                                             |    "..CNumb("0.9", "n_0_9_rgb").."\n"
 			.."不屈                                             |  "..CNumb("0.75", "n_0_75_rgb").."\n"
@@ -145,10 +145,10 @@ local scum_localizations = {
 			..Dot_green.." 無視城牆護盾。\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
-			..Dot_green.." 爆炸基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("2800", "n_2800_rgb").."-"..CNumb("1300", "n_1300_rgb").."]。\n"
+			..Dot_green.." 爆炸基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("2800", "n_2800_rgb").."～"..CNumb("1300", "n_1300_rgb").."]。\n"
 			..Dot_green.." 護甲"..CKWord("傷害", "Damage_rgb_tw").."修正：\n"
 			.."_______________________________\n"
-			.."甲殼裝甲                                       |    "..CNumb("2.4", "n_2_4_rgb").."\n"
+			.."甲殼護甲                                       |    "..CNumb("2.4", "n_2_4_rgb").."\n"
 			.."防彈裝甲、不屈                           |        "..CNumb("2", "n_2_rgb").."\n"
 			.."狂人                                             |   "..CNumb("1.35", "n_1_35_rgb").."\n"
 			.."無甲                                             |   "..CNumb("1.25", "n_1_25_rgb").."\n"
@@ -214,10 +214,10 @@ local scum_localizations = {
 		["zh-tw"] = "投擲裝有"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."的手榴彈。爆炸時容器破裂，內容物會灑布到一片區域。\n"
 			.."\n"
 			..Dot_nc.." 手榴彈上限：{max_charges:%s}。\n"
-			..Dot_nc.." 引信時間： "..CNumb("5", "n_5_rgb").." 秒，命中時為 "..CNumb("1.5", "n_1_5_rgb").." 秒。\n"
-			..Dot_nc.." 初始爆炸半徑： "..CNumb("4", "n_4_rgb").." 公尺。\n"
-			..Dot_nc.." 毒素區域： "..CNumb("10", "n_10_rgb").." 公尺。\n"
-			..Dot_nc.." 持續： "..CNumb("15", "n_15_rgb").." 秒。\n"
+			..Dot_nc.." 引信時間："..CNumb("5", "n_5_rgb").." 秒，命中時為 "..CNumb("1.5", "n_1_5_rgb").." 秒。\n"
+			..Dot_nc.." 初始爆炸半徑："..CNumb("4", "n_4_rgb").." 公尺。\n"
+			..Dot_nc.." 毒素區域："..CNumb("10", "n_10_rgb").." 公尺。\n"
+			..Dot_nc.." 持續："..CNumb("15", "n_15_rgb").." 秒。\n"
 			..Dot_nc.." 拾取手榴彈補給時補滿所有手榴彈。\n"
 			.."\n"
 			.."毒素施加：\n"
@@ -226,14 +226,14 @@ local scum_localizations = {
 			.."\n"
 			.."敵人減益：\n"
 			..Dot_green.." 受到近戰攻擊時，"..CNumb("-", "n_minus_rgb")..CNumb("50%", "pc_50_rgb").." "..CKWord("順劈目標", "Hit_mass_rgb_tw").."。\n"
-			..Dot_nc.." 持續： "..CNumb("1", "n_1_rgb").." 秒。\n"
+			..Dot_nc.." 持續："..CNumb("1", "n_1_rgb").." 秒。\n"
 			..CPhrs("Can_be_refr").."\n"
 			..CPhrs("Doesnt_Stack_Scm_eff").."\n"
 			.."\n"
 			.."毒素爆炸：\n"
 			..Dot_nc.." 敵人在獲得最後一層後 "..CNumb("12", "n_12_rgb").." 秒內死亡，才會發生爆炸。\n"
-			..Dot_nc.." 爆炸半徑： "..CNumb("2.5", "n_2_5_rgb").." 公尺。\n"
-			..Dot_green.." 爆炸基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("200", "n_200_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
+			..Dot_nc.." 爆炸半徑："..CNumb("2.5", "n_2_5_rgb").." 公尺。\n"
+			..Dot_green.." 爆炸基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("200", "n_200_rgb").."～"..CNumb("100", "n_100_rgb").."]。\n"
 			..Dot_nc.." 平均護甲"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			..Dot_red.." 對防彈裝甲低"..CKWord("傷害", "Damage_rgb_tw").."。",
 	},
@@ -261,7 +261,7 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_Aura"), -- Улучшенный стрелок
 		["zh-tw"] = Dot_green.." 你或處於"..CKWord("協同", "Coherency_rgb_tw").."的盟友拾取任何彈藥補給時，你們每人都會補充該補給的 {ammo:%s}。\n"
-			..Dot_green.." 這是 {talent:%s} 的增強版本。\n"
+			..Dot_green.." 此為 {talent:%s} 的強化版本。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_Aura"),
 	},
@@ -285,7 +285,7 @@ local scum_localizations = {
 		ru = Dot_green.." {critical_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru").." для вас и союзников в "..CKWord("сплочённости", "splochennosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_Aura"), -- Анархист
-		["zh-tw"] = Dot_green.." 你與處於"..CKWord("協同", "Coherency_rgb_tw").."的盟友獲得 {critical_chance:%s} "..CKWord("暴擊機率", "Crit_chance_rgb_tw").."。\n"
+		["zh-tw"] = Dot_green.." 你與處於"..CKWord("協同", "Coherency_rgb_tw").."的盟友獲得 {critical_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_Aura"),
 	},
@@ -319,7 +319,7 @@ local scum_localizations = {
 			..Dot_green.." 衝刺不消耗"..CKWord("耐力", "Stamina_rgb_tw").."，\n"
 			..Dot_green.." 免疫遠程攻擊，\n"
 			..Dot_green.." 免疫壓制，\n"
-			..Dot_green.." 換彈不消耗備用彈藥。\n"
+			..Dot_green.." 裝填不消耗備用彈藥。\n"
 			.."\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。",
 	},
@@ -364,14 +364,14 @@ local scum_localizations = {
 			.."\n"
 			..Dot_nc.." Базовое время восстановления: {cooldown:%s} секунд.", -- Улучшенный Безбашенный
 		["zh-tw"] = "補滿所有"..CKWord("韌性", "Toughness_rgb_tw").."，切換到你的遠程武器並完成裝填，進入 {talent_name:%s}，持續 {duration:%s} 秒。\n"
-			..Dot_green.." 這是 {default_talent:%s} 的增強版本。\n"
+			..Dot_green.." 此為 {default_talent:%s} 的強化版本。\n"
 			.."\n"
 			.."期間獲得：\n"
 			..Dot_green.." {sprint_movement_speed:%s} 衝刺速度，\n"
 			..Dot_green.." 衝刺不消耗"..CKWord("耐力", "Stamina_rgb_tw").."，\n"
 			..Dot_green.." 免疫遠程攻擊，\n"
 			..Dot_green.." 免疫壓制，\n"
-			..Dot_green.." 換彈不消耗備用彈藥。\n"
+			..Dot_green.." 裝填不消耗備用彈藥。\n"
 			.."\n"
 			.."標出 "..CNumb("12.5", "n_12_5_rgb").." 公尺內的敵人。\n"
 			.."\n"
@@ -516,7 +516,7 @@ local scum_localizations = {
 			..Dot_green.." {rending:%s} к "..CKWord("пробиванию", "probivaniu_rgb_ru").." брони.\n"
 			.."\n"
 			..CNote("Rend_note"),
-		["zh-tw"] = "{punk_rage:%s} 啟用期間，重攻擊獲得：\n"
+		["zh-tw"] = "{punk_rage:%s} 啟用期間，重型攻擊獲得：\n"
 			..Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."。\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -529,7 +529,7 @@ local scum_localizations = {
 		ru = Dot_green.." Удары в ближнем бою по элитным врагам, специалистам и чудовищам продлевают время действия способности {punk_rage:%s} с "..CNumb("0.3", "n_0_3_rgb").." до {rage_duration_extend_elites:%s} секунды.\n"
 			.."\n"
 			..Dot_green.." Дополнительно, ослабление эффекта продления времени за удары в ближнем бою увеличивается до {rage_duration_max_upgrade:%s} секунд.",
-		["zh-tw"] = Dot_green.." 近戰命中精英、專家或巨獸時，{punk_rage:%s} 的持續時間延長從 "..CNumb("0.3", "n_0_3_rgb").." 秒提高至 {rage_duration_extend_elites:%s} 秒。\n"
+		["zh-tw"] = Dot_green.." 近戰命中精英、專家或巨獸時，{punk_rage:%s} 每次命中延長的持續時間由 "..CNumb("0.3", "n_0_3_rgb").." 秒提高至 {rage_duration_extend_elites:%s} 秒。\n"
 			.."\n"
 			..Dot_green.." 此外，延長效果開始衰減前的時間現在為 {rage_duration_max_upgrade:%s} 秒。",
 	},
@@ -558,7 +558,7 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Doesnt_Stack_Scm_eff"),
 		["zh-tw"] = "強化 {punk_rage:%s}，使其在啟用時釋放一次怒吼。\n"
-			..Dot_nc.." 半徑： "..CNumb("4.5", "n_4_5_rgb").." 公尺。\n"
+			..Dot_nc.." 半徑："..CNumb("4.5", "n_4_5_rgb").." 公尺。\n"
 			..Dot_nc.." 持續：{duration:%s} 秒。\n"
 			.."\n"
 			.."這次怒吼會對命中的所有敵人施加減益：\n"
@@ -621,7 +621,7 @@ local scum_localizations = {
 			..Dot_red.." Пока {stimm_field:%s} активен, время восстановления останавливается и не может быть уменьшен.",
 		["zh-tw"] = "在地面部署改裝醫療包，強化你與盟友 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。\n"
+			..Dot_nc.." 半徑："..CNumb("3", "n_3_rgb").." 公尺。\n"
 			.."\n"
 			.."吸入醫療包氣體的特工會隨時間治療"..CKWord("腐敗", "Corruption_rgb_tw").."，並免疫腐敗。\n"
 			..Dot_green.." 對範圍內所有盟友每 "..CNumb("0.25", "n_0_25_rgb").." 秒移除 "..CNumb("0.5", "n_0_5_rgb").." "..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."，最多 {total_corruption_heal:%s}。\n"
@@ -673,9 +673,9 @@ local scum_localizations = {
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru")..": "..CNumb("200", "n_200_rgb")..".",
 		["zh-tw"] = "{stimm_field:%s} 持續時間結束時會爆炸，使附近敵人感染 {stacks:%s} 層"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。\n"
+			..Dot_nc.." 半徑："..CNumb("3", "n_3_rgb").." 公尺。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."： "..CNumb("200", "n_200_rgb").."。",
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."："..CNumb("200", "n_200_rgb").."。",
 	},
 	--[+ ABILITY 3-3 - Fast Acting Stimms +]--	26.03.2026
 	["loc_talent_broker_ability_stimm_field_sub_1_desc"] = { -- stimm_field: Stimm Supply, duration: 5, linger_duration: 15, s->seconds, +colors
@@ -760,7 +760,7 @@ local scum_localizations = {
 			..Dot_nc.." Радиус "..CNumb("3", "n_3_rgb").." метров.",
 		["zh-tw"] = "以遠程攻擊擊殺精英或專家敵人時，在你的位置產生不造成傷害的爆炸，幾乎不會使任何東西"..CKWord("踉蹌", "Staggers_rgb_tw").."。\n"
 			.."\n"
-			..Dot_nc.." 半徑： "..CNumb("3", "n_3_rgb").." 公尺。",
+			..Dot_nc.." 半徑："..CNumb("3", "n_3_rgb").." 公尺。",
 	},
 	--[+ KEYSTONE 1-2 - Vulture's Dodge +]--	26.03.2026
 	["loc_talent_broker_keystone_vultures_mark_dodge_on_ranged_crit_desc"] = { -- duration: 1, s->second, +colors
@@ -772,7 +772,7 @@ local scum_localizations = {
 			..Dot_green.." Иммунитет ко всем атакам.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "遠程"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."會給予 {duration:%s} 秒：\n"
+		["zh-tw"] = "遠程"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."會使你在 {duration:%s} 秒內：\n"
 			..Dot_green.." 免疫所有攻擊。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -823,7 +823,7 @@ local scum_localizations = {
 			..CKWord("致命", "Critical_rgb_tw").."近戰命中會給予：\n"
 			..Dot_green.." 額外 {on_crit:%s} 層。\n"
 			.."\n"
-			.."滿層時，移除所有"..CKWord("腎上腺素", "Adren_rgb_tw").."層數，並獲得 {frenzy:%s} {frenzy_duration:%s} 秒。\n"
+			.."滿層時，移除所有"..CKWord("腎上腺素", "Adren_rgb_tw").."層數，並獲得 {frenzy:%s}，持續 {frenzy_duration:%s} 秒。\n"
 			.."\n"
 			.."{frenzy:%s} 給予：\n"
 			..Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."，且\n"
@@ -843,7 +843,7 @@ local scum_localizations = {
 			..Dot_red.." Обычные попадания в ближнем бою не дают зарядов.\n"
 			.."\n"
 			..Dot_green.." Попадания в ближнем бою не по "..CKWord("уязвимым местам", "ujazvimym_mestam_rgb_ru")..", но "..CKWord("критическими ударами", "krit_udarami_rgb_ru")..", всё ещё дают {stacks:%s} заряда.",
-		["zh-tw"] = CKWord("弱點命中", "Weakspothits_rgb_tw").."現在給予：\n"
+		["zh-tw"] = CKWord("命中弱點", "Weakspothits_rgb_tw").."現在給予：\n"
 			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("3", "n_3_rgb").." 層。\n"
 			.."\n"
 			..Dot_red.." 一般近戰命中不再給予層數。\n"
@@ -873,17 +873,17 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." дополнительный заряд, в дополнение к другим зарядам "..CKWord("Адреналина", "Adren_rgb_ru").." за каждого убитого врага.\n"
 			.."\n"
 			..Dot_red.." Не смертельные удары не дают ничего.",
-		["zh-tw"] = "擊殺打擊現在給予：\n"
+		["zh-tw"] = "造成擊殺的攻擊現在給予：\n"
 			..Dot_green.." 額外 {stacks:%s} 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。從 "..CNumb("1", "n_1_rgb").." 層提高至 "..CNumb("5", "n_5_rgb").." 層。\n"
 			.."\n"
-			.."精英擊殺打擊給予：\n"
+			.."擊殺精英的攻擊給予：\n"
 			..Dot_green.." 額外 "..CNumb("+", "n_plus_rgb")..CNumb("14", "n_14_rgb").." 層。\n"
 			.."提高至 "..CNumb("15", "n_15_rgb").." 層。\n"
 			.."\n"
 			.."如果攻擊是"..CKWord("致命", "Critical_rgb_tw").."，每擊殺一名敵人額外產生：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb")..CNumb("1", "n_1_rgb").." 層"..CKWord("腎上腺素", "Adren_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 非擊殺打擊不給予層數。",
+			..Dot_red.." 未造成擊殺的攻擊不給予層數。",
 	},
 	--[+ KEYSTONE 2-3 - Stoked Rage +]--	26.03.2026
 	["loc_talent_broker_keystone_adrenaline_junkie_sub_3_desc"] = { -- frenzy: Adrenaline Frenzy, duration: 20, +colors
@@ -949,7 +949,7 @@ local scum_localizations = {
 		["zh-tw"] = "使用興奮劑恢復：\n"
 			..Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			..Dot_green.." 每層 {dependency:%s} 提供 {toughness_damage_reduction:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ KEYSTONE 3-3 - Maxed Out Chems +]--	26.03.2026
 	["loc_talent_broker_keystone_chemical_dependency_sub_3_desc"] = { -- : , +colors
@@ -1016,11 +1016,11 @@ local scum_localizations = {
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
-		["zh-tw"] = "成功閃避後，獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "成功閃避後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." 對 "..CNumb("12.5", "n_12_5_rgb").." 公尺內目標造成 {damage_near:%s} "..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."_______________________________\n"
-			.."距離 ("..CNumb("m", "n_meter_rgb").."):   "..CNumb("1", "n_1_rgb").."| "..CNumb("12.5", "n_12_5_rgb").."|   "..CNumb("15", "n_15_rgb").."|  "..CNumb("20", "n_20_rgb").."|   "..CNumb("25", "n_25_rgb").."| "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").." ("..CNumb("%", "pc_rgb").."):  "..CNumb("15", "n_15_rgb").."|    "..CNumb("15", "n_15_rgb").."| "..CKWord("~13", "n__13_rgb").."|   "..CKWord("~9", "n__9_rgb").."|   "..CKWord("~4", "n__4_rgb").."|   "..CNumb("0", "n_0_rgb").."\n"
+			.."距離（"..CNumb("公尺", "n_meter_rgb").."）："..CNumb("1", "n_1_rgb").." | "..CNumb("12.5", "n_12_5_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("25", "n_25_rgb").." | "..CNumb("30", "n_30_rgb")..CNumb("+", "n_plus_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）："..CNumb("15", "n_15_rgb").." | "..CNumb("15", "n_15_rgb").." | "..CKWord("~13", "n__13_rgb").." | "..CKWord("~9", "n__9_rgb").." | "..CKWord("~4", "n__4_rgb").." | "..CNumb("0", "n_0_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			.."成功閃避下列攻擊時觸發：\n"
@@ -1055,11 +1055,11 @@ local scum_localizations = {
 			..Dot_green.." {default:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			.."近戰"..CKWord("致命一擊", "Crit_strikes_rgb_tw")
-			.."與"..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
+			.."與"..CKWord("命中弱點", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {weakspot:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
-			..CKWord("致命", "Critical_rgb_tw").." "
-			..CKWord("弱點命中", "Weakspothits_rgb_tw").."恢復：\n"
+			..CKWord("致命一擊", "Critical_rgb_tw")
+			..CKWord("命中弱點", "Weakspothits_rgb_tw").."恢復：\n"
 			..Dot_green.." {critical:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。\n"
 			.."\n"
 			..Dot_red.." 每次近戰攻擊只觸發一次，"
@@ -1086,7 +1086,7 @@ local scum_localizations = {
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".",
 		["zh-tw"] = "裝填期間與裝填完成後 {duration:%s} 秒，獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{toughness_damage_taken_modifier:%s} "
-			..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。",
+			..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。",
 	},
 	--[+ Passive 6 - Burst of Energy +]--	26.03.2026
 	["loc_talent_broker_passive_stun_immunity_on_toughness_broken_desc"] = { -- duration: 6, toughness: +50%, cooldown: 10, +colors
@@ -1130,12 +1130,12 @@ local scum_localizations = {
 			.."\n"
 			.."腰射或架槍射擊時，獲得：\n"
 			..Dot_green.." {recoil:%s} 後座力，並\n"
-			..Dot_green.." {spread:%s} 擴散。\n"
+			..Dot_green.." {spread:%s} 散布。\n"
 			.."\n"
 			..Dot_nc.." 可架槍武器：自動手槍、架勢自動槍、"
 			.."雙持自動手槍與雙持短管手槍。\n"
 			.."\n"
-			..Dot_nc.." 切換速度會縮短切換物品欄位時的取出動作\n"
+			..Dot_nc.." 切換速度會縮短切換物品欄位時的持用動作\n"
 			.."   （武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。",
 	},
 	--[+ Passive 8 - A Tertium Welcome +]--	26.03.2026
@@ -1155,7 +1155,7 @@ local scum_localizations = {
 			..Dot_green.." {reload_speed:%s} к скорости перезарядки.\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "在 "..CNumb("12.5", "n_12_5_rgb").." 公尺內以遠程擊殺時，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {reload_speed:%s} 裝填速度。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1182,7 +1182,7 @@ local scum_localizations = {
 			.."Срабатывает при успешном уклонении от:\n"
 			..Dot_nc.." Атак врагов в ближнем или дальнем бою (кроме стрельбы пулемётчика, жнеца, снайпера),\n"
 			..Dot_nc.." Атак обездвиживающих врагов (прыжок чумной гончей, сетка скаба-ловца, захват мутанта).",
-		["zh-tw"] = "完美格擋與成功閃避會獲得 {duration:%s} 秒：\n"
+		["zh-tw"] = "完美格擋與成功閃避後，在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {critical_strike_chance:%s} "..CKWord("爆擊率", "Crt_chnc_r_rgb_tw").."。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
@@ -1291,8 +1291,8 @@ local scum_localizations = {
 			..CKWord("卡特爾特製興奮劑", "Cartel_Stimm_rgb_tw").."剩餘"..CKWord("冷卻", "Cd_rgb_tw").."。\n"
 			.."\n"
 			.."每次擊殺的縮短量：\n"
-			..Dot_green.." 任意攻擊： "..CNumb("-", "n_minus_rgb").."{restore:%s}。\n"
-			..Dot_green.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."跳傷： "..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}。\n"
+			..Dot_green.." 任意攻擊："..CNumb("-", "n_minus_rgb").."{restore:%s}。\n"
+			..Dot_green.." "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."每次生效："..CNumb("-", "n_minus_rgb").."{restore_toxined:%s}。\n"
 			.."\n"
 			..CPhrs("Can_proc_mult"),
 	},
@@ -1483,13 +1483,13 @@ local scum_localizations = {
 			.."["..CKWord("Крит. урон", "Krt_uron_rgb_ru").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("Здоровье", "Zdorovie_rgb_ru").."]\n"
 			.."\n"
 			..Dot_nc.." Типы врагов НЕ человеческого размера: Зверь Нургла, Отродье Хаоса, Чумной огрин, бастион, демонхост, жнец, загонщик, капитаны/близнецы, крушитель.",
-		["zh-tw"] = CKWord("近戰爆擊", "Critical_rgb_tw").."攻擊會立即擊殺人類體型敵人，\n"
-			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." x {threshold:%s}。\n"
+		["zh-tw"] = "近戰攻擊造成"..CKWord("致命一擊", "Critical_rgb_tw").."時，會立即擊殺人類體型敵人，\n"
+			.."前提是敵人目前"..CKWord("生命值", "Health_rgb_tw").."低於該次"..CKWord("致命一擊", "Crit_strikes_rgb_tw").."的"..CKWord("傷害", "Damage_rgb_tw").." × {threshold:%s}。\n"
 			.."\n"
-			..Dot_nc.." ["..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").." x {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
+			..Dot_nc.." ["..CKWord("暴擊傷害", "Crt_dmg_r_rgb_tw").." × {threshold:%s}] "..CNumb(">", "n_greater_rgb").." ["..CKWord("生命值", "Health_rgb_tw").."]\n"
 			.."\n"
 			..Dot_nc.." 不視為「人類體型」的敵人：\n"
-			.."   "..Dot_nc.." 納垢巨獸、堡壘、隊長/雙子、\n"
+			.."   "..Dot_nc.." 納垢巨獸、堡壘、連長/雙子、\n"
 			.."   "..Dot_nc.." 混沌魔物、碾壓者、惡魔宿主、\n"
 			.."   "..Dot_nc.." 獸群領主、瘟疫歐格林、收割者。",
 	},
@@ -1518,7 +1518,7 @@ local scum_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr"),
 		["zh-tw"] = "裝填你的遠程武器後，\n"
-			.."獲得 {duration:%s} 秒：\n"
+			.."在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。\n"
 			.."\n"
 			.."效果期間每消耗彈匣 {ammo_per_stack:%s}，\n"
@@ -1569,7 +1569,7 @@ local scum_localizations = {
 			..Dot_nc.." Срабатывает раз в {cooldown:%s} секунд.",
 		["zh-tw"] = "受到近戰"..CKWord("傷害", "Damage_rgb_tw").."時，\n"
 			.."擊退你周圍所有附近敵人，\n"
-			.."並獲得 {duration:%s} 秒：\n"
+			.."並在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {movement_speed:%s} 移動速度。\n"
 			.."\n"
 			..Dot_nc.." 每 {cooldown:%s} 秒只能觸發一次。",
@@ -1675,7 +1675,7 @@ local scum_localizations = {
 		ru = "Когда вы заражаете врагов "..CKWord("Хим-токсином", "Chem_Toxom_rgb_ru").." они получают на {duration:%s} секунд:\n"
 			..Dot_green.." {damage_taken:%s} к получаемому "..CKWord("урону", "uronu_rgb_ru").." из любых источников.",
 		["zh-tw"] = "當你使敵人感染"..CKWord("化學毒素", "Chem_Tox_rgb_tw").."時，\n"
-			.."敵人會獲得 {duration:%s} 秒：\n"
+			.."敵人在 {duration:%s} 秒內：\n"
 			..Dot_green.." 受到所有來源的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage_taken:%s}。",
 	},
 	--[+ Passive 41 - Targeted Toxin +]--	26.03.2026
@@ -1779,7 +1779,7 @@ local scum_localizations = {
 				..Dot_nc.." Этот талант сокращает время затрачиваемое на смену слотов предметов (оружие, гранаты, стимуляторы, медпаки, ящики с боеприпасами, книги и т.д.)."
 			.."\n",
 			["zh-tw"] = Dot_green.." {wield_speed:%s} 切換速度。\n"
-				..Dot_nc.." 這會縮短切換物品欄位時，取出動作所需的時間（武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。"
+				..Dot_nc.." 這會縮短切換物品欄位時，持用動作所需的時間（武器、手榴彈、興奮劑、醫療包、彈藥箱、書籍等）。"
 			.."\n",
 		},
 		["loc_talent_stat_stamina_cost_multiplier"] = { -- stamina_cost_multiplier: -15%, +colors
@@ -1866,7 +1866,7 @@ local scum_localizations = {
 			..Dot_green.." {cooldown:%s} к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-			["zh-tw"] = "啟用時，近戰擊殺會賦予 {duration:%s} 秒：\n"
+			["zh-tw"] = "啟用期間，近戰擊殺會使你在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
@@ -1881,7 +1881,7 @@ local scum_localizations = {
 			..Dot_green.." {cooldown:%s} к восстановлению "..CKWord("боевой способности", "boev_sposobnosti_rgb_ru")..".\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),
-			["zh-tw"] = "啟用時，遠程擊殺會賦予 {duration:%s} 秒：\n"
+			["zh-tw"] = "啟用期間，遠程擊殺會使你在 {duration:%s} 秒內獲得：\n"
 			..Dot_green.." {cooldown:%s} "..CKWord("技能冷卻", "Ability_cd_rgb_tw").."恢復。\n"
 			.."\n"
 			..CPhrs("Can_be_refr"),

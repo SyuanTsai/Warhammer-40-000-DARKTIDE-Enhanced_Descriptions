@@ -276,7 +276,7 @@ local talent_localizations = {
 		["loc_talent_warp_charge_low_desc"] = { -- warp_charge: -10.00%
 			en = Dot_green.." {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." Generation.",
 			ru = Dot_green.." {warp_charge:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".",-- руоф Сопротивление угрозе
-			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."增長。", -- 反噬抗性
+			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."累積。", -- 反噬抗性
 			-- fr = "{warp_charge:%s} de Génération de "..COLORS_KWords_fr.Peril_rgb_fr.." .",
 			-- ["zh-cn"] = "{warp_charge:%s} "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."产生。", -- 危机值抗性
 		},

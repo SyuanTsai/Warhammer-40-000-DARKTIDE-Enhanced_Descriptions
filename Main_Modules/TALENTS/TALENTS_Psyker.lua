@@ -403,7 +403,7 @@ local psyker_localizations = {
 		["zh-tw"] = "釋放在敵人之間跳躍的鏈式生物閃電，造成低量持續"..CKWord("電擊", "Electrcuting_rgb_tw")..CKWord("傷害", "Damage_rgb_tw").."，並造成大量"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
 			.."次要蓄力攻擊造成更高"..CKWord("傷害", "Damage_rgb_tw").."，且跳躍速度更快。\n"
 			.."\n"
-			..Dot_nc.." 最大射程："..CNumb("16", "n_16_rgb").." 米。\n"
+			..Dot_nc.." 最大射程："..CNumb("16", "n_16_rgb").." 公尺。\n"
 			..Dot_nc.." 僅命中軀幹部位。\n"
 			..CPhrs("Cant_Crit")
 			..Dot_nc.." 對護甲造成中等"..CKWord("傷害", "Damage_rgb_tw").."。\n"
@@ -705,7 +705,7 @@ local psyker_localizations = {
 			..Dot_nc.." 對首個目標造成 "..CNumb("225", "n_225_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."，消耗 "..CNumb("10%", "pc_10_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			.."次要攻擊：\n"
-			..Dot_nc.." 發射一枚自導射彈，飛行 "..CNumb("3", "n_3_rgb").." 秒，擊中 "..CNumb("50", "n_50_rgb").." 米半徑內的所有敵人。\n"
+			..Dot_nc.." 發射一枚自導射彈，飛行 "..CNumb("3", "n_3_rgb").." 秒，擊中 "..CNumb("50", "n_50_rgb").." 公尺半徑內的所有敵人。\n"
 			..Dot_nc.." 造成 "..CNumb("380", "n_380_rgb").." 基礎"..CKWord("傷害", "Damage_rgb_tw").."，消耗 "..CNumb("25%", "pc_25_rgb").." "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
 			..Dot_green.." 可以造成"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
@@ -862,7 +862,7 @@ local psyker_localizations = {
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} vitesse de rechargement des charges de {talent_name:%s}.\n"
 			.."\n"
 			..Dot_nc.." Réduit le temps de recharge des projectiles de "..CNumb("3", "n_3_rgb").." à "..CNumb("2.1", "n_2_1_rgb").." secondes par projectile.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {recharge:%s} {talent_name:%s} 充能恢復速度。\n"
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s} 充能恢復速度。\n"
 			.."\n"
 			..Dot_nc.." 每枚射彈恢復時間由 "..CNumb("3", "n_3_rgb").." 秒縮短至 "..CNumb("2.1", "n_2_1_rgb").." 秒。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{recharge:%s} {talent_name:%s}充能恢复速度。\n"
@@ -1096,8 +1096,8 @@ local psyker_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_nc.." 可用來防止"..CKWord("靈能者", "cls_psy_rgb_tw").."自爆。\n"
-			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 米，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
-			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 米半徑內的敵人。",
+			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 公尺，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
+			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 公尺半徑內的敵人。",
 		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Staggers_rgb_zh_cn").."前方的敌人。\n"
 			..Dot_nc.." 基础冷却：{cooldown:%s}秒。\n"
 			.."\n"
@@ -1178,8 +1178,8 @@ local psyker_localizations = {
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。\n"
 			.."\n"
 			..Dot_nc.." 可用來防止"..CKWord("靈能者", "cls_psy_rgb_tw").."自爆。\n"
-			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 米，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
-			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 米半徑內的敵人。\n"
+			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 公尺，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
+			..Dot_nc.." "..CKWord("眩暈", "Stuns_rgb_tw").." 前方 "..CNumb("5", "n_5_rgb").." 公尺半徑內的敵人。\n"
 			..Dot_nc.." 必定命中軀幹部位。",
 		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Staggers_rgb_zh_cn").."前方的敌人。\n"
 			..Dot_green.." {talent_name:%s}的强化版本。\n"
@@ -1384,10 +1384,10 @@ local psyker_localizations = {
 			..CPhrs("Refr_dur_stappl").."\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." très élevés contre armure.\n"
 			..Dot_red.." "..CKWord("Dégâts", "Damage_rgb_fr").." très faibles contre Carapace.",
-		["zh-tw"] = "{talent_name:%s} 依當前"..CKWord("反噬", "Peril_rgb_tw").." 對命中目標施加 {min_stacks:%s}-{warpfire_stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：\n"
+		["zh-tw"] = "{talent_name:%s} 依當前"..CKWord("反噬", "Peril_rgb_tw").." 對命中目標施加 {min_stacks:%s}～{warpfire_stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("5", "n_5_rgb").."| "..CNumb("6", "n_6_rgb").."\n"
-			..CKWord("反噬", "Peril_rgb_tw").." ("..CNumb("%", "pc_rgb").."):     "..CNumb("0", "n_0_rgb").." | "..CKWord("~17", "n__17_rgb").." | "..CKWord("~33", "n__33_rgb").." | "..CKWord("~50", "n__50_rgb").." | "..CKWord("~67", "n__67_rgb").." | "..CKWord("~83", "n__83_rgb").."\n"
+			..CKWord("靈魂之火", "Soulblaze_rgb_tw").."：       "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("5", "n_5_rgb").." | "..CNumb("6", "n_6_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）：     "..CNumb("0", "n_0_rgb").." | "..CKWord("~17", "n__17_rgb").." | "..CKWord("~33", "n__33_rgb").." | "..CKWord("~50", "n__50_rgb").." | "..CKWord("~67", "n__67_rgb").." | "..CKWord("~83", "n__83_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
@@ -1858,7 +1858,7 @@ local psyker_localizations = {
 		["zh-tw"] = "{talent_name:%s} 現在形成球形護盾。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。\n"
 			.."\n"
-			..Dot_nc.." 球形半徑："..CNumb("6", "n_6_rgb").." 米。\n"
+			..Dot_nc.." 球形半徑："..CNumb("6", "n_6_rgb").." 公尺。\n"
 			..Dot_nc.." 可抵擋來自所有方向的敵人攻擊。\n"
 			.."\n"
 			..Dot_red.." 冷卻時間增加至 {cooldown:%s} 秒。",
@@ -2026,7 +2026,7 @@ local psyker_localizations = {
 			.."Pendant "..CKWord("Scrier Gaze", "Scrier_gaze_rgb_fr")..", vous accumulez du "..CKWord("Péril", "Peril_rgb_fr")..". L'accumulation est temporairement ralentie par les éliminations d'ennemis.\n"
 			.."À {max_peril:%s} de "..CKWord("Péril", "Peril_rgb_fr")..", la capacité prend fin.\n"
 			..Dot_nc.." Temps de recharge de base : {cooldown:%s} secondes.",
-		["zh-tw"] = "進入"..CKWord("占卜者的凝視", "Scrier_gaze_rgb_tw").."，消除 {vent:%s} "..CKWord("反噬", "Peril_rgb_tw").."，並獲得：\n"
+		["zh-tw"] = "進入"..CKWord("占卜者的注視", "Scrier_gaze_rgb_tw").."，消除 {vent:%s} "..CKWord("反噬", "Peril_rgb_tw").."，並獲得：\n"
 			..Dot_green.." {base_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，\n"
 			..Dot_green.." {weakspot_damage:%s} "..CKWord("弱點傷害", "Weakspot_dmg_rgb_tw").."，\n"
@@ -2034,11 +2034,11 @@ local psyker_localizations = {
 			..Dot_green.." {tdr:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，\n"
 			..Dot_green.." 壓制免疫。\n"
 			.."\n"
-			.."每秒在"..CKWord("占卜者的凝視", "Scrier_gaze_rgb_tw").." 中獲得層數：\n"
+			.."每秒在"..CKWord("占卜者的注視", "Scrier_gaze_rgb_tw").." 中獲得層數：\n"
 			..Dot_green.." {damage_per_stack:%s} "..CKWord("傷害", "Damage_rgb_tw").."，最多 {max_damage:%s}。\n"
 			.."離開後持續 {duration:%s} 秒。\n"
 			.."\n"
-			.."在"..CKWord("占卜者的凝視", "Scrier_gaze_rgb_tw").." 中累積"..CKWord("反噬", "Peril_rgb_tw").."，\n"
+			.."在"..CKWord("占卜者的注視", "Scrier_gaze_rgb_tw").." 中累積"..CKWord("反噬", "Peril_rgb_tw").."，\n"
 			.."擊殺敵人時累積暫時減緩。\n"
 			..CKWord("反噬", "Peril_rgb_tw").." 達 {max_peril:%s} 時技能結束。\n"
 			..Dot_nc.." 基礎冷卻：{cooldown:%s} 秒。",
@@ -2255,10 +2255,10 @@ local psyker_localizations = {
 			..Dot_green.." {movement_speed:%s} de vitesse de déplacement.\n"
 			.."\n"
 			..Dot_red.." Ne persiste pas après la phase de surcharge.",
-		["zh-tw"] = "{talent_name:%s} 充能期間：\n"
+		["zh-tw"] = "{talent_name:%s} 超載期間：\n"
 			..Dot_green.." {movement_speed:%s} 移動速度。\n"
 			.."\n"
-			..Dot_red.." 充能階段結束後不持續。",
+			..Dot_red.." 超載階段結束後不持續。",
 		["zh-cn"] = "{talent_name:%s}超载期间：\n"
 			..Dot_green.." {movement_speed:%s} 移动速度。\n"
 			.."\n"
@@ -2309,11 +2309,11 @@ local psyker_localizations = {
 			..Dot_green.." {venting:%s} d'apaisement actif.\n"
 			.."\n"
 			..Dot_red.." Ne persiste pas après la phase de surcharge.",
-		["zh-tw"] = "{talent_name:%s} 充能期間：\n"
+		["zh-tw"] = "{talent_name:%s} 超載期間：\n"
 			..Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."生成，\n"
-			..Dot_green.." {venting:%s} 主動平靜速度。\n"
+			..Dot_green.." {venting:%s} 主動平息速度。\n"
 			.."\n"
-			..Dot_red.." 充能階段結束後不持續。",
+			..Dot_red.." 超載階段結束後不持續。",
 		["zh-cn"] = "{talent_name:%s}超载期间：\n"
 			..Dot_green.." {warp_charge:%s} "..CKWord("危机值", "Peril_rgb_zh_cn").."生成，\n"
 			..Dot_green.." {venting:%s} 主动镇静。\n"
@@ -2717,16 +2717,16 @@ local psyker_localizations = {
 			..Dot_green.." Permet d'incanter à "..CNumb("100%", "pc_100_rgb").." de "..CKWord("Péril", "Peril_rgb_fr")..".",
 		["zh-tw"] = "擊殺有 {chance:%s} 機率強化你的下一次閃擊。\n"
 			.."\n"
-			.."增強{blitz_one:%s}：\n"
+			.."強化{blitz_one:%s}：\n"
 			..Dot_green.." {smite_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {smite_cost:%s} "..CKWord("反噬", "Peril_rgb_tw").." 消耗減少，\n"
 			..Dot_green.." {smite_attack_speed:%s} 施放時間減少。\n"
 			.."\n"
-			.."增強{blitz_two:%s}：\n"
+			.."強化{blitz_two:%s}：\n"
 			..Dot_green.." {chain_lightning_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."，\n"
 			..Dot_green.." {chain_lightning_jump_time_multiplier:%s} 散布速度加快。\n"
 			.."\n"
-			.."增強{blitz_three:%s}：\n"
+			.."強化{blitz_three:%s}：\n"
 			..Dot_green.." {throwing_knives_cost:%s} "..CKWord("反噬", "Peril_rgb_tw").." 消耗減少，\n"
 			..Dot_green.." "..CKWord("傷害", "Damage_rgb_tw").."從 {throwing_knives_old_damage:%s} 提高至 {throwing_knives_new_damage:%s}。\n"
 			..Dot_green.." 不消耗任何充能。\n"
@@ -2970,7 +2970,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Infliger des "..CKWord("Dégâts", "Damage_rgb_fr").." aux ennemis "..CKWord("Marqués", "Psy_Mark_rgb_fr").." rafraîchit la durée du talent.\n"
 			..Dot_nc.." Cibles valides : Brutes, Ritualiste, Traqueurs, Tireur Scab, Ragers, Mitrailleurs, Tireurs au fusil à pompe, Mitrailleur à plasma et Mauler.",
-		["zh-tw"] = "每秒對 {radius:%s} 米內的敵人有機率施加"..CKWord("標記", "Psy_Mark_rgb_tw").."。\n"
+		["zh-tw"] = "每秒對 {radius:%s} 公尺內的敵人有機率施加"..CKWord("標記", "Psy_Mark_rgb_tw").."。\n"
 			.."\n"
 			.."擊殺"..CKWord("標記", "Psy_Mark_rgb_tw").." 敵人會獲得：\n"
 			..Dot_green.." "..CNumb("10%", "pc_10_rgb").." "..CKWord("韌性", "Toughness_rgb_tw").."/秒，最多 {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 持續 {move_speed_duration:%s} 秒，\n"
@@ -3406,7 +3406,7 @@ local psyker_localizations = {
 			..Dot_green.." Se déclenche sur les Élites ou Spécialistes tués par les ticks de "..CKWord("Flamme de l'âme", "Soulblaze_rgb_fr")..", de "..CKWord("Brûlure", "Burn_rgb_fr").." ou de "..CKWord("Saignement", "Bleed_rgb_fr")..".\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." très élevés contre armure.\n"
 			..Dot_red.." "..CKWord("Dégâts", "Damage_rgb_fr").." très faibles contre Carapace.",
-		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 米內所有敵人施加 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
+		["zh-tw"] = "擊殺精英或專家時，對其周圍 "..CNumb("4", "n_4_rgb").." 公尺內所有敵人施加 {stacks:%s} 層"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."。每個目標最多 "..CNumb("31", "n_31_rgb").." 層。\n"
 			.."\n"
 			..Dot_nc.." 持續 "..CNumb("8", "n_8_rgb").." 秒。\n"
 			..Dot_nc.." 每 "..CNumb("0.75", "n_0_75_rgb").." 秒跳動一次。\n"
@@ -3559,11 +3559,11 @@ local psyker_localizations = {
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
 			..Dot_red.." Génère "..CNumb("1", "n_1_rgb").." cumul par "..CKWord("Attaque critique", "Crit_Attk_rgb_fr")..", quel que soit le nombre d'ennemis touchés.",
-		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 持續 {duration:%s} 秒，"..CKWord("暴擊攻擊", "Crit_Attk_rgb_tw").."時觸發。\n"
+		["zh-tw"] = Dot_green.." {damage:%s} "..CKWord("傷害", "Damage_rgb_tw").." 持續 {duration:%s} 秒，"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."時觸發。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
 			..CPhrs("Can_be_refr").."\n"
-			..Dot_red.." 每次"..CKWord("暴擊攻擊", "Crit_Attk_rgb_tw").."只觸發一層，無論擊中多少敵人。",
+			..Dot_red.." 每次"..CKWord("致命一擊", "Crit_Attk_rgb_tw").."只觸發一層，無論擊中多少敵人。",
 		["zh-cn"] = Dot_green.." "..CKWord("暴击攻击", "Crit_Attk_rgb_zh_cn").."时，获得{damage:%s}"..CKWord("伤害", "Damage_rgb_zh_cn").."，持续{duration:%s}秒。\n"
 			..Dot_nc.." 叠加{stacks:%s}次。\n"
 			.."\n"
@@ -3715,7 +3715,7 @@ local psyker_localizations = {
 		fr = "Votre vitesse de déplacement n'est pas réduite en apaisant le "..CKWord("Péril", "Peril_rgb_fr").." ou en rechargeant.\n"
 			.."\n"
 			..Dot_red.." N'interagit pas avec les bonus de vitesse de déplacement.",
-		["zh-tw"] = "平息"..CKWord("反噬", "Peril_rgb_tw").." 或換彈時，移動速度不降低。\n"
+		["zh-tw"] = "平息"..CKWord("反噬", "Peril_rgb_tw").." 或裝填時，移動速度不降低。\n"
 			.."\n"
 			..Dot_red.." 不與移動速度增益互動。",
 		["zh-cn"] = "压制"..CKWord("危机值", "Peril_rgb_zh_cn").."或重新装填时，你的移动速度不会降低。\n"
@@ -4030,8 +4030,8 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_nc.." 擴散層數取決於死亡敵人的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").."層數：\n"
 			.."_______________________________\n"
-			.."層數：       "..CNumb("1", "n_1_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| >"..CNumb("4", "n_4_rgb").."\n"
-			.."擴散：       "..CNumb("0", "n_0_rgb").."| "..CNumb("2", "n_2_rgb").."| "..CNumb("3", "n_3_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("4", "n_4_rgb").."\n"
+			.."層數：       "..CNumb("1", "n_1_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | >"..CNumb("4", "n_4_rgb").."\n"
+			.."擴散：       "..CNumb("0", "n_0_rgb").." | "..CNumb("2", "n_2_rgb").." | "..CNumb("3", "n_3_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("4", "n_4_rgb").."\n"
 			.."_______________________________\n"
 			..Dot_red.." 若目標已有 "..CNumb("4", "n_4_rgb").." 層或以上，不再獲得該天賦造成的"..CKWord("靈魂之火", "Soulblaze_rgb_tw").." 層。\n"
 			..Dot_nc.." 惡魔宿主不是有效目標。",
@@ -4368,8 +4368,8 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 無論當前"..CKWord("反噬", "Peril_rgb_tw").."多少，至少獲得 {min_damage:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."，並依比例線性提升：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("TDR", "TDR_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("10", "n_10_rgb").."| "..CKWord("~15", "n__15_rgb").."| "..CKWord("~19", "n__19_rgb").."| "..CKWord("~22", "n__22_rgb").."| "..CKWord("~24", "n__24_rgb").."| "..CKWord("~28", "n__28_rgb").."| "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("TDR", "TDR_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("10", "n_10_rgb").." | "..CKWord("~15", "n__15_rgb").." | "..CKWord("~19", "n__19_rgb").." | "..CKWord("~22", "n__22_rgb").." | "..CKWord("~24", "n__24_rgb").." | "..CKWord("~28", "n__28_rgb").." | "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."获得{min_damage:%s}至{max_damage:%s}的"..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."。\n"
 			.."\n"
@@ -4505,7 +4505,7 @@ local psyker_localizations = {
 		fr = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} de vitesse d'apaisement.\n"
 			.."\n"
 			..Dot_nc.." S'applique uniquement à l'apaisement actif, l'apaisement passif n'est pas affecté.",
-		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").." {vent_speed:%s} 平息速度。\n"
+		["zh-tw"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} 平息速度。\n"
 			.."\n"
 			..Dot_nc.." 僅適用於主動平息，被動平息不受影響。",
 		["zh-cn"] = Dot_green.." "..CNumb("+", "n_plus_rgb").."{vent_speed:%s} 镇静速度。\n"
@@ -4582,8 +4582,8 @@ local psyker_localizations = {
 			.."_______________________________",
 		["zh-tw"] = Dot_green.." 依當前"..CKWord("反噬", "Peril_rgb_tw").." 等級，最多 {max_damage:%s} "..CKWord("傷害", "Damage_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("傷害", "Damage_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("傷害", "Damage_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("10", "n_10_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."造成最多{max_damage:%s}额外"..CKWord("伤害", "Damage_rgb_zh_cn").."：\n"
 			.."_______________________________\n"
@@ -4742,7 +4742,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." {toughness_reduction:%s} de "..CKWord("Robustesse", "Toughness_rgb_fr").." restaurée.\n"
 			..CPhrs("Dont_intw_coher_toughn").." Affecte uniquement les éliminations en mêlée et les talents.",
-		["zh-tw"] = Dot_green.." {peril_reduction:%s} "..CKWord("反噬", "Peril_rgb_tw").." 生成。\n"
+		["zh-tw"] = Dot_green.." {peril_reduction:%s} "..CKWord("反噬", "Peril_rgb_tw").."產生量。\n"
 			.."\n"
 			..Dot_red.." {toughness_reduction:%s} "..CKWord("韌性", "Toughness_rgb_tw").." 恢復。\n"
 			..CPhrs("Dont_intw_coher_toughn").." 僅影響近戰擊殺和天賦的"..CKWord("韌性", "Toughness_rgb_tw").." 恢復。",
@@ -4804,8 +4804,8 @@ local psyker_localizations = {
 			..CNote("Rend_note"),
 		["zh-tw"] = Dot_green.." 依"..CKWord("反噬", "Peril_rgb_tw").." 等級，亞空間攻擊最多 {rending:%s} "..CKWord("撕裂", "Rending_rgb_tw").."：\n"
 			.."_______________________________\n"
-			..CKWord("反噬", "Peril_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."| "..CNumb("50", "n_50_rgb").."| "..CNumb("60", "n_60_rgb").."| "..CNumb("80", "n_80_rgb").."| "..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("撕裂", "Rending_rgb_tw").."("..CNumb("%", "pc_rgb").."):  "..CNumb("0", "n_0_rgb").."| "..CNumb("4", "n_4_rgb").."| "..CNumb("8", "n_8_rgb").."| "..CNumb("10", "n_10_rgb").."| "..CNumb("12", "n_12_rgb").."| "..CNumb("16", "n_16_rgb").."| "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("反噬", "Peril_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("20", "n_20_rgb").." | "..CNumb("40", "n_40_rgb").." | "..CNumb("50", "n_50_rgb").." | "..CNumb("60", "n_60_rgb").." | "..CNumb("80", "n_80_rgb").." | "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("撕裂", "Rending_rgb_tw").."（"..CNumb("%", "pc_rgb").."）： "..CNumb("0", "n_0_rgb").." | "..CNumb("4", "n_4_rgb").." | "..CNumb("8", "n_8_rgb").." | "..CNumb("10", "n_10_rgb").." | "..CNumb("12", "n_12_rgb").." | "..CNumb("16", "n_16_rgb").." | "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -4896,7 +4896,7 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 超載爆炸"..CKWord("傷害", "Damage_rgb_tw").."增加 {overload_damage:%s}，\n"
 			..Dot_green.." 超載爆炸半徑增加 {overload_radius:%s}。\n"
 			.."\n"
-			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
+			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."～"..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
 			.."\n"
 			..Dot_green.." 因"..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").."而超載時不再將你擊倒，但會因"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."失去 "..CNumb("1", "n_1_rgb").." 格"..CKWord("生命值", "Health_rgb_tw").."。\n"
@@ -5107,9 +5107,9 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." Recharger un chargeur vide génère la quantité maximale de {warp_charge:%s} de "..CKWord("Péril", "Peril_rgb_fr")..".",
 		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 {threshold:%s} 時，裝填速度 "..CNumb("+", "n_plus_rgb").."{reload_speed:%s}。\n"
-			..Dot_red.." 換彈時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
+			..Dot_red.." 裝填時，依彈匣補充比例最多產生 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。\n"
 			.."\n"
-			..Dot_red.." 彈匣為空時換彈，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
+			..Dot_red.." 彈匣為空時裝填，將產生最大量 {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 当"..CKWord("危机值", "Peril_rgb_zh_cn").."低于{threshold:%s}时，获得"..CNumb("+", "n_plus_rgb").."{reload_speed:%s}装填速度。\n"
 			..Dot_red.." 装填时，根据恢复的弹匣百分比生成最多{warp_charge:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."。\n"
 			.."\n"

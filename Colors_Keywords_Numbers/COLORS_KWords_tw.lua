@@ -48,21 +48,21 @@ local CONFIG = {
 		Crit_m_chance = "近戰爆擊率", -- Melee Crit Chance
 		Crit_r_chance = "遠程爆擊率", -- Ranged Crit Chance
 
-		Crit_hit = "爆擊命中",
-		Crit_hits = "爆擊命中",
-		Crtcll_strk = "爆擊攻擊",
+		Crit_hit = "爆擊率",
+		Crit_hits = "爆擊率",
+		Crtcll_strk = "爆擊率",
 		Crt_hit_chnc = "爆擊率",
 		Crt_hit_col = "暴擊傷害",
 		Crit_hit_m_dmg = "近戰暴擊傷害", -- Melee Crit Damage
 		Crit_hit_r_dmg = "遠程暴擊傷害", -- Ranged Crit Damage
 
-		Crit_strike = "爆擊攻擊",
-		Crit_strikes = "爆擊攻擊",
+		Crit_strike = "爆擊率",
+		Crit_strikes = "爆擊率",
 		Crt_chnc_r = "爆擊率",
 		Crt_strk_dmg = "暴擊傷害",
 
-		Crit_Attk = "爆擊攻擊",
-		Crit_shots = "爆擊射擊",
+		Crit_Attk = "爆擊率",
+		Crit_shots = "爆擊率",
 
 		Crit_dmg_r = "暴擊傷害",
 		Crt_dmg_r = "暴擊傷害",
@@ -204,7 +204,7 @@ local CONFIG = {
 	focust_text_colour = {
 		Focus_Target = "鎖定目標",
 		Markedenemy = "標記敵人", -- Psyker
-		VultsMark = "禿鷹標記", -- Hive Scum
+		VultsMark = "兀鷲印記", -- Hive Scum
 	},
 	meleespec_text_colour = {
 		Meleespec = "近戰專家",
@@ -368,12 +368,12 @@ local CONFIG = {
 	dump_stat_text_colour = {
 		Mobility = "機動性",
 		Melee_dmg = "近戰傷害",
-		Warp_resist = "亞空間抗性",
+		Warp_resist = "反噬抗性",
 	},
 	dump_stat2_text_colour = {
 		Ammo = "彈藥",
 		Defences = "防禦",
-		Heat_mngt = "熱量管理",
+		Heat_mngt = "熱能管理",
 	},
 	dump_stat3_text_colour = {
 		DamageDS = "傷害",
@@ -417,12 +417,12 @@ local function create_phrs_tw(colors_tw)
 	end
 
 	return {
-		Can_appl_thr_shlds = Dot_green .. " 可穿透護盾施加。",
-		Can_appl_thr_shldsb = Dot_green .. " 可穿透堡壘盾牌施加。",
+		Can_appl_thr_shlds = Dot_green .. " 可穿透護盾施加此效果。",
+		Can_appl_thr_shldsb = Dot_green .. " 可穿透堡壘盾牌施加此效果。",
 		Can_be_refr = Dot_green .. " 可於啟用期間刷新。",
-		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐一減少。",
-		Can_gen_mult = Dot_green .. " 每次揮擊可產生多層。\n",
-		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時，每次揮擊可觸發多次。\n",
+		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐層消退。",
+		Can_gen_mult = Dot_green .. " 單次近戰攻擊可產生多層。\n",
+		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "命中多名敵人時，單次近戰攻擊可觸發多次。\n",
 		Can_proc_mult_str = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時可觸發多次。\n",
 		Refr_dur_stappl = Dot_green .. " 施加層數時刷新持續時間。",
 		-- Psyker
@@ -440,12 +440,12 @@ local function create_phrs_tw(colors_tw)
 		Doesnt_Stack_Scm_Aura = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同光環疊加。",
 		Doesnt_Stack_Scm_eff = Dot_red .. " 不會與其他" .. CKWord("巢都渣滓", "cls_scm_rgb_tw") .. "的相同減益效果疊加。",
 
-		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加。",
+		Cant_appl_thr_shlds = Dot_red .. " 無法穿透護盾施加此效果。",
 		Cant_be_refr = Dot_red .. " 無法於啟用期間刷新。",
 		Cant_Crit = Dot_red .. " 無法造成" .. CKWord("致命一擊", "Crit_rgb_tw") .. "。\n",
-		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Carap_cant_cleave = Dot_red .. " 甲殼護甲預設無法被" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
-		Dont_intw_coher_toughn = Dot_red .. " 不會與" .. CKWord("協同", "Coherency_rgb_tw") .. CKWord("韌性", "Toughness_rgb_tw") .. "回復互動。",
+		Carap_cant_clv = Dot_red .. " 甲殼護甲預設無法遭到" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Carap_cant_cleave = Dot_red .. " 甲殼護甲預設無法遭到" .. CKWord("順劈", "Cleaved_rgb_tw") .. "。",
+		Dont_intw_coher_toughn = Dot_red .. " 不會影響" .. CKWord("協同", "Coherency_rgb_tw") .. "中的" .. CKWord("韌性", "Toughness_rgb_tw") .. "恢復。",
 	}
 end
 
