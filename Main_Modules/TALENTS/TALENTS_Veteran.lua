@@ -620,7 +620,7 @@ local veteran_localizations = {
 			.."持用遠程武器時，會啟用"..CKWord("遠程專家", "Rangedspec_rgb_tw").."效果，每層獲得：\n"
 			..Dot_green.." "..CNumb("+", "n_plus_rgb").."{reload_speed:%s} 裝填速度，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").."，\n"
 			..Dot_green.." {ranged_attack_speed:%s} 遠程攻擊速度，最多 "..CNumb("+", "n_plus_rgb")..CNumb("20%", "pc_20_rgb").."，\n"
-			..Dot_green.." 下一次射擊獲得 {ranged_crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_hit_rgb_tw").."。"..CNumb("3", "n_3_rgb").." 層時保證"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
+			..Dot_green.." 下一次射擊獲得 {ranged_crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_chance_rgb_tw").."。"..CNumb("3", "n_3_rgb").." 層時保證"..CKWord("致命一擊", "Crit_rgb_tw").."。\n"
 			..Dot_nc.." 持續 {ranged_duration:%s} 秒。\n"
 			.."\n"
 			.."持用近戰武器時，會啟用"..CKWord("近戰專家", "Meleespec_rgb_tw").."效果，獲得：\n"
@@ -859,7 +859,7 @@ local veteran_localizations = {
 	["loc_talent_veteran_bonus_crit_chance_on_ammo_desc"] = { -- ammo: 20%, crit_chance: +10%, +colors
 		en = Dot_green.." {crit_chance:%s} Ranged "..CKWord("Critical Hit", "Crit_hit_rgb").." Chance for the first {ammo:%s} of Ammo after a Reload.",
 		ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического выстрела", "sh_krit_vystrela_rgb_ru").." для первых {ammo:%s} патронов после перезарядки.", -- Открывающий залп
-		["zh-tw"] = Dot_green.." 裝填後前 {ammo:%s} 彈藥獲得 {crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_hit_rgb_tw").."。",
+		["zh-tw"] = Dot_green.." 裝填後前 {ammo:%s} 彈藥獲得 {crit_chance:%s} 遠程"..CKWord("爆擊率", "Crit_chance_rgb_tw").."。",
 	},
 
 	--[+ Passive 16 - Covert Operative +]--	27.03.2026
@@ -1094,7 +1094,7 @@ local veteran_localizations = {
 			.."   "..Dot_red.." Очереди пулемётчика,\n"
 			.."   "..Dot_red.." Стрельбы жнеца и\n"
 			.."   "..Dot_red.." Выстрела снайпера.",
-		["zh-tw"] = Dot_green.." 成功閃避後，獲得 {crit_chance:%s} "..CKWord("爆擊率", "Crit_hit_rgb_tw").."，持續 {duration:%s} 秒。\n"
+		["zh-tw"] = Dot_green.." 成功閃避後，獲得 {crit_chance:%s} "..CKWord("爆擊率", "Crit_chance_rgb_tw").."，持續 {duration:%s} 秒。\n"
 			..Dot_nc.." 最多 {stacks:%s} 層。\n"
 			.."\n"
 			.." 閃避以下時觸發：\n"

@@ -701,7 +701,7 @@
 - Unstoppable Momentum - 勢不可擋
 - Delight in Destruction - 毀滅之樂
 - Dedicated Practice - 熟能生巧
-- Mobile Emplacement - 機動部屬
+- Mobile Emplacement - 機動部署
 - Implacable - 利刃出鞘
 - Dominate - 主宰
 - No Pushover - 睚眥必報

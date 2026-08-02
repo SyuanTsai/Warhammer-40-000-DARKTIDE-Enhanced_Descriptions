@@ -2361,7 +2361,7 @@ local names_talents_blessings_templates = {
 		-- [+ PASSIVE 30 - Mobile Emplacement +]-- ruof Передвижной окоп
 		["loc_talent_ogryn_bracing_reduces_damage_taken"] = {
 			ru = "Мобильная огневая точка",
-			["zh-tw"] = "機動部屬",
+			["zh-tw"] = "機動部署",
 		},
 
 
