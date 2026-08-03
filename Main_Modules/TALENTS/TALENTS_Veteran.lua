@@ -499,7 +499,7 @@ local veteran_localizations = {
 			..Dot_green.." {stamina:%s} "..CKWord("Stamina", "Stamina_rgb").." restored on Ranged "..CKWord("Weakspot", "Weakspot_rgb").." kills.\n"
 			..CPhrs("Can_proc_mult"),
 		ru = Dot_green.." {toughness_replenish_multiplier:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru").." за каждый заряд "..CKWord("Концентрации", "Focus_rgb_ru")..".\n" -- Тоннельное зрение
-			..CPhrs("Dont_intw_coher_toughn_ru").."\n"
+			..CPhrs("Dont_intw_coher_toughn").."\n"
 			.."\n"
 			..Dot_green.." {stamina:%s} "..CKWord("выносливости", "vynoslivosti_rgb_ru").." восстанавливается при убийствах в "..CKWord("уязвимые места", "ujazvimye_mesta_rgb_ru").." дальнобойными атаками.\n"
 			..CPhrs("Can_proc_mult"),

@@ -453,6 +453,7 @@ local function create_phrs_tw(colors_tw)
 		Can_be_refr = Dot_green .. " 可於啟用期間刷新。",
 		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐層消退。",
 		Can_gen_mult = Dot_green .. " 單次近戰攻擊可產生多層。\n",
+		Gen_mult_stacks_n_refr = Dot_green .. " 單次近戰攻擊可產生多層。\n" .. Dot_green .. " 可於啟用期間刷新。",
 		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "命中多名敵人時，單次近戰攻擊可觸發多次。\n",
 		Can_proc_mult_str = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時可觸發多次。\n",
 		Refr_dur_stappl = Dot_green .. " 施加層數時刷新持續時間。",
