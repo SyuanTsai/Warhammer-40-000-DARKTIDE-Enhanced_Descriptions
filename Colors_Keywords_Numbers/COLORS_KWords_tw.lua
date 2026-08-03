@@ -77,7 +77,7 @@ local CONFIG = {
 		Electrocute = "電擊",
 		Electrocuted = "被電擊",
 		Electrocutes = "電擊",
-		Electrcuting = "電擊中",
+		Electrcuting = "電擊",
 		Electrocution = "電擊",
 	},
 	finesse_text_colour = {
@@ -272,7 +272,7 @@ local CONFIG = {
 		ChemDepend = "化學性依賴",
 		Desperad = "亡命之徒",
 		Gunslinger = "神射手",
-		Rampag = "橫衝直撞!",
+		Rampag = "橫衝直撞！",
 		Ruffian = "惡棍",
 		StimmSupply = "化學性依賴",
 		VulturesMark = "兀鷲印記",

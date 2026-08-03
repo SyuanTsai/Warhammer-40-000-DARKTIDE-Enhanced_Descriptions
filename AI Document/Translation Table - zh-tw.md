@@ -187,17 +187,17 @@
 - Flamer - 火焰兵
 - Corruptor - 腐蝕者
 - Pack Master - 獸群領主
-- 呻吟者
-- 渣滓先鋒 (盾兵)
-- 渣滓格鬥兵
-- 渣滓潛行者
-- 瘟疫行者
-- 血痂射手
-- 血痂先鋒 (盾兵)
-- 血痂格鬥兵
-- 血痂潛行者
-- 觸手瘟疫行者
-- 重甲呻吟者
+- Groaner - 呻吟者
+- Dreg Vanguard - 渣滓先鋒 (盾兵)
+- Dreg Bruiser - 渣滓格鬥兵
+- Dreg Stalker - 渣滓潛行者
+- Poxwalker - 瘟疫行者
+- Scab Shooter - 血痂射手
+- Scab Vanguard - 血痂先鋒 (盾兵)
+- Scab Bruiser - 血痂格鬥兵
+- Scab Stalker - 血痂潛行者
+- Mutated Poxwalker (tentacle variant) - 觸手瘟疫行者
+- Armored Groaner - 重甲呻吟者
 
 
 
@@ -420,7 +420,7 @@
 - Weight of Fire - 猛攻
 - Armourbane - 護甲之禍
 - Power Blast - 聚能爆發
-- Gets Hot! - 燃起來!
+- Gets Hot! - 燃起來！
 - Volatile - 熱力震盪
 - Blaze Away - 連續發射
 - Rising Heat - 升溫
@@ -618,7 +618,7 @@
 
 - Big Box of Hurt - 巨量傷害盒
 - Big Friendly Rock - 投石問路
-- That One Didn't Count - 那下不算!
+- That One Didn't Count - 那下不算！
 - Frag Bomb - 破片炸彈
 - Bombs Away! - 投彈完畢！
 - Bigger Box of Hurt - 超巨量傷害箱
@@ -639,7 +639,7 @@
 - Pulverise - 粉碎
 - Loyal Protector - 忠誠守護者
 - Valuable Distraction - 重要干擾
-- No Pain! - 一點都不痛!
+- No Pain! - 一點都不痛！
 - Go again! - 再來
 - Point-Blank Barrage - 貼身火力
 - Bullet Bravado - 壯膽子彈
@@ -656,10 +656,10 @@
 - Impactful - 震撼衝擊
 - Feel No Pain - 麻木
 - Pained Outburst - 痛楚爆發
-- Strongest! - 最強壯!
-- Toughest! - 最堅韌!
+- Strongest! - 最強壯！
+- Toughest! - 最堅韌！
 - Burst Limiter Override - 爆限超載
-- Back Off! - 退後!
+- Back Off! - 退後！
 - Maximum Firepower - 最大火力
 - Good Shootin' - 好槍法
 - Heat of Battle - 激鬥戰火
@@ -670,7 +670,7 @@
 - Lynchpin - 關鍵人物
 - Heavyweight - 重量級
 - Steady Grip - 穩定握持
-- Smash 'Em! - 碾碎它們!
+- Smash 'Em! - 碾碎它們！
 - The Best Defence - 最好的防禦
 - Furious - 怒不可遏
 - Towering Presence - 卓越氣場
@@ -686,7 +686,7 @@
 - Slam - 猛擊
 - Ammo Stash - 彈藥儲存包
 - Big Boom - 大爆炸
-- Crunch! - 嘎嘎!
+- Crunch! - 嘎嘎！
 - Batter - 重毆
 - Brutish Strength - 蠻橫之力
 - For the Lil'Uns - 為了小子們
@@ -709,10 +709,10 @@
 - Get Stuck In - 全神貫注
 - Reloaded and Ready - 換彈完畢
 - Massacre - 屠殺
-- No Stopping Me! - 誰敢攔我!
+- No Stopping Me! - 誰敢攔我！
 - Bash and Blast - 猛砸爆裂
 - Hard Knocks - 沉重打擊
-- No Hurting Friends! - 相親相愛好夥伴!
+- No Hurting Friends! - 相親相愛好夥伴！
 - Won't Give In - 絕不屈服
 - Spray and Slay - 射盡殺戮
 - Lucky Streak - 好運連連
@@ -863,8 +863,8 @@
 - Tunnel Vision - 視野狹窄
 - Long Range Assassin - 遠程刺客
 - Focus Target! - 鎖定目標
-- Target Down! - 目標擊倒!
-- Redirect Fire! - 轉移火力!
+- Target Down! - 目標擊倒！
+- Redirect Fire! - 轉移火力！
 - Focused Fire - 集中火力
 - Weapons Specialist - 武器專家
 - Always Prepared - 有備無患
@@ -904,7 +904,7 @@
 - Fully Loaded - 全副武裝
 - Tactical Awareness - 戰術意識
 - Desperado - 亡命之徒
-- Keep Their Heads Down! - 讓他們全趴下!
+- Keep Their Heads Down! - 讓他們全趴下！
 - Competitive Urge - 求勝心
 - Rending Strikes - 裂擊
 - Agile Engagement - 靈活接敵
@@ -912,7 +912,7 @@
 - Shock Trooper - 突擊隊
 - Kill Zone - 殺戮地帶
 - Lock and Load - 荷槍實彈
-- Bring it Down! - 幹掉它!
+- Bring it Down! - 幹掉它！
 - Onslaught - 猛攻
 - Exploit Weakness - 趁火打劫
 
@@ -956,7 +956,7 @@
 
 - Unleashed Brutality - 猛犬出擊
 - Lone Wolf - 孤狼
-- Go Get 'Em! - 往前進攻!
+- Go Get 'Em! - 往前進攻！
 - Execution Order - 處刑命令
 - Efficient Killer - 效率殺手
 - Malocator - 生化武器關
@@ -1055,7 +1055,7 @@
 - Enhanced Desperado - 強化亡命之徒
 - Pick Your Targets - 精準獵殺
 - Focused Resolve - 專注凝神
-- Rampage! - 橫衝直撞!
+- Rampage! - 橫衝直撞！
 - Channelled Aggression - 凝聚殺意
 - Boiling Blood - 碎骨打擊
 - Forge's Bellow - 沸騰之血
