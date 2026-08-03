@@ -366,7 +366,7 @@ local CONFIG = {
 
 -- DUMP STATS
 	dump_stat_text_colour = {
-		Mobility = "機動性",
+		Mobility = "移動性",
 		Melee_dmg = "近戰傷害",
 		Warp_resist = "反噬抗性",
 	},

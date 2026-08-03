@@ -375,7 +375,7 @@ local arbites_localizations = {
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
 			..Dot_green.." {cooldown_elite:%s} second per Elite/Specialist/Monstrosity,\n"
 			..Dot_green.." {cooldown:%s} seconds per other enemy.\n"
-			..Dot_nc.." Max reduction: {max_cooldown} seconds.",
+			..Dot_nc.." Max reduction: {max_cooldown:%s} seconds.",
 		ru = "После рывка, сокращается время "..CKWord("восстановления", "vosstanovlenia_rgb_ru").." вашего "..CKWord("Прорыва вражеского строя", "BreakZLine_rgb_ru").." на:\n" -- Направленная жестокость
 			..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или чудовища,\n"
 			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
@@ -384,7 +384,7 @@ local arbites_localizations = {
 			.."減少"..CKWord("突破重圍", "BreakZLine_rgb_tw").." 的"..CKWord("冷卻", "Cd_rgb_tw").."時間：\n"
 			..Dot_green.." 精英/專家/巨獸：每名減少 {cooldown_elite:%s} 秒，\n"
 			..Dot_green.." 其他敵人：每名減少 {cooldown:%s} 秒。\n"
-			..Dot_nc.." 最大減少量：{max_cooldown} 秒。",
+			..Dot_nc.." 最大減少量：{max_cooldown:%s} 秒。",
 	},
 	--[+ ABILITY 3-3 - Kill Order +]--	26.03.2026
 	["loc_talent_adamant_dog_damage_after_ability_desc"] = { -- companion_damage: +50%, duration: 12, s->seconds, +colors
