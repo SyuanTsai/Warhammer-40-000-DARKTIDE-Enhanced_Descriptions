@@ -322,7 +322,7 @@ local CONFIG = {
 		-- Ogryn
 		Att_Seeker = "渴求關注",
 		big_box = "巨量傷害盒",
-		big_box2 = "投彈完畢!",
+		big_box2 = "投彈完畢！",
 		bigfriendro = "投石問路",
 		bonebraura = "破骨者之環",
 		bull_rush = "蠻牛衝撞",
@@ -334,7 +334,7 @@ local CONFIG = {
 		heavyhitter = "重拳出擊",
 		loyalprot = "忠誠守護者",
 		pbbarrage = "貼身火力",
-		stayclose = "跟緊我!",
+		stayclose = "跟緊我！",
 	-- PENANCES
 		Base_tut_p = "基礎訓練",
 		Curio_p = "珍品",

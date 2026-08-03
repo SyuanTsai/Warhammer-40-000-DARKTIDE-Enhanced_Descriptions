@@ -193,7 +193,7 @@
 - 渣滓潛行者
 - 瘟疫行者
 - 血痂射手
-- 血家先鋒 (盾兵)
+- 血痂先鋒 (盾兵)
 - 血痂格鬥兵
 - 血痂潛行者
 - 觸手瘟疫行者
@@ -597,7 +597,7 @@
 - Anticipation - 看破
 - Solidity - 穩固
 - Puppet Master - 傀儡師
-- Vulnerable Minds -
+- Vulnerable Minds - 脆弱心智
 - Warp Rider - 亞空間騎士
 - True Aim - 精確瞄準
 - Kinetic Deflection - 動能偏斜
@@ -620,14 +620,14 @@
 - Big Friendly Rock - 投石問路
 - That One Didn't Count - 那下不算!
 - Frag Bomb - 破片炸彈
-- Bombs Away! - 投彈完畢!
+- Bombs Away! - 投彈完畢！
 - Bigger Box of Hurt - 超巨量傷害箱
 
 ##### 光環
 
 - Intimidating Presence - 威嚇氣場
 - Bonebreaker's Aura - 破骨者之環
-- Stay Close! - 跟緊我!
+- Stay Close! - 跟緊我！
 - Coward Culling - 優勝劣汰
 
 ##### 主動技能
@@ -1061,7 +1061,7 @@
 - Forge's Bellow - 沸騰之血
 - Pulverising Strikes - 熔爐怒吼
 - Stimm Supply - 化學性依賴
-- Practiced Deployment - 熟練部屬
+- Practiced Deployment - 熟練部署
 - Booby Trap - 毒性陷阱
 - Fast Acting Stimms - 速效型興奮劑
 
