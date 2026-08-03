@@ -4979,7 +4979,7 @@ local psyker_localizations = {
 			..Dot_green.." {stamina:%s} к "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".\n"
 			.."\n"
 			..Dot_green.." {toughness_replenish:%s} к восстановлению "..CKWord("стойкости", "stoikosti_rgb_ru")..".\n"
-			..CPhrs("Dont_intw_coher_toughn").." Влияет только на получение "..CKWord("стойкости", "stoikosti_rgb_ru").." от убийств и талантов.",
+			..CPhrs("Dont_intw_coher_toughn_ru").." Влияет только на получение "..CKWord("стойкости", "stoikosti_rgb_ru").." от убийств и талантов.",
 		fr = Dot_green.." {peril_reduction:%s} d'apaisement passif.\n"
 			.."\n"
 			..Dot_green.." {stamina:%s} d'"..CKWord("Endurance", "Stamina_rgb_fr")..".\n"
