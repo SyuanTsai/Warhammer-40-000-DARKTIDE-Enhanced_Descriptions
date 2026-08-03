@@ -78,7 +78,7 @@ local CONFIG = {
 		Damage = "傷害",
 		Damage_res = "傷害抗性", -- Resistance
 		Damage_r = "遠程傷害", -- Ranged Damage
-		Damagewrp = "亞空間傷害",
+		Damagewrp = "靈能傷害",
 		Damagewrp_a = "亞空間攻擊",
 	},
 	electrocuted_text_colour = {
@@ -199,13 +199,13 @@ local CONFIG = {
 	},
 	fury_text_colour = {
 		Fury = "狂怒",
-		Rampage = "暴走", -- Hive Scum
+		Rampage = "橫衝直撞！", -- Hive Scum
 	},
 	momentum_text_colour = {
 		Momentum = "勢能",
 		Taunt = "嘲諷", -- Ogryn
 		Adren = "腎上腺素", -- Hive Scum
-		AdrenFr = "腎上腺素狂熱", -- Hive Scum
+		AdrenFr = "腎上腺素狂暴", -- Hive Scum
 	},
 	stealth_text_colour = {
 		Stealth = "隱身",
