@@ -932,7 +932,7 @@ local names_talents_blessings_templates = {
 		-- Psyker 1, Scum 1
 		["loc_talent_crit_chance_low"] = {
 			ru = "Усиление шанса критического удара",
-			["zh-tw"] = "暴擊機率增幅",
+			["zh-tw"] = "爆擊率增幅",
 		},
 		--[+ Impact Boost +]-- ruof Усиление подчинения	20.04.2026
 		-- Arbites 1
