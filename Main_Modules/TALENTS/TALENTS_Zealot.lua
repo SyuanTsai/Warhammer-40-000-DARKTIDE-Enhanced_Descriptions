@@ -1103,7 +1103,7 @@ local zealot_localizations = {
 			..Dot_green.." Убираются штрафы к скорости движения при тяжёлых атаках ближнего боя.",
 		["zh-tw"] = Dot_green.." 蓄力近戰攻擊期間獲得不可中斷狀態。\n"
 			.."\n"
-			..Dot_green.." 移除重型近戰攻擊的移動速度懲罰。",
+			..Dot_green.." 移除近戰重攻擊的移動速度懲罰。",
 	},
 	--[+ Passive 39 - Faith's Fortitude +]--	27.03.2026
 	["loc_talent_zealot_3_tier_1_ability_3_description"] = { -- health_segment: +2

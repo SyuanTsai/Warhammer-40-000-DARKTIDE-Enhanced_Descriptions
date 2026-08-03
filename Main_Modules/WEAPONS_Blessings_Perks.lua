@@ -1750,7 +1750,7 @@ local weapon_localizations = {
 				..CNumb("75%", "pc_75_rgb").." игнорирования "..CKWord("ударной массы", "udarn_massy_rgb_ru").." врага, что увеличивает "..CKWord("рассечение", "rassechenie_rgb_ru")..".", -- Сокрушение
 			fr = "Lors d'un coup énergisé, augmente le "..CKWord("Transpercement", "Cleave_rgb_fr").." et les "..CKWord("Dégâts", "Damage_rgb_fr").." des attaques puissantes de mélée de "..CNumb("{heavy_damage:%s}", "dmghvy_var_rgb")..".",
 			["zh-tw"] = "充能攻擊時：\n"
-				..CNumb("{heavy_damage:%s}", "dmghvy_var_rgb").." 重型近戰攻擊"..CKWord("傷害", "Damage_rgb_tw").."，\n"
+				..CNumb("{heavy_damage:%s}", "dmghvy_var_rgb").." 近戰重攻擊"..CKWord("傷害", "Damage_rgb_tw").."，\n"
 				..CNumb("-", "n_minus_rgb")..CNumb("75%", "pc_75_rgb").." 敵人"..CKWord("順劈目標", "Hit_mass_rgb_tw").."，提高"..CKWord("順劈攻擊", "Cleave_rgb_tw").."。",
 			["zh-cn"] = "充能攻击 "..CNumb("{heavy_damage:%s}", "dmghvy_var_rgb").." 近战重攻击"..CKWord("伤害", "Damage_rgb_zh_cn").."，\n同时无视装甲赋予的"..CKWord("打击质量", "Hit_mass_rgb_zh_cn").."。"..CNote("Hit_Mass_note"),
 			de = "Erhöht bei energetisierten Angriffen den "..CKWord("Spaltwert", "Cleave_rgb_de").." und den Schaden schwerer Nahkampfangriffe um "..CNumb("{heavy_damage:%s}", "dmghvy_var_rgb")..".",
