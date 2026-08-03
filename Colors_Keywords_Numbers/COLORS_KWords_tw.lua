@@ -16,7 +16,9 @@ local CONFIG = {
 	burn_text_colour = {
 		Burn = "燃燒",
 		Burning = "燃燒中",
+		Flamer = "淨化噴火器", -- Skitarii
 		Heat = "熱能",
+		Heat_diss = "熱能消散",
 		Overheat = "過熱",
 	},
 	cleave_text_colour = {
@@ -28,6 +30,7 @@ local CONFIG = {
 		Coherency = "協同",
 	},
 	combat_ability_text_colour = {
+		Ability = "技能",
 		Ability_cd = "技能冷卻",
 		Cd = "冷卻",
 		Cmbt_abil = "戰鬥技能",
@@ -42,6 +45,7 @@ local CONFIG = {
 	crit_text_colour = {
 		Crit = "致命一擊",
 		Critical = "致命一擊",
+		Crit_k = "致命一擊擊殺",
 
 		Crit_chance = "爆擊率",
 		Crt_chance = "爆擊率",
@@ -66,18 +70,25 @@ local CONFIG = {
 
 		Crit_dmg_r = "暴擊傷害",
 		Crt_dmg_r = "暴擊傷害",
+
+		Conc_Stimm = "專注興奮劑", -- Hive Scum
 	},
 	damage_text_colour = {
+		Combat_Stimm = "戰鬥興奮劑", -- Hive Scum
 		Damage = "傷害",
 		Damage_res = "傷害抗性", -- Resistance
 		Damage_r = "遠程傷害", -- Ranged Damage
 		Damagewrp = "亞空間傷害",
+		Damagewrp_a = "亞空間攻擊",
 	},
 	electrocuted_text_colour = {
+		Arc = "電弧",
+		Arcs = "電弧",
 		Electrocute = "電擊",
 		Electrocuted = "被電擊",
 		Electrocutes = "電擊",
 		Electrcuting = "電擊",
+		Electrocuting = "電擊",
 		Electrocution = "電擊",
 	},
 	finesse_text_colour = {
@@ -113,17 +124,20 @@ local CONFIG = {
 	},
 	stagger_text_colour = {
 		Stagger = "踉蹌",
+		Stagger2 = "踉蹌效果",
 		Staggered = "踉蹌",
 		Staggering = "踉蹌",
 		Staggers = "踉蹌",
 		Stun = "眩暈",
 		Stunned = "眩暈",
+		Stunning = "眩暈",
 		Stuns = "眩暈",
 	},
 	stamina_text_colour = {
 		Stamina = "耐力",
 		Stamina_m = "最大耐力",
 		Stamina_c_r = "耐力消耗",
+		Stamina_se = "衝刺體力消耗",
 	},
 	toughness_text_colour = {
 		TDR = "韌性減傷",
@@ -144,6 +158,7 @@ local CONFIG = {
 		Weakspot_r_dmg = "遠程弱點傷害", -- Ranged Weakspot Damage
 
 		Weakspot_dmg = "弱點傷害",
+		Weakspot_k_dmg = "弱點擊殺",
 	},
 
 	-- CLASSES
@@ -155,6 +170,7 @@ local CONFIG = {
 	},
 	precision_text_colour = {
 		Precision = "精準",
+		Celerity_Stimm = "敏捷興奮劑", -- Hive Scum
 	},
 	-- Ogryn
 	class_ogryn_text_colour = {
@@ -164,10 +180,13 @@ local CONFIG = {
 	fnp_text_colour = {
 		Feel_no_pain = "麻木",
 		Desperado = "亡命之徒", -- Hive Scum
+		Overload = "超載", -- Skitarii
+		overloading = "超載", -- Skitarii
 	},
 	luckyb_text_colour = {
 		Lucky_bullet = "幸運子彈",
 		Tghnss_gold = "韌性", -- Zealot
+		Servoskull = "伺服頭骨", -- Skitarii
 	},
 	trample_text_colour = {
 		Trample = "踐踏",
@@ -199,19 +218,23 @@ local CONFIG = {
 		cls_vet2 = "老兵",
 	},
 	focus_text_colour = {
+		Capacitance = "電容量", -- Skitarii
 		Forceful = "堅定不移",
 		Focus = "專注",
 	},
 	focust_text_colour = {
+		ElectrDisch = "電能放電", -- Skitarii
 		Focus_Target = "鎖定目標",
 		Markedenemy = "標記敵人", -- Psyker
 		VultsMark = "兀鷲印記", -- Hive Scum
 	},
 	meleespec_text_colour = {
+		Chordclaw = "弦爪", -- Skitarii
 		Meleespec = "近戰專家",
 		Meleejust = "近戰正義", -- Arbites
 	},
 	rangedspec_text_colour = {
+		FireRate = "射速", -- Skitarii
 		Rangedspec = "遠程專家",
 		Rangedjust = "遠程正義", -- Arbites
 	},
@@ -226,7 +249,9 @@ local CONFIG = {
 		cls_scm2 = "巢都渣滓",
 	},
 	chemtox_text_colour = {
+		AdMedSyringe = "適應型醫療注射器", -- Skitarii
 		Chem_Tox = "化學毒素",
+		Med_Stimm = "醫療興奮劑", -- Hive Scum
 	},
 
 	-- TALENTS
@@ -264,6 +289,11 @@ local CONFIG = {
 		RemoteDeton = "遠程引爆",
 		RuthlEffcy = "雷厲風行",
 		TerminusWarr = "終點站令狀",
+		-- Skitarii
+		Arcgren = "電弧手榴彈",
+		PowerOverload = "能量超載",
+		VoltaicExpander = "電能擴張器",
+		WeaponMalfunction = "武器故障",
 		-- Hive Scum
 		Anarchist = "無政府主義者",
 		Blinder = "閃光彈",
