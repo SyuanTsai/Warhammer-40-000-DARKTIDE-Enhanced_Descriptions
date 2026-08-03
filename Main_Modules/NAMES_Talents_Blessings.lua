@@ -1110,7 +1110,7 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 1-2 - Becalming Eruption +]-- ruof Затихающее извержение	20.04.2026
 		["loc_talent_psyker_shout_reduces_warp_charge_generation"] = {
 			ru = "Успокаивающее извержение",
-			["zh-tw"] = "平靜進發",
+			["zh-tw"] = "平靜迸發",
 		},
 		--[+ ABILITY 1-3 - Warp Creeping Flames +]-- ruof Раздувающееся пламя	20.04.2026
 		["loc_talent_psyker_warpfire_on_shout"] = {

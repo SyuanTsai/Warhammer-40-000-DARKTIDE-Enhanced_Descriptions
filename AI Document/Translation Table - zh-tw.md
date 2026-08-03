@@ -539,7 +539,7 @@
 - Psykinetic's Wrath - 靈能學者之怒
 - Venting Shriek - 靈能尖嘯
 - Warp Rupture - 亞空間爆發
-- Becalming Eruption - 平靜进發
+- Becalming Eruption - 平靜迸發
 - Creeping Flames - 蔓延火焰
 - Telekine Shield - 念力護盾
 - Bolstered Shield - 強化護盾
@@ -1253,7 +1253,7 @@
 - Sustained Assault Doctrine - 持續攻擊教義
 - Slaughter Protocol - 屠殺協議
 - Adaptive Combat Engram - 適應性戰鬥記憶體
-- Hydraulic Inpact - 液壓衝擊
+- Hydraulic Impact - 液壓衝擊
 
 ##### 敵人 / 單位
 

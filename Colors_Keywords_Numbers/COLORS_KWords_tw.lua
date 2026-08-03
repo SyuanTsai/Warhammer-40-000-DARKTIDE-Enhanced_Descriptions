@@ -184,6 +184,7 @@ local CONFIG = {
 	},
 	momentum_text_colour = {
 		Momentum = "勢能",
+		Taunt = "嘲諷", -- Ogryn
 		Adren = "腎上腺素", -- Hive Scum
 		AdrenFr = "腎上腺素狂熱", -- Hive Scum
 	},

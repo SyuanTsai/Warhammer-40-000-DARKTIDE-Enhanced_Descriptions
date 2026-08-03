@@ -1519,7 +1519,7 @@ local skitarii_localizations = {
 			.."\n"
 			..Dot_nc.." Срабатывает раз в {cooldown:%s} секунд.",
 	},
-	--[+ PASSIVES - ПАССИВНЫЙ - 49 - Hydraulic Inpact - Гидроудар +]--	17.07.2026
+	--[+ PASSIVES - ПАССИВНЫЙ - 49 - Hydraulic Impact - Гидроудар +]--	17.07.2026
 	["loc_talent_cryptic_better_heavies_desc"] = { -- damage: +5%, stacks: 3, duration: 8
 		en = Dot_green.." Uninterruptible while charging Melee Attacks.\n"
 			.."\n"
