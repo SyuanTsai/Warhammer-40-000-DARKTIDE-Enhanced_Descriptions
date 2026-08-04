@@ -18,7 +18,6 @@ local CONFIG = {
 		Burning = "燃燒中",
 		Flamer = "淨化噴火器", -- Skitarii
 		Heat = "熱能",
-		Heat_diss = "熱能消散",
 		Overheat = "過熱",
 	},
 	cleave_text_colour = {
@@ -45,7 +44,6 @@ local CONFIG = {
 	crit_text_colour = {
 		Crit = "致命一擊",
 		Critical = "致命一擊",
-		Crit_k = "致命一擊擊殺",
 
 		Crit_chance = "爆擊率",
 		Crt_chance = "爆擊率",
@@ -78,8 +76,7 @@ local CONFIG = {
 		Damage = "傷害",
 		Damage_res = "傷害抗性", -- Resistance
 		Damage_r = "遠程傷害", -- Ranged Damage
-		Damagewrp = "亞空間傷害",
-		Damagewrp_a = "亞空間攻擊",
+		Damagewrp = "靈能傷害",
 	},
 	electrocuted_text_colour = {
 		Arc = "電弧",
@@ -124,7 +121,6 @@ local CONFIG = {
 	},
 	stagger_text_colour = {
 		Stagger = "踉蹌",
-		Stagger2 = "踉蹌效果",
 		Staggered = "踉蹌",
 		Staggering = "踉蹌",
 		Staggers = "踉蹌",
@@ -137,7 +133,6 @@ local CONFIG = {
 		Stamina = "耐力",
 		Stamina_m = "最大耐力",
 		Stamina_c_r = "耐力消耗",
-		Stamina_se = "衝刺體力消耗",
 	},
 	toughness_text_colour = {
 		TDR = "韌性減傷",
@@ -199,13 +194,13 @@ local CONFIG = {
 	},
 	fury_text_colour = {
 		Fury = "狂怒",
-		Rampage = "暴走", -- Hive Scum
+		Rampage = "橫衝直撞！", -- Hive Scum
 	},
 	momentum_text_colour = {
 		Momentum = "勢能",
 		Taunt = "嘲諷", -- Ogryn
 		Adren = "腎上腺素", -- Hive Scum
-		AdrenFr = "腎上腺素狂熱", -- Hive Scum
+		AdrenFr = "腎上腺素狂暴", -- Hive Scum
 	},
 	stealth_text_colour = {
 		Stealth = "隱身",
@@ -293,7 +288,6 @@ local CONFIG = {
 		Arcgren = "電弧手榴彈",
 		PowerOverload = "能量超載",
 		VoltaicExpander = "電能擴張器",
-		WeaponMalfunction = "武器故障",
 		-- Hive Scum
 		Anarchist = "無政府主義者",
 		Blinder = "閃光彈",
@@ -453,6 +447,7 @@ local function create_phrs_tw(colors_tw)
 		Can_be_refr = Dot_green .. " 可於啟用期間刷新。",
 		Can_be_refr_drop_1 = Dot_green .. " 層數可於啟用期間刷新，並逐層消退。",
 		Can_gen_mult = Dot_green .. " 單次近戰攻擊可產生多層。\n",
+		Gen_mult_stacks_n_refr = Dot_green .. " 單次近戰攻擊可產生多層。\n" .. Dot_green .. " 可於啟用期間刷新。",
 		Can_proc_mult = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "命中多名敵人時，單次近戰攻擊可觸發多次。\n",
 		Can_proc_mult_str = Dot_green .. " " .. CKWord("順劈攻擊", "Cleaving_rgb_tw") .. "時可觸發多次。\n",
 		Refr_dur_stappl = Dot_green .. " 施加層數時刷新持續時間。",

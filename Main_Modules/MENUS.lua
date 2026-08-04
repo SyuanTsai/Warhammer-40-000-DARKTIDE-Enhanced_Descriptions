@@ -83,7 +83,7 @@ local menus_templates = {
 		["loc_contracts_task_label_kill_bosses"] = {
 			en = "Kill "..CNumb("{count:%d}", "countd_var_rgb").." Monstrosities",
 			ru = "Убить "..CNumb("{count:%d}", "countd_var_rgb").." монстров", -- Убить 4 монстров
-			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 巨獸(畸形怪獸)", -- 擊殺巨獸(畸形怪獸)
+			["zh-tw"] = "擊殺 "..CNumb("{count:%d}", "countd_var_rgb").." 隻巨獸", -- 擊殺 X 隻巨獸
 			["zh-cn"] = "击杀 "..CNumb("{count:%d}", "countd_var_rgb").." 个怪物", -- 击杀 X 怪物
 		},
 		--[+ Collect Х kind +]--
@@ -175,7 +175,7 @@ local menus_templates = {
 	["loc_contracts_view_general_goods_random_gadget_defensive"] = {
 		-- en = "Unknown Defensive Curio",
 		ru = "Неизвестная защитная реликвия",
-		["zh-tw"] = "未知的珍品",
+		["zh-tw"] = "未知的防禦型珍品",
 		["zh-cn"] = "未知的珍品", -- 未知的珍品
 	},
 	--[+ New Contracts Notification Message +]--
@@ -234,7 +234,7 @@ local menus_templates = {
 	["loc_credits_goods_vendor_description_text"] = {
 		-- en = "Acquire a profane weapon of your choosing.",
 		ru = "Купите нечестивое оружие по вашему выбору.",
-		["zh-tw"] = "取得一件自選的褻瀆級武器(白武)。", -- 獲得一件你選定的褻瀆武器。
+		["zh-tw"] = "取得一件自選的褻瀆級武器（白武）。", -- 獲得一件你選定的褻瀆武器。
 		["zh-cn"] = "获得一件你选择的武器（亵渎级）。",
 	},
 
@@ -495,7 +495,7 @@ local menus_templates = {
 	["loc_weapon_special_special_attack"] = {
 		-- en = Special Melee Attack,
 		ru = "Специальная атака",
-		["zh-tw"] = "特殊攻擊(近戰)", -- 特殊功能(近戰)
+		["zh-tw"] = "特殊攻擊（近戰）", -- 特殊功能（近戰）
 	},
 
 
