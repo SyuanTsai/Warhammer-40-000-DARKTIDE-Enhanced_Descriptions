@@ -131,7 +131,7 @@ local penances_localizations = {
 	--[+ Unconsidered Trifles +]-- руоф Непродуманные мелочи
 	["loc_achievement_unlock_gadgets_name"] = {
 		ru = "Неучтённые мелочи",
-		["zh-tw"] = "不值一提的小玩意",
+		["zh-tw"] = "小零碎",
 	},
 		--[+ Unlock your first Curio slot. +]-- руоф Открыть вашу первую ячейку для диковинки.
 		["loc_achievement_unlock_gadgets_description"] = {
@@ -198,7 +198,7 @@ local penances_localizations = {
 	["loc_achievement_missions_veteran_2_objective_1_name"] = {
 		en = "Vantage Point (1)",
 		ru = "Выгодная позиция (1)",
-		["zh-tw"] = "有利位置（1）",
+		["zh-tw"] = "有利地形（1）",
 	},
 		--[+ As a Veteran, complete at least one Mission of each type. +]-- руоф Выполнить Ветераном по меньшей мере одно задание каждого типа.
 		["loc_achievement_missions_veteran_2_objective_1_description"] = {
@@ -209,7 +209,7 @@ local penances_localizations = {
 	--[+ Vantage Point (2) +]-- руоф Точка обзора (2)
 	["loc_achievement_missions_veteran_2_objective_2_name"] = {
 		ru = "Выгодная позиция (2)",
-		["zh-tw"] = "有利位置（2）",
+		["zh-tw"] = "有利地形（2）",
 	},
 		--[+ As a Veteran, complete a Mission of each type on Malice Threat or higher. +]--
 		["loc_achievement_missions_veteran_2_objective_2_description"] = {
@@ -222,7 +222,7 @@ local penances_localizations = {
 	--[+ Vantage Point (3) +]-- руоф Точка обзора (3)
 	["loc_achievement_missions_veteran_2_objective_3_name"] = {
 		ru = "Выгодная позиция (3)",
-		["zh-tw"] = "有利位置（3）",
+		["zh-tw"] = "有利地形（3）",
 	},
 		--[+ As a Veteran, complete a Mission of each type on Heresy Threat or higher. +]--
 		["loc_achievement_missions_veteran_2_objective_3_description"] = {
@@ -277,12 +277,12 @@ local penances_localizations = {
 	--[+ Promotion Material (1) +]-- руоф Материалы пропаганды (1)
 	["loc_achievement_group_rank_4_difficulty_3_name"] = {
 		ru = "Задания для продвижения (1)",
-		["zh-tw"] = "晉升之材（1）",
+		["zh-tw"] = "樹立榜樣（1）",
 	},
 	--[+ Promotion Material (2) +]-- руоф Материалы пропаганды (2)
 	["loc_achievement_group_rank_5_difficulty_4_name"] = {
 		ru = "Задания для продвижения (2)",
-		["zh-tw"] = "晉升之材（2）",
+		["zh-tw"] = "樹立榜樣（2）",
 	},
 	--[+ For The Emperor (1-3) +]-- руоф За императора (1-3) -- 為了皇帝 (1-3)
 		--[+ Complete the following Penances as the Veteran. +]-- руоф Выполнить следующие искупления за Ветерана.
@@ -425,7 +425,7 @@ local penances_localizations = {
 		},
 	--[+ Armourbane +]-- руоф Бронебой
 	["loc_achievement_veteran_krak_grenade_kills_name"] = {
-		["zh-tw"] = "護甲之禍",
+		["zh-tw"] = "護甲之災",
 	},
 		--[+ Kill 500 armoured enemies using krak grenades. +]-- руоф Убейте врагов с бронёй (500) с помощью крак-гранат.
 		["loc_achievement_veteran_krak_grenade_kills_description"] = {
@@ -1049,7 +1049,7 @@ local penances_localizations = {
 	--[+ Blessed by Fate +]-- руоф Хранимый судьбой
 	["loc_achievement_psyker_2_easy_2_name"] = {
 		ru = "Благословен судьбой",
-		["zh-tw"] = "受命運眷顧",
+		["zh-tw"] = "命運保佑",
 	},
 		--[+ Use Psykinetic's Wrath or Venting Shriek to survive Perils of the Warp 50 times. +]-- руоф Воспользуйтесь «Психокинетическим гневом» 50 р., чтобы не погибнуть от угозы варпа.
 		["loc_achievement_psyker_2_easy_2_tweaked_description"] = {
@@ -1553,7 +1553,7 @@ local penances_localizations = {
 	--[+ Gone Bowling +]-- руоф Играю в боулинг
 	["loc_achievement_ogryn_2_bull_rushed_100_enemies_name"] = {
 		ru = "Разметал как кегли",
-		["zh-tw"] = "全倒",
+		["zh-tw"] = "全中",
 	},
 		--[+ Knock down 60 enemies with a single Bull Rush or Indomitable on Malice Threat or higher. +]-- руоф При угрозе «Злоба» или выше сбейте с ног одним зарядом «Бычьего натиска» врагов: 60.
 		["loc_achievement_ogryn_2_bull_rushed_100_enemies_fix_description"] = {
