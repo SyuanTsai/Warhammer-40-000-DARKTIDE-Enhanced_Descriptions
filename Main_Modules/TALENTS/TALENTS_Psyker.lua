@@ -4115,7 +4115,7 @@ local psyker_localizations = {
 			..CPhrs("Carap_cant_cleave"),
 		ru = Dot_green.." До {max_cleave:%s} к "..CKWord("рассечению", "rassecheniu_rgb_ru")..", в зависимости от уровня "..CKWord("опасности", "opasnosti_rgb_ru")..".\n" -- Расщепление варпа
 			.."\n"
-			..CPhrs("Carap_cant_cleave"),
+			..CPhrs("Carap_cant_clv"),
 		fr = Dot_green.." Jusqu'à {max_cleave:%s} de "..CKWord("Transpercement", "Cleave_rgb_fr")..", en fonction de votre "..CKWord("Péril", "Peril_rgb_fr")..".\n"
 			.."\n"
 			..CPhrs("Carap_cant_cleave"),

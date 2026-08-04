@@ -374,7 +374,7 @@ local arbites_localizations = {
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
 			..Dot_green.." {cooldown_elite:%s} second per Elite/Specialist/Monstrosity,\n"
 			..Dot_green.." {cooldown:%s} seconds per other enemy.\n"
-			..Dot_nc.." Max reduction: {max_cooldown:%s} seconds.",
+			..Dot_nc.." Max reduction: {max_cooldown} seconds.",
 		ru = "После рывка, сокращается время "..CKWord("восстановления", "vosstanovlenia_rgb_ru").." вашего "..CKWord("Прорыва вражеского строя", "BreakZLine_rgb_ru").." на:\n" -- Направленная жестокость
 			..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или чудовища,\n"
 			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"

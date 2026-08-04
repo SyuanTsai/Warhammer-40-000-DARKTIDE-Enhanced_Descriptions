@@ -208,7 +208,7 @@ local skitarii_localizations = {
 		--[+ BLITZ - БЛИЦ - 2-2 - Enhanced Arc Grenades - Улучшенные электродуговые гранаты +]--	17.07.2026
 		["loc_talent_cryptic_arc_grenades_weapon_malfunction_desc"] = { -- talent_name: Arc Grenades, : 8, : 12, m->meters, s->seconds, +colors
 			en = "Your {talent_name:%s} also cause Ranged Enemies within {range:%s} meters to have their Ranged weapons Malfunction, making them unable to use them for {duration:%s} seconds.",
-			["zh-tw"] = "你的 {talent_name:%s} 還會使 {range:%s} 公尺內遠程敵人的遠程武器發生"..CKWord("武器故障", "WeaponMalfunction_rgb_tw").."，使其在 {duration:%s} 秒內無法使用該武器。",
+			["zh-tw"] = "你的 {talent_name:%s} 還會使 {range:%s} 公尺內遠程敵人的遠程武器發生故障，使其在 {duration:%s} 秒內無法使用該武器。",
 			ru = "Ваши {talent_name:%s} также блокируют на {duration:%s} секунд дальнобойное оружие у стрелков в радиусе {range:%s} метров.",
 		},
 

@@ -1001,8 +1001,8 @@ local penances_localizations = {
 		["loc_achievement_psyker_2_medium_2_description"] = {
 			en = "On "..CKWord("Malice", "malice_rgb").." Threat or higher, kill "..CNumb("{target}", "target_rgb").." enemies with Warp attacks.",
 			ru = "На сложности "..CKWord("Злоба", "malice_rgb_ru").." или выше, убейте "..CNumb("{target}", "target_rgb").." врагов варп-атаками.",
-			["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
-				.."使用 "..CKWord("亞空間攻擊", "Damagewrp_a_rgb_tw").." 擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
+		["zh-tw"] = "在『"..CKWord("惡毒", "malice_rgb_tw").."』或更高威脅等級中，\n"
+			.."使用亞空間攻擊擊殺 "..CNumb("{target}", "target_rgb").." 名敵人。",
 		},
 	--[+ Keep Your Distance +]-- руоф Не подходи близко
 	["loc_achievement_psyker_2_hard_2_name"] = {

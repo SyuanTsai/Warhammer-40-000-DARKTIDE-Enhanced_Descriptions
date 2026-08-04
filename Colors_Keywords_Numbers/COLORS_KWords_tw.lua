@@ -18,7 +18,6 @@ local CONFIG = {
 		Burning = "燃燒中",
 		Flamer = "淨化噴火器", -- Skitarii
 		Heat = "熱能",
-		Heat_diss = "熱能消散",
 		Overheat = "過熱",
 	},
 	cleave_text_colour = {
@@ -45,7 +44,6 @@ local CONFIG = {
 	crit_text_colour = {
 		Crit = "致命一擊",
 		Critical = "致命一擊",
-		Crit_k = "致命一擊擊殺",
 
 		Crit_chance = "爆擊率",
 		Crt_chance = "爆擊率",
@@ -79,7 +77,6 @@ local CONFIG = {
 		Damage_res = "傷害抗性", -- Resistance
 		Damage_r = "遠程傷害", -- Ranged Damage
 		Damagewrp = "靈能傷害",
-		Damagewrp_a = "亞空間攻擊",
 	},
 	electrocuted_text_colour = {
 		Arc = "電弧",
@@ -124,7 +121,6 @@ local CONFIG = {
 	},
 	stagger_text_colour = {
 		Stagger = "踉蹌",
-		Stagger2 = "踉蹌效果",
 		Staggered = "踉蹌",
 		Staggering = "踉蹌",
 		Staggers = "踉蹌",
@@ -137,7 +133,6 @@ local CONFIG = {
 		Stamina = "耐力",
 		Stamina_m = "最大耐力",
 		Stamina_c_r = "耐力消耗",
-		Stamina_se = "衝刺體力消耗",
 	},
 	toughness_text_colour = {
 		TDR = "韌性減傷",
@@ -293,7 +288,6 @@ local CONFIG = {
 		Arcgren = "電弧手榴彈",
 		PowerOverload = "能量超載",
 		VoltaicExpander = "電能擴張器",
-		WeaponMalfunction = "武器故障",
 		-- Hive Scum
 		Anarchist = "無政府主義者",
 		Blinder = "閃光彈",
