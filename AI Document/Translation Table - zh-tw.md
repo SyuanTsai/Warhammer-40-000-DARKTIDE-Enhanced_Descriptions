@@ -1,4 +1,30 @@
-# Warhammer 40,000 DARKTIDE - 戰錘40K黑潮
+# Warhammer 40,000 DARKTIDE - 戰錘40K黑潮 Translation Reference
+
+> [!NOTE]
+> This file is the local fallback terminology reference for Traditional Chinese (`zh-tw`) translations.
+>
+> The latest public version should be checked first when available:
+>
+> https://raw.githubusercontent.com/SyuanTsai/Warhammer-40-000-DARKTIDE-Mods/main/Referneces/Translation.md
+>
+> If the public version cannot be accessed, use this local file as the fallback reference.
+
+## Usage
+
+Use this file as the terminology reference for Warhammer 40,000: Darktide translations, including:
+
+* talents
+* weapons
+* weapon blessings
+* buffs
+* debuffs
+* enemies
+* class-specific terminology
+* UI and gameplay terms
+
+When a term exists in this table, prefer the listed Traditional Chinese translation to keep wording consistent across files.
+
+---
 
 ## 基礎名詞
 

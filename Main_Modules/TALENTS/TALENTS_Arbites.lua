@@ -374,7 +374,7 @@ local arbites_localizations = {
 		en = "At charge end, reduce "..CKWord("Cooldown", "Cd_rgb").." of your "..CKWord("Break the Line", "BreakZLine_rgb").." per hit during charge:\n"
 			..Dot_green.." {cooldown_elite:%s} second per Elite/Specialist/Monstrosity,\n"
 			..Dot_green.." {cooldown:%s} seconds per other enemy.\n"
-			..Dot_nc.." Max reduction: {max_cooldown} seconds.",
+			..Dot_nc.." Max reduction: {max_cooldown:%s} seconds.",
 		ru = "После рывка, сокращается время "..CKWord("восстановления", "vosstanovlenia_rgb_ru").." вашего "..CKWord("Прорыва вражеского строя", "BreakZLine_rgb_ru").." на:\n" -- Направленная жестокость
 			..Dot_green.." {cooldown_elite:%s} секунду за каждого, поражённого рывком, элитного врага, специалиста или чудовища,\n"
 			..Dot_green.." {cooldown:%s} секунды за каждого, поражённого рывком, обычного врага.\n"
@@ -925,7 +925,7 @@ local arbites_localizations = {
 			..Dot_nc.." Длится {duration:%s} секунд.", -- Сила подавления
 		["zh-tw"] = "因近戰攻擊、推擊或"..CKWord("突破重圍", "BreakZLine_rgb_tw").."直接撞擊而\n"
 			..CKWord("踉蹌", "Staggered_rgb_tw").."的敵人，\n"
-			.."造成的"..CKWord("傷害", "Damage_rgb_tw").." {damage:%s}。\n"
+			..Dot_green.." 造成的"..CKWord("傷害", "Damage_rgb_tw").."修正為 {damage:%s}。\n"
 			..Dot_nc.." 持續 {duration:%s} 秒。",
 	},
 	--[+ Passive 19 - Suppression Protocols +]--	26.03.2026
