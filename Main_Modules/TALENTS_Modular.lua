@@ -144,14 +144,14 @@ local talent_localizations = {
 		["loc_alias_talent_builder_view_hotkey_summary"] = {
 			-- en = "1View full build",
 			ru = "Посмотреть весь билд", -- руоф Осмотреть полную сборку
-			-- ["zh-tw"] = "查看全部天賦",
+			["zh-tw"] = "查看完整配置",
 			-- ["zh-cn"] = "查看完整构筑",
 		},
 		--[+ Full build +]--	01.11.2025
 		["loc_alias_talent_builder_view_popup_title_summary"] = {
 			-- en = "Full build",
 			ru = "Весь билд",
-			-- ["zh-tw"] = "全部天賦",
+			["zh-tw"] = "完整配置",
 			-- ["zh-cn"] = "完整构筑",
 		},
 
@@ -174,7 +174,7 @@ local talent_localizations = {
 		["loc_glossary_talent_keystone_modifier"] = {
 			-- en = "Keystone Modifier",
 			ru = "Модификатор ключевого таланта", -- руоф Модификатор краеугольного камня
-			["zh-tw"] = "鑰石調整項",
+			["zh-tw"] = "鑰石修改器",
 			-- ["zh-cn"] = "楔石修正",
 		},
 
@@ -183,7 +183,7 @@ local talent_localizations = {
 		["loc_talent_mechanic_exclusive_tactical"] = {
 			-- en = "Selecting this Blitz locks all other Blitzes.",
 			ru = "Выбор этого Блица закроет другие Блицы.", -- руоф Выбор этой Блиц-способности блокирует все остальные Блицы.
-			["zh-tw"] = "選擇此閃擊技能後，將鎖定其他閃擊技能。",
+			["zh-tw"] = "選擇此閃擊後，將鎖定其他閃擊。",
 			-- ["zh-cn"] = "锁定闪击",
 		},
 		--[+ ...Aura locks all other Auras. +]--	08.12.2025
@@ -197,7 +197,7 @@ local talent_localizations = {
 		["loc_talent_mechanic_exclusive_ability"] = {
 			-- en = "Selecting this Ability locks all other Abilities.",
 			ru = "Выбор этой Способности закроет другие Способности.", -- руоф Выбор этой способности блокирует все остальные способности.
-			["zh-tw"] = "選擇此技能後，將鎖定其他技能。",
+			["zh-tw"] = "選擇此戰鬥技能後，將鎖定其他戰鬥技能。",
 			-- ["zh-cn"] = "锁定能力",
 		},
 		--[+ ...Talent locks all other Talents. +]--	08.12.2025
@@ -234,7 +234,7 @@ local talent_localizations = {
 		["loc_talent_crit_chance_low_desc"] = { -- crit_chance:+5%
 			en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".",
 			ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".", -- руоф Усиление вероятности крит. удара
-			["zh-tw"] = Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。", -- 暴擊機率增幅
+			["zh-tw"] = Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。", -- 暴擊機率增幅
 			-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crt_hit_chnc_rgb_fr..".",
 			-- ["zh-cn"] = "{crit_chance:%s} "..COLORS_KWords_zh_cn.Crt_chnc_rgb_zh_cn.."。", -- 暴击几率强化
 		},
@@ -276,7 +276,7 @@ local talent_localizations = {
 		["loc_talent_warp_charge_low_desc"] = { -- warp_charge: -10.00%
 			en = Dot_green.." {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." Generation.",
 			ru = Dot_green.." {warp_charge:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".",-- руоф Сопротивление угрозе
-			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."產生。", -- 反噬抗性
+			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."累積。", -- 反噬抗性
 			-- fr = "{warp_charge:%s} de Génération de "..COLORS_KWords_fr.Peril_rgb_fr.." .",
 			-- ["zh-cn"] = "{warp_charge:%s} "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."产生。", -- 危机值抗性
 		},
@@ -375,7 +375,7 @@ local talent_localizations = {
 		["loc_talent_toughness_damage_reduction_low_desc"] = { -- toughness: +5%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- руоф Снижение урона стойкости
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
 			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 低
 		},
@@ -384,7 +384,7 @@ local talent_localizations = {
 		["loc_talent_toughness_damage_reduction_medium_desc"] = { -- toughness: +10%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- Снижение урона стойкости среднее
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
 			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 中
 		},

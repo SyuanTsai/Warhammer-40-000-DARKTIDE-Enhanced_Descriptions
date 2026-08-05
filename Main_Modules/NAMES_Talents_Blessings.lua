@@ -795,7 +795,7 @@ local names_talents_blessings_templates = {
 		-- Plasma Gun
 		["loc_trait_bespoke_crit_chance_scaled_on_heat"] = {
 			ru = "Перегрев!",
-			["zh-tw"] = "燃起來!",
+			["zh-tw"] = "燃起來！",
 		},
 		--[+ VOLATILE +]-- ruof Испарение	20.04.2026
 		-- Plasma Gun
@@ -932,7 +932,7 @@ local names_talents_blessings_templates = {
 		-- Psyker 1, Scum 1
 		["loc_talent_crit_chance_low"] = {
 			ru = "Усиление шанса критического удара",
-			["zh-tw"] = "暴擊機率增幅",
+			["zh-tw"] = "爆擊率增幅",
 		},
 		--[+ Impact Boost +]-- ruof Усиление подчинения	20.04.2026
 		-- Arbites 1
@@ -941,10 +941,10 @@ local names_talents_blessings_templates = {
 			["zh-tw"] = "衝擊增幅",
 		},
 		--[+ Melee Damage Boost Low - Medium +]-- ruof Усиление урона в ближнем бою	20.04.2026
-		-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
+		-- Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
 		["loc_talent_melee_damage_boost_medium"] = {
 			ru = "Усиление урона ближнего боя",
-			["zh-tw"] = "重擊傷害增幅",
+			["zh-tw"] = "近戰增幅",
 		},
 		--[+ Movement Speed Boost +]-- ruof Усиление скорости передвижения	20.04.2026
 		-- Psyker 1, Zealot 1, Veteran 1
@@ -969,20 +969,20 @@ local names_talents_blessings_templates = {
 		["loc_talent_reload_speed_low"] = {
 			en = "Reload Boost Low",
 			ru = "Усиление скорости перезарядки малое",
-			["zh-tw"] = "換彈速度增幅(小)",
+			["zh-tw"] = "換彈速度增幅（小）",
 		},
 		--[+ Reload Boost Medium +]-- ruof Усиление перезарядки	20.04.2026
 		-- Veteran 1
 		["loc_talent_reload_speed_medium"] = {
 			en = "Reload Boost Medium",
 			ru = "Усиление скорости перезарядки среднее",
-			["zh-tw"] = "換彈速度增幅(中)",
+			["zh-tw"] = "換彈速度增幅（中）",
 		},
 		-- [+ Rending Boost Low +]-- ruof Усиление «Терзания»	20.04.2026
 		-- Ogryn 1
 		["loc_talent_armor_pen_low"] = {
 			ru = "Усиление пробивания брони",
-			["zh-tw"] = "撕裂增強",
+			["zh-tw"] = "撕裂增幅",
 		},
 		--[+ Stamina Boost Low +]-- ruof Усиление выносливости	20.04.2026
 		-- Psyker 1, Veteran 1
@@ -999,28 +999,28 @@ local names_talents_blessings_templates = {
 		["loc_talent_toughness_boost_low"] = {
 			en = "Toughness Boost Low",
 			ru = "Усиление стойкости малое",
-			["zh-tw"] = "韌性增幅(小)",
+			["zh-tw"] = "韌性增幅（小）",
 		},
 		--[+ Toughness Boost Medium +]-- ruof Усиление стойкости	20.04.2026
 		-- Psyker 2, Zealot 1, Ogryn 2, Veteran 2, Scum 2
 		["loc_talent_toughness_boost_medium"] = {
 			en = "Toughness Boost Medium",
 			ru = "Усиление стойкости среднее",
-			["zh-tw"] = "韌性增幅(中)",
+			["zh-tw"] = "韌性增幅（中）",
 		},
 		--[+ Toughness Damage Reduction Low +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Ogryn 1
 		["loc_talent_toughness_damage_reduction_low"] = {
 			en = "Toughness Damage Reduction Low",
 			ru = "Снижение урона стойкости малое",
-			["zh-tw"] = "韌性減傷(小)",
+			["zh-tw"] = "韌性減傷（小）",
 		},
 		--[+ Toughness Damage Reduction Medium +]-- ruof Снижение урона стойкости	20.04.2026
 		-- Psyker 1, Zealot 1, Ogryn 1, Arbites 1, Veteran 1
 		["loc_talent_toughness_damage_reduction_medium"] = {
 			en = "Toughness Damage Reduction Medium",
 			ru = "Снижение урона стойкости среднее",
-			["zh-tw"] = "韌性減傷(中)",
+			["zh-tw"] = "韌性減傷（中）",
 		},
 		--[+ Potent Tox +]-- ruof Мощный токсин	20.04.2026
 		-- Scum 1
@@ -1046,7 +1046,7 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 1-2 - Kinetic Flayer +]-- ruof Кинетический истребитель	20.04.2026
 		["loc_talent_psyker_smite_on_hit"] = {
 			ru = "Кинетический живодёр",
-			["zh-tw"] = "動能剝皮者",
+			["zh-tw"] = "動能撕裂者",
 		},
 		--[+ BLITZ 2 - Smite +]-- ruof Сокрушение	20.04.2026
 		-- ["loc_ability_psyker_chain_lightning"] = {
@@ -1110,7 +1110,7 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 1-2 - Becalming Eruption +]-- ruof Затихающее извержение	20.04.2026
 		["loc_talent_psyker_shout_reduces_warp_charge_generation"] = {
 			ru = "Успокаивающее извержение",
-			["zh-tw"] = "平靜進發",
+			["zh-tw"] = "平靜迸發",
 		},
 		--[+ ABILITY 1-3 - Warp Creeping Flames +]-- ruof Раздувающееся пламя	20.04.2026
 		["loc_talent_psyker_warpfire_on_shout"] = {
@@ -1280,7 +1280,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Mind in Motion +]-- ruof Движущийся разум	20.04.2026
 		["loc_talent_psyker_venting_doesnt_slow"] = {
 			ru = "Разум в движении",
-			["zh-tw"] = "靈能學者光環",
+			["zh-tw"] = "思維活躍",
 		},
 		--[+ PASSIVE 11 - Malefic Momentum +]-- ruof Пагубный моментум	20.04.2026
 		["loc_talent_psyker_kills_stack_other_weapon_damage"] = {
@@ -1336,7 +1336,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 23 - Solidity +]-- ruof Твердость	20.04.2026
 		["loc_talent_psyker_increased_vent_speed"] = {
 			ru = "Устойчивость",
-			["zh-tw"] = "心如止水",
+			["zh-tw"] = "穩固",
 		},
 		--[+ PASSIVE 24 - Puppet Master +]-- ruof Кукловод	20.04.2026
 		-- ["loc_talent_psyker_coherency_size_increase"] = {
@@ -1490,7 +1490,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 1-1 - Stalwart +]-- ruof Верный последователь	20.04.2026
 		["loc_talent_zealot_fanatic_rage_toughness"] = {
 			ru = "Непоколебимый",
-			["zh-tw"] = "忠誠",
+			["zh-tw"] = "死忠",
 		},
 		--[+ KEYSTONE 1-2 - Fury Rising +]-- ruof Подъем ярости	20.04.2026
 		["loc_talent_zealot_fanatic_rage_crits"] = {
@@ -1985,7 +1985,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 27 - Keep Their Heads Down! +]-- ruof Пригнитесь!	20.04.2026
 		["loc_talent_veteran_increase_suppression"] = {
 			ru = "Не давай им поднять головы!",
-			["zh-tw"] = "讓他們全趴下",
+			["zh-tw"] = "讓他們全趴下！",
 		},
 		--[+ PASSIVE 28 - Reciprocity +]-- ruof Взаимная выгода	20.04.2026
 		["loc_talent_veteran_dodging_grants_crit"] = {
@@ -2058,7 +2058,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 43 - Bring it Down! +]-- ruof Убивай!	20.04.2026
 		["loc_talent_veteran_big_game_hunter"] = {
 			ru = "Убей их!",
-			["zh-tw"] = "幹掉它!",
+			["zh-tw"] = "幹掉它！",
 		},
 
 
@@ -2076,7 +2076,7 @@ local names_talents_blessings_templates = {
 		--[+ BLITZ 2 - Bombs Away! +]-- ruof Кидаю бомбу!
 		["loc_talent_bonebreaker_grenade_super_armor_explosion"] = {
 			ru = "Бросай бомбы!",
-			["zh-tw"] = "投彈完畢!",
+			["zh-tw"] = "投彈完畢！",
 		},
 		--[+ BLITZ 3 - Frag Bomb +]-- ruof Осколочная бомба
 		["loc_ability_ogryn_grenade_demolition"] = {
@@ -2096,7 +2096,7 @@ local names_talents_blessings_templates = {
 		--[+ AURA 2 - Stay Close! +]-- ruof Не расходимся!
 		["loc_talent_ogryn_toughness_regen_aura"] = {
 			ru = "Держись рядом!",
-			["zh-tw"] = "跟緊我!",
+			["zh-tw"] = "跟緊我！",
 		},
 		--[+ AURA 3 - Coward Culling +]-- ruof Трусливые отбросы
 		["loc_talent_ogryn_damage_vs_suppressed"] = {
@@ -2141,7 +2141,7 @@ local names_talents_blessings_templates = {
 		--[+ ABILITY 2-2 - Go Again +]-- ruof Еще раз!
 		["loc_talent_ogryn_taunt_stagger_cd"] = {
 			ru = "Давай по новой!",
-			["zh-tw"] = "再來!",
+			["zh-tw"] = "再來",
 		},
 		--[+ ABILITY 2-3 - Big Lungs +]-- ruof Мощные легкие
 		-- ["loc_talent_ogryn_taunt_radius_increase"] = {
@@ -2204,7 +2204,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 2-3 - Toughest! +]-- ruof Самый выносливый!
 		["loc_talent_ogryn_carapace_armor_more_toughness"] = {
 			ru = "Стойкий!",
-			["zh-tw"] = "最堅韌!",
+			["zh-tw"] = "最堅韌！",
 		},
 		--[+ KEYSTONE 3 - Burst Limiter Override +]-- ruof Взлом ограничителя взрыва
 		["loc_talent_ogryn_chance_to_not_consume_ammo"] = {
@@ -2223,7 +2223,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 3-3 - More Burst Limiter Overrides! +]-- ruof Больше взлома ограничителя взрыва!
 		["loc_talent_ogryn_increased_leadbelcher_chance"] = {
 			ru = "Ещё больший обход ограничителя очереди!",
-			["zh-tw"] = "爆限大超載!",
+			["zh-tw"] = "爆限大超載！",
 		},
 	--[+ +PASSIVES - ПАССИВНЫЕ+ +]--
 		--[+ PASSIVE 1 - Furious +]-- ruof Разъяренный
@@ -2247,12 +2247,12 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 5 - Steady Grip +]-- ruof Крепкая хватка
 		["loc_talent_ogryn_toughness_regen_while_bracing"] = {
 			ru = "Крепкий хват",
-			["zh-tw"] = "穩固握持",
+			["zh-tw"] = "穩定握持",
 		},
 		--[+ PASSIVE 6 - Smash 'Em! +]-- ruof Вдарь им!
 		["loc_talent_ogryn_toughness_on_single_heavy"] = {
 			ru = "Круши их!",
-			["zh-tw"] = "碾碎它們!",
+			["zh-tw"] = "碾碎它們！",
 		},
 		--[+ PASSIVE 7 - Lynchpin +]-- ruof Переломный момент
 		["loc_talent_ogryn_coherency_toughness_increase"] = {
@@ -2272,7 +2272,7 @@ local names_talents_blessings_templates = {
 		--[+ PASSIVE 10 - Crunch! +]-- ruof Хрясь!
 		["loc_talent_ogryn_fully_charged_attacks_gain_damage_and_stagger"] = {
 			ru = "Хрусь!",
-			["zh-tw"] = "嘎嘎!",
+			["zh-tw"] = "嘎嘎！",
 		},
 		--[+ PASSIVE 11 - Batter +]-- ruof Месиво
 		-- ["loc_talent_ogryn_bleed_on_multiple_hit"] = {
@@ -2495,7 +2495,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 4-5 - Not Far Behind +]-- ruof Не так далеко позади
 		["loc_talent_adamant_pinning_dog_bonus_moving_towards"] = {
 			ru = "В зоне досягаемости",
-			["zh-tw"] = "不弱人後",
+			["zh-tw"] = "不落人後",
 		},
 		--[+ KEYSTONE 5 - Terminus Warrant +]-- ruof Распоряжение «Терминус»
 		["loc_talent_adamant_bullet_rain"] = {
@@ -2505,6 +2505,7 @@ local names_talents_blessings_templates = {
 		--[+ KEYSTONE 5-1 - Dispense Justice +]-- ruof Охват правосудия
 		["loc_talent_adamant_bullet_rain_fire_rate"] = {
 			ru = "Исполнение приговора",
+			["zh-tw"] = "伸張正義",
 			-- TODO Unknown
 		},
 		--[+ KEYSTONE 5-2 - Obstinate +]-- ruof Упрямый
