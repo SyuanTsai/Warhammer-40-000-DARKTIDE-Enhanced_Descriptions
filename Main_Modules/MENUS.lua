@@ -35,6 +35,110 @@ local menus_templates = {
 			-- es = "",
 		-- },
 
+-- TUTORIAL - 
+		["loc_chain_light"] = {
+			ru = "Серии атак",
+		},
+		["loc_tg_attack_chain_light"] = {
+			ru = "Повторные атаки, совершаемые в быстрой последовательности, объединяются в серию.\n"
+				.."Удары в серии отличаются по направлению и "..CKWord("урону", "uronu_rgb_ru")..".",
+		},
+		["loc_melee_chain_objective"] = {
+			ru = "Выполните серию лёгких атак",
+		},
+		["loc_tg_attack_chain_heavy"] = {
+			ru = "Тяжёлые атаки тоже можно объединять в серию.\n"
+				.."Лёгкие и тяжёлые атаки также можно комбинировать в серии атак."
+		},
+		["loc_heavy_attack"] = {
+			ru = "Тяжёлая атака",
+		},
+		["loc_melee_chain_objective_heavy"] = {
+			ru = "Выполните серию тяжёлых атак",
+		},
+		["loc_weapon_special"] = {
+			ru = "Специальные атаки оружия",
+		},
+		["loc_weapon_special_desc"] = {
+			ru = "Одно оружие может иметь мощные {#color(255,255,190)}специальные атаки{#reset()}.\n"
+				.."Другое - {#color(255,255,190)}специальные способности{#reset()}, изменяющие его следующую атаку.",
+		},
+		["loc_tg_weapon_special_powermaul_p3"] = {
+			ru = "Активация специальной атаки",
+		},
+		["loc_weapon_special_objective"] = {
+			ru = "Выполните специальную атаку",
+		},
+		["loc_pushing"] = {
+			ru = "Отталкивание",
+		},
+		["loc_pushing_desc"] = {
+			ru = "{#color(255,255,190)}Отталкивание{#reset()} может "..CKWord("ошеломить", "oshelomit_rgb_ru").." группу врагов, но тратит "..CKWord("выносливость", "vynoslivost_rgb_ru")..".",
+		},
+		["loc_block"] = {
+			ru = "Блокирование",
+		},
+		["loc_pushf"] = {
+			ru = "Отталкивание (в блоке)",
+		},
+		["loc_talent_cryptic_power_keyword"] = {
+			ru = "Ёмкость",
+		},
+		["loc_tutorial_cryptic_capacitance_desc"] = {
+			ru = "Скитарии используют "..CKWord("ёмкость", "emkost_rgb_ru").." для усиления своих способностей.\n"
+				.."При достижении "..CNumb("100%", "pc_100_rgb").."  "..CKWord("ёмкости", "emkosti_rgb_ru")..", вы получаете заряд.\n"
+				.."Вы получаете "..CKWord("ёмкость", "emkost_rgb_ru").." пассивно со временем и за убийства врагов.",
+		},
+		["loc_tutorial_cryptic_ability_desc"] = {
+			ru = "Ваша способность называется "..CKWord("Вольтаический расширитель", "VoltaicExpander_rgb_ru")..". Она поражает ближайших врагов "..CKWord("электрошоком", "elektroshokom_rgb_ru")..", "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." их и наносит "..CKWord("урон", "uron_rgb_ru")..".",
+		},
+		["loc_tutorial_cryptic_ability_charges_desc"] = {
+			ru = "У вас может быть до "..CNumb("3", "n_3_rgb").." зарядов. Ваша способность "..CKWord("Вольтаический расширитель", "VoltaicExpander_rgb_ru").." может потратить все заряды, увеличивая радиус поражения за каждый потраченный заряд.",
+		},
+		["loc_tutorial_cryptic_companion_enemy_desc"] = {
+			ru = "Вас сопровождает "..CKWord("сервочереп", "servocherep_rgb_ru")..". Вы можете приказать ему стрелять во врагов.",
+		},
+		["loc_setting_com_wheel_double_tap"] = {
+			ru = "Пометка двойным нажатием",
+		},
+		["loc_setting_com_wheel_single_tap"] = {
+			ru = "Пометка одиночным нажатием",
+		},
+		["loc_tutorial_cryptic_companion_hacking_desc"] = {
+			ru = "Вы можете также приказать своему "..CKWord("сервочерепу", "servocherepu_rgb_ru").." автоматически выполнять события взлома данных.",
+		},
+		["loc_tutorial_cryptic_companion_hacking"] = {
+			ru = "Прикажите сервочерепу взломать данные.",
+		},
+		["loc_tutorial_cryptic_companion_empower_desc"] = {
+			ru = "Вы можете временно усилить свой "..CKWord("сервочереп", "servocherep_rgb_ru")..".",
+		},
+		["loc_tutorial_cryptic_companion_empower_use"] = {
+			ru = "Усильте свой сервочереп, используя кнопку блица.",
+		},
+		["loc_training_ground_dodge_description"] = {
+			ru = "Уклонение в движении.",
+		},
+		["loc_training_ground_move_backward_description"] = {
+			ru = "Движение назад.",
+		},
+		["loc_training_ground_move_left_description"] = {
+			ru = "Движение влево.",
+		},
+		["loc_training_ground_move_right_description"] = {
+			ru = "Движение вправо.",
+		},
+		["loc_training_ground_psyker_a__dodging_tutorial_desc_a_01"] = {
+			ru = "Уклонение позволяет избежать атак дальнего и ближнего боя.",
+		},
+		["loc_toughness_damage_tutorial_desc"] = {
+			ru = "Атаки врагов сначала поражают вашу "..CKWord("стойкость", "stoikost_rgb_ru")..". Когда ваша "..CKWord("стойкость", "stoikost_rgb_ru").." пробита, они начинают поражать ваше "..CKWord("здоровье", "zdorovie_rgb_ru")..", а также их атаки начнут вас "..CKWord("ошеломлять", "oshelomlat_rgb_ru").." или даже "..CKWord("оглушать", "oglushat_rgb_ru").." на некоторое время.",
+		},
+		["loc_toughness_tutorial_desc"] = {
+			ru = "Убийство врагов в ближнем бою восполняет "..CKWord("стойкость", "stoikost_rgb_ru")..".\n"
+				.."Также "..CKWord("стойкость", "stoikost_rgb_ru").." восстанавливается, когда рядом с вами в радиусе "..CKWord("сплочённости", "splochennosti_rgb_ru").." находятся товарищи по команде.",
+		},
+
 	--[+ Plasteel +]--
 	["loc_currency_name_plasteel"] = {
 		ru = "Пласталь",

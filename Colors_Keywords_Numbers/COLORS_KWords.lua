@@ -63,13 +63,13 @@ local CONFIG = {
 		Crit_dmg_r =	"Critical Damage",
 		Crt_dmg_r =		"Crit Damage",
 
-		Conc_Stimm =	"Concentration Stimm",
+			Conc_Stimm =	"Concentration Stimm",
 	},
 	damage_text_colour = {
 		Damage =		"Damage",
 		Damagewrp =		"Warp-Damage",
 
-		Combat_Stimm =	"Combat Stimm",
+			Combat_Stimm =	"Combat Stimm",
 	},
 	electrocuted_text_colour = {
 		Arc =			"Arc",
@@ -108,7 +108,7 @@ local CONFIG = {
 	rending_text_colour = {
 		Rending =		"Rending",
 
-		Cartel_Stimm =	"Cartel Special Stimm",
+			Cartel_Stimm =	"Cartel Special Stimm",
 	},
 	soulblaze_text_colour = {
 		Soulblaze =		"Soulblaze",
@@ -196,11 +196,11 @@ local CONFIG = {
 		momentum_text_colour = {
 			Momentum =		"Momentum",
 
+				Adren =			"Adrenaline",			-- Hive Scum
+				AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 				Taunt =			"Taunt",				-- Ogryn
 				Taunted =		"Taunted",				-- Ogryn
 				Taunting =		"Taunting",				-- Ogryn
-				Adren =			"Adrenaline",			-- Hive Scum
-				AdrenFr =		"Adrenaline Frenzy",	-- Hive Scum
 		},
 		stealth_text_colour = {
 			Stealth =		"Stealth",
@@ -297,10 +297,10 @@ local CONFIG = {
 		momentum =			"Momentum",
 		shock_gren =		"Stunstorm Grenade",
 		shock_grens =		"Stunstorm Grenades",
-		Stun_gren =			"Stun Grenade",
 		shock_gren1 =		"Stun Grenade",
 		shock_grens1 =		"Stun Grenades",
 		shroudf =			"Shroudfield",
+		Stun_gren =			"Stun Grenade",
 		zealous =			"Zealous",
 -- PSYKER
 		Assail =			"Assail",

@@ -58,7 +58,7 @@ local psyker_localizations = {
 		["zh-cn"] = "充能灵能并释放，对单个敌人造成高额"..CKWord("伤害", "Damage_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_green.." 对防弹甲与甲壳甲有效。\n"
-			..Dot_green.." 总是命中"..CKWord("弱点", "Weakspots_rgb_zh_cn").."。\n"
+			..Dot_green.." 总是命中"..CKWord("弱点", "Weakspot_rgb_zh_cn").."。\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}警告！{#reset()}\n"
@@ -174,9 +174,9 @@ local psyker_localizations = {
 			..Dot_green.." {talent_old:%s}的强化版本，造成{damage:%s}"..CKWord("伤害", "Damage_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_green.." 对防弹甲与甲壳甲有效。\n"
-			..Dot_green.." 总是命中"..CKWord("弱点", "Weakspots_rgb_zh_cn").."。\n"
-			..Dot_green.." 主要攻击充能至"..CNumb("50%", "pc_50_rgb").."时轻微"..CKWord("踉跄", "Staggers_rgb_zh_cn").."目标。\n"
-			..Dot_green.." 命中时"..CKWord("踉跄", "Staggers_rgb_zh_cn").."几乎所有敌人。\n"
+			..Dot_green.." 总是命中"..CKWord("弱点", "Weakspot_rgb_zh_cn").."。\n"
+			..Dot_green.." 主要攻击充能至"..CNumb("50%", "pc_50_rgb").."时轻微"..CKWord("踉跄", "Stagger_rgb_zh_cn").."目标。\n"
+			..Dot_green.." 命中时"..CKWord("踉跄", "Stagger_rgb_zh_cn").."几乎所有敌人。\n"
 			..Dot_red.." 无法"..CKWord("踉跄", "Stagger_rgb_zh_cn").."突变者、欧格林、巨兽或拥有主动虚空护盾的敌人。\n"
 			..CPhrs("Cant_Crit")
 			.."\n"
@@ -357,7 +357,7 @@ local psyker_localizations = {
 		es = "Los ataques contra Especialistas, Élites y Monstruosidades tienen un {smite_chance:%s} de probabilidad al golpear de infligir {talent_name:%s}.\n"
 			..Dot_nc.." Tiempo de reutilización {time:%s} segundos.",
 	},
-	--[+ BLITZ 2 - Smite +]--	09.06.2026
+	--[+ BLITZ 2 - Smite - Сокрушение +]--	09.06.2026
 	["loc_ability_psyker_chain_lightning_description"] = { -- +colors
 		en = "Unleash a torrent of chain bio-lightning that arcs between enemies, dealing low "..CKWord("Electrocuting", "Electrcuting_rgb").." "..CKWord("Damage", "Damage_rgb").." over time and inflicting high "..CKWord("Stagger", "Stagger_rgb")..".\n"
 			.."The secondary charged attack deals increased "..CKWord("Damage", "Damage_rgb").." and jumps faster.\n"
@@ -373,7 +373,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}Warning!{#reset()}\n"
 			..Dot_red.." Do not use a Primary attack while channeling a Secondary attack at "..CNumb("100%", "pc_100_rgb").." "..CKWord("Peril", "Peril_rgb")..", or you will self-explode.",
-		ru = "Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..CKWord("урон", "uron_rgb_ru").." "..CKWord("электрошоком", "elektroshokom_rgb_ru").." с течением времени и высокое "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..".\n" -- Сокрушение
+		ru = "Вы выпускаете поток цепной биомолнии, которая медленно распространяется между врагами, нанося им низкий "..CKWord("урон", "uron_rgb_ru").." "..CKWord("электрошоком", "elektroshokom_rgb_ru").." с течением времени и высокое "..CKWord("ошеломление", "oshelomlenie_rgb_ru")..".\n"
 			.."Вторичная заряженная атака наносит повышенный "..CKWord("урон", "uron_rgb_ru").." при высвобождении, а также быстрее распространяется.\n"
 			.."\n"
 			..Dot_nc.." Дальность: "..CNumb("16", "n_16_rgb").." метров.\n"
@@ -563,7 +563,7 @@ local psyker_localizations = {
 			..Dot_nc.." "..CKWord("伤害", "Damage_rgb_zh_cn").."窗口持续最多 "..CNumb("2", "n_2_rgb").." 秒。\n"
 			..Dot_nc.." 最后一次"..CKWord("伤害", "Damage_rgb_zh_cn").."跳动后，"..CKWord("电击状态", "Electrocuted_rgb_zh_cn").."持续 "..CNumb("2", "n_2_rgb").." 秒。\n"
 			.."\n"
-			..Dot_green.." 选择"..CKWord("削弱", "Enfeeble_rgb_zh_cn").."时，"..CKWord("电击", "Electrocution_rgb_zh_cn").."的持续时间加倍，且更快达到最大充能。",
+			..Dot_green.." 选择"..CKWord("削弱", "Enfeeble_rgb_zh_cn").."时，"..CKWord("电击", "Electrocute_rgb_zh_cn").."的持续时间加倍，且更快达到最大充能。",
 		de = "Ihre schweren Nahkampfangriffe "..CKWord("Elektrisieren", "Electrocute_rgb_de").." Gegner und fügen ihnen über Zeit Schaden zu.\n"
 			.."\n"
 			..Dot_nc.." Verursacht bis zu "..CNumb("64", "n_64_rgb").." Basisschaden pro Tick bei maximaler Ladung.\n"
@@ -628,7 +628,7 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 受 {talent_name:%s} "..CKWord("電擊", "Electrocute_rgb_tw").."影響的敵人，受到所有來源的"..CKWord("傷害", "Damage_rgb_tw").."增加 {damage:%s}。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
-		["zh-cn"] = Dot_green.." 受到你的{talent_name:%s}"..CKWord("电击", "Electrocution_rgb_zh_cn").."影响的敌人，承受所有来源的"..CKWord("伤害", "Damage_rgb_zh_cn").."提高{damage:%s}。\n"
+		["zh-cn"] = Dot_green.." 受到你的{talent_name:%s}"..CKWord("电击", "Electrocute_rgb_zh_cn").."影响的敌人，承受所有来源的"..CKWord("伤害", "Damage_rgb_zh_cn").."提高{damage:%s}。\n"
 			.."\n"
 			..CPhrs("Doesnt_Stack_Psy_eff"),
 		de = Dot_green.." {damage:%s} mehr "..CKWord("Schaden", "Damage_rgb_de").." von allen Quellen für Gegner, die unter Ihrer {talent_name:%s}-"..CKWord("Elektrisierung", "Electrocution_rgb_de").." leiden.\n"
@@ -723,7 +723,7 @@ local psyker_localizations = {
 			..Dot_nc.." 发射一个自动追踪投射物，飞行 "..CNumb("3", "n_3_rgb").." 秒，击中半径 "..CNumb("50", "n_50_rgb").." 米内的所有敌人。\n"
 			..Dot_nc.." 造成 "..CNumb("380", "n_380_rgb").." 基础"..CKWord("伤害", "Damage_rgb_zh_cn").."，消耗 "..CNumb("25%", "pc_25_rgb").." "..CKWord("危机值", "Peril_rgb_zh_cn").."。\n"
 			.."\n"
-			..Dot_green.." 可以"..CKWord("暴击", "Crit_rgb_zh_cn").."。\n"
+			..Dot_green.." 可以"..CKWord("暴击", "Crit_hit_rgb_zh_cn").."。\n"
 			..Dot_nc.." 消耗 "..CNumb("1", "n_1_rgb").." 弹药。\n"
 			..Dot_nc.." 每 "..CNumb("3", "n_3_rgb").." 秒恢复 "..CNumb("1", "n_1_rgb").." 弹药。\n"
 			..Dot_red.." 默认情况下无法"..CKWord("劈裂", "Cleave_rgb_zh_cn").."甲壳甲。\n"
@@ -1040,7 +1040,7 @@ local psyker_localizations = {
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 		["zh-cn"] = Dot_green.." 您与"..CKWord("连携", "Coherency_rgb_zh_cn").."中的盟友获得{critical_strike_chance:%s}"..CKWord("暴击命中几率", "Crt_hit_chnc_rgb_zh_cn").."。\n"
 			.."\n"
-			..Dot_nc.." 适用于所有可"..CKWord("暴击", "Crit_rgb_zh_cn").."的攻击。\n"
+			..Dot_nc.." 适用于所有可"..CKWord("暴击", "Crit_hit_rgb_zh_cn").."的攻击。\n"
 			..CPhrs("Doesnt_Stack_Psy_Aura"),
 		de = Dot_green.." {critical_strike_chance:%s} "..CKWord("Kritische Trefferchance", "Crt_hit_chnc_rgb_de").." für Sie und Verbündete in "..CKWord("Kohärenz", "Coherency_rgb_de")..".\n"
 			.."\n"
@@ -1098,12 +1098,12 @@ local psyker_localizations = {
 			..Dot_nc.." 可用來防止"..CKWord("靈能者", "cls_psy_rgb_tw").."自爆。\n"
 			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 公尺，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
 			..Dot_nc.." 使前方半徑 "..CNumb("5", "n_5_rgb").." 公尺內的敵人"..CKWord("眩暈", "Stuns_rgb_tw").."。",
-		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Staggers_rgb_zh_cn").."前方的敌人。\n"
+		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Stagger_rgb_zh_cn").."前方的敌人。\n"
 			..Dot_nc.." 基础冷却：{cooldown:%s}秒。\n"
 			.."\n"
 			..Dot_nc.." 可用于防止"..CKWord("灵能者", "cls_psy_rgb_zh_cn").."自爆。\n"
 			..Dot_nc.." 亚空间波可穿墙，传播至多"..CNumb("30", "n_30_rgb").."米，让你穿过障碍物"..CKWord("眩晕", "Stun_rgb_zh_cn").."攻击盟友的瘟疫猎犬。\n"
-			..Dot_nc.." "..CKWord("眩晕", "Stuns_rgb_zh_cn").."前方"..CNumb("5", "n_5_rgb").."米半径内的敌人。",
+			..Dot_nc.." "..CKWord("眩晕", "Stun_rgb_zh_cn").."前方"..CNumb("5", "n_5_rgb").."米半径内的敌人。",
 		de = "Sie unterdrücken {warpcharge_vent:%s} "..CKWord("Gefahr", "Peril_rgb_de").." und stoßen einen kegelförmigen Schrei aus, der Gegner vor Ihnen "..CKWord("taumeln", "Staggers_rgb_de").." lässt.\n"
 			..Dot_nc.." Basis-Abklingzeit: {cooldown:%s} Sekunden.\n"
 			.."\n"
@@ -1181,13 +1181,13 @@ local psyker_localizations = {
 			..Dot_nc.." 亞空間波可穿透牆壁並擴散至 "..CNumb("30", "n_30_rgb").." 公尺，讓你能隔著障礙物"..CKWord("眩暈", "Stun_rgb_tw").."正在攻擊隊友的瘟疫獵犬。\n"
 			..Dot_nc.." 使前方半徑 "..CNumb("5", "n_5_rgb").." 公尺內的敵人"..CKWord("眩暈", "Stuns_rgb_tw").."。\n"
 			..Dot_nc.." 必定命中軀幹部位。",
-		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Staggers_rgb_zh_cn").."前方的敌人。\n"
+		["zh-cn"] = "释放一个锥形呐喊，压制{warpcharge_vent:%s}"..CKWord("危机值", "Peril_rgb_zh_cn").."，并"..CKWord("踉跄", "Stagger_rgb_zh_cn").."前方的敌人。\n"
 			..Dot_green.." {talent_name:%s}的强化版本。\n"
 			..Dot_nc.." 基础冷却：{cooldown:%s}秒。\n"
 			.."\n"
 			..Dot_nc.." 可用于防止"..CKWord("灵能者", "cls_psy_rgb_zh_cn").."自爆。\n"
 			..Dot_nc.." 亚空间波可穿墙，传播至多"..CNumb("30", "n_30_rgb").."米，让你穿过障碍物"..CKWord("眩晕", "Stun_rgb_zh_cn").."攻击盟友的瘟疫猎犬。\n"
-			..Dot_nc.." "..CKWord("眩晕", "Stuns_rgb_zh_cn").."前方"..CNumb("5", "n_5_rgb").."米半径内的敌人。\n"
+			..Dot_nc.." "..CKWord("眩晕", "Stun_rgb_zh_cn").."前方"..CNumb("5", "n_5_rgb").."米半径内的敌人。\n"
 			..Dot_nc.." 总是击中躯干区域。",
 		de = "Sie unterdrücken {warpcharge_vent:%s} "..CKWord("Gefahr", "Peril_rgb_de").." und stoßen einen kegelförmigen Schrei aus, der Gegner vor Ihnen "..CKWord("taumeln", "Staggers_rgb_de").." lässt.\n"
 			..Dot_green.." Eine verbesserte Version von {talent_name:%s}.\n"
@@ -1763,7 +1763,7 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 造成"..CNumb("250", "n_250_rgb").."基础"..CKWord("伤害", "Damage_rgb_zh_cn").."。\n"
 			..Dot_green.." 可"..CKWord("踉跄", "Stagger_rgb_zh_cn").."除巨兽和拥有主动虚空护盾外的所有敌人。\n"
-			..Dot_nc.." 接触时，专家和巨兽必定会受到"..CKWord("电击", "Electrocution_rgb_zh_cn").."。\n"
+			..Dot_nc.." 接触时，专家和巨兽必定会受到"..CKWord("电击", "Electrocute_rgb_zh_cn").."。\n"
 			..Dot_red.." 对护甲"..CKWord("伤害", "Damage_rgb_zh_cn").."极低。\n"
 			.."\n"
 			..Dot_red.." {#color(255, 35, 5)}错误{#reset()}\n"
@@ -4231,7 +4231,7 @@ local psyker_localizations = {
 			..CPhrs("Can_be_refr"),
 		["zh-cn"] = Dot_green.." {dr:%s} "..CKWord("伤害", "Damage_rgb_zh_cn").."抗性。\n"
 			.."\n"
-			.."当"..CKWord("危机值", "Peril_rgb_zh_cn").."达到"..CNumb("97%", "pc_97_rgb").."或以上时，以及在低于阈值后的{duration:%s}秒内，免疫来自近战和远程攻击的"..CKWord("眩晕", "Stuns_rgb_zh_cn").."。\n"
+			.."当"..CKWord("危机值", "Peril_rgb_zh_cn").."达到"..CNumb("97%", "pc_97_rgb").."或以上时，以及在低于阈值后的{duration:%s}秒内，免疫来自近战和远程攻击的"..CKWord("眩晕", "Stun_rgb_zh_cn").."。\n"
 			..CPhrs("Can_be_refr"),
 		de = Dot_green.." {dr:%s} "..CKWord("Schadens", "Damage_rgb_de").."-Widerstand.\n"
 			.."\n"
@@ -4375,8 +4375,8 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 无论当前"..CKWord("危机值", "Peril_rgb_zh_cn").."数值为何，始终提供至少{min_damage:%s}的"..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."，并线性增长：\n"
 			.."_______________________________\n"
-			..CKWord("危机值", "Peril_rgb_zh_cn").."：   "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."|  "..CNumb("50", "n_50_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."|"..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("韧性伤害减免", "TDR_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")："..CNumb("10", "n_10_rgb").."|"..CKWord("~15", "n__15_rgb").."|"..CKWord("~19", "n__19_rgb").."|"..CKWord("~22", "n__22_rgb").."|"..CKWord("~24", "n__24_rgb").."|"..CKWord("~28", "n__28_rgb").."|  "..CNumb("33", "n_33_rgb").."\n"
+			..CKWord("危机值", "Peril_rgb_zh_cn").."：             "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."| "..CNumb("40", "n_40_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."|"..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."："..CNumb("10", "n_10_rgb").."|"..CKWord("~15", "n__15_rgb").."|"..CKWord("~19", "n__19_rgb").."|"..CKWord("~24", "n__24_rgb").."|"..CKWord("~28", "n__28_rgb").."|  "..CNumb("33", "n_33_rgb").."\n"
 			.."_______________________________",
 		de = Dot_green.." {min_damage:%s} bis {max_damage:%s} "..CKWord("Widerstandsschadensreduktion", "Tghns_dmg_red_rgb_de")..", basierend auf Ihrer aktuellen "..CKWord("Gefahr", "Peril_rgb_de")..".\n"
 			.."\n"
@@ -4587,8 +4587,8 @@ local psyker_localizations = {
 			.."_______________________________",
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."造成最多{max_damage:%s}额外"..CKWord("伤害", "Damage_rgb_zh_cn").."：\n"
 			.."_______________________________\n"
-			..CKWord("危机值", "Peril_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")："..CNumb("0", "n_0_rgb").."|"..CNumb("20", "n_20_rgb").."|"..CNumb("40", "n_40_rgb").."|"..CNumb("60", "n_60_rgb").."|"..CNumb("80", "n_80_rgb").."|"..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("伤害", "Damage_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")："..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("危机值", "Peril_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")：   "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."|  "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("伤害", "Damage_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")：       "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|     "..CNumb("8", "n_8_rgb").."|   "..CNumb("12", "n_12_rgb").."|   "..CNumb("16", "n_16_rgb").."|   "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________",
 		de = Dot_green.." Fügen Sie bis zu {max_damage:%s} mehr "..CKWord("Schaden", "Damage_rgb_de").." zu, basierend auf Ihrer "..CKWord("Gefahr", "Peril_rgb_de")..":\n"
 			.."_______________________________\n"
@@ -4648,11 +4648,11 @@ local psyker_localizations = {
 			..Dot_nc.." "..CKWord("弱點", "Weakspot_rgb_tw").." 層數保留至消耗。\n"
 			..Dot_nc.." 每次攻擊只觸發一次。\n"
 			..Dot_red.." 對空射擊會消耗這次必定造成的"..CKWord("致命一擊", "Crit_rgb_tw").."。",
-		["zh-cn"] = Dot_green.." 命中{weakspot_hits:%s}次"..CKWord("弱点", "Weakspothits_rgb_zh_cn").."后，下一次远程攻击必定"..CKWord("暴击", "Critical_rgb_zh_cn").."。\n"
+		["zh-cn"] = Dot_green.." 命中{weakspot_hits:%s}次"..CKWord("弱点", "Weakspothits_rgb_zh_cn").."后，下一次远程攻击必定"..CKWord("暴击", "Crit_hit_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("弱点", "Weakspot_rgb_zh_cn").."层数持续直到被消耗。\n"
 			..Dot_nc.." 每次攻击只能触发一次。\n"
-			..Dot_red.." 对空射击会消耗必定的"..CKWord("暴击", "Crit_rgb_zh_cn").."。",
+			..Dot_red.." 对空射击会消耗必定的"..CKWord("暴击", "Crit_hit_rgb_zh_cn").."。",
 		de = Dot_green.." Das Treffen von {weakspot_hits:%s} "..CKWord("Schwachstellen", "Weakspothits_rgb_de").." macht Ihren nächsten Fernkampfangriff garantiert zu einem "..CKWord("Kritischen", "Critical_rgb_de")..".\n"
 			.."\n"
 			..Dot_nc.." "..CKWord("Schwachstellen", "Weakspot_rgb_de").."-Stapel halten an, bis sie verbraucht sind.\n"
@@ -4703,9 +4703,9 @@ local psyker_localizations = {
 		["zh-tw"] = Dot_green.." 當"..CKWord("反噬", "Peril_rgb_tw").."低於 "..CNumb("97%", "pc_97_rgb").." 時，格擋攻擊會增加"..CKWord("反噬", "Peril_rgb_tw").."，而不會消耗"..CKWord("耐力", "Stamina_rgb_tw").."。\n"
 			.."\n"
 			..Dot_nc.." 獲得的"..CKWord("反噬", "Peril_rgb_tw").." 為格擋正常"..CKWord("耐力", "Stamina_rgb_tw").." 消耗的 {warp_charge_block_cost:%s}。",
-		["zh-cn"] = Dot_green.." 当"..CKWord("危机值", "Peril_rgb_zh_cn").."低于"..CNumb("97%", "pc_97_rgb").."时，格挡攻击会使你获得"..CKWord("危机值", "Peril_rgb_zh_cn").."而非消耗"..CKWord("体力", "Stamina_rgb_zh_cn").."。\n"
+		["zh-cn"] = Dot_green.." 当"..CKWord("危机值", "Peril_rgb_zh_cn").."低于"..CNumb("97%", "pc_97_rgb").."时，格挡攻击会使你获得"..CKWord("危机值", "Peril_rgb_zh_cn").."而非消耗"..CKWord("耐力", "Stamina_rgb_zh_cn").."。\n"
 			.."\n"
-			..Dot_nc.." 获得的"..CKWord("危机值", "Peril_rgb_zh_cn").."为被格挡攻击"..CKWord("体力", "Stamina_rgb_zh_cn").."消耗的{warp_charge_block_cost:%s}。",
+			..Dot_nc.." 获得的"..CKWord("危机值", "Peril_rgb_zh_cn").."为被格挡攻击"..CKWord("耐力", "Stamina_rgb_zh_cn").."消耗的{warp_charge_block_cost:%s}。",
 		de = Dot_green.." Wenn Sie sich unter "..CNumb("97%", "pc_97_rgb").." "..CKWord("Gefahr", "Peril_rgb_de").." befinden, erzeugen Sie beim Blocken eines Angriffs "..CKWord("Gefahr", "Peril_rgb_de")..", anstatt "..CKWord("Ausdauer", "Stamina_rgb_de").." zu verlieren.\n"
 			.."\n"
 			..Dot_nc.." Die erzeugte "..CKWord("Gefahr", "Peril_rgb_de").." beträgt {warp_charge_block_cost:%s} der "..CKWord("Ausdauer", "Stamina_rgb_de").."-Kosten des geblockten Angriffs.",
@@ -4811,8 +4811,8 @@ local psyker_localizations = {
 			..CNote("Rend_note"),
 		["zh-cn"] = Dot_green.." 根据当前"..CKWord("危机值", "Peril_rgb_zh_cn").."，亚空间攻击获得最多{rending:%s}"..CKWord("撕裂", "Rending_rgb_zh_cn").."：\n"
 			.."_______________________________\n"
-			..CKWord("危机值", "Peril_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")："..CNumb("0", "n_0_rgb").."|"..CNumb("20", "n_20_rgb").."|"..CNumb("40", "n_40_rgb").."|"..CNumb("60", "n_60_rgb").."|"..CNumb("80", "n_80_rgb").."|"..CNumb("100", "n_100_rgb").."\n"
-			..CKWord("撕裂", "Rending_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")："..CNumb("0", "n_0_rgb").."|   "..CNumb("4", "n_4_rgb").."|   "..CNumb("8", "n_8_rgb").."|  "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|  "..CNumb("20", "n_20_rgb").."\n"
+			..CKWord("危机值", "Peril_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")：    "..CNumb("0", "n_0_rgb").."|  "..CNumb("20", "n_20_rgb").."|  "..CNumb("40", "n_40_rgb").."|  "..CNumb("60", "n_60_rgb").."|  "..CNumb("80", "n_80_rgb").."|  "..CNumb("100", "n_100_rgb").."\n"
+			..CKWord("撕裂", "Rending_rgb_zh_cn").."("..CNumb("%", "pc_rgb")..")：        "..CNumb("0", "n_0_rgb").."|    "..CNumb("4", "n_4_rgb").."|     "..CNumb("8", "n_8_rgb").."|   "..CNumb("12", "n_12_rgb").."|  "..CNumb("16", "n_16_rgb").."|    "..CNumb("20", "n_20_rgb").."\n"
 			.."_______________________________\n"
 			.."\n"
 			..CNote("Rend_note"),
@@ -4873,7 +4873,6 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Base "..CKWord("Damage", "Damage_rgb")..": ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." Overloading through "..CKWord("Perils of the Warp", "PerilsozWarp").." no longer knocks you down, but you lose "..CNumb("1", "n_1_rgb").." "..CKWord("Health", "Health_rgb").." segment from "..CKWord("Corruption Damage", "Corruptdmg_rgb")..".\n"
 			..Dot_green.." If the explosion kills an Elite enemy, you don't take any "..CKWord("Corruption Damage", "Corruptdmg_rgb")..".",
 		ru = "Взрыв от перегрузки, после набора "..CNumb("100%", "pc_100_rgb").." "..CKWord("опасности", "opasnosti_rgb_ru")..", получает:\n" -- Чистая воля
@@ -4882,14 +4881,12 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Базовый "..CKWord("урон", "uron_rgb_ru")..": ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." Взрыв от перегрузки "..CKWord("Опасностей варпа", "Opasnostei_warpa_rgb_ru").." больше не выводит вас из строя, но забирает "..CNumb("1", "n_1_rgb").." сегмент "..CKWord("здоровья", "zdorovia_rgb_ru")..", нанося вам "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".\n"
 			..Dot_green.." Если взрыв убьёт элитного врага, вы не получите "..CKWord("урон от порчи", "porchi_uron_rgb_ru")..".",
 		fr = Dot_green.." {overload_damage:%s} de "..CKWord("Dégâts", "Damage_rgb_fr").." d'explosion de surcharge,\n"
 			..Dot_green.." {overload_radius:%s} de rayon d'explosion de surcharge.\n"
 			.."\n"
 			..Dot_green.." "..CKWord("Dégâts", "Damage_rgb_fr").." de base : ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
-			.."\n"
 			.."\n"
 			..Dot_green.." La surcharge due aux "..CKWord("Périls du Warp", "PerilsozWarp_rgb_fr").." ne vous renverse plus, mais vous perdez "..CNumb("1", "n_1_rgb").." segment de "..CKWord("Santé", "Health_rgb_fr").." par "..CKWord("Dégâts de corruption", "Corruptdmg_rgb_fr")..".\n"
 			..Dot_green.." Si l'explosion tue un ennemi d'élite, vous ne subissez aucun "..CKWord("Dégâts de corruption", "Corruptdmg_rgb_fr")..".",
@@ -4898,14 +4895,12 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 基礎"..CKWord("傷害", "Damage_rgb_tw").."：["..CNumb("600", "n_600_rgb").."～"..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." 因"..CKWord("亞空間反噬", "PerilsozWarp_rgb_tw").."而超載時不再將你擊倒，但會因"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."失去 "..CNumb("1", "n_1_rgb").." 格"..CKWord("生命值", "Health_rgb_tw").."。\n"
 			..Dot_green.." 若爆炸擊殺精英敵人，則不受"..CKWord("腐敗傷害", "Corruptdmg_rgb_tw").."。",
 		["zh-cn"] = Dot_green.." 超载爆炸"..CKWord("伤害", "Damage_rgb_zh_cn").."提高{overload_damage:%s}，\n"
 			..Dot_green.." 超载爆炸半径提高{overload_radius:%s}。\n"
 			.."\n"
 			..Dot_green.." 基础"..CKWord("伤害", "Damage_rgb_zh_cn").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
-			.."\n"
 			.."\n"
 			..Dot_green.." 因"..CKWord("亚空间危机", "PerilsozWarp_rgb_zh_cn").."超载不再击倒你，但会使你损失"..CNumb("1", "n_1_rgb").."格"..CKWord("生命值", "Health_rgb_zh_cn").."，转化为"..CKWord("腐化伤害", "Corruptdmg_rgb_zh_cn").."。\n"
 			..Dot_green.." 若爆炸击杀精英敌人，则不会受到"..CKWord("腐化伤害", "Corruptdmg_rgb_zh_cn").."。",
@@ -4914,14 +4909,12 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Basis-"..CKWord("Schaden", "Damage_rgb_de")..": ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." Eine Überladung durch "..CKWord("Gefahren des Warps", "PerilsozWarp_rgb_de").." wirft Sie nicht mehr zu Boden, aber Sie verlieren "..CNumb("1", "n_1_rgb").." "..CKWord("Gesundheits", "Health_rgb_de").."-Segment durch "..CKWord("Verderbnisschaden", "Corruptdmg_rgb_de")..".\n"
 			..Dot_green.." Wenn die Explosion einen Elite-Gegner tötet, erleiden Sie keinen "..CKWord("Verderbnisschaden", "Corruptdmg_rgb_de")..".",
 		it = Dot_green.." {overload_damage:%s} di "..CKWord("Danno", "Damage_rgb_it").." dell'esplosione da sovraccarico,\n"
 			..Dot_green.." {overload_radius:%s} di raggio dell'esplosione da sovraccarico.\n"
 			.."\n"
 			..Dot_green.." "..CKWord("Danno", "Damage_rgb_it").." base: ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
-			.."\n"
 			.."\n"
 			..Dot_green.." Il sovraccarico da "..CKWord("Pericoli del Warp", "PerilsozWarp_rgb_it").." non ti fa più cadere, ma perdi "..CNumb("1", "n_1_rgb").." segmento di "..CKWord("Salute", "Health_rgb_it").." da "..CKWord("Danno da corruzione", "Corruptdmg_rgb_it")..".\n"
 			..Dot_green.." Se l'esplosione uccide un nemico Elite, non subisci "..CKWord("Danno da corruzione", "Corruptdmg_rgb_it")..".",
@@ -4930,14 +4923,12 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." 基礎"..CKWord("ダメージ", "Damage_rgb_ja").."：["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."]。\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." "..CKWord("ワープの危険", "PerilsozWarp_rgb_ja").."によるオーバーロードでダウンしなくなるが、"..CKWord("腐敗ダメージ", "Corruptdmg_rgb_ja").."として"..CKWord("体力", "Health_rgb_ja").."を"..CNumb("1", "n_1_rgb").."セグメント失う。\n"
 			..Dot_green.." 爆発でエリート敵を倒した場合、"..CKWord("腐敗ダメージ", "Corruptdmg_rgb_ja").."を受けない。",
 		ko = Dot_green.." 과부하 폭발 "..CKWord("피해", "Damage_rgb_ko").." {overload_damage:%s} 증가,\n"
 			..Dot_green.." 과부하 폭발 반경 {overload_radius:%s} 증가.\n"
 			.."\n"
 			..Dot_green.." 기본 "..CKWord("피해", "Damage_rgb_ko")..": ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
-			.."\n"
 			.."\n"
 			..Dot_green.." "..CKWord("워프의 위험", "PerilsozWarp_rgb_ko").."으로 인한 과부하가 더 이상 당신을 쓰러뜨리지 않지만, "..CKWord("부패 피해", "Corruptdmg_rgb_ko").."로 "..CKWord("체력", "Health_rgb_ko").." 세그먼트를 "..CNumb("1", "n_1_rgb").."개 잃습니다.\n"
 			..Dot_green.." 폭발로 정예 적을 처치하면 "..CKWord("부패 피해", "Corruptdmg_rgb_ko").."를 받지 않습니다.",
@@ -4946,7 +4937,6 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." Bazowe "..CKWord("Obrażenia", "Damage_rgb_pl")..": ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." Przeciążenie przez "..CKWord("Zagrożenia Warpu", "PerilsozWarp_rgb_pl").." już cię nie powala, ale tracisz "..CNumb("1", "n_1_rgb").." segment "..CKWord("Zdrowia", "Health_rgb_pl").." jako "..CKWord("Obrażenia od skażenia", "Corruptdmg_rgb_pl")..".\n"
 			..Dot_green.." Jeśli eksplozja zabije Elitarnego wroga, nie otrzymujesz "..CKWord("Obrażeń od skażenia", "Corruptdmg_rgb_pl")..".",
 		["pt-br"] = Dot_green.." {overload_damage:%s} de "..CKWord("Dano", "Damage_rgb_pt_br").." da explosão de sobrecarga,\n"
@@ -4954,14 +4944,12 @@ local psyker_localizations = {
 			.."\n"
 			..Dot_green.." "..CKWord("Dano", "Damage_rgb_pt_br").." base: ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
 			.."\n"
-			.."\n"
 			..Dot_green.." Sobrecarga pelos "..CKWord("Perigos do Warp", "PerilsozWarp_rgb_pt_br").." não o derruba mais, mas você perde "..CNumb("1", "n_1_rgb").." segmento de "..CKWord("Saúde", "Health_rgb_pt_br").." como "..CKWord("Dano de corrupção", "Corruptdmg_rgb_pt_br")..".\n"
 			..Dot_green.." Se a explosão matar um inimigo de Elite, você não sofre "..CKWord("Dano de corrupção", "Corruptdmg_rgb_pt_br")..".",
 		es = Dot_green.." {overload_damage:%s} de "..CKWord("Daño", "Damage_rgb_es").." de explosión por sobrecarga,\n"
 			..Dot_green.." {overload_radius:%s} de radio de explosión por sobrecarga.\n"
 			.."\n"
 			..Dot_green.." "..CKWord("Daño", "Damage_rgb_es").." base: ["..CNumb("600", "n_600_rgb").."-"..CNumb("100", "n_100_rgb").."].\n"
-			.."\n"
 			.."\n"
 			..Dot_green.." La sobrecarga por "..CKWord("Peligros del Vacío", "PerilsozWarp_rgb_es").." ya no te derriba, pero pierdes "..CNumb("1", "n_1_rgb").." segmento de "..CKWord("Salud", "Health_rgb_es").." como "..CKWord("Daño de corrupción", "Corruptdmg_rgb_es")..".\n"
 			..Dot_green.." Si la explosión mata a un enemigo Élite, no sufres "..CKWord("Daño de corrupción", "Corruptdmg_rgb_es")..".",
@@ -4994,7 +4982,7 @@ local psyker_localizations = {
 			..CPhrs("Dont_intw_coher_toughn").." 僅影響近戰擊殺和天賦的"..CKWord("韌性", "Toughness_rgb_tw").." 恢復。",
 		["zh-cn"] = Dot_green.." {peril_reduction:%s} 被动压制。\n"
 			.."\n"
-			..Dot_green.." {stamina:%s} "..CKWord("体力", "Stamina_rgb_zh_cn").."。\n"
+			..Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_zh_cn").."。\n"
 			.."\n"
 			..Dot_green.." {toughness_replenish:%s} "..CKWord("韧性", "Toughness_rgb_zh_cn").."恢复。\n"
 			..CPhrs("Dont_intw_coher_toughn").." 仅影响近战击杀和天赋。",

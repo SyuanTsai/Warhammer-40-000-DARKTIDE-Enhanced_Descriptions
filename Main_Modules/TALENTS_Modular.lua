@@ -75,7 +75,7 @@ local talent_localizations = {
 			ru = "Пассивный", -- руоф Пассив.
 			["zh-tw"] = "被動",
 			-- fr = "Passif",
-			-- ["zh-cn"] = "被动",
+			["zh-cn"] = "被动",
 			-- de = "Passiv",
 			-- it = "Passivo",
 			-- ja = "パッシブ",
@@ -124,35 +124,35 @@ local talent_localizations = {
 			-- en = "Locked",
 			ru = "Закрыт", -- руоф Заблокир.
 			["zh-tw"] = "已鎖定",
-			-- ["zh-cn"] = "",
+			["zh-cn"] = "已锁定",
 		},
 		--[+ [LMB] Activate +]--	08.12.2025
 		["loc_talent_menu_tooltip_button_hint_first_level"] = {
 			-- en = "Activate",
 			ru = "Выбрать", -- руоф Актив.
 			["zh-tw"] = "啟用",
-			-- ["zh-cn"] = "激活",
+			["zh-cn"] = "激活",
 		},
 		--[+ [RMB] Deactivate +]--	08.12.2025
 		["loc_talent_menu_tooltip_button_hint_remove_level_first"] = {
 			-- en = "Deactivate",
 			ru = "Убрать", -- руоф Отключить
 			["zh-tw"] = "停用",
-			-- ["zh-cn"] = "撤销",
+			["zh-cn"] = "撤销",
 		},
 		--[+ [V] View full build +]--	08.12.2025
 		["loc_alias_talent_builder_view_hotkey_summary"] = {
 			-- en = "1View full build",
 			ru = "Посмотреть весь билд", -- руоф Осмотреть полную сборку
-			["zh-tw"] = "查看完整配置",
-			-- ["zh-cn"] = "查看完整构筑",
+			-- ["zh-tw"] = "查看全部天賦",
+			["zh-cn"] = "查看完整构筑",
 		},
 		--[+ Full build +]--	01.11.2025
 		["loc_alias_talent_builder_view_popup_title_summary"] = {
 			-- en = "Full build",
 			ru = "Весь билд",
-			["zh-tw"] = "完整配置",
-			-- ["zh-cn"] = "完整构筑",
+			-- ["zh-tw"] = "全部天賦",
+			["zh-cn"] = "完整构筑",
 		},
 
 	--[+ +MODIFIERS+ +]--
@@ -174,8 +174,8 @@ local talent_localizations = {
 		["loc_glossary_talent_keystone_modifier"] = {
 			-- en = "Keystone Modifier",
 			ru = "Модификатор ключевого таланта", -- руоф Модификатор краеугольного камня
-			["zh-tw"] = "鑰石修改器",
-			-- ["zh-cn"] = "楔石修正",
+			["zh-tw"] = "鑰石調整項",
+			["zh-cn"] = "楔石修正",
 		},
 
 	--[+ +SELECTING THIS...+ +]--
@@ -183,36 +183,36 @@ local talent_localizations = {
 		["loc_talent_mechanic_exclusive_tactical"] = {
 			-- en = "Selecting this Blitz locks all other Blitzes.",
 			ru = "Выбор этого Блица закроет другие Блицы.", -- руоф Выбор этой Блиц-способности блокирует все остальные Блицы.
-			["zh-tw"] = "選擇此閃擊後，將鎖定其他閃擊。",
-			-- ["zh-cn"] = "锁定闪击",
+			["zh-tw"] = "選擇此閃擊技能後，將鎖定其他閃擊技能。",
+			["zh-cn"] = "选择此闪击后，将锁定其他闪击。",
 		},
 		--[+ ...Aura locks all other Auras. +]--	08.12.2025
 		["loc_talent_mechanic_exclusive_aura"] = {
 			-- en = "Selecting this Aura locks all other Auras.",
 			ru = "Выбор этой Ауры закроет другие Ауры.", -- руоф Выбор этой ауры блокирует все остальные ауры.
 			["zh-tw"] = "選擇此光環後，將鎖定其他光環。",
-			-- ["zh-cn"] = "锁定光环",
+			["zh-cn"] = "选择此光环后，将锁定其他光环。",
 		},
 		--[+ ...Ability locks all other Abilities. +]--	08.12.2025
 		["loc_talent_mechanic_exclusive_ability"] = {
 			-- en = "Selecting this Ability locks all other Abilities.",
 			ru = "Выбор этой Способности закроет другие Способности.", -- руоф Выбор этой способности блокирует все остальные способности.
-			["zh-tw"] = "選擇此戰鬥技能後，將鎖定其他戰鬥技能。",
-			-- ["zh-cn"] = "锁定能力",
+			["zh-tw"] = "選擇此技能後，將鎖定其他技能。",
+			["zh-cn"] = "选择此能力后，将锁定其他能力。",
 		},
 		--[+ ...Talent locks all other Talents. +]--	08.12.2025
 		["loc_talent_mechanic_mutually_exclusive"] = {
 			-- en = "Selecting this Talent locks all other Talents.",
 			ru = "Выбор этого модификатора закроет другие модификаторы.", -- руоф Этот талант блокирует некоторые другие таланты.
 			["zh-tw"] = "選擇此天賦後，將鎖定其他天賦。",
-			-- ["zh-cn"] = "锁定天赋",
+			["zh-cn"] = "选择此天赋后，将锁定其他天赋。",
 		},
 		--[+ ...Keystone locks all other Keystones. +]--	08.12.2025
 		["loc_talent_mechanic_exclusive_keystone"] = {
 			-- en = "Selecting this Keystone locks all other Keystones.",
 			ru = "Выбор этого Ключевого таланта закроет другие Ключевые таланты.", -- руоф Выбор этого краеугольного камня блокирует все остальные краеугольное камни.
 			["zh-tw"] = "選擇此鑰石後，將鎖定其他鑰石。",
-			-- ["zh-cn"] = "锁定楔石",
+			["zh-cn"] = "选择此楔石后，将锁定其他楔石。",
 		},
 
 	--[+ +NODES - УЗЛЫ+ +]--
@@ -228,15 +228,18 @@ local talent_localizations = {
 			["zh-tw"] = Dot_green.." {cleave:%s} "..CKWord("順劈攻擊", "Cleave_rgb_tw").."。\n"
 				.."\n"
 				..CPhrs("Carap_cant_cleave"), -- 順劈加成
+			["zh-cn"] = Dot_green.." {cleave:%s} "..CKWord("劈裂", "Cleave_rgb").."。\n"
+				.."\n"
+				..CPhrs("Carap_cant_cleave"),
 		},
 		--[+ Critical Chance Boost +]--	08.12.2025
 		-- Psyker 1, Scum 1
 		["loc_talent_crit_chance_low_desc"] = { -- crit_chance:+5%
 			en = Dot_green.." {crit_chance:%s} "..CKWord("Critical Hit Chance", "Crt_hit_chnc_rgb")..".",
 			ru = Dot_green.." {crit_chance:%s} к "..CKWord("шансу критического удара", "sh_krit_udara_rgb_ru")..".", -- руоф Усиление вероятности крит. удара
-			["zh-tw"] = Dot_green.." {crit_chance:%s} "..CKWord("爆擊率", "Crt_hit_chnc_rgb_tw").."。", -- 暴擊機率增幅
+			["zh-tw"] = Dot_green.." {crit_chance:%s} "..CKWord("暴擊命中機率", "Crt_hit_chnc_rgb_tw").."。", -- 暴擊機率增幅
 			-- fr = "{crit_chance:%s} de "..COLORS_KWords_fr.Crt_hit_chnc_rgb_fr..".",
-			-- ["zh-cn"] = "{crit_chance:%s} "..COLORS_KWords_zh_cn.Crt_chnc_rgb_zh_cn.."。", -- 暴击几率强化
+			["zh-cn"] = Dot_green.." {crit_chance:%s} "..CKWord("暴击几率", "Crt_hit_chnc_rgb").."。",
 		},
 		--[+ Impact Boost +]--	08.12.2025
 		-- Arbites 1
@@ -251,6 +254,9 @@ local talent_localizations = {
 				.."\n"
 				..CNote("Impact_note"), -- 衝擊加成
 			-- fr = "{impact:%s} "..COLORS_KWords_fr.Impact_rgb_fr..".",
+			["zh-cn"] = Dot_green.." {impact:%s} "..CKWord("冲击", "Impact_rgb_zh_cn").."。\n"
+				.."\n"
+				..CNote("Impact_note"),
 		},
 		--[+ Melee Damage Boost Low - Medium +]--	08.12.2025
 		-- Psyker 1, Zealot 2, Ogryn 1, Arbites 1, Veteran 1, Scum 1
@@ -259,7 +265,7 @@ local talent_localizations = {
 			ru = Dot_green.." {melee_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." ближнего боя.", -- руоф Усиление урона в ближнем бою
 			["zh-tw"] = Dot_green.." {melee_damage:%s} 近戰"..CKWord("傷害", "Damage_rgb_tw").."。", -- 近戰傷害增幅(中)
 			-- fr = "{melee_damage:%s} de "..COLORS_KWords_fr.Damage_rgb_fr.." de mélée.",
-			-- ["zh-cn"] = "{melee_damage:%s} 近战"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。", -- 近战伤害强化 中
+			["zh-cn"] = Dot_green.." {melee_damage:%s} 近战"..CKWord("伤害", "Damage_rgb_zh_cn").."。",
 		},
 		--[+ Movement Speed Boost +]--	08.12.2025
 		-- Psyker 1, Zealot 1, Veteran 1
@@ -268,7 +274,7 @@ local talent_localizations = {
 			ru = Dot_green.." {movement_speed:%s} к скорости движения.", -- руоф Усиление скорости передвижения
 			["zh-tw"] = Dot_green.." {movement_speed:%s} 移動速度。", -- 移動速度增幅
 			-- fr = "{movement_speed:%s} de Vitesse de déplacement.",
-			-- ["zh-cn"] = "{movement_speed:%s} 移动速度。", -- 移动速度强化
+			["zh-cn"] = Dot_green.." {movement_speed:%s} 移动速度。",
 		},
 	-- !!! Removed ".00". Fix in the Enhanced_Descriptions.lua file !!! --
 		--[+ Peril Resistance Low +]--	08.12.2025
@@ -276,9 +282,9 @@ local talent_localizations = {
 		["loc_talent_warp_charge_low_desc"] = { -- warp_charge: -10.00%
 			en = Dot_green.." {warp_charge:%s} "..CKWord("Peril", "Peril_rgb").." Generation.",
 			ru = Dot_green.." {warp_charge:%s} к набору "..CKWord("опасности", "opasnosti_rgb_ru")..".",-- руоф Сопротивление угрозе
-			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."累積。", -- 反噬抗性
+			["zh-tw"] = Dot_green.." {warp_charge:%s} "..CKWord("反噬", "Peril_rgb_tw").."產生。", -- 反噬抗性
 			-- fr = "{warp_charge:%s} de Génération de "..COLORS_KWords_fr.Peril_rgb_fr.." .",
-			-- ["zh-cn"] = "{warp_charge:%s} "..COLORS_KWords_zh_cn.Peril_rgb_zh_cn.."产生。", -- 危机值抗性
+			["zh-cn"] = Dot_green.." {warp_charge:%s} "..CKWord("危机值", "Peril_rgb").."产生。",
 		},
 		--[+ Ranged Damage Boost Medium +]--	08.12.2025
 		-- Psyker 1, Ogryn 1, Arbites 1, Veteran 1
@@ -287,7 +293,7 @@ local talent_localizations = {
 			ru = Dot_green.." {ranged_damage:%s} к "..CKWord("урону", "uronu_rgb_ru").." дальнего боя.", -- руоф Усиление урона в дальнем бою
 			["zh-tw"] = Dot_green.." {ranged_damage:%s} 遠程"..CKWord("傷害", "Damage_rgb_tw").."。", -- 遠程傷害增幅(中)
 			-- fr = "{ranged_damage:%s} "..COLORS_KWords_fr.Damage_rgb_fr.." de distance.",
-			-- ["zh-cn"] = "{ranged_damage:%s} 远程"..COLORS_KWords_zh_cn.Damage_rgb_zh_cn.."。", -- 远程伤害强化 中
+			["zh-cn"] = Dot_green.." {ranged_damage:%s} 远程"..CKWord("伤害", "Damage_rgb_zh_cn").."。",
 		},
 		--[+ Reload Boost Low +]--	08.12.2025
 		-- Ogryn 1
@@ -302,7 +308,9 @@ local talent_localizations = {
 				.."\n"
 				..Dot_nc.." 也會提高戰鬥霰彈槍特殊裝填動作的速度。", -- 換彈速度增幅
 			-- fr = "{reload_speed:%s} de vitesse de rechargement.",
-			-- ["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
+			["zh-cn"] = Dot_green.." {reload_speed:%s} 装填速度。\n"
+				.."\n"
+				..Dot_nc.." 同时也会提高战斗霰弹枪特殊装填动作的速度。",
 		},
 		--[+ Reload Boost Medium +]--	08.12.2025
 		-- Veteran 1
@@ -317,7 +325,9 @@ local talent_localizations = {
 				.."\n"
 				..Dot_nc.." 也會提高戰鬥霰彈槍特殊裝填動作的速度。", -- 換彈速度增幅
 			-- fr = "{reload_speed:%s} de vitesse de rechargement.",
-			-- ["zh-cn"] = "{reload_speed:%s} 装弹速度。", -- 装弹强化
+			["zh-cn"] = Dot_green.." {reload_speed:%s} 装填速度。\n"
+				.."\n"
+				..Dot_nc.." 同时也会提高战斗霰弹枪特殊装填动作的速度。",
 		},
 		--[+ Rending Boost Low +]--	08.12.2025
 		-- Ogryn 1
@@ -332,7 +342,9 @@ local talent_localizations = {
 					.."\n"
 					..CNote("Rend_note"), -- 撕裂增幅
 			-- fr = "{rending:%s} de "..COLORS_KWords_fr.Rending_rgb_fr..".",
-			-- ["zh-cn"] = "{rending:%s} "..COLORS_KWords_zh_cn.Rending_rgb_zh_cn.."。", -- 撕裂强化
+			["zh-cn"] = Dot_green.." {rending:%s} "..CKWord("撕裂", "Rending_rgb_zh_cn").."。\n"
+					.."\n"
+					..CNote("Rend_note"),
 		},
 		--[+ Stamina Boost Low +]--	08.12.2025
 		-- Psyker 1, Veteran 1
@@ -341,7 +353,7 @@ local talent_localizations = {
 			ru = Dot_green.." {stamina:%s} к "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- руоф Усиление выносливости
 			["zh-tw"] = Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_tw").."。", -- 耐力增幅
 			-- fr = "{stamina:%s} "..COLORS_KWords_fr.Stamina_rgb_fr..".",
-			-- ["zh-cn"] = "{stamina:%s} "..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."。", -- 体力强化
+			["zh-cn"] = Dot_green.." {stamina:%s} "..CKWord("耐力", "Stamina_rgb_zh_cn").."。",
 		},
 		--[+ Stamina Regeneration Boost +]--	27.03.2026
 		-- Veteran 1
@@ -350,7 +362,7 @@ local talent_localizations = {
 			ru = Dot_green.." "..CNumb("-", "n_minus_rgb").."{duration:%s} секунды задержка восстановления "..CKWord("выносливости", "vynoslivosti_rgb_ru")..".", -- руоф Усиление восстановления выносливости
 			["zh-tw"] = Dot_green.." "..CNumb("-", "n_minus_rgb").."{duration:%s} 秒"..CKWord("耐力", "Stamina_rgb_tw").."恢復延遲。", -- 耐力恢復增幅
 			-- fr = "{duration:%s} secondes de réduction du délai de régénération d'"..COLORS_KWords_fr.Stamina_rgb_fr..".",
-			-- ["zh-cn"] = CNumb("-", "n_minus_rgb").."{duration:%s} 秒"..COLORS_KWords_zh_cn.Stamina_rgb_zh_cn.."回复延迟。", -- 体力回复强化
+			["zh-cn"] = Dot_green.." "..CNumb("-", "n_minus_rgb").."{duration:%s} 秒"..CKWord("耐力", "Stamina_rgb_zh_cn").."恢复延迟。",
 		},
 		--[+ Toughness Boost Low +]--	08.12.2025
 		-- Ogryn 1, Veteran 1
@@ -359,7 +371,7 @@ local talent_localizations = {
 			ru = Dot_green.." {toughness:%s} к "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- руоф Усиление стойкости
 			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。", -- 韌性增幅(小)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr..".",
-			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."。", -- 韧性强化 低
+			["zh-cn"] = Dot_green.." {toughness:%s} "..CKWord("韧性", "Toughness_rgb_zh_cn").."。",
 		},
 		--[+ Toughness Boost Medium +]--	08.12.2025
 		-- Psyker 2, Zealot 1, Ogryn 2, Veteran 2, Scum 2
@@ -368,25 +380,25 @@ local talent_localizations = {
 			ru = Dot_green.." {toughness:%s} к "..CKWord("стойкости", "stoikosti_rgb_ru")..".", -- руоф Усиление стойкости
 			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性", "Toughness_rgb_tw").."。", -- 韌性增幅(中)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Toughness_rgb_fr..".",
-			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Toughness_rgb_zh_cn.."。", -- 韧性强化 中
+			["zh-cn"] = Dot_green.." {toughness:%s} "..CKWord("韧性", "Toughness_rgb_zh_cn").."。",
 		},
 		--[+ Toughness Damage Reduction Low +]--	08.12.2025
 		-- Psyker 1, Ogryn 1
 		["loc_talent_toughness_damage_reduction_low_desc"] = { -- toughness: +5%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- руоф Снижение урона стойкости
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(小)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
-			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 低
+			["zh-cn"] = Dot_green.." {toughness:%s} "..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."。",
 		},
 		--[+ Toughness Damage Reduction Medium +]--	08.12.2025
 		-- Psyker 1, Zealot 1, Ogryn 1, Arbites 1, Veteran 1
 		["loc_talent_toughness_damage_reduction_medium_desc"] = { -- toughness: +10%
 			en = Dot_green.." {toughness:%s} "..CKWord("Toughness Damage Reduction", "Tghns_dmg_red_rgb")..".",
 			ru = Dot_green.." {toughness:%s} к "..CKWord("снижению урона стойкости", "snu_ur_stoikosti_rgb_ru")..".", -- Снижение урона стойкости среднее
-			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性減傷", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
+			["zh-tw"] = Dot_green.." {toughness:%s} "..CKWord("韌性傷害減免", "Tghns_dmg_red_rgb_tw").."。", -- 韌性減傷增幅(中)
 			-- fr = "{toughness:%s} de "..COLORS_KWords_fr.Tghns_dmg_red_rgb_fr..".",
-			-- ["zh-cn"] = "{toughness:%s} "..COLORS_KWords_zh_cn.Tghns_dmg_red_u_rgb_zh_cn.."。", -- 韧性伤害减免 中
+			["zh-cn"] = Dot_green.." {toughness:%s} "..CKWord("韧性伤害减免", "Tghns_dmg_red_rgb_zh_cn").."。",
 		},
 		--[+ Potent Tox +]--	08.12.2025
 		-- Scum 1
@@ -394,6 +406,7 @@ local talent_localizations = {
 			en = Dot_green.." {power:%s} "..CKWord("Chem Toxin", "Chem_Tox_rgb").." power.",
 			ru = Dot_green.." {power:%s} к мощности "..CKWord("Хим-токсина", "Chem_Toxa_rgb_ru")..".", -- Мощный токсин
 			["zh-tw"] = Dot_green.." {power:%s} "..CKWord("化學毒素", "Chem_Tox_rgb_tw").."威力。", -- 強效毒藥
+			["zh-cn"] = Dot_green.." {power:%s} "..CKWord("化学毒素", "Chem_Tox_rgb_zh_cn").."强度。",
 		},
 
 }

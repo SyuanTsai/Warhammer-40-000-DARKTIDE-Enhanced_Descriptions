@@ -173,6 +173,7 @@ local CONFIG = {
 
 		Oglushenie =		"Оглушение",					-- Таланты
 		Oglushite =			"Оглушите",						-- Таланты
+		oglushat =			"оглушать",						-- Таланты
 		oglushit =			"оглушить",						-- Таланты
 		oglushaet =			"оглушает",						-- Таланты
 		oglushaetes =		"оглушаетесь",					-- Таланты
@@ -191,6 +192,7 @@ local CONFIG = {
 		oshelomlaet =		"ошеломляет",					-- Таланты, Благословения
 		oshelomlaete =		"ошеломляете",					-- Таланты, Благословения
 		oshelomlaetsa =		"ошеломляется",					-- Благословения
+		oshelomlat =		"ошеломлять",					-- 
 		oshelomlaut =		"ошеломляют",					-- Таланты
 		oshelomlautsa =		"ошеломляются",					-- Таланты
 		oshelomlauschej =	"ошеломляющей",					-- Таланты
@@ -258,7 +260,7 @@ local CONFIG = {
 			stojkosti_zolot =	"стойкости",				-- Изувер
 			stojkost_zolot =	"стойкость",				-- Изувер
 			servocherep =		"сервочереп",				-- Скитарий
-			servocherepu =		"сервочереп",				-- Скитарий
+			servocherepu =		"сервочерепу",				-- Скитарий
 		},
 		trample_text_colour = {
 			Trample =			"Топота",
@@ -313,6 +315,7 @@ local CONFIG = {
 			Forceful =			"Неудержимости",
 
 			Shout =				"Крик",						-- Отребье
+			emkost =			"ёмкость",					-- Скитарий
 			emkosti =			"ёмкости",					-- Скитарий
 		},
 		focust_text_colour = {

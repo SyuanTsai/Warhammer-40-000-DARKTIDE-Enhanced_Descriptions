@@ -3,7 +3,7 @@
 -- FOR TRANSLATORS: YOU DON'T NEED TO DO ANYTHING IN THIS FILE!
 
 local mod = get_mod("Enhanced_descriptions")
-local VERSION = "6.0.0b"
+local VERSION = "6.0.2b"
 
 -- <<<CODE_REVEALER>>>
 -- local function create_template(id, loc_keys, locales, handle_func) return { id = id, loc_keys = loc_keys, locales = locales, handle_func = handle_func } end mod.localization_templates = { create_template("code_reveal", {"loc_trait_bespoke_increased_melee_power_on_weapon_special_follow_up_hits_desc"}, {"ru", "en"}, function(locale, value) return string.gsub(value, "{", "(") end), }
@@ -15,6 +15,7 @@ mod._language_cache = {
 	current_lang = nil,
 	forced_lang = nil
 }
+mod._applying_preset = false
 
 -- Функция для получения утилит с кэшированием
 function mod.get_utils()
@@ -69,11 +70,10 @@ local location = "Enhanced_descriptions/Main_Modules/"
 local LOCALIZATION_FILES = {
 	WEAPONS_Blessings_Perks =		"enable_weapons_file",
 	TALENTS_Modular =				"enable_talents_file",
-	-- TALENTS =					"enable_talents_file",
 	CURIOS_Blessings_Perks =		"enable_curious_file",
 	MENUS =							"enable_menus_file",
 	PENANCES =						"enable_penances_file",
-	-- NAMES_Enemies_Weapons =		"enable_names_file",
+	NAMES_Enemies_Weapons =			"enable_names_file",
 	NAMES_Talents_Blessings =		"enable_names_tal_bless_file"
 }
 
@@ -329,12 +329,12 @@ local function cleanup_old_settings()
 			-- Если настройка существует, удаляем её
 			mod:set(old_setting, nil)
 			cleaned = true
-			mod:warning("Removed old setting: %s", old_setting)
+			mod:info("Removed old setting: %s", old_setting)
 		end
 	end
 
 	if cleaned then
-		mod:warning("Old settings cleanup completed")
+		mod:info("Old settings cleanup completed")
 	end
 end
 
@@ -479,14 +479,19 @@ Currently supported languages: {#color(124, 252, 0)}%s{#reset()}.]],
 end
 
 function mod.clear_color_cache()
+	local utils = mod.get_utils()
+	if utils and utils.clear_global_cache then
+		utils.clear_global_cache()
+	end
+
 	mod._color_cache.numbers = nil
 	mod._color_cache.keywords = nil
 	mod._color_cache.current_lang = nil
 	mod._language_cache.current_lang = nil
 	mod._language_cache.forced_lang = nil
-	mod.clear_utils_cache()		-- Очищаем кэш утилит
+	mod.clear_utils_cache()
 
-	mod:info("Color cache, language cache and utils cache cleared")
+	mod:info("Color cache cleared")
 end
 
 mod:hook(LocalizationManager, "localize", function(func, self, loc_key, no_cache, context)
@@ -604,18 +609,14 @@ mod.reload_templates = function()
 
 	local current_lang = Managers.localization._language or "en"
 	local language_override = mod:get("language_override")
-	
-	-- Используем принудительный язык если указан
 	if language_override and language_override ~= "auto" then
 		current_lang = language_override
 	end
-	
+
 	local all_templates = load_all_templates()
 	register_template_fixes(all_templates, current_lang)
 
-	mod:info(string.format("Localization templates reloaded for %s: %d templates", 
-		current_lang, #all_templates))
-	
+	mod:info(string.format("Localization templates reloaded for %s: %d templates", current_lang, #all_templates))
 	return true
 end
 
@@ -673,6 +674,17 @@ function mod.on_all_mods_loaded()
 	setup_window_offsets()
 	mod.reload_templates()
 
+-- Применяем сохранённый пресет цветов при загрузке
+local preset = mod:get("color_preset")
+if preset and preset ~= "default" then
+	if mod.apply_color_preset then
+		mod:info("Applying saved color preset: " .. preset)
+		mod.apply_color_preset(preset)
+	else
+		mod:warning("apply_color_preset not available")
+	end
+end
+
 	-- Экспортируем переменные для Debug модуля
 	mod.registered_fixes = registered_fixes
 	mod.FIXES = FIXES
@@ -694,6 +706,13 @@ end
 function mod.on_enabled()
 	-- Также очищаем при включении мода
 	cleanup_old_settings()
+	-- Применяем сохранённый пресет при включении
+	local preset = mod:get("color_preset")
+	if preset and preset ~= "default" then
+		if mod.apply_color_preset then
+			mod.apply_color_preset(preset)
+		end
+	end
 	mod.reload_templates()
 	mod:info("Enhanced Descriptions enabled")
 end
@@ -705,16 +724,29 @@ function mod.on_disabled()
 end
 
 local function on_setting_changed(setting_id)
-	mod:info("Setting changed: " .. setting_id)
+	if mod._applying_preset then
+		return
+	end
+
+	mod:debug("Setting changed: " .. setting_id)
 
 	if string.find(setting_id, "_text_colour") then
 		mod.clear_color_cache()
 		mod.reload_templates()
-		mod:notify("Colors updated")
+		mod:debug("Colors updated")
 	elseif string.find(setting_id, "enable_") or setting_id == "language_override" then
-		mod.clear_color_cache()	 -- Очищаем кэш языка
+		mod.clear_color_cache()
 		mod.reload_templates()
-		mod:notify("Language and modules reloaded")
+		mod:debug("Language and modules reloaded")
+	elseif setting_id == "color_preset" then
+		-- Применяем пресет
+		local preset = mod:get(setting_id)
+		mod:info("Applying color_preset from on_setting_changed: " .. tostring(preset))
+		if mod.apply_color_preset then
+			mod.apply_color_preset(preset)
+		else
+			mod:warning("apply_color_preset not available")
+		end
 	end
 end
 
@@ -724,9 +756,9 @@ function mod.reload_localization()
 	mod.clear_color_cache()
 	local success = mod.reload_templates()
 	if success then
-		mod:notify("Localization reloaded successfully")
+		mod:info("Localization reloaded successfully")
 	else
-		mod:notify("Failed to reload localization")
+		mod:info("Failed to reload localization")
 	end
 	return success
 end

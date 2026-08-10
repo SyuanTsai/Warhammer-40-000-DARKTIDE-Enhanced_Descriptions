@@ -4,7 +4,7 @@
 
 local mod = get_mod("Enhanced_descriptions")
 
--- CONSTANTS AND CONFIGURATION - КОНСТАНТЫ И КОНФИГУРАЦИЯ
+-- Constants and Configuration - Константы и конфигурация
 local DEFAULT_SETTINGS = {
 	-- Main modules - Основные модули
 	enable_menus_file =				true,
@@ -15,6 +15,9 @@ local DEFAULT_SETTINGS = {
 	enable_names_file =				true,
 	enable_names_tal_bless_file =	true,
 	enable_debug_mode =				false,
+
+	-- Default Preset - Пресет по умолчанию
+	color_preset =					"default",
 
 	-- Language override - Переопределение языка
 	language_override =				"auto",
@@ -110,7 +113,7 @@ local COLOR_SETTINGS = {
 	-- { id = "talents_penances",	default = "forest_green" },
 	-- { id = "sedition",			default = "terminal_text_body" },
 
--- UTILITY FUNCTIONS - ВСПОМОГАТЕЛЬНЫЕ ФУНКЦИИ
+-- Utility Functions - Вспомогательные функции
 local function create_checkbox_widget(setting_id, default_value)
 	return {
 		name = mod:localize(setting_id),
@@ -175,7 +178,31 @@ local function create_color_option_group(color_setting)
 	}
 end
 
--- MAIN OPTIONS CONFIGURATION - ОСНОВНЫЕ ПАРАМЕТРЫ КОНФИГУРАЦИИ
+-- Применение выбранного пресета цветов
+local function apply_color_preset(preset)
+	mod._applying_preset = true
+
+	if preset == "monochrome" then
+		for _, color_setting in ipairs(COLOR_SETTINGS) do
+			mod:set(color_setting.id .. "_text_colour", "terminal_text_body")
+		end
+	elseif preset == "default" then
+		for _, color_setting in ipairs(COLOR_SETTINGS) do
+			mod:set(color_setting.id .. "_text_colour", color_setting.default)
+		end
+	else
+		mod:warning("Unknown preset: " .. tostring(preset))
+		mod._applying_preset = false
+		return
+	end
+
+	mod._applying_preset = false
+	mod:clear_color_cache()
+	mod:reload_templates()
+	mod:info("Color preset applied: " .. preset) -- для лога
+end
+
+-- Main Options Configuration - Основные параметры конфигурации
 local options = {
 	name = mod:localize("mod_name"),
 	description = mod:localize("mod_description"),
@@ -191,6 +218,26 @@ local general_settings_group = {
 	type = "group",
 	sub_widgets = {
 		create_dropdown_widget("language_override", SUPPORTED_LANGUAGES, DEFAULT_SETTINGS.language_override)
+	}
+}
+
+-- 1.5. Presets group - Группа пресетов
+local presets_group = {
+	setting_id = "presets_group",
+	type = "group",
+	sub_widgets = {
+		{
+			setting_id = "color_preset",
+			type = "dropdown",
+			default_value = DEFAULT_SETTINGS.color_preset,
+			options = {
+				{ value = "default", text = "color_preset_default" },
+				{ value = "monochrome", text = "color_preset_monochrome" },
+			},
+			get = function()
+				return mod:get("color_preset") or "default"
+			end
+		}
 	}
 }
 
@@ -234,15 +281,19 @@ end
 
 -- Add all groups - Добавляем все группы
 table.insert(options.options.widgets, general_settings_group)
+table.insert(options.options.widgets, presets_group)
 table.insert(options.options.widgets, modules_group)
 table.insert(options.options.widgets, colors_group)
 
--- INITIALIZATION - ИНИЦИАЛИЗАЦИЯ
+-- Initialization - Инициализация
 -- Ensure default settings are set - Убеждаемся, что установлены настройки по умолчанию
 for setting_id, default_value in pairs(DEFAULT_SETTINGS) do
 	if mod:get(setting_id) == nil then
 		mod:set(setting_id, default_value)
 	end
 end
+
+-- Экспортируем функцию для применения пресета
+mod.apply_color_preset = apply_color_preset
 
 return options

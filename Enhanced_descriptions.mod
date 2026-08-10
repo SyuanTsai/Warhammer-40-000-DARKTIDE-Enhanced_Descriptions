@@ -13,13 +13,11 @@ return {
 		})
 	end,
 	packages = {},
-	-- require = {
-		-- "",
-	-- },
-	-- load_before = {
-		-- "",
-	-- },
-	-- load_after = {
-		-- "",
-	-- },
+	load_after = {},
+	load_before = {},
+	require = {},
+	version = "6.0.2b",
+	author = "xsSplater",
+	url = "https://www.nexusmods.com/warhammer40kdarktide/mods/210",
+	github = "https://github.com/xsSplater/Darktide_Enhanced_Descriptions",
 }
