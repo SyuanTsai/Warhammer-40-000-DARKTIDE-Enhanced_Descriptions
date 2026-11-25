@@ -1116,6 +1116,7 @@ local skitarii_localizations = {
 	["loc_talent_cryptic_dissector_max_stacks_desc"] = { -- cooldown: +75%, duration: 2, +colors
 		en = Dot_green.." Increase Max Stacks to {max_stacks:%s}.",
 		ru = Dot_green.." Максимум зарядов увеличивается до {max_stacks:%s}.",
+		["zh-tw"] = Dot_green.." 將最大層數提高至 {max_stacks:%s}。",
 		["zh-cn"] = Dot_green.." 最大层数增加至 {max_stacks:%s}。",
 	},
 --[+ +PASSIVES - ПАССИВНЫЕ+ +]--

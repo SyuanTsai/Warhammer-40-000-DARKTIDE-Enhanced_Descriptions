@@ -144,14 +144,14 @@ local talent_localizations = {
 		["loc_alias_talent_builder_view_hotkey_summary"] = {
 			-- en = "1View full build",
 			ru = "Посмотреть весь билд", -- руоф Осмотреть полную сборку
-			-- ["zh-tw"] = "查看全部天賦",
+			["zh-tw"] = "查看全部天賦",
 			["zh-cn"] = "查看完整构筑",
 		},
 		--[+ Full build +]--	01.11.2025
 		["loc_alias_talent_builder_view_popup_title_summary"] = {
 			-- en = "Full build",
 			ru = "Весь билд",
-			-- ["zh-tw"] = "全部天賦",
+			["zh-tw"] = "全部天賦",
 			["zh-cn"] = "完整构筑",
 		},
 
