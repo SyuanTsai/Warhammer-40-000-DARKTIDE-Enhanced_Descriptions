@@ -42,6 +42,8 @@ local menus_templates = {
 		["loc_tg_attack_chain_light"] = {
 			ru = "Повторные атаки, совершаемые в быстрой последовательности, объединяются в серию.\n"
 				.."Удары в серии отличаются по направлению и "..CKWord("урону", "uronu_rgb_ru")..".",
+			["zh-tw"] = "短時間內連續攻擊會形成連擊。\n"
+				.."連擊擁有不同的攻擊角度和"..CKWord("傷害", "Damage_rgb_tw").."屬性。",
 		},
 		["loc_melee_chain_objective"] = {
 			ru = "Выполните серию лёгких атак",
@@ -74,6 +76,8 @@ local menus_templates = {
 		},
 		["loc_pushing_desc"] = {
 			ru = "{#color(255,255,190)}Отталкивание{#reset()} может "..CKWord("ошеломить", "oshelomit_rgb_ru").." группу врагов, но тратит "..CKWord("выносливость", "vynoslivost_rgb_ru")..".",
+			["zh-tw"] = "推開可以使敵群"..CKWord("踉蹌", "Stagger_rgb_tw").."。\n"
+				.."推開需要消耗"..CKWord("耐力", "Stamina_rgb_tw").."。",
 		},
 		["loc_block"] = {
 			ru = "Блокирование",
@@ -88,15 +92,21 @@ local menus_templates = {
 			ru = "Скитарии используют "..CKWord("ёмкость", "emkost_rgb_ru").." для усиления своих способностей.\n"
 				.."При достижении "..CNumb("100%", "pc_100_rgb").."  "..CKWord("ёмкости", "emkosti_rgb_ru")..", вы получаете заряд.\n"
 				.."Вы получаете "..CKWord("ёмкость", "emkost_rgb_ru").." пассивно со временем и за убийства врагов.",
+			["zh-tw"] = "護教軍使用"..CKWord("電容量", "Capacitance_rgb_tw").."為技能供能。\n"
+				..CKWord("電容量", "Capacitance_rgb_tw").."達到 "..CNumb("100%", "pc_100_rgb").." 時，會產生一層充能。\n"
+				..CKWord("電容量", "Capacitance_rgb_tw").."隨時間被動獲得，也可藉由擊殺敵人累積。",
 		},
 		["loc_tutorial_cryptic_ability_desc"] = {
 			ru = "Ваша способность называется "..CKWord("Вольтаический расширитель", "VoltaicExpander_rgb_ru")..". Она поражает ближайших врагов "..CKWord("электрошоком", "elektroshokom_rgb_ru")..", "..CKWord("ошеломляет", "oshelomlaet_rgb_ru").." их и наносит "..CKWord("урон", "uron_rgb_ru")..".",
+			["zh-tw"] = "你的技能叫做"..CKWord("電能擴張器", "VoltaicExpander_rgb_tw").."。它會讓附近敵人遭受"..CKWord("電擊", "Electrocute_rgb_tw").."，使其"..CKWord("眩暈", "Stun_rgb_tw").."並造成"..CKWord("傷害", "Damage_rgb_tw").."。",
 		},
 		["loc_tutorial_cryptic_ability_charges_desc"] = {
 			ru = "У вас может быть до "..CNumb("3", "n_3_rgb").." зарядов. Ваша способность "..CKWord("Вольтаический расширитель", "VoltaicExpander_rgb_ru").." может потратить все заряды, увеличивая радиус поражения за каждый потраченный заряд.",
+			["zh-tw"] = "你最多可擁有 "..CNumb("3", "n_3_rgb").." 層充能。你的"..CKWord("電能擴張器", "VoltaicExpander_rgb_tw").."技能可消耗全部充能，每多消耗一層充能都會使範圍擴大。",
 		},
 		["loc_tutorial_cryptic_companion_enemy_desc"] = {
 			ru = "Вас сопровождает "..CKWord("сервочереп", "servocherep_rgb_ru")..". Вы можете приказать ему стрелять во врагов.",
+			["zh-tw"] = "你有一個同行的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。你可以命令它射擊敵人。",
 		},
 		["loc_setting_com_wheel_double_tap"] = {
 			ru = "Пометка двойным нажатием",
@@ -106,37 +116,48 @@ local menus_templates = {
 		},
 		["loc_tutorial_cryptic_companion_hacking_desc"] = {
 			ru = "Вы можете также приказать своему "..CKWord("сервочерепу", "servocherepu_rgb_ru").." автоматически выполнять события взлома данных.",
+			["zh-tw"] = "你也能指示"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."自動進行資料審訊。",
 		},
 		["loc_tutorial_cryptic_companion_hacking"] = {
 			ru = "Прикажите сервочерепу взломать данные.",
 		},
 		["loc_tutorial_cryptic_companion_empower_desc"] = {
 			ru = "Вы можете временно усилить свой "..CKWord("сервочереп", "servocherep_rgb_ru")..".",
+			["zh-tw"] = "你可以暫時強化你的"..CKWord("伺服頭骨", "Servoskull_rgb_tw").."。",
 		},
 		["loc_tutorial_cryptic_companion_empower_use"] = {
 			ru = "Усильте свой сервочереп, используя кнопку блица.",
+			["zh-tw"] = "按下閃擊鍵來強化你的伺服頭骨。",
 		},
 		["loc_training_ground_dodge_description"] = {
 			ru = "Уклонение в движении.",
+			["zh-tw"] = "移動時閃避",
 		},
 		["loc_training_ground_move_backward_description"] = {
 			ru = "Движение назад.",
+			["zh-tw"] = "向後移動",
 		},
 		["loc_training_ground_move_left_description"] = {
 			ru = "Движение влево.",
+			["zh-tw"] = "向左移動",
 		},
 		["loc_training_ground_move_right_description"] = {
 			ru = "Движение вправо.",
+			["zh-tw"] = "向右移動",
 		},
 		["loc_training_ground_psyker_a__dodging_tutorial_desc_a_01"] = {
 			ru = "Уклонение позволяет избежать атак дальнего и ближнего боя.",
 		},
 		["loc_toughness_damage_tutorial_desc"] = {
 			ru = "Атаки врагов сначала поражают вашу "..CKWord("стойкость", "stoikost_rgb_ru")..". Когда ваша "..CKWord("стойкость", "stoikost_rgb_ru").." пробита, они начинают поражать ваше "..CKWord("здоровье", "zdorovie_rgb_ru")..", а также их атаки начнут вас "..CKWord("ошеломлять", "oshelomlat_rgb_ru").." или даже "..CKWord("оглушать", "oglushat_rgb_ru").." на некоторое время.",
+			["zh-tw"] = "敵人攻擊會先削減你的"..CKWord("韌性", "Toughness_rgb_tw").."。你的"..CKWord("韌性", "Toughness_rgb_tw").."被擊破後，敵人的攻擊就會削減你的"..CKWord("生命值", "Health_rgb_tw").."。\n"
+				.."此時敵人的攻擊還會使你"..CKWord("踉蹌", "Stagger_rgb_tw").."，甚至短暫"..CKWord("眩暈", "Stun_rgb_tw").."。",
 		},
 		["loc_toughness_tutorial_desc"] = {
 			ru = "Убийство врагов в ближнем бою восполняет "..CKWord("стойкость", "stoikost_rgb_ru")..".\n"
 				.."Также "..CKWord("стойкость", "stoikost_rgb_ru").." восстанавливается, когда рядом с вами в радиусе "..CKWord("сплочённости", "splochennosti_rgb_ru").." находятся товарищи по команде.",
+			["zh-tw"] = "使用近戰攻擊擊殺敵人能恢復"..CKWord("韌性", "Toughness_rgb_tw").."。\n"
+				..CKWord("協同", "Coherency_rgb_tw").."範圍內的每個隊友都能使你獲得"..CKWord("韌性", "Toughness_rgb_tw").."恢復。",
 		},
 
 	--[+ Plasteel +]--
@@ -168,10 +189,12 @@ local menus_templates = {
 	--[+ Examine +]--
 	["loc_inspect_input_description_alternate_inspect_start"] = {
 		ru = "Проверить магазин",
+		["zh-tw"] = "檢查彈匣",
 	},
 	--[+ Inspect +]--
 	["loc_inspect_input_description_alternate_inspect_stop"] = {
 		ru = "Осмотреть оружие",
+		["zh-tw"] = "檢視武器",
 	},
 
 --[+ ++MELK - 梅爾克 - 梅尔克大人的采购店++ +]--
